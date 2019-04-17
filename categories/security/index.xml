@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on OJ&#39;s Perspective</title>
+    <link>/categories/security/</link>
+    <description>Recent content in Security on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Wed, 17 Apr 2019 16:55:43 +1000</lastBuildDate>
+    
+	<atom:link href="/categories/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>New Livestream Series</title>
+      <link>/posts/new-livestream-series/</link>
+      <pubDate>Wed, 17 Apr 2019 16:55:43 +1000</pubDate>
+      
+      <guid>/posts/new-livestream-series/</guid>
+      <description>TL;DR We&amp;rsquo;re going to build a .NET implementation of Meterpreter live on stream. Together. From scratch. Read on for all the details!
+The Backstory I remember kicking off my first ever live stream on Twitch back in September 2016. It feels like a lifetime ago already. That stream, broken up into two parts (1, 2), was me breaking open the Capcom.sys driver that had a blatant backdoor in it and abusing this backdoor to get NT AUTHORITY\SYSTEM privileges.</description>
+    </item>
+    
+    <item>
+      <title>Police Quest CTF Challenge</title>
+      <link>/posts/police-quest-ctf-challenge/</link>
+      <pubDate>Mon, 26 Nov 2018 16:41:10 +1000</pubDate>
+      
+      <guid>/posts/police-quest-ctf-challenge/</guid>
+      <description>Earlier this month, I donated a CTF challenge to the legendary bunch of folks that ran the Kiwicon CTF in Wellington. It&amp;rsquo;s a bit of a tradition for me to pass on at least one challenge, and I felt it was worth keeping that tradition going this year.
+The challenge was attempted by a few people during the conference, however I don&amp;rsquo;t believe it was successfully owned. As a result, I wanted to release this to the general public for funzies.</description>
+    </item>
+    
+    <item>
+      <title>BSidesCBR CTF Round Up</title>
+      <link>/posts/bsidescbr-ctf-round-up/</link>
+      <pubDate>Wed, 22 Mar 2017 11:51:10 +1000</pubDate>
+      
+      <guid>/posts/bsidescbr-ctf-round-up/</guid>
+      <description>BSides Canberra for 2017 has just finished up! A cracking 2-day conference hosted by a bunch of infosec folks down here in Australia, and everything went as well as it could have. It was great fun, and the vibe there was really awesome.
+If you&amp;rsquo;re here for the details on how to get the CTF challenges running locally, jump to the bottom of the post. Keep reading if you want more information on how things went.</description>
+    </item>
+    
+    <item>
+      <title>bin2json CTF Challenge</title>
+      <link>/posts/bin2json-ctf-challenge/</link>
+      <pubDate>Mon, 21 Nov 2016 13:52:00 +1000</pubDate>
+      
+      <guid>/posts/bin2json-ctf-challenge/</guid>
+      <description>At the beginning of this year I agreed to help a good friend out and build a challenge for the BSidesCbr 2016 CTF. The aim was to:
+ Create a fun binary pwnable. Avoid the typical exploitation paths (eg. stack/heap buffer overflows, format strings, etc). Include a couple of code related issues that are close to my heart. Design it so that multiple issues needed to be abused in order to gain code execution.</description>
+    </item>
+    
+    <item>
+      <title>Linux SRP Overwrite and ROP</title>
+      <link>/posts/linux-srp-overwrite-and-rop/</link>
+      <pubDate>Wed, 12 Oct 2016 08:14:09 +1000</pubDate>
+      
+      <guid>/posts/linux-srp-overwrite-and-rop/</guid>
+      <description>Recently I started live-streaming some security-related stuff on Twitch because I enjoy teaching other people and showing them the processes, tools and techniques that I use while attempting to not suck at breaking stuff. Last night I did my second stream, which aimed to cover the following:
+ A quick analysis of a vulnerable 32-bit Linux binary. An explanation of how stack buffer overflows can result in the Saved Return Pointer (SRP) being overwritten.</description>
+    </item>
+    
+    <item>
+      <title>Staged vs Stageless Handlers</title>
+      <link>/posts/staged-vs-stageless-handlers/</link>
+      <pubDate>Wed, 05 Oct 2016 10:46:58 +1000</pubDate>
+      
+      <guid>/posts/staged-vs-stageless-handlers/</guid>
+      <description>&lt;p&gt;Metasploit comes with a variety of payloads, as we all know. Those payloads come in a few different types, and vary depending on platform. Of those types, there are two major &amp;ldquo;categories&amp;rdquo; available with a key difference that is often not understood. They are &lt;code&gt;staged&lt;/code&gt; and &lt;code&gt;stageless&lt;/code&gt; payloads.&lt;/p&gt;
+
+&lt;p&gt;The purpose of this post is to talk about the differences between these two, particularly in the context of Meterpreter and the Metasploit handlers. I&amp;rsquo;ll also cover off what happens with TCP payloads/handlers, so that it&amp;rsquo;s clear how it works and what you can do to avoid a common pitfall and reduce noise on the wire.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s dive in.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Continued Meterpreter Development</title>
+      <link>/posts/continued-meterpreter-development/</link>
+      <pubDate>Thu, 05 May 2016 07:38:32 +1000</pubDate>
+      
+      <guid>/posts/continued-meterpreter-development/</guid>
+      <description>&lt;p&gt;Active users of Metasploit will no doubt be aware that Meterpreter is still being actively developed and enhanced by a bunch of people. I&amp;rsquo;m lucky enough to still be one of them! In this post I just want to cover a few things that have been done to it recently, and to give a bit of visbility of how I am able to continue contributing in the way that I do.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TLV Traffic Obfuscation</title>
+      <link>/posts/tlv-traffic-obfuscation/</link>
+      <pubDate>Mon, 22 Feb 2016 00:11:46 +0000</pubDate>
+      
+      <guid>/posts/tlv-traffic-obfuscation/</guid>
+      <description>&lt;p&gt;As many of you are already aware, Metasploit and Meterpreter talk to each other using a variety of transports. While the transports may vary from session to session, one thing that doesn&amp;rsquo;t vary is the &amp;ldquo;protocol&amp;rdquo; that travels over those transports. This information fits a well-known structure, and is referred to as &lt;em&gt;TLV Packets&lt;/em&gt; (Type, Length, Value).&lt;/p&gt;
+
+&lt;p&gt;Once a session has been established, the TLV traffic that is sent across the wire contains a bunch of very easily recognisable content, and as such can be detected by Antivirus software, or Intrusion Detection Systems.&lt;/p&gt;
+
+&lt;p&gt;Recently, I made a change to the way the packets are formed prior to transmission, and this post is intended to explain the detail of how it works.&lt;/p&gt;
+
+&lt;p&gt;Warning: It&amp;rsquo;s &lt;em&gt;really simple&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Solving &#39;The Blender&#39;</title>
+      <link>/posts/solving-the-blender/</link>
+      <pubDate>Thu, 05 Feb 2015 15:27:57 +0000</pubDate>
+      
+      <guid>/posts/solving-the-blender/</guid>
+      <description>&lt;p&gt;This post contains a walk-through of the process required to solve &lt;em&gt;The Blender&lt;/em&gt;. &lt;em&gt;The Blender&lt;/em&gt; was a reverse engineering challenge that I built and submitted to &lt;a href=&#34;https://twitter.com/hyprwired&#34;&gt;hyprwired&lt;/a&gt; for inclusion in the &lt;a href=&#34;https://kiwicon.org/&#34;&gt;Kiwicon&lt;/a&gt; &lt;a href=&#34;https://kiwicon.org/the-con/hamiltr0nno-carrier/&#34;&gt;CTF&lt;/a&gt;. The challenge wasn&amp;rsquo;t intended to be too mind-boggling, but it turned out that nobody was able to solve it on the day.&lt;/p&gt;
+
+&lt;p&gt;I won&amp;rsquo;t deny that this didn&amp;rsquo;t me feel awful &lt;em&gt;and&lt;/em&gt; great at the same time! However, I don&amp;rsquo;t want this lying in the depths of history unsolved, so I wanted to show people the story behind the challenge, and how to nail it using IDA and your brain.&lt;/p&gt;
+
+&lt;p&gt;Please &lt;a href=&#34;/uploads/2015/02/blender/the_blender.zip&#34;&gt;download&lt;/a&gt; it if you would like to follow along.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A Note on Disclosure</title>
+      <link>/posts/a-note-on-disclosure/</link>
+      <pubDate>Sat, 17 Jan 2015 08:19:03 +0000</pubDate>
+      
+      <guid>/posts/a-note-on-disclosure/</guid>
+      <description>&lt;p&gt;In October last year, while conducting an internal assessment for a client in Sydney, I found a vulnerability in a vendor product. The flaw allows for remote code execution on the device, &lt;em&gt;as the root user&lt;/em&gt;, without requiring authentication. Needless to say, &amp;ldquo;instant remote root&amp;rdquo; vulnerabilities are bad. On the scale of bug severity, they&amp;rsquo;re up pretty high. For a device such as this, it doesn&amp;rsquo;t really get any worse.&lt;/p&gt;
+
+&lt;p&gt;Once I had a working proof-of-concept which demonstrated the flaw, I made contact with the vendor in an effort to disclose the issue in a secure and responsible manner. I was aware that other options were available, such as handing the issue over to CERT or some other initiative that deals with the pain of disclosure, but I wanted to get first-hand experience of the process, hence I decided to do it myself.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m not going to lie, it has been frustrating.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Offensive Security Playground</title>
+      <link>/posts/the-offensive-security-playground/</link>
+      <pubDate>Sat, 03 Jan 2015 09:29:39 +0000</pubDate>
+      
+      <guid>/posts/the-offensive-security-playground/</guid>
+      <description>&lt;p&gt;In November last year, I was fortunate enough to participate in the beta testing of &amp;ldquo;&lt;a href=&#34;http://www.offensive-security.com/offensive-security-solutions/virtual-penetration-testing-labs/&#34; title=&#34;Virtual Penetration Testing Labs&#34;&gt;The Playground&lt;/a&gt;&amp;rdquo; &amp;ndash; a new product from the folks who gave us &lt;a href=&#34;http://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional/&#34; title=&#34;OSCP&#34;&gt;OSCP&lt;/a&gt;, &lt;a href=&#34;http://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-expert/&#34; title=&#34;OSCE&#34;&gt;OSCE&lt;/a&gt; and others, &lt;a href=&#34;http://www.offensive-security.com/&#34; title=&#34;Offensive Security&#34;&gt;Offensive Security&lt;/a&gt;. The Playground, otherwise known as the &amp;ldquo;Virtual Penetration Test Labs&amp;rdquo;, is an environment designed to aid in practising and honing your skills as a penetration tester.&lt;/p&gt;
+
+&lt;p&gt;Offensive Security have posted some detail of this lab &lt;a href=&#34;http://www.offensive-security.com/offsec/professional-penetration-testing-labs/&#34;&gt;on their site&lt;/a&gt;. It&amp;rsquo;s worth reading to give context to this post.&lt;/p&gt;
+
+&lt;p&gt;This post is a mini-review of the lab, along with some thoughts as to why this could be good for you and/or your organisation.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CSAW 2014 - Saturn</title>
+      <link>/posts/csaw-2014-saturn/</link>
+      <pubDate>Mon, 22 Sep 2014 14:57:08 +0000</pubDate>
+      
+      <guid>/posts/csaw-2014-saturn/</guid>
+      <description>&lt;p&gt;This post contains a detailed account of how I solved the &lt;strong&gt;Saturn&lt;/strong&gt; exploitation challenge during &lt;a href=&#34;https://ctf.isis.poly.edu/&#34;&gt;CSAW 2014 CTF&lt;/a&gt;. I thought that this challenge was very entertaining, hopefully you will too.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Jumping with Bad Chars</title>
+      <link>/posts/jumping-with-bad-chars/</link>
+      <pubDate>Fri, 21 Mar 2014 22:31:39 +0000</pubDate>
+      
+      <guid>/posts/jumping-with-bad-chars/</guid>
+      <description>&lt;p&gt;During the course of exploit development it is not uncommon to require jumps in your shellcode. The most common case for these jumps is when doing &lt;a href=&#34;https://www.corelan.be/index.php/2009/07/25/writing-buffer-overflow-exploits-a-quick-and-basic-tutorial-part-3-seh/&#34;&gt;SEH overwrites&lt;/a&gt;, due to their nature. There are times when the author of the exploit has a hard time performing these jumps due to the fact that only a subset of characters are deemed valid for use by the target application in that particular input field.&lt;/p&gt;
+
+&lt;p&gt;In this post I want to briefly cover a few options for performing those jumps in such a scenario.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>myftpd Exploit on Windows 7</title>
+      <link>/posts/myftpd-exploit-on-windows-7/</link>
+      <pubDate>Wed, 12 Mar 2014 19:48:47 +0000</pubDate>
+      
+      <guid>/posts/myftpd-exploit-on-windows-7/</guid>
+      <description>&lt;p&gt;In my &lt;a href=&#34;/posts/idsecconf-2013-myftpd-challenge/&#34;&gt;previous post&lt;/a&gt; I covered off, in relative detail, how to exploit the IDSECCONF offline CTF &lt;code&gt;myftpd&lt;/code&gt; server running on Windows XP. This exploit makes use of a Vanilla &lt;code&gt;EIP&lt;/code&gt; overwrite along with some &lt;em&gt;shellcode golf&lt;/em&gt; to allow for execution of arbitrary payloads. At the time I had intended to write up a way of making this work on other versions of Windows, but that post ended up long enough so I decided to publish without the extra detail.&lt;/p&gt;
+
+&lt;p&gt;In this post I am going to show how you can make this exploit work on Windows 7 SP1. This doesn&amp;rsquo;t really &lt;em&gt;bypass&lt;/em&gt; ASLR, it just avoids it.&lt;/p&gt;
+
+&lt;p&gt;If you haven&amp;rsquo;t read the &lt;a href=&#34;/posts/idsecconf-2013-myftpd-challenge/&#34;&gt;previous post&lt;/a&gt;, then please go and read that now. If you&amp;rsquo;re ready, then let&amp;rsquo;s dive in.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>IDSECCONF 2013 myftpd challenge</title>
+      <link>/posts/idsecconf-2013-myftpd-challenge/</link>
+      <pubDate>Sat, 01 Mar 2014 01:26:33 +0000</pubDate>
+      
+      <guid>/posts/idsecconf-2013-myftpd-challenge/</guid>
+      <description>&lt;h2 id=&#34;update-2018-09-13&#34;&gt;Update 2018-09-13&lt;/h2&gt;
+
+&lt;p&gt;Lots of people have asked for a copy of the binary so that they can play along with this. I&amp;rsquo;ve contacted &lt;a href=&#34;https://twitter.com/y3dips&#34;&gt;Ammar&lt;/a&gt; and he has said it&amp;rsquo;s ok for me to provide it here. So for those that are keen to have a go at this themselves, &lt;a href=&#34;/uploads/2014/03/myftpd.exe&#34;&gt;have at it!&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;on-with-the-show&#34;&gt;On with the Show&lt;/h2&gt;
+
+&lt;p&gt;With &lt;a href=&#34;http://buffered.io/posts/osce-and-me/&#34;&gt;OSCE&lt;/a&gt; out of the way and the family in need of a break from me doing study and certifications, I decided to turn my hand to some fun exploit challenges to keep up the practice. To a wannabe bug exploiter such as myself, there are plenty of options out there which are great for fun and practice. Some of those options are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Downloading an application with a known vulnerability and exploit and practising on that.&lt;/li&gt;
+&lt;li&gt;Downloading a proof of concept crash from &lt;a href=&#34;http://exploit-db.com/&#34;&gt;ExploitDB&lt;/a&gt; and turning it into a full exploit.&lt;/li&gt;
+&lt;li&gt;Reading sites such as &lt;a href=&#34;https://www.corelan.be/&#34;&gt;Corelan&lt;/a&gt; and &lt;a href=&#34;http://www.fuzzysecurity.com/&#34;&gt;Fuzzy Security&lt;/a&gt;, who both have great exploit tutorials. However, instead of reading through the walk-throughs, download the vulnerable applications and attempt to exploit them yourself.&lt;/li&gt;
+&lt;li&gt;Getting some &amp;ldquo;exploitme&amp;rdquo; style challenges from some bygone &lt;a href=&#34;https://en.wikipedia.org/wiki/Capture_the_flag&#34;&gt;CTFs&lt;/a&gt;. A great place to go is &lt;a href=&#34;http://www.shell-storm.org/&#34;&gt;ShellStorm&lt;/a&gt;, which contains an archive of lots of these.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On this particular day I thought I&amp;rsquo;d try one of the harder exploitme challenges and it just so happened that something appeared in my Twitter feed that pointed me to &lt;a href=&#34;http://clog.ammar.web.id/2013/06/idsecconf-2013-ctff-offline-challenge.html&#34;&gt;Ammar&lt;/a&gt;&amp;rsquo;s post discussing a level &lt;code&gt;500&lt;/code&gt; exploit challenge from the &lt;a href=&#34;http://2013.idsecconf.org/&#34;&gt;IDSECCONF 2013 CTF&lt;/a&gt;. To quote Ammar:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;hellip; during the IDSECCONF offline CTF, none of the team were able to wrap
+up a working remote exploit, although one team were able to get [the]
+correct offset to overwrite EIP &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This had the hallmarks of being tricky and fun! I asked Ammar if the binary was still available and he kindly made it available for download (head to his site if you would like to have a shot at it yourself).&lt;/p&gt;
+
+&lt;p&gt;What follows is my dissection of the binary, along with my approach to exploiting it so that it would allow the attacker to submit &lt;em&gt;any&lt;/em&gt; payload including reverse &lt;a href=&#34;https://github.com/rapid7/meterpreter&#34;&gt;Meterpreter&lt;/a&gt; shells, bind shells and VNC injection. If you&amp;rsquo;re keen to take this challenge on by yourself, please don&amp;rsquo;t read this as it&amp;rsquo;s a blatant spoiler. Otherwise, let&amp;rsquo;s get stuck in!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Building Meterpreter is Easy</title>
+      <link>/posts/building-meterpreter-is-easy/</link>
+      <pubDate>Tue, 18 Feb 2014 07:01:37 +0000</pubDate>
+      
+      <guid>/posts/building-meterpreter-is-easy/</guid>
+      <description>I might not have mentioned this before, but I have to tell you that building Meterpreter is easy. In the old days, downloading the source was the easy bit and compiling it was the hard bit. The steps involved in getting a Meterpreter build environment together were extensive and prone to error. In fact if you got one wrong, or you did things in the wrong order, then you could end up having to remove everything from your machine and starting again.</description>
+    </item>
+    
+    <item>
+      <title>OSCE and Me</title>
+      <link>/posts/osce-and-me/</link>
+      <pubDate>Mon, 17 Feb 2014 21:08:15 +0000</pubDate>
+      
+      <guid>/posts/osce-and-me/</guid>
+      <description>&lt;p&gt;I have always found it hard to separate myself from something that I have a keen interest, and this has certainly proven to be the case when it comes to Information Security. My recent foray into the field, both as a developer and as a wannabe pentester/researcher, has had a big impact on me and my desire to learn more has not lessened as time has passed.&lt;/p&gt;
+
+&lt;p&gt;When I passed my &lt;a href=&#34;http://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional/&#34; title=&#34;OSCP&#34;&gt;OSCP&lt;/a&gt; exam last year I really felt like I had achieved something, but more importantly I had learned a &lt;em&gt;lot&lt;/em&gt; of stuff that I had never had exposure to before. Despite the feeling of achievement and the exhaustion that came from trying to do it all in 30 days, I was keen to take the next step; riding the wave while I felt like I was getting into the swing of it. After a few days of post-OSCP rest, I started investigating the next thing to tackle.&lt;/p&gt;
+
+&lt;p&gt;Given the fun I had while doing the &lt;a href=&#34;http://www.offensive-security.com/information-security-training/penetration-testing-with-kali-linux/&#34; title=&#34;PWK (was PWB)&#34;&gt;PWB&lt;/a&gt; labs, I felt that going back to &lt;a href=&#34;http://www.offensive-security.com/&#34; title=&#34;Offensive Security&#34;&gt;Offensive Security&lt;/a&gt; would be a good move. Offsec&amp;rsquo;s reputation is understandably very good, and I felt that I would be doing myself another favour by taking on their next challenge. It was clear to me that the next logical step would be to do the &lt;a href=&#34;http://www.offensive-security.com/information-security-training/cracking-the-perimeter/&#34; title=&#34;Cracking the Perimeter&#34;&gt;CTP&lt;/a&gt; lab with a goal of attaining the &lt;a href=&#34;http://www.offensive-security.com/information-security-certifications/osce-offensive-security-certified-expert/&#34; title=&#34;OSCE&#34;&gt;OSCE&lt;/a&gt; certification.&lt;/p&gt;
+
+&lt;p&gt;Just as I did prior to deciding to do OSCP, I read reviews and did some other simple research to find out more about the course. It wasn&amp;rsquo;t surprising to hear horror stories from some people who had taken on the exam; some who passed, others who did not. I knew I was going to be in for a treat, and I couldn&amp;rsquo;t wait to do it.&lt;/p&gt;
+
+&lt;p&gt;I would have signed up within a few weeks of finishing OSCP, but I felt it was important to give my family a break from the stresses involved in me dedicating so much time to study. Not just that, the OSCE exam is a gruelling 48-hour marathon, and so I would require support from my legendary little clan if I wanted to succeed.&lt;/p&gt;
+
+&lt;p&gt;After chatting to my very understanding wife, we decided that it would be a good idea for me to do the course in the latter half of the school holidays when the pressure of daily life is off. I signed up for the course, ready to start on the 22nd December.&lt;/p&gt;
+
+&lt;p&gt;What follows is my OSCE story, from start to finish, written in a very similar to my &lt;a href=&#34;/posts/oscp-and-me/&#34; title=&#34;OSCP and Me&#34;&gt;OSCP&lt;/a&gt; post. Enjoy.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>3 Months of Meterpreter</title>
+      <link>/posts/3-months-of-meterpreter/</link>
+      <pubDate>Fri, 27 Dec 2013 23:14:44 +0000</pubDate>
+      
+      <guid>/posts/3-months-of-meterpreter/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://www.metasploit.com/revamp/images/metasploit-logo.png&#34; style=&#34;float:right;margin-left:5px;margin-bottom:5px;&#34;/&gt;
+In August this year I was fortunate enough to land a three-month contract working with the awesome people at &lt;a href=&#34;http://www.rapid7.com/&#34;&gt;Rapid7&lt;/a&gt;. The job: &lt;em&gt;make &lt;a href=&#34;https://github.com/rapid7/meterpreter&#34;&gt;Meterpreter&lt;/a&gt; more awesome on Windows&lt;/em&gt;. That&amp;rsquo;s right &lt;em&gt;more&lt;/em&gt; awesome than it already is. Tough gig, but what an amazing opportunity!&lt;/p&gt;
+
+&lt;p&gt;Those three months have already come and gone, and what a ride it has been. In this post I would like to detail some of the work that has gone into Meterpreter, and Metasploit too, with a goal of helping others understand what it does and how it works. Ultimately, I&amp;rsquo;d love to start seeing some contributions from the community now that it&amp;rsquo;s &lt;em&gt;substantially&lt;/em&gt; easier to build.&lt;/p&gt;
+
+&lt;p&gt;So, in a semi-chronological-semi-ad-hoc order, here&amp;rsquo;s how Meterpreter has evolved.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OSCP FAQ</title>
+      <link>/posts/oscp-faq/</link>
+      <pubDate>Thu, 12 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/oscp-faq/</guid>
+      <description>&lt;p&gt;Since publishing the article that detailed my experiences with the &lt;a href=&#34;http://www.offensive-security.com/information-security-training/penetration-testing-with-backtrack/&#34;&gt;PWB&lt;/a&gt; labs and the &lt;a href=&#34;http://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional/&#34;&gt;OSCP&lt;/a&gt; exam, I have received scores of emails from potential and current students searching for more information and (quite often) hints. While I do my best to answer most of them, it&amp;rsquo;s close to impossible to get to them all as my email debt is already way too high.&lt;/p&gt;
+
+&lt;p&gt;From this point on I have decided not to respond to questions directly via email. This post will stand instead of those emails as a point of reference for common OSCP-related questions. As more questions come in I will update this post so that all future readers can benfit from the answers without me having to repost them.&lt;/p&gt;
+
+&lt;p&gt;Believe it or not, every single one of these questions has appeared in my inbox.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>64bit Pointer Truncation in Meterpreter</title>
+      <link>/posts/64bit-pointer-truncation-in-meterpreter/</link>
+      <pubDate>Sat, 14 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/64bit-pointer-truncation-in-meterpreter/</guid>
+      <description>&lt;p&gt;If you haven&amp;rsquo;t ever heard of &lt;a href=&#34;https://github.com/rapid7/meterpreter&#34; title=&#34;Native Meterpreter&#34;&gt;Meterpreter&lt;/a&gt; before, you might want to go and take a look at it before reading this post to help give some context. In short, Meterpreter is an amazing library that is part of the &lt;a href=&#34;http://www.metasploit.com/&#34; title=&#34;Metasploit Framework&#34;&gt;Metasploit Framework&lt;/a&gt; and can be used to give you tremendous power and control over target machines during a &lt;a href=&#34;http://en.wikipedia.org/wiki/Penetration_test&#34; title=&#34;Penetration Testing&#34;&gt;penetration test&lt;/a&gt;. Anyone and everyone in the security game is most likely familiar with both Metasploit and Meterpreter, at the very least, if not closely intimate with them. The toolset is fantastic, and is &lt;a href=&#34;https://github.com/rapid7/metasploit-framework/&#34; title=&#34;Metasploit Framework Source&#34;&gt;open source&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m currently in the very fortunate position of &lt;a href=&#34;https://community.rapid7.com/community/metasploit/blog/2013/09/05/weekly-update&#34; title=&#34;Weekly Update: Meterpreter Updates, VMWare, the OSX spycam, Retabbing, and more!&#34;&gt;working with the crew&lt;/a&gt; from &lt;a href=&#34;http://www.rapid7.com/&#34; title=&#34;Rapid 7&#34;&gt;Rapid7&lt;/a&gt; to help improve Meterpreter, particularly on the Windows (both 32 and 64 bit). I have a good list of things to work through while I&amp;rsquo;m on board including making it easier to build for potential contributors, and to fix some outstanding issues that the R7 crew haven&amp;rsquo;t had the bandwidth to fix.  These people are super-smart, and super-nice and I&amp;rsquo;m honoured that I&amp;rsquo;ve been selected to work alongside them.&lt;/p&gt;
+
+&lt;p&gt;The purpose of this post is to document the process and resolution of a bug that I have helped resolve since joining. I also aim to lift the lid on Meterpreter a little and help expose how some bits of it work. I hope you enjoy.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OSCP and Me</title>
+      <link>/posts/oscp-and-me/</link>
+      <pubDate>Fri, 16 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/oscp-and-me/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;http://www.offensive-security.com/information-security-training/penetration-testing-with-backtrack/&#34; title=&#34;Penetration Testing with BackTrack&#34;&gt;PWB&lt;/a&gt; course by &lt;a href=&#34;http://www.offensive-security.com/&#34; title=&#34;Offensive Security&#34;&gt;Offensive Security&lt;/a&gt; is absolutely awesome, as is the exam which earns you the prized &lt;a href=&#34;http://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional/&#34; title=&#34;Offensive Security Certified Professional&#34;&gt;OSCP&lt;/a&gt; certification. I took this course and exam recently; I loved it and I nailed it! I am now equipped with a much better understanding of the security world and am in a better position to help businesses improve the security of their application architecture and infrastructure.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;/contact&#34; title=&#34;Contact OJ&#34;&gt;Hit me up&lt;/a&gt; and let&amp;rsquo;s talk about how I can help you make your applications more secure.&lt;/p&gt;
+
+&lt;p&gt;What follows is the full story of my path through PWB and OSCP. Enjoy.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Levels 7 and 7_alt - IO at STS</title>
+      <link>/posts/levels-7-and-7_alt-io-at-sts/</link>
+      <pubDate>Thu, 15 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/levels-7-and-7_alt-io-at-sts/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been documenting my experiences with &lt;a href=&#34;http://io.smashthestack.org:84/&#34; title=&#34;IO @ Smash The Stack&#34;&gt;IO&lt;/a&gt; at &lt;a href=&#34;http://smashthestack.org/&#34; title=&#34;Smash The Stack&#34;&gt;SmashTheStack&lt;/a&gt; for a while, but decided not to post them publicly for a few reasons. However level 7 (in particular the &lt;code&gt;alt&lt;/code&gt; level) was the first that I thought worthy of posting. This post includes how I broke both applications to make it through to the level 8. If you haven&amp;rsquo;t had a play on the &lt;a href=&#34;http://smashthestack.org/&#34; title=&#34;Smash The Stack&#34;&gt;SmashTheStack&lt;/a&gt; wargames yet, I really do recommend it. They&amp;rsquo;re great fun.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Irssi and SASL on OSX</title>
+      <link>/posts/irssi-and-sasl-on-osx/</link>
+      <pubDate>Sun, 03 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/irssi-and-sasl-on-osx/</guid>
+      <description>Given my renewed focus on security I&amp;rsquo;ve been looking to lock down much of my communications so that I feel more secure online. One of the things that I use quite a lot to connect with people who know WTF they&amp;rsquo;re talking about is IRC. #freenode is my network of choice as it has a bunch of interesting places with fairly active communities. irssi is my current client of choice for a few reasons.</description>
+    </item>
+    
+    <item>
+      <title>XSS Flaws via MVC Model Binding and Request.QueryString Inconsistencies</title>
+      <link>/posts/xss-flaws-via-mvc-model-binding-and-request.querystring-inconsistencies/</link>
+      <pubDate>Thu, 29 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/xss-flaws-via-mvc-model-binding-and-request.querystring-inconsistencies/</guid>
+      <description>&lt;p&gt;Forgive the title of the post, it was hard coming up with something succinct that captured the purpose of the post. This was inspired by a recent experience with a client who had this exact problem with one of their production systems.&lt;/p&gt;
+
+&lt;h2 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h2&gt;
+
+&lt;p&gt;Never use &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ms524784(v=vs.90).aspx&#34;&gt;Request.QueryString&lt;/a&gt; to access parameters in your views, even when you&amp;rsquo;re sure your actions have validated them. You may open your application up to &lt;a href=&#34;http://en.wikipedia.org/wiki/Cross-site_scripting&#34;&gt;XSS&lt;/a&gt; attacks. Always, &lt;em&gt;always&lt;/em&gt; use data that is passed to your views via the &lt;code&gt;Model&lt;/code&gt; or the &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/system.web.mvc.viewpage.viewdata(v=vs.108).aspx&#34;&gt;ViewData&lt;/a&gt; dictionary. Under no circumstances should you trust data coming in from the web, that includes query string parameters.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Websites are Hard to Build</title>
+      <link>/posts/websites-are-hard-to-build/</link>
+      <pubDate>Wed, 26 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/websites-are-hard-to-build/</guid>
+      <description>&lt;p&gt;{% img right /uploads/2008/11/elope-harlequin-jester.jpg &amp;lsquo;Uninformed client&amp;rsquo; %}
+&amp;gt; &amp;ldquo;It&amp;rsquo;s just a small site, how hard can it be?&amp;rdquo;
+&amp;gt;
+&amp;gt; &amp;ldquo;I thought you could do it for me as a favour. It&amp;rsquo;s not a complicated site.&amp;rdquo;
+&amp;gt;
+&amp;gt; &amp;ldquo;This would take me an afternoon, but I don&amp;rsquo;t have time, can you do it for me?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Have you ever heard these comments before? Have you heard ones that are similar? I&amp;rsquo;ve been hearing them a lot in the last few weeks and it&amp;rsquo;s starting to get to me.&lt;/p&gt;
+
+&lt;p&gt;I have just had a chat with a mate who is also suffering this pain, and that conversation is what inspired me to write this, the first random rant in a while.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OpenDNS is Wicked</title>
+      <link>/posts/opendns-is-wicked/</link>
+      <pubDate>Mon, 18 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/opendns-is-wicked/</guid>
+      <description>&lt;p&gt;&lt;a title=&#34;Use OpenDNS to make your Internet faster, safer, and smarter.&#34; href=&#34;http://www.opendns.com/share/&#34;&gt;&lt;img src=&#34;http://images.opendns.com/buttons/use_opendns_155x52.gif&#34; width=&#34;155&#34; height=&#34;52&#34; style=&#34;border:0; float:right; margin-left:5px;margin-bottom;5px&#34; alt=&#34;Use OpenDNS&#34; /&gt;&lt;/a&gt;Over the last couple of weeks the DNS timeouts and lags I&amp;rsquo;ve been experiencing at home have made the web experience a little dire. My &lt;a href=&#34;http://internode.on.net/&#34; title=&#34;Internode&#34;&gt;ISP&lt;/a&gt; is actually pretty darned good, but for some reason they seem to have glitches with their DNS servers every now and then.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>.NET-fu: Signing an Unsigned Assembly (without Delay Signing)</title>
+      <link>/posts/.net-fu-signing-an-unsigned-assembly-without-delay-signing/</link>
+      <pubDate>Wed, 09 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/.net-fu-signing-an-unsigned-assembly-without-delay-signing/</guid>
+      <description>&lt;p&gt;This article is also available in &lt;a href=&#34;http://www.otherbit.com/modules/blog/BlogContent.aspx?ID=174&#34; title=&#34;.NET-FU : come trasformare in SIGNED un assembly UNSIGNED (senza ricorrere al DELAY SIGNING)&#34;&gt;Italian&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The code-base that I am currently working with consists of a large set of binaries that are all &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/xc31ft41.aspx&#34; title=&#34;Sign an Assembly with a Strong Name&#34;&gt;signed&lt;/a&gt;. The savvy .NET devs out there will know that any assembly that&amp;rsquo;s used/referenced by a signed assembly must &lt;em&gt;also&lt;/em&gt; be signed.&lt;/p&gt;
+
+&lt;p&gt;This is an issue when dealing with third-party libraries that are not signed. Sometimes you&amp;rsquo;ll be lucky enough to be dealing with vendor that is happy to provide a set of signed assemblies, other times you won&amp;rsquo;t. If your scenario fits the latter (as a recent one did for my colleagues and I), you need to sign the assemblies yourself. Here&amp;rsquo;s how.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Microsoft want to Annoy you, Cancel or Allow?</title>
+      <link>/posts/microsoft-want-to-annoy-you-cancel-or-allow/</link>
+      <pubDate>Sat, 12 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/microsoft-want-to-annoy-you-cancel-or-allow/</guid>
+      <description>&lt;p&gt;Before I even started using Vista, I hated &lt;a href=&#34;http://technet2.microsoft.com/WindowsVista/en/library/0d75f774-8514-4c9e-ac08-4c21f5c6c2d91033.mspx&#34; title=&#34;User Access Control&#34;&gt;UAC&lt;/a&gt;. I read about it all over the place, and laughed at the stupidity involved in asking users to constantly &amp;ldquo;cancel or allow&amp;rdquo; every action they wanted to take. As soon as I was forced to use Vista for work (both on my work laptop and on site with the client) I turned off UAC on both installations.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to be an Idiot</title>
+      <link>/posts/how-to-be-an-idiot/</link>
+      <pubDate>Mon, 17 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/how-to-be-an-idiot/</guid>
+      <description>I&amp;rsquo;ve just done something stupid. I attempted to install a new plugin for Wordpress without verifying the contents of the package. The result? I lost most of the file system under this website. From what I can see in the script, it also attempted to various other nasty things such as deleting files from outside the web root, and emailing certain files to other websites. It&amp;rsquo;s a good job I have file permissions set up so that the web server can&amp;rsquo;t access the file system outside of its root.</description>
+    </item>
+    
+    <item>
+      <title>Biosham &amp;#8482;</title>
+      <link>/posts/biosham-#8482/</link>
+      <pubDate>Thu, 23 Aug 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/biosham-#8482/</guid>
+      <description>&lt;p&gt;I can fully understand the desire a developer has to protect their creation from being copied illegally. I can understand why some steps would be taken to mitigate the risk of losing money due to piracy. What I can&amp;rsquo;t understand is why some companies go &lt;em&gt;so far&lt;/em&gt; with their anti-piracy measures that it starts to have an impact on the honourable, paying customers.&lt;/p&gt;
+
+&lt;p&gt;I have &lt;a href=&#34;/posts/microsoft-vista-licence-restrictions/&#34; title=&#34;Microsoft Vista License Restrictions&#34;&gt;bitched&lt;/a&gt; in the &lt;a href=&#34;/posts/office-registration-and-activation/&#34; title=&#34;Office Registratoin and Activation&#34;&gt;past&lt;/a&gt; about how activation is a pain in the neck. But that example is nothing like what &lt;a href=&#34;http://www.2kgames.com/&#34; title=&#34;2K Games&#34;&gt;2K Games&lt;/a&gt; have recently inflicted on the buyers of their latest creation, &lt;a href=&#34;http://www.2kgames.com/bioshock/&#34; title=&#34;Bioshock&#34;&gt;Bioshock&lt;/a&gt;. Rather than throw a few links to a bzillion blog and forum posts that have covered it already, let me just give you the short version:
+&lt;ol&gt;&lt;li&gt;Bioshock comes with &lt;a href=&#34;http://www.securom.com/&#34; title=&#34;SecuROM&#34;&gt;SecuROM&lt;/a&gt;.&lt;/li&gt;&lt;li&gt;It requires online activation before it can be played.&lt;/li&gt;&lt;li&gt;It can only be activated &lt;strong&gt;twice&lt;/strong&gt;.&lt;/li&gt;&lt;/ol&gt;On the surface this might not sound so bad, but when you think about it a little deeper it becomes obvious why this is such a pain in the arse.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Digg is Being Used Against Itself</title>
+      <link>/posts/digg-is-being-used-against-itself/</link>
+      <pubDate>Wed, 02 May 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/digg-is-being-used-against-itself/</guid>
+      <description>Over the last day or so, stacks of people have been hammering digg as a revolt against their recent actions. For those of you who don&amp;rsquo;t know, HD-DVD encryption was cracked recently and the master key which allows all movies to be ripped has been released across the web. Digg, in their infinite wisdom, decided to kill off the original blog post (and apparently banned one or two users? - unconfirmed), resulting in an avalanche of posts preaching &amp;ldquo;free speach&amp;rdquo; and &amp;ldquo;fuck you Digg&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>DVD Cracker Nails Apple&#39;s iPod Code</title>
+      <link>/posts/dvd-cracker-nails-apples-ipod-code/</link>
+      <pubDate>Wed, 25 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/dvd-cracker-nails-apples-ipod-code/</guid>
+      <description>You gotta hand it to this guy, he says that he &amp;ldquo;doesn&amp;rsquo;t like closed systems&amp;rdquo;, which is pretty darned obvious :) The man, Jon Lech Johansen, who years ago cracked the DVD encryption known as CSS, and released (with two other unknowns) the software that could be used to decrypt DVDs (called DeCSS), has taken his code-breaking career to a new level - he&amp;rsquo;s nailed Apple iPod&amp;rsquo;s ecosystem (or so he claims) by breaking their FairPlay DRM software.</description>
+    </item>
+    
+    <item>
+      <title>Google Code Search</title>
+      <link>/posts/google-code-search/</link>
+      <pubDate>Mon, 16 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/google-code-search/</guid>
+      <description>The Search Kings have come up with another rippin&amp;rsquo; tool which allows you to crawl through source code for examples and whatnot. The Google Code Search is quite a cool utility - but it doesn&amp;rsquo;t come without it&amp;rsquo;s issues. I found an interesting link worthy of reading which talks about a few amusing results returned from this facility, which I reckon lots of people should check out and be aware of.</description>
+    </item>
+    
+    <item>
+      <title>Learning Code Security</title>
+      <link>/posts/learning-code-security/</link>
+      <pubDate>Fri, 13 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/learning-code-security/</guid>
+      <description>As a regular read of Scott Gu&amp;rsquo;s blog (see blogroll) I often find nuggets of information that are handy for the work that I do, but I also often end up with a few questions :)
+The latest one that fired up a bit of thought was his post on guarding against SQL injection attacks. The information posted very handy, and is something that I would assume most web developers already know, but it made me wonder how many devs out there are actually aware of these kinds of issues while they&amp;rsquo;re building their applications.</description>
+    </item>
+    
+  </channel>
+</rss>

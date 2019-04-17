@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software Development on OJ&#39;s Perspective</title>
+    <link>/tags/software-development/</link>
+    <description>Recent content in Software Development on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Fri, 11 Dec 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/software-development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>&#39;It&#39;s OK to Fail</title>
+      <link>/posts/its-ok-to-fail/</link>
+      <pubDate>Fri, 11 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/its-ok-to-fail/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2009/12/EpicFail02.jpg&#34; rel=&#34;lightbox[fail]&#34; title=&#34;Epic Fail&#34;&gt;&lt;img src=&#34;/uploads/2009/12/EpicFail02.jpg&#34; alt=&#34;Epic Fail&#34; width=&#34;160&#34; style=&#34;float:left;padding-bottom:5px;padding-right:5px;&#34; /&gt;&lt;/a&gt;&lt;em&gt;Yes. You read that right. It&amp;rsquo;s OK to fail. Yes, I am talking to you. You&amp;hellip; that guy who is part of every team. The one who seems to feel the need to be right about everything. The one who thinks that everything new has already been done 15 years prior. The one who believes that every project they have participated in has been a profound success, and that a project-level failure (which includes missing deadlines or blowing the budget) is something they have never experienced. Failure is not only OK, it&amp;rsquo;s something that you &lt;strong&gt;must&lt;/strong&gt; experience somewhere along the way so you know when you&amp;rsquo;ve succeeded.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Websites are Hard to Build</title>
+      <link>/posts/websites-are-hard-to-build/</link>
+      <pubDate>Wed, 26 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/websites-are-hard-to-build/</guid>
+      <description>&lt;p&gt;{% img right /uploads/2008/11/elope-harlequin-jester.jpg &amp;lsquo;Uninformed client&amp;rsquo; %}
+&amp;gt; &amp;ldquo;It&amp;rsquo;s just a small site, how hard can it be?&amp;rdquo;
+&amp;gt;
+&amp;gt; &amp;ldquo;I thought you could do it for me as a favour. It&amp;rsquo;s not a complicated site.&amp;rdquo;
+&amp;gt;
+&amp;gt; &amp;ldquo;This would take me an afternoon, but I don&amp;rsquo;t have time, can you do it for me?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Have you ever heard these comments before? Have you heard ones that are similar? I&amp;rsquo;ve been hearing them a lot in the last few weeks and it&amp;rsquo;s starting to get to me.&lt;/p&gt;
+
+&lt;p&gt;I have just had a chat with a mate who is also suffering this pain, and that conversation is what inspired me to write this, the first random rant in a while.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

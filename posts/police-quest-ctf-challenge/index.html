@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Police Quest CTF Challenge - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/police-quest-ctf-challenge/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Police Quest CTF Challenge </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Mon Nov 26, 2018</span>
+
+	  
+
+<p><img style="float: left; margin-right: 10px; margin-bottom: 10px" src="/uploads/2018/11/pq.png" width="300px"/>
+Earlier this month, I donated a CTF challenge to the legendary bunch of folks that ran the <a href="https://www.kiwicon.org">Kiwicon</a> CTF in Wellington. It&rsquo;s a bit of a tradition for me to pass on at least one challenge, and I felt it was worth keeping that tradition going this year.</p>
+
+<p>The challenge was attempted by a few people during the conference, however I don&rsquo;t believe it was successfully owned. As a result, I wanted to release this to the general public for funzies.</p>
+
+<p>In short, this thing is a Linux binary exploitation challenge. It&rsquo;s a 64-bit binary, and has a few interesting quirks that you need to get around. My aims for this challenge were:</p>
+
+<ol>
+<li>Create something that was interesting!</li>
+<li>Build an application that was &ldquo;fun&rdquo; to interact with that happened to have some security concerns, rather than a shell of an application with a bug in it.</li>
+<li>Force people to work through a series of issues, rather than getting a flag due to a single bug.</li>
+<li>Make good use of most of the relevant security protections available today.</li>
+<li>Try to make it reasonably realistic.</li>
+<li>Try to make it <em>hard</em> without making it stupid. Many challenges I&rsquo;ve seen in the past tend to be hard for the sake of it and result in not giving any ideas as to how things can be solved. I hope that the method required to solve this shows itself as you progress, while making you work for each and every step.</li>
+<li>Create something that had both dynamic and static analysis elements.</li>
+<li>Create a learning experience for people.</li>
+</ol>
+
+<p>Based on the feedback so far from my playtesters I think I nailed a good chunk of the brief. I look forward to hearing what you have to say about it.</p>
+
+<p>So the result is something that I called <strong>Police Quest</strong>, in the spirit of the old school Seirra games. Why? Well we had a theme for the CTF that we were building last year, and this fit within the theme. Plus I loved those games, so why not. It&rsquo;s a mini-mud that may keep you entertained for a few hours.</p>
+
+<p>I also hope that this nerd-snipes lots of people who end up hating me.</p>
+
+<h2 id="where-to-get-it">Where to get it</h2>
+
+<p>Full details of the challenge can be found in the <a href="https://github.com/OJ/police-quest">Github Repo</a>. The easiest thing to do is clone the repo, as this gives you the binary to work on, and a Docker container that has the challenge running in it. You can use the <code>Makefile</code> to spin the container up.</p>
+
+<h2 id="with-thanks-to">With thanks to &hellip;</h2>
+
+<p>As always there are a bunch of people behind the scenes who helped get this thing on the road. In no particular order:</p>
+
+<ul>
+<li>Thank you <a href="https://twitter.com/justinsteven">Justin</a> and <a href="https://twitter.com/_smashery_">Smash</a> for being my play-testers and making sure that the thing was understandable, and doable.</li>
+<li>Thank you <a href="https://twitter.com/ausjock">Shaun</a>, <a href="https://twitter.com/rickoates">Rick</a>, <a href="https://twitter.com/_switch_">Silas</a> and <a href="https://twitter.com/0x42424242">Ryan</a> for offering opinions and feedback along the way and helping me polish the story.</li>
+<li>Thank you to the Kiwicon crew for letting me include this challenge in their CTF.</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>If you decide to give this a go, please feel free to create a video, blog post, or whatever else takes your fancy and publish it somewhere that people can get to. If you do, then let me know, as I&rsquo;d love to see how you solve it. I&rsquo;ll release the source code to the binary to each person that solves it themselves, if they&rsquo;re interested.</p>
+
+<p>Feedback as always is welcome. Thanks again, and enjoy!</p>
+
+<p>OJ</p>
+
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/security">Security</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/ctf">CTF</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

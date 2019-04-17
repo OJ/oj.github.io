@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Irssi and SASL on OSX - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/irssi-and-sasl-on-osx/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Irssi and SASL on OSX </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Sun Feb 3, 2013</span>
+
+	  <p>Given my renewed focus on security I&rsquo;ve been looking to lock down much of my communications so that I <em>feel</em> more secure online. One of the things that I use quite a lot to connect with people who know WTF they&rsquo;re talking about is IRC. <a href="https://freenode.net/" title="Freenode IRC network">#freenode</a> is my network of choice as it has a bunch of interesting places with fairly active communities. <a href="http://www.irssi.org/" title="irssi IRC client">irssi</a> is my current client of choice for a few reasons.</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Simple_Authentication_and_Security_Layer" title="SASL">SASL</a>, among other things, is one thing that can be enabled to secure your communication on IRC. There&rsquo;s quite a bit of information out there already about how to <a href="https://freenode.net/sasl/sasl-irssi.shtml" title="Enabling SASL in irssi on Freenode">enable SASL for irssi on Freenode</a>. These instructions worked out of the box for me on Linux, but not on Mac OSX. After downloading <code>cap_sasl.pl</code> and putting it in <code>~/.irssi/scripts/autorun</code> and installing the required Perl modules I went through the steps to get SASL configured. When I attempted to enable it as per the instructions using the command <code>/sasl set network TheColonial &lt;password&gt; DH-BLOWFISH</code> I had the following error:</p>
+
+<blockquote>
+<p>Can&rsquo;t locate object method &ldquo;send_raw_now&rdquo; via package &ldquo;Irssi::Irc::Server&rdquo;</p>
+</blockquote>
+
+<p>This took a bit of Googling to nail. It turns out that, for some reason, on Mac OSX <code>irssi</code> actually requires an extra package to be included in the script. So open <code>cap_sasl.pl</code> and look for this (it&rsquo;s right at the top):</p>
+
+<pre><code>use strict;
+use Irssi;
+</code></pre>
+
+<p>Immediately below this, add the following:</p>
+
+<pre><code>use Irssi::Irc;
+</code></pre>
+
+<p>The script should now run fine and <code>irssi</code> should stop complaining.</p>
+
+<p>This might seem obvious to some, but it wasn&rsquo;t to me! From what I can tell other people around the traps have had the same problem so I thought I&rsquo;d post this in the hope that it helps others.</p>
+
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/mac-os">Mac OS</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/security">Security</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/tips/tricks">Tips/Tricks</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Privacy on OJ&#39;s Perspective</title>
+    <link>/categories/privacy/</link>
+    <description>Recent content in Privacy on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Thu, 23 Aug 2007 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/privacy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Biosham &amp;#8482;</title>
+      <link>/posts/biosham-#8482/</link>
+      <pubDate>Thu, 23 Aug 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/biosham-#8482/</guid>
+      <description>&lt;p&gt;I can fully understand the desire a developer has to protect their creation from being copied illegally. I can understand why some steps would be taken to mitigate the risk of losing money due to piracy. What I can&amp;rsquo;t understand is why some companies go &lt;em&gt;so far&lt;/em&gt; with their anti-piracy measures that it starts to have an impact on the honourable, paying customers.&lt;/p&gt;
+
+&lt;p&gt;I have &lt;a href=&#34;/posts/microsoft-vista-licence-restrictions/&#34; title=&#34;Microsoft Vista License Restrictions&#34;&gt;bitched&lt;/a&gt; in the &lt;a href=&#34;/posts/office-registration-and-activation/&#34; title=&#34;Office Registratoin and Activation&#34;&gt;past&lt;/a&gt; about how activation is a pain in the neck. But that example is nothing like what &lt;a href=&#34;http://www.2kgames.com/&#34; title=&#34;2K Games&#34;&gt;2K Games&lt;/a&gt; have recently inflicted on the buyers of their latest creation, &lt;a href=&#34;http://www.2kgames.com/bioshock/&#34; title=&#34;Bioshock&#34;&gt;Bioshock&lt;/a&gt;. Rather than throw a few links to a bzillion blog and forum posts that have covered it already, let me just give you the short version:
+&lt;ol&gt;&lt;li&gt;Bioshock comes with &lt;a href=&#34;http://www.securom.com/&#34; title=&#34;SecuROM&#34;&gt;SecuROM&lt;/a&gt;.&lt;/li&gt;&lt;li&gt;It requires online activation before it can be played.&lt;/li&gt;&lt;li&gt;It can only be activated &lt;strong&gt;twice&lt;/strong&gt;.&lt;/li&gt;&lt;/ol&gt;On the surface this might not sound so bad, but when you think about it a little deeper it becomes obvious why this is such a pain in the arse.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Facebook Privacy</title>
+      <link>/posts/facebook-privacy/</link>
+      <pubDate>Thu, 17 May 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/facebook-privacy/</guid>
+      <description>A good friend of mine by the name of  passed on this little nugget of information through his Facebook profile. It reads:Apparently Facebook has started letting other websites access user information (surprise, surprise!) to third parties. They call it the &amp;ldquo;Facebook Development Platform.&amp;rdquo; To restrict use of your information, do the following:
+Click &amp;ldquo;Privacy&amp;rdquo; on top right.Under the &amp;ldquo;Facebook Platform&amp;rdquo; section click &amp;ldquo;Edit Settings&amp;rdquo;.Scroll down and UNCHECK ALL of the items under Facebook Platform.</description>
+    </item>
+    
+    <item>
+      <title>A pox on your DRM</title>
+      <link>/posts/a-pox-on-your-drm/</link>
+      <pubDate>Mon, 25 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/a-pox-on-your-drm/</guid>
+      <description>I can no longer resist the temptation to talk about DRM (at least in part) after the issues that I faced over the weekend. I know I&amp;rsquo;m not the only one that has experienced the pain that I&amp;rsquo;m about to describe, and I&amp;rsquo;m pretty pissed off about it.
+I&amp;rsquo;m going to be getting married pretty soon, and as a result my fiance and I are both trying to finalise arrangements for the wedding.</description>
+    </item>
+    
+  </channel>
+</rss>

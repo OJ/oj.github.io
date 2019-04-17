@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>taking the piss on OJ&#39;s Perspective</title>
+    <link>/tags/taking-the-piss/</link>
+    <description>Recent content in taking the piss on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Thu, 01 Jan 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/taking-the-piss/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Websites are Hard to Build - A Case in Point</title>
+      <link>/posts/websites-are-hard-to-build-a-case-in-point/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/websites-are-hard-to-build-a-case-in-point/</guid>
+      <description>&lt;p&gt;A short time ago I &lt;a href=&#34;/posts/websites-are-hard-to-build/&#34; title=&#34;Websites are Hard to Build&#34;&gt;posted some thoughts&lt;/a&gt; on issues faced when building websites that most people aren&amp;rsquo;t aware of when they decide to have one built. I posted from the perspective of someone who has, on many occasions, been asked to build a site for someone who really doesn&amp;rsquo;t have a clue about what is involved. More importantly, they don&amp;rsquo;t &lt;em&gt;want&lt;/em&gt; to know.&lt;/p&gt;
+
+&lt;p&gt;There are people out there who don&amp;rsquo;t know about the issues faced, but are still in need of a site to fulfil their needs. Should they learn about these issues themselves? Should they put their faith in a developer/designer and let them do their job and just send them a bill at the end? A mixture of the two?&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

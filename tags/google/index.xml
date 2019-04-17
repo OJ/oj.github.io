@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google on OJ&#39;s Perspective</title>
+    <link>/tags/google/</link>
+    <description>Recent content in Google on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Thu, 07 Aug 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/google/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Stop Cutting your Feeds Short</title>
+      <link>/posts/stop-cutting-your-feeds-short/</link>
+      <pubDate>Thu, 07 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/stop-cutting-your-feeds-short/</guid>
+      <description>&lt;p&gt;Despite the fact the Internet is accessible from nearly everywhere, there are still times when you are forced to work in a disconnected environment. There are also times where you &lt;em&gt;want&lt;/em&gt; to work in a disconnected environment (probably to avoid distractions from &lt;a href=&#34;http://en.wikipedia.org/wiki/Instant_messaging&#34; title=&#34;Instant Messaging&#34;&gt;IM&lt;/a&gt;, &lt;a href=&#34;http://twitter.com/&#34; title=&#34;Twitter&#34;&gt;Twitter&lt;/a&gt;, etc).&lt;/p&gt;
+
+&lt;p&gt;So why is it that we still don&amp;rsquo;t seem to do a good job of catering for these cases? Offline capabilities are currently few and far between. Sure, it can be hard to add offline functionality to an application, depending on what the application does, but sometimes there&amp;rsquo;s really no excuse.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>An Interesting Little Problem</title>
+      <link>/posts/an-interesting-little-problem/</link>
+      <pubDate>Sat, 14 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/an-interesting-little-problem/</guid>
+      <description>&lt;p&gt;This post was inspired by a recent interview question that was posted over at &lt;a href=&#34;http://www.fsharp.it/posts/google-interview-question-product-of-other-elements-in-an-array-in-on/&#34; title=&#34;Fsharp.it&#34;&gt;fsharp.it&lt;/a&gt;. It&amp;rsquo;s one of those neat little questions which looks really simple on the surface but is quite tricky.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Preview Feeds in Google Reader</title>
+      <link>/posts/preview-feeds-in-google-reader/</link>
+      <pubDate>Sun, 25 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/preview-feeds-in-google-reader/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s another reason why I find &lt;a href=&#34;http://reader.google.com/&#34; title=&#34;Google Reader&#34;&gt;Google Reader&lt;/a&gt; a excellent choice for reading your RSS feeds.&lt;/p&gt;
+
+&lt;p&gt;Most of us have a collection of feeds that contain similar subject matter. As a geek, &lt;em&gt;most&lt;/em&gt; of my feeds are geek-related. As a geek who likes to stay up to speed, I also like to know what other blogs and feeds are good to read.&lt;/p&gt;
+
+&lt;p&gt;This is where Google Reader&amp;rsquo;s &lt;strong&gt;Top Recommendations&lt;/strong&gt; come in. Google do a great job of throwing other feeds in your face that you might like to read based on the kind of stuff that you&amp;rsquo;ve already subscribed to.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

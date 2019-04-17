@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Introducing CorrugatedIron - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/introducing-corrugatediron/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Introducing CorrugatedIron </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Mon Jul 25, 2011</span>
+
+	  <h2 id="it-s-alive">It&rsquo;s Alive!</h2>
+
+<p>It is with great pride that I introduce my first ever Open Source product release: <a href="http://corrugatediron.org/" title="CorrugatedIron">CorrugatedIron</a>! A feature-rich .NET client for the <a href="http://riak.basho.com/" title="Riak">Riak</a> Key-Value store. Together with my partner-in-crime <a href="http://facility9.com/" title="Jeremiah Peschka">Jeremiah</a>, we&rsquo;ve put together a driver which exposes a great deal of Riak&rsquo;s functionality. CorrugatedIron is at <a href="https://github.com/DistributedNonsense/CorrugatedIron/tree/v0.1.0">v0.1.0</a>, and while it doesn&rsquo;t support every feature the Riak has to offer, it covers most, if not all, of the most common features that are required to effectively communicate with the system.</p>
+
+<h2 id="features">Features</h2>
+
+<p>I would love to cover off all of the features here, but we&rsquo;ve already done it on the <a href="http://corrugatediron.org/" title="CorrugatedIron">official site</a>, so head over there to take a look at the feature list, documentation and sample projects.</p>
+
+<h2 id="the-what-where-why-and-how">The What, Where, Why and How</h2>
+
+<h3 id="how-it-all-began">How it all began</h3>
+
+<p>I don&rsquo;t remember the exact date that I was first exposed to <a href="http://riak.basho.com/" title="Riak">Riak</a>, <a href="http://basho.com/" title="Basho">Basho</a>&rsquo;s bomb-proof database, but I do remember being very impressed. It was around the time I really started to get an interest in <a href="http://www.erlang.org/" title="Erlang">Erlang</a> programming, so it probably isn&rsquo;t a surprise, given that Riak is written in Erlang, that it piqued my interest. I have a bit of a fascination with systems that don&rsquo;t stop, and Riak fits firmly in that category.</p>
+
+<p>So after playing with it for a while and marvelling at the sturdiness, the ease of set-up (even with clustering), the clever architecture and the make-up of the system, I realised that Riak was actually pretty special. Almost in a class of it&rsquo;s own. Its properties really appealed to me, and I felt the need to do something with.</p>
+
+<p>Back then, I wasn&rsquo;t even working with Erlang professionally. The clients that I had at the time were pure .NET shops and didn&rsquo;t feel the need to consider anything other than the &ldquo;tried and true&rdquo; <a href="http://en.wikipedia.org/wiki/Relational_database_management_system" title="Relational Databases">RDBMS</a> (which in Brisbane seems to be mainly MS SQL, particularly in the .NET circles). Given that the likelihood of my working with Riak in a professional sense in the short term was fairly slim, I wanted to look to other areas where I could work with it and contribute to it at the same time. Needless to say, my Erlang-fu wasn&rsquo;t (and still isn&rsquo;t) up to scratch, so contributing to Riak itself wasn&rsquo;t yet something I thought I could take on. I needed something else.</p>
+
+<p>Late last year, I was starting to look for projects that I could build and release as <a href="http://www.opensource.org/" title="Open Source">Open Source</a>. I have, on my occasions, contributed to other Open Source projects but I hadn&rsquo;t worked on one of my own and released it into the wild. This is something that I really wanted to do and so was looking for something to build.</p>
+
+<p>During my travels in the Riak circles I had noticed that there were quite a few clients available which allowed people to talk to Riak from various languages. Basho themselves <a href="http://wiki.basho.com/Client-Libraries.html" title="Client libraries">support</a> ones for Erlang, Java, PHP, Python and Ruby, and there are many more listed on the <a href="http://wiki.basho.com/Community-Developed-Libraries-and-Projects.html#Client-Libraries-and-Frameworks" title="Client libraries">Riak community clients page</a> which cover languages like C, Clojure, Go, Node.js, Perl, Scala and more.</p>
+
+<p>Amongst this libraries there were two listed for .NET. Both of them seemed to have a small set of functionality, they both weren&rsquo;t finished and at the time they both had not been touched for quite a while. In short, for .NET people, there really wasn&rsquo;t a viable option for Riak connectivity. What a travesty!</p>
+
+<p>I remember sending an email to <a href="http://twitter.com/pharkmillups" title="Mark Phillips">Mark</a> telling him that I was pondering the thought of building this library to make sure that there wasn&rsquo;t already someone else out there making a go of it. He was aware of the two existing solutions but didn&rsquo;t know what the plans were with them, and he wasn&rsquo;t aware of any others at the time. This was all the validation that I needed.</p>
+
+<p>So, in late 2010, I decided that the first project I wanted to build and release to the world as an Open Source application was a .NET client for Riak, one that worked on both the <a href="http://en.wikipedia.org/wiki/Common_Language_Runtime" title="Microsoft CLR">CLR</a> and on <a href="http://www.mono-project.com/" title="Mono">Mono</a>. This is where CorrugatedIron was conceived.</p>
+
+<h3 id="so-why-the-long-wait">So why the long wait?</h3>
+
+<p>If you look at the <a href="https://github.com/DistributedNonsense/CorrugatedIron/graph">history</a> of the code-base you&rsquo;ll see that I had an initial flurry of activity in early 2011, but didn&rsquo;t really do anything else for quite some time. There&rsquo;s a reason for that!</p>
+
+<p>When I first decided on the project, I spent a bit of time thinking about the design. I wanted the interface to be more &ldquo;functional&rdquo; in many ways. I wanted to remove the idea of resource management away from the caller. I didn&rsquo;t want to give them rope (such as <code>IDisposable</code> instances) with which to hang themselves (such as forgetting to <code>Dispose()</code>). I wanted the interface to be clean, simple, intuitive and safe.</p>
+
+<p>This little in-memory design session went on for quite some time, but I didn&rsquo;t really put anything down on paper. Nor did I write any code. Instead, I though that I would put something together which wasn&rsquo;t really related or as important as the API. Something that was lower level which the user of the library would not (and should not) see.</p>
+
+<p>A Riak node has two interfaces which clients can connect to. One of them is a <a href="http://en.wikipedia.org/wiki/Representational_State_Transfer" title="REST">REST</a> API, and the other is a binary API which utilises <a href="http://code.google.com/p/protobuf/" title="Protocol Buffers">Protocol Buffers</a>. I thought that it would be fun to start working on the Protocol Buffer handling while the idea of the API formed slowly in the back of my mind.</p>
+
+<h3 id="then-along-came-jp">Then along came JP</h3>
+
+<p>Then, just before Christmas (23rd December to be exact) I received an email out of the blue from a chap in America. Here&rsquo;s how it started:</p>
+
+<blockquote>
+<p>Greetings from America!</p>
+
+<p>Hope your summer is going well. Mark Phillips told me that you were interested in working on a good .net driver for Riak. Have you made any progress or is it still a general idea in your head?</p>
+</blockquote>
+
+<p>There was much more to the email than that, but it certainly started off well! The email was from <a href="http://facility9.com/" title="Jeremiah Peschka">Jeremiah Peschka</a>, a chap who&rsquo;s name I had seen floating around the Riak <a href="http://lists.basho.com/mailman/listinfo/riak-users_lists.basho.com" title="Riak mailing list">mailing list</a>. In fact, I remember his name catching my eye on more than one occasion because his email signature contained the following:</p>
+
+<blockquote>
+<p>Microsoft SQL Server MVP<br/>
+MCITP: Database Developer, DBA</p>
+</blockquote>
+
+<p>This resonated with me because he was obviously into RDBMSs, but hadn&rsquo;t been a complete asshat on a list full of people working with <a href="http://en.wikipedia.org/wiki/NoSQL" title="NoSQL">NoSQL</a>. This was a rare and surprising thing.</p>
+
+<p>Moving on. After a few email exchanges, Jeremiah indicated that he was interested in helping to build CorrugatedIron (despite the whacky name) and we decided to team up. I knew that he&rsquo;d definitely add value to the whole process and would also keep me motivated. Plus, his obvious skills in the SQL realm would no doubt be useful too!</p>
+
+<p>We continued to talk into January and I thought that it was past time that I shared the code that I had hacked together so that we had a starting/talking point. On the 7th January, I committed my first <a href="https://github.com/DistributedNonsense/CorrugatedIron/--SOMETHING-GOES-HERE--">batch of code</a> to the repository which contained a stack of very untested code. I don&rsquo;t even know if it worked! The result: we had a lot to talk about.</p>
+
+<h3 id="another-intermission">Another intermission</h3>
+
+<p>Though JP and I continued to talk a great deal via email, we were both quite under the pump with our respective places of employment. We shared ideas along the way, but neither of us were really into the project as a result of the intense work we had on elsewhere. Though I&rsquo;m fairly certain that the thought of the project wasn&rsquo;t far from our minds the whole time.</p>
+
+<p>Then on the 12th April, out of the blue again, another email came. I&rsquo;m not going to divulge all the detail, but the crux of it indicated that there was a growing interest in seeing a .NET client for Riak from people in other areas of the world. It also asked what the story was with the client that we were building, and wondered if we had a timeline down with a potential release date.</p>
+
+<p>This was scary, exciting and a slap in the face at the same time. Scary and exciting because there was a possibility that someone out there might want to use what we were building. A slap in the face because we hadn&rsquo;t really done much at all other than the initial commit and a great deal of talking. It was just the wake up call that we needed.</p>
+
+<p>I spoke to JP about the email and we both decided that it was well past time to get our heads down and start working on this thing for real. We needed to lock in a set of features, a time-frame for development and, most importantly, a release date.</p>
+
+<p>So, we did!</p>
+
+<h3 id="all-ahead-flank">All ahead flank</h3>
+
+<p>In early May, JP and I managed to start freeing up time that we could then contribute to our project. Development ramped up and kicked off in mid-May, and on the 18th, we committed our first changeset to the repository since the very first commit in January. From there, we went nuts!</p>
+
+<p>We consistently worked on things and pushed our code back and forth for the latter half of May and well in to June. At this point, things really started to get exciting.</p>
+
+<p>We had managed to get quite a few features out in a small period of time, and were generally very happy with our progress. JP was making the most of his superior Riak knowledge and was banging out API features like there was no tomorrow. Meanwhile, I had my head down in the guts of the underlying bits, trying to keep things sane.</p>
+
+<p>It was at this point we were told of <em>more</em> people who were keen to get their hands on a quality .NET client, and that if we could get the client ready in time, various individuals would be happy to talk about it during <a href="http://oscon.com/" title="OSCON">OSCON</a>, the biggest Open Source convention I know of. Awesome! This was an opportunity too good to miss.</p>
+
+<p>We finalised our feature-set for v0.1.0, wrote down our final time-line and informed various parties of what we were planning to do. It was locked in. We were heads down, bums-up trying to get things into shape. It was all very exciting.</p>
+
+<h3 id="even-more-interest">Even more interest</h3>
+
+<p>By early July, we had somehow managed to attract the attention of two more individuals who were looking for this functionality. Both of which put their hands up to the opportunity to look at our Alpha software, take it for a spin and give us some feedback. This was awesome. Having other people look over the code and critique it while, in some ways, evaluating it for their own needs is a great thing.</p>
+
+<p>After a short period of time, we received very constructive (and, just quietly, rather gratifying) comments from both guys. It made us feel like we couldn&rsquo;t be doing too badly!</p>
+
+<p>We opened up the repository to them so that they could get the latest code whenever they wanted, and also opened it up to some of the Basho guys so that they could also cast their eyes over it. The cat was slowly coming out of the bad.</p>
+
+<p>On the 20th July, we locked in the feature-set for v0.1.0 and froze the codebase for all but minor changes, bug fixes and tweaks. It was time to do what everyone <em>loves</em> to do: <strong>documentation</strong>.</p>
+
+<p>Given that I tend to hate documentation, straight away I was looking for something else to fill the time with. Thankfully, alongside documentation, we also needed a few sample applications (let&rsquo;s face it, as devs we learn much faster from working code compared to reams of documentation). So I leapt on the opportunity to crank out <a href="https://github.com/DistributedNonsense/CorrugatedIron.Samples/tree/master/VisualStudio2010/Sample.YakRiak" title="YakRiak.NET">YakRiak.NET</a>, a .NET client for <a href="https://github.com/seancribbs" title="Sean Cribbs">Sean Cribbs</a>&rsquo; <a href="https://github.com/seancribbs/yakriak" title="The original YakRiak">YakRiak</a> chat application. It was incredibly simple to do and didn&rsquo;t take very long at all. When building the app, and finally <em>using</em> my own software, I have to admit I felt pretty good. It was nice to use my own software for something fun!</p>
+
+<p>After that, JP put together a new <a href="https://github.com/peschkaj/CorrugatedIron.Samples/tree/master/VisualStudio2010/Sample.SessionStateProvider">Session State Provider</a> which used Riak as the back-end store. How good is that! Riak-backed session state in .NET. Awesome sauce.</p>
+
+<p>I also finalised a small sample application which utilised some of the most common IoC frameworks to wire in the configuration, and began working on the &lsquo;real&rsquo; documentation again.</p>
+
+<h3 id="going-live">&ldquo;Going live&rdquo;</h3>
+
+<p>Finally, on the 25th July, after a couple of months of intense development, sample app creation, documentation and blog posts, CorrugatedIron was released to the world &ndash; just in time for OSCON (phew!).</p>
+
+<p>While the documentation isn&rsquo;t as thorough as we would like, and our unit test coverage isn&rsquo;t as high as we&rsquo;d like, we&rsquo;re very happy with what we&rsquo;ve managed to achieve. This first release is by no means the last, and JP and I are both excited about what we&rsquo;re going to add to it in the future.</p>
+
+<h3 id="a-small-side-note">A small side note</h3>
+
+<p>When people first start working on projects like this there is always a risk that personalities will clash and the software will suffer. JP and I knew nothing of each other when we started this thing, yet over time have got to know each other and had a great deal of fun learning from each other. I think I&rsquo;ve been really fortunate in having JP involve himself in this project. He has been open to different ideas and opinions, has never come across as an ass and has been a real pleasure to work with the whole time.</p>
+
+<p>So, JP, thanks mate! I&rsquo;m really glad you got involved. CorrugatedIron wouldn&rsquo;t be what it is now if you hadn&rsquo;t.</p>
+
+<h3 id="the-end">The End</h3>
+
+<p>Thanks for reading this far! If you&rsquo;re a .NET mofo and you&rsquo;re keen to get your Riak on, <a href="https://github.com/DistributedNonsense/CorrugatedIron" title="Source code">grab the source</a>, <a href="https://github.com/DistributedNonsense/CorrugatedIron/downloads" title="Binary downloads">download the binaries</a> or <a href="http://www.nuget.org/List/Packages/CorrugatedIron" title="Nuget package">install the Nuget package</a> and get cracking! Feedback is always welcome, as are patches. So if you&rsquo;ve got something to add, take away or refine, fork our <a href="https://github.com/DistributedNonsense/CorrugatedIron" title="Source code">repository</a> and get those pulls requests happening!</p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/c">C#</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/riak">Riak</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/mono">Mono</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/nosql">NoSQL</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/open-source">Open Source</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/clr">CLR</a>
+	  
+	    </p>
+	    
+<p><a itemprop="keywords" class=" label label-danger" href="/tags/clr">clr</a> <a itemprop="keywords" class=" label label-danger" href="/tags/corrugatediron">corrugatediron</a> <a itemprop="keywords" class=" label label-danger" href="/tags/csharp">csharp</a> <a itemprop="keywords" class=" label label-danger" href="/tags/dotnet">dotnet</a> <a itemprop="keywords" class=" label label-danger" href="/tags/mono">mono</a> <a itemprop="keywords" class=" label label-danger" href="/tags/riak">riak</a></p>
+
+
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

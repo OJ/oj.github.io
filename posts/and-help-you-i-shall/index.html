@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    And Help You I Shall! - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/and-help-you-i-shall/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> And Help You I Shall! </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Wed Jul 18, 2007</span>
+
+	  <p>My <a href="/posts/help-me-help-you/" title="Help me help you!">previous post</a> on constructing meaningful questions was inspired by years of frustrating experiences on forums and bulletin boards, but it wasn&rsquo;t until I had a chat with me ol&rsquo; mucka <a href="http://www.shiftperception.com/blog/" title="Shifty Blog">Dan</a> that I realised that there are actually quite a few cases where good quality questions are given inappropriate or completely misleading answers.</p>
+
+<p>The intent of this post is to cover that side of the argument. How do you give a meaningful answer to a well constructed question?</p>
+
+<p>I&rsquo;d like to start by sharing an example of a recent forum thread that I saw which highlights the issue nicely.<blockquote><p><strong>Asker:</strong> I&rsquo;ve recently been given the task of creating a C++/Win32 version of application <em>appname</em>. Unfortunatley I&rsquo;ve never written any Win32 code before, so I need a few pointers to get started. Can someone please show me an example how to create a Window using Win32 and C++?</p><p><strong>Answerer 1:</strong> Download .NET and use managed C++ to create your form.</p><p><strong>Answerer 2:</strong> I use allegro for everything, and I think it&rsquo;s great. Download allegro and use the tutorials.</p><p><strong>Answerer 3:</strong> Managed DirectX extensions make it easy to GUIs, try using that.</p><p><strong>Answerer 4:</strong>Using Win32 is a pain, why are you using it? Why not use Java?</p><p><strong>Answerer 5:</strong> If you&rsquo;re going to use a graphics API then you&rsquo;re better off using something like SDL which is cross-platform.</p></blockquote>
+Is it just me, or are all of those answers total and utter shit?</p>
+
+<p>The bloke who asked the question clearly wanted an example of window creation using the <a href="http://en.wikipedia.org/wiki/Win32" title="Windows API">Win32 API</a> and C++. What did he get in response? Recommendations for 5 other technologies that people like to use for their own projects. Not one meaningful answer.</p>
+
+<p>As far as I&rsquo;m concerned this is the same as having someone ask &ldquo;<em>I&rsquo;m really in the mood for fish and chips, does anyone know a good shop to get some?</em>&rdquo; and have a few people respond with &ldquo;<em>Well, if you&rsquo;re going to eat food, then you should consider a Thai Green Curry with Lamb</em>&rdquo; or &ldquo;<em>When I eat, I like to have lots of sugar. So go to Dreamy Donuts, and try the super heart-stopping, 3-hour-old, artery-blocking cardboard donut. It&rsquo;s fantastic!</em>&rdquo;. WTF has that got to do with fish and chips?!</p>
+
+<p>One of the universal issues we face is the fact that people do not have the ability to <strong>read the question</strong>. It&rsquo;s something that people have had a problem with since the early days of school. They fail to read the question properly, and instead come up with their own version of the question that isn&rsquo;t the same, and hence their answer is poor.</p>
+
+<p>In the case of coders, there&rsquo;s a bit more to it. People like to preach and evangelise technology, languages or applications that they like to use, as it makes them feel good. Most people like to push form threads and conversations towards a topic they consider themselves to be experts in because it gives them the chance to get on a soap box.</p>
+
+<p>Now, I&rsquo;m not going to say that I don&rsquo;t get on a soap box, because I quite clearly do! :) But the point I&rsquo;m trying to make is that people who ask specific questions deserve specific answers. So here are my rules of thumb for answering peoples questions.<ol><li><strong>Read the question. Then read it again.</strong> There is no way you&rsquo;re going to be able to give a meaningful answer to a well constructed question without fully understanding what&rsquo;s being asked. Try to adhere to the golden rule of answering questions: <em>If all else fails, <u>READ THE QUESTION</u>.</em></li><li><strong>Answer the question, but don&rsquo;t post the response.</strong> Answers to questions are like solutions to problems in development. Your first iteration is going to be a solution, but it&rsquo;s not going to be the best solution. Reread your answer. Scrutinise it. Look for as many holes as you can find. Any that you miss will be picked up by someone else!</li><li><strong>Rewrite your answer.</strong> After you&rsquo;ve answered, and you&rsquo;ve found the holes. You&rsquo;ll no doubt have to rewrite it. Make sure you use grammar, punctuation and well constructed sentences. Try to keep sentences as short as possible. Be as clear as you can without being verbose. Provide examples of code or references to cases where your view has worked in the past. Provide links to documentation to support your answer.</li><li><strong>Direct your answer at the question!</strong> Make sure that your answer does actually answer the question. Make specific references to the parts of the question that you&rsquo;re answering and point out how it&rsquo;s of benefit, or how it actually relates to the problem.</li><li><strong>Don&rsquo;t evanglise your favourite technology.</strong> If you come across as an evangelist, then people will tend not to take your response seriously. It&rsquo;s easy to see whether someone has an open view, or whether they&rsquo;re biased towards something they have a passion for. Don&rsquo;t be a preacher!</li><li><strong>Don&rsquo;t answer if you don&rsquo;t know!</strong> Lots of people seem to put their $0.02 into the conversation even if they don&rsquo;t know what they&rsquo;re talking about. It&rsquo;s quite simple: if you don&rsquo;t know the answer, do not respond to the question. You won&rsquo;t be adding anything of value to the discussion and you&rsquo;ll end making yourself look stupid. Instead, you should monitor the thread and wait for someone else to respond. Chances are you&rsquo;ll end up learning something!</li></ol></p>
+
+<p>Thoughts?</p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/howto">HOWTO</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/tips/tricks">Tips/Tricks</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

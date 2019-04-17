@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>coming soon on OJ&#39;s Perspective</title>
+    <link>/tags/coming-soon/</link>
+    <description>Recent content in coming soon on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Tue, 13 Jan 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/coming-soon/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Sales Pipeline</title>
+      <link>/posts/the-sales-pipeline/</link>
+      <pubDate>Tue, 13 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-sales-pipeline/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s a brief list of what&amp;rsquo;s coming down the pipe on this blog in the coming weeks. I thought I&amp;rsquo;d post this info as I&amp;rsquo;ve had a few people ask what&amp;rsquo;s up next and I&amp;rsquo;m tired of telling the same story over and over :) So here it is!&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

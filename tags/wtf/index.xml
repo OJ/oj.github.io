@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WTF on OJ&#39;s Perspective</title>
+    <link>/tags/wtf/</link>
+    <description>Recent content in WTF on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Fri, 27 Jan 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/wtf/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An Expert at 23</title>
+      <link>/posts/an-expert-at-23/</link>
+      <pubDate>Fri, 27 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/an-expert-at-23/</guid>
+      <description>&lt;p&gt;I was about to head to bed when I stumbled across a poorly-titled &lt;a href=&#34;http://www.news.com.au/business/the-best-places-to-look-for-work-in-2012/story-e6frfm1i-1226255099978&#34; title=&#34;The best places to look for work in 2012&#34;&gt;article on news.com.au&lt;/a&gt;. At first I thought it was going to cover off the best locations around Australia, or perhaps the world, for finding work in a variety of industries. It turned out to be a failed attempt at highlighting the key growth industry areas for jobs in Australia.&lt;/p&gt;
+
+&lt;p&gt;It began like this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;JOBS demanded across several booming sectors will be the best place to find work this year.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Despite the appalling structure and lack of coherence of the opening paragraph I pushed on through the rest of the article, hoping to find some interesting or useful information. Most of content would be fairly obvious to almost every Australian. The bits that could be considered interesting were old news, and nothing in the article made me feel that reading it was a good use of time.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Wrong Decision by the Wrong Person</title>
+      <link>/posts/the-wrong-decision-by-the-wrong-person/</link>
+      <pubDate>Thu, 28 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-wrong-decision-by-the-wrong-person/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2010/01/pizza.jpg&#34; title=&#34;The wrong tool.&#34; rel=&#34;lightbox&#34;&gt;&lt;img src=&#34;/uploads/2010/01/pizza.jpg&#34; alt=&#34;The wrong tool.&#34; title=&#34;The wrong tool.&#34; style=&#34;float:right; margin-left:5px; margin-bottom:5px;&#34;  width=&#34;150&#34;/&gt;&lt;/a&gt;There is one thing about my industry that I still find truly amazing (and not in a good way). This is despite the fact that it has happened to me so many times that you think I&amp;rsquo;d be used to it! I&amp;rsquo;m talking about non-technical people making technical decisions.&lt;/p&gt;
+
+&lt;p&gt;For some reason, it&amp;rsquo;s a very common practice for those people who don&amp;rsquo;t have expertise in a certain field to make decisions for people working in that field. The best example I can think of off the top of my head is the answer to the question: &lt;em&gt;&amp;ldquo;Which technology should we use?&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Let me take a step back in time for a moment.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Damn you, Crystal Reports!</title>
+      <link>/posts/damn-you-crystal-reports/</link>
+      <pubDate>Tue, 24 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/damn-you-crystal-reports/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve had &lt;a href=&#34;http://msdn.microsoft.com/en-us/vstudio/default.aspx&#34; title=&#34;Visual Studio on MSDN&#34;&gt;Visual Studio 2008&lt;/a&gt; installed for quite a while. When I first installed it I decided not to install the &lt;a href=&#34;http://www.sap.com/solutions/sapbusinessobjects/sme/reporting/crystalreports/index.epx&#34; title=&#34;Crystal Reports&#34;&gt;Crystal Reports&lt;/a&gt; components because I was fairly certain that I&amp;rsquo;d never need them at home.&lt;/p&gt;
+
+&lt;p&gt;Well, the worm has turned! On my new gig, I have the joy of working from home. It just so happens that I &lt;em&gt;also&lt;/em&gt; need to use Crystal Reports. How silly of me to not bother installing a few extra components the first time so I didn&amp;rsquo;t have to go through the pain of going through another VS Setup.&lt;/p&gt;
+
+&lt;p&gt;On the surface this doesn&amp;rsquo;t sound like a painful experience right? &lt;strong&gt;WRONG&lt;/strong&gt;. It&amp;rsquo;s a lot more painful than you think.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microsoft on OJ&#39;s Perspective</title>
+    <link>/tags/microsoft/</link>
+    <description>Recent content in Microsoft on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Sat, 12 Apr 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/microsoft/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Microsoft want to Annoy you, Cancel or Allow?</title>
+      <link>/posts/microsoft-want-to-annoy-you-cancel-or-allow/</link>
+      <pubDate>Sat, 12 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/microsoft-want-to-annoy-you-cancel-or-allow/</guid>
+      <description>&lt;p&gt;Before I even started using Vista, I hated &lt;a href=&#34;http://technet2.microsoft.com/WindowsVista/en/library/0d75f774-8514-4c9e-ac08-4c21f5c6c2d91033.mspx&#34; title=&#34;User Access Control&#34;&gt;UAC&lt;/a&gt;. I read about it all over the place, and laughed at the stupidity involved in asking users to constantly &amp;ldquo;cancel or allow&amp;rdquo; every action they wanted to take. As soon as I was forced to use Vista for work (both on my work laptop and on site with the client) I turned off UAC on both installations.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Living in Australia has a Downside</title>
+      <link>/posts/living-in-australia-has-a-downside/</link>
+      <pubDate>Wed, 21 Nov 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/living-in-australia-has-a-downside/</guid>
+      <description>&lt;p&gt;This may come as a surprise, but living in Australia &lt;em&gt;can&lt;/em&gt; have it downsides :) Right now I can only think of one, and that&amp;rsquo;s (part of) the reason for this post.&lt;/p&gt;
+
+&lt;p&gt;We may have constant sunshine, lovely beaches and a lifestyle to die for, but our broadband just &lt;strong&gt;sucks&lt;/strong&gt;. That&amp;rsquo;s a fairly sweeping statement, so let me clarify a little more.&lt;/p&gt;
+
+&lt;p&gt;Broadband plans in this country are &lt;em&gt;extremely&lt;/em&gt; poor value. The service that you receive for the amount you pay is substandard. It&amp;rsquo;s that simple. Those of you in places like the UK, USA and Hong Kong may find it obscure to consider that a country exists where you can&amp;rsquo;t get an unlimited data connection for DSL. You may also find it difficult to believe that some connection speeds are cut to that of a dial-up connection if you download too much. But that&amp;rsquo;s exactly what happens here.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

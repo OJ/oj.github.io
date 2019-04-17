@@ -1,0 +1,1537 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on OJ&#39;s Perspective</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Tue, 10 Jul 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BackboneJS</title>
+      <link>/tags/backbonejs/</link>
+      <pubDate>Tue, 10 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/backbonejs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bootstrap</title>
+      <link>/tags/bootstrap/</link>
+      <pubDate>Tue, 10 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bootstrap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Erlang</title>
+      <link>/tags/erlang/</link>
+      <pubDate>Tue, 10 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/erlang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ErlyDTL</title>
+      <link>/tags/erlydtl/</link>
+      <pubDate>Tue, 10 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/erlydtl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Functional Programming</title>
+      <link>/tags/functional-programming/</link>
+      <pubDate>Tue, 10 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/functional-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HOWTO</title>
+      <link>/tags/howto/</link>
+      <pubDate>Tue, 10 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/howto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Webmachine</title>
+      <link>/tags/webmachine/</link>
+      <pubDate>Tue, 10 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/webmachine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>riak</title>
+      <link>/tags/riak/</link>
+      <pubDate>Tue, 10 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/riak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OAuth</title>
+      <link>/tags/oauth/</link>
+      <pubDate>Wed, 15 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/oauth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>twitter</title>
+      <link>/tags/twitter/</link>
+      <pubDate>Wed, 15 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/twitter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WTF</title>
+      <link>/tags/wtf/</link>
+      <pubDate>Fri, 27 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/wtf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fail</title>
+      <link>/tags/fail/</link>
+      <pubDate>Fri, 27 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/fail/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>clr</title>
+      <link>/tags/clr/</link>
+      <pubDate>Wed, 03 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/clr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>corrugatediron</title>
+      <link>/tags/corrugatediron/</link>
+      <pubDate>Wed, 03 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/corrugatediron/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>csharp</title>
+      <link>/tags/csharp/</link>
+      <pubDate>Wed, 03 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/csharp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dotnet</title>
+      <link>/tags/dotnet/</link>
+      <pubDate>Wed, 03 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/dotnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mono</title>
+      <link>/tags/mono/</link>
+      <pubDate>Wed, 03 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mono/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>common sense</title>
+      <link>/tags/common-sense/</link>
+      <pubDate>Fri, 25 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/common-sense/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>easy prey</title>
+      <link>/tags/easy-prey/</link>
+      <pubDate>Fri, 25 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/easy-prey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>prank</title>
+      <link>/tags/prank/</link>
+      <pubDate>Fri, 25 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/prank/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sucker</title>
+      <link>/tags/sucker/</link>
+      <pubDate>Fri, 25 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/sucker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HAProxy</title>
+      <link>/tags/haproxy/</link>
+      <pubDate>Wed, 13 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/haproxy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NoSQL</title>
+      <link>/tags/nosql/</link>
+      <pubDate>Wed, 13 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/nosql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web development</title>
+      <link>/tags/web-development/</link>
+      <pubDate>Wed, 13 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/web-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ASP.NET</title>
+      <link>/tags/asp.net/</link>
+      <pubDate>Wed, 06 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/asp.net/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ASP.NET MVC</title>
+      <link>/tags/asp.net-mvc/</link>
+      <pubDate>Wed, 06 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/asp.net-mvc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Content Advisor</title>
+      <link>/tags/content-advisor/</link>
+      <pubDate>Wed, 06 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/content-advisor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TempData</title>
+      <link>/tags/tempdata/</link>
+      <pubDate>Wed, 06 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tempdata/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bfpg</title>
+      <link>/tags/bfpg/</link>
+      <pubDate>Fri, 25 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bfpg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>meetup</title>
+      <link>/tags/meetup/</link>
+      <pubDate>Fri, 25 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/meetup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>perception</title>
+      <link>/tags/perception/</link>
+      <pubDate>Sun, 14 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/perception/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>professionalism</title>
+      <link>/tags/professionalism/</link>
+      <pubDate>Sun, 14 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/professionalism/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sysadmin</title>
+      <link>/tags/sysadmin/</link>
+      <pubDate>Fri, 05 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/sysadmin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bad decisions</title>
+      <link>/tags/bad-decisions/</link>
+      <pubDate>Thu, 28 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bad-decisions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software developer</title>
+      <link>/tags/software-developer/</link>
+      <pubDate>Thu, 28 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/software-developer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>codekata</title>
+      <link>/tags/codekata/</link>
+      <pubDate>Mon, 04 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/codekata/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>katacast</title>
+      <link>/tags/katacast/</link>
+      <pubDate>Mon, 04 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/katacast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rake</title>
+      <link>/tags/rake/</link>
+      <pubDate>Mon, 04 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/rake/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>/tags/vim/</link>
+      <pubDate>Mon, 04 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software Development</title>
+      <link>/tags/software-development/</link>
+      <pubDate>Fri, 11 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/software-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ignorance</title>
+      <link>/tags/ignorance/</link>
+      <pubDate>Fri, 11 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ignorance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stagnation</title>
+      <link>/tags/stagnation/</link>
+      <pubDate>Fri, 11 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/stagnation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Haskell</title>
+      <link>/tags/haskell/</link>
+      <pubDate>Wed, 29 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/haskell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mercurial</title>
+      <link>/tags/mercurial/</link>
+      <pubDate>Wed, 29 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mercurial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Technology</title>
+      <link>/tags/technology/</link>
+      <pubDate>Wed, 29 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>anger</title>
+      <link>/tags/anger/</link>
+      <pubDate>Wed, 29 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/anger/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>community</title>
+      <link>/tags/community/</link>
+      <pubDate>Wed, 29 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/community/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>irc</title>
+      <link>/tags/irc/</link>
+      <pubDate>Wed, 29 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/irc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>value</title>
+      <link>/tags/value/</link>
+      <pubDate>Wed, 29 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/value/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Point Free</title>
+      <link>/tags/point-free/</link>
+      <pubDate>Sat, 27 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/point-free/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>style</title>
+      <link>/tags/style/</link>
+      <pubDate>Sat, 27 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/style/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>/tags/windows/</link>
+      <pubDate>Sat, 16 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hg</title>
+      <link>/tags/hg/</link>
+      <pubDate>Sat, 16 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/hg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>/tags/ssh/</link>
+      <pubDate>Sat, 16 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>trac</title>
+      <link>/tags/trac/</link>
+      <pubDate>Sat, 16 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/trac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>.net</title>
+      <link>/tags/.net/</link>
+      <pubDate>Mon, 13 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/.net/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bloat</title>
+      <link>/tags/bloat/</link>
+      <pubDate>Mon, 13 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bloat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>framework</title>
+      <link>/tags/framework/</link>
+      <pubDate>Mon, 13 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/framework/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>overengineering</title>
+      <link>/tags/overengineering/</link>
+      <pubDate>Mon, 13 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/overengineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>/tags/programming/</link>
+      <pubDate>Mon, 13 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C#</title>
+      <link>/tags/c#/</link>
+      <pubDate>Wed, 25 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/c#/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>design</title>
+      <link>/tags/design/</link>
+      <pubDate>Wed, 25 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>generics</title>
+      <link>/tags/generics/</link>
+      <pubDate>Wed, 25 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/generics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>crystalreports</title>
+      <link>/tags/crystalreports/</link>
+      <pubDate>Tue, 24 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/crystalreports/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>installation</title>
+      <link>/tags/installation/</link>
+      <pubDate>Tue, 24 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/installation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>visualstudio</title>
+      <link>/tags/visualstudio/</link>
+      <pubDate>Tue, 24 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/visualstudio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>/tags/software/</link>
+      <pubDate>Mon, 23 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>development</title>
+      <link>/tags/development/</link>
+      <pubDate>Mon, 23 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>humour</title>
+      <link>/tags/humour/</link>
+      <pubDate>Mon, 23 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/humour/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>decisions</title>
+      <link>/tags/decisions/</link>
+      <pubDate>Wed, 18 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/decisions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>genius</title>
+      <link>/tags/genius/</link>
+      <pubDate>Wed, 18 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/genius/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>truth</title>
+      <link>/tags/truth/</link>
+      <pubDate>Wed, 18 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/truth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>assumptions</title>
+      <link>/tags/assumptions/</link>
+      <pubDate>Tue, 10 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/assumptions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lock</title>
+      <link>/tags/lock/</link>
+      <pubDate>Tue, 10 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/lock/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>multithreading</title>
+      <link>/tags/multithreading/</link>
+      <pubDate>Tue, 10 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/multithreading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stupidity</title>
+      <link>/tags/stupidity/</link>
+      <pubDate>Tue, 10 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/stupidity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>italian</title>
+      <link>/tags/italian/</link>
+      <pubDate>Wed, 14 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/italian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>translation</title>
+      <link>/tags/translation/</link>
+      <pubDate>Wed, 14 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/translation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blogging</title>
+      <link>/tags/blogging/</link>
+      <pubDate>Tue, 13 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/blogging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>coming soon</title>
+      <link>/tags/coming-soon/</link>
+      <pubDate>Tue, 13 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/coming-soon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>case study</title>
+      <link>/tags/case-study/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/case-study/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>taking the piss</title>
+      <link>/tags/taking-the-piss/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/taking-the-piss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>webdev</title>
+      <link>/tags/webdev/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/webdev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>/tags/linux/</link>
+      <pubDate>Sat, 27 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>idiot</title>
+      <link>/tags/idiot/</link>
+      <pubDate>Sat, 27 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/idiot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>misconception</title>
+      <link>/tags/misconception/</link>
+      <pubDate>Wed, 26 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/misconception/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>websites</title>
+      <link>/tags/websites/</link>
+      <pubDate>Wed, 26 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/websites/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gnome Sort</title>
+      <link>/tags/gnome-sort/</link>
+      <pubDate>Thu, 16 Oct 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/gnome-sort/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sorting</title>
+      <link>/tags/sorting/</link>
+      <pubDate>Thu, 16 Oct 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/sorting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Comb Sort</title>
+      <link>/tags/comb-sort/</link>
+      <pubDate>Sun, 14 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/comb-sort/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Effects</title>
+      <link>/tags/effects/</link>
+      <pubDate>Tue, 09 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/effects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>FX</title>
+      <link>/tags/fx/</link>
+      <pubDate>Tue, 09 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/fx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graphics</title>
+      <link>/tags/graphics/</link>
+      <pubDate>Tue, 09 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/graphics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shader</title>
+      <link>/tags/shader/</link>
+      <pubDate>Tue, 09 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/shader/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WPF</title>
+      <link>/tags/wpf/</link>
+      <pubDate>Tue, 09 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/wpf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cocktail Sort</title>
+      <link>/tags/cocktail-sort/</link>
+      <pubDate>Fri, 29 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cocktail-sort/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Freeware</title>
+      <link>/tags/freeware/</link>
+      <pubDate>Mon, 18 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/freeware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>/tags/security/</link>
+      <pubDate>Mon, 18 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dns</title>
+      <link>/tags/dns/</link>
+      <pubDate>Mon, 18 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/dns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bubble Sort</title>
+      <link>/tags/bubble-sort/</link>
+      <pubDate>Thu, 14 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bubble-sort/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Algorithms</title>
+      <link>/tags/algorithms/</link>
+      <pubDate>Wed, 13 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/algorithms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Series</title>
+      <link>/tags/series/</link>
+      <pubDate>Wed, 13 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/series/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google</title>
+      <link>/tags/google/</link>
+      <pubDate>Thu, 07 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/google/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>atom</title>
+      <link>/tags/atom/</link>
+      <pubDate>Thu, 07 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/atom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>feeds</title>
+      <link>/tags/feeds/</link>
+      <pubDate>Thu, 07 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/feeds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>frustration</title>
+      <link>/tags/frustration/</link>
+      <pubDate>Thu, 07 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/frustration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>offline</title>
+      <link>/tags/offline/</link>
+      <pubDate>Thu, 07 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/offline/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rss</title>
+      <link>/tags/rss/</link>
+      <pubDate>Thu, 07 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/rss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Project Euler</title>
+      <link>/tags/project-euler/</link>
+      <pubDate>Wed, 30 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/project-euler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>functional</title>
+      <link>/tags/functional/</link>
+      <pubDate>Wed, 30 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/functional/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hype</title>
+      <link>/tags/hype/</link>
+      <pubDate>Tue, 29 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/hype/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>search</title>
+      <link>/tags/search/</link>
+      <pubDate>Tue, 29 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unit testing</title>
+      <link>/tags/unit-testing/</link>
+      <pubDate>Tue, 29 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/unit-testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>performance</title>
+      <link>/tags/performance/</link>
+      <pubDate>Mon, 28 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/performance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tip</title>
+      <link>/tags/tip/</link>
+      <pubDate>Mon, 28 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>challenge</title>
+      <link>/tags/challenge/</link>
+      <pubDate>Fri, 25 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/challenge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fsharp</title>
+      <link>/tags/fsharp/</link>
+      <pubDate>Thu, 24 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/fsharp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MSIL</title>
+      <link>/tags/msil/</link>
+      <pubDate>Wed, 09 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/msil/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>disassemble</title>
+      <link>/tags/disassemble/</link>
+      <pubDate>Wed, 09 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/disassemble/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ilasm</title>
+      <link>/tags/ilasm/</link>
+      <pubDate>Wed, 09 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ilasm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ildasm</title>
+      <link>/tags/ildasm/</link>
+      <pubDate>Wed, 09 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ildasm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sign</title>
+      <link>/tags/sign/</link>
+      <pubDate>Wed, 09 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/sign/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>snk</title>
+      <link>/tags/snk/</link>
+      <pubDate>Wed, 09 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/snk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>strong name</title>
+      <link>/tags/strong-name/</link>
+      <pubDate>Wed, 09 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/strong-name/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>annoying</title>
+      <link>/tags/annoying/</link>
+      <pubDate>Sun, 29 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/annoying/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rant</title>
+      <link>/tags/rant/</link>
+      <pubDate>Sun, 29 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/rant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>screencast</title>
+      <link>/tags/screencast/</link>
+      <pubDate>Thu, 19 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/screencast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unity build</title>
+      <link>/tags/unity-build/</link>
+      <pubDate>Thu, 19 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/unity-build/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>visual studio</title>
+      <link>/tags/visual-studio/</link>
+      <pubDate>Thu, 19 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/visual-studio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>F#</title>
+      <link>/tags/f#/</link>
+      <pubDate>Sat, 14 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/f#/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>interview</title>
+      <link>/tags/interview/</link>
+      <pubDate>Sat, 14 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/interview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>firefox</title>
+      <link>/tags/firefox/</link>
+      <pubDate>Sat, 31 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/firefox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>productivity</title>
+      <link>/tags/productivity/</link>
+      <pubDate>Sun, 25 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reader</title>
+      <link>/tags/reader/</link>
+      <pubDate>Sun, 25 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/reader/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>viewstate</title>
+      <link>/tags/viewstate/</link>
+      <pubDate>Wed, 21 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/viewstate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>football</title>
+      <link>/tags/football/</link>
+      <pubDate>Sun, 18 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/football/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>portsmouth</title>
+      <link>/tags/portsmouth/</link>
+      <pubDate>Sun, 18 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/portsmouth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>configuration</title>
+      <link>/tags/configuration/</link>
+      <pubDate>Sat, 17 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/configuration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dll</title>
+      <link>/tags/dll/</link>
+      <pubDate>Sat, 17 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/dll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>error</title>
+      <link>/tags/error/</link>
+      <pubDate>Sat, 17 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/error/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>investigation</title>
+      <link>/tags/investigation/</link>
+      <pubDate>Sat, 17 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/investigation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>winsxs</title>
+      <link>/tags/winsxs/</link>
+      <pubDate>Sat, 17 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/winsxs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>marathon</title>
+      <link>/tags/marathon/</link>
+      <pubDate>Mon, 05 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/marathon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>training</title>
+      <link>/tags/training/</link>
+      <pubDate>Mon, 05 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/training/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>running</title>
+      <link>/tags/running/</link>
+      <pubDate>Sun, 04 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/running/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sport</title>
+      <link>/tags/sport/</link>
+      <pubDate>Sun, 04 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/sport/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dilbert</title>
+      <link>/tags/dilbert/</link>
+      <pubDate>Mon, 21 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/dilbert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>feed</title>
+      <link>/tags/feed/</link>
+      <pubDate>Mon, 21 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/feed/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sleep</title>
+      <link>/tags/sleep/</link>
+      <pubDate>Mon, 14 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/sleep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microsoft</title>
+      <link>/tags/microsoft/</link>
+      <pubDate>Sat, 12 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/microsoft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UAC</title>
+      <link>/tags/uac/</link>
+      <pubDate>Sat, 12 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/uac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>brave</title>
+      <link>/tags/brave/</link>
+      <pubDate>Sat, 12 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/brave/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>developers</title>
+      <link>/tags/developers/</link>
+      <pubDate>Sat, 12 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/developers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Merb</title>
+      <link>/tags/merb/</link>
+      <pubDate>Sun, 06 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/merb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>australia</title>
+      <link>/tags/australia/</link>
+      <pubDate>Sun, 06 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/australia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>economy</title>
+      <link>/tags/economy/</link>
+      <pubDate>Sun, 06 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/economy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>expense</title>
+      <link>/tags/expense/</link>
+      <pubDate>Sun, 06 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/expense/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>living</title>
+      <link>/tags/living/</link>
+      <pubDate>Sun, 06 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/living/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tiny</title>
+      <link>/tags/tiny/</link>
+      <pubDate>Sun, 06 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tiny/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unity builds</title>
+      <link>/tags/unity-builds/</link>
+      <pubDate>Mon, 10 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/unity-builds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Networks</title>
+      <link>/tags/networks/</link>
+      <pubDate>Wed, 21 Nov 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/networks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>internet</title>
+      <link>/tags/internet/</link>
+      <pubDate>Wed, 21 Nov 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/internet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bloatware</title>
+      <link>/tags/bloatware/</link>
+      <pubDate>Thu, 01 Nov 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bloatware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>guitar</title>
+      <link>/tags/guitar/</link>
+      <pubDate>Thu, 01 Nov 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/guitar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>music</title>
+      <link>/tags/music/</link>
+      <pubDate>Thu, 01 Nov 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>opinion</title>
+      <link>/tags/opinion/</link>
+      <pubDate>Mon, 29 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/opinion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vista</title>
+      <link>/tags/vista/</link>
+      <pubDate>Mon, 29 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/vista/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>floating point</title>
+      <link>/tags/floating-point/</link>
+      <pubDate>Wed, 27 Jun 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/floating-point/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shortcuts</title>
+      <link>/tags/shortcuts/</link>
+      <pubDate>Sun, 11 Feb 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/shortcuts/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

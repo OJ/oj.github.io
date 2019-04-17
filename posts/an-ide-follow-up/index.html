@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    An IDE Follow-Up - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/an-ide-follow-up/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> An IDE Follow-Up </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Wed Sep 20, 2006</span>
+
+	  <p>After reading Dan&rsquo;s response to <a href="/posts/is-an-ide-all-its-cracked-up-to-be/" title="Is an IDE all it's cracked up to be?">this</a> a few days ago, I decided to have a bit of a play with Notepad++. I do think it&rsquo;s a very nice little text editor with some lovely features. It&rsquo;s quitck, it&rsquo;s simple, and the syntax hilighting works a treat (no thanks to Scintilla of course). One thing I do like is that by default when line numbering is on and word-wrap is enabled, gaps appear between the numbers to indicate that a line has wrapped (I need to set up something like this with VIM, as it&rsquo;s one of the things that&rsquo;s currently driving me nuts). It&rsquo;s a shame it&rsquo;s Windows only! I now have it installed at work and I used it when I work on quite a few different things including stored procedures, general markup (XML/HTML/etc), and some other bits and pieces of code.</p>
+
+<p>A couple of nights ago I also decided to install <a href="http://www.xemacs.org/" title="XEmacs">XEmacs</a> to see what it was like to edit text. So many people love Emacs and there are just as many evangelists for this as their are VI/VIM. I found it to be very much like VIM, but there was one thing that stood out which I didn&rsquo;t quite like. That is, the command mode seemed to be extremely heavy on the use of the CTRL and ALT keys. That may sound like a petty whinge to you, but for me, having to keep at least one of my little fingers at the bottom of the keyboard while I&rsquo;m moving around becomes painful. I like VIM&rsquo;s idea of not having to move any fingers away from the home row if you want to move up/down/left/right by a single line/character. Pressing CTRL every time is a bit of overkill in my opinion, and it&rsquo;s a bit off-putting for me. After going through a few tutorials with I noticed that my hands were becoming strained. I&rsquo;m pretty sure this is partly down to my typing style (because I&rsquo;m not a perfect touch-typist, I tend to use my left little finger for SHIFT and CTRL rather than alternating depending on the key I am pressing).</p>
+
+<p>So the result is that I&rsquo;ve decided to cut short my time with Emacs and carry on doing my best to learn VIM. I can use VIM enough to be able to do my work, but I&rsquo;m still frustrated because I know I&rsquo;m nowhere near being the power user that I dream to be. It&rsquo;s all about the practice. I do find myself getting annoyed at the fact that I have to constantly refer to the quick-ref guide to do some of the basic things, but I&rsquo;m sure this will happen less and less over time.</p>
+
+<p>I am still on the search for the ultimate development environment though. I do feel that having something which is a combination of VIM and Visual Studio would be awesome. I am even thinking of putting some time aside to build it myself. In my mind I have a vision of a unified IDE which not only has in-built support for debugging code, but has features such as memory windows, call stacks, etc - combined with the power of VIM for editing text, and the generic &ldquo;Windows&rdquo; functionality of things like CTRL-TAB for moving across buffers (yes, I know you can configure VIM to do this).</p>
+
+<p>I have a question for everyone :) I&rsquo;ve done only a little bit of true development on a *nix machine, and I&rsquo;m interested to know which tools most people use when <em>they</em> develop for *nix. I&rsquo;d even be interested to know what you&rsquo;d use for <strong>Mac</strong> development?! Are there are good selection of environments to use? Or is it all Emacs/VIM with a bunch of plugins? I realise VIM comes with some form of autocomplete, which I&rsquo;m yet to play with, but how well does this work? Is it smart enough to autocomplete on functions names that don&rsquo;t exist in the current file scope? Do your respective text editors have any support for intellisense? What is the <em>project-wide</em> support like? Is it really a pain in the butt to get debugging working? How easy it is to have your editor build your project for you without you having to manually create build files?</p>
+
+<p>Yup, I can get these answers of <a href="http://www.google.com.au/" title="Google">Google</a>, but I&rsquo;m interested to hear the thoughts of the folks that find themselves reading this :D</p>
+
+<p>As a final point, me ol&rsquo; mucka Keef pointed out that games developers are in a way &lsquo;forced&rsquo; to use Visual Studio, and to a point I agree. But that doesn&rsquo;t mean to say that you can&rsquo;t use something like VIM for basic coding tasks if you really want to. I used to work with a guy who was a real Emacs junkie, and that&rsquo;s all he used for his dev work (that includes Win32/C++ coding through to HTML, C# and ASP). All the compiling and debugging was done from Emacs, and he seemed to be very productive with it - something I&rsquo;m nowhere near achieving with VIM :)</p>
+
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/freeware">Freeware</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/linux">Linux</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/software-development">Software Development</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

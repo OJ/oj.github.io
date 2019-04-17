@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Office Registration and Activation - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/office-registration-and-activation/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Office Registration and Activation </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Sun Sep 10, 2006</span>
+
+	  <p>Yesterday I had one of those wonderful days that every geek gets to enjoy once in a while - the day of rebuilding one&rsquo;s machine. In this case it wasn&rsquo;t my machine it was Amy&rsquo;s, but the effect is much the same :)  I went through the process of backing up, repartitioning, reinstalling WinXP Home, copying backed up files back onto the machine only to find myself stumped at the point of installing MS Office.</p>
+
+<p>At home we have two licences of MS Office. We have one licence of MS Enterprise Ed, and one Pro Ed (check out the <a href="http://www.microsoft.com/office/editions/howtobuy/compare.mspx" title="What's in the Office 2003 Editions">differences here</a>), one of which (Ent Ed) is installed on my machiine. Now, the Pro Ed comes with our MSDN subscription, and the Ent Ed is something we bought separately a while ago (OEM) with some hardware.  At the time, the Ent Ed is the only one we had and so Amy used Office on this machine instead of having her own installation.  Since we now have an MSDN subscription, it made sense for Amy to have the Ent Ed (which we bought ourselves) and for me to use the MSDN licence (Pro Ed) so that all MSDN software is on a single machine (the machine that&rsquo;s being used for development work) and all our personal software is on Amy&rsquo;s machine.</p>
+
+<p>Since my machine is due for a rebuild as well, I thought I&rsquo;d simply install the Ent Ed (the one on my machine) and then after rebuliding my machine today I would install the Pro Ed instead on this machine. Installation went fine; the registration key was accepted and everything went smoothly. I opened up Outlook to being setting up Amy&rsquo;s email and was greeted with the activation screen that everyone gets these days when dealing with MS software.  To my dismay, the activation didn&rsquo;t work.  The message I was given stated that the number of activations of the software had been reached, and that it couldn&rsquo;t be activated any more. In order to sort this issue out, I would have to contact Microsoft via the phone and try and get it resolved.  That is, I have to ring a number that isn&rsquo;t open that late on a Saturday to simply ask them to allow me to reactivate my software as I&rsquo;m swapping licences.</p>
+
+<p>This got me thinking &hellip;</p>
+
+<p>I do not pirate Microsoft&rsquo;s software. All the software we use is legit. After paying a hefty sum for the software we need to use on a daily basis, I do not expect to have difficulties in getting it to work. So what would have happened if I had repartitioned and reinstalled <em>my</em> machine first, thereby blowing away my Office installation? No doubt I would have had issues getting it activated again, and I would have had to call Microsoft to get them to <em>allow</em> me to use my <strong>own</strong> key to access the software that I have <strong>already</strong> paid for.  I am not an advocate for piracy, but I am an advocate for not being bothered and held back by mechanisms such as this which prevent me from easily dealing with the software that I now rightfully own.  Why should I have to activate my software every time install it? As a geek I install and rebuild machines quite often (often = every 6 months or so&hellip; it&rsquo;s a habit I can&rsquo;t shake :D) because I find that a fresh install aids in keeping the machine running optimally. Do I want to go through the rigmarole of having to deal with this crap every time I do so? No I don&rsquo;t. I should be able to install the software on the same machine a million times over without having issues because I <em>own</em> the licence.</p>
+
+<p>This is the kind of thing which makes me wish I hadn&rsquo;t bought MS Office when there are alternatives such as <a href="http://www.openoffice.org/" title="OpenOffice">OpenOffice</a> and <a href="http://www.mozilla.com/thunderbird/" title="Mozilla Thunderbird">Mozilla Thunderbird</a> which could probably do the job just as well.  As a developer there&rsquo;s nothing wrong with being protective of your own software and putting things in place which help prevent piracy, but I don&rsquo;t think it should ultimately inhibit those people who <em>have</em> paid for the software.</p>
+
+<p>The result? I just installed the Pro Ed that came with MSDN on Amy&rsquo;s laptop, and I&rsquo;m going to try and find a way of getting my machine set up in the way I need to be set up without having to rebuilt it.</p>
+
+<p>I&rsquo;m going to stop now before I start talking about <strong>DRM</strong>.</p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/microsoft">Microsoft</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/software">Software</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/technology">Technology</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

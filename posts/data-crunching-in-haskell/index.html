@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Data Crunching in Haskell - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/data-crunching-in-haskell/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Data Crunching in Haskell </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Thu Jun 25, 2009</span>
+
+	  <p>A few days ago I was having a chat to a <a href="http://shiftperception.com/blog" title="Shifty">friend of mine</a> about a little data parsing problem. He had the need to parse a multi-dimensional array to pull out some values. That array was guaranteed to be square, but not necessarily in contiguous memory. He needed to parse each &ldquo;column&rdquo; of the array, calculate a total, and then determine the biggest and smallest of those totals.</p>
+
+<p>A sample of the data might look something like this:</p>
+
+<pre><code>data = ({150,200,45,57,95,2,45,32,15,10,5,2,2,4},
+        {12,20,45,37,10,5,2,2,10,95,2,45,32,7},
+        {32,15,10,5,2,23,24,15,20,45,57,95,0,45})
+</code></pre>
+
+<p>So the first step would be to add 150, 12 and 32 and store the value. Then 200, 20 and 15, and store the value. Do this for all of the columns, then get a maximum and a minimum.</p>
+
+<p>This little algorithm was going to be part of his project, and hence needed to be implemented in <a href="http://www.adobe.com/devnet/actionscript/articles/actionscript3_overview.html" title="ActionScript 3.0">AS3</a>. So I picked his brains about the AS3 syntax, because I have absolutely no clue given that I&rsquo;ve never worked with any version of ActionScript in the past.</p>
+
+<p>Together, we came up with the following solution:</p>
+
+<pre><code>var columnTotal:Number;
+var biggest:Number;
+var smallest:Number;
+biggest = smallest = sum(vData, 0);
+
+for(var i = 1; i &lt; _scope.period_mcs.length; ++i)
+{
+  columnTotal = sum(vData, i);
+  biggest = Math.max(biggest, columnTotal);
+  smallest = Math.min(smallest, columnTotal);
+}
+
+// helper function 
+function sum(var data:Array, var index:Integer):Number
+{
+  var total:Number = 0;
+  for(int i = 0; i &lt; data.length; ++i)
+  {
+    total += data[i][index];
+  }
+  return total;
+}
+</code></pre>
+
+<p>Does it work? Yes, it sure does. Is it optimal? Yes, and no :) I was lazy and used the Math.max and Math.min functions instead of doing the obvious&hellip;</p>
+
+<pre><code>if(biggest &lt; columnTotal) biggest = columnTotal;
+</code></pre>
+
+<p>So if we did that, to reduce the need for function calls and unnecessary assignments, we end up with this:</p>
+
+<pre><code>var columnTotal:Number;
+var biggest:Number;
+var smallest:Number;
+biggest = smallest = sum(vData, 0);
+
+for(var i = 1; i &lt; _scope.period_mcs.length; ++i)
+{
+  columnTotal = sum(vData, i);
+  if(biggest &lt; columnTotal)
+  {
+    biggest = columnTotal;
+  }
+  else if(smallest &gt; columnTotal)
+  {
+    smallest = columnTotal;
+  }
+}
+
+// helper function 
+function sum(var data:Array, var index:Integer):Number
+{
+  var total:Number = 0;
+  for(int i = 0; i &lt; data.length; ++i)
+  {
+    total += data[i][index];
+  }
+  return total;
+}
+</code></pre>
+
+<p>I can&rsquo;t see many ways to improve on this without going overboard with optimisation. Any AS3 guru&rsquo;s are more than welcome to prove me wrong!</p>
+
+<p>So after thinking about this in an imperative language, I couldn&rsquo;t help but have a look at what the functional version might look like. Of course, my current chosen Functional toy is <a href="http://haskell.org/" title="Haskell">Haskell</a> and so I fired up <a href="http://vim.org/" title="VIM">VIM</a> and <a href="http://www.haskell.org/ghc/" title="GHC">GHCI</a> and had a bit of a play.</p>
+
+<p>First, I put the data into Haskell&rsquo;s list format:</p>
+
+<pre><code>vals = [[150,200,45,57,95,2,45,32,15,10,5,2,2,4],
+        [12,20,45,37,10,5,2,2,10,95,2,45,32,7],
+        [32,15,10,5,2,23,24,15,20,45,57,95,0,45]]
+</code></pre>
+
+<p>That was easy enough. The next step was to break the problem down so that I could use some of the built in functions of Haskell&rsquo;s <a href="http://haskell.org/ghc/docs/latest/html/libraries/base/Prelude.html" title="Prelude">Prelude</a> libraries. My thought processes were:
+<ol>
+<li>Summing the column of the array could be done using <a href="http://haskell.org/ghc/docs/latest/html/libraries/base/Prelude.html#v:sum" title="sum">sum</a>, but I&rsquo;d need to change the list so that rows become columns, and vice-versa.</li>
+<li>To switch rows and columns, I could use the <a href="http://haskell.org/ghc/docs/latest/html/libraries/base/Data-List.html#v:transpose" title="Data.List.transpose">transpose</a> function.</li>
+<li>Then all I&rsquo;d need to do is use <a href="http://haskell.org/ghc/docs/latest/html/libraries/base/Prelude.html#v:maximum" title="maximum">maximum</a> and <a href="http://haskell.org/ghc/docs/latest/html/libraries/base/Prelude.html#v:minimum" title="minimum">minimum</a> to get the right values out.</li>
+</ol>
+Being a bit of a primitive Haskeller, my first pass was something like this:</p>
+
+<pre><code>extremes n = (b, s)
+  where
+    l = map sum $ transpose n
+    b = maximum l
+    s = minimum l
+</code></pre>
+
+<p>The function <em>extremes</em> is the function which takes the data (list of lists) and spits out a tuple of <em>(max, min)</em>.</p>
+
+<p>Before the end of the conversation with my designer colleague in arms, I pinged him my version of the solution in Haskell and needless to say he was a little surprised as how concise it was. I was sure to point out that there is no doubt a better way of representing this solution with regards to speed and conciseness.</p>
+
+<p>The first thing that I thought could be improved would be using a custom <a href="http://www.haskell.org/haskellwiki/Fold" title="Fold">fold</a> to get the max and min while parsing the transposed list. This would allow us to calculate the values in a single pass and hence be a little better with regards to performance. That would obviously sacrifice a little bit of the conciseness we&rsquo;re looking for.</p>
+
+<p>When the conversation ended, I jumped onto IRC and spoke to some more seasoned Haskellers. The first suggested improvement that popped out of that chat was to use <a href="http://www.haskell.org/arrows/" title="Arrows">arrows</a> to remove the need for the where clause. That solution looks like this:</p>
+
+<pre><code>extremes = (maximum &amp;&amp;&amp; minimum) . map sum . transpose
+</code></pre>
+
+<p>Nifty :) Of all the other options, this proved to be the most readable and concise, though not the best performing.</p>
+
+<p>The next most notable solution included the fold which calculated the min and max in a single parse, not a double parse:</p>
+
+<pre><code>extremes = foldl1 (\(a, b) -&gt; max a *** min b) . join zip . map sum . transpose
+</code></pre>
+
+<p>Folds really are fantastic aren&rsquo;t they. Again we&rsquo;re using arrows here to do a bit of heavy lifting and that keeps things looking a little nicer.</p>
+
+<p>So after this little session, my designer friend was aware of how easy it can be to crunch certain types of data using a functional language, like Haskell. It made me think again about how it&rsquo;d be nice to just be able to plug in whichever language we wanted whenever we felt it would do the job better than whatever the current tool is.</p>
+
+<p>So how would you improve it? :)</p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/algorithms">Algorithms</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/functional-programming">Functional Programming</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/haskell">Haskell</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/software-development">Software Development</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

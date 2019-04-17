@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Freeware on OJ&#39;s Perspective</title>
+    <link>/tags/freeware/</link>
+    <description>Recent content in Freeware on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Mon, 18 Aug 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/freeware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OpenDNS is Wicked</title>
+      <link>/posts/opendns-is-wicked/</link>
+      <pubDate>Mon, 18 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/opendns-is-wicked/</guid>
+      <description>&lt;p&gt;&lt;a title=&#34;Use OpenDNS to make your Internet faster, safer, and smarter.&#34; href=&#34;http://www.opendns.com/share/&#34;&gt;&lt;img src=&#34;http://images.opendns.com/buttons/use_opendns_155x52.gif&#34; width=&#34;155&#34; height=&#34;52&#34; style=&#34;border:0; float:right; margin-left:5px;margin-bottom;5px&#34; alt=&#34;Use OpenDNS&#34; /&gt;&lt;/a&gt;Over the last couple of weeks the DNS timeouts and lags I&amp;rsquo;ve been experiencing at home have made the web experience a little dire. My &lt;a href=&#34;http://internode.on.net/&#34; title=&#34;Internode&#34;&gt;ISP&lt;/a&gt; is actually pretty darned good, but for some reason they seem to have glitches with their DNS servers every now and then.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

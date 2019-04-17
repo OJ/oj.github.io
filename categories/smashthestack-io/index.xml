@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SmashTheStack-IO on OJ&#39;s Perspective</title>
+    <link>/categories/smashthestack-io/</link>
+    <description>Recent content in SmashTheStack-IO on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Thu, 15 Aug 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/smashthestack-io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Levels 7 and 7_alt - IO at STS</title>
+      <link>/posts/levels-7-and-7_alt-io-at-sts/</link>
+      <pubDate>Thu, 15 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/levels-7-and-7_alt-io-at-sts/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been documenting my experiences with &lt;a href=&#34;http://io.smashthestack.org:84/&#34; title=&#34;IO @ Smash The Stack&#34;&gt;IO&lt;/a&gt; at &lt;a href=&#34;http://smashthestack.org/&#34; title=&#34;Smash The Stack&#34;&gt;SmashTheStack&lt;/a&gt; for a while, but decided not to post them publicly for a few reasons. However level 7 (in particular the &lt;code&gt;alt&lt;/code&gt; level) was the first that I thought worthy of posting. This post includes how I broke both applications to make it through to the level 8. If you haven&amp;rsquo;t had a play on the &lt;a href=&#34;http://smashthestack.org/&#34; title=&#34;Smash The Stack&#34;&gt;SmashTheStack&lt;/a&gt; wargames yet, I really do recommend it. They&amp;rsquo;re great fun.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

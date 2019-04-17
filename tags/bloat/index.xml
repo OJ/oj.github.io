@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bloat on OJ&#39;s Perspective</title>
+    <link>/tags/bloat/</link>
+    <description>Recent content in bloat on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Mon, 13 Apr 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/bloat/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>I Don&#39;t Need Your Frickin&#39; Framework!</title>
+      <link>/posts/i-dont-need-your-frickin-framework/</link>
+      <pubDate>Mon, 13 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/i-dont-need-your-frickin-framework/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2009/04/scaffold_fail.jpg&#34; title=&#34;Scaffold Fail&#34;&gt;&lt;img src=&#34;/uploads/2009/04/scaffold_fail.jpg&#34; alt=&#34;Scaffold Fail&#34; title=&#34;Scaffold Fail&#34; width=&#34;200&#34; style=&#34;float: right; margin-left: 5px; margin-bottom: 5px;&#34; /&gt;&lt;/a&gt;How many companies have you worked with/for that have their own framework? How many have been in the process of developing their own framework? How many have been in the process of &lt;strong&gt;re&lt;/strong&gt;developing their own framework? How many have taken another framework and &lt;del&gt;hacked&lt;/del&gt; improved it?&lt;/p&gt;
+
+&lt;p&gt;When I attempt to answer the questions listed above, I start to shiver. I feel the need to burn my clothes and take a very long shower.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

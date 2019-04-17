@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Miscellaneous - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/categories/miscellaneous/">
+  <link href="/categories/miscellaneous/index.xml" rel="alternate" type="application/rss+xml" title="Miscellaneous" />
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div id="post">
+	<h2>Miscellaneous &nbsp;</h2>
+	<hr/>
+	
+	<h3>2011</h3>
+	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
+	<ul>
+	  
+	  <li>Fri, Feb 25, 2011&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/go-with-your-instinct/">
+	      <span itemprop="name">Go With Your Instinct</span></a>
+	    <meta itemprop="datePublished"  content="Feb 25, 2011" />
+	    <meta  itemprop="url" content="/posts/go-with-your-instinct/"/>
+	  </li>
+	  
+	</ul></div>
+	
+	<h3>2009</h3>
+	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
+	<ul>
+	  
+	  <li>Mon, Feb 23, 2009&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/n-things-you-dont-want-to-hear-when-starting-a-new-job-where-n-gt-1/">
+	      <span itemprop="name">N Things You Don&#39;t Want to Hear when Starting a New Job (where N &amp;gt;= 1)</span></a>
+	    <meta itemprop="datePublished"  content="Feb 23, 2009" />
+	    <meta  itemprop="url" content="/posts/n-things-you-dont-want-to-hear-when-starting-a-new-job-where-n-gt-1/"/>
+	  </li>
+	  
+	</ul></div>
+	
+	<h3>2008</h3>
+	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
+	<ul>
+	  
+	  <li>Sat, Dec 27, 2008&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/random-resolutions/">
+	      <span itemprop="name">Random Resolutions</span></a>
+	    <meta itemprop="datePublished"  content="Dec 27, 2008" />
+	    <meta  itemprop="url" content="/posts/random-resolutions/"/>
+	  </li>
+	  
+	  <li>Thu, Jun 19, 2008&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/ive-caved-in-to-twitter/">
+	      <span itemprop="name">I&#39;ve Caved-in to Twitter</span></a>
+	    <meta itemprop="datePublished"  content="Jun 19, 2008" />
+	    <meta  itemprop="url" content="/posts/ive-caved-in-to-twitter/"/>
+	  </li>
+	  
+	  <li>Tue, May 27, 2008&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/interesting-keyword-searches/">
+	      <span itemprop="name">Interesting Keyword Searches</span></a>
+	    <meta itemprop="datePublished"  content="May 27, 2008" />
+	    <meta  itemprop="url" content="/posts/interesting-keyword-searches/"/>
+	  </li>
+	  
+	  <li>Sat, May 24, 2008&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/the-best-sound-in-the-world/">
+	      <span itemprop="name">The Best Sound in the World</span></a>
+	    <meta itemprop="datePublished"  content="May 24, 2008" />
+	    <meta  itemprop="url" content="/posts/the-best-sound-in-the-world/"/>
+	  </li>
+	  
+	  <li>Sun, May 18, 2008&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/we-are-the-champions/">
+	      <span itemprop="name">We are the Champions!</span></a>
+	    <meta itemprop="datePublished"  content="May 18, 2008" />
+	    <meta  itemprop="url" content="/posts/we-are-the-champions/"/>
+	  </li>
+	  
+	  <li>Mon, May 5, 2008&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/62-days-to-go/">
+	      <span itemprop="name">62 Days To Go</span></a>
+	    <meta itemprop="datePublished"  content="May 05, 2008" />
+	    <meta  itemprop="url" content="/posts/62-days-to-go/"/>
+	  </li>
+	  
+	  <li>Sun, May 4, 2008&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/marathon-training-update/">
+	      <span itemprop="name">Marathon Training Update</span></a>
+	    <meta itemprop="datePublished"  content="May 04, 2008" />
+	    <meta  itemprop="url" content="/posts/marathon-training-update/"/>
+	  </li>
+	  
+	  <li>Wed, Apr 16, 2008&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/more-punishment/">
+	      <span itemprop="name">More Punishment</span></a>
+	    <meta itemprop="datePublished"  content="Apr 16, 2008" />
+	    <meta  itemprop="url" content="/posts/more-punishment/"/>
+	  </li>
+	  
+	  <li>Mon, Apr 14, 2008&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/8-hours/">
+	      <span itemprop="name">8 Hours</span></a>
+	    <meta itemprop="datePublished"  content="Apr 14, 2008" />
+	    <meta  itemprop="url" content="/posts/8-hours/"/>
+	  </li>
+	  
+	  <li>Sun, Apr 6, 2008&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/because-the-cost-of-living-is-getting-so-high-high-high/">
+	      <span itemprop="name">Because the Cost of Living is Getting so High, High, High</span></a>
+	    <meta itemprop="datePublished"  content="Apr 06, 2008" />
+	    <meta  itemprop="url" content="/posts/because-the-cost-of-living-is-getting-so-high-high-high/"/>
+	  </li>
+	  
+	  <li>Sat, Mar 1, 2008&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/hes-a-man-machine/">
+	      <span itemprop="name">He&#39;s a Man-Machine!</span></a>
+	    <meta itemprop="datePublished"  content="Mar 01, 2008" />
+	    <meta  itemprop="url" content="/posts/hes-a-man-machine/"/>
+	  </li>
+	  
+	  <li>Thu, Feb 14, 2008&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/my-boy/">
+	      <span itemprop="name">My Boy</span></a>
+	    <meta itemprop="datePublished"  content="Feb 14, 2008" />
+	    <meta  itemprop="url" content="/posts/my-boy/"/>
+	  </li>
+	  
+	  <li>Thu, Feb 14, 2008&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/do-your-bit-for-the-earth/">
+	      <span itemprop="name">Do your bit for the Earth</span></a>
+	    <meta itemprop="datePublished"  content="Feb 14, 2008" />
+	    <meta  itemprop="url" content="/posts/do-your-bit-for-the-earth/"/>
+	  </li>
+	  
+	</ul></div>
+	
+	<h3>2007</h3>
+	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
+	<ul>
+	  
+	  <li>Mon, Dec 10, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/server-downtime/">
+	      <span itemprop="name">Server Downtime</span></a>
+	    <meta itemprop="datePublished"  content="Dec 10, 2007" />
+	    <meta  itemprop="url" content="/posts/server-downtime/"/>
+	  </li>
+	  
+	  <li>Tue, Dec 4, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/the-end-of-an-era/">
+	      <span itemprop="name">The End of an Era</span></a>
+	    <meta itemprop="datePublished"  content="Dec 04, 2007" />
+	    <meta  itemprop="url" content="/posts/the-end-of-an-era/"/>
+	  </li>
+	  
+	  <li>Sat, Nov 24, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/a-great-day-for-me-a-sad-day-for-my-country/">
+	      <span itemprop="name">A Great Day for Me, a Sad Day for my Country</span></a>
+	    <meta itemprop="datePublished"  content="Nov 24, 2007" />
+	    <meta  itemprop="url" content="/posts/a-great-day-for-me-a-sad-day-for-my-country/"/>
+	  </li>
+	  
+	  <li>Thu, Nov 1, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/my-artistic-outlet/">
+	      <span itemprop="name">My Artistic Outlet</span></a>
+	    <meta itemprop="datePublished"  content="Nov 01, 2007" />
+	    <meta  itemprop="url" content="/posts/my-artistic-outlet/"/>
+	  </li>
+	  
+	  <li>Sun, Oct 28, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/a-little-mixed-bag/">
+	      <span itemprop="name">A Little Mixed Bag</span></a>
+	    <meta itemprop="datePublished"  content="Oct 28, 2007" />
+	    <meta  itemprop="url" content="/posts/a-little-mixed-bag/"/>
+	  </li>
+	  
+	  <li>Sun, Oct 21, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/dont-talk-about-politics/">
+	      <span itemprop="name">Don&#39;t Talk About Politics</span></a>
+	    <meta itemprop="datePublished"  content="Oct 21, 2007" />
+	    <meta  itemprop="url" content="/posts/dont-talk-about-politics/"/>
+	  </li>
+	  
+	  <li>Fri, Sep 21, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/i-am-not-oj-simpson/">
+	      <span itemprop="name">I am not OJ Simpson</span></a>
+	    <meta itemprop="datePublished"  content="Sep 21, 2007" />
+	    <meta  itemprop="url" content="/posts/i-am-not-oj-simpson/"/>
+	  </li>
+	  
+	  <li>Sat, Jul 14, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/help-me-help-you/">
+	      <span itemprop="name">Help Me Help You!</span></a>
+	    <meta itemprop="datePublished"  content="Jul 14, 2007" />
+	    <meta  itemprop="url" content="/posts/help-me-help-you/"/>
+	  </li>
+	  
+	  <li>Tue, Jun 26, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/only-in-the-movies...-and-at-home./">
+	      <span itemprop="name">Only in the Movies... and at Home.</span></a>
+	    <meta itemprop="datePublished"  content="Jun 26, 2007" />
+	    <meta  itemprop="url" content="/posts/only-in-the-movies...-and-at-home./"/>
+	  </li>
+	  
+	  <li>Mon, May 28, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/the-search-is-over/">
+	      <span itemprop="name">The Search is Over</span></a>
+	    <meta itemprop="datePublished"  content="May 28, 2007" />
+	    <meta  itemprop="url" content="/posts/the-search-is-over/"/>
+	  </li>
+	  
+	  <li>Fri, May 25, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/the-search-might-be-over/">
+	      <span itemprop="name">The Search Might be Over</span></a>
+	    <meta itemprop="datePublished"  content="May 25, 2007" />
+	    <meta  itemprop="url" content="/posts/the-search-might-be-over/"/>
+	  </li>
+	  
+	  <li>Sun, May 13, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/brisbane-real-estate/">
+	      <span itemprop="name">Brisbane Real Estate</span></a>
+	    <meta itemprop="datePublished"  content="May 13, 2007" />
+	    <meta  itemprop="url" content="/posts/brisbane-real-estate/"/>
+	  </li>
+	  
+	  <li>Sun, May 13, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/banner-image/">
+	      <span itemprop="name">Banner Image</span></a>
+	    <meta itemprop="datePublished"  content="May 13, 2007" />
+	    <meta  itemprop="url" content="/posts/banner-image/"/>
+	  </li>
+	  
+	  <li>Fri, Apr 27, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/noisy-neighbours/">
+	      <span itemprop="name">Noisy Neighbours</span></a>
+	    <meta itemprop="datePublished"  content="Apr 27, 2007" />
+	    <meta  itemprop="url" content="/posts/noisy-neighbours/"/>
+	  </li>
+	  
+	  <li>Sat, Apr 14, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/what-constitutes-a-tutorial/">
+	      <span itemprop="name">What Constitutes a &#39;Tutorial&#39;?</span></a>
+	    <meta itemprop="datePublished"  content="Apr 14, 2007" />
+	    <meta  itemprop="url" content="/posts/what-constitutes-a-tutorial/"/>
+	  </li>
+	  
+	  <li>Sat, Apr 7, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/weve-moved-...-again/">
+	      <span itemprop="name">We&#39;ve Moved ... Again!</span></a>
+	    <meta itemprop="datePublished"  content="Apr 07, 2007" />
+	    <meta  itemprop="url" content="/posts/weve-moved-...-again/"/>
+	  </li>
+	  
+	  <li>Mon, Mar 12, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/do-you-enjoy-what-you-do-for-a-living/">
+	      <span itemprop="name">Do you Enjoy what you do for a Living?</span></a>
+	    <meta itemprop="datePublished"  content="Mar 12, 2007" />
+	    <meta  itemprop="url" content="/posts/do-you-enjoy-what-you-do-for-a-living/"/>
+	  </li>
+	  
+	  <li>Mon, Feb 19, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/what-are-you-really-looking-at/">
+	      <span itemprop="name">What are you Really Looking at?</span></a>
+	    <meta itemprop="datePublished"  content="Feb 19, 2007" />
+	    <meta  itemprop="url" content="/posts/what-are-you-really-looking-at/"/>
+	  </li>
+	  
+	  <li>Sun, Feb 18, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/should-i-install-vista/">
+	      <span itemprop="name">Should I Install Vista?</span></a>
+	    <meta itemprop="datePublished"  content="Feb 18, 2007" />
+	    <meta  itemprop="url" content="/posts/should-i-install-vista/"/>
+	  </li>
+	  
+	  <li>Tue, Feb 13, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/sport-is-good-for-you/">
+	      <span itemprop="name">Sport is Good For You</span></a>
+	    <meta itemprop="datePublished"  content="Feb 13, 2007" />
+	    <meta  itemprop="url" content="/posts/sport-is-good-for-you/"/>
+	  </li>
+	  
+	  <li>Wed, Jan 31, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/a-bad-workman-blames-his-tools/">
+	      <span itemprop="name">A Bad Workman Blames his Tools</span></a>
+	    <meta itemprop="datePublished"  content="Jan 31, 2007" />
+	    <meta  itemprop="url" content="/posts/a-bad-workman-blames-his-tools/"/>
+	  </li>
+	  
+	  <li>Sun, Jan 28, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/a-new-look/">
+	      <span itemprop="name">A New Look</span></a>
+	    <meta itemprop="datePublished"  content="Jan 28, 2007" />
+	    <meta  itemprop="url" content="/posts/a-new-look/"/>
+	  </li>
+	  
+	  <li>Sun, Jan 14, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/quality-of-service/">
+	      <span itemprop="name">Quality of Service</span></a>
+	    <meta itemprop="datePublished"  content="Jan 14, 2007" />
+	    <meta  itemprop="url" content="/posts/quality-of-service/"/>
+	  </li>
+	  
+	</ul></div>
+	
+	<h3>2006</h3>
+	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
+	<ul>
+	  
+	  <li>Fri, Dec 15, 2006&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/life-the-universe-and-everything./">
+	      <span itemprop="name">Life, the Universe and Everything.</span></a>
+	    <meta itemprop="datePublished"  content="Dec 15, 2006" />
+	    <meta  itemprop="url" content="/posts/life-the-universe-and-everything./"/>
+	  </li>
+	  
+	  <li>Sun, Dec 3, 2006&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/love-is-in-the-air/">
+	      <span itemprop="name">Love is in the Air</span></a>
+	    <meta itemprop="datePublished"  content="Dec 03, 2006" />
+	    <meta  itemprop="url" content="/posts/love-is-in-the-air/"/>
+	  </li>
+	  
+	  <li>Thu, Nov 30, 2006&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/web-album-uploaded/">
+	      <span itemprop="name">Web Album Uploaded</span></a>
+	    <meta itemprop="datePublished"  content="Nov 30, 2006" />
+	    <meta  itemprop="url" content="/posts/web-album-uploaded/"/>
+	  </li>
+	  
+	  <li>Wed, Nov 29, 2006&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/can-you-see-me-waving/">
+	      <span itemprop="name">Can you see me Waving?</span></a>
+	    <meta itemprop="datePublished"  content="Nov 29, 2006" />
+	    <meta  itemprop="url" content="/posts/can-you-see-me-waving/"/>
+	  </li>
+	  
+	  <li>Thu, Nov 9, 2006&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/pcs-for-the-family/">
+	      <span itemprop="name">PCs for the Family</span></a>
+	    <meta itemprop="datePublished"  content="Nov 09, 2006" />
+	    <meta  itemprop="url" content="/posts/pcs-for-the-family/"/>
+	  </li>
+	  
+	  <li>Tue, Nov 7, 2006&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/iteration/">
+	      <span itemprop="name">Iteration</span></a>
+	    <meta itemprop="datePublished"  content="Nov 07, 2006" />
+	    <meta  itemprop="url" content="/posts/iteration/"/>
+	  </li>
+	  
+	  <li>Fri, Nov 3, 2006&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/the-joy-of-blogging/">
+	      <span itemprop="name">The Joy of Blogging</span></a>
+	    <meta itemprop="datePublished"  content="Nov 03, 2006" />
+	    <meta  itemprop="url" content="/posts/the-joy-of-blogging/"/>
+	  </li>
+	  
+	  <li>Fri, Oct 27, 2006&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/pumpkin-computer/">
+	      <span itemprop="name">Pumpkin Computer</span></a>
+	    <meta itemprop="datePublished"  content="Oct 27, 2006" />
+	    <meta  itemprop="url" content="/posts/pumpkin-computer/"/>
+	  </li>
+	  
+	  <li>Sun, Oct 15, 2006&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/groovey-honda-commercial/">
+	      <span itemprop="name">Groovey Honda Commercial</span></a>
+	    <meta itemprop="datePublished"  content="Oct 15, 2006" />
+	    <meta  itemprop="url" content="/posts/groovey-honda-commercial/"/>
+	  </li>
+	  
+	  <li>Sat, Oct 14, 2006&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/scott-adams-blog/">
+	      <span itemprop="name">Scott Adams&#39; Blog</span></a>
+	    <meta itemprop="datePublished"  content="Oct 14, 2006" />
+	    <meta  itemprop="url" content="/posts/scott-adams-blog/"/>
+	  </li>
+	  
+	  <li>Sat, Oct 14, 2006&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/gootube/">
+	      <span itemprop="name">GooTube</span></a>
+	    <meta itemprop="datePublished"  content="Oct 14, 2006" />
+	    <meta  itemprop="url" content="/posts/gootube/"/>
+	  </li>
+	  
+	  <li>Mon, Sep 18, 2006&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/weve-moved/">
+	      <span itemprop="name">We&#39;ve moved!</span></a>
+	    <meta itemprop="datePublished"  content="Sep 18, 2006" />
+	    <meta  itemprop="url" content="/posts/weve-moved/"/>
+	  </li>
+	  
+	  <li>Sat, Sep 16, 2006&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/server-change-imminent/">
+	      <span itemprop="name">Server change imminent</span></a>
+	    <meta itemprop="datePublished"  content="Sep 16, 2006" />
+	    <meta  itemprop="url" content="/posts/server-change-imminent/"/>
+	  </li>
+	  
+	  <li>Tue, Sep 12, 2006&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/minority-report-becomes-reality/">
+	      <span itemprop="name">Minority Report becomes Reality?</span></a>
+	    <meta itemprop="datePublished"  content="Sep 12, 2006" />
+	    <meta  itemprop="url" content="/posts/minority-report-becomes-reality/"/>
+	  </li>
+	  
+	  <li>Sat, Sep 9, 2006&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/it-has-begun/">
+	      <span itemprop="name">It has begun</span></a>
+	    <meta itemprop="datePublished"  content="Sep 09, 2006" />
+	    <meta  itemprop="url" content="/posts/it-has-begun/"/>
+	  </li>
+	  
+	</ul></div>
+	
+	<hr/>
+	
+
+  
+      </div>
+    </div>
+    </div>
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

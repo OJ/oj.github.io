@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Websites are Hard to Build - A Case in Point - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/websites-are-hard-to-build-a-case-in-point/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Websites are Hard to Build - A Case in Point </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Thu Jan 1, 2009</span>
+
+	  <p>A short time ago I <a href="/posts/websites-are-hard-to-build/" title="Websites are Hard to Build">posted some thoughts</a> on issues faced when building websites that most people aren&rsquo;t aware of when they decide to have one built. I posted from the perspective of someone who has, on many occasions, been asked to build a site for someone who really doesn&rsquo;t have a clue about what is involved. More importantly, they don&rsquo;t <em>want</em> to know.</p>
+
+<p>There are people out there who don&rsquo;t know about the issues faced, but are still in need of a site to fulfil their needs. Should they learn about these issues themselves? Should they put their faith in a developer/designer and let them do their job and just send them a bill at the end? A mixture of the two?</p>
+
+<p>It&rsquo;s a tough question to answer. Given that I am a developer, I am going to lean towards the &ldquo;let the developers do it&rdquo; option. But I also feel that the client has at least a small responsibility to make themselves aware of those problems. This is mainly because they are the ones who are going to be maintaining it when the site has been delivered. I do feel that the winning formula is a mixture of the two.</p>
+
+<p>The inspiration behind this post is the story of a lady who was starting an online business. I will not mention who they are, nor link to their site. This is to protect the innocent :)</p>
+
+<p>This poor lady was in need of a website. Given that her expertise lies outside the realm of computing, her knowledge and understanding of what goes into the development of a website is limited. She needed to have a site built and so enlisted the help of a designer and a developer. The designer was to create the banner image(s) for the site and the developer had the task of making the site functional.</p>
+
+<p>It&rsquo;s probably obvious to the Geeks out there that there are already a couple of holes in this little set up. First is that nobody was really tasked with the job of creating the design <strong>for the entire site</strong>. This is a problem because it&rsquo;ll end up the job of the developer who is generally woeful at web design. The second issue is that no grand &ldquo;vision&rdquo; for the site had been established, resulting in no connection between banner design, site design or needs of the client.</p>
+
+<p>See if you can picture the result.</p>
+
+<p>It&rsquo;s not pretty.</p>
+
+<p>The site&rsquo;s intent was to be the front for the online business. The client needed a means to post news and updates. They wanted to post blog entries. They required people to &ldquo;sign up&rdquo; for various features. They had certain sections of the site that required payment and full membership before access was given. Since it&rsquo;s a front-end site to the business it needed to feel professional. It needed to work across different browsers and function to a certain level of quality.</p>
+
+<p>The short-list of requirements then become:
+<ol>
+<li>A basic <a href="http://en.wikipedia.org/wiki/Content_management_system" title="Content Management System">CMS</a></li>
+<li>A <a href="http://en.wikipedia.org/wiki/Blog_software" title="Blog software">blog engine</a></li>
+<li>High-quality, cross-browser mark-up</li>
+<li>Login/sign-up/payment facilities</li>
+<li><strong>A seamless professional look and feel</strong></li>
+</ol>
+I&rsquo;d like to expand on that last point a little bit. It&rsquo;s hard enough to create an online business when your site is amazing. The issues of marketing, security, recognition, trust, etc. are extremely tough to tackle <em>without</em> making the user feel like they&rsquo;re dealing with a hodge-podge of technology connected together with a poor design.</p>
+
+<p>The professional look and feel is a must. The site must <strong>work</strong>. It must inspire confidence. It must make your users comfortable before they even attempt to consume the content therein. This makes that last requirement by far <em>the most important of all</em>. Without nailing it, the rest of the site may as well not exist.</p>
+
+<p>Now let&rsquo;s get back to our poor client. They ended up with the first requirement, so long as we emphasise the word &ldquo;basic&rdquo;. They received a blog engine, which is actually a <a href="http://www.blogspot.com/" title="Blogspot">Blogspot</a> blog hosted in an <a href="http://en.wikipedia.org/wiki/IFrame" title="iframe element">iframe</a> with a completely different design. They received a website that had a fairly poor design, invalid mark-up and features that are not only useless but aid in making the design <strong>even worse</strong> in certain scenarios. No doubt the developer thought those features were cool.</p>
+
+<p>Given that the developer had a bit of free reign they had no real restrictions on what to implement and were most likely able to bleed the client dry of as many hard-earned pennies as possible. The client paid a lot of money for something that feels like it was thrown together by inept site creators. It&rsquo;s not feature-complete. It&rsquo;s also broken in some ways.</p>
+
+<p>The final interesting point of this case is that the developer never actually discussed the idea of support with the client. They developed the site (which actually runs on an open-source CMS engine which may well have been paid for unnecessarily by the client) and handed it over. When the client came back to talk about other work, they utilised their position of power to charge insanely high rates for small pieces of support work.</p>
+
+<p>So why am I talking about this?</p>
+
+<p>Because it makes me sad and embarrassed to be a developer. It makes me angry that I am in the same boat as the person who created the site. More importantly it helps illustrate that lack of knowledge of what&rsquo;s involved can really bite you in the behind.</p>
+
+<p>I take my reputation very seriously and having happy clients is more important to me than getting paid as much as humanly possible for a job. I have certain morals and a different work ethic to the developer that is described above. I also wouldn&rsquo;t want to give the guys in my industry a bad name.</p>
+
+<p>To finish up, the point that I&rsquo;m trying to make is this: if you&rsquo;re a developer, it&rsquo;s just as much <em>your responsibility</em> to make your clients aware of the issues as it is theirs to learn of them. Don&rsquo;t take the piss and charge huge amounts for simple work. Don&rsquo;t ruin the reputation of web developers in general. Make sure the clients know what it is they want and make every effort to give it to them if the budget permits.</p>
+
+<p>There&rsquo;s more at stake than the next invoice.</p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/being-in-the-industry">Being in the Industry</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/software-development">Software Development</a>
+	  
+	    </p>
+	    
+<p><a itemprop="keywords" class=" label label-danger" href="/tags/case-study">case study</a> <a itemprop="keywords" class=" label label-danger" href="/tags/taking-the-piss">taking the piss</a> <a itemprop="keywords" class=" label label-danger" href="/tags/webdev">webdev</a></p>
+
+
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

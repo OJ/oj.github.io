@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Safer Code through Object-Orientation - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/safer-code-through-object-orientation/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Safer Code through Object-Orientation </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Thu Aug 9, 2007</span>
+
+	  <p>In my current position I spend a lot of time battling against a fairly poorly-written C++ code base. The code, while <em>technically</em> written in C++, is actually more of a C-like &ldquo;splat&rdquo; with a few classes thrown in. Since I began working on this project I&rsquo;ve seen many cases where proper <a href="http://en.wikipedia.org/wiki/Object-oriented_programming" title="Object-oriented programming">object-orientation</a> would have made a drastic improvement to the quality of the code.</p>
+
+<p>And it&rsquo;s these cases which are the inspiration for this blog post.</p>
+
+<p>Objects are not only good for encapsulation and making more readable/maintainable code. They can also be used to improve <em>code safety</em>. Rather than try and explain through words what I mean by &lsquo;code safety&rsquo;, let&rsquo;s work through a couple of examples.</p>
+
+<p><h3>Example 1: Data Integrity in a Multithreaded Application</h3>
+Let&rsquo;s say that we&rsquo;re working on a <a href="http://en.wikipedia.org/wiki/Thread_(computer_science)" title="Threading">multithreaded</a> application. We have a set of data that is constantly read and written across the different threads. We obviously don&rsquo;t want to have different threads writing to the dataset at the same time, as this may cause all kinds of issues with the data&rsquo;s integrity. We want to put a mechanism in place to ensure that the data&rsquo;s integrity is never put at risk. We can do this simply by &lsquo;locking&rsquo; the sections of code that perform the data writes via a synchronisation technique such as a <a href="http://en.wikipedia.org/wiki/Critical_section" title="Critical section">critical section</a>, a <a href="http://en.wikipedia.org/wiki/Semaphore_(programming)" title="Semaphore">semaphore</a> or a <a href="http://en.wikipedia.org/wiki/Mutex" title="Mutex">mutex</a>. For the sake of this example, we&rsquo;ll use a critical section. We&rsquo;ll wrap it up in an object for easy use. Let&rsquo;s pretend that we have a C++ critical section class that looks like this:</p>
+
+<pre><code>class CriticalSection
+{
+public:
+  CriticalSection();
+  ~CriticalSection();
+
+  bool Lock();
+  bool Unlock();
+
+  // ...
+};
+</code></pre>
+
+<p>To use the critical section object, all we need to do is this:</p>
+
+<pre><code>CriticalSection importantDataLocker;
+// ...
+if( importantDataLocker.Lock() )
+{
+  // do stuff to important data
+  // ...
+
+  importantDataLocker.Unlock();
+}
+</code></pre>
+
+<p>Easy enough isn&rsquo;t it! We&rsquo;ll use this code in our data writer object, so that we can make sure that all of our threads are playing nicely while writing the data. During the course of our data writing, we might want to do some other processing that is not related to writing data. Even though this task isn&rsquo;t related to writing the data out, we still retain the lock so that we can finish off the job after without having to unlock and relock. So we may have some code that looks like this:</p>
+
+<pre><code>bool DataWriter::WriteFunkyData( FunkyData* data )
+{
+  if( m_dataLocker.Lock() )
+  {
+    WriteABitOfData( data );
+    DoSomeProcessing( data );
+    WriteSomeMoreData( data );
+    // ...
+    m_dataLocker.Unlock();
+    return true;
+  }
+  return false;
+}
+</code></pre>
+
+<p>Not really rocket science is it? The above code makes sure that all the code between <em>Lock()</em> and <em>Unlock()</em> is only run when no other threads are requesting a lock (or own a lock) on the critical section.</p>
+
+<p>Unfortunately we have a problem. In a non-perfect world (like the one we live in) there&rsquo;s always a chance that somewhere between the call to <em>Lock()</em> and the call to <em>Unlock()</em> an error might occur. An exception may be thrown. The code might just <em>return;</em>. If that&rsquo;s the case, the critical section will <strong>not be unlocked</strong> because the <em>Unlock()</em> function won&rsquo;t be called before the function finishes.</p>
+
+<p>The result? A critical section that&rsquo;s permanently locked, and all future <em>Lock()</em> requests will either hang or fail. This is not ideal. If we were using system-wide mutexes we&rsquo;d do some serious damage! Cleary this isn&rsquo;t acceptable.</p>
+
+<p>Most <a href="http://en.wikipedia.org/wiki/Procedural_programming" title="Procedural programming">procedural</a> programmers will adjust the code in the following manner:</p>
+
+<pre><code>bool DataWriter::WriteFunkyData( FunkyData* data )
+{
+  if( m_dataLocker.Lock() )
+  {
+    if( !WriteABitOfData( data ) )
+    {
+      m_dataLocker.Unlock();
+      return false;
+    }
+
+    try
+    {
+      DoSomeProcessing( data );
+    }
+    catch(...)
+    {
+      m_dataLocker.Unlock();
+      return false;
+    }
+
+    if( !WriteSomeMoreData( data ) )
+    {
+      m_dataLocker.Unlock();
+      return false;
+    }
+    // ...
+    m_dataLocker.Unlock();
+    return true;
+  }
+  return false;
+}
+</code></pre>
+
+<p>Some of you might be laughing at the above code. And rightly so! But don&rsquo;t think that it&rsquo;s uncommon because it&rsquo;s <strong>not</strong>. As you can imagine, the code gets bigger, nastier and tougher to maintain. As the function increases in size, code duplication increases and the chance of making mistakes increases. What if a new maintenance coder decides to early-out without unlocking? You&rsquo;re still stuck with the same problem.</p>
+
+<p>Further use of object-orientation is what&rsquo;s required to solve this problem. Let&rsquo;s use and abuse a couple of the core features of objects: <a href="http://en.wikipedia.org/wiki/Constructor_%28computer_science%29" title="Constructor">construction</a> and <a href="http://en.wikipedia.org/wiki/Destructor_%28computer_science%29" title="Destructor">destruction</a>:<ul><li>When an object is instantiated, it&rsquo;s <em>constructor</em> is called.</li><li>When an object is destroyed, it&rsquo;s <em>destructor</em> is called</li></ul>For those of you who don&rsquo;t know, objects are destroyed in two ways:<ol><li>When they go out of scope.</li><li>When they are <a href="http://en.wikipedia.org/wiki/Operator_delete" title="Operator delete">deleted</a>.</li></ol>
+Each function in C++ has it&rsquo;s own scope. As soon as the function is finished, the scope is no longer valid and any local variables are cleaned up. This happens when &hellip;<ul><li>&hellip; program execution reaches the end of the function.</li><li>&hellip; a <em>return</em> statement is reached.</li><li>&hellip; a exception is thrown that is not caught.</li></ul>
+If there was an object that was able to lock the critical section when it&rsquo;s constructed and unlock the same critical section when it&rsquo;s destroyed, we could use it to make sure that the critical section is unlocked <strong>regardless</strong> of the way in which the function is exited. That was a bit of a mouthful, so to demonstrate the point have a look at the following code:</p>
+
+<pre><code>class CriticalSectionLocker
+{
+public:
+  CriticalSectionLocker( CriticalSection&amp; cs )
+  : m_criticalSection( cs )
+  {
+    m_isLocked = m_criticalSection.Lock();
+  }
+  ~CriticalSectionLocker()
+  {
+    if( m_isLocked )
+    {
+      m_criticalSection.Unlock();
+    }
+  }
+  bool IsLocked()
+  {
+    return m_isLocked;
+  }
+private:
+  bool m_isLocked;
+  CriticalSection&amp; m_criticalSection;
+};
+</code></pre>
+
+<p>If we use this object instead of the verbose and repetitive method shown above, our code would look like this:</p>
+
+<pre><code>bool DataWriter::WriteFunkyData( FunkyData* data )
+{
+  CriticalSectionLocker csl( m_dataLocker );
+  if( csl.IsLocked() )
+  {
+    if( !WriteABitOfData( data ) )
+    {
+      return false;
+    }
+
+    DoSomeProcessing( data );
+
+    if( !WriteSomeMoreData( data ) )
+    {
+      return false;
+    }
+    // ...
+    return true;
+  }
+
+  return false;
+}
+</code></pre>
+
+<p>This code is substantially easier to maintain. As soon as <em>csl</em> goes out of scope, the critical section will be unlocked automatically via the destructor. This will happen on early-outs <em>and</em> when exceptions are thrown. Job done!</p>
+
+<p><h3>Example 2: Flag/Value Toggling</h3>
+Developers have been known to write code which relies on object state to function differently. While this might not be considered &lsquo;best practice&rsquo;, it&rsquo;s fairly common out in the wild. There are times where a developer may want to temporarily toggle a flag, or change the value of a variable, and change it back before the rest of the code is run. Here&rsquo;s an example (it&rsquo;s not real-life, but it should give you the idea):</p>
+
+<pre><code>void Person::GotToParty( NightClub* nc )
+{
+  if( !nc-&gt;AllowsEntry( this ) )
+  {
+    // temporarily pretend we're older
+    // so we can go clubbing!
+    int backupAge = m_Age;
+    m_Age = 25;
+
+    if( nc-&gt;AllowsEntry( this ) )
+    {
+      this-&gt;Party( nc, HARD_BUT_SUBTLE );
+    }
+
+    // best restore our age now
+    m_Age = backupAge;
+  }
+  else
+  {
+    this-&gt;Party( nc, HARD );
+  }
+}
+</code></pre>
+
+<p>Don&rsquo;t laugh, we&rsquo;ve all been there! :)</p>
+
+<p>It should be obvious that the code above suffers from the same shortcomings as the previous example. It&rsquo;s not resiliant against early-outs or exceptions. A similar type of construct/destruct mechanism can be used to reset the original value of a variable in a much safer way. An example class might look like this:</p>
+
+<pre><code>template&lt; typename T &gt;
+class ValueToggler
+{
+public:
+  ValueToggler( T&amp; variableToToggle, T tempValue )
+  : m_toggleVar( variableToToggle ),
+    m_originalValue( variableToToggle )
+  {
+    m_toggleVar = tempValue;
+  }
+
+  ~ValueToggler()
+  {
+    m_togglerVar = m_originalValue;
+  }
+private:
+  T&amp; m_toggleVar;
+  T m_originalValue;
+};
+</code></pre>
+
+<p>The object above is templated so that it can be used with a variety of types (eg. int, double, float). Using an object such as this, the example program code would change to the following:</p>
+
+<pre><code>void Person::GotToParty( NightClub* nc )
+{
+  if( !nc-&gt;AllowsEntry( this ) )
+  {
+    ValueToggler&lt;int&gt; vt( m_Age, 25 );
+
+    if( nc-&gt;AllowsEntry( this ) )
+    {
+      this-&gt;Party( nc, HARD_BUT_SUBTLE );
+    }
+  }
+  else
+  {
+    this-&gt;Party( nc, HARD );
+  }
+}
+</code></pre>
+
+<p>Again, the code is smaller and a lot more bulletproof. The value of <em>m_Age</em> will be restored no matter what happens inside the function.</p>
+
+<p><h3>Conclusion and Final Thoughts</h3>
+The above samples should show you how easy it is to use objects to help you write more defensive code. Though some people (usually the procedural programmers ;) ) would say that this kind of code is a hack, it&rsquo;s my view that they&rsquo;re wrong. The code is clear, easy to maintain, and very safe.</p>
+
+<p><em>Disclaimer:</em> The code above hasn&rsquo;t been compiled, so it may contain errors. The point of the post is to show you the idea behind using objects for safety. Ideal implementations are beyond the scope of the article.</p>
+
+<p>Thoughts and feedback are always welcome.</p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/software-development">Software Development</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/c">C#</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

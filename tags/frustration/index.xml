@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>frustration on OJ&#39;s Perspective</title>
+    <link>/tags/frustration/</link>
+    <description>Recent content in frustration on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Thu, 07 Aug 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/frustration/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Stop Cutting your Feeds Short</title>
+      <link>/posts/stop-cutting-your-feeds-short/</link>
+      <pubDate>Thu, 07 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/stop-cutting-your-feeds-short/</guid>
+      <description>&lt;p&gt;Despite the fact the Internet is accessible from nearly everywhere, there are still times when you are forced to work in a disconnected environment. There are also times where you &lt;em&gt;want&lt;/em&gt; to work in a disconnected environment (probably to avoid distractions from &lt;a href=&#34;http://en.wikipedia.org/wiki/Instant_messaging&#34; title=&#34;Instant Messaging&#34;&gt;IM&lt;/a&gt;, &lt;a href=&#34;http://twitter.com/&#34; title=&#34;Twitter&#34;&gt;Twitter&lt;/a&gt;, etc).&lt;/p&gt;
+
+&lt;p&gt;So why is it that we still don&amp;rsquo;t seem to do a good job of catering for these cases? Offline capabilities are currently few and far between. Sure, it can be hard to add offline functionality to an application, depending on what the application does, but sometimes there&amp;rsquo;s really no excuse.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

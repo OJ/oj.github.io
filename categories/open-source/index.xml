@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open Source on OJ&#39;s Perspective</title>
+    <link>/categories/open-source/</link>
+    <description>Recent content in Open Source on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Fri, 27 Dec 2013 23:14:44 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/open-source/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>3 Months of Meterpreter</title>
+      <link>/posts/3-months-of-meterpreter/</link>
+      <pubDate>Fri, 27 Dec 2013 23:14:44 +0000</pubDate>
+      
+      <guid>/posts/3-months-of-meterpreter/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://www.metasploit.com/revamp/images/metasploit-logo.png&#34; style=&#34;float:right;margin-left:5px;margin-bottom:5px;&#34;/&gt;
+In August this year I was fortunate enough to land a three-month contract working with the awesome people at &lt;a href=&#34;http://www.rapid7.com/&#34;&gt;Rapid7&lt;/a&gt;. The job: &lt;em&gt;make &lt;a href=&#34;https://github.com/rapid7/meterpreter&#34;&gt;Meterpreter&lt;/a&gt; more awesome on Windows&lt;/em&gt;. That&amp;rsquo;s right &lt;em&gt;more&lt;/em&gt; awesome than it already is. Tough gig, but what an amazing opportunity!&lt;/p&gt;
+
+&lt;p&gt;Those three months have already come and gone, and what a ride it has been. In this post I would like to detail some of the work that has gone into Meterpreter, and Metasploit too, with a goal of helping others understand what it does and how it works. Ultimately, I&amp;rsquo;d love to start seeing some contributions from the community now that it&amp;rsquo;s &lt;em&gt;substantially&lt;/em&gt; easier to build.&lt;/p&gt;
+
+&lt;p&gt;So, in a semi-chronological-semi-ad-hoc order, here&amp;rsquo;s how Meterpreter has evolved.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>64bit Pointer Truncation in Meterpreter</title>
+      <link>/posts/64bit-pointer-truncation-in-meterpreter/</link>
+      <pubDate>Sat, 14 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/64bit-pointer-truncation-in-meterpreter/</guid>
+      <description>&lt;p&gt;If you haven&amp;rsquo;t ever heard of &lt;a href=&#34;https://github.com/rapid7/meterpreter&#34; title=&#34;Native Meterpreter&#34;&gt;Meterpreter&lt;/a&gt; before, you might want to go and take a look at it before reading this post to help give some context. In short, Meterpreter is an amazing library that is part of the &lt;a href=&#34;http://www.metasploit.com/&#34; title=&#34;Metasploit Framework&#34;&gt;Metasploit Framework&lt;/a&gt; and can be used to give you tremendous power and control over target machines during a &lt;a href=&#34;http://en.wikipedia.org/wiki/Penetration_test&#34; title=&#34;Penetration Testing&#34;&gt;penetration test&lt;/a&gt;. Anyone and everyone in the security game is most likely familiar with both Metasploit and Meterpreter, at the very least, if not closely intimate with them. The toolset is fantastic, and is &lt;a href=&#34;https://github.com/rapid7/metasploit-framework/&#34; title=&#34;Metasploit Framework Source&#34;&gt;open source&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m currently in the very fortunate position of &lt;a href=&#34;https://community.rapid7.com/community/metasploit/blog/2013/09/05/weekly-update&#34; title=&#34;Weekly Update: Meterpreter Updates, VMWare, the OSX spycam, Retabbing, and more!&#34;&gt;working with the crew&lt;/a&gt; from &lt;a href=&#34;http://www.rapid7.com/&#34; title=&#34;Rapid 7&#34;&gt;Rapid7&lt;/a&gt; to help improve Meterpreter, particularly on the Windows (both 32 and 64 bit). I have a good list of things to work through while I&amp;rsquo;m on board including making it easier to build for potential contributors, and to fix some outstanding issues that the R7 crew haven&amp;rsquo;t had the bandwidth to fix.  These people are super-smart, and super-nice and I&amp;rsquo;m honoured that I&amp;rsquo;ve been selected to work alongside them.&lt;/p&gt;
+
+&lt;p&gt;The purpose of this post is to document the process and resolution of a bug that I have helped resolve since joining. I also aim to lift the lid on Meterpreter a little and help expose how some bits of it work. I hope you enjoy.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CorrugatedIron Update - v0.1.1</title>
+      <link>/posts/corrugatediron-update-v0.1.1/</link>
+      <pubDate>Wed, 03 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/corrugatediron-update-v0.1.1/</guid>
+      <description>&lt;p&gt;Last week &lt;a href=&#34;http://facility9.com/&#34; title=&#34;Jeremiah Peschka&#34;&gt;JP&lt;/a&gt; and I released our first Open Source project, &lt;a href=&#34;http://corrugatediron.org/&#34; title=&#34;CorrugatedIron&#34;&gt;CorrugatedIron&lt;/a&gt;. The release seemed to be fairly well received by those people who gave it a spin. We&amp;rsquo;ve had some good feedback along the way which we&amp;rsquo;ll be evaluating, and no doubt those suggestions and comments will be influencing the future of the library.&lt;/p&gt;
+
+&lt;p&gt;In the interim, we wanted to get another version out which sorts out two main issues and that changes the &lt;em&gt;perceived&lt;/em&gt; &amp;ldquo;norm&amp;rdquo; when building applications with CorrugatedIron. Those issues are listed below. We&amp;rsquo;ve also go the first pass of our &lt;a href=&#34;http://corrugatediron.org/documentation/MapReduce.html&#34; title=&#34;Map/Reduce&#34;&gt;Map/Reduce&lt;/a&gt; documentation ready.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re not interested in the detail, head on over to the &lt;a href=&#34;http://corrugatediron.org/downloads.html&#34; title=&#34;Downloads page&#34;&gt;download page&lt;/a&gt; to find out the many ways in which you can get access to the release. Otherwise, please read on!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Introducing CorrugatedIron</title>
+      <link>/posts/introducing-corrugatediron/</link>
+      <pubDate>Mon, 25 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/introducing-corrugatediron/</guid>
+      <description>&lt;h2 id=&#34;it-s-alive&#34;&gt;It&amp;rsquo;s Alive!&lt;/h2&gt;
+
+&lt;p&gt;It is with great pride that I introduce my first ever Open Source product release: &lt;a href=&#34;http://corrugatediron.org/&#34; title=&#34;CorrugatedIron&#34;&gt;CorrugatedIron&lt;/a&gt;! A feature-rich .NET client for the &lt;a href=&#34;http://riak.basho.com/&#34; title=&#34;Riak&#34;&gt;Riak&lt;/a&gt; Key-Value store. Together with my partner-in-crime &lt;a href=&#34;http://facility9.com/&#34; title=&#34;Jeremiah Peschka&#34;&gt;Jeremiah&lt;/a&gt;, we&amp;rsquo;ve put together a driver which exposes a great deal of Riak&amp;rsquo;s functionality. CorrugatedIron is at &lt;a href=&#34;https://github.com/DistributedNonsense/CorrugatedIron/tree/v0.1.0&#34;&gt;v0.1.0&lt;/a&gt;, and while it doesn&amp;rsquo;t support every feature the Riak has to offer, it covers most, if not all, of the most common features that are required to effectively communicate with the system.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

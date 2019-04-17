@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>websites on OJ&#39;s Perspective</title>
+    <link>/tags/websites/</link>
+    <description>Recent content in websites on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Wed, 26 Nov 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/websites/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Websites are Hard to Build</title>
+      <link>/posts/websites-are-hard-to-build/</link>
+      <pubDate>Wed, 26 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/websites-are-hard-to-build/</guid>
+      <description>&lt;p&gt;{% img right /uploads/2008/11/elope-harlequin-jester.jpg &amp;lsquo;Uninformed client&amp;rsquo; %}
+&amp;gt; &amp;ldquo;It&amp;rsquo;s just a small site, how hard can it be?&amp;rdquo;
+&amp;gt;
+&amp;gt; &amp;ldquo;I thought you could do it for me as a favour. It&amp;rsquo;s not a complicated site.&amp;rdquo;
+&amp;gt;
+&amp;gt; &amp;ldquo;This would take me an afternoon, but I don&amp;rsquo;t have time, can you do it for me?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Have you ever heard these comments before? Have you heard ones that are similar? I&amp;rsquo;ve been hearing them a lot in the last few weeks and it&amp;rsquo;s starting to get to me.&lt;/p&gt;
+
+&lt;p&gt;I have just had a chat with a mate who is also suffering this pain, and that conversation is what inspired me to write this, the first random rant in a while.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

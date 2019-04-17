@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gnome Sort on OJ&#39;s Perspective</title>
+    <link>/tags/gnome-sort/</link>
+    <description>Recent content in Gnome Sort on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Thu, 16 Oct 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/gnome-sort/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sorting Algorithms: The Gnome Sort</title>
+      <link>/posts/sorting-algorithms-the-gnome-sort/</link>
+      <pubDate>Thu, 16 Oct 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sorting-algorithms-the-gnome-sort/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/uploads/2008/10/gnome.jpg&#34; alt=&#34;Gnome Sort&#34; title=&#34;Gnome Sort&#34; width=&#34;240&#34; style=&#34;float: right; margin-left: 5px; margin-bottom: 5px;&#34;/&gt;After a bit of down time for personal reasons, here is the fourth post in the series on &lt;a href=&#34;/category/sorting/&#34; title=&#34;Sorting @ OJ&#39;s rants&#34;&gt;sorting&lt;/a&gt; algorithms. This time round we&amp;rsquo;re taking a good look at the &lt;strong&gt;Gnome Sort&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;People often do a double-take when hearing the term &amp;ldquo;Gnome Sort&amp;rdquo; because it&amp;rsquo;s not that common. The &lt;strong&gt;Gnome Sort&lt;/strong&gt; is extremely simple, and is very similar to the principle behind the &lt;strong&gt;Insertion Sort&lt;/strong&gt; (which we&amp;rsquo;ll be covering soon).&lt;/p&gt;
+
+&lt;p&gt;The Gnome Sort is yet another &lt;em&gt;comparison&lt;/em&gt; and &lt;em&gt;exchange&lt;/em&gt; sort which has elements that are similar to the &lt;a href=&#34;/posts/sorting-algorithms-the-bubble-sort/&#34; title=&#34;Sorting Algorithms: The Bubble Sort&#34;&gt;Bubble Sort&lt;/a&gt;. If you haven&amp;rsquo;t read up on the Bubble Sort, be sure to do that before reading this article as it may help with your understanding.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

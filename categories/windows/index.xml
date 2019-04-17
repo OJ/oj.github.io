@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on OJ&#39;s Perspective</title>
+    <link>/categories/windows/</link>
+    <description>Recent content in Windows on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Sat, 14 Sep 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>64bit Pointer Truncation in Meterpreter</title>
+      <link>/posts/64bit-pointer-truncation-in-meterpreter/</link>
+      <pubDate>Sat, 14 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/64bit-pointer-truncation-in-meterpreter/</guid>
+      <description>&lt;p&gt;If you haven&amp;rsquo;t ever heard of &lt;a href=&#34;https://github.com/rapid7/meterpreter&#34; title=&#34;Native Meterpreter&#34;&gt;Meterpreter&lt;/a&gt; before, you might want to go and take a look at it before reading this post to help give some context. In short, Meterpreter is an amazing library that is part of the &lt;a href=&#34;http://www.metasploit.com/&#34; title=&#34;Metasploit Framework&#34;&gt;Metasploit Framework&lt;/a&gt; and can be used to give you tremendous power and control over target machines during a &lt;a href=&#34;http://en.wikipedia.org/wiki/Penetration_test&#34; title=&#34;Penetration Testing&#34;&gt;penetration test&lt;/a&gt;. Anyone and everyone in the security game is most likely familiar with both Metasploit and Meterpreter, at the very least, if not closely intimate with them. The toolset is fantastic, and is &lt;a href=&#34;https://github.com/rapid7/metasploit-framework/&#34; title=&#34;Metasploit Framework Source&#34;&gt;open source&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m currently in the very fortunate position of &lt;a href=&#34;https://community.rapid7.com/community/metasploit/blog/2013/09/05/weekly-update&#34; title=&#34;Weekly Update: Meterpreter Updates, VMWare, the OSX spycam, Retabbing, and more!&#34;&gt;working with the crew&lt;/a&gt; from &lt;a href=&#34;http://www.rapid7.com/&#34; title=&#34;Rapid 7&#34;&gt;Rapid7&lt;/a&gt; to help improve Meterpreter, particularly on the Windows (both 32 and 64 bit). I have a good list of things to work through while I&amp;rsquo;m on board including making it easier to build for potential contributors, and to fix some outstanding issues that the R7 crew haven&amp;rsquo;t had the bandwidth to fix.  These people are super-smart, and super-nice and I&amp;rsquo;m honoured that I&amp;rsquo;ve been selected to work alongside them.&lt;/p&gt;
+
+&lt;p&gt;The purpose of this post is to document the process and resolution of a bug that I have helped resolve since joining. I also aim to lift the lid on Meterpreter a little and help expose how some bits of it work. I hope you enjoy.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Setting up Trac, Mercurial and SSH on Windows</title>
+      <link>/posts/setting-up-trac-mercurial-and-ssh-on-windows/</link>
+      <pubDate>Sat, 16 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/setting-up-trac-mercurial-and-ssh-on-windows/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING - This blog post is long :)&lt;/strong&gt;
+&lt;em&gt;This post has been edited since it was published. Please see the end of the article for any notes/modifications&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;h3&gt;Some Background Info&lt;/h3&gt;
+I had the need to do this for work recently. It was nothing short of a right royal pain in the butt. It was such a pain, in fact, that I have decided to document what I had to do to get it working so that other poor unfortunates will feel less pain if they have to do this themselves.&lt;/p&gt;
+
+&lt;p&gt;Almost regardless of the company and the software I&amp;rsquo;m working on, I use &lt;a href=&#34;http://www.selenic.com/mercurial/&#34; title=&#34;Mercurial&#34;&gt;Mercurial&lt;/a&gt; for source code control. For the work I am doing at the moment, I was also using hg because the company I am involved with is relatively new and they hadn&amp;rsquo;t yet sorted out a plan for version control or &lt;acronym title=&#34;Application Lifecycle Management&#34;&gt;ALM&lt;/acronym&gt;. It was working quite well and I was pushing all my changes to my &lt;a href=&#34;http://www.google.com.au/url?q=http://www.buffalotech.com/products/network-storage/terastation/terastation-iii/&amp;ei=fioOSuLvGpu8swPl56zqAg&amp;sa=X&amp;oi=smap&amp;resnum=1&amp;ct=result&amp;cd=2&amp;usg=AFQjCNHXKMchy5tR-a-jMOFAbtxoWzfedA&#34; title=&#34;Terastation&#34;&gt;NAS box&lt;/a&gt; to make sure I had other copies backed up, etc. I was &lt;em&gt;living the dream&lt;/em&gt; :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Resolving Side-by-Side Configuration Issues</title>
+      <link>/posts/resolving-side-by-side-configuration-issues/</link>
+      <pubDate>Sat, 17 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/resolving-side-by-side-configuration-issues/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been meaning to blog about this for well over a year now, but for some reason I never got round to it. This came up in conversation the other day with a couple of workmates and it prompted me to revisit the issue.&lt;/p&gt;
+
+&lt;p&gt;Have you ever fired up an application on Windows XP and got the following error?
+&lt;blockquote&gt;&lt;p&gt;The application has failed to start because the application configuration is incorrect. Reinstalling the application may fix this problem.&lt;/p&gt;&lt;/blockquote&gt;
+Informative isn&amp;rsquo;t it! What about if you fire up the same application on Windows Vista?
+&lt;blockquote&gt;&lt;p&gt;The application has failed to start because its side-by-side configuration is incorrect. Please see the application event log for more detail.&lt;/p&gt;&lt;/blockquote&gt;
+This does tell us a little bit more about the problem, but not a &lt;em&gt;lot&lt;/em&gt; more.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reactivate? AGAIN!?</title>
+      <link>/posts/reactivate-again/</link>
+      <pubDate>Thu, 27 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/reactivate-again/</guid>
+      <description>&lt;p&gt;This is just a quick post to say how much Microsoft and their draconian OS licensing mechanism are pissing me off right now.&lt;/p&gt;
+
+&lt;p&gt;Last week my computer stopped booting. I didn&amp;rsquo;t get around to looking at it until a few days ago because I had visitors over from the UK. Not just that, it is Christmas, and the last thing you want to be doing on your Christmas break is to be fixing computers.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Requisite Vista</title>
+      <link>/posts/requisite-vista/</link>
+      <pubDate>Mon, 29 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/requisite-vista/</guid>
+      <description>&lt;p&gt;When I started my new gig on the 15th of this month, I was handed a &lt;a href=&#34;http://www.toshibadirect.com/td/b2c/cmod.to?coid=-33778&#34; title=&#34;Toshiba Tecra M9&#34;&gt;new laptop&lt;/a&gt; to do all my work on. It&amp;rsquo;s a nifty little gadget with 3GB RAM! Very schmick. There was one catch..&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip; see, the company is migrating to &lt;a href=&#34;http://www.microsoft.com/windows/products/windowsvista/default.mspx&#34; title=&#34;Windows Vista&#34;&gt;Vista&lt;/a&gt;, which means I have to use it too. A while ago I &lt;a href=&#34;/posts/should-i-install-vista/&#34; title=&#34;Should I install Vista?&#34;&gt;posted my thoughts with regards to installing Vista&lt;/a&gt;, so as you can imagine it&amp;rsquo;s a little bit strange having to use it.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Take Auto-Update Annoyances Another Step Further</title>
+      <link>/posts/microsoft-take-auto-update-annoyances-another-step-further/</link>
+      <pubDate>Thu, 31 May 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/microsoft-take-auto-update-annoyances-another-step-further/</guid>
+      <description>&lt;p&gt;Microsoft&amp;rsquo;s Automatic Update feature has always been annoying. I don&amp;rsquo;t care who you are, none of you can possibly say that it&amp;rsquo;s not annoying :) I thought that it wasn&amp;rsquo;t possible for it to become any &lt;em&gt;more&lt;/em&gt; annoying than it already is, but today I was proved wrong.&lt;/p&gt;
+
+&lt;p&gt;My main gripe was that almost regardless of the update, the machine needs to be rebooted. You&amp;rsquo;ve updated my desktop picture? &lt;em&gt;Reboot required&lt;/em&gt;. My IE install has had another check box added to the options? &lt;em&gt;Reboot required&lt;/em&gt;. Notepad&amp;rsquo;s default font has changed? &lt;em&gt;Reboot required&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Shortcuts: Windows</title>
+      <link>/posts/shortcuts-windows/</link>
+      <pubDate>Sat, 10 Feb 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/shortcuts-windows/</guid>
+      <description>This is the first of a collection of posts that I&amp;rsquo;m going to be making about shortcuts in applications. I&amp;rsquo;m constantly on the lookout for keyboard shortcuts to aid in improving the speed of my day to day activities, and I thought it&amp;rsquo;d be a good idea to start sharing them with you. These posts will probably get edited a few times over the course of their lives as I find more shortcuts :)</description>
+    </item>
+    
+    <item>
+      <title>A Crack in the Vista</title>
+      <link>/posts/a-crack-in-the-vista/</link>
+      <pubDate>Wed, 15 Nov 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/a-crack-in-the-vista/</guid>
+      <description>I&amp;rsquo;m sure that everyone knew that this was going to happen at some stage. Whether or not they believed it&amp;rsquo;d happen so quickly is another matter. Either way, it&amp;rsquo;s official, the new wonderdumpling operating system from Microsoft has been cracked. Aparently the activation and installation of the whole thing has been bypassed, and it&amp;rsquo;s available on the web. Check out this SMH article for more information.
+Why do they bother? Microsoft&amp;rsquo;s software is always going to be a target for hackers and crackers, and I think it&amp;rsquo;d be a better use of time and resources if they focussed on improving the user experience and giving the user more control and power when using the OS instead of trying to labotomise the machine if the software is cracked (and hence causing a crapload of problems for legit users) then they&amp;rsquo;d find that their users would be happier and they wouldn&amp;rsquo;t end up with so much egg on the face!</description>
+    </item>
+    
+    <item>
+      <title>PCs for the Family</title>
+      <link>/posts/pcs-for-the-family/</link>
+      <pubDate>Thu, 09 Nov 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/pcs-for-the-family/</guid>
+      <description>I know for sure that many of the geeks out there on the World Wide Wibbly have the &amp;ldquo;fun&amp;rdquo; task of sorting out every possible computer issue for any/all of their family and friends in the cases where they&amp;rsquo;re not geeks themselves. I am one such geek, and I&amp;rsquo;ll be honest and say that I do not mind helping out. It&amp;rsquo;s actually a bit of fun! I starting pondering thoughts on this topic when I stumbled across Roy&amp;rsquo;s MomPC blog post a week or two ago.</description>
+    </item>
+    
+    <item>
+      <title>What About Going the Other Way?</title>
+      <link>/posts/what-about-going-the-other-way/</link>
+      <pubDate>Thu, 19 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/what-about-going-the-other-way/</guid>
+      <description>I just thought I&amp;rsquo;d add this last post as a bit of food for thought before signing off today. This link comes from a bloke who&amp;rsquo;s been through the pain of wanting to move away from Windows, only to find that the results were just as, if not more, painful than sticking to what he knew. Have a read of this blog entry to see that the grass isn&amp;rsquo;t necessarily greener.</description>
+    </item>
+    
+    <item>
+      <title>Virtual Vista Stuff-Up</title>
+      <link>/posts/virtual-vista-stuff-up/</link>
+      <pubDate>Tue, 17 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/virtual-vista-stuff-up/</guid>
+      <description>OK, so it looks like I might have been misinformed (er&amp;hellip; wrong :)) by stating that the basic versions of Vista can&amp;rsquo;t be installed on VMs. That&amp;rsquo;ll teach me not to read the licencing details properly myself! It looks like it was a slight misunderstanding of the terms and structure that MS used in stating the rules. I won&amp;rsquo;t go into the details myself since Ed Bott has already done it for me.</description>
+    </item>
+    
+    <item>
+      <title>More Vista Madness</title>
+      <link>/posts/more-vista-madness/</link>
+      <pubDate>Mon, 16 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/more-vista-madness/</guid>
+      <description>And so the Vista malarky continues! More and more details of the behemoth that is Vista are coming to light which, quite frankly, freak me out even more.
+First of all, Microsoft won&amp;rsquo;t let you run some Vista editions virtualised, which is a bit of a surprise. Why would they push for free Virtual PC software and then not let you use some basic versions of the new OS under such a set up?</description>
+    </item>
+    
+    <item>
+      <title>The Vista &#39;Squeeze&#39; Begins</title>
+      <link>/posts/the-vista-squeeze-begins/</link>
+      <pubDate>Sat, 14 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-vista-squeeze-begins/</guid>
+      <description>Oh look, MS are already starting to cull their software support list. Does anyone else get the feeling that this is just another step towards pushing people into an unwanted early-adoption of Microsoft Handcuffs &amp;trade; (a.k.a Vista)?</description>
+    </item>
+    
+  </channel>
+</rss>

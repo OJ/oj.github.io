@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on OJ&#39;s Perspective</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Wed, 17 Apr 2019 16:55:43 +1000</lastBuildDate>
+    
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>C#</title>
+      <link>/categories/c#/</link>
+      <pubDate>Wed, 17 Apr 2019 16:55:43 +1000</pubDate>
+      
+      <guid>/categories/c#/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>/categories/development/</link>
+      <pubDate>Wed, 17 Apr 2019 16:55:43 +1000</pubDate>
+      
+      <guid>/categories/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LiveStream</title>
+      <link>/categories/livestream/</link>
+      <pubDate>Wed, 17 Apr 2019 16:55:43 +1000</pubDate>
+      
+      <guid>/categories/livestream/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Metasploit</title>
+      <link>/categories/metasploit/</link>
+      <pubDate>Wed, 17 Apr 2019 16:55:43 +1000</pubDate>
+      
+      <guid>/categories/metasploit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>/categories/security/</link>
+      <pubDate>Wed, 17 Apr 2019 16:55:43 +1000</pubDate>
+      
+      <guid>/categories/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CTF</title>
+      <link>/categories/ctf/</link>
+      <pubDate>Mon, 26 Nov 2018 16:41:10 +1000</pubDate>
+      
+      <guid>/categories/ctf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Meterpreter</title>
+      <link>/categories/meterpreter/</link>
+      <pubDate>Wed, 05 Oct 2016 10:46:58 +1000</pubDate>
+      
+      <guid>/categories/meterpreter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Disclosure</title>
+      <link>/categories/disclosure/</link>
+      <pubDate>Sat, 17 Jan 2015 08:19:03 +0000</pubDate>
+      
+      <guid>/categories/disclosure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shellcode</title>
+      <link>/categories/shellcode/</link>
+      <pubDate>Fri, 21 Mar 2014 22:31:39 +0000</pubDate>
+      
+      <guid>/categories/shellcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exploits</title>
+      <link>/categories/exploits/</link>
+      <pubDate>Wed, 12 Mar 2014 19:48:47 +0000</pubDate>
+      
+      <guid>/categories/exploits/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OSCE</title>
+      <link>/categories/osce/</link>
+      <pubDate>Mon, 17 Feb 2014 21:08:15 +0000</pubDate>
+      
+      <guid>/categories/osce/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Open Source</title>
+      <link>/categories/open-source/</link>
+      <pubDate>Fri, 27 Dec 2013 23:14:44 +0000</pubDate>
+      
+      <guid>/categories/open-source/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OSCP</title>
+      <link>/categories/oscp/</link>
+      <pubDate>Thu, 12 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/oscp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RCE</title>
+      <link>/categories/rce/</link>
+      <pubDate>Sat, 14 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/rce/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>/categories/windows/</link>
+      <pubDate>Sat, 14 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SmashTheStack-IO</title>
+      <link>/categories/smashthestack-io/</link>
+      <pubDate>Thu, 15 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/smashthestack-io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mac OS</title>
+      <link>/categories/mac-os/</link>
+      <pubDate>Sun, 03 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/mac-os/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tips/Tricks</title>
+      <link>/categories/tips/tricks/</link>
+      <pubDate>Sun, 03 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/tips/tricks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ASP.NET</title>
+      <link>/categories/asp.net/</link>
+      <pubDate>Thu, 29 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/asp.net/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>XSS</title>
+      <link>/categories/xss/</link>
+      <pubDate>Thu, 29 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/xss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Being in the Industry</title>
+      <link>/categories/being-in-the-industry/</link>
+      <pubDate>Tue, 27 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/being-in-the-industry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Functional Programming</title>
+      <link>/categories/functional-programming/</link>
+      <pubDate>Tue, 27 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/functional-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Life</title>
+      <link>/categories/life/</link>
+      <pubDate>Tue, 27 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Protip</title>
+      <link>/categories/protip/</link>
+      <pubDate>Tue, 30 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/protip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BackboneJS</title>
+      <link>/categories/backbonejs/</link>
+      <pubDate>Tue, 10 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/backbonejs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bootstrap</title>
+      <link>/categories/bootstrap/</link>
+      <pubDate>Tue, 10 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/bootstrap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Erlang</title>
+      <link>/categories/erlang/</link>
+      <pubDate>Tue, 10 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/erlang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ErlyDTL</title>
+      <link>/categories/erlydtl/</link>
+      <pubDate>Tue, 10 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/erlydtl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HOWTO</title>
+      <link>/categories/howto/</link>
+      <pubDate>Tue, 10 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/howto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Riak</title>
+      <link>/categories/riak/</link>
+      <pubDate>Tue, 10 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/riak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Webmachine</title>
+      <link>/categories/webmachine/</link>
+      <pubDate>Tue, 10 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/webmachine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OAuth</title>
+      <link>/categories/oauth/</link>
+      <pubDate>Wed, 15 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/oauth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software Development</title>
+      <link>/categories/software-development/</link>
+      <pubDate>Wed, 15 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/software-development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Twitter</title>
+      <link>/categories/twitter/</link>
+      <pubDate>Wed, 15 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/twitter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Productivity</title>
+      <link>/categories/productivity/</link>
+      <pubDate>Tue, 31 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/productivity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WTF</title>
+      <link>/categories/wtf/</link>
+      <pubDate>Fri, 27 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/wtf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Agile</title>
+      <link>/categories/agile/</link>
+      <pubDate>Wed, 18 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/agile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testing</title>
+      <link>/categories/testing/</link>
+      <pubDate>Wed, 18 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CLR</title>
+      <link>/categories/clr/</link>
+      <pubDate>Wed, 03 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/clr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mono</title>
+      <link>/categories/mono/</link>
+      <pubDate>Wed, 03 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/mono/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NoSQL</title>
+      <link>/categories/nosql/</link>
+      <pubDate>Wed, 03 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/nosql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Miscellaneous</title>
+      <link>/categories/miscellaneous/</link>
+      <pubDate>Fri, 25 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/miscellaneous/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Databases</title>
+      <link>/categories/databases/</link>
+      <pubDate>Wed, 13 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/databases/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microsoft</title>
+      <link>/categories/microsoft/</link>
+      <pubDate>Wed, 06 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/microsoft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Technology</title>
+      <link>/categories/technology/</link>
+      <pubDate>Sat, 22 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/technology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Software</title>
+      <link>/categories/software/</link>
+      <pubDate>Fri, 05 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google</title>
+      <link>/categories/google/</link>
+      <pubDate>Sat, 31 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/google/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mercurial</title>
+      <link>/categories/mercurial/</link>
+      <pubDate>Sat, 31 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/mercurial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Haskell</title>
+      <link>/categories/haskell/</link>
+      <pubDate>Mon, 17 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/haskell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Algorithms</title>
+      <link>/categories/algorithms/</link>
+      <pubDate>Thu, 25 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/algorithms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blogging</title>
+      <link>/categories/blogging/</link>
+      <pubDate>Wed, 14 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/blogging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>/categories/linux/</link>
+      <pubDate>Sat, 27 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sorting</title>
+      <link>/categories/sorting/</link>
+      <pubDate>Thu, 16 Oct 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/sorting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WPF</title>
+      <link>/categories/wpf/</link>
+      <pubDate>Tue, 09 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/wpf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Series</title>
+      <link>/categories/series/</link>
+      <pubDate>Wed, 13 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/series/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Project Euler</title>
+      <link>/categories/project-euler/</link>
+      <pubDate>Wed, 30 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/project-euler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fail</title>
+      <link>/categories/fail/</link>
+      <pubDate>Tue, 29 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/fail/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Guest posts</title>
+      <link>/categories/guest-posts/</link>
+      <pubDate>Tue, 29 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/guest-posts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Challenges</title>
+      <link>/categories/challenges/</link>
+      <pubDate>Fri, 25 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/challenges/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>F#</title>
+      <link>/categories/f#/</link>
+      <pubDate>Thu, 24 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/f#/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Screencasts</title>
+      <link>/categories/screencasts/</link>
+      <pubDate>Thu, 19 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/screencasts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Freeware</title>
+      <link>/categories/freeware/</link>
+      <pubDate>Sat, 31 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/freeware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shortcuts</title>
+      <link>/categories/shortcuts/</link>
+      <pubDate>Sun, 25 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/shortcuts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Merb</title>
+      <link>/categories/merb/</link>
+      <pubDate>Sun, 06 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/merb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hardware</title>
+      <link>/categories/hardware/</link>
+      <pubDate>Fri, 28 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/hardware/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Digital Rights</title>
+      <link>/categories/digital-rights/</link>
+      <pubDate>Thu, 27 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/digital-rights/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Funny</title>
+      <link>/categories/funny/</link>
+      <pubDate>Thu, 27 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/funny/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Games</title>
+      <link>/categories/games/</link>
+      <pubDate>Fri, 07 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/games/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Networks</title>
+      <link>/categories/networks/</link>
+      <pubDate>Wed, 05 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/networks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Privacy</title>
+      <link>/categories/privacy/</link>
+      <pubDate>Thu, 23 Aug 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/privacy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ASM</title>
+      <link>/categories/asm/</link>
+      <pubDate>Mon, 09 Apr 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/asm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ruby on Rails</title>
+      <link>/categories/ruby-on-rails/</link>
+      <pubDate>Wed, 28 Mar 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/ruby-on-rails/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Food</title>
+      <link>/categories/food/</link>
+      <pubDate>Sat, 03 Feb 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/food/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apple</title>
+      <link>/categories/apple/</link>
+      <pubDate>Wed, 25 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/apple/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

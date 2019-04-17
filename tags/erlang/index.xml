@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Erlang on OJ&#39;s Perspective</title>
+    <link>/tags/erlang/</link>
+    <description>Recent content in Erlang on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Tue, 10 Jul 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/erlang/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Webmachine, ErlyDTL and Riak - Part 5</title>
+      <link>/posts/webmachine-erlydtl-and-riak-part-5/</link>
+      <pubDate>Tue, 10 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/webmachine-erlydtl-and-riak-part-5/</guid>
+      <description>&lt;p&gt;{% img right /uploads/2010/09/riak-logo.png &amp;lsquo;Riak Logo&amp;rsquo; %}Newcomers to the series should first take a look at the previous four parts of the &lt;a href=&#34;http://buffered.io/series/web-development-with-erlang/&#34; title=&#34;Web Development with Erlang&#34;&gt;series&lt;/a&gt; (&lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-1/&#34; title=&#34;Wembachine, ErlyDTL and Riak - Part 1&#34;&gt;Part 1&lt;/a&gt;, &lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-2/&#34; title=&#34;Wembachine, ErlyDTL and Riak - Part 2&#34;&gt;Part 2&lt;/a&gt;, &lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-3/&#34; title=&#34;Wembachine, ErlyDTL and Riak - Part 3&#34;&gt;Part 3&lt;/a&gt;, &lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-4/&#34; title=&#34;Wembachine, ErlyDTL and Riak - Part 4&#34;&gt;Part 4&lt;/a&gt;) first to make sure that you&amp;rsquo;re up to speed. Feel free to read on if you feel comfortable with the general concepts in use.&lt;/p&gt;
+
+&lt;p&gt;When we finished &lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-4/&#34; title=&#34;Wembachine, ErlyDTL and Riak - Part 4&#34;&gt;Part 4&lt;/a&gt; we were able to authenticate users using &lt;a href=&#34;http://twitter.com/&#34; title=&#34;Twitter&#34;&gt;Twitter&lt;/a&gt; and &lt;a href=&#34;http://oauth.net/&#34; title=&#34;OAuth&#34;&gt;OAuth&lt;/a&gt;, which is great as we can delegate the responsibility of password management to an external entity.&lt;/p&gt;
+
+&lt;p&gt;Now that we know who people are, we want them to be able to do something meaningful with their accounts. That&amp;rsquo;s what this post is all about.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Webmachine, ErlyDTL and Riak - Part 4</title>
+      <link>/posts/webmachine-erlydtl-and-riak-part-4/</link>
+      <pubDate>Wed, 15 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/webmachine-erlydtl-and-riak-part-4/</guid>
+      <description>&lt;p&gt;{% img left /uploads/2010/09/riak-logo.png &amp;lsquo;Riak Logo&amp;rsquo; %}For those of you who are new to the series, you may want to check out &lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-1/&#34; title=&#34;Wembachine, ErlyDTL and Riak - Part 1&#34;&gt;Part 1&lt;/a&gt;, &lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-2/&#34; title=&#34;Wembachine, ErlyDTL and Riak - Part 2&#34;&gt;Part 2&lt;/a&gt; and &lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-3/&#34; title=&#34;Wembachine, ErlyDTL and Riak - Part 3&#34;&gt;Part 3&lt;/a&gt; before reading this post. It will help give you some context as well as introduce you to some of the jargon and technology that I&amp;rsquo;m using. If you&amp;rsquo;ve already read then, or don&amp;rsquo;t want to, then please read on!&lt;/p&gt;
+
+&lt;p&gt;Upon finishing &lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-3/&#34; title=&#34;Wembachine, ErlyDTL and Riak - Part 3&#34;&gt;Part 3&lt;/a&gt; of the series we were finally able to read data from &lt;a href=&#34;http://www.basho.com/developers.html#Riak&#34; title=&#34;Riak&#34;&gt;Riak&lt;/a&gt; and see it appear in our web page. This was the first stage in seeing a full end-to-end web application functioning. Of course there is still a great deal to do!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Webmachine, ErlyDTL and Riak - Part 3</title>
+      <link>/posts/webmachine-erlydtl-and-riak-part-3/</link>
+      <pubDate>Wed, 13 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/webmachine-erlydtl-and-riak-part-3/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/uploads/2010/09/riak-logo.png&#34; alt=&#34;Riak Logo&#34; style=&#34;float:left;padding-right:5px;padding-bottom:5px;&#34;/&gt;For those of you who are new to the series, you may want to check out &lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-1/&#34; title=&#34;Wembachine, ErlyDTL and Riak - Part 1&#34;&gt;Part 1&lt;/a&gt; and &lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-2/&#34; title=&#34;Webmachine, ErlyDTL and Riak - Part 2&#34;&gt;Part 2&lt;/a&gt; before reading this post. It will help give you some context as well as introduce you to some of the jargon and technology that I&amp;rsquo;m using. If you&amp;rsquo;ve already read then, or don&amp;rsquo;t want to, then please read on!&lt;/p&gt;
+
+&lt;p&gt;This post builds on the previous two, but not without a few little modifications. If you&amp;rsquo;re interested in following along step by step with your own version of the code running, then get yourself a copy of &lt;a href=&#34;https://github.com/OJ/csd/tree/Part2-20110403&#34; title=&#34;Source code for Part 2&#34;&gt;this changeset&lt;/a&gt; before doing so.&lt;/p&gt;
+
+&lt;p&gt;In this post we&amp;rsquo;re going to cover:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;A slight refactor of code structure to support the &amp;ldquo;standard&amp;rdquo; approach to building applications in Erlang using OTP.&lt;/li&gt;
+&lt;li&gt;Building a small set of modules to talk to &lt;a href=&#34;http://www.basho.com/developers.html#Riak&#34; title=&#34;Riak&#34;&gt;Riak&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Creation of some &lt;a href=&#34;http://json.org/&#34; title=&#34;JavaScript Object Notation&#34;&gt;JSON&lt;/a&gt; helper functions for reading and writing data.&lt;/li&gt;
+&lt;li&gt;Calling all the way from the &lt;a href=&#34;http://www.basho.com/developers.html#Webmachine&#34; title=&#34;Webmachine&#34;&gt;Webmachine&lt;/a&gt; front-end to Riak to extract data and display it in a browser using &lt;a href=&#34;http://github.com/evanmiller/erlydtl&#34; title=&#34;ErlyDTL&#34;&gt;ErlyDTL&lt;/a&gt; templates.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;There are quite a few code snippets in this post as well as output from script executions and &lt;code&gt;bash&lt;/code&gt; sessions. To avoid confusion, all file listings reference the path to the file that is being modified relative to the root of the project folder.&lt;/p&gt;
+
+&lt;p&gt;Be warned, this is a &lt;em&gt;long&lt;/em&gt; post :) Get yourself a &lt;em&gt;shmoke und a pancake&lt;/em&gt;, a glass of your favourite beverage and put some relaxing music on (instrumental is best).&lt;/p&gt;
+
+&lt;p&gt;Are you ready? OK, here we go &amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Webmachine, ErlyDTL and Riak - Part 2</title>
+      <link>/posts/webmachine-erlydtl-and-riak-part-2/</link>
+      <pubDate>Sun, 12 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/webmachine-erlydtl-and-riak-part-2/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/uploads/2010/09/riak-logo.png&#34; alt=&#34;Riak Logo&#34; style=&#34;float:left;padding-right:5px;padding-bottom:5px;&#34;/&gt;In &lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-1/&#34; title=&#34;Wembachine, ErlyDTL and Riak - Part 1&#34;&gt;Part 1&lt;/a&gt; of the series we covered the basics of getting the development environment up and running. We also looked at how to get a really simple ErlyDTL template rendering. If you haven&amp;rsquo;t yet gone through Part 1, I suggest you do that now. If you have, read on!&lt;/p&gt;
+
+&lt;p&gt;There are a few reasons this series is targeting this technology stack. One of them is &lt;strong&gt;uptime&lt;/strong&gt;. We&amp;rsquo;re aiming to build a site that stays up as much as possible. Given that, one of the things that I missed in the previous post was setting up a &lt;a href=&#34;http://en.wikipedia.org/wiki/Load_balancing_(computing)&#34; title=&#34;Load balancing&#34;&gt;load balancer&lt;/a&gt;. Hence this post will attempt to fill that gap.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Webmachine, ErlyDTL and Riak - Part 1</title>
+      <link>/posts/webmachine-erlydtl-and-riak-part-1/</link>
+      <pubDate>Wed, 01 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/webmachine-erlydtl-and-riak-part-1/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/uploads/2010/09/riak-logo.png&#34; alt=&#34;Riak Logo&#34; style=&#34;float:left;padding-right:5px;padding-bottom:5px;&#34;/&gt;It has been a long time coming, but the first post is finally here! This is the first in a series of post, as &lt;a href=&#34;/posts/the-future-is-erlang/&#34; title=&#34;The Future is Erlang&#34;&gt;promised a while ago&lt;/a&gt;, covering off web development using &lt;a href=&#34;http://erlang.org/&#34; title=&#34;Erlang&#34;&gt;Erlang&lt;/a&gt;. This post is the ubiquitous &amp;ldquo;get up and running&amp;rdquo; post, which aims to get your environment set up so that you can dive in to development. The next post will detail how to handle a basic end-to-end web request.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/uploads/2010/09/Erlang_logo.png&#34; width=&#34;150&#34; style=&#34;float:right;margin-left:5px;margin-bottom:5px;&#34;/&gt;First up, a few things we need to be aware of before we begin:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The information in this post has only been verified on Linux (&lt;a href=&#34;http://linuxmint.com/&#34; title=&#34;Linux Mint&#34;&gt;Mint&lt;/a&gt; to be exact). It &lt;em&gt;should&lt;/em&gt; work just fine on Mac OSX. I&amp;rsquo;m almost certain that it &lt;em&gt;won&amp;rsquo;t&lt;/em&gt; work on a Windows machine. So if you&amp;rsquo;re a Windows developer, you&amp;rsquo;ll have to wait for another post down the track which covers off how to get your environment ready to rock.&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;ll be downloading, building and installing &lt;a href=&#34;http://erlang.org/&#34; title=&#34;Erlang&#34;&gt;Erlang&lt;/a&gt;, &lt;a href=&#34;http://github.com/evanmiller/erlydtl&#34; title=&#34;ErlyDTL&#34;&gt;ErlyDTL&lt;/a&gt;, &lt;a href=&#34;http://www.basho.com/developers.html#Riak&#34; title=&#34;Riak&#34;&gt;Riak&lt;/a&gt; and &lt;a href=&#34;http://www.basho.com/developers.html#Webmachine&#34; title=&#34;Webmachine&#34;&gt;Webmachine&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.basho.com/developers.html#Rebar&#34; title=&#34;Rebar&#34;&gt;Rebar&lt;/a&gt; is the tool we&amp;rsquo;ll be using to handle builds, but I won&amp;rsquo;t be covering it in any depth.&lt;/li&gt;
+&lt;li&gt;You will need the latest version of &lt;a href=&#34;http://git-scm.com/&#34; title=&#34;Git&#34;&gt;Git&lt;/a&gt; so make sure it&amp;rsquo;s downloaded and installed before you follow this article.&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;ll be doing &lt;em&gt;some&lt;/em&gt; interaction with Riak via &lt;a href=&#34;http://curl.haxx.se/&#34; title=&#34;cURL and libcurl&#34;&gt;curl&lt;/a&gt;, so make sure you have it downloaded and installed as well.&lt;/li&gt;
+&lt;li&gt;This is intended to be a step-by-step guide targeted at those who are very new to web development in Erlang. This may not be the most ideal set up, nor the best way of doing certain things. I am hoping that those people who are more experienced than I will be able to provide feedback and guidance in areas where I am lacking.&lt;/li&gt;
+&lt;li&gt;Over the course of this series I&amp;rsquo;ll be attempting to build an Erlang version of the &lt;a href=&#34;http://bitbucket.org/OJ/codesmackdown&#34; title=&#34;Code Smackdown&#34;&gt;Code Smackdown&lt;/a&gt; site that I&amp;rsquo;ve been working on here and there with a &lt;a href=&#34;http://secretgeek.net/&#34; title=&#34;secretGeek&#34;&gt;mate of mine&lt;/a&gt;. You&amp;rsquo;ll see that the sample application we&amp;rsquo;re working on is called &amp;ldquo;csd&amp;rdquo; for obvious reasons.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;OK, let&amp;rsquo;s get into it. First up, Erlang.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Katacast: Shopping Checkout in Erlang</title>
+      <link>/posts/katacast-shopping-checkout-in-erlang/</link>
+      <pubDate>Mon, 04 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/katacast-shopping-checkout-in-erlang/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve recently discovered the joys of &lt;a href=&#34;http://codekata.pragprog.com/&#34; title=&#34;CodeKata&#34;&gt;CodeKatas&lt;/a&gt;. If you&amp;rsquo;re a geek looking for a way to &lt;a href=&#34;http://en.wikipedia.org/wiki/The_Seven_Habits_of_Highly_Effective_People&#34; title=&#34;The Seven Habits of Highly Effective People&#34;&gt;sharpen the saw&lt;/a&gt; then I highly recommend taking a look at these and trying a few out. They&amp;rsquo;re great fun and they&amp;rsquo;re a good way of getting your feet wet with new languages (especially if you&amp;rsquo;re tired of &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;).&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

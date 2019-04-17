@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WTF on OJ&#39;s Perspective</title>
+    <link>/categories/wtf/</link>
+    <description>Recent content in WTF on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Fri, 27 Jan 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/wtf/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An Expert at 23</title>
+      <link>/posts/an-expert-at-23/</link>
+      <pubDate>Fri, 27 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/an-expert-at-23/</guid>
+      <description>&lt;p&gt;I was about to head to bed when I stumbled across a poorly-titled &lt;a href=&#34;http://www.news.com.au/business/the-best-places-to-look-for-work-in-2012/story-e6frfm1i-1226255099978&#34; title=&#34;The best places to look for work in 2012&#34;&gt;article on news.com.au&lt;/a&gt;. At first I thought it was going to cover off the best locations around Australia, or perhaps the world, for finding work in a variety of industries. It turned out to be a failed attempt at highlighting the key growth industry areas for jobs in Australia.&lt;/p&gt;
+
+&lt;p&gt;It began like this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;JOBS demanded across several booming sectors will be the best place to find work this year.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Despite the appalling structure and lack of coherence of the opening paragraph I pushed on through the rest of the article, hoping to find some interesting or useful information. Most of content would be fairly obvious to almost every Australian. The bits that could be considered interesting were old news, and nothing in the article made me feel that reading it was a good use of time.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Go With Your Instinct</title>
+      <link>/posts/go-with-your-instinct/</link>
+      <pubDate>Fri, 25 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/go-with-your-instinct/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2011/02/double-facepalm.jpg&#34; rel=&#34;lightbox&#34;&gt;&lt;img src=&#34;/uploads/2011/02/double-facepalm.jpg&#34; width=&#34;150&#34; style=&#34;float:left;margin-right:5px;margin-bottom:5px;&#34; /&gt;&lt;/a&gt;At an early age I realised that it&amp;rsquo;s not always a bad thing to go with your first instinct. I won&amp;rsquo;t go into the reasons here, nor the way I came to that conclusion. What I will say is that I wish I&amp;rsquo;d listened to my inner-8-year-old-self when I started down the thread of emails and Tweets you&amp;rsquo;re about to read.&lt;/p&gt;
+
+&lt;p&gt;Suffice is to say that I have learned my lesson!&lt;/p&gt;
+
+&lt;p&gt;The thread speaks for itself. Enjoy :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ASP.NET MVC 2, Random Sign-offs and TempData Loss</title>
+      <link>/posts/asp.net-mvc-2-random-sign-offs-and-tempdata-loss/</link>
+      <pubDate>Wed, 06 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/asp.net-mvc-2-random-sign-offs-and-tempdata-loss/</guid>
+      <description>&lt;p&gt;&lt;a title=&#34;MVC&#34; href=&#34;/uploads/2010/10/mvc.png&#34; rel=&#34;lightbox[contentadvisor]&#34;&gt;&lt;img style=&#34;margin-left: 5px; margin-bottom: 5px; float: right;&#34; src=&#34;/uploads/2010/10/mvc.png&#34; alt=&#34;MVC&#34; width=&#34;150&#34; /&gt;&lt;/a&gt;In the last few days I&amp;rsquo;ve been working on resolving issues in a production system which runs on &lt;a title=&#34;What is ASP.NET MVC&#34; href=&#34;http://www.asp.net/mvc/whatisaspmvc&#34;&gt;ASP.NET MVC 2&lt;/a&gt;. Most of the issues were actually really easy to resolve and the team of developers were able to fix them and deploy to production without too many problems.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, as always, there was one problem in particular that had us scratching our heads and was causing some of us to lose sleep. All over the Internet there were posts of people describing similar symptoms yet none of them revealed a solid answer.&lt;/p&gt;
+
+&lt;p&gt;The purpose of this post is to document the issue and the resolution in it&amp;rsquo;s entirety. It&amp;rsquo;s in story form rather than reference form because that&amp;rsquo;s how I felt like writing it :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Wrong Decision by the Wrong Person</title>
+      <link>/posts/the-wrong-decision-by-the-wrong-person/</link>
+      <pubDate>Thu, 28 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-wrong-decision-by-the-wrong-person/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2010/01/pizza.jpg&#34; title=&#34;The wrong tool.&#34; rel=&#34;lightbox&#34;&gt;&lt;img src=&#34;/uploads/2010/01/pizza.jpg&#34; alt=&#34;The wrong tool.&#34; title=&#34;The wrong tool.&#34; style=&#34;float:right; margin-left:5px; margin-bottom:5px;&#34;  width=&#34;150&#34;/&gt;&lt;/a&gt;There is one thing about my industry that I still find truly amazing (and not in a good way). This is despite the fact that it has happened to me so many times that you think I&amp;rsquo;d be used to it! I&amp;rsquo;m talking about non-technical people making technical decisions.&lt;/p&gt;
+
+&lt;p&gt;For some reason, it&amp;rsquo;s a very common practice for those people who don&amp;rsquo;t have expertise in a certain field to make decisions for people working in that field. The best example I can think of off the top of my head is the answer to the question: &lt;em&gt;&amp;ldquo;Which technology should we use?&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Let me take a step back in time for a moment.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>I Don&#39;t Need Your Frickin&#39; Framework!</title>
+      <link>/posts/i-dont-need-your-frickin-framework/</link>
+      <pubDate>Mon, 13 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/i-dont-need-your-frickin-framework/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2009/04/scaffold_fail.jpg&#34; title=&#34;Scaffold Fail&#34;&gt;&lt;img src=&#34;/uploads/2009/04/scaffold_fail.jpg&#34; alt=&#34;Scaffold Fail&#34; title=&#34;Scaffold Fail&#34; width=&#34;200&#34; style=&#34;float: right; margin-left: 5px; margin-bottom: 5px;&#34; /&gt;&lt;/a&gt;How many companies have you worked with/for that have their own framework? How many have been in the process of developing their own framework? How many have been in the process of &lt;strong&gt;re&lt;/strong&gt;developing their own framework? How many have taken another framework and &lt;del&gt;hacked&lt;/del&gt; improved it?&lt;/p&gt;
+
+&lt;p&gt;When I attempt to answer the questions listed above, I start to shiver. I feel the need to burn my clothes and take a very long shower.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Always Question the Source (aka &#34;Don&#39;t Lock on Type Objects&#34;)</title>
+      <link>/posts/always-question-the-source-aka-dont-lock-on-type-objects/</link>
+      <pubDate>Tue, 10 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/always-question-the-source-aka-dont-lock-on-type-objects/</guid>
+      <description>&lt;p&gt;For one reason or another, I recently found myself perusing some code based on the &lt;a href=&#34;http://www.lhotka.net/cslanet/&#34; title=&#34;CSLA&#34;&gt;CSLA&lt;/a&gt; framework. While nosing around I came upon a snippet of code that I found rather disturbing. An example can be found &lt;a href=&#34;http://www.lhotka.net/cslacvs/viewvc.cgi/trunk/cslacs/Csla/Core/BusinessBase.cs?revision=3690&amp;amp;view=markup&#34; title=&#34;BusinessBase.cs&#34;&gt;here&lt;/a&gt; in the function called InitializeAuthorizationRules.&lt;/p&gt;
+
+&lt;p&gt;For those who are lazy, here is the particular snippet of code that caught my eye:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Admin is an Idiot</title>
+      <link>/posts/the-admin-is-an-idiot/</link>
+      <pubDate>Sat, 27 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-admin-is-an-idiot/</guid>
+      <description>&lt;p&gt;Yes, and that admin is me!&lt;/p&gt;
+
+&lt;p&gt;I usually do a fairly decent job of keeping the server patched, up to date, and clean. Over the Xmas period where I wasn&amp;rsquo;t really looking at anything online, something went wrong.&lt;/p&gt;
+
+&lt;p&gt;I logged on this morning only to find that the server wasn&amp;rsquo;t responding. I could connect via SSH, but nothing was being served via HTTP. So I tried to reboot &lt;a href=&#34;http://litespeedtech.com/&#34; title=&#34;LiteSpeed technologies&#34;&gt;LiteSpeed&lt;/a&gt; to see if that would resolve it (as you do ;) ). The service stopped, but failed to restart!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Epic Fail - Cuil Search Engine</title>
+      <link>/posts/epic-fail-cuil-search-engine/</link>
+      <pubDate>Tue, 29 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/epic-fail-cuil-search-engine/</guid>
+      <description>Don&amp;rsquo;t believe the hype. [caption id=&amp;ldquo;attachment_436&amp;rdquo; align=&amp;ldquo;aligncenter&amp;rdquo; width=&amp;ldquo;500&amp;rdquo; caption=&amp;ldquo;EPIC FAIL&amp;rdquo;][/caption]
+Mike G and Dare are dead right.</description>
+    </item>
+    
+    <item>
+      <title>HRM Revenue &amp;amp; Customs - Idiots!</title>
+      <link>/posts/hrm-revenue-amp-customs-idiots/</link>
+      <pubDate>Thu, 20 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hrm-revenue-amp-customs-idiots/</guid>
+      <description>&lt;p&gt;Today I received a nice letter from &lt;a href=&#34;http://www.hrm.gov.uk/&#34;&gt;HRM Revenue &amp;amp; Customs&lt;/a&gt; (yet another site that doesn&amp;rsquo;t work without being prefixed with &amp;ldquo;www&amp;rdquo;). It states:
+&lt;blockquote&gt;&lt;p&gt;Notice of determination of penalty for a late Tax Return for the tax year ended 5 April 2007.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I did not receive your Tax Return by the due date so you are liable to a penalty.&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
+Oh how nice! Upon reading further I found out the following information:&lt;blockquote&gt;&lt;p&gt;As a result the penalty imposed on you under Secxtion 93(2) of the Taxes Management Act 1970 is &amp;pound;100.00&lt;/p&gt;&lt;/blockquote&gt;This &amp;ldquo;fine&amp;rdquo; comes to around $217 Australian. Happy Easter eh!?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reactivate? AGAIN!?</title>
+      <link>/posts/reactivate-again/</link>
+      <pubDate>Thu, 27 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/reactivate-again/</guid>
+      <description>&lt;p&gt;This is just a quick post to say how much Microsoft and their draconian OS licensing mechanism are pissing me off right now.&lt;/p&gt;
+
+&lt;p&gt;Last week my computer stopped booting. I didn&amp;rsquo;t get around to looking at it until a few days ago because I had visitors over from the UK. Not just that, it is Christmas, and the last thing you want to be doing on your Christmas break is to be fixing computers.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rancid Bloatware</title>
+      <link>/posts/rancid-bloatware/</link>
+      <pubDate>Thu, 01 Nov 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/rancid-bloatware/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;d love to know what on earth got into &lt;a href=&#34;http://www.adobe.com/&#34; title=&#34;Adobe&#34;&gt;Adobe&amp;rsquo;s&lt;/a&gt; head when they decided to turn their &lt;a href=&#34;http://www.adobe.com/products/reader/&#34; title=&#34;Adobe Reader&#34;&gt;PDF reader&lt;/a&gt; into a stinking pile of sluggish bloatware? Who here remembers the old days when the Adobe Reader download was less than 10MB?&lt;/p&gt;
+
+&lt;p&gt;Take a look at the details on their current &lt;a href=&#34;http://www.adobe.com/products/acrobat/readstep2.html&#34; title=&#34;Reader Download&#34;&gt;download page&lt;/a&gt; (which I was recently forced to visit because of a &lt;a href=&#34;http://www.theregister.co.uk/posts/new_gozi_strain/print.html&#34; title=&#34;New Strain of Gozi Trojan Prowls the Net&#34;&gt;security flaw&lt;/a&gt; in the Reader&amp;rsquo;s functionality that has now been patched):&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WTF: Random Memory Contents</title>
+      <link>/posts/wtf-random-memory-contents/</link>
+      <pubDate>Mon, 03 Sep 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/wtf-random-memory-contents/</guid>
+      <description>If any of you out there are able to give me ONE GOOD REASON why anyone would do something like this, then please let me know. Below are &amp;ldquo;customised&amp;rdquo; realloc() and malloc() I recently stumbled across (yes, they get called. A LOT):
+void *mcRealloc( void *P, int SIZE ) { int oldSize = _msize( P ); P = realloc( P, SIZE ); if ( P ) { for ( int i = oldSize; i &amp;lt; SIZE; i++ ) { ((char *) P)[i] = (char) rand(); } } return P; } void *mcMalloc( int SIZE ) { void *P; P = malloc( SIZE ); if ( P ) { for ( int i = 0; i &amp;lt; SIZE; i++ ) { ((char *) P)[i] = (char) rand(); } } return P; }  Is it just me, or is this a huge WTF?</description>
+    </item>
+    
+    <item>
+      <title>Biosham &amp;#8482;</title>
+      <link>/posts/biosham-#8482/</link>
+      <pubDate>Thu, 23 Aug 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/biosham-#8482/</guid>
+      <description>&lt;p&gt;I can fully understand the desire a developer has to protect their creation from being copied illegally. I can understand why some steps would be taken to mitigate the risk of losing money due to piracy. What I can&amp;rsquo;t understand is why some companies go &lt;em&gt;so far&lt;/em&gt; with their anti-piracy measures that it starts to have an impact on the honourable, paying customers.&lt;/p&gt;
+
+&lt;p&gt;I have &lt;a href=&#34;/posts/microsoft-vista-licence-restrictions/&#34; title=&#34;Microsoft Vista License Restrictions&#34;&gt;bitched&lt;/a&gt; in the &lt;a href=&#34;/posts/office-registration-and-activation/&#34; title=&#34;Office Registratoin and Activation&#34;&gt;past&lt;/a&gt; about how activation is a pain in the neck. But that example is nothing like what &lt;a href=&#34;http://www.2kgames.com/&#34; title=&#34;2K Games&#34;&gt;2K Games&lt;/a&gt; have recently inflicted on the buyers of their latest creation, &lt;a href=&#34;http://www.2kgames.com/bioshock/&#34; title=&#34;Bioshock&#34;&gt;Bioshock&lt;/a&gt;. Rather than throw a few links to a bzillion blog and forum posts that have covered it already, let me just give you the short version:
+&lt;ol&gt;&lt;li&gt;Bioshock comes with &lt;a href=&#34;http://www.securom.com/&#34; title=&#34;SecuROM&#34;&gt;SecuROM&lt;/a&gt;.&lt;/li&gt;&lt;li&gt;It requires online activation before it can be played.&lt;/li&gt;&lt;li&gt;It can only be activated &lt;strong&gt;twice&lt;/strong&gt;.&lt;/li&gt;&lt;/ol&gt;On the surface this might not sound so bad, but when you think about it a little deeper it becomes obvious why this is such a pain in the arse.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>I&#39;ll View What I Like!</title>
+      <link>/posts/ill-view-what-i-like/</link>
+      <pubDate>Sat, 18 Aug 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ill-view-what-i-like/</guid>
+      <description>&lt;p&gt;I have a few questions for you:
+&lt;ol&gt;&lt;li&gt;How would you feel if TV channels changed automatically because you weren&amp;rsquo;t paying attention to the ads?&lt;/li&gt;&lt;li&gt;Would you like it if your newspaper closed by itself because you were reading the articles but skipping over the classifieds?&lt;/li&gt;&lt;li&gt;How happy would you be if you were kicked out of a cinema for not watching the latest and greatest in &lt;a href=&#34;http://www.valmorgan.com.au/&#34; title=&#34;Val Morgan&#34;&gt;Val Morgan Cinema Advertising&lt;/a&gt;?&lt;/li&gt;&lt;li&gt;Would you be happy if you weren&amp;rsquo;t allowed to walk into a shop unless you HAD to buy something?&lt;/li&gt;&lt;/ol&gt;
+If you&amp;rsquo;re anything like me, you&amp;rsquo;d be pretty pissed off about it. The scary thing is that this kind of thing is already happening on the web.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Misled from the Start</title>
+      <link>/posts/misled-from-the-start/</link>
+      <pubDate>Fri, 03 Aug 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/misled-from-the-start/</guid>
+      <description>&lt;p&gt;I find myself frequently concerned with the lack of ability of a lot of people in our industry. Today I found an example of at least one of the possible reasons why software development professionals turn out to be crap.&lt;/p&gt;
+
+&lt;p&gt;They start by reading &lt;a href=&#34;http://mezzoscorner.blogspot.com/2007/07/basics-your-first-program.html&#34; title=&#34;The Basics - Your first program&#34;&gt;tutorials like this&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;How can we expect people to become good at what they do if the tutorials they&amp;rsquo;re learning from are like that? If you learn the bad stuff from the outset then you&amp;rsquo;re destined to be writing bad code for many years to come.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WTF: You&#39;ll Never Amount to Anything</title>
+      <link>/posts/wtf-youll-never-amount-to-anything/</link>
+      <pubDate>Wed, 20 Dec 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/wtf-youll-never-amount-to-anything/</guid>
+      <description>Yes, it just gets better and better! This beauty is just a few of the lines that make up a huge &amp;ldquo;property get&amp;rdquo; in C#. Count the WTFs in this crazy baby:
+string amount = &amp;quot;&amp;quot;; double Amount = 0; try { amount = (string)r[&amp;quot;Amount&amp;quot;]; Amount = Convert.ToDouble(amount); } catch { // use formula rather than value AmountFormula = amount; Amount = 0; }  If I had a prize, I&amp;rsquo;d give one away, but I don&amp;rsquo;t.</description>
+    </item>
+    
+    <item>
+      <title>WTF: Who&#39;s the Dummy?</title>
+      <link>/posts/wtf-whos-the-dummy/</link>
+      <pubDate>Tue, 19 Dec 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/wtf-whos-the-dummy/</guid>
+      <description>Yes, another obscure and extremely useful postback. Bow down to the ultimate in WTFs!!! {% codeblock lang:csharp %} protected void OnCheckedChanged( object sender, EventArgs e) { // Dummy for disabled checkboxes in lists } {% endcodeblock %}
+It&amp;rsquo;s a beauty! I guess I should at least be grateful that there&amp;rsquo;s a comment in there.
+WTFness: Has to be 10 / 10.
+PS - My good mate Dan is going to help me create a WTF-o-meter which you guys can vote on!</description>
+    </item>
+    
+    <item>
+      <title>WTF: Date Malarky</title>
+      <link>/posts/wtf-date-malarky/</link>
+      <pubDate>Thu, 16 Nov 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/wtf-date-malarky/</guid>
+      <description>I don&amp;rsquo;t think I&amp;rsquo;m going to need to say much about the following code, as anyone with even an inkling of the features of the .NET framework would know that it&amp;rsquo;s a joke. See the nugget(s) of genius below:
+public static void ToStartofCurrDay(ref DateTime aDate) { aDate = aDate.Subtract(aDate.TimeOfDay); } public static void ToEndofPrevDay(ref DateTime aDate) { aDate = aDate.Subtract(aDate.TimeOfDay); TimeSpan ts = new TimeSpan(1); aDate = aDate.Subtract(ts); } public static void ToEndofCurrDay(ref DateTime aDate) { aDate = aDate - aDate.</description>
+    </item>
+    
+    <item>
+      <title>WTF: The Exceptional Connection</title>
+      <link>/posts/wtf-the-exceptional-connection/</link>
+      <pubDate>Tue, 14 Nov 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/wtf-the-exceptional-connection/</guid>
+      <description>This would have to be close to the dumbest way of verifying the state of a connection :) Well, that might not be true, but it&amp;rsquo;s definitely one of the dumbest ways.
+This is a funky snippet of code that was extracted from a system I&amp;rsquo;m doing some work on at the moment:
+public static bool IsValid(OracleConnection conn) { OracleCommand cmd = new OracleCommand(&amp;quot;select 1 from dual&amp;quot;, conn); cmd.CommandType = CommandType.</description>
+    </item>
+    
+    <item>
+      <title>WTF?!</title>
+      <link>/posts/wtf/</link>
+      <pubDate>Tue, 07 Nov 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/wtf/</guid>
+      <description>I&amp;rsquo;m a regular reader of The Daily WTF and most of the time I get a good laugh and think to myself &amp;ldquo;Boy, I&amp;rsquo;m glad I&amp;rsquo;m not working on that system.&amp;rdquo;
+Then I get to work and find myself looking at very similar instances of WTFness in the applications I am working on. I think that the level of WTFness in the industry at the moment is sufficiently high enough to make it difficult for a Daily WTF site to cover all the cases.</description>
+    </item>
+    
+  </channel>
+</rss>

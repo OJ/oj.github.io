@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lock on OJ&#39;s Perspective</title>
+    <link>/tags/lock/</link>
+    <description>Recent content in lock on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Tue, 10 Feb 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/lock/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Always Question the Source (aka &#34;Don&#39;t Lock on Type Objects&#34;)</title>
+      <link>/posts/always-question-the-source-aka-dont-lock-on-type-objects/</link>
+      <pubDate>Tue, 10 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/always-question-the-source-aka-dont-lock-on-type-objects/</guid>
+      <description>&lt;p&gt;For one reason or another, I recently found myself perusing some code based on the &lt;a href=&#34;http://www.lhotka.net/cslanet/&#34; title=&#34;CSLA&#34;&gt;CSLA&lt;/a&gt; framework. While nosing around I came upon a snippet of code that I found rather disturbing. An example can be found &lt;a href=&#34;http://www.lhotka.net/cslacvs/viewvc.cgi/trunk/cslacs/Csla/Core/BusinessBase.cs?revision=3690&amp;amp;view=markup&#34; title=&#34;BusinessBase.cs&#34;&gt;here&lt;/a&gt; in the function called InitializeAuthorizationRules.&lt;/p&gt;
+
+&lt;p&gt;For those who are lazy, here is the particular snippet of code that caught my eye:&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

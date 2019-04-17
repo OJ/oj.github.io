@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    C# - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/categories/c#/">
+  <link href="/categories/c#/index.xml" rel="alternate" type="application/rss+xml" title="C#" />
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div id="post">
+	<h2>C# &nbsp;</h2>
+	<hr/>
+	
+	<h3>2019</h3>
+	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
+	<ul>
+	  
+	  <li>Wed, Apr 17, 2019&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/new-livestream-series/">
+	      <span itemprop="name">New Livestream Series</span></a>
+	    <meta itemprop="datePublished"  content="Apr 17, 2019" />
+	    <meta  itemprop="url" content="/posts/new-livestream-series/"/>
+	  </li>
+	  
+	</ul></div>
+	
+	<h3>2011</h3>
+	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
+	<ul>
+	  
+	  <li>Wed, Aug 3, 2011&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/corrugatediron-update-v0.1.1/">
+	      <span itemprop="name">CorrugatedIron Update - v0.1.1</span></a>
+	    <meta itemprop="datePublished"  content="Aug 03, 2011" />
+	    <meta  itemprop="url" content="/posts/corrugatediron-update-v0.1.1/"/>
+	  </li>
+	  
+	  <li>Mon, Jul 25, 2011&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/introducing-corrugatediron/">
+	      <span itemprop="name">Introducing CorrugatedIron</span></a>
+	    <meta itemprop="datePublished"  content="Jul 25, 2011" />
+	    <meta  itemprop="url" content="/posts/introducing-corrugatediron/"/>
+	  </li>
+	  
+	</ul></div>
+	
+	<h3>2009</h3>
+	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
+	<ul>
+	  
+	  <li>Wed, Mar 25, 2009&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/a-quirk-in-list.find/">
+	      <span itemprop="name">A Quirk in List.Find()</span></a>
+	    <meta itemprop="datePublished"  content="Mar 25, 2009" />
+	    <meta  itemprop="url" content="/posts/a-quirk-in-list.find/"/>
+	  </li>
+	  
+	  <li>Tue, Feb 10, 2009&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/always-question-the-source-aka-dont-lock-on-type-objects/">
+	      <span itemprop="name">Always Question the Source (aka &#34;Don&#39;t Lock on Type Objects&#34;)</span></a>
+	    <meta itemprop="datePublished"  content="Feb 10, 2009" />
+	    <meta  itemprop="url" content="/posts/always-question-the-source-aka-dont-lock-on-type-objects/"/>
+	  </li>
+	  
+	</ul></div>
+	
+	<h3>2008</h3>
+	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
+	<ul>
+	  
+	  <li>Tue, Sep 9, 2008&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/wpf-shader-fx-on-codeplex/">
+	      <span itemprop="name">WPF Shader FX on Codeplex</span></a>
+	    <meta itemprop="datePublished"  content="Sep 09, 2008" />
+	    <meta  itemprop="url" content="/posts/wpf-shader-fx-on-codeplex/"/>
+	  </li>
+	  
+	  <li>Wed, Jul 9, 2008&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/.net-fu-signing-an-unsigned-assembly-without-delay-signing/">
+	      <span itemprop="name">.NET-fu: Signing an Unsigned Assembly (without Delay Signing)</span></a>
+	    <meta itemprop="datePublished"  content="Jul 09, 2008" />
+	    <meta  itemprop="url" content="/posts/.net-fu-signing-an-unsigned-assembly-without-delay-signing/"/>
+	  </li>
+	  
+	  <li>Thu, Jun 19, 2008&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/screencast-setting-up-unity-builds/">
+	      <span itemprop="name">Screencast - Setting up Unity Builds</span></a>
+	    <meta itemprop="datePublished"  content="Jun 19, 2008" />
+	    <meta  itemprop="url" content="/posts/screencast-setting-up-unity-builds/"/>
+	  </li>
+	  
+	  <li>Wed, May 21, 2008&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/how-do-you-interact-with-your-viewstate/">
+	      <span itemprop="name">How do you Interact with your ViewState?</span></a>
+	    <meta itemprop="datePublished"  content="May 21, 2008" />
+	    <meta  itemprop="url" content="/posts/how-do-you-interact-with-your-viewstate/"/>
+	  </li>
+	  
+	</ul></div>
+	
+	<h3>2007</h3>
+	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
+	<ul>
+	  
+	  <li>Mon, Dec 10, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/the-magic-of-unity-builds/">
+	      <span itemprop="name">The Magic of Unity Builds</span></a>
+	    <meta itemprop="datePublished"  content="Dec 10, 2007" />
+	    <meta  itemprop="url" content="/posts/the-magic-of-unity-builds/"/>
+	  </li>
+	  
+	  <li>Mon, Sep 3, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/wtf-random-memory-contents/">
+	      <span itemprop="name">WTF: Random Memory Contents</span></a>
+	    <meta itemprop="datePublished"  content="Sep 03, 2007" />
+	    <meta  itemprop="url" content="/posts/wtf-random-memory-contents/"/>
+	  </li>
+	  
+	  <li>Thu, Aug 9, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/safer-code-through-object-orientation/">
+	      <span itemprop="name">Safer Code through Object-Orientation</span></a>
+	    <meta itemprop="datePublished"  content="Aug 09, 2007" />
+	    <meta  itemprop="url" content="/posts/safer-code-through-object-orientation/"/>
+	  </li>
+	  
+	  <li>Sat, Jul 14, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/creating-concrete-objects/">
+	      <span itemprop="name">Creating Concrete Objects</span></a>
+	    <meta itemprop="datePublished"  content="Jul 14, 2007" />
+	    <meta  itemprop="url" content="/posts/creating-concrete-objects/"/>
+	  </li>
+	  
+	  <li>Wed, Jun 27, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/extended-precision-floating-point-values-in-the-clr/">
+	      <span itemprop="name">Extended-Precision Floating-Point Values in the CLR</span></a>
+	    <meta itemprop="datePublished"  content="Jun 27, 2007" />
+	    <meta  itemprop="url" content="/posts/extended-precision-floating-point-values-in-the-clr/"/>
+	  </li>
+	  
+	  <li>Sat, Mar 3, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/a-reversing-tutorial/">
+	      <span itemprop="name">A Reversing Tutorial</span></a>
+	    <meta itemprop="datePublished"  content="Mar 03, 2007" />
+	    <meta  itemprop="url" content="/posts/a-reversing-tutorial/"/>
+	  </li>
+	  
+	  <li>Fri, Mar 2, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/.net-systemstring-to-ansi-char/">
+	      <span itemprop="name">.NET System::String to ANSI char*</span></a>
+	    <meta itemprop="datePublished"  content="Mar 02, 2007" />
+	    <meta  itemprop="url" content="/posts/.net-systemstring-to-ansi-char/"/>
+	  </li>
+	  
+	</ul></div>
+	
+	<hr/>
+	
+
+  
+      </div>
+    </div>
+    </div>
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

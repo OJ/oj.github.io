@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Merb on OJ&#39;s Perspective</title>
+    <link>/categories/merb/</link>
+    <description>Recent content in Merb on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Sun, 06 Apr 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/merb/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Web Application Development with Merb, MySQL and Tiny</title>
+      <link>/posts/web-application-development-with-merb-mysql-and-tiny/</link>
+      <pubDate>Sun, 06 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/web-application-development-with-merb-mysql-and-tiny/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been thinking about building a web application or two for a while, but I haven&amp;rsquo;t yet found the time to invest. I don&amp;rsquo;t think this is going to change very soon either. I&amp;rsquo;m not the kind of person who usually likes to get stuck into something unless I know I&amp;rsquo;ve got a couple of hours up my sleeve so that I feel I can get something done, and this has been preventing me from doing anything because I don&amp;rsquo;t ever feel like I have a couple of hours spare. Having a child means that you could have as little as 5 minutes before all hell breaks loose.&lt;/p&gt;
+
+&lt;p&gt;Instead of whinging about it, I&amp;rsquo;ve decided to go against my usual grain and take those 5 minute chunks as a chance to do something. This is the first step :)&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>genius on OJ&#39;s Perspective</title>
+    <link>/tags/genius/</link>
+    <description>Recent content in genius on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Wed, 18 Feb 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/genius/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An All Too Common Issue</title>
+      <link>/posts/an-all-too-common-issue/</link>
+      <pubDate>Wed, 18 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/an-all-too-common-issue/</guid>
+      <description>I think the following statement goes way deeper than it may have been intended (I might be wrong of course)&amp;hellip; Engineering is about making tradeoffs. If you refuse to make the choice, then you&amp;rsquo;re taking the cowardly route and ultimately are creating more work for your team. Instead of solving problems, you&amp;rsquo;re creating them.
+All because you&amp;rsquo;re too chicken to make a hard decision.
+ Thank you, Raymond Chen! You are a legend.</description>
+    </item>
+    
+  </channel>
+</rss>

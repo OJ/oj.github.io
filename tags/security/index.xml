@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Security on OJ&#39;s Perspective</title>
+    <link>/tags/security/</link>
+    <description>Recent content in Security on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Mon, 18 Aug 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OpenDNS is Wicked</title>
+      <link>/posts/opendns-is-wicked/</link>
+      <pubDate>Mon, 18 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/opendns-is-wicked/</guid>
+      <description>&lt;p&gt;&lt;a title=&#34;Use OpenDNS to make your Internet faster, safer, and smarter.&#34; href=&#34;http://www.opendns.com/share/&#34;&gt;&lt;img src=&#34;http://images.opendns.com/buttons/use_opendns_155x52.gif&#34; width=&#34;155&#34; height=&#34;52&#34; style=&#34;border:0; float:right; margin-left:5px;margin-bottom;5px&#34; alt=&#34;Use OpenDNS&#34; /&gt;&lt;/a&gt;Over the last couple of weeks the DNS timeouts and lags I&amp;rsquo;ve been experiencing at home have made the web experience a little dire. My &lt;a href=&#34;http://internode.on.net/&#34; title=&#34;Internode&#34;&gt;ISP&lt;/a&gt; is actually pretty darned good, but for some reason they seem to have glitches with their DNS servers every now and then.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Microsoft want to Annoy you, Cancel or Allow?</title>
+      <link>/posts/microsoft-want-to-annoy-you-cancel-or-allow/</link>
+      <pubDate>Sat, 12 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/microsoft-want-to-annoy-you-cancel-or-allow/</guid>
+      <description>&lt;p&gt;Before I even started using Vista, I hated &lt;a href=&#34;http://technet2.microsoft.com/WindowsVista/en/library/0d75f774-8514-4c9e-ac08-4c21f5c6c2d91033.mspx&#34; title=&#34;User Access Control&#34;&gt;UAC&lt;/a&gt;. I read about it all over the place, and laughed at the stupidity involved in asking users to constantly &amp;ldquo;cancel or allow&amp;rdquo; every action they wanted to take. As soon as I was forced to use Vista for work (both on my work laptop and on site with the client) I turned off UAC on both installations.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Challenges on OJ&#39;s Perspective</title>
+    <link>/categories/challenges/</link>
+    <description>Recent content in Challenges on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Fri, 25 Jul 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/challenges/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Another Quick Coding Challenge</title>
+      <link>/posts/another-quick-coding-challenge/</link>
+      <pubDate>Fri, 25 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/another-quick-coding-challenge/</guid>
+      <description>&lt;p&gt;I was about to head to bed when I stumbled across another interesting coding challenge. Since I had another half hour or so to kill I thought I&amp;rsquo;d give it a shot!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Validating use of Parenthesis</title>
+      <link>/posts/validating-use-of-parenthesis/</link>
+      <pubDate>Thu, 24 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/validating-use-of-parenthesis/</guid>
+      <description>&lt;p&gt;Yet another &lt;a href=&#34;http://www.dev102.com/posts/a-programming-job-interview-challenge-13-brackets/&#34; title=&#34;Programming Challenge&#34;&gt;programming challenge appeared on dev102&lt;/a&gt; the other day, and I thought that this time I&amp;rsquo;d post my solution here in the blog rather than letting it get lost in the depths of the comment thread!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>An Interesting Little Problem</title>
+      <link>/posts/an-interesting-little-problem/</link>
+      <pubDate>Sat, 14 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/an-interesting-little-problem/</guid>
+      <description>&lt;p&gt;This post was inspired by a recent interview question that was posted over at &lt;a href=&#34;http://www.fsharp.it/posts/google-interview-question-product-of-other-elements-in-an-array-in-on/&#34; title=&#34;Fsharp.it&#34;&gt;fsharp.it&lt;/a&gt;. It&amp;rsquo;s one of those neat little questions which looks really simple on the surface but is quite tricky.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>More RCE Goodness</title>
+      <link>/posts/more-rce-goodness/</link>
+      <pubDate>Tue, 06 Mar 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/more-rce-goodness/</guid>
+      <description>I&amp;rsquo;m quite excited. My previous RCE solution and tutorial has been approved!
+Plus, the first keygenme that I&amp;rsquo;ve ever written is now approved and available for download. So if you&amp;rsquo;re up for a 64-bit RCE challenge, go check it out (or download it directly from here).
+Feel free to let me know how good/bad/ugly you think this stuff is!</description>
+    </item>
+    
+    <item>
+      <title>Challenge #3 - Day of Birth</title>
+      <link>/posts/challenge-#3-day-of-birth/</link>
+      <pubDate>Sun, 04 Feb 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/challenge-#3-day-of-birth/</guid>
+      <description>I haven&amp;rsquo;t posted a challenge for a while, so I thought I&amp;rsquo;d get you all thinking again with another basic little program. It&amp;rsquo;s simple, but there are a stack of possible solutions, so I&amp;rsquo;m expecting a bit of variety. So here we go.
+Write a program that asks the user for their date of birth using the date format YYYY-MM-DD (eg. 1978-12-05 in my case). The program should respond by telling the user what day of the week they were born on.</description>
+    </item>
+    
+    <item>
+      <title>Challenge #2 - The Recursive Ruler</title>
+      <link>/posts/challenge-#2-the-recursive-ruler/</link>
+      <pubDate>Thu, 12 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/challenge-#2-the-recursive-ruler/</guid>
+      <description>I posted this problem a little while ago on the site I used to run, and it proved to be an interesting one that resulted in quite a large collection of solutions from the posters. So here it is again.
+Your job is to write a program that generates a text-based ruler. For a clearer definition of what I mean, see the little text pic below:
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  The user of the program must be able to specify a couple of parameters: those being the height of the ruler and the number of sections in the ruler (at the top level).</description>
+    </item>
+    
+    <item>
+      <title>Who&#39;s up for a challenge?</title>
+      <link>/posts/whos-up-for-a-challenge/</link>
+      <pubDate>Fri, 15 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/whos-up-for-a-challenge/</guid>
+      <description>Before starting this blog up, I spent a bit of time thinking about the kind of things I would like to talk about which other people might find interesting. I also wanted to find some areas of discussion where people would be interested in giving me feedback and comments containing their thoughts and opinions so that I can learn something and possibly benefit from other people&amp;rsquo;s experience. While this is all very enlightening, it can be fun and it can be, shall we say, political.</description>
+    </item>
+    
+  </channel>
+</rss>

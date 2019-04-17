@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>community on OJ&#39;s Perspective</title>
+    <link>/tags/community/</link>
+    <description>Recent content in community on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Wed, 29 Jul 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/community/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Value of a Technical Community</title>
+      <link>/posts/the-value-of-a-technical-community/</link>
+      <pubDate>Wed, 29 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-value-of-a-technical-community/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2009/07/community.jpg&#34; rel=&#34;lightbox&#34; title=&#34;Cricket Team Holding Hands --- Image by  Royalty-Free/Corbis&#34;&gt;&lt;img src=&#34;/uploads/2009/07/community.jpg&#34; alt=&#34;Cricket Team Holding Hands --- Image by  Royalty-Free/Corbis&#34; title=&#34;Cricket Team Holding Hands --- Image by  Royalty-Free/Corbis&#34; width=&#34;150&#34; style=&#34;float: left; margin-right: 5px; margin-bottom: 5px;&#34; /&gt;&lt;/a&gt;This post was inspired by an experience I had recently in an IRC channel. To protect the innocent, I&amp;rsquo;ll refrain from naming and shaming the channel and individual as those details aren&amp;rsquo;t important.&lt;/p&gt;
+
+&lt;p&gt;Communities are arguably the life blood of technology. Without a good community the likelihood of the technology catching on is drastically reduced. Those communities which lack individuals that are happy to put time and effort in to help get others up to speed tend to stagnate. Any community which involves members that are abrasive, rude and downright offensive is destined to suffer long term.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

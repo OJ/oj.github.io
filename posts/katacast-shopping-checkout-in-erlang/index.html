@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Katacast: Shopping Checkout in Erlang - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/katacast-shopping-checkout-in-erlang/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Katacast: Shopping Checkout in Erlang </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Mon Jan 4, 2010</span>
+
+	  <p>I&rsquo;ve recently discovered the joys of <a href="http://codekata.pragprog.com/" title="CodeKata">CodeKatas</a>. If you&rsquo;re a geek looking for a way to <a href="http://en.wikipedia.org/wiki/The_Seven_Habits_of_Highly_Effective_People" title="The Seven Habits of Highly Effective People">sharpen the saw</a> then I highly recommend taking a look at these and trying a few out. They&rsquo;re great fun and they&rsquo;re a good way of getting your feet wet with new languages (especially if you&rsquo;re tired of <a href="http://projecteuler.net/" title="Project Euler">Project Euler</a>).</p>
+
+<p>I can thank <a href="http://twitter.com/gabriellelana" title="Gabrielle Lana on Twitter">Gabrielle Lana</a> for this discovery, as it was <a href="http://www.vimeo.com/8206748" title="String Calculator in Erlang">his attempt at one of the katas</a> that got me into it. He&rsquo;s also the reason I looked into <a href="http://www.katacasts.com/" title="Katacasts">Katacasts</a>, which are simply screencasted recordings of people attempting to solve Code Katas.</p>
+
+<p>This post is about my first Katacast, capturing my attempt at <a href="http://codekata.pragprog.com/2007/01/kata_nine_back_.html" title="Checkout">Code Kata #9</a> using <a href="http://erlang.org/" title="Erlang">Erlang</a> and <a href="http://www.vim.org/" title="VIM">VIM</a> with <a href="http://rake.rubyforge.org/" title="Ruby Make">Rake</a> as my build system. I&rsquo;ve put the video up on <a href="http://vimeo.com/8513414" title="Katacast for Codekata #9 by OJ Reeves">Vimeo</a> for the world to see/share. It&rsquo;s also embedded below for your convenience.</p>
+
+<p>Before watching, I&rsquo;d like to point out a few things about the video, and things that I have learned from the experience:</p>
+
+<ul>
+<li>I captured the video on my Linux Mint install. For some reason, capturing quality video in Linux is proving to be a bit of a pain for me. As a result, the video quality isn&rsquo;t that great. This partly due to the compression of the video, and partly due to the software failing to pick up some screen updates.</li>
+<li>I tried really hard to add a backing sound-track but all of my efforts failed in one way or another. If I did manage to get one to work it was either WAY too big (ie. &gt; 1GB in size) or the quality was absolutely terrible.</li>
+<li>There were points during the process where I had to alt-tab out to a browser to do a bit of research on something that I didn&rsquo;t know (such as an Erlang syntax quirk). This resulted in a few points where I don&rsquo;t appear to be doing anything. In future, I&rsquo;ll remember to hit pause on the recording when this happens.</li>
+<li>I captured it in a non-standard resolution. I&rsquo;m not sure if that&rsquo;s going to make it look bad or not. Feedback here is appreciated. I think in future I&rsquo;ll capture at a 800x600 resolution.</li>
+<li>This video is best viewed in full-screen mode.</li>
+</ul>
+
+<p>So please excuse the lack of quality in this first Katacast. I&rsquo;ll be sure to improve when I next create one. That being said, on with the show!</p>
+
+<div style="text-align: center"><iframe src="http://player.vimeo.com/video/8513414" width="400" height="335" frameborder="0"></iframe><p><a href="http://vimeo.com/8513414">Katacast for Codekata #9</a> from <a href="http://vimeo.com/thecolonial">OJ Reeves</a> on <a href="http://vimeo.com">Vimeo</a>.</p></div>
+ 
+
+<p>As always, feedback/criticism/etc is greatly appreciated. I&rsquo;d love to hear what you guys do and use to capture and edit your screencasts, particularly in Linux.</p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/functional-programming">Functional Programming</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/software-development">Software Development</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/erlang">Erlang</a>
+	  
+	    </p>
+	    
+<p><a itemprop="keywords" class=" label label-danger" href="/tags/erlang">Erlang</a> <a itemprop="keywords" class=" label label-danger" href="/tags/codekata">codekata</a> <a itemprop="keywords" class=" label label-danger" href="/tags/katacast">katacast</a> <a itemprop="keywords" class=" label label-danger" href="/tags/rake">rake</a> <a itemprop="keywords" class=" label label-danger" href="/tags/vim">vim</a></p>
+
+
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

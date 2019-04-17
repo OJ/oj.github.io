@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>opinion on OJ&#39;s Perspective</title>
+    <link>/tags/opinion/</link>
+    <description>Recent content in opinion on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Mon, 29 Oct 2007 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/opinion/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Requisite Vista</title>
+      <link>/posts/requisite-vista/</link>
+      <pubDate>Mon, 29 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/requisite-vista/</guid>
+      <description>&lt;p&gt;When I started my new gig on the 15th of this month, I was handed a &lt;a href=&#34;http://www.toshibadirect.com/td/b2c/cmod.to?coid=-33778&#34; title=&#34;Toshiba Tecra M9&#34;&gt;new laptop&lt;/a&gt; to do all my work on. It&amp;rsquo;s a nifty little gadget with 3GB RAM! Very schmick. There was one catch..&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip; see, the company is migrating to &lt;a href=&#34;http://www.microsoft.com/windows/products/windowsvista/default.mspx&#34; title=&#34;Windows Vista&#34;&gt;Vista&lt;/a&gt;, which means I have to use it too. A while ago I &lt;a href=&#34;/posts/should-i-install-vista/&#34; title=&#34;Should I install Vista?&#34;&gt;posted my thoughts with regards to installing Vista&lt;/a&gt;, so as you can imagine it&amp;rsquo;s a little bit strange having to use it.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

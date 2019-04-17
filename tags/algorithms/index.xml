@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algorithms on OJ&#39;s Perspective</title>
+    <link>/tags/algorithms/</link>
+    <description>Recent content in Algorithms on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Wed, 13 Aug 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sorting Things Out</title>
+      <link>/posts/sorting-things-out/</link>
+      <pubDate>Wed, 13 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sorting-things-out/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s time to recap a topic that is, or should be, close to the heart of every developer. A topic that is often overlooked or glossed over, rarely fully understood and not often discussed. Yet this topic is hugely important.&lt;/p&gt;
+
+&lt;p&gt;That topic is &lt;strong&gt;Sorting&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

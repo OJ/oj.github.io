@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shortcuts on OJ&#39;s Perspective</title>
+    <link>/categories/shortcuts/</link>
+    <description>Recent content in Shortcuts on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Sun, 25 May 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/shortcuts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Preview Feeds in Google Reader</title>
+      <link>/posts/preview-feeds-in-google-reader/</link>
+      <pubDate>Sun, 25 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/preview-feeds-in-google-reader/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s another reason why I find &lt;a href=&#34;http://reader.google.com/&#34; title=&#34;Google Reader&#34;&gt;Google Reader&lt;/a&gt; a excellent choice for reading your RSS feeds.&lt;/p&gt;
+
+&lt;p&gt;Most of us have a collection of feeds that contain similar subject matter. As a geek, &lt;em&gt;most&lt;/em&gt; of my feeds are geek-related. As a geek who likes to stay up to speed, I also like to know what other blogs and feeds are good to read.&lt;/p&gt;
+
+&lt;p&gt;This is where Google Reader&amp;rsquo;s &lt;strong&gt;Top Recommendations&lt;/strong&gt; come in. Google do a great job of throwing other feeds in your face that you might like to read based on the kind of stuff that you&amp;rsquo;ve already subscribed to.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Shortcuts: Visual Studio 2005</title>
+      <link>/posts/shortcuts-visual-studio-2005/</link>
+      <pubDate>Sun, 11 Feb 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/shortcuts-visual-studio-2005/</guid>
+      <description>Welcome to the next in the series of posts on program shortcuts. This time round we&amp;rsquo;re talking Visual Studio. I&amp;rsquo;ll be assuming that you don&amp;rsquo;t have the ViEmu plugin enabled and that you&amp;rsquo;re just using the IDE in the way it was intended without any other form of shortcut-based plugin installed.
+I&amp;rsquo;m using Visual Studio 2005 and I think I have the C# settings enabled by default. Most of these shortcuts will work regardless of the default setting that you have, but some of them will no doubt be different.</description>
+    </item>
+    
+    <item>
+      <title>Shortcuts: Windows</title>
+      <link>/posts/shortcuts-windows/</link>
+      <pubDate>Sat, 10 Feb 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/shortcuts-windows/</guid>
+      <description>This is the first of a collection of posts that I&amp;rsquo;m going to be making about shortcuts in applications. I&amp;rsquo;m constantly on the lookout for keyboard shortcuts to aid in improving the speed of my day to day activities, and I thought it&amp;rsquo;d be a good idea to start sharing them with you. These posts will probably get edited a few times over the course of their lives as I find more shortcuts :)</description>
+    </item>
+    
+  </channel>
+</rss>

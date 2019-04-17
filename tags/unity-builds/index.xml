@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>unity builds on OJ&#39;s Perspective</title>
+    <link>/tags/unity-builds/</link>
+    <description>Recent content in unity builds on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Mon, 10 Dec 2007 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/unity-builds/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Magic of Unity Builds</title>
+      <link>/posts/the-magic-of-unity-builds/</link>
+      <pubDate>Mon, 10 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-magic-of-unity-builds/</guid>
+      <description>&lt;p&gt;I realise that as time goes by, people are using my beloved &lt;a href=&#34;http://en.wikipedia.org/wiki/C++&#34; title=&#34;C++&#34;&gt;C++&lt;/a&gt; less and less. &lt;a href=&#34;http://en.wikipedia.org/wiki/.NET_Framework&#34; title=&#34;.NET Framework&#34;&gt;.NET&lt;/a&gt; (&lt;a href=&#34;http://en.wikipedia.org/wiki/C_Sharp&#34; title=&#34;C#&#34;&gt;C#&lt;/a&gt; and &lt;a href=&#34;http://en.wikipedia.org/wiki/Visual_Basic_.NET&#34; title=&#34;VB.NET&#34;&gt;VB.NET&lt;/a&gt;) and &lt;a href=&#34;http://en.wikipedia.org/wiki/Java_%28programming_language%29&#34; title=&#34;Java&#34;&gt;Java&lt;/a&gt; seem to be taking over the mainstream coding world. Languages such as &lt;a href=&#34;http://en.wikipedia.org/wiki/Ruby_%28programming_language%29&#34; title=&#34;Ruby&#34;&gt;Ruby&lt;/a&gt; and &lt;a href=&#34;http://en.wikipedia.org/wiki/Python_%28programming_language%29&#34; title=&#34;Python&#34;&gt;Python&lt;/a&gt; seem to be taking over the scripting world. For the most part, C and C++ seem to exist only in the gaming/entertainment, real-time and driver worlds.&lt;/p&gt;
+
+&lt;p&gt;In many colleges and univerties C++ is no longer taught as a core subject (along with &lt;a href=&#34;http://en.wikipedia.org/wiki/Assembly_language&#34; title=&#34;Assembly Language&#34;&gt;Assembly language&lt;/a&gt;) which I find quite galling. It&amp;rsquo;s a great language to learn, even if you never use it again. But the purpose of this post is not to preach the virtues and failures of the C++ language, but instead to talk about something that might aid those people who &lt;em&gt;are&lt;/em&gt; using C++.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Requisite Vista - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/requisite-vista/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Requisite Vista </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Mon Oct 29, 2007</span>
+
+	  <p>When I started my new gig on the 15th of this month, I was handed a <a href="http://www.toshibadirect.com/td/b2c/cmod.to?coid=-33778" title="Toshiba Tecra M9">new laptop</a> to do all my work on. It&rsquo;s a nifty little gadget with 3GB RAM! Very schmick. There was one catch..</p>
+
+<p>&hellip; see, the company is migrating to <a href="http://www.microsoft.com/windows/products/windowsvista/default.mspx" title="Windows Vista">Vista</a>, which means I have to use it too. A while ago I <a href="/posts/should-i-install-vista/" title="Should I install Vista?">posted my thoughts with regards to installing Vista</a>, so as you can imagine it&rsquo;s a little bit strange having to use it.</p>
+
+<p>So after two weeks of using it, how have I found it? Well, for a beefy machine with this much RAM, I&rsquo;d expect more. It doesn&rsquo;t feel any faster than my desktop, which is nearly 4 years old and runs <a href="http://www.microsoft.com/windowsxp/64bit/default.mspx" title="Windows XP Pro x64">Windows XP Pro x64</a>. It&rsquo;s a little disappointing in that regard. Rather than speak about things in general, here are the list of things that I <em>do</em> like about it&hellip;</p>
+
+<p><a href="/uploads/2007/10/vista_breadcrumbs.png" title="Explorer breadcrumbs in Vista" rel="lightbox[vista]"><img src="/uploads/2007/10/vista_breadcrumbs.thumbnail.png" alt="Explorer breadcrumbs in Vista" class="InlineImageRight" /></a><strong>Windows explorer breadcrumbs</strong>. This feature is one that is sorely missed in Windows XP. Having the ability to leap to anywhere in the folder hierarchy at the click of a button is a real winner. I know you have similar functionality in XP, but you have to repeatedly click the &ldquo;up folder&rdquo; button, which is just crap. It might be not be something that I&rsquo;ll use a lot, but it&rsquo;s nice to have.</p>
+
+<p><a href="/uploads/2007/10/vista_aero.png" title="Aero in Vista" rel="lightbox[vista]"><img src="/uploads/2007/10/vista_aero.thumbnail.png" alt="Aero in Vista" class="InlineImageRight" /></a><strong>The <em>look</em> of Aero</strong>. The new coat of paint is nice and is a bit of a breath of fresh air. That&rsquo;s about all I have to say.</p>
+
+<p><a href="/uploads/2007/10/vista_start_search.png" title="Vistas Start menu search" rel="lightbox[vista]"><img src="/uploads/2007/10/vista_start_search.thumbnail.png" alt="Vistas Start menu search" class="InlineImageLeft"/></a><strong>The application search feature in the Start menu</strong>. This is something I use <em>all the time</em>. Shortcuts take to look to find with the mouse, and typing is SOOO much faster. Excellent feature. Shame it took so long to appear!</p>
+
+<p><strong>Built-in &ldquo;open command window here&rdquo; function</strong>. To get this feature in Windows XP, you needed to install a <a href="http://www.microsoft.com/windowsxp/downloads/powertoys/xppowertoys.mspx" title="XP power toys">power toy</a>. Thankfully, to do this in Vista, all you need to do is hold down the SHIFT key when you right-click the mouse in Windows explorer. Easy peasy.</p>
+
+<p>With the good things out of the way, here are the things that I find pretty darned awful&hellip;</p>
+
+<p><strong>The <em>performance</em> of Aero</strong>. It&rsquo;s woeful. A machine with this amount of grunt shouldn&rsquo;t struggle to render the UI. The fact that it does makes me feel that there&rsquo;s way too much going on behind the scenes. I&rsquo;d be willing to go back to XP so I can have a UI that&rsquo;s responsive.</p>
+
+<p><a href="/uploads/2007/10/vista_switcher.png" title="Vista/Aero application switcher" rel="lightbox[vista]"><img src="/uploads/2007/10/vista_switcher.thumbnail.png" alt="Vista/Aero application switcher" class="InlineImageLeft" /></a><a href="/uploads/2007/10/vista_alttab.png" title="ALT+TAB in Vista" rel="lightbox[vista]"><img src="/uploads/2007/10/vista_alttab.thumbnail.png" alt="ALT+TAB in Vista" class="InlineImageRight" /></a><strong>The new Aero window switcher</strong> (accessible via Windows Key + TAB). Who uses it? ALT + TAB does the job, why bother with an overly resource-intensive, animated version that does the same thing but slower?</p>
+
+<p><strong>Window previews</strong> of everything (sorry, no screenshot, because I turned it off). Every time you move the mouse you seem to get a window popping up with a mini-preview in it. It drove me nuts, so I had to kill it.</p>
+
+<p><strong>Windows explorer performance</strong>. Is it just me, or does it take an ice-age for the file explorer to become responsive after you open it (that is, more than three seconds)? Displaying a list of files and whatnot on your machine should be lightening fast. It isn&rsquo;t on this machine.</p>
+
+<p><strong>Network browsing performance</strong>. It <strong>sucks</strong>. Both at work and at home the speed of network browsing is just woeful. I know for sure that it&rsquo;s Vista playing silly-buggers, because on both of those networks the XP machines are lightening fast.</p>
+
+<p><strong>UAC</strong>. I don&rsquo;t need to say any more about this, because it&rsquo;s been said a million times before by many other people.</p>
+
+<p>There are other things that I do and don&rsquo;t like, but I don&rsquo;t consider them to be worth noting because they&rsquo;re the kind of things that you find in most operating systems :)</p>
+
+<p>So have any of you been using Vista (either by choice or by force)? If so, how are you feeling about it?</p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/microsoft">Microsoft</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/technology">Technology</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/windows">Windows</a>
+	  
+	    </p>
+	    
+<p><a itemprop="keywords" class=" label label-danger" href="/tags/windows">Windows</a> <a itemprop="keywords" class=" label label-danger" href="/tags/opinion">opinion</a> <a itemprop="keywords" class=" label label-danger" href="/tags/vista">vista</a></p>
+
+
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

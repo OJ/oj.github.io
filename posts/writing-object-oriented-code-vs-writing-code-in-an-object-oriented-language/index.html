@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Writing Object-Oriented Code vs Writing Code in an Object-Oriented Language - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/writing-object-oriented-code-vs-writing-code-in-an-object-oriented-language/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Writing Object-Oriented Code vs Writing Code in an Object-Oriented Language </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Fri Feb 2, 2007</span>
+
+	  <p>I&rsquo;m going to try and keep this post short, otherwise I&rsquo;ll be here all day ranting away ;) This particular topic is one that&rsquo;s fairly close to my heart because it&rsquo;s a bit of a pet hate for me.</p>
+
+<p>As we (the geeks) know, <a href="http://en.wikipedia.org/wiki/Object-oriented_programming" title="Object-Oriented Programming">object-oriented (OO)</a> programming is a different concept to <a href="http://en.wikipedia.org/wiki/Functional_programming" title="Functional Programming">functional</a> or <a href="http://en.wikipedia.org/wiki/Procedural_programming" title="Procedural Programming">procedural</a> programming. OO was a bit of a move forward in the direction of easy to understand, more managable and reusable code, and has been adopted all over the shop.</p>
+
+<p>One of the first widely adopted OO languages was <a href="http://en.wikipedia.org/wiki/C%2B%2B" title="C++">C++</a> probably because of it&rsquo;s close relationship and similar syntax to <a href="http://en.wikipedia.org/wiki/C_%28programming_language%29" title="C">C</a>. Unfortunately, this resulted in something that continues to be a huge bane for true OO programmers all over the planet: <strong>the OOPP (object-oriented procedural programmer)</strong>.</p>
+
+<p>OK, so that&rsquo;s a term that I like to use when talking to this kind of programmer :) But the idea behind them is this: when they made the switch to C++ from C, they didn&rsquo;t adopt a true OO approach to software development - all they really did was switch compilers.  There are so many people still to this day writing software using OO languages without actually writing good/proper OO code. The benefits of OO are lost on these kinds of people, and the resulting code is just a nightmare.</p>
+
+<p>Before my current job, I worked in a couple of places where there were a few stagnant coders writing C++ - but in fact it was just C being compiled with a C++ compiler. Coupling was through the roof. Encapsulation was non-existant. Even funky features such as polymorphism were avoided to be replaced instead by huge &lsquo;switch&rsquo; statements which did similar things based on the &lsquo;type&rsquo; of a structure. Absolutely awful.</p>
+
+<p>At the end of last year I worked with a lady who was by far the worst culprit for this. She was an advocate for &ldquo;copy and paste coding&rdquo;, structureless code and job security. She was appalling. How she&rsquo;s managed to gain contracts for the last 13 years as a developer I will never know. It&rsquo;s people like her that end up producing systems that are so unmaintainable, badly written and poorly executed that lots of people lose faith in software. She even managed to this in <a href="http://en.wikipedia.org/wiki/C_Sharp" title="C-Sharp">C#</a>!</p>
+
+<p>When are people going to learn that writing procedural code doesn&rsquo;t make them an OO programmer? Using an OO language isn&rsquo;t enough, you need to write code in an OO manner.</p>
+
+<p>Before I make my final point I want to make it clear that I have nothing against C, or procedural programming. They both have their place. What I feel doesn&rsquo;t have a place is a programmer who refuses to write OO code when that&rsquo;s what they&rsquo;re hired for.</p>
+
+<p>So, to finish up, what I want to say is this: just because you&rsquo;ve written procedural code in the past and it&rsquo;s always worked for you, it doesn&rsquo;t mean that you can continue to do it in an OO language when you&rsquo;re paid to write proper OO software. If you can&rsquo;t keep up with technology, proper methodology, and best practice, then perhaps it&rsquo;s time to retire?</p>
+
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/software-development">Software Development</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

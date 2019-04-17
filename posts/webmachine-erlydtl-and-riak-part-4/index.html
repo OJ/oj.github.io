@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Webmachine, ErlyDTL and Riak - Part 4 - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/webmachine-erlydtl-and-riak-part-4/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Webmachine, ErlyDTL and Riak - Part 4 </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Wed Feb 15, 2012</span>
+
+	  <p>{% img left /uploads/2010/09/riak-logo.png &lsquo;Riak Logo&rsquo; %}For those of you who are new to the series, you may want to check out <a href="/posts/webmachine-erlydtl-and-riak-part-1/" title="Wembachine, ErlyDTL and Riak - Part 1">Part 1</a>, <a href="/posts/webmachine-erlydtl-and-riak-part-2/" title="Wembachine, ErlyDTL and Riak - Part 2">Part 2</a> and <a href="/posts/webmachine-erlydtl-and-riak-part-3/" title="Wembachine, ErlyDTL and Riak - Part 3">Part 3</a> before reading this post. It will help give you some context as well as introduce you to some of the jargon and technology that I&rsquo;m using. If you&rsquo;ve already read then, or don&rsquo;t want to, then please read on!</p>
+
+<p>Upon finishing <a href="/posts/webmachine-erlydtl-and-riak-part-3/" title="Wembachine, ErlyDTL and Riak - Part 3">Part 3</a> of the series we were finally able to read data from <a href="http://www.basho.com/developers.html#Riak" title="Riak">Riak</a> and see it appear in our web page. This was the first stage in seeing a full end-to-end web application functioning. Of course there is still a great deal to do!</p>
+
+<h2 id="agenda">Agenda</h2>
+
+<p>In this post we&rsquo;re going to hit a few points of pain:</p>
+
+<ol>
+<li>Another slight refactor! We need to manage Riak connections in a smarter way, so we&rsquo;ll do that first.</li>
+<li>We&rsquo;ll be dealing with more configuration so we&rsquo;ll change the way our application deals with configuration so that it&rsquo;s all in the one spot and a little easier to manage.</li>
+<li>Add the ability for users to sign in. To keep this simple and avoid the need for users to manage yet another login, we&rsquo;re going to use <a href="http://oauth.net/" title="OAuth">OAuth</a> and let people sign in with their <a href="http://twitter.com/" title="Twitter">Twitter</a> accounts.</li>
+<li>Store a cookie in the user&rsquo;s browser which contains identifying information and an encrypted set of OAuth tokens.</li>
+</ol>
+
+<p>There&rsquo;s little Riak-specific work going on this post as we&rsquo;re focusing on front-end user management. Other than a bit of refactoring the Riak code remains the same as in Part 3. In Part 5 (coming soon) we&rsquo;ll be writing snippets to Riak and associating them to users who have logged into the application via Twitter.</p>
+
+<p><strong>NOTE</strong>: I&rsquo;ll no longer be using <code>localhost</code> in URLs and will instead be using the loopback address, <code>127.0.0.1</code>. The main reason is because we&rsquo;ll be interacting with Twitter which requires a &ldquo;proper&rdquo; address to be used when setting up. A secondary reason is the use of cookies. If I accidentally leave <code>localhost</code> somewhere in the post (or in the images) please let me know.</p>
+
+<p>Again, be warned, this post is a bit of a whopper! So get yourself a drink and get comfortable. Here we go&hellip;</p>
+
+<h2 id="another-slight-refactor">Another Slight Refactor</h2>
+
+<p>Now that we&rsquo;re at the stage where Riak is going to get used more often we need to do a better job of handling and managing the connections to the cluster. Ideally we should pool a bunch of connections and reuse them across different requests. This reduces the overhead of creating and destroying connections all the time. Initially we&rsquo;re going to make use of Seth&rsquo;s <a href="https://github.com/seth/pooler" title="Pooler">Pooler</a> application (with a slight modification) to handle the pooling of Riak connections for us.</p>
+
+<h3 id="fixing-haproxy">Fixing HAProxy</h3>
+
+<p>So now that we have a plan to pool connections, the first thing we need to fix is our load-balancer&rsquo;s configuration. At the moment we have configured <a href="http://haproxy.1wt.eu/" title="HAProxy">HAProxy</a> with the following settings:</p>
+
+<pre><code># now set the default settings for each sub-section
+defaults
+  .
+  .
+  # specify some timeouts (all in milliseconds)
+  timeout connect 5000
+  timeout client 50000
+  timeout server 50000
+  .
+  .
+</code></pre>
+
+<p>As you can see we&rsquo;ve forced the timeout of connections which means that every connection that is made to the proxy will be killed off when it has been inactive for a long enough period of time. If you were paying attention to the output in the application console window you&rsquo;d have seen something like this appear after making a request:</p>
+
+<pre><code>=ERROR REPORT==== 13-Aug-2011::20:52:01 ===
+** Generic server &lt;0.99.0&gt; terminating 
+** Last message in was {tcp_closed,#Port&lt;0.2266&gt;}
+** When Server state == {state,&quot;127.0.0.1&quot;,8080,false,false,undefined,
+                               undefined,
+                               {[],[]},
+                               1,[],infinity,100}
+** Reason for termination == 
+** disconnected
+
+=CRASH REPORT==== 13-Aug-2011::20:52:01 ===
+  crasher:
+    initial call: riakc_pb_socket:init/1
+    pid: &lt;0.99.0&gt;
+    registered_name: []
+    exception exit: disconnected
+      in function  gen_server:terminate/6
+    ancestors: [csd_core_server,csd_core_sup,&lt;0.52.0&gt;]
+    messages: []
+    links: [&lt;0.54.0&gt;]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 377
+    stack_size: 24
+    reductions: 911
+  neighbours:
+    neighbour: [{pid,&lt;0.54.0&gt;},
+                  {registered_name,csd_core_server},
+                  {initial_call,{csd_core_server,init,['Argument__1']}},
+                  {current_function,{gen_server,loop,6}},
+                  {ancestors,[csd_core_sup,&lt;0.52.0&gt;]},
+                  {messages,[]},
+                  {links,[&lt;0.53.0&gt;,&lt;0.99.0&gt;]},
+                  {dictionary,[]},
+                  {trap_exit,false},
+                  {status,waiting},
+                  {heap_size,987},
+                  {stack_size,9},
+                  {reductions,370}]
+
+=SUPERVISOR REPORT==== 13-Aug-2011::20:52:01 ===
+     Supervisor: {local,csd_core_sup}
+     Context:    child_terminated
+     Reason:     disconnected
+     Offender:   [{pid,&lt;0.54.0&gt;},
+                  {name,csd_core_server},
+                  {mfargs,{csd_core_server,start_link,[]}},
+                  {restart_type,permanent},
+                  {shutdown,5000},
+                  {child_type,worker}]
+
+
+=PROGRESS REPORT==== 13-Aug-2011::20:52:01 ===
+          supervisor: {local,csd_core_sup}
+             started: [{pid,&lt;0.104.0&gt;},
+                       {name,csd_core_server},
+                       {mfargs,{csd_core_server,start_link,[]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+</code></pre>
+
+<p>This is paired up with the following output from the HAProxy console:</p>
+
+<pre><code>00000010:riaks.srvcls[0009:000a]
+00000010:riaks.clicls[0009:000a]
+00000010:riaks.closed[0009:000a]
+0000000e:webmachines.srvcls[0006:0007]
+0000000e:webmachines.clicls[0006:0007]
+0000000e:webmachines.closed[0006:0007]
+</code></pre>
+
+<p>These logs from the console clearly indicate that HAProxy is doing exactly what we&rsquo;ve told it to do. It&rsquo;s killing off the connections after a period of time.</p>
+
+<p>For a connection pool this is not a good idea. Therefore we need to modify this configuration so that it doesn&rsquo;t kill off connections. Thankfully this is a very simple thing to do! We delete the lines that force <code>client</code> and <code>server</code> timeouts (I&rsquo;m commenting the lines out to make it obvious which ones you need to remove):</p>
+
+<pre><code># now set the default settings for each sub-section
+defaults
+  .
+  .
+  # specify some timeouts (all in milliseconds)
+  timeout connect 5000
+  #timeout client 50000
+  #timeout server 50000
+  .
+  .
+</code></pre>
+
+<p>After making this change to the configuration, HAProxy will no longer kill off the connections. Therefore it&rsquo;s up to us to manage them.</p>
+
+<h3 id="connection-pooling">Connection Pooling</h3>
+
+<p>Given that it is <em>not</em> one of the goals of this series to demonstrate how to create a connection pooling application in Erlang, we&rsquo;re going to use an application that&rsquo;s already out there to do it for us. This application is called <a href="https://github.com/seth/pooler" title="Pooler">Pooler</a>. Out of the box this application does Erlang process pooling, and given that our Riak connections are each Erlang processes, this suits us perfectly.</p>
+
+<p>One thing that I didn&rsquo;t like about the interface to Pooler was that it relied on the caller managing the lifetime of the connection. As a result, I made a small change to the interface in my own <a href="https://github.com/OJ/pooler" title="OJ's Pooler fork">fork</a> which I think helps keep things a little cleaner. This application will be making use of this fork.</p>
+
+<p>First up, we need to add another dependency in our <code>rebar.config</code> file which will pull this application in from Github at a dependency.</p>
+
+<pre><code>%%-*- mode: erlang -*-
+{deps,
+  [
+    {mochiweb, &quot;.*&quot;, {git, &quot;git://github.com/mochi/mochiweb&quot;, &quot;HEAD&quot;}},
+    {riakc, &quot;.*&quot;, {git, &quot;git://github.com/basho/riak-erlang-client&quot;, &quot;HEAD&quot;}},
+    {pooler, &quot;.*&quot;, {git, &quot;git://github.com/OJ/pooler&quot;, &quot;HEAD&quot;}}
+  ]
+}.
+</code></pre>
+
+<p>Build the application so that the dependency is pulled and built:</p>
+
+<pre><code>oj@hitchens ~/code/csd $ make
+
+   ... snip ... 
+
+Pulling pooler from {git,&quot;git://github.com/OJ/pooler&quot;,&quot;HEAD&quot;}
+Cloning into pooler...
+==&gt; pooler (get-deps)
+
+   ... snip ... 
+
+==&gt; pooler (compile)
+Compiled src/pooler_app.erl
+Compiled src/pooler_pooled_worker_sup.erl
+Compiled src/pooler_pool_sup.erl
+Compiled src/pooler_sup.erl
+Compiled src/pooler.erl
+
+   ... snip ... 
+</code></pre>
+
+<p>Next we need to take the scalpel to <code>csd_core</code>. When we first created this application, it was intended to manage all of the interaction with Riak and to manage the intricacies of dealing with snippets and other objects without exposing Riak&rsquo;s inner workings to the <code>csd_web</code> application. To do this we put a <a href="http://www.erlang.org/doc/man/gen_server.html" title="gen_server">gen_server</a> in place, called <code>csd_core_server</code>, which handled the incoming requests. It internally established connections to Riak and used them without destroying them.</p>
+
+<p>For now, we&rsquo;ll be keeping this <code>gen_server</code> in place but we&rsquo;re going to make some modifications to it:</p>
+
+<ol>
+<li>We&rsquo;ll start and stop <code>pooler</code> when our <code>csd_core</code> application starts and stops.</li>
+<li>We&rsquo;ll change the way configuration is managed and add the configuration for <code>pooler</code>.</li>
+<li>We&rsquo;ll be removing the code that establishes the connections.</li>
+<li>We&rsquo;ll pass the calls through to Riak using the new <code>pooler</code> application.</li>
+</ol>
+
+<p>Let&rsquo;s get to it.</p>
+
+<h4 id="starting-and-stopping-pooler">Starting and Stopping Pooler</h4>
+
+<p>Given that we&rsquo;re using <code>pooler</code> the first thing we need to do is make sure that it loads and runs when <code>csd_core</code> fires up. To do this, we need to modify <code>csd_core.erl</code> so that it looks like this:</p>
+
+<pre><code>%% @author OJ Reeves &lt;oj@buffered.io&gt;
+%% @copyright 2011 OJ Reeves
+
+%% @doc csd_core startup code
+
+-module(csd_core).
+-author('OJ Reeves &lt;oj@buffered.io&gt;').
+-export([start/0, start_link/0, stop/0]).
+
+ensure_started(App) -&gt;
+    case application:start(App) of
+        ok -&gt;
+            ok;
+        {error, {already_started, App}} -&gt;
+            ok
+    end.
+
+%% @spec start_link() -&gt; {ok,Pid::pid()}
+%% @doc Starts the app for inclusion in a supervisor tree
+start_link() -&gt;
+    start_common(),
+    csd_core_sup:start_link().
+
+%% @spec start() -&gt; ok
+%% @doc Start the csd_core server.
+start() -&gt;
+    start_common(),
+    application:start(csd_core).
+
+%% @spec stop() -&gt; ok
+%% @doc Stop the csd_core server.
+stop() -&gt;
+    Res = application:stop(csd_core),
+    application:stop(pooler),
+    application:stop(crypto),
+    Res.
+
+%% @private
+start_common() -&gt;
+    ensure_started(crypto),
+    ensure_started(pooler).
+</code></pre>
+
+<p>This code will start and stop the <code>pooler</code> application along with our application. Exactly what we need!</p>
+
+<h4 id="fixing-configuration">Fixing Configuration</h4>
+
+<p>Our rudimentary configuration module, <code>csd_riak_config.erl</code>, is now obsolete. We&rsquo;re going to remove it and replace it with something a little more complicated which will not only make it easier to handle configuration using Erlang&rsquo;s built-in <a href="http://www.erlang.org/doc/man/config.html" title="Erlang configuration">configuration</a> handling, but we&rsquo;ll add some code which will make it easier to access configuration both in development <em>and</em> once the application has been deployed.</p>
+
+<p>Let&rsquo;s start by creating a new file:</p>
+
+<pre><code>[
+  {pooler, [
+      {pools, [
+          [
+            {name, &quot;haproxy&quot;},
+            {max_count, 30},
+            {init_count, 5},
+            {start_mfa, {riakc_pb_socket, start_link, [&quot;127.0.0.1&quot;, 8080]}}
+          ]
+        ]}
+    ]}
+].
+</code></pre>
+
+<p><code>pooler</code> is smart enough to pool connections across multiple nodes. This is quite a nifty feature, but not one that we&rsquo;re making use of because we have HAProxy in place. Therefore, the configuration above is telling Pooler to use just one single node/pool (ie. the proxy), to create 5 connections and to allow up to 30 to be created if required.</p>
+
+<p>The last parameter in the configuration, <code>start_mfa</code>, tells <code>pooler</code> which module, function and arguments to invoke to create the Erlang process from. In our case we want it to create a pool of Riak client connections, hence why we&rsquo;ve specified the <code>start_link</code> function in the <code>riakc_pb_socket</code> module.</p>
+
+<p>Next we modify our <code>Makefile</code> so that when we invoke <code>make webstart</code> the configuration is properly included:</p>
+
+<pre><code>.PHONY: deps
+
+REBAR=`which rebar || ./rebar`
+
+all: deps compile
+
+compile:
+    @$(REBAR) compile
+
+app:
+    @$(REBAR) compile skip_deps=true
+
+deps:
+    @$(REBAR) get-deps
+
+clean:
+    @$(REBAR) clean
+
+distclean: clean
+    @$(REBAR) delete-deps
+
+test: app
+    @$(REBAR) eunit skip_deps=true
+
+webstart: app
+    exec erl -pa $(PWD)/apps/*/ebin -pa $(PWD)/deps/*/ebin -boot start_sasl -config $(PWD)/apps/csd_core/priv/app.config -s reloader -s csd_core -s csd_web
+
+proxystart:
+    @haproxy -f dev.haproxy.conf
+</code></pre>
+
+<p>At this point we are able to build and run the application just as we were before. The first thing you&rsquo;ll notice is that the HAProxy console immediately registers 5 new connections:</p>
+
+<pre><code>0000004:dbcluster.accept(0005)=0006 from [127.0.0.1:34536]
+00000005:dbcluster.accept(0005)=0008 from [127.0.0.1:58770]
+00000006:dbcluster.accept(0005)=000a from [127.0.0.1:44734]
+00000007:dbcluster.accept(0005)=000c from [127.0.0.1:33874]
+00000008:dbcluster.accept(0005)=000e from [127.0.0.1:35815]
+</code></pre>
+
+<p>This is evidence that <code>pooler</code> is doing its job and starting with 5 connections. Now that we have this in place, let&rsquo;s get rid of the old configuration:</p>
+
+<pre><code>oj@hitchens ~/code/csd $ rm apps/csd_core/src/csd_riak_config.erl 
+</code></pre>
+
+<p>That was easy! We now need to remove any references to this module, thankfully the only module that used was <code>csd_core_server.erl</code>, and that&rsquo;s the one we&rsquo;re going to fix up now. After removing references to the configuration, removing connection creation and replacing it with calls to <code>pooler</code>, <code>csd_core_server</code> now looks like this:</p>
+
+<pre><code>-module(csd_core_server).
+-behaviour(gen_server).
+-define(SERVER, ?MODULE).
+
+%% ------------------------------------------------------------------
+%% API Function Exports
+%% ------------------------------------------------------------------
+
+-export([start_link/0, get_snippet/1, save_snippet/1]).
+
+%% ------------------------------------------------------------------
+%% gen_server Function Exports
+%% ------------------------------------------------------------------
+
+-export([init/1, handle_call/3, handle_cast/2, handle_info/2, terminate/2, code_change/3]).
+
+%% ------------------------------------------------------------------
+%% API Function Definitions
+%% ------------------------------------------------------------------
+
+start_link() -&gt;
+  gen_server:start_link({local, ?SERVER}, ?MODULE, [], []).
+
+save_snippet(Snippet) -&gt;
+  gen_server:call(?SERVER, {save_snippet, Snippet}, infinity).
+
+get_snippet(SnippetKey) -&gt;
+  gen_server:call(?SERVER, {get_snippet, SnippetKey}, infinity).
+
+%% ------------------------------------------------------------------
+%% gen_server Function Definitions
+%% ------------------------------------------------------------------
+
+init([]) -&gt;
+  {ok, undefined}.
+
+handle_call({save_snippet, Snippet}, _From, State) -&gt;
+  SavedSnippet = pooler:use_member(fun(RiakPid) -&gt; csd_snippet:save(RiakPid, Snippet) end),
+  {reply, SavedSnippet, State};
+
+handle_call({get_snippet, SnippetKey}, _From, State) -&gt;
+  Snippet = pooler:use_member(fun(RiakPid) -&gt; csd_snippet:fetch(RiakPid, SnippetKey) end),
+  {reply, Snippet, State};
+
+handle_call(_Request, _From, State) -&gt;
+  {noreply, ok, State}.
+
+handle_cast(_Msg, State) -&gt;
+  {noreply, State}.
+
+handle_info(_Info, State) -&gt;
+  {noreply, State}.
+
+terminate(_Reason, _State) -&gt;
+  ok.
+
+code_change(_OldVsn, State, _Extra) -&gt;
+  {ok, State}.
+</code></pre>
+
+<p>Here you can see we&rsquo;re making use of the <a href="https://github.com/OJ/pooler/blob/master/src/pooler.erl#L125" title="use_member">pooler:use_member</a> function to easily wrap up the management of the connection&rsquo;s usage lifetime. All traces of the old configuration are gone. We can now rebuild the application using <code>make</code>, fire it up using <code>make webstart</code> and hit the <a href="http://127.0.0.1/snippet/B41kUQ==">same page</a> as before resulting in the same content appearing on screen.</p>
+
+<p>We have now successfully removed the old configuration and connection handling code, and we&rsquo;ve replaced it with <code>pooler</code> to handle a pool of connections to the Riak proxy. The last part of our refactor is around configuration for the front-end web application.</p>
+
+<h2 id="rewiring-configuration">Rewiring Configuration</h2>
+
+<p>Our configuration is going to get more complicated, so to make sure that we&rsquo;re able to better handle and manage it we&rsquo;re going to set up a similar structure to what we had set up in the <code>csd_core</code> application (in the previous section). The first thing we&rsquo;re going to change is the way that the <strong>Webmachine</strong> routes are loaded. Right now, they&rsquo;re stored in <code>apps/tr_web/priv/dispatch.conf</code>. This configuration belongs alongside others, so we&rsquo;ll move that to an <code>app.config</code> file and re-jig the code to load it from there.</p>
+
+<p>First up, rename the file:</p>
+
+<pre><code>oj@air ~/code/csd/apps/csd_web/priv $ mv dispatch.conf app.config
+</code></pre>
+
+<p>Now let&rsquo;s edit it so that it takes the appropriate format:</p>
+
+<pre><code>%%-*- mode: erlang -*-
+[
+  {sasl,
+    [
+      {sasl_error_logger, {file, &quot;log/sasl-error.log&quot;}},
+      {errlog_type, error},
+      {error_logger_mf_dir, &quot;log/sasl&quot;},      % Log directory
+      {error_logger_mf_maxbytes, 10485760},   % 10 MB max file size
+      {error_logger_mf_maxfiles, 5}           % 5 files max
+    ]
+  },
+  {csd_web,
+    [
+      {web,
+        [
+          {ip, &quot;0.0.0.0&quot;},
+          {port, 8000},
+          {log_dir, &quot;priv/log&quot;},
+          {dispatch,
+            [
+              {[], csd_web_resource, []},
+              {[&quot;snippet&quot;, key], csd_web_snippet_resource, []}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+].
+</code></pre>
+
+<p>A few things to note here:</p>
+
+<ol>
+<li>I&rsquo;ve included the <code>sasl</code> configuration for later tweaking.</li>
+<li>the <code>csd_web</code> section is named that way so that it is matches the application name. This makes the auto-wiring work.</li>
+<li>The Webmachine configuration for application is now in a subsection called <code>web</code>. Inside this section is the original <code>dispatch</code> that we had in our old <code>dispatch.conf</code>. This configuration sections takes the <em>exact</em> form that Webmachine expects when we start its process in our supervisor.</li>
+</ol>
+
+<p>At this point we need to go and fiddle with the way Webmachine loads its configuration so that it picks up these details. We&rsquo;ll start by defining a helper which will make it easy to get access to configuration for the <code>csd_web</code> application.</p>
+
+<pre><code>-module(conf).
+
+-export([get_section/1, get_section/2]).
+-export([get_val/2, get_val/3]).
+
+get_section(Name) -&gt;
+  get_section(Name, undefined).
+
+get_section(Name, Default) -&gt;
+  case application:get_env(csd_web, Name) of
+    {ok, V} -&gt;
+      V;
+    _ -&gt;
+      Default
+  end.
+
+get_val(SectionName, Name) -&gt;
+  get_val(SectionName, Name, undefined).
+
+get_val(SectionName, Name, Default) -&gt;
+  case application:get_env(csd_web, SectionName) of
+    {ok, Section} -&gt;
+      proplists:get_value(Name, Section, Default);
+    _ -&gt;
+      Default
+  end.
+</code></pre>
+
+<p>Configuration helpers are now in place, let&rsquo;s fix the Webmachine loader in <code>csd_web_sup.erl</code>.</p>
+
+<pre><code>% ... snip ... %
+%% @spec init([]) -&gt; SupervisorTree
+%% @doc supervisor callback.
+init([]) -&gt;
+  WebConfig = conf:get_section(web),
+  Web = {webmachine_mochiweb,
+    {webmachine_mochiweb, start, [WebConfig]},
+    permanent, 5000, worker, dynamic},
+  Processes = [Web],
+  {ok, { {one_for_one, 10, 10}, Processes} }.
+% ... snip ... %
+</code></pre>
+
+<p>This little snippet delegates the responsibility of all Webmachine-related stuff to the <code>app.config</code> file. Let&rsquo;s include this in our <code>Makefile</code> when we start our application.</p>
+
+<pre><code>webstart: app
+	exec erl -pa $(PWD)/apps/*/ebin -pa $(PWD)/deps/*/ebin -boot start_sasl -config $(PWD)/apps/csd_web/priv/app.config -config $(PWD)/apps/csd_core/priv/app.config -s reloader -s csd_core -s csd_web
+</code></pre>
+
+<p>All we&rsquo;ve done here is add another <code>-config</code> parameter and pointed it at the new <code>app.config</code> file in the <code>csd_web/src</code> folder. Fire up the application and it <em>should</em> behave exactly as it did before.</p>
+
+<p>Now that we have our configuration tweaked we have finalised the last of the refactoring tasks (at least for now). It&rsquo;s now time to start designing our user login functionality.</p>
+
+<h2 id="handling-user-logins">Handling User Logins</h2>
+
+<p>Handling logins isn&rsquo;t necessarily as simple as it looks. Remember, <a href="http://www.basho.com/developers.html#Webmachine" title="Webmachine">Webmachine</a> is not a Web application framework, it&rsquo;s a feature-rich tool which helps us build well-behaving RESTful HTTP applications. The idea of a &ldquo;session&rdquo; is a (leaky) abstraction that web developers have added to web applications to aid in preventing users from having to manually sign in each time they want to access a resource. This abstraction tends to be handled through cookies.</p>
+
+<p>We&rsquo;ll be doing the same, but given that we don&rsquo;t have anything in place at all we&rsquo;re going to have to come up with our own method for handling authentication of the user via cookies.</p>
+
+<p>Bearing in mind that we&rsquo;ll be making use of Twitter, via OAuth, to deal with the process of authentication, the login process will consist of the following steps:</p>
+
+<ol>
+<li>The user clicks a &ldquo;login via Twitter&rdquo; button.</li>
+<li>The server handles the request and negotiates a <a href="http://oauth.net/core/1.0/#auth_step1" title="Request tokens">request token</a> with Twitter using OAuth.</li>
+<li>The application redirects the user to Twitter on a special URL which contains OAuth request information.</li>
+<li>The user is asked to sign in to Twitter, if they haven&rsquo;t already during the course of their browser session.</li>
+<li>Twitter then confirms that the user does intend to sign-in to Code Smackdown using their Twitter credentials, and redirects the user back to the application.</li>
+<li>If the user approves the process, the application is handed a verification token which is then used to generate an OAuth <a href="http://oauth.net/core/1.0/#auth_step3" title="Access tokens">access token</a> with Twitter. This access token is what is used to allow the user to easily sign in to the application from this point onward.</li>
+</ol>
+
+<p>Prepare yourself, you&rsquo;re about to learn how to do OAuth in Erlang! But before we can do that, we need to register our application with Twitter.</p>
+
+<h3 id="creating-a-new-twitter-application">Creating a new Twitter Application</h3>
+
+<p>Start by browsing to the <a href="https://dev.twitter.com/apps/new" title="New Twitter Application">Twitter application registration page</a> and signing in with your Twitter account credentials. You&rsquo;ll be taken to a page where you can enter the details of the application. Set the <strong>Callback URL</strong> to <code>http://127.0.0.1:4000/oauth/callback</code> for now. This points the Twitter redirect traffic back to localhost which will make things easy during development. When it comes time to deploy the application to production you can change this to the proper callback address.</p>
+
+<p><img src="/uploads/2012/02/twitter-app-create.png" alt="Creating an application in Twitter" title="Twitter app creation" /></p>
+
+<p>Once you&rsquo;ve filled out the details you&rsquo;ll being presented with a standard set of OAuth-related bits which we&rsquo;ll be using down the track. I&rsquo;ll of course be using my own registered application name (Code Smackdown) along with the keys. Given these keys are specific to my application and should be kept secret I will not be making them part of the source (sorry).</p>
+
+<p>Once you&rsquo;re registered, we&rsquo;re ready to take the OAuth configuration information from Twitter and plug it into our own configuration. Re-open <code>csd_web/priv/app.config</code> and create a new section called <code>twitter</code> under the <code>csd_web</code> section and add the following</p>
+
+<pre><code>% ... snip ... %
+  {csd_web,
+    [
+      % ... snip ... %
+      {twitter,
+        [
+          {consumer_key, &quot;&lt; your application's key goes here &gt;&quot;},
+          {consumer_secret, &quot;&lt; your application's secret goes here &gt;&quot;},
+          {request_token_url, &quot;https://twitter.com/oauth/request_token&quot;},
+          {access_token_url, &quot;https://twitter.com/oauth/access_token&quot;},
+          {authenticate_url, &quot;https://twitter.com/oauth/authenticate&quot;},
+          {current_user_info_url, &quot;https://twitter.com/account/verify_credentials.json&quot;}
+        ]
+      }
+    ]
+  }
+% ... snip ... %
+</code></pre>
+
+<p>The first two values come straight from Twitter and would have been given to you upon registering your application. The rest are URLs that we&rsquo;ll be using later on when doing the OAuth handshake.</p>
+
+<p>Now that we&rsquo;ve got our configuration locked in we can get started on managing the requests. For this we need to understand how OAuth actually works.</p>
+
+<p>A deep-dive into the ins and outs of OAuth is beyond the scope of this article. I recommend having a read of <a href="http://www.slideshare.net/leahculver/oauth-open-api-authentication" title="OAuth overview">this presentation on OAuth</a> which gives a good overview. The rest of this article will fill the gaps as to how it all works.</p>
+
+<h3 id="implementing-oauth">Implementing OAuth</h3>
+
+<p>Using OAuth requires us to invoke HTTP requests to Twitter. We could go through the pain of doing this manually, but instead we&rsquo;re going to use another Open Source utility which has the ability to handle this for us.</p>
+
+<p><a href="https://github.com/tim/erlang-oauth" title="erlang-oauth">erlang-oauth</a> is an Erlang application which makes it easy to deal with OAuth requests and is ideal for what we need to do. Given that it will be a dependency on our application we need it to work nicely with rebar. Out of the box this isn&rsquo;t the case, so I have made a <a href="https://github.com/OJ/erlang-oauth/tree/rebarise" title="erlang-oauth rebar fork">fork</a> with a topic branch that has rebar-friendliness in it. We&rsquo;ll use this fork and branch in our application.</p>
+
+<pre><code>%%-*- mode: erlang -*-
+{deps,
+  [
+    {oauth, &quot;.*&quot;, {git, &quot;git://github.com/OJ/erlang-oauth&quot;, {branch, &quot;rebarise&quot;}}},
+    {webmachine, &quot;.*&quot;, {git, &quot;git://github.com/basho/webmachine&quot;, &quot;HEAD&quot;}},
+    {erlydtl, &quot;.*&quot;, {git, &quot;git://github.com/OJ/erlydtl.git&quot;, &quot;HEAD&quot;}}
+  ]
+}.
+</code></pre>
+
+<p>The <code>erlang-oauth</code> application requires <code>ssl</code> and <code>public_key</code> applications to be running for it to function properly, so we need to kick those applications off during start-up. We can do that by editing <code>csd_web.erl</code> like so:</p>
+
+<pre><code>
+%% @author OJ Reeves &lt;oj@buffered.io&gt;
+%% @copyright 2012 OJ Reeves.
+
+%% @doc csd_web startup code
+
+-module(csd_web).
+-author('OJ Reeves &lt;oj@buffered.io&gt;').
+-export([start/0, start_link/0, stop/0]).
+
+ensure_started(App) -&gt;
+  case application:start(App) of
+    ok -&gt;
+      ok;
+    {error, {already_started, App}} -&gt;
+      ok
+  end.
+
+%% @spec start_link() -&gt; {ok,Pid::pid()}
+%% @doc Starts the app for inclusion in a supervisor tree
+start_link() -&gt;
+  start_common(),
+  csd_web_sup:start_link().
+
+%% @spec start() -&gt; ok
+%% @doc Start the csd_web server.
+start() -&gt;
+  start_common(),
+  application:start(csd_web).
+
+%% @spec stop() -&gt; ok
+%% @doc Stop the csd_web server.
+stop() -&gt;
+  Res = application:stop(csd_web),
+  application:stop(webmachine),
+  application:stop(mochiweb),
+  application:stop(public_key), % stop new dependency
+  application:stop(ssl),        % stop new dependency
+  application:stop(crypto),
+  application:stop(inets),
+  Res.
+
+start_common() -&gt;
+  ensure_started(inets),
+  ensure_started(crypto),
+  ensure_started(public_key), % start new dependency
+  ensure_started(ssl),        % start new dependency
+  ensure_started(mochiweb),
+  application:set_env(webmachine, webmachine_logger_module, webmachine_logger),
+  ensure_started(webmachine),
+  ok.
+</code></pre>
+
+<p>Interacting with Twitter now becomes quite simple. To handle talking to Twitter we&rsquo;ll create a new module, called <code>twitter.erl</code>, that does the dirty work. Let&rsquo;s take a look at the code then we&rsquo;ll walk through it.</p>
+
+<pre><code>
+%% @author OJ Reeves &lt;oj@buffered.io&gt;
+%% @copyright 2012 OJ Reeves
+
+-module(twitter).
+
+-author('OJ Reeves &lt;oj@buffered.io&gt;').
+
+-export([request_access/0, verify_access/3, get_current_user_info/2]).
+
+request_access() -&gt;
+  TwitterConf = conf:get_section(twitter),
+  RequestTokenUrl = proplists:get_value(request_token_url, TwitterConf),
+  {ok, RequestResponse} = oauth:get(RequestTokenUrl, [], consumer(TwitterConf)),
+  RequestParams = oauth:params_decode(RequestResponse),
+  RequestToken = oauth:token(RequestParams),
+  AuthenticateUrl = proplists:get_value(authenticate_url, TwitterConf),
+  {ok, oauth:uri(AuthenticateUrl, [{&quot;oauth_token&quot;, RequestToken}])}.
+
+verify_access(RequestToken, RequestTokenSecret, Verifier) -&gt;
+  TwitterConf = conf:get_section(twitter),
+  AccessTokenUrl = proplists:get_value(access_token_url, TwitterConf),
+  {ok, AccessResponse} = oauth:get(AccessTokenUrl, [{&quot;oauth_verifier&quot;, Verifier}], consumer(TwitterConf), RequestToken, RequestTokenSecret),
+  AccessParams = oauth:params_decode(AccessResponse),
+  AccessToken = oauth:token(AccessParams),
+  AccessTokenSecret = oauth:token_secret(AccessParams),
+  {ok, AccessToken, AccessTokenSecret}.
+
+get_current_user_info(AccessToken, AccessTokenSecret) -&gt;
+  call_json_service(current_user_info_url, AccessToken, AccessTokenSecret).
+
+% Extract a oauth-formatted consumer tuple from the given Twitter configuration.
+consumer(TwitterConf) -&gt;
+  ConsumerKey = proplists:get_value(consumer_key, TwitterConf),
+  ConsumerSecret = proplists:get_value(consumer_secret, TwitterConf),
+  {ConsumerKey, ConsumerSecret, hmac_sha1}.
+
+% Invoke a call to a JSON service on Twitter.
+call_json_service(UrlKey, AccessToken, AccessTokenSecret) -&gt;
+  TwitterConf = conf:get_section(twitter),
+  Url = proplists:get_value(UrlKey, TwitterConf),
+  {ok, Response} = oauth:get(Url, [], consumer(TwitterConf), AccessToken, AccessTokenSecret),
+  {{ &quot;{{&quot; }}_Version, 200, &quot;OK&quot;}, _Headers, Json} = Response,
+  {ok, Json}.
+</code></pre>
+
+<p>This might seem like a lot but there isn&rsquo;t much to it. Here&rsquo;s the run-down:</p>
+
+<ul>
+<li><p><code>request_access</code>: This function is what handles the first step in the OAuth negotiation process. It starts by loading the <code>twitter</code> configuration from our <code>app.config</code> file. The <code>twitter</code> section contains all the URLs we need to talk to Twitter</p>
+
+<p>First we need to get hole of a <em>request token</em>, which is an identifier for an authorisation request that Twitter generates when we first start talking OAuth. We get the <code>request_token_url</code> from the configuration and we connect to Twitter, using <code>oauth:get</code> to kick the process off. Note the use of the <code>consumer</code> function, which simply takes our local <code>twitter</code> configuration and populates an <code>erlang-oauth</code>-friendly tuple with the details required to make OAuth requests on behalf of our application. This tuple contains our <em>consumer key</em>, the <em>consumer secret</em> and the signature method to use. We will always be using <code>hmac_sha1</code> as that&rsquo;s what Twitter currently requires.</p>
+
+<p>Twitter reponds with a payload which includes the generated request token. We take that request token out of the payload and generate an Authentication URL. This URL contains information about the request that we started in the previous steps, along with the <code>authenticate_url</code> value loaded from configuration. If you remember back to our configuration you&rsquo;ll see that this <code>authenticate_url</code> is one that Twitter told us to use when we first registered our application and it resolves to <code>https://twitter.com/oauth/authenticate</code>.</p>
+
+<p>This URL is returned to the caller and the calling code should redirect the user to this URL so that they can authenticate themselves with Twitter.</p></li>
+
+<li><p><code>verify_access</code>: This function is what is called after the use has authenticated themselves with Twitter. The function expects both the <em>request token</em> and <em>request token secret</em> so that the result of the request can be validated with Twitter. Twitter also generates a &ldquo;verifier&rdquo; value as part of it&rsquo;s authentication process, and this value is what is passed in via the <code>Verifier</code> parameter.</p>
+
+<p>After getting hold of the Twitter configuration an <em>access token</em> URL is generated. This URL contains all the information required to turn the <em>request token</em> into an <em>access token</em>. Once generated, this URL is then accessed via <code>erlang-oauth</code> and the payload that comes back from Twitter contains both the <em>access token</em> and the <em>access token secret</em>. Both of these are required from this point on to make requests to Twitter on behalf of the user.</p></li>
+
+<li><p><code>get_current_user_info</code>: This is a small helper function which calls to Twitter via <code>erlang-oauth</code> and extracts the user details for the user. The payload contains the usual Twitter profile stuff such as Twitter ID, username, bio, tweet count, etc.</p></li>
+</ul>
+
+<p>Before we take a look at the Webmachine resource that will invoke this functionality, let&rsquo;s take a look at what we&rsquo;ll need to do with the tokens once we&rsquo;ve got them.</p>
+
+<p>For now, we are only going to store them, encrypted, in the user&rsquo;s cookie which we&rsquo;ll send down to the browser. This isn&rsquo;t &ldquo;best practice&rdquo; when it comes to storage of this kind of information, but for the sake of this blog post it will suffice. Later in the series we&rsquo;ll be doing more with this information and most likely removing some of the information from the cookie.</p>
+
+<p>With this in mind, we need something that is able to write to and read from the user&rsquo;s cookies during a request. This module needs to be able to verify that a user&rsquo;s cookie is valid and that it hasn&rsquo;t expired. When writing and reading the module must also handle the encryption of the sensitive information.</p>
+
+<p>Let&rsquo;s create this new module, called <code>cookie.erl</code>, inside <code>csd_web</code>. I&rsquo;ll break it up into it&rsquo;s functions so you can see what it&rsquo;s doing.</p>
+
+<pre><code>
+%% @author OJ Reeves &lt;oj@buffered.io&gt;
+%% @copyright 2012 OJ Reeves
+
+-module(cookie).
+
+-author('OJ Reeves &lt;oj@buffered.io&gt;').
+
+-export([load_auth/1, store_auth/5]).
+
+-define(AUTH_COOKIE, &quot;__CodeSmackdown__Auth&quot;).
+-define(AUTH_SALT, &quot;27ed2d041cdb4b8b2702&quot;).
+-define(AUTH_SECRET, &quot;2d0431cd9bda5ba4b98271edcb2e7102&quot;).
+-define(AUTH_EXPIRY_DAYS, 7).
+-define(ENC_IV, &lt;&lt;207,94,217,158,198,63,132,205,35,187,246,2,56,122,250,33&gt;&gt;).
+-define(ENC_KEY,
+  &lt;&lt;110,56,121,28,235,159,77,154,160,5,130,210,204,32,26,224,255,86,101,71,61,3,
+  66,69,30,39,42,0,116,93,204,99&gt;&gt;).
+</code></pre>
+
+<p>Ignoring the usual headers/setup for the module, we can see a stack of defines. They are:</p>
+
+<ul>
+<li><code>AUTH_COOKIE</code>: This is the name of the cookie that will live in the browser. If you use a cookie editor you&rsquo;ll see this name appear as the name of the cookie once it&rsquo;s written.</li>
+<li><code>AUTH_SALT</code>: This is a bunch of characters that will be used as a <a href="http://en.wikipedia.org/wiki/Salt_(cryptography)" title="Salt (crypto)">salt</a> for when we&rsquo;re generating the <a href="http://en.wikipedia.org/wiki/HMAC" title="HMAC">SHA MAC</a> from the user&rsquo;s cookie information.</li>
+<li><code>AUTH_SECRET</code>: This is the key we&rsquo;ll be using when creating a <a href="http://en.wikipedia.org/wiki/HMAC" title="HMAC">SHA MAC</a> from the data we&rsquo;ll be pushing into the cookie. This is to make sure that the cookie hasn&rsquo;t been tampered with.</li>
+<li><code>AUTH_EXPIRY_DAYS</code>: This is the number of days that the cookie is valid for.</li>
+<li><code>ENC_IV</code>: This is the initialisation vector used when encrypting/decrypting the data in the cookie.</li>
+<li><code>ENC_KEY</code>: This is the key that&rsquo;s used for encrypting/decrypting data that&rsquo;s in the cookie.</li>
+</ul>
+
+<p>Pretty simple stuff. Now let&rsquo;s take a look at a function that does something interesting.</p>
+
+<pre><code>load_auth(ReqData) -&gt;
+  case wrq:get_cookie_value(?AUTH_COOKIE, ReqData) of
+    undefined -&gt;
+      {error, no_cookie};
+    V -&gt;
+      Val = mochiweb_util:unquote(V),
+      decode(Val)
+  end.
+</code></pre>
+
+<p><code>load_auth</code> is a function which attempts to load authentication information from the cookies stored in the <code>ReqData</code> parameter. <code>ReqData</code> is the <a href="http://wiki.basho.com/Webmachine-Request.html" title="Request data">request data</a> that comes from Webmachine. As you can see, the function attempts to read the cookie value from the request data using Webmachine&rsquo;s <a href="http://wiki.basho.com/Webmachine-Request.html" title="Request data">wrq</a> module. If it fails <code>undefined</code> is returned and we know that no cookie has been set. If a value is read, we munge the data into something usable and then attempt to decode it using the <code>decode</code> function explained further down.</p>
+
+<p>This function returns either <code>{ok, &lt;Cookie Information&gt;}</code> or <code>{error, &lt;Reason&gt;}</code>.</p>
+
+<pre><code>store_auth(ReqData, Id, Name, Token, TokenSecret) -&gt;
+  Value = mochiweb_util:quote_plus(encode(Id, Name, Token, TokenSecret)),
+  Options = [
+    %{domain, &quot;codesmackdown.com&quot;},
+    {max_age, 3600 * 24 * ?AUTH_EXPIRY_DAYS},
+    {path, &quot;/&quot;},
+    {http_only, true}
+  ],
+  CookieHeader = mochiweb_cookies:cookie(?AUTH_COOKIE, Value, Options),
+  wrq:merge_resp_headers([CookieHeader], ReqData).
+</code></pre>
+
+<p><code>store_auth</code> is the opposite to <code>load_auth</code> as it writes the user&rsquo;s information and token data to a cookie. The parameters to this function are:</p>
+
+<ul>
+<li><code>ReqData</code>: Webmachine&rsquo;s request data.</li>
+<li><code>Id</code>: The user&rsquo;s Twitter ID. We&rsquo;ll be using this as a key later on to retrieve information from Riak.</li>
+<li><code>Name</code>: The user&rsquo;s Twitter user name. We&rsquo;ll use this purely for display.</li>
+<li><code>Token</code> and <code>TokenSecret</code>: Token information for making OAuth requests on behalf of this user.</li>
+</ul>
+
+<p>The first thing we do is call <code>encode</code> and pass in the last four arguments. This gives us an encrypted blob which we can store in a cookie. We then put down some basic information inside <code>Options</code>, including the expiry date. We then use <code>mochiweb_cookies</code> to generate a cookie with the name (<code>AUTH_COOKIE</code>), value and options.</p>
+
+<p>Lastly we take the generated cookie header and merge that with the headers that already part of <code>ReqData</code> and produce a new request data object which is returned to the caller.</p>
+
+<pre><code>encode(Id, Name, Token, TokenSecret) -&gt;
+  SecretInfo = encrypt({Token, TokenSecret}),
+  CookieValue = {Id, Name, get_expiry(), SecretInfo},
+  base64:encode(term_to_binary({CookieValue, ?AUTH_SALT, crypto:sha_mac(?AUTH_SECRET, term_to_binary([CookieValue, ?AUTH_SALT]))})).
+</code></pre>
+
+<p>The <code>encode</code> function is rather self-explanatory. We start by encrypting the OAuth token information, we then generate a tuple which includes all the data we want to keep, convert it to binary and <a href="http://en.wikipedia.org/wiki/Base64" title="Base64">base64</a> encode it.</p>
+
+<pre><code>decode(CookieValue) -&gt;
+  {Value={Id, Name, Expire, SecretInfo}, Salt, Sign} = binary_to_term(base64:decode(CookieValue)),
+  case crypto:sha_mac(?AUTH_SECRET, term_to_binary([Value, Salt])) of
+    Sign -&gt;
+      case Expire &gt;= calendar:local_time() of
+        true -&gt;
+          {Token, TokenSecret} = decrypt(SecretInfo),
+          {ok, {Id, Name, Token, TokenSecret}};
+        false -&gt;
+          {error, expired}
+      end;
+    _ -&gt;
+      {error, invalid}
+  end.
+</code></pre>
+
+<p>The <code>decode</code> function does a little more than its counterpart as there&rsquo;s validation built-in as well as decrypting. Firstly we do the inverse of the final steps of the <code>encode</code> function in that we base64 decode the data into binary and convert the resulting binary back to Erlang terms. We then break this value up into its components.</p>
+
+<p>We then validate that the cookie hasn&rsquo;t been tampered with by calculating the <a href="http://en.wikipedia.org/wiki/HMAC" title="HMAC">SHA MAC</a> of the data that was retrieved. If this value doesn&rsquo;t match what is expected we indicate that the value is invalid. If the value is valid, we then make sure that the internal cookie value hasn&rsquo;t expired. If it hasn&rsquo;t, we return <code>{ok, &lt;data&gt;}</code>.</p>
+
+<p>The rest of the functions are easy to understand, so here they are for the sake of completeness without explanation.</p>
+
+<pre><code>get_expiry() -&gt;
+  {Date, Time} = calendar:local_time(),
+  NewDate = calendar:gregorian_days_to_date(calendar:date_to_gregorian_days(Date) + ?AUTH_EXPIRY_DAYS),
+  {NewDate, Time}.
+
+encrypt(Value) -&gt;
+  crypto:aes_ctr_encrypt(?ENC_KEY, ?ENC_IV, term_to_binary([Value, ?AUTH_SALT])).
+
+decrypt(Value) -&gt;
+  [V, ?AUTH_SALT] = binary_to_term(crypto:aes_ctr_decrypt(?ENC_KEY, ?ENC_IV, Value)),
+  V.
+</code></pre>
+
+<p>Phew! Now that&rsquo;s out of the way we have some back-end glue which we can use to perform some more interesting tasks. One thing that we really need to do is update the landing page template with something more meaningful than what we have now.</p>
+
+<p>We&rsquo;ll start making use of <a href="http://github.com/evanmiller/erlydtl" title="ErlyDTL">ErlyDTL</a>&rsquo;s hierarchical templates and implement a base template which our other templates will also make use of. Here it is in all its simplicity:</p>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;title&gt;Code Smackdown - {{ &quot;{&quot; }}% block page_title %}{{ &quot;{&quot; }}% endblock %}&lt;/title&gt;
+    &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    {{ &quot;{&quot; }}% block body_content %}{{ &quot;{&quot; }}% endblock %}
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>In this template we&rsquo;ve included a couple of Javascript files that we&rsquo;ll be using later on as well as setting up a basic HTML5 page. <code>page_title</code> and <code>body_content</code> are the two sections that child templates can populate with their own content.</p>
+
+<p>With that, let&rsquo;s go ahead and modify our default template so that it has something a little more meaninful in it:</p>
+
+<pre><code>{{ &quot;{&quot; }}% extends 'base.dtl' %}
+
+{{ &quot;{&quot; }}% block page_title %}Landing Page{{ &quot;{&quot; }}% endblock %}
+
+{{ &quot;{&quot; }}% block body_content %}
+    &lt;h1&gt;Welcome to Code Smackdown&lt;/h1&gt;
+    {{ &quot;{&quot; }}% if logged_in %}
+    &lt;p&gt;Welcome back {{ &quot;{&quot; }}{ user_name }}.&lt;/p&gt;
+    {{ &quot;{&quot; }}% else %}
+    &lt;p&gt;We require you to sign in via Twitter&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;{{ &quot;{&quot; }}{ logon_url }}&quot; title=&quot;Sign in with Twitter&quot;&gt;&lt;img src=&quot;http://si0.twimg.com/images/dev/buttons/sign-in-with-twitter-d.png&quot;/&gt;&lt;/a&gt;&lt;p&gt;
+    {{ &quot;{&quot; }}% endif %}
+{{ &quot;{&quot; }}% endblock %}
+</code></pre>
+
+<p>Nothing sinister going on here, but there are a couple of things worth noting. The template now looks for a field called <code>logged_in</code>, and if it&rsquo;s <code>true</code> it renders a paragraph which contains the value in the <code>user_name</code> field. If the <code>logged_in</code> flag is false a link is provided which points to <code>logon_url</code> which ultimately points the user at the Twitter OAuth entry page.</p>
+
+<p>We&rsquo;ll need to pass these values in when we render the template. Let&rsquo;s have a look at the changed section of <code>csd_web_resource</code>:</p>
+
+<pre><code>% ... snip ... %
+to_html(ReqData, State) -&gt;
+  Content = case cookie:load_auth(ReqData) of
+    {ok, {_, Name, _, _}} -&gt;
+      csd_view:home(Name);
+    _ -&gt;
+      csd_view:home()
+  end,
+  {Content, ReqData, State}.
+% ... snip ... %
+</code></pre>
+
+<p>Yes this is quite a bit different to before. We are calling into our <code>cookie</code> module to find out if the user is logged in. If they are logged on we call <code>csd_view:home</code> with a single parameter <code>Name</code>, if they&rsquo;re not logged on the same function is called without any parameters.</p>
+
+<p>The <code>csd_view</code> module is new and was created to abstract the idea of template rendering. All the ErlyDTL handling happens in <code>csd_view</code>. Let&rsquo;s take a look at it now.</p>
+
+<pre><code>%% @author OJ Reeves &lt;oj@buffered.io&gt;
+%% @copyright 2012 OJ Reeves
+
+-module(csd_view).
+
+-author('OJ Reeves &lt;oj@buffered.io&gt;').
+
+-export([home/0, home/1]).
+
+home() -&gt;
+  Params = [{logged_in, false}, {logon_url, conf:get_val(urimap, twitter_logon)}],
+  {ok, Content} = home_dtl:render(Params),
+  Content.
+
+home(Name) -&gt;
+  Params = [{logged_in, true}, {user_name, Name}],
+  {ok, Content} = home_dtl:render(Params),
+  Content.
+</code></pre>
+
+<p>Here we can see the two functions called <code>home</code> which were invoked in the <code>csd_web_resource</code> module. Most of this module is simple and uninteresting except for the use of <code>conf:get_val</code>. Templates need to know about paths when generating URLs in the markup. In our case, we&rsquo;re rendering links which point to internal routes which are specified in the dispatch list. Rather than hard-code URLs in the templates I decided to create another section in the <code>app.config</code> called <code>urimap</code>. The goal is to have an easy-to-access location for addresses which lives alongside the routes so that the maintainer of the application can update both at the same time should something need to change. Here&rsquo;s what the new section looks like.</p>
+
+<pre><code>% ... snip ... %
+  {csd_web,
+    [
+      % ... snip ... %
+      {urimap,
+        [
+          {home, &quot;/&quot;},
+          {twitter_logon, &quot;/oauth/request&quot;}
+        ]
+      },
+      % ... snip ... %
+</code></pre>
+
+<p>Accessing a link address is as simple as running <code>conf:get_val(urimap, &lt;link-id&gt;)</code>.</p>
+
+<p>At this point we can build and run the application to see what the landing page looks like. To fire up the application you&rsquo;ll need three consoles:</p>
+
+<ol>
+<li>One for Riak. Riak has to be running behind the scenes because <code>Pooler</code> will connect on start. Only one node is necessary at this point. Run: <code>/path/to/riak/dev/dev1/bin/riak start</code></li>
+<li>One for HAProxy. Run: <code>make proxystart</code></li>
+<li>One for the CSD application. Run: <code>make webstart</code></li>
+</ol>
+
+<p>When you browse to <a href="http://127.0.0.1:4000">http://127.0.0.1:4000</a> you should see the following:</p>
+
+<p><img src="/uploads/2012/02/home-loggedoff.png" alt="Landing page when logged off" title="Home - Logged Off" /></p>
+
+<p>Clicking the link will result in an error at this point, so don&rsquo;t do it yet! We need to implement more resources, but first let&rsquo;s just stick the routes into the dispatch in preparation.</p>
+
+<pre><code>{csd_web,
+  [
+    {web,
+      [
+        % ... snip ... %
+        {dispatch,
+          [
+            {[], csd_web_resource, []},
+            {[&quot;snippet&quot;, key], csd_web_snippet_resource, []},
+            {[&quot;oauth&quot;, &quot;request&quot;], csd_web_request_resource, []},  % new route
+            {[&quot;oauth&quot;, &quot;callback&quot;], csd_web_callback_resource, []} % new route
+          ]
+        }
+      ]
+    },
+    % ... snip ... %
+</code></pre>
+
+<p>Easily done. Now let&rsquo;s look at the implementation of the first handler which handles the <code>/oauth/request</code> URI, <code>csd_web_request_resource</code>.</p>
+
+<pre><code>%% @author OJ Reeves &lt;oj@buffered.io&gt;
+%% @copyright 2012 OJ Reeves
+
+-module(csd_web_request_resource).
+
+-author('OJ Reeves &lt;oj@buffered.io&gt;').
+
+-export([init/1, resource_exists/2, previously_existed/2, moved_temporarily/2]).
+
+-include_lib(&quot;webmachine/include/webmachine.hrl&quot;).
+
+init([]) -&gt;
+  {ok, undefined}.
+
+resource_exists(ReqData, State) -&gt;
+  {false, ReqData, State}.
+
+previously_existed(ReqData, State) -&gt;
+  {true, ReqData, State}.
+
+moved_temporarily(ReqData, State) -&gt;
+  {ok, Url} = twitter:request_access(),
+  {{ &quot;{&quot; }}{true, Url}, ReqData, State}.
+</code></pre>
+
+<p>This module is quite lightweight, but has a little bit of magic in it that revolves around getting redirects to work. If you&rsquo;re not familiar with how 307 redirects work in Webmachine, take a quick side-glance at my <a href="http://buffered.io/posts/redirects-with-webmachine/" title="Redirects with Webmachine">Redirects with Webmachine</a> post.</p>
+
+<p>Back? Ok. The extra line of code in the <code>moved_temporarily</code> function is where we invoke <code>twitter:request_access()</code> which goes to Twitter.com and gets a request token. The URL generated by this call is then passed back to Webmachine which will tell the caller&rsquo;s browser where to redirect to.</p>
+
+<p>Build the app, fire up it up and click on the &ldquo;Sign in via Twitter&rdquo; button and you should see a screen that resembles this (assuming you&rsquo;re already signed in to Twitter):</p>
+
+<p><img src="/uploads/2012/02/twitter-logon.png" alt="Logging into CSD view Twitter" title="Twitter - Logon Page" /></p>
+
+<p>Exciting! We&rsquo;re nearly there. Don&rsquo;t click &ldquo;Sign In&rdquo; just yet because we don&rsquo;t yet have the callback set up to handle the result. Let&rsquo;s do that now. Here&rsquo;s the resource:</p>
+
+<pre><code>%% @author OJ Reeves &lt;oj@buffered.io&gt;
+%% @copyright 2012 OJ Reeves
+
+-module(csd_web_callback_resource).
+
+-author('OJ Reeves &lt;oj@buffered.io&gt;').
+
+-export([init/1, resource_exists/2, previously_existed/2, moved_temporarily/2]).
+
+-include_lib(&quot;webmachine/include/webmachine.hrl&quot;).
+
+init([]) -&gt;
+  {ok, undefined}.
+
+resource_exists(ReqData, State) -&gt;
+  {false, ReqData, State}.
+
+previously_existed(ReqData, State) -&gt;
+  {true, ReqData, State}.
+
+moved_temporarily(ReqData, State) -&gt;
+  handle_callback(ReqData, State).
+
+handle_callback(ReqData, State) -&gt;
+  ReqToken = wrq:get_qs_value(&quot;oauth_token&quot;, ReqData),
+  ReqTokenSecret = wrq:get_qs_value(&quot;oauth_token_secret&quot;, ReqData),
+  Verifier = wrq:get_qs_value(&quot;oauth_verifier&quot;, ReqData),
+
+  {ok, AccessToken, AccessTokenSecret} = twitter:verify_access(ReqToken, ReqTokenSecret, Verifier),
+  {ok, UserInfoJson} = twitter:get_current_user_info(AccessToken, AccessTokenSecret),
+  {struct, Json} = mochijson2:decode(UserInfoJson),
+  UserId = proplists:get_value(&lt;&lt;&quot;id&quot;&gt;&gt;, Json),
+  UserName = proplists:get_value(&lt;&lt;&quot;screen_name&quot;&gt;&gt;, Json),
+  NewReqData = cookie:store_auth(ReqData, UserId, UserName, AccessToken, AccessTokenSecret),
+
+  % TODO: store the 'session' in Riak in an ETS backend
+
+  % TODO: error handlng for when things don't go to plan
+  {{ &quot;{&quot; }}{true, conf:get_val(urimap, home)}, NewReqData, State}.
+
+</code></pre>
+
+<p>The first few parts of this module should look familiar by now. We are overriding the <code>resource_exists</code>, <code>previously_existed</code> and <code>moved_temporarility</code> functions because we&rsquo;re going to be redirecting. For now we&rsquo;re going to assume that the user clicked &ldquo;Sign In&rdquo; and that everything went according to plan. Later on we&rsquo;ll worry about handling logon errors.</p>
+
+<p>When <code>moved_temporarily</code> is invoked we pass responsibility off to the <code>handle_callback</code> function. Here you can see we are taking three parameters out of the query string that Twitter sent through to us. Those parameters are the <em>request token</em>, <em>request token secret</em> and the <em>verifier</em>. We take those values and pass them down to our <code>twittter</code> module to get it to verify the access with Twitter and to generate an <em>access token/access token secret</em> pair. When that comes back we have our token information and we can assume that the user has authenticated via Twitter. At this point we can &ldquo;log the user on&rdquo; by storing a cookie, but before we do that we want to get their Twitter ID and Username, so we invoke the <code>twitter:get_current_user_info</code> function, passing in the OAuth credentials, which in return gives us a blob of <a href="http://json.org/" title="JavaScript Object Notation">JSON</a> which contains the user&rsquo;s Twitter information.</p>
+
+<p>From that we glean their ID and Username. We then store that information, along with the access token information, in a cookie using <code>cookie:store_ath</code> (which we&rsquo;ve covered previously) and we get a new request data object out as a result.</p>
+
+<p>Now all we have to do is redirect the user back to the home page and pass on the new request data. Webmachine will take this data and push the cookie to the user&rsquo;s browser, then redirect the user to the <code>home</code> entry in the <code>urimap</code> section in <code>app.config</code>. In effect, we&rsquo;re redirected to the home page as a logged on user.</p>
+
+<p>Ignoring the <code>TODO</code> notes (which we&rsquo;ll cover in future posts in this series), we&rsquo;ve got ourselves to the point where the application should function end-to-end. Finally.</p>
+
+<p>Compile the application and fire it up! Let&rsquo;s take a look at what happens.</p>
+
+<p><img src="/uploads/2012/02/home-loggedoff.png" alt="Hitting the home page prior to logging on" title="Home - Logged Off" /></p>
+
+<p><img src="/uploads/2012/02/twitter-logon.png" alt="Authenticating with Twitter" title="Twitter - Logon Page" /></p>
+
+<p><img src="/uploads/2012/02/home-loggedon.png" alt="Back home after the redirect with successful sign-on" title="Home - Logged On" /></p>
+
+<h2 id="that-s-all-for-now">That&rsquo;s all &hellip; for now</h2>
+
+<p>Thanks for reading this post. If you managed to make it this far you&rsquo;ve done well. In the next post we&rsquo;ll start to do some more meaningful things with our logged on users, such as allowing them to submit code snippets. This is where the end-to-end process becomes interesting.</p>
+
+<p>Comments, feedback and criticisms are as welcome as always.</p>
+
+<p><strong>Note:</strong> The code for Part 4 (this post) can be found on <a href="https://github.com/OJ/csd/tree/Part4-20120217" title="Source code for Part 4">Github</a>.</p>
+
+<p>Other parts in this series: <a href="/posts/webmachine-erlydtl-and-riak-part-1/" title="Wembachine, ErlyDTL and Riak - Part 1">Part 1</a>, <a href="/posts/webmachine-erlydtl-and-riak-part-2/" title="Wembachine, ErlyDTL and Riak - Part 2">Part 2</a>, <a href="/posts/webmachine-erlydtl-and-riak-part-3/" title="Wembachine, ErlyDTL and Riak - Part 3">Part 3</a>, <a href="/posts/webmachine-erlydtl-and-riak-part-5/" title="Webmachine, ErlyDTL and Riak - Part 5">Part 5</a></p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/riak">Riak</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/functional-programming">Functional Programming</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/howto">HOWTO</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/erlang">Erlang</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/webmachine">Webmachine</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/oauth">OAuth</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/twitter">Twitter</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/erlydtl">ErlyDTL</a>
+	  
+	    </p>
+	    
+<p><a itemprop="keywords" class=" label label-danger" href="/tags/erlang">Erlang</a> <a itemprop="keywords" class=" label label-danger" href="/tags/erlydtl">ErlyDTL</a> <a itemprop="keywords" class=" label label-danger" href="/tags/functional-programming">Functional Programming</a> <a itemprop="keywords" class=" label label-danger" href="/tags/howto">HOWTO</a> <a itemprop="keywords" class=" label label-danger" href="/tags/oauth">OAuth</a> <a itemprop="keywords" class=" label label-danger" href="/tags/riak">Riak</a> <a itemprop="keywords" class=" label label-danger" href="/tags/twitter">Twitter</a> <a itemprop="keywords" class=" label label-danger" href="/tags/webmachine">Webmachine</a></p>
+
+
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

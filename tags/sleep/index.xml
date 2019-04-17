@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sleep on OJ&#39;s Perspective</title>
+    <link>/tags/sleep/</link>
+    <description>Recent content in sleep on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Mon, 14 Apr 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/sleep/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>8 Hours</title>
+      <link>/posts/8-hours/</link>
+      <pubDate>Mon, 14 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/8-hours/</guid>
+      <description>A timespan like this probably doesn&amp;rsquo;t mean that much to you.
+It does to me.
+Thank you, Marley, for such a good night&amp;rsquo;s sleep!</description>
+    </item>
+    
+  </channel>
+</rss>

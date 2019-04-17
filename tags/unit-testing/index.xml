@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>unit testing on OJ&#39;s Perspective</title>
+    <link>/tags/unit-testing/</link>
+    <description>Recent content in unit testing on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Tue, 29 Jul 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/unit-testing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Unit Tests: Boldly Crossing Boundaries and Gently Breaking Rules</title>
+      <link>/posts/unit-tests-boldly-crossing-boundaries-and-gently-breaking-rules/</link>
+      <pubDate>Tue, 29 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/unit-tests-boldly-crossing-boundaries-and-gently-breaking-rules/</guid>
+      <description>&lt;p&gt;For the first time ever, OJ&amp;rsquo;s rants has a guest blogger! Long term friend and highly-respected geek, RobG has put together an interesting piece on something that&amp;rsquo;s close to the hearts of most Geeks - Unit testing. This is his first post, and I hope it won&amp;rsquo;t be the last.&lt;/p&gt;
+
+&lt;p&gt;Without further ado, here&amp;rsquo;s Rob!&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

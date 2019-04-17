@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Dealing with the CRUD - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/dealing-with-the-crud/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Dealing with the CRUD </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Thu Sep 21, 2006</span>
+
+	  <p>One of the things that I think every web developer on the planet is sick of doing is building <a href="http://en.wikipedia.org/wiki/CRUD_%28acronym%29" title="CRUD">CRUD</a> methods for their applications. It&rsquo;s the kind of thing that we seem to do as developers over and over again despite the fact that this task is essentially monkey work.</p>
+
+<p>There have been quite a few attempts to nail this issue on the head in various programming camps, and it&rsquo;s these attempts that I&rsquo;d like to go over - partly because I&rsquo;m also sick of CRUD, and partly because I don&rsquo;t know enough about <em>all</em> of these solutions to know which one&rsquo;s work best in what scenario (hopefully this is where you guys come to the rescue :)).</p>
+
+<p>I have to make sure that I&rsquo;m clear - I am not talking about creation of supporting object-graph loading or anything funky like recursive deletion in code (rather than as a DB setting). I&rsquo;m simply talking CRUD and CRUD alone :)</p>
+
+<p><strong><u>1. Code Generation</u></strong></p>
+
+<p>This is quite a common solution to the problem. One of the developers either builds a tool, suggests a tool, or downloads a tool that can be used to generate a stack of CRUD methods off some form of data definition. Some of these utilities are able to read the database schema directly, some of them need XML definitions, others do neither and require some other form of manual intervention. The good utilities simple provide a basic interface to the database&rsquo;s definition and allow you to wrap your own templates around them.</p>
+
+<p>The thing I don&rsquo;t get with this solution is that there&rsquo;s still a hefty chunk of work to be done to get the templates for the code <em>and</em> the stored procedures ready and bug-free.</p>
+
+<p><strong><u>2. Hibernation</u></strong></p>
+
+<p>This is something I know very little about at the moment. From what I can see on the surface, Hibernation refers to the handling of the persistence of objects (eg. in <a href="http://www.hibernate.org/343.html" title="NHibernate">.NET</a> or <a href="http://www.hibernate.org/" title="Hibernate">Java</a>) to and from relational databases such as MS SQL Server or MySQL. It attempts to decouple the database implementation and schema from the system&rsquo;s <a href="http://en.wikipedia.org/wiki/Domain_model" title="Domain Model">domain model</a> - which is a good practice that aids us in preventing the domain model from being polluted with details of the underlying data store. Apart from that, the framework handles the mapping of objects to the data model and vice versa - I liiiiike, it is niiiiiice.</p>
+
+<p>This sounds very nice, but I have to reserve judgement as I&rsquo;m yet to give it a spin myself. If it does what it says on the tin, then we&rsquo;re all in happy joy joy land. I&rsquo;ll try and get round to having a play with it in the next couple of weeks and see how easy it is to get going. If I can, I&rsquo;ll try and benchmark it a bit too so we can get an idea of the performance. I&rsquo;m interested to know how well this solution scales.</p>
+
+<p>Apparently Microsoft are looking to create something similar to this (or are in the process of creating it). I believe they&rsquo;re calling it &ldquo;ObjectSpaces&rdquo;, but don&rsquo;t quote me on that :)</p>
+
+<p><strong><u>3. Object Databases</u></strong></p>
+
+<p>I haven&rsquo;t really kept up to speed with the advances in the field of object databases, but I&rsquo;ve recently been handed a link to something that looks quite interesting called <a href="http://www.db4o.com/" title="db4objects">db4o</a> which looks to be a Java and .NET implementation of an object database. The idea of an object database isn&rsquo;t new, but this framework looks like it&rsquo;s making good ground.</p>
+
+<p>Unfortunately, in this case, it looks like the performance isn&rsquo;t too crash hot and it&rsquo;s not really scaling that well. Not just that, but I&rsquo;m not sure if the issues of concurrency and data reporting have been nailed either. Again, this is something I&rsquo;m yet to really play with, and I&rsquo;ll give it a fair go before dismissing it. At the moment my gut feeling is that it&rsquo;s not yet a viable solution for anything more than a hobby project, despite the apparent ease of use. I love the way it&rsquo;s so easy to persist things and retrieve them again, but until the above issues start being nailed there&rsquo;s no way it can be considered for anything of a larger scale.</p>
+
+<p><strong><u>What are the others</u></strong></p>
+
+<p>This is a question for you guys? I&rsquo;m sure there are stacks out there which are worthy of mention, and I just have no idea what they are. Feel free to send over some links to other viable solutions and let me know what you think of them.</p>
+
+<hr/>
+
+<p><strong>EDIT &ndash;</strong></p>
+
+<p>I&rsquo;d just like to add a quick follow-up to this. Christof over at <a href="http:/www.db4o.com/" title="db4objects">db4o</a> did me a favour and brought to my attention the current purpose of db4o, which is something I didn&rsquo;t really know before (his comment can be read in the comments section). My focus while writing this blog post was to explore the options for the replacment of the issues faced in an &ldquo;enterprise&rdquo; system where there are potentially hundreds of thousands (if not millions) of records and a large amount of simultaneous transactions taking place. It looks like, at least for now, db4o isn&rsquo;t intended to be used in such a scenario. Perhaps in the future this is something that will be targetted? Also, when I stated that it looked like it was handy for a hobby project, I wasn&rsquo;t implying that hobbyists are the only people who would find it useful. Clearly it already has a use in embedded environments - I simply meant as a back-end DB for people building systems they may be using at home as part of a hobby project.</p>
+
+<p>I&rsquo;m sure there&rsquo;s stacks of information on this on their site and users forums, so I should get my butt over there and do a bit more reading :)</p>
+
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/databases">Databases</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/software-development">Software Development</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/technology">Technology</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

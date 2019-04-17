@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tips/Tricks on OJ&#39;s Perspective</title>
+    <link>/categories/tips/tricks/</link>
+    <description>Recent content in Tips/Tricks on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Sun, 03 Feb 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/tips/tricks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Irssi and SASL on OSX</title>
+      <link>/posts/irssi-and-sasl-on-osx/</link>
+      <pubDate>Sun, 03 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/irssi-and-sasl-on-osx/</guid>
+      <description>Given my renewed focus on security I&amp;rsquo;ve been looking to lock down much of my communications so that I feel more secure online. One of the things that I use quite a lot to connect with people who know WTF they&amp;rsquo;re talking about is IRC. #freenode is my network of choice as it has a bunch of interesting places with fairly active communities. irssi is my current client of choice for a few reasons.</description>
+    </item>
+    
+    <item>
+      <title>Setting up Trac, Mercurial and SSH on Windows</title>
+      <link>/posts/setting-up-trac-mercurial-and-ssh-on-windows/</link>
+      <pubDate>Sat, 16 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/setting-up-trac-mercurial-and-ssh-on-windows/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING - This blog post is long :)&lt;/strong&gt;
+&lt;em&gt;This post has been edited since it was published. Please see the end of the article for any notes/modifications&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;h3&gt;Some Background Info&lt;/h3&gt;
+I had the need to do this for work recently. It was nothing short of a right royal pain in the butt. It was such a pain, in fact, that I have decided to document what I had to do to get it working so that other poor unfortunates will feel less pain if they have to do this themselves.&lt;/p&gt;
+
+&lt;p&gt;Almost regardless of the company and the software I&amp;rsquo;m working on, I use &lt;a href=&#34;http://www.selenic.com/mercurial/&#34; title=&#34;Mercurial&#34;&gt;Mercurial&lt;/a&gt; for source code control. For the work I am doing at the moment, I was also using hg because the company I am involved with is relatively new and they hadn&amp;rsquo;t yet sorted out a plan for version control or &lt;acronym title=&#34;Application Lifecycle Management&#34;&gt;ALM&lt;/acronym&gt;. It was working quite well and I was pushing all my changes to my &lt;a href=&#34;http://www.google.com.au/url?q=http://www.buffalotech.com/products/network-storage/terastation/terastation-iii/&amp;ei=fioOSuLvGpu8swPl56zqAg&amp;sa=X&amp;oi=smap&amp;resnum=1&amp;ct=result&amp;cd=2&amp;usg=AFQjCNHXKMchy5tR-a-jMOFAbtxoWzfedA&#34; title=&#34;Terastation&#34;&gt;NAS box&lt;/a&gt; to make sure I had other copies backed up, etc. I was &lt;em&gt;living the dream&lt;/em&gt; :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OpenDNS is Wicked</title>
+      <link>/posts/opendns-is-wicked/</link>
+      <pubDate>Mon, 18 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/opendns-is-wicked/</guid>
+      <description>&lt;p&gt;&lt;a title=&#34;Use OpenDNS to make your Internet faster, safer, and smarter.&#34; href=&#34;http://www.opendns.com/share/&#34;&gt;&lt;img src=&#34;http://images.opendns.com/buttons/use_opendns_155x52.gif&#34; width=&#34;155&#34; height=&#34;52&#34; style=&#34;border:0; float:right; margin-left:5px;margin-bottom;5px&#34; alt=&#34;Use OpenDNS&#34; /&gt;&lt;/a&gt;Over the last couple of weeks the DNS timeouts and lags I&amp;rsquo;ve been experiencing at home have made the web experience a little dire. My &lt;a href=&#34;http://internode.on.net/&#34; title=&#34;Internode&#34;&gt;ISP&lt;/a&gt; is actually pretty darned good, but for some reason they seem to have glitches with their DNS servers every now and then.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>.NET-fu: Signing an Unsigned Assembly (without Delay Signing)</title>
+      <link>/posts/.net-fu-signing-an-unsigned-assembly-without-delay-signing/</link>
+      <pubDate>Wed, 09 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/.net-fu-signing-an-unsigned-assembly-without-delay-signing/</guid>
+      <description>&lt;p&gt;This article is also available in &lt;a href=&#34;http://www.otherbit.com/modules/blog/BlogContent.aspx?ID=174&#34; title=&#34;.NET-FU : come trasformare in SIGNED un assembly UNSIGNED (senza ricorrere al DELAY SIGNING)&#34;&gt;Italian&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The code-base that I am currently working with consists of a large set of binaries that are all &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/xc31ft41.aspx&#34; title=&#34;Sign an Assembly with a Strong Name&#34;&gt;signed&lt;/a&gt;. The savvy .NET devs out there will know that any assembly that&amp;rsquo;s used/referenced by a signed assembly must &lt;em&gt;also&lt;/em&gt; be signed.&lt;/p&gt;
+
+&lt;p&gt;This is an issue when dealing with third-party libraries that are not signed. Sometimes you&amp;rsquo;ll be lucky enough to be dealing with vendor that is happy to provide a set of signed assemblies, other times you won&amp;rsquo;t. If your scenario fits the latter (as a recent one did for my colleagues and I), you need to sign the assemblies yourself. Here&amp;rsquo;s how.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Screencast - Setting up Unity Builds</title>
+      <link>/posts/screencast-setting-up-unity-builds/</link>
+      <pubDate>Thu, 19 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/screencast-setting-up-unity-builds/</guid>
+      <description>&lt;p&gt;It has taken me a bit longer than expected, but I&amp;rsquo;ve finally got the screencast up!&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s right folks, my angelic voice is now online for you all to experience. 8 minutes of Unity Build glory!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Preview Feeds in Google Reader</title>
+      <link>/posts/preview-feeds-in-google-reader/</link>
+      <pubDate>Sun, 25 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/preview-feeds-in-google-reader/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s another reason why I find &lt;a href=&#34;http://reader.google.com/&#34; title=&#34;Google Reader&#34;&gt;Google Reader&lt;/a&gt; a excellent choice for reading your RSS feeds.&lt;/p&gt;
+
+&lt;p&gt;Most of us have a collection of feeds that contain similar subject matter. As a geek, &lt;em&gt;most&lt;/em&gt; of my feeds are geek-related. As a geek who likes to stay up to speed, I also like to know what other blogs and feeds are good to read.&lt;/p&gt;
+
+&lt;p&gt;This is where Google Reader&amp;rsquo;s &lt;strong&gt;Top Recommendations&lt;/strong&gt; come in. Google do a great job of throwing other feeds in your face that you might like to read based on the kind of stuff that you&amp;rsquo;ve already subscribed to.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How do you Interact with your ViewState?</title>
+      <link>/posts/how-do-you-interact-with-your-viewstate/</link>
+      <pubDate>Wed, 21 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/how-do-you-interact-with-your-viewstate/</guid>
+      <description>&lt;p&gt;There comes a time in every ASP.NET developer&amp;rsquo;s life when the need arises for information to be persisted into &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ms972976.aspx&#34; title=&#34;ViewState&#34;&gt;ViewState&lt;/a&gt;. For the sake of this post I&amp;rsquo;m not really interested in the reasons why. What I am interested in is &lt;em&gt;how&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;How do you interact with your ViewState?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Resolving Side-by-Side Configuration Issues</title>
+      <link>/posts/resolving-side-by-side-configuration-issues/</link>
+      <pubDate>Sat, 17 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/resolving-side-by-side-configuration-issues/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been meaning to blog about this for well over a year now, but for some reason I never got round to it. This came up in conversation the other day with a couple of workmates and it prompted me to revisit the issue.&lt;/p&gt;
+
+&lt;p&gt;Have you ever fired up an application on Windows XP and got the following error?
+&lt;blockquote&gt;&lt;p&gt;The application has failed to start because the application configuration is incorrect. Reinstalling the application may fix this problem.&lt;/p&gt;&lt;/blockquote&gt;
+Informative isn&amp;rsquo;t it! What about if you fire up the same application on Windows Vista?
+&lt;blockquote&gt;&lt;p&gt;The application has failed to start because its side-by-side configuration is incorrect. Please see the application event log for more detail.&lt;/p&gt;&lt;/blockquote&gt;
+This does tell us a little bit more about the problem, but not a &lt;em&gt;lot&lt;/em&gt; more.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>And Help You I Shall!</title>
+      <link>/posts/and-help-you-i-shall/</link>
+      <pubDate>Wed, 18 Jul 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/and-help-you-i-shall/</guid>
+      <description>&lt;p&gt;My &lt;a href=&#34;/posts/help-me-help-you/&#34; title=&#34;Help me help you!&#34;&gt;previous post&lt;/a&gt; on constructing meaningful questions was inspired by years of frustrating experiences on forums and bulletin boards, but it wasn&amp;rsquo;t until I had a chat with me ol&amp;rsquo; mucka &lt;a href=&#34;http://www.shiftperception.com/blog/&#34; title=&#34;Shifty Blog&#34;&gt;Dan&lt;/a&gt; that I realised that there are actually quite a few cases where good quality questions are given inappropriate or completely misleading answers.&lt;/p&gt;
+
+&lt;p&gt;The intent of this post is to cover that side of the argument. How do you give a meaningful answer to a well constructed question?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Help Me Help You!</title>
+      <link>/posts/help-me-help-you/</link>
+      <pubDate>Sat, 14 Jul 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/help-me-help-you/</guid>
+      <description>&lt;blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Extended-Precision Floating-Point Values in the CLR</title>
+      <link>/posts/extended-precision-floating-point-values-in-the-clr/</link>
+      <pubDate>Wed, 27 Jun 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/extended-precision-floating-point-values-in-the-clr/</guid>
+      <description>&lt;p&gt;While at work today I hit a problem that I&amp;rsquo;ve never hit before (which is quite rare these days :) ), and while it was frustrating it was also good to learn about something that I never knew was a problem. If you&amp;rsquo;re having some issues marshalling double-precision floating-point information through managed components to unmanaged components, or you&amp;rsquo;re just interested in learning something new, then read on :)&lt;/p&gt;
+
+&lt;p&gt;Let me start by explaining the scenario:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Shortcuts: Visual Studio 2005</title>
+      <link>/posts/shortcuts-visual-studio-2005/</link>
+      <pubDate>Sun, 11 Feb 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/shortcuts-visual-studio-2005/</guid>
+      <description>Welcome to the next in the series of posts on program shortcuts. This time round we&amp;rsquo;re talking Visual Studio. I&amp;rsquo;ll be assuming that you don&amp;rsquo;t have the ViEmu plugin enabled and that you&amp;rsquo;re just using the IDE in the way it was intended without any other form of shortcut-based plugin installed.
+I&amp;rsquo;m using Visual Studio 2005 and I think I have the C# settings enabled by default. Most of these shortcuts will work regardless of the default setting that you have, but some of them will no doubt be different.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,2832 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/categories/c#/</loc>
+    <lastmod>2019-04-17T16:55:43+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2019-04-17T16:55:43+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/development/</loc>
+    <lastmod>2019-04-17T16:55:43+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/livestream/</loc>
+    <lastmod>2019-04-17T16:55:43+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/metasploit/</loc>
+    <lastmod>2019-04-17T16:55:43+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/new-livestream-series/</loc>
+    <lastmod>2019-04-17T16:55:43+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-04-17T16:55:43+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2019-04-17T16:55:43+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/security/</loc>
+    <lastmod>2019-04-17T16:55:43+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/ctf/</loc>
+    <lastmod>2018-11-26T16:41:10+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/police-quest-ctf-challenge/</loc>
+    <lastmod>2018-11-26T16:41:10+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/bsidescbr-ctf-round-up/</loc>
+    <lastmod>2017-03-22T11:51:10+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/streaming/</loc>
+    <lastmod>2016-12-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/bin2json-ctf-challenge/</loc>
+    <lastmod>2016-11-21T13:52:00+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/linux-srp-overwrite-and-rop/</loc>
+    <lastmod>2016-10-12T08:14:09+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/meterpreter/</loc>
+    <lastmod>2016-10-05T10:46:58+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/staged-vs-stageless-handlers/</loc>
+    <lastmod>2016-10-05T10:46:58+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2016-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/contact/</loc>
+    <lastmod>2016-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/continued-meterpreter-development/</loc>
+    <lastmod>2016-05-05T07:38:32+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/tlv-traffic-obfuscation/</loc>
+    <lastmod>2016-02-22T00:11:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/solving-the-blender/</loc>
+    <lastmod>2015-02-05T15:27:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/a-note-on-disclosure/</loc>
+    <lastmod>2015-01-17T08:19:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/disclosure/</loc>
+    <lastmod>2015-01-17T08:19:03+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/the-offensive-security-playground/</loc>
+    <lastmod>2015-01-03T09:29:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/csaw-2014-saturn/</loc>
+    <lastmod>2014-09-22T14:57:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/jumping-with-bad-chars/</loc>
+    <lastmod>2014-03-21T22:31:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/shellcode/</loc>
+    <lastmod>2014-03-21T22:31:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/exploits/</loc>
+    <lastmod>2014-03-12T19:48:47+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/myftpd-exploit-on-windows-7/</loc>
+    <lastmod>2014-03-12T19:48:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/idsecconf-2013-myftpd-challenge/</loc>
+    <lastmod>2014-03-01T01:26:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/building-meterpreter-is-easy/</loc>
+    <lastmod>2014-02-18T07:01:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/osce/</loc>
+    <lastmod>2014-02-17T21:08:15+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/osce-and-me/</loc>
+    <lastmod>2014-02-17T21:08:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/3-months-of-meterpreter/</loc>
+    <lastmod>2013-12-27T23:14:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/open-source/</loc>
+    <lastmod>2013-12-27T23:14:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/oscp/</loc>
+    <lastmod>2013-12-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/oscp-faq/</loc>
+    <lastmod>2013-12-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/64bit-pointer-truncation-in-meterpreter/</loc>
+    <lastmod>2013-09-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/rce/</loc>
+    <lastmod>2013-09-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/windows/</loc>
+    <lastmod>2013-09-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/oscp-and-me/</loc>
+    <lastmod>2013-08-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/levels-7-and-7_alt-io-at-sts/</loc>
+    <lastmod>2013-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/smashthestack-io/</loc>
+    <lastmod>2013-08-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/irssi-and-sasl-on-osx/</loc>
+    <lastmod>2013-02-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/mac-os/</loc>
+    <lastmod>2013-02-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/tips/tricks/</loc>
+    <lastmod>2013-02-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/asp.net/</loc>
+    <lastmod>2012-11-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/xss/</loc>
+    <lastmod>2012-11-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/xss-flaws-via-mvc-model-binding-and-request.querystring-inconsistencies/</loc>
+    <lastmod>2012-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/being-in-the-industry/</loc>
+    <lastmod>2012-11-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/functional-programming/</loc>
+    <lastmod>2012-11-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/life/</loc>
+    <lastmod>2012-11-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/stepping-down/</loc>
+    <lastmod>2012-11-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/meaning/</loc>
+    <lastmod>2012-10-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/protip/</loc>
+    <lastmod>2012-10-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/backbonejs/</loc>
+    <lastmod>2012-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/backbonejs/</loc>
+    <lastmod>2012-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/bootstrap/</loc>
+    <lastmod>2012-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/bootstrap/</loc>
+    <lastmod>2012-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/erlang/</loc>
+    <lastmod>2012-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/erlang/</loc>
+    <lastmod>2012-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/erlydtl/</loc>
+    <lastmod>2012-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/erlydtl/</loc>
+    <lastmod>2012-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/functional-programming/</loc>
+    <lastmod>2012-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/howto/</loc>
+    <lastmod>2012-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/howto/</loc>
+    <lastmod>2012-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/riak/</loc>
+    <lastmod>2012-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2012-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/webmachine/</loc>
+    <lastmod>2012-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/webmachine/</loc>
+    <lastmod>2012-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/webmachine-erlydtl-and-riak-part-5/</loc>
+    <lastmod>2012-07-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/riak/</loc>
+    <lastmod>2012-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/oauth/</loc>
+    <lastmod>2012-02-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/oauth/</loc>
+    <lastmod>2012-02-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/redirects-with-webmachine/</loc>
+    <lastmod>2012-02-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/software-development/</loc>
+    <lastmod>2012-02-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/twitter/</loc>
+    <lastmod>2012-02-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/webmachine-erlydtl-and-riak-part-4/</loc>
+    <lastmod>2012-02-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/twitter/</loc>
+    <lastmod>2012-02-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/my-tools-list-2012/</loc>
+    <lastmod>2012-01-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/productivity/</loc>
+    <lastmod>2012-01-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/an-expert-at-23/</loc>
+    <lastmod>2012-01-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/wtf/</loc>
+    <lastmod>2012-01-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/wtf/</loc>
+    <lastmod>2012-01-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/fail/</loc>
+    <lastmod>2012-01-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/agile/</loc>
+    <lastmod>2012-01-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/reviews-theyre-all-you-need/</loc>
+    <lastmod>2012-01-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/testing/</loc>
+    <lastmod>2012-01-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/why-i-use-twitter/</loc>
+    <lastmod>2012-01-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/clr/</loc>
+    <lastmod>2011-08-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/corrugatediron-update-v0.1.1/</loc>
+    <lastmod>2011-08-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/mono/</loc>
+    <lastmod>2011-08-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/nosql/</loc>
+    <lastmod>2011-08-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/clr/</loc>
+    <lastmod>2011-08-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/corrugatediron/</loc>
+    <lastmod>2011-08-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/csharp/</loc>
+    <lastmod>2011-08-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/dotnet/</loc>
+    <lastmod>2011-08-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/mono/</loc>
+    <lastmod>2011-08-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/introducing-corrugatediron/</loc>
+    <lastmod>2011-07-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/go-with-your-instinct/</loc>
+    <lastmod>2011-02-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/miscellaneous/</loc>
+    <lastmod>2011-02-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/common-sense/</loc>
+    <lastmod>2011-02-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/easy-prey/</loc>
+    <lastmod>2011-02-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/prank/</loc>
+    <lastmod>2011-02-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/sucker/</loc>
+    <lastmod>2011-02-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/databases/</loc>
+    <lastmod>2010-10-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/haproxy/</loc>
+    <lastmod>2010-10-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/nosql/</loc>
+    <lastmod>2010-10-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/webmachine-erlydtl-and-riak-part-3/</loc>
+    <lastmod>2010-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/web-development/</loc>
+    <lastmod>2010-10-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/asp.net/</loc>
+    <lastmod>2010-10-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/asp.net-mvc/</loc>
+    <lastmod>2010-10-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/asp.net-mvc-2-random-sign-offs-and-tempdata-loss/</loc>
+    <lastmod>2010-10-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/content-advisor/</loc>
+    <lastmod>2010-10-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/microsoft/</loc>
+    <lastmod>2010-10-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/tempdata/</loc>
+    <lastmod>2010-10-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/webmachine-erlydtl-and-riak-part-2/</loc>
+    <lastmod>2010-09-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/webmachine-erlydtl-and-riak-part-1/</loc>
+    <lastmod>2010-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/bfpg-june-meetup/</loc>
+    <lastmod>2010-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bfpg/</loc>
+    <lastmod>2010-06-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/meetup/</loc>
+    <lastmod>2010-06-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/dave-thomas-at-yow-nights-brisbane/</loc>
+    <lastmod>2010-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/technology/</loc>
+    <lastmod>2010-05-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/the-issue-of-perception/</loc>
+    <lastmod>2010-03-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/perception/</loc>
+    <lastmod>2010-03-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/professionalism/</loc>
+    <lastmod>2010-03-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/im-so-impressed-i-want-to-pay-you-less/</loc>
+    <lastmod>2010-03-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/software/</loc>
+    <lastmod>2010-02-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/truncated-pages/</loc>
+    <lastmod>2010-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sysadmin/</loc>
+    <lastmod>2010-02-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/the-wrong-decision-by-the-wrong-person/</loc>
+    <lastmod>2010-01-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bad-decisions/</loc>
+    <lastmod>2010-01-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/software-developer/</loc>
+    <lastmod>2010-01-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/katacast-shopping-checkout-in-erlang/</loc>
+    <lastmod>2010-01-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/codekata/</loc>
+    <lastmod>2010-01-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/katacast/</loc>
+    <lastmod>2010-01-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/rake/</loc>
+    <lastmod>2010-01-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/vim/</loc>
+    <lastmod>2010-01-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/its-ok-to-fail/</loc>
+    <lastmod>2009-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/software-development/</loc>
+    <lastmod>2009-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/ignorance/</loc>
+    <lastmod>2009-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/stagnation/</loc>
+    <lastmod>2009-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/google/</loc>
+    <lastmod>2009-10-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/mercurial/</loc>
+    <lastmod>2009-10-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/the-future-is-erlang/</loc>
+    <lastmod>2009-10-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/now-running-nginx/</loc>
+    <lastmod>2009-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/haskell/</loc>
+    <lastmod>2009-08-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/haskell-101-at-the-brisbane-functional-programming-meetup/</loc>
+    <lastmod>2009-08-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/haskell/</loc>
+    <lastmod>2009-07-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/mercurial/</loc>
+    <lastmod>2009-07-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/technology/</loc>
+    <lastmod>2009-07-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/the-value-of-a-technical-community/</loc>
+    <lastmod>2009-07-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/anger/</loc>
+    <lastmod>2009-07-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/community/</loc>
+    <lastmod>2009-07-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/irc/</loc>
+    <lastmod>2009-07-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/value/</loc>
+    <lastmod>2009-07-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/point-free-style-what-is-it-good-for/</loc>
+    <lastmod>2009-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/point-free/</loc>
+    <lastmod>2009-06-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/style/</loc>
+    <lastmod>2009-06-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/algorithms/</loc>
+    <lastmod>2009-06-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/data-crunching-in-haskell/</loc>
+    <lastmod>2009-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/setting-up-trac-mercurial-and-ssh-on-windows/</loc>
+    <lastmod>2009-05-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/windows/</loc>
+    <lastmod>2009-05-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/hg/</loc>
+    <lastmod>2009-05-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/ssh/</loc>
+    <lastmod>2009-05-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/trac/</loc>
+    <lastmod>2009-05-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/.net/</loc>
+    <lastmod>2009-04-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/i-dont-need-your-frickin-framework/</loc>
+    <lastmod>2009-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bloat/</loc>
+    <lastmod>2009-04-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/framework/</loc>
+    <lastmod>2009-04-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/overengineering/</loc>
+    <lastmod>2009-04-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/programming/</loc>
+    <lastmod>2009-04-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/a-quirk-in-list.find/</loc>
+    <lastmod>2009-03-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/c#/</loc>
+    <lastmod>2009-03-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/design/</loc>
+    <lastmod>2009-03-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/generics/</loc>
+    <lastmod>2009-03-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/damn-you-crystal-reports/</loc>
+    <lastmod>2009-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/crystalreports/</loc>
+    <lastmod>2009-03-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/installation/</loc>
+    <lastmod>2009-03-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/visualstudio/</loc>
+    <lastmod>2009-03-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/n-things-you-dont-want-to-hear-when-starting-a-new-job-where-n-gt-1/</loc>
+    <lastmod>2009-02-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/software/</loc>
+    <lastmod>2009-02-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/development/</loc>
+    <lastmod>2009-02-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/humour/</loc>
+    <lastmod>2009-02-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/an-all-too-common-issue/</loc>
+    <lastmod>2009-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/decisions/</loc>
+    <lastmod>2009-02-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/genius/</loc>
+    <lastmod>2009-02-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/truth/</loc>
+    <lastmod>2009-02-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/always-question-the-source-aka-dont-lock-on-type-objects/</loc>
+    <lastmod>2009-02-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/assumptions/</loc>
+    <lastmod>2009-02-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/lock/</loc>
+    <lastmod>2009-02-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/multithreading/</loc>
+    <lastmod>2009-02-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/stupidity/</loc>
+    <lastmod>2009-02-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/assembly-signing-article-translated-into-italian/</loc>
+    <lastmod>2009-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/blogging/</loc>
+    <lastmod>2009-01-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/italian/</loc>
+    <lastmod>2009-01-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/translation/</loc>
+    <lastmod>2009-01-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/blogging/</loc>
+    <lastmod>2009-01-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/the-sales-pipeline/</loc>
+    <lastmod>2009-01-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/coming-soon/</loc>
+    <lastmod>2009-01-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/websites-are-hard-to-build-a-case-in-point/</loc>
+    <lastmod>2009-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/case-study/</loc>
+    <lastmod>2009-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/taking-the-piss/</loc>
+    <lastmod>2009-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/webdev/</loc>
+    <lastmod>2009-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/linux/</loc>
+    <lastmod>2008-12-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/linux/</loc>
+    <lastmod>2008-12-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/random-resolutions/</loc>
+    <lastmod>2008-12-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/the-admin-is-an-idiot/</loc>
+    <lastmod>2008-12-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/idiot/</loc>
+    <lastmod>2008-12-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/websites-are-hard-to-build/</loc>
+    <lastmod>2008-11-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/misconception/</loc>
+    <lastmod>2008-11-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/websites/</loc>
+    <lastmod>2008-11-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/gnome-sort/</loc>
+    <lastmod>2008-10-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/sorting/</loc>
+    <lastmod>2008-10-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/sorting/</loc>
+    <lastmod>2008-10-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/sorting-algorithms-the-gnome-sort/</loc>
+    <lastmod>2008-10-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/comb-sort/</loc>
+    <lastmod>2008-09-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/sorting-algorithms-the-comb-sort/</loc>
+    <lastmod>2008-09-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/effects/</loc>
+    <lastmod>2008-09-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/fx/</loc>
+    <lastmod>2008-09-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/graphics/</loc>
+    <lastmod>2008-09-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/shader/</loc>
+    <lastmod>2008-09-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/wpf/</loc>
+    <lastmod>2008-09-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/wpf/</loc>
+    <lastmod>2008-09-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/wpf-shader-fx-on-codeplex/</loc>
+    <lastmod>2008-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/cocktail-sort/</loc>
+    <lastmod>2008-08-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/sorting-algorithms-the-cocktail-sort/</loc>
+    <lastmod>2008-08-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/freeware/</loc>
+    <lastmod>2008-08-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/opendns-is-wicked/</loc>
+    <lastmod>2008-08-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/security/</loc>
+    <lastmod>2008-08-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/dns/</loc>
+    <lastmod>2008-08-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/bubble-sort/</loc>
+    <lastmod>2008-08-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/sorting-algorithms-the-bubble-sort/</loc>
+    <lastmod>2008-08-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/algorithms/</loc>
+    <lastmod>2008-08-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/series/</loc>
+    <lastmod>2008-08-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/series/</loc>
+    <lastmod>2008-08-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/sorting-things-out/</loc>
+    <lastmod>2008-08-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/google/</loc>
+    <lastmod>2008-08-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/stop-cutting-your-feeds-short/</loc>
+    <lastmod>2008-08-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/atom/</loc>
+    <lastmod>2008-08-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/feeds/</loc>
+    <lastmod>2008-08-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/frustration/</loc>
+    <lastmod>2008-08-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/offline/</loc>
+    <lastmod>2008-08-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/rss/</loc>
+    <lastmod>2008-08-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/project-euler/</loc>
+    <lastmod>2008-07-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/project-euler/</loc>
+    <lastmod>2008-07-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/project-euler-#10/</loc>
+    <lastmod>2008-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/functional/</loc>
+    <lastmod>2008-07-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/epic-fail-cuil-search-engine/</loc>
+    <lastmod>2008-07-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/fail/</loc>
+    <lastmod>2008-07-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/guest-posts/</loc>
+    <lastmod>2008-07-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/unit-tests-boldly-crossing-boundaries-and-gently-breaking-rules/</loc>
+    <lastmod>2008-07-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hype/</loc>
+    <lastmod>2008-07-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/search/</loc>
+    <lastmod>2008-07-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/unit-testing/</loc>
+    <lastmod>2008-07-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/a-better-nub/</loc>
+    <lastmod>2008-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/performance/</loc>
+    <lastmod>2008-07-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/tip/</loc>
+    <lastmod>2008-07-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/another-quick-coding-challenge/</loc>
+    <lastmod>2008-07-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/challenges/</loc>
+    <lastmod>2008-07-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/project-euler-#9/</loc>
+    <lastmod>2008-07-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/challenge/</loc>
+    <lastmod>2008-07-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/f#/</loc>
+    <lastmod>2008-07-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/project-euler-#8/</loc>
+    <lastmod>2008-07-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/validating-use-of-parenthesis/</loc>
+    <lastmod>2008-07-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/fsharp/</loc>
+    <lastmod>2008-07-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/.net-fu-signing-an-unsigned-assembly-without-delay-signing/</loc>
+    <lastmod>2008-07-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/msil/</loc>
+    <lastmod>2008-07-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/disassemble/</loc>
+    <lastmod>2008-07-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/ilasm/</loc>
+    <lastmod>2008-07-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/ildasm/</loc>
+    <lastmod>2008-07-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/sign/</loc>
+    <lastmod>2008-07-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/snk/</loc>
+    <lastmod>2008-07-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/strong-name/</loc>
+    <lastmod>2008-07-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/things-that-suck-about-blogs/</loc>
+    <lastmod>2008-06-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/annoying/</loc>
+    <lastmod>2008-06-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/rant/</loc>
+    <lastmod>2008-06-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/ive-caved-in-to-twitter/</loc>
+    <lastmod>2008-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/screencast-setting-up-unity-builds/</loc>
+    <lastmod>2008-06-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/screencasts/</loc>
+    <lastmod>2008-06-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/screencast/</loc>
+    <lastmod>2008-06-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/unity-build/</loc>
+    <lastmod>2008-06-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/visual-studio/</loc>
+    <lastmod>2008-06-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/project-euler-#7/</loc>
+    <lastmod>2008-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/an-interesting-little-problem/</loc>
+    <lastmod>2008-06-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/f#/</loc>
+    <lastmod>2008-06-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/interview/</loc>
+    <lastmod>2008-06-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/be-part-of-a-world-record/</loc>
+    <lastmod>2008-05-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/freeware/</loc>
+    <lastmod>2008-05-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/firefox/</loc>
+    <lastmod>2008-05-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/interesting-keyword-searches/</loc>
+    <lastmod>2008-05-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/preview-feeds-in-google-reader/</loc>
+    <lastmod>2008-05-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/shortcuts/</loc>
+    <lastmod>2008-05-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/productivity/</loc>
+    <lastmod>2008-05-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/reader/</loc>
+    <lastmod>2008-05-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/the-best-sound-in-the-world/</loc>
+    <lastmod>2008-05-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/how-do-you-interact-with-your-viewstate/</loc>
+    <lastmod>2008-05-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/viewstate/</loc>
+    <lastmod>2008-05-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/we-are-the-champions/</loc>
+    <lastmod>2008-05-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/football/</loc>
+    <lastmod>2008-05-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/portsmouth/</loc>
+    <lastmod>2008-05-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/resolving-side-by-side-configuration-issues/</loc>
+    <lastmod>2008-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/configuration/</loc>
+    <lastmod>2008-05-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/dll/</loc>
+    <lastmod>2008-05-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/error/</loc>
+    <lastmod>2008-05-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/investigation/</loc>
+    <lastmod>2008-05-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/winsxs/</loc>
+    <lastmod>2008-05-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/62-days-to-go/</loc>
+    <lastmod>2008-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/marathon/</loc>
+    <lastmod>2008-05-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/training/</loc>
+    <lastmod>2008-05-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/marathon-training-update/</loc>
+    <lastmod>2008-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/running/</loc>
+    <lastmod>2008-05-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/sport/</loc>
+    <lastmod>2008-05-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/get-with-the-times-use-a-feed-reader/</loc>
+    <lastmod>2008-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/dilbert/</loc>
+    <lastmod>2008-04-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/feed/</loc>
+    <lastmod>2008-04-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/more-punishment/</loc>
+    <lastmod>2008-04-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/8-hours/</loc>
+    <lastmod>2008-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sleep/</loc>
+    <lastmod>2008-04-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/microsoft/</loc>
+    <lastmod>2008-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/microsoft-want-to-annoy-you-cancel-or-allow/</loc>
+    <lastmod>2008-04-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/uac/</loc>
+    <lastmod>2008-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/brave/</loc>
+    <lastmod>2008-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/developers/</loc>
+    <lastmod>2008-04-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/because-the-cost-of-living-is-getting-so-high-high-high/</loc>
+    <lastmod>2008-04-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/merb/</loc>
+    <lastmod>2008-04-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/merb/</loc>
+    <lastmod>2008-04-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/web-application-development-with-merb-mysql-and-tiny/</loc>
+    <lastmod>2008-04-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/australia/</loc>
+    <lastmod>2008-04-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/economy/</loc>
+    <lastmod>2008-04-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/expense/</loc>
+    <lastmod>2008-04-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/living/</loc>
+    <lastmod>2008-04-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/tiny/</loc>
+    <lastmod>2008-04-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/another-new-keyboard/</loc>
+    <lastmod>2008-03-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/hardware/</loc>
+    <lastmod>2008-03-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/project-euler-#6/</loc>
+    <lastmod>2008-03-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/project-euler-#5/</loc>
+    <lastmod>2008-03-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/project-euler-#4-reprise/</loc>
+    <lastmod>2008-03-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/project-euler-#4/</loc>
+    <lastmod>2008-03-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/hrm-revenue-amp-customs-idiots/</loc>
+    <lastmod>2008-03-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/project-euler-#3/</loc>
+    <lastmod>2008-03-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/project-euler-#2/</loc>
+    <lastmod>2008-03-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/current-geek-interests/</loc>
+    <lastmod>2008-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/f#-presentation-tomorrow/</loc>
+    <lastmod>2008-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/how-to-be-an-idiot/</loc>
+    <lastmod>2008-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/project-euler-#1/</loc>
+    <lastmod>2008-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/rekindling-my-functional-programming-passion-with-haskell/</loc>
+    <lastmod>2008-03-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/hes-a-man-machine/</loc>
+    <lastmod>2008-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/do-your-bit-for-the-earth/</loc>
+    <lastmod>2008-02-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/my-boy/</loc>
+    <lastmod>2008-02-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/a-hardware-update/</loc>
+    <lastmod>2008-01-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/digital-rights/</loc>
+    <lastmod>2007-12-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/funny/</loc>
+    <lastmod>2007-12-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/reactivate-again/</loc>
+    <lastmod>2007-12-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/a-google-app-that-sucks/</loc>
+    <lastmod>2007-12-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/a-frequently-asked-question/</loc>
+    <lastmod>2007-12-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/server-downtime/</loc>
+    <lastmod>2007-12-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/the-magic-of-unity-builds/</loc>
+    <lastmod>2007-12-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/unity-builds/</loc>
+    <lastmod>2007-12-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/farewell-to-an-australian-games-industry-icon/</loc>
+    <lastmod>2007-12-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/games/</loc>
+    <lastmod>2007-12-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/networks/</loc>
+    <lastmod>2007-12-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/vote-with-your-wallet/</loc>
+    <lastmod>2007-12-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/the-end-of-an-era/</loc>
+    <lastmod>2007-12-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/a-great-day-for-me-a-sad-day-for-my-country/</loc>
+    <lastmod>2007-11-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/living-in-australia-has-a-downside/</loc>
+    <lastmod>2007-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/networks/</loc>
+    <lastmod>2007-11-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/internet/</loc>
+    <lastmod>2007-11-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/my-artistic-outlet/</loc>
+    <lastmod>2007-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/rancid-bloatware/</loc>
+    <lastmod>2007-11-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bloatware/</loc>
+    <lastmod>2007-11-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/guitar/</loc>
+    <lastmod>2007-11-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/music/</loc>
+    <lastmod>2007-11-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/requisite-vista/</loc>
+    <lastmod>2007-10-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/opinion/</loc>
+    <lastmod>2007-10-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/vista/</loc>
+    <lastmod>2007-10-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/a-little-mixed-bag/</loc>
+    <lastmod>2007-10-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/dont-talk-about-politics/</loc>
+    <lastmod>2007-10-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/i-am-not-oj-simpson/</loc>
+    <lastmod>2007-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/wtf-random-memory-contents/</loc>
+    <lastmod>2007-09-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/biosham-#8482/</loc>
+    <lastmod>2007-08-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/privacy/</loc>
+    <lastmod>2007-08-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/ill-view-what-i-like/</loc>
+    <lastmod>2007-08-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/safer-code-through-object-orientation/</loc>
+    <lastmod>2007-08-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/misled-from-the-start/</loc>
+    <lastmod>2007-08-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/avoid-writing-unintuitive-code/</loc>
+    <lastmod>2007-07-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/and-help-you-i-shall/</loc>
+    <lastmod>2007-07-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/creating-concrete-objects/</loc>
+    <lastmod>2007-07-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/help-me-help-you/</loc>
+    <lastmod>2007-07-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/becoming-a-geek-part-3-the-game-geek/</loc>
+    <lastmod>2007-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/extended-precision-floating-point-values-in-the-clr/</loc>
+    <lastmod>2007-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/floating-point/</loc>
+    <lastmod>2007-06-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/content-duplication/</loc>
+    <lastmod>2007-06-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/online-order-tracking/</loc>
+    <lastmod>2007-06-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/only-in-the-movies...-and-at-home./</loc>
+    <lastmod>2007-06-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/read-the-rest-of-this-article/</loc>
+    <lastmod>2007-06-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/becoming-a-geek-part-2-the-web-geek/</loc>
+    <lastmod>2007-06-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/becoming-a-geek-part-1-the-general-geek/</loc>
+    <lastmod>2007-06-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/the-swear-jar/</loc>
+    <lastmod>2007-06-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/microsoft-take-auto-update-annoyances-another-step-further/</loc>
+    <lastmod>2007-05-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/the-search-is-over/</loc>
+    <lastmod>2007-05-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/the-search-might-be-over/</loc>
+    <lastmod>2007-05-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/lacking-focus-give-darkroom-a-spin/</loc>
+    <lastmod>2007-05-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/facebook-privacy/</loc>
+    <lastmod>2007-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/banner-image/</loc>
+    <lastmod>2007-05-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/brisbane-real-estate/</loc>
+    <lastmod>2007-05-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/learning-to-program-is-not-what-it-used-to-be/</loc>
+    <lastmod>2007-05-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/moving-to-google-apps/</loc>
+    <lastmod>2007-05-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/digg-is-being-used-against-itself/</loc>
+    <lastmod>2007-05-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/the-art-of-googling/</loc>
+    <lastmod>2007-04-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/noisy-neighbours/</loc>
+    <lastmod>2007-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/what-constitutes-a-tutorial/</loc>
+    <lastmod>2007-04-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/asm/</loc>
+    <lastmod>2007-04-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/reversing-directx-blowfish/</loc>
+    <lastmod>2007-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/are-forums-dead/</loc>
+    <lastmod>2007-04-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/weve-moved-...-again/</loc>
+    <lastmod>2007-04-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/bumptop-3d-desktop-prototype/</loc>
+    <lastmod>2007-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/.net-mvc/</loc>
+    <lastmod>2007-03-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/ruby-on-rails/</loc>
+    <lastmod>2007-03-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/do-you-enjoy-what-you-do-for-a-living/</loc>
+    <lastmod>2007-03-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/another-lesson-in-software-reversing/</loc>
+    <lastmod>2007-03-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/beatbox-fame-game/</loc>
+    <lastmod>2007-03-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/more-rce-goodness/</loc>
+    <lastmod>2007-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/why-cant-programmers-program/</loc>
+    <lastmod>2007-03-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/a-reversing-tutorial/</loc>
+    <lastmod>2007-03-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/.net-systemstring-to-ansi-char/</loc>
+    <lastmod>2007-03-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/what-are-you-really-looking-at/</loc>
+    <lastmod>2007-02-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/should-i-install-vista/</loc>
+    <lastmod>2007-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/sport-is-good-for-you/</loc>
+    <lastmod>2007-02-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/shortcuts/</loc>
+    <lastmod>2007-02-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/shortcuts-visual-studio-2005/</loc>
+    <lastmod>2007-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/shortcuts-windows/</loc>
+    <lastmod>2007-02-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/a-quiet-purchase/</loc>
+    <lastmod>2007-02-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/my-favourite-firefox-extensions/</loc>
+    <lastmod>2007-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/ci-punishment/</loc>
+    <lastmod>2007-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/challenge-#3-day-of-birth/</loc>
+    <lastmod>2007-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/food/</loc>
+    <lastmod>2007-02-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/the-parable-of-the-two-programmers/</loc>
+    <lastmod>2007-02-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/what-are-you-really-eating/</loc>
+    <lastmod>2007-02-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/rotating-banner-pictures/</loc>
+    <lastmod>2007-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/writing-object-oriented-code-vs-writing-code-in-an-object-oriented-language/</loc>
+    <lastmod>2007-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/a-bad-workman-blames-his-tools/</loc>
+    <lastmod>2007-01-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/a-new-look/</loc>
+    <lastmod>2007-01-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/a-software-list-is-not-a-job-description/</loc>
+    <lastmod>2007-01-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/multi-page-posts/</loc>
+    <lastmod>2007-01-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/notable/</loc>
+    <lastmod>2007-01-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/quality-of-service/</loc>
+    <lastmod>2007-01-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/is-it-becoming-illegal-to-do-anything/</loc>
+    <lastmod>2006-12-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/wtf-youll-never-amount-to-anything/</loc>
+    <lastmod>2006-12-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/dual-screen-development/</loc>
+    <lastmod>2006-12-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/wtf-whos-the-dummy/</loc>
+    <lastmod>2006-12-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/life-the-universe-and-everything./</loc>
+    <lastmod>2006-12-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/love-is-in-the-air/</loc>
+    <lastmod>2006-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/web-album-uploaded/</loc>
+    <lastmod>2006-11-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/can-you-see-me-waving/</loc>
+    <lastmod>2006-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/wtf-date-malarky/</loc>
+    <lastmod>2006-11-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/a-crack-in-the-vista/</loc>
+    <lastmod>2006-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/a-new-way-to-sms/</loc>
+    <lastmod>2006-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/-todo-add-comments/</loc>
+    <lastmod>2006-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/wtf-the-exceptional-connection/</loc>
+    <lastmod>2006-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/were-the-wiggles-software-developers/</loc>
+    <lastmod>2006-11-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/eas-steam-leaves-a-bad-smell/</loc>
+    <lastmod>2006-11-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/pcs-for-the-family/</loc>
+    <lastmod>2006-11-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/gadget-me-up/</loc>
+    <lastmod>2006-11-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/iteration/</loc>
+    <lastmod>2006-11-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/wtf/</loc>
+    <lastmod>2006-11-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/crazy-glass-cd/</loc>
+    <lastmod>2006-11-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/ego-affliction/</loc>
+    <lastmod>2006-11-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/the-joy-of-blogging/</loc>
+    <lastmod>2006-11-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/vista-speech-recognition-maybe-try-it-in-yiddish/</loc>
+    <lastmod>2006-11-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/pumpkin-computer/</loc>
+    <lastmod>2006-10-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/microsoft-congratulate-mozilla/</loc>
+    <lastmod>2006-10-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/apple/</loc>
+    <lastmod>2006-10-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/posts/cyberface/</loc>
+    <lastmod>2006-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/dvd-cracker-nails-apples-ipod-code/</loc>
+    <lastmod>2006-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/howto-getting-ati-drivers-working-in-ubuntu/</loc>
+    <lastmod>2006-10-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/firefox-2/</loc>
+    <lastmod>2006-10-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/the-first-move-to-ubuntu/</loc>
+    <lastmod>2006-10-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/developers-vs-programmers/</loc>
+    <lastmod>2006-10-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/a-gaming-round-up/</loc>
+    <lastmod>2006-10-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/what-about-going-the-other-way/</loc>
+    <lastmod>2006-10-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/open-sauce/</loc>
+    <lastmod>2006-10-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/virtual-vista-stuff-up/</loc>
+    <lastmod>2006-10-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/google-code-search/</loc>
+    <lastmod>2006-10-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/more-vista-madness/</loc>
+    <lastmod>2006-10-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/groovey-honda-commercial/</loc>
+    <lastmod>2006-10-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/get-away-from-that-computer/</loc>
+    <lastmod>2006-10-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/gootube/</loc>
+    <lastmod>2006-10-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/microsoft-vista-licence-restrictions/</loc>
+    <lastmod>2006-10-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/scott-adams-blog/</loc>
+    <lastmod>2006-10-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/the-vista-squeeze-begins/</loc>
+    <lastmod>2006-10-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/learning-code-security/</loc>
+    <lastmod>2006-10-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/challenge-#2-the-recursive-ruler/</loc>
+    <lastmod>2006-10-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/real-time-flight-monitoring/</loc>
+    <lastmod>2006-10-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/the-day-job/</loc>
+    <lastmod>2006-10-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/viemu-for-sql/</loc>
+    <lastmod>2006-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/viemu-are-you-the-answer/</loc>
+    <lastmod>2006-09-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/a-pox-on-your-drm/</loc>
+    <lastmod>2006-09-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/does-a-qualification-make-a-difference/</loc>
+    <lastmod>2006-09-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/get-fartfox/</loc>
+    <lastmod>2006-09-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/yarr-me-hearties/</loc>
+    <lastmod>2006-09-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/all-joking-aside-i-have-to-have-a-wii/</loc>
+    <lastmod>2006-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/dealing-with-the-crud/</loc>
+    <lastmod>2006-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/an-ide-follow-up/</loc>
+    <lastmod>2006-09-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/to-buntu-or-not-to-buntu.-that-is-the-question./</loc>
+    <lastmod>2006-09-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/wiedererlangen-von-einem-toten-computer/</loc>
+    <lastmod>2006-09-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/finding-productivity-utopia/</loc>
+    <lastmod>2006-09-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/weve-moved/</loc>
+    <lastmod>2006-09-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/server-change-imminent/</loc>
+    <lastmod>2006-09-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/whos-up-for-a-challenge/</loc>
+    <lastmod>2006-09-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/are-you-any-good/</loc>
+    <lastmod>2006-09-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/is-an-ide-all-its-cracked-up-to-be/</loc>
+    <lastmod>2006-09-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/minority-report-becomes-reality/</loc>
+    <lastmod>2006-09-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/office-registration-and-activation/</loc>
+    <lastmod>2006-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/it-has-begun/</loc>
+    <lastmod>2006-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+</urlset>

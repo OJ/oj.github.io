@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Misled from the Start - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/misled-from-the-start/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Misled from the Start </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Fri Aug 3, 2007</span>
+
+	  <p>I find myself frequently concerned with the lack of ability of a lot of people in our industry. Today I found an example of at least one of the possible reasons why software development professionals turn out to be crap.</p>
+
+<p>They start by reading <a href="http://mezzoscorner.blogspot.com/2007/07/basics-your-first-program.html" title="The Basics - Your first program">tutorials like this</a>.</p>
+
+<p>How can we expect people to become good at what they do if the tutorials they&rsquo;re learning from are like that? If you learn the bad stuff from the outset then you&rsquo;re destined to be writing bad code for many years to come.</p>
+
+<p>The tutorial above has the following flaws:
+<blockquote><p>The compiler takes the code you&rsquo;ll write later on and translates it into binary code which the computer can understand and execute.</p></blockquote>Actually, no it doesn&rsquo;t. The <a href="http://en.wikipedia.org/wiki/Compiler" title="Compiler">compiler</a> translates your source files from one language to another. In this case, the C compiler translates C source code into object files which are relocatable blocks of machine code. At this point none of your code is executable. When the source files are compiled to object files, the <a href="http://en.wikipedia.org/wiki/Linker" title="Linker">linker</a> is then invoked to link the object files into a working executable or library. For more information on this process have a read of <a href="http://www.cprogramming.com/compilingandlinking.html" title="Compiling and Linking">this</a>, as it&rsquo;s much more thorough, and (more importantly) it&rsquo;s correct.
+<blockquote><p>If you have a compiler without a built in editor you can just use any text editor.</p></blockquote>Compilers do not have built-in text editors. Compilers have the job of translation. An <a href="http://en.wikipedia.org/wiki/Integrated_development_environment" title="Integrated Development Environment">IDE</a> generally comes with some kind of source code editor. It also makes it easy to invoke the compiler and linker when your source has been modified. Do not get confused between a compiler, a text editor and an IDE.
+<blockquote><p>Every C program must have a function called &ldquo;main&rdquo;.</p></blockquote>No. Every C program that is to be compiled to an executable must have an <a href="http://en.wikipedia.org/wiki/Entry_point" title="Entry point">entry point</a>. In console C programs, the entry point is generally called <strong>main</strong>, but this is configurable with most compilers/linkers/IDEs. With GUI applications, such as <a href="http://en.wikipedia.org/wiki/Win32" title="Windows API">Win32</a>, the default entry point can be different (eg. <a href="http://en.wikipedia.org/wiki/WinMain" title="WinMain">WinMain</a>). If your C code is going to form a library (lib, o, dll, etc) the rules are different.
+<blockquote><p>A function is just a container that holds a series of commands that tells your computer what do to.</p></blockquote>This isn&rsquo;t totally wrong, but it&rsquo;s not really right either. <a href="http://en.wikipedia.org/wiki/Function_%28computer_science%29" title="Subroutine">Functions</a> are blocks of callable code which perform a specific task inside your program.
+<blockquote><p>The next line is your main function.</p></blockquote>Actually, this line is the function&rsquo;s signature and the beginning of the function&rsquo;s definition. The function body is everything between the <strong>{</strong> and <strong>}</strong> that follows the function&rsquo;s signature.
+<blockquote><p>The int in this line can either be left or or changed to another basic datatype.</p></blockquote>This is <strong>very, very wrong!</strong> First of all, &lsquo;int&rsquo; specifies the type of the function&rsquo;s <a href="http://en.wikipedia.org/wiki/Return_value" title="Return statement">return value</a>.</p>
+
+<p>Secondly, the entry point is the first part of your program that is executed, and the operating system expects the result of that function to be meaningful. Passing anything other than an integer back to the operating system is completely wrong. Meaningful return codes should be used instead. Do <strong>not</strong> use anything other than int for your main function&rsquo;s return type.
+<blockquote><p>The final line, return 1; Tells the compiler that the program is finished and returns an integer.</p></blockquote>The last line does not return an integer. The last line specifies that the value of &lsquo;1&rsquo; should be returned to the caller. This statement would be perfectly legal for other return types such as <em>char</em>. The value that you return must be of the same type that you&rsquo;ve specified as your return type in your function signature.</p>
+
+<p>Not just that, but do not use <a href="http://en.wikipedia.org/wiki/Magic_number_%28programming%29#Unnamed_Numerical_Constant" title="Unnamed Numerical Constant">magic numbers</a>. You should use constants that give the code meaning. If you&rsquo;re returning a value to the operating system, you need to understand what that number means. In most cases, the value of 1 indicates that an error has occurred in your program. This means that if your program is called as part of a greater set of commands, the likelihood of the process failing increases because the caller will believe that your program has failed. This return statement not only contains a magic number, but it contains the <em>wrong</em> magic number. If the developer had used the predefined constants that are part of <em>stdlib.h</em> then not only would he have avoided this problem, but his code would also be more portable across platforms and operating systems.
+<blockquote><p>printf(&ldquo;string&rdquo;); is used to output a string onto the console, you can substitute any string into it (as well as variables).</p></blockquote> <strong>Do not use variables as the first parameter to any printf()-like function.</strong> There&rsquo;s no excuse for it. It&rsquo;s lazy, and it exposes a security hole in your program, namely <a href="http://en.wikipedia.org/wiki/Format_string_attack" title="Format string attack">format string attacks</a>.
+<blockquote><p>{ and } are used to encapsulate logical blocks of code (such as functions). All of the code inside these braces are grouped together.</p></blockquote> Curley braces define <a href="http://en.wikipedia.org/wiki/Scope_%28programming%29" title="Scope (programming)">scope</a>. It&rsquo;s as simple as that. They don&rsquo;t &ldquo;group&rdquo; code together.</p>
+
+<p><h3>The Point</h3>
+Too many people are writing misleading or meaningless tutorials which don&rsquo;t aid in helping people write proper code. They crank out examples without understanding what they&rsquo;re teaching. They don&rsquo;t think about the long term effect on those learning. The result? An industry full of plebs who don&rsquo;t really know how to do their job properly.</p>
+
+<p>In case you didn&rsquo;t notice, it shits me up the wall :)</p>
+
+<p>So, for the sake of clarity, this is what the example should have looked like:</p>
+
+<pre><code>#include &lt;stdlib.h&gt;  /* contains EXIT_SUCCESS */
+#include &lt;stdio.h&gt;   /* contains printf() */
+
+/* main() is the program's entry point */
+int main()
+{
+  /* write some text to the screen */
+  printf( &quot;Hello, World!\n&quot; );
+
+  /* indicate successful completion to the
+     operating sytem. On most platforms this
+     value is 0. */
+  return EXIT_SUCCESS;
+}
+</code></pre>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/being-in-the-industry">Being in the Industry</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/software-development">Software Development</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/wtf">WTF</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

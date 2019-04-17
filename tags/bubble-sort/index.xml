@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bubble Sort on OJ&#39;s Perspective</title>
+    <link>/tags/bubble-sort/</link>
+    <description>Recent content in Bubble Sort on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Thu, 14 Aug 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/bubble-sort/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sorting Algorithms: The Bubble Sort</title>
+      <link>/posts/sorting-algorithms-the-bubble-sort/</link>
+      <pubDate>Thu, 14 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sorting-algorithms-the-bubble-sort/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/uploads/2008/08/bubbles.jpg&#34; alt=&#34;Bubbles&#34; title=&#34;Bubbles&#34; width=&#34;225&#34; height=&#34;154&#34; style=&#34;float: left; margin-right: 5px; margin-bottom: 5px&#34; /&gt;This is the first of many posts covering the fascinating topic of &lt;a href=&#34;/category/sorting/&#34; title=&#34;Sorting @ OJ&#39;s rants&#34;&gt;sorting&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I chose the Bubble Sort algorithm as the first to cover because of its simplicity. This algorithm tends to be the first sorting algorithm that is taught to students, and hence is a rather apt starting point.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s break it down.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

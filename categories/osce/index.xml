@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OSCE on OJ&#39;s Perspective</title>
+    <link>/categories/osce/</link>
+    <description>Recent content in OSCE on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Mon, 17 Feb 2014 21:08:15 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/osce/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OSCE and Me</title>
+      <link>/posts/osce-and-me/</link>
+      <pubDate>Mon, 17 Feb 2014 21:08:15 +0000</pubDate>
+      
+      <guid>/posts/osce-and-me/</guid>
+      <description>&lt;p&gt;I have always found it hard to separate myself from something that I have a keen interest, and this has certainly proven to be the case when it comes to Information Security. My recent foray into the field, both as a developer and as a wannabe pentester/researcher, has had a big impact on me and my desire to learn more has not lessened as time has passed.&lt;/p&gt;
+
+&lt;p&gt;When I passed my &lt;a href=&#34;http://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional/&#34; title=&#34;OSCP&#34;&gt;OSCP&lt;/a&gt; exam last year I really felt like I had achieved something, but more importantly I had learned a &lt;em&gt;lot&lt;/em&gt; of stuff that I had never had exposure to before. Despite the feeling of achievement and the exhaustion that came from trying to do it all in 30 days, I was keen to take the next step; riding the wave while I felt like I was getting into the swing of it. After a few days of post-OSCP rest, I started investigating the next thing to tackle.&lt;/p&gt;
+
+&lt;p&gt;Given the fun I had while doing the &lt;a href=&#34;http://www.offensive-security.com/information-security-training/penetration-testing-with-kali-linux/&#34; title=&#34;PWK (was PWB)&#34;&gt;PWB&lt;/a&gt; labs, I felt that going back to &lt;a href=&#34;http://www.offensive-security.com/&#34; title=&#34;Offensive Security&#34;&gt;Offensive Security&lt;/a&gt; would be a good move. Offsec&amp;rsquo;s reputation is understandably very good, and I felt that I would be doing myself another favour by taking on their next challenge. It was clear to me that the next logical step would be to do the &lt;a href=&#34;http://www.offensive-security.com/information-security-training/cracking-the-perimeter/&#34; title=&#34;Cracking the Perimeter&#34;&gt;CTP&lt;/a&gt; lab with a goal of attaining the &lt;a href=&#34;http://www.offensive-security.com/information-security-certifications/osce-offensive-security-certified-expert/&#34; title=&#34;OSCE&#34;&gt;OSCE&lt;/a&gt; certification.&lt;/p&gt;
+
+&lt;p&gt;Just as I did prior to deciding to do OSCP, I read reviews and did some other simple research to find out more about the course. It wasn&amp;rsquo;t surprising to hear horror stories from some people who had taken on the exam; some who passed, others who did not. I knew I was going to be in for a treat, and I couldn&amp;rsquo;t wait to do it.&lt;/p&gt;
+
+&lt;p&gt;I would have signed up within a few weeks of finishing OSCP, but I felt it was important to give my family a break from the stresses involved in me dedicating so much time to study. Not just that, the OSCE exam is a gruelling 48-hour marathon, and so I would require support from my legendary little clan if I wanted to succeed.&lt;/p&gt;
+
+&lt;p&gt;After chatting to my very understanding wife, we decided that it would be a good idea for me to do the course in the latter half of the school holidays when the pressure of daily life is off. I signed up for the course, ready to start on the 22nd December.&lt;/p&gt;
+
+&lt;p&gt;What follows is my OSCE story, from start to finish, written in a very similar to my &lt;a href=&#34;/posts/oscp-and-me/&#34; title=&#34;OSCP and Me&#34;&gt;OSCP&lt;/a&gt; post. Enjoy.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

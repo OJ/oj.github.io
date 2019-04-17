@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Quality of Service - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/quality-of-service/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Quality of Service </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Sun Jan 14, 2007</span>
+
+	  <p>First of all, Happy New Year!</p>
+
+<p>Now that the formalities are out of the way, I&rsquo;ll get stuck into the post :)</p>
+
+<p>Today&rsquo;s comments are inspired a by a recent experience I had with an online form (of all things!). Being a bit of a game geek, both in the &lsquo;build&rsquo; and &lsquo;play&rsquo; senses, I constantly read a lot of gaming stuff.  One thing that I&rsquo;m a fairly regular reader of is <a href="http://www.gamasutra.com/" title="GamaSutra">GamaSutra</a>, as it&rsquo;s got lots of juicy game development stuff in it - a great read for people such as myself.  I finished reading a column on <a href="http://www.gamasutra.com/features/20070110/ledour_01.shtml" title="Localizing Brands and Licenses">Localizing Brands and Licenses</a> (sorry for the en-US spelling ;)), which was surprisingly interesting (albeit a little bit long) when I noticed a link at the top of the page saying &ldquo;Game Developer Magazine&rdquo;.  At this point I thought it&rsquo;d be interesting to see how much it would cost to subscribe so I followed the link (and my nose) through the maze of the web to find myself at the subscription form.</p>
+
+<p>This is where the fun started.</p>
+
+<p>While filling out the form with the required details (name, skin colour, sexual preference, etc) I hit the inevitable &ldquo;address&rdquo; section.  The first thing that I thought was strange was that it was asking for my address.  I was signing up to a digitally distributed magazine, and hence the only address they should have required was an email address.  Despite this bit of common sense, I though perhaps they&rsquo;d need it to verify credit card details, so I went ahead and punched it all in. When I hit the submit button, I was confused. An error came back asking me to specify a &ldquo;state&rdquo; for both billing <em>and</em> shipping addresses. This was particularly interesting since there was absolutely no mention of a shipping address on the form, let alone an area in which to enter it.  I assumed this was a minor bug in the system, and that if the billing address was fine then the shipping address would simple reflect that of the billing address.  So I went back to the billing address section of the form to look for the problem.  Being the intuitive fellow that I am, I assumed that since the error mentioned the &ldquo;state&rdquo; needed to be specified, I went straight to the &ldquo;state&rdquo; field to see what I had entered (in case there was an accidental blunder).  The option that I had chosen had been reset to the default, which I assume was done when the page refreshed with the error, so I had to choose an option again.  I think a picture of the options is probably the best way of showing you what I was facing, so have a look at this:</p>
+
+<p><img id="image168" src="/uploads/2007/01/state.PNG" alt="The State Drop-Down" class="InlineImageBlock" /></p>
+
+<p>As you can see, it&rsquo;s yet another example of ignorance by a United States web page.  This is going to sound a little like a Yankee Bash, and I&rsquo;m sorry for that, but I am sick to death of so many American web sites like this refused to acknowledge that the rest of the world (other than Canada) exists. You get to choose an American/Canadian state, or &ldquo;Not Available&rdquo;, and that&rsquo;s it. So, since I live in Australia, I had no choice but to choose &ldquo;Not Available&rdquo;.  I hit submit again and got the same error.</p>
+
+<p>So in a nutshell, it&rsquo;s too bad if you want a digital subscription to the magazine if you live outside the USA because the payment form just refuses to let you enter your details.  Rather than let myself get too narked, I thought I&rsquo;d get in touch with them and let them know that their form was broken.  I took the time to fire up the support page, and send them a stack of information on the scenario.  I told them the steps, the order of events, and the information that I had specified, and the resulting error.  The comment wasn&rsquo;t rude, and if anything gave too much information on how to reproduce the problem.  After hitting &lsquo;send&rsquo; I though that I&rsquo;d hear back within 24 hours and the problem would hopefully be rectified.</p>
+
+<p><em>Four</em> working days later I got a response, and it was not what I expected.  I have actually deleted the email so I can&rsquo;t paste the content, but I do remember the gist of it, which kinda goes like this:<blockquote>Mr Reeves,</p>
+
+<p>Thank you for contacting Company X with regards to your problem.  You can subscribe to the magazine by sending a cheque to [insert long USA address here] along with your details.</p>
+
+<p>Regards,
+The Company X Team</blockquote></p>
+
+<p>WTF?! No mention of the problem, no mention of a solution, no comments at all about being sorry that the issue even existed. Instead, all I got was a &ldquo;send via snail mail&rdquo;.  I thought this was unbelievable - yet not surprising.  I probably don&rsquo;t need to tell you that I didn&rsquo;t bother with their suggestion.</p>
+
+<p>The thing that really baffles me about this is the loss of business.  As a business, you don&rsquo;t want to turn clients away.  Providing them with a workaround isn&rsquo;t the same as fixing the problem - this is just bad quality of service.  Not only have they lost me as a possible client, but the problem hasn&rsquo;t been fixed, which means other people who live outside the USA/Canada are going to have the same issues signing up.</p>
+
+<p>My frustration with the rampant stupidity in the human race increases all the time :) I&rsquo;ll finish by quoting something I read in <a href="http://dilbertblog.typepad.com/the_dilbert_blog/2007/01/oops.html" title="Oops">Scott Adam&rsquo;s blog</a> today:<blockquote>&hellip; its getting harder every day to be an optimist.</blockquote></p>
+
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/miscellaneous">Miscellaneous</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/software">Software</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

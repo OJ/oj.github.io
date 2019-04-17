@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    The Future is Erlang - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/the-future-is-erlang/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> The Future is Erlang </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Sat Oct 31, 2009</span>
+
+	  <p><img src="/uploads/2009/10/erlang.png" alt="erlang" title="erlang" style="float:left;margin-right:5px;margin-bottom:5px;" />For quite a while I&rsquo;ve been using my spare cycles to chew over a problem. This problem is not one that hasn&rsquo;t been solved before, but one that I feel can be solved in a much better way. From the bit of research that I&rsquo;ve done, I can see at least three areas which can be improved on dramatically. So I&rsquo;ve decided, after a long period of deliberation, to go ahead and build my solution and release it to the world as a service!</p>
+
+<p>I know, this kind of thing happens thousands of times a day. Some arbitrary geek decided to build the next killer app and expects to make a crapload of cash out of it. While that would be nice, the ultimate goal isn&rsquo;t the cash. The goal for me is to build something that gets used, and for me to begin to master an area of technology that I&rsquo;ve had a quiet passion for for a long period of time now.</p>
+
+<p>My plan is simple. While learning the technologies that I will be using I&rsquo;ll be building another application and blogging about it so that all of you can learn with me. Meanwhile, I shall use my learnings to build this other application at the same time.</p>
+
+<p>The final result should be a series of posts which help other people learn the technology stack, give better coverage and visibility to languages and technologies that a lot of the geek world doesn&rsquo;t know about (and really should!), and for me to carve myself a bit of a niche here on the East coast of Ozland. I am hoping to be able to consult my services out to other businesses as a result.</p>
+
+<p>For those that are interested in following along, here is the full tech stack and toolset that I&rsquo;ll be using:</p>
+
+<ul>
+<li><a href="http://erlang.org/" title="Erlang">Erlang</a> - A fantastic cross-platform functional programming language that has some amazing features.</li>
+<li><a href="http://bitbucket.org/justin/webmachine/" title="Webmachine HTTP toolkit">Webmachine</a> - A HTTP toolkit which sits on top of <a href="http://code.google.com/p/mochiweb/" title="Mochiweb">Mochiweb</a> that makes it easy to build well-behaved HTTP applications.</li>
+<li><a href="http://nitrogenproject.com/" title="Nitrogen Framework">Nitrogen</a> - An Erlang-based framework that makes it easy to build websites.</li>
+<li><a href="http://riak.basho.com/" title="Riak">Riak</a> or <a href="http://couchdb.apache.org/" title="CouchDB">CouchDB</a> - Both of these amazing pieces of tech are potential candidates for the back-end storage. I'm not yet sure which one I'll go with.</li>
+<li><a href="http://jquery.com/" title="jQuery">jQuery</a> - A great JavaScript library for the front-end.</li>
+<li><a href="http://vim.org/" title="VIM text editor">VIM</a> - My favourite text editor :)</li>
+<li><a href="http://www.xubuntu.org/" title="Xubuntu">Xubuntu</a> - Ubuntu <a href="http://ubuntu.com/" title="Ubuntu 9.10">Karmic Koala</a> with <a href="http://www.xfce.org/" title="XFCE">XFCE</a> as the window manager.</li>
+<li><a href="http://mercurial-scm.org/" title="Mercurial SCM">Mercurial</a> - My favourite version control system.</li>
+<li><a href="http://trac.edgewall.org/" title="The Trac Project">Trac</a> - A project tracking tool.</li>
+<li><a href="http://www.virtualbox.org/" title="VirtualBox">VirtualBox</a> - My choice for virtualisation. I tend to run Windows 7 as my primary OS, so most of my dev will be in a VM. When I get my desktop machine back up and running (with all three monitors!) it'll most likely multiboot Win 7 and Xubuntu.
+<li><a href="http://wave.google.com/" title="Google Wave">Google Wave</a> - I'll be using this for communications with some really switched on people in the Erlang community who have kindly offered to help me with questions and whatnot specific to some of the areas of tech I've mentioned above.</li>
+</ul>
+
+<p>During the course of my blogging/learning I&rsquo;ll be focussing on Webmachine, Riak/CouchDB, Erlang and Nitrogen. All the other tools will probably get mentioned along the way, but the primary goal is to focus on these things.</p>
+
+<p>I&rsquo;m really excited! I&rsquo;m currently in the process of documenting my goals and the design for the main application. Once that&rsquo;s done, I&rsquo;ll get started with the fun stuff. I&rsquo;ve got a lot to do and it should be a fun ride. I hope you enjoy following along!</p>
+
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/databases">Databases</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/functional-programming">Functional Programming</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/google">Google</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/software-development">Software Development</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/technology">Technology</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/mercurial">Mercurial</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/erlang">Erlang</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/webmachine">Webmachine</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

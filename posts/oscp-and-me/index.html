@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    OSCP and Me - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/oscp-and-me/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> OSCP and Me </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Fri Aug 16, 2013</span>
+
+	  <p>The <a href="http://www.offensive-security.com/information-security-training/penetration-testing-with-backtrack/" title="Penetration Testing with BackTrack">PWB</a> course by <a href="http://www.offensive-security.com/" title="Offensive Security">Offensive Security</a> is absolutely awesome, as is the exam which earns you the prized <a href="http://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional/" title="Offensive Security Certified Professional">OSCP</a> certification. I took this course and exam recently; I loved it and I nailed it! I am now equipped with a much better understanding of the security world and am in a better position to help businesses improve the security of their application architecture and infrastructure.</p>
+
+<p><a href="/contact" title="Contact OJ">Hit me up</a> and let&rsquo;s talk about how I can help you make your applications more secure.</p>
+
+<p>What follows is the full story of my path through PWB and OSCP. Enjoy.</p>
+
+<h2 id="the-long-version">The Long Version</h2>
+
+<p>I started developing software professionally back in 1999, just shy of 15 years ago. Since then I&rsquo;ve been fortunate enough to work in some pretty amazing domains, used a massive variety of technologies and have played a part in some <a href="http://burnoutrevenge.ea.com/360/player.asp?language=en" title="Burnout Revenge for Xbox 360">pretty</a> <a href="https://internetbanking.suncorpbank.com.au/" title="Suncorp Internet Banking">awesome</a> <a href="http://www.innovation.gov.au/Industry/Defence/CapabilityDirectories/Documents/JSFCapabilityDirectory/company%20profiles/ball_solutions/profile_3.html" title="Mission Data Planning Environment">software</a>. I&rsquo;m proud of what I&rsquo;ve achieved so far. However I&rsquo;ve recently found myself looking for a new challenge. Something that will make me think, push me to learn new things, and hopefully keep my motivation levels up to a high level. Ultimately, I wanted to have a bit of a career change without really changing my career.</p>
+
+<p>Towards the end of last year, after some careful deliberation, I decided to follow a long-term passion of mine with a goal of incorporating it into my work. That passion is <a href="http://en.wikipedia.org/wiki/Information_security" title="Information Security">Information Security</a>. Infosec as a domain is made up of a <em>lot</em> of different areas, and hence making it a point of focus means that anyone looking to get involved needs to first learn the basics of a broad set of topics and then, perhaps, <em>specialise</em> in one of them.</p>
+
+<p>For many years I&rsquo;ve <a href="http://buffered.io/categories/rce/" title="Category: RCE">dabbled with reverse engineering</a>, kept up-to-date with various security topics, and have been quite a <a href="http://buffered.io/posts/xss-flaws-via-mvc-model-binding-and-request.querystring-inconsistencies/" title="XSS Flaws via MVC Model Binding and Request.QueryString Inconsistencies">security-minded developer</a>. I didn&rsquo;t want to just go and read up on the things that I already knew, but instead I wanted to throw myself in the deep end into an area that I wasn&rsquo;t too familiar with but had a keen interest in.</p>
+
+<p>This led me to <a href="http://en.wikipedia.org/wiki/Penetration_test" title="Penetration Test">penetration testing</a> and ultimately to <a href="http://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional/" title="Offensive Security Certified Professional">OSCP</a>.</p>
+
+<h2 id="exploring-oscp">Exploring OSCP</h2>
+
+<p>I spent quite a bit of time searching for courses and material that would get me going with the basics of penetration testing servers and web applications. There&rsquo;s quite a lot out there, though much of it is rudimentary, is disjoint or lacks cohesion, or talks about &ldquo;point and shoot&rdquo; exploitation. While this might be helpful in becoming a <a href="http://en.wikipedia.org/wiki/Script_kiddie" title="Script Kiddie">script kiddie</a> it wasn&rsquo;t what I was looking for. I wanted to be challenged.</p>
+
+<p>When I stumbled on <a href="http://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional/" title="Offensive Security Certified Professional">OSCP</a> I was initially dubious as I am when it comes to any certification. Most developers out there are probably experienced with the certifications that exist in the world of software engineering and how they do not provide an indication of a person&rsquo;s ability. Before knowing better I assumed this would be the same.</p>
+
+<p>However, after <a href="http://proactivedefender.blogspot.com/2012/01/oscp-my-review.html">reading</a> <a href="http://www.hackyeah.com/2010/12/brief-review-of-the-pwb-class-and-the-oscp-certification/">some</a> <a href="http://blog.nullmode.com/2013/05/penetration-testing-with-backtrack-oscp.html">reviews</a> from people who have achieved the certification, I started to realise that this is exactly the kind of thing I was looking for.</p>
+
+<p>Quotes from these reviews include lines such as:</p>
+
+<blockquote>
+<p>The truism &ldquo;anything worth having doesn&rsquo;t come easy&rdquo; is one I have often remembered when on a particularly difficult path to a goal. Never have the words rung quite so true when applied to my quest for [the] OSCP certification.</p>
+</blockquote>
+
+<p>Others state:</p>
+
+<blockquote>
+<p>The OSCP certification, in my opinion, proves that it&rsquo;s holder is able to identify vulnerabilities, create and modify exploit code, exploit hosts, and successfully preform tasks on the compromised systems over various operating systems.</p>
+</blockquote>
+
+<p>I was becoming convinced that OSCP was something that I had to do, despite not ever doing any form of penetration testing in the past (other than fumbling around my own web applications). At this point I reached out to a local security professional, <a href="http://security.crudtastic.com/" title="Security with added Cheese">Ash D</a> who is a seasoned Infosec guru, SANS mentor/teacher and who has passed the exam himself, and bribed him with a free lunch to come and talk to me about his experience. He turned out to be friendly, fun, informative and gave me just the confirmation I was looking for. Even if I failed miserably I&rsquo;d already made a good friend out of the experience (a friend who later would keep encouraging me right through to the end <a href="http://security.crudtastic.com/?p=699">and beyond</a>, thanks Ash).</p>
+
+<p>OSCP requires you to spend a lot of time in a virtual lab practising the various techniques that you&rsquo;ll need to master to do well in the exam. While the learning material from Offensive Security is good (more on this later), the lab is what makes the whole thing <strong>great</strong>. This was the last key point for me. I wasn&rsquo;t just going to learn theory, I would actually learn to <em>do</em> things and have to <em>demonstrate</em> that in the exam to gain the certification.</p>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<p>It was early 2013 and I was working some longer hours for various clients which made it hard for me to find the time to put into some basic preparation. As a result it took me quite a while to sign up for the course as I wanted to make sure that I would be able to give it the time it deserves.</p>
+
+<p>As April 2013 approached I came to the realisation that it was <em>never</em> a good time to sign up for something like this and hence I should just go and make it happen. I spoke to my wife and kids about it and made sure they were OK with the idea of me being locked away to learn, and they gave me their full support (short interlude: my family is awesome).</p>
+
+<p>I jumped on the web and went to the <a href="http://www.offensive-security.com/information-security-training/penetration-testing-with-backtrack/" title="PWB sign up">sign-up</a> page and was presented with quite a few options. I needed to specify how much lab time I wanted prior to my exam. This was a bit like telling a mobile phone carrier how many calls you&rsquo;re going to make; I really wasn&rsquo;t sure! Instead of deliberating for too long, I decided to go with the 30-day option and extend my time if I felt that I needed more. No big deal.</p>
+
+<p>I signed up for the course, and locked in the date of June 16th to kick off my time in the labs.I was really excited, and couldn&rsquo;t wait for it to start. In the following days I was contacted by Offsec and asked for proof of identity. Offsec require that you don&rsquo;t use a &ldquo;free&rdquo; email address such as Gmail when signing up, however I don&rsquo;t have any email addresses that aren&rsquo;t Google Apps hosted (this will change soon) and hence I needed to verify my identity with them. This goes to show that they don&rsquo;t just let any unknown person take up the course to learn things which can easily be misused.</p>
+
+<p>After what felt like an eternity, June 16th came around and my connection pack arrived in my inbox. Unfortunately for me, work and a few other things took over and I lost the first week of time. I was able to connect to the labs on the odd occasion but for very short periods of time. Given that I wasn&rsquo;t yet across the material that time I spent in the labs wasn&rsquo;t really fruitful.</p>
+
+<p>At day 8 things finally settled down to a level where I was able to dive into the material and begin fumbling my way through the lab. This is where things really started to become entertaining.</p>
+
+<h2 id="initial-lab-time">Initial Lab Time</h2>
+
+<p>My first few days in the lab were interesting. I popped the SYSTEM account on one of the Windows boxes in the first 4 hours of my lab time. This was not only surprising but it gave me a confidence boost which didn&rsquo;t do me any favours. From there I failed repeatedly to compromise another machine. The second day yielded no results. The third day was also fruitless. By the end of the fourth day, when I still had just <em>one</em> machine on my tally, I was beginning to ask myself questions. Am I cut out for this? Have I bitten off more than I can chew?</p>
+
+<p>I stepped back for a while and pondered my approach. I realised that I wasn&rsquo;t thinking and looking to learn. I wasn&rsquo;t approaching the problems like a hacker would. I wasn&rsquo;t doing enumeration properly. I was investing too much time looking for out-of-the-box exploits rather than trying to connect the dots myself. I gave myself a slap, and started again.</p>
+
+<p>This is when things started to change. Machines started to fall. I started to learn more. I improved in all the areas I was failing at before. It was wonderful.</p>
+
+<p>On the fifth day I managed to pop 7 machines. What a difference!</p>
+
+<h2 id="proper-lab-time">Proper Lab Time</h2>
+
+<p><em>Note: my coverage of the lab from here is &ldquo;point in time&rdquo;. Offsec change and upgrade the lab all the time, and hence details of the lab and what you&rsquo;ll experience will change over time too.</em></p>
+
+<p>The lab was a wonderful place to play, practice and learn. I was constantly blown away by the mixture of operating systems, patch levels, kernel versions, system application and feature versions, third-party applications, and even custom applications that had been built which emulated the kind of things you&rsquo;d expect a developer to throw together to help them do something a little easier and quicker as part of their day job. The effort that has gone into the design and set up of the lab environment is commendable. It really felt like I was in a real network with real machines and real people using those machines.</p>
+
+<p>It was made up of approximately 60 machines partitioned into a number of networks. Each machine has it&rsquo;s own identity and story, some are interesting and some not so much. I&rsquo;m not going to elaborate on the detail too much because discovering that is all part of the fun. But I will say that I experienced <code>Pain</code> and <code>Sufference</code> [sic] in ways I didn&rsquo;t expect.</p>
+
+<p>The networks are connected together in interesting ways, and you as the penetration tester will need to work your way through the machines and networks, pivoting your attacks off compromised hosts as you go with the end goal of compromising all of the hosts and making it to the <strong>Admin</strong> network.</p>
+
+<p>As you would expect, some machines are very easy to break into and other machines are really quite hard. The beauty of the lab is that, depending on your background, exposure and interests, the machines that you find hard might not be hard for others and vice-versa. Some machines run applications you wouldn&rsquo;t expect them to run. Some machines have very new or very old configurations of software. The mix is truly great; it keeps you thinking rather than giving you the luxury of slipping into a &ldquo;routine&rdquo;.</p>
+
+<p>The lab exposes you to a very large range of exploitations; too many to mention here. Chances are that if a type of exploit exists that you need to abuse, you&rsquo;ll get the chance to use it in the lab.</p>
+
+<p>At this point I think it&rsquo;s important to point out that in OSCP the focus is on knowing how to apply existing public exploits and known approaches to manual exploitation of vulnerabilities. While there is room for you to construct your own exploits if you choose to, there is another course offered by Offsec which covers that in more detail, and that&rsquo;s <a href="http://www.offensive-security.com/information-security-certifications/osce-offensive-security-certified-expert/" title="Offensive Security Certified Expert">OSCE</a>.</p>
+
+<p>It took me a little bit of time before I realised that exploitation wasn&rsquo;t the only thing that I needed to do while in the lab. <em>Post-exploitation</em> was very important. Looting the machines that I&rsquo;d compromised was something that I didn&rsquo;t consider doing in the early days, and I suffered as a result. When I came to realise that the keys to some of the machines were located on others, I had to go back through my list of popped hosts and loot them properly. If you&rsquo;re going to do this course, make sure you do a good job of post-exploitation!</p>
+
+<p>While doing the lab, you are supposed to keep track of all the work you&rsquo;ve done as you need to provide a deliverable at the end of it: a full penetration test document. This document has to contain the detail of what you did and how you did it. My advice is to not put this off until the end, but instead work on it as you go. This includes screenshots, dumps of console output, source code to exploits you&rsquo;ve written and scripts you&rsquo;ve used to automate tasks.</p>
+
+<p>Even though I was pretty good at taking notes, I had kept them all in markdown in a private <a href="http://git-scm.org/" title="Git">git</a> repository instead of putting them in a well-structured document. As a result, I had to do this after my exam, which made the experience more painful than it needed to be.</p>
+
+<h2 id="post-lab">Post-Lab</h2>
+
+<p>By then time your lab time has ended, you <em>should</em> have managed to compromise/pop/pwn a large percentage of the networks, if not 100%. In my case, I ran out of time and I missed about 8 machines in total. While I was disappointed with the result, a discussion with various OSCP alumni led me to realise that I had managed to defeat the harder machines in the labs and hence the rest of them would be quite simple. I decided not to extend my lab time as spending extra money for the sake of a few more machines didn&rsquo;t make sense. Instead, I booked in my exam for August 6th and used the lead-up time for practice, refining my documentation, and preparing my scripts and cheat sheets for the big day.</p>
+
+<p>There are some great resources out there for practising this kind of thing, but the main one that I want to point out is <a href="http://vulnhub.com/" title="Vulnhub">Vulnhub</a> (a pet project of <a href="http://blog.g0tmi1k.com/" title="g0tmi1k's blog">g0tmi1k</a>). That site contains downloadable <em>boot2root</em> images that you can use to practice on with the added benefit of it all being legal.</p>
+
+<p>I really focused on the areas that I felt I was weakest, with the main one being Linux privilege escalation. There&rsquo;s a bit of material out there on it, and there&rsquo;s also g0tmi1lk&rsquo;s fantastic <a href="http://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation.html" title="Basic Linux Privilege Escalation">cheat sheet</a>, but I still failed to connect some of the dots during my travels. It&rsquo;s about now I must give a bit hat-tip to <a href="https://twitter.com/pipesec" title="Pipes on Twitter">Pipes</a> and <a href="https://twitter.com/metlstorm" title="Metlstorm on Twitter">Metlstorm</a>, both of <a href="http://www.insomniasec.com/" title="Insomnia Security">Insomnia Security</a>, for being two awesome mentors and providing me with fantastic insights on ways to get root. Those guys are awesome.</p>
+
+<h2 id="the-exam">The Exam</h2>
+
+<p>The OSCP exam is a 24-hour &ldquo;loser takes all&rdquo; style exam. You are given access to a custom network, just like you are in the labs, and you have a number of machines assigned to you. The exam pack contains information on the machines, along with various rules that you must adhere to when attacking them. Each machine is worth a number of points and you earn those points if you:</p>
+
+<ul>
+<li>Compromise the host.</li>
+<li>Document your findings well enough with clear instructions on how it was done. This document should also contain the  &ldquo;flags&rdquo;; text files with what appears to be random characters in them which prove that you did what you did.</li>
+<li>Don&rsquo;t break the rules.</li>
+</ul>
+
+<p>Points are allocated to you even if you don&rsquo;t managed to get SYSTEM/root on the machine. All is not lost if you can&rsquo;t do privilege escalation! However you <em>can not</em> break the rules. In my exam, for example, there was at least one machine which wasn&rsquo;t allowed to be attacked at all using <a href="http://metasploit.org/" title="Metasploit">MSF</a>. Breaking this rule would have meant 0 points for that machine.</p>
+
+<p>I started my exam at 8am just as the family were leaving the house (taking son #1 to school). I was buzzing. I couldn&rsquo;t sit still I was that excited. I realised how much I had missed my time in the labs and the thought of having another crack was making me twitchy.</p>
+
+<p>By 8:45am I had popped root on my first machine.</p>
+
+<p>By 10:00am the second had fallen. I was on a roll! I was riding high and felt really good.</p>
+
+<p>The third machine proved to be a little more difficult, but it fell just before 1:00pm.</p>
+
+<p>The last two machines, making a total of five, were quite a bit trickier. I&rsquo;d say that the fourth was by far the hardest, but I loved it as it was yet another example of where I learned something new while doing something in an Offsec lab. I w00ted like a teenager when it fell and did a victory lap around the house.</p>
+
+<p>By 10pm I was done with all 5 machines. My notes were in the typical markdown/git repository structure but were quite thorough and had captured everything I had done in quite a lot of detail. With the exam out of the way, and 100 points in the bag, I went to bed.</p>
+
+<p>The following day I had the arguably arduous task of writing my exam document, which was supposed to be included with your lab report. All in all my document totalled 220 pages by the time it was done and I was glad to see the back of it! It was submitted late on Wednesday evening but with plenty of time to spare before the 8am Thursday cut-off.</p>
+
+<p>I was done. I was relieved, excited and sad that it was all over.</p>
+
+<h2 id="confirmation">Confirmation</h2>
+
+<p>While I was pretty sure that I&rsquo;d done a good enough job to get my certification, there is always some doubt that you might have missed something or done something silly. So until I received confirmation from Offsec I wasn&rsquo;t sure if I had passed.</p>
+
+<p>It took less than 48 hours for me to receive the email:</p>
+
+<blockquote>
+<p>Dear Oliver,</p>
+
+<p>We are happy to inform you that you have successfully completed the Penetration Testing with BackTrack certification challenge and have obtained your Offensive Security Certified Professional (OSCP) certification.</p>
+
+<p>You will receive the certification by mail within 80 days.</p>
+</blockquote>
+
+<p>I was elated. What a journey! I really felt like I had achieved something. I truly felt, and still feel, that I&rsquo;d be able to do a great job performing a penetration test for a client.</p>
+
+<h2 id="summary-conclusion">Summary &amp; Conclusion</h2>
+
+<p>There&rsquo;s no denying it, OSCP was just fantastic. But same parts of it were <em>hard</em>. Not impossibly hard, but hard enough to make you question your own abilities. It broke my ego and then built it up again. I can&rsquo;t recommend it strongly enough!</p>
+
+<p>However if you&rsquo;re new to the security game, this probably isn&rsquo;t the first thing you should attempt to tackle. I think I managed to get through thanks to my polyglot development background, my history with a mixture of operating systems, and my time reverse engineering various binaries. Without those things I would have had a very, <em>very</em> hard time.</p>
+
+<p>I&rsquo;m very happy that I took this challenge on. I feel like I really achieved something and that I have a certification that means a whole more than the paper it&rsquo;s written on. I can&rsquo;t wait to see the official paperwork come through the mail.</p>
+
+<p>So what&rsquo;s next? Certification-wise it has to be <a href="http://www.offensive-security.com/information-security-certifications/osce-offensive-security-certified-expert/" title="Offensive Security Certified Expert">OSCE</a>, but I will give my family a break before I take that on. Work-wise, I will be looking to engage with new and existing clients to determine how best I can help them with the security of their infrastructure and applications in the hope that this becomes a major part of my work longer term.</p>
+
+<p>If you&rsquo;re out there reading this and you are looking for some help in this area, please <a href="/contact" title="Contact OJ">drop me a line</a>.</p>
+
+<p>Thank you all for reading. Feel free to hit me with any questions and I&rsquo;ll do my best to answer them.</p>
+
+<p><a href="https://twitter.com/TheColonial" title="OJ on Twitter">OJ</a></p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/security">Security</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/oscp">OSCP</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

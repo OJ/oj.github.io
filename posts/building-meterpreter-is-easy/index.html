@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Building Meterpreter is Easy - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/building-meterpreter-is-easy/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Building Meterpreter is Easy </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Tue Feb 18, 2014</span>
+
+	  <p>I might not have mentioned this before, but I have to tell you that <em>building Meterpreter is easy</em>. In the old days, downloading the source was the easy bit and compiling it was the hard bit. The steps involved in getting a Meterpreter build environment together were extensive and prone to error. In fact if you got one wrong, or you did things in the wrong order, then you could end up having to remove everything from your machine and starting again.</p>
+
+<p>It shouldn&rsquo;t be surprising that the contributions to Meterpreter from the community have been a bit lean as a result. Nobody wants to deal with a painful set up or horrible build experience when it comes to any software, let alone open source.</p>
+
+<p>One of my goals when working on Meterpreter was to make this problem go away. While it was partly because I didn&rsquo;t want to suffer myself, it was also because the Metasploit team wanted it to be easy for anyone to contribute.</p>
+
+<p>Thankfully the pain has been removed! In fact, building this puppy it is just as easy as getting the source itself! My mum could do it. My mum&rsquo;s mum could do it. <em>Anyone</em> can do it, <strong>even if they don&rsquo;t have a computer!</strong></p>
+
+<p>OK, that last bit might not be true, but it is super easy to build and doesn&rsquo;t require expensive build tools either. All you need is a recent-enough copy of Windows and you&rsquo;re good to go. Now that we use Visual Studio 2013 we have to match the requirements for this baby to run. This means that you need a copy of <strong>Windows 7 Service Pack 1</strong> or later. It can be x86 or x64, but the version is important. If you&rsquo;re on this version, or using Windows 8, 8.1, 2008 or 2012 then you should be fine. VS requires .NET 4.5, so if you can get that running happily you should be fine.</p>
+
+<p>To prove just how easy it is, I have put together a short video which demonstrates it. The video takes you from a bare Windows 7 x86 SP1 installation (with a few MS updates applied thanks to Windows Update automatically installing stuff) through to compiled Meterpreter binaries.</p>
+
+<p>The steps are:</p>
+
+<ol>
+<li>Install Windows 7 and update to SP1 (not in the video because that&rsquo;s <em>boring</em>).</li>
+<li>Download and install Visual Studio 2013 Express for Windows Desktop. It&rsquo;s important to emphasise that the correct edition is the <strong>Windows Desktop</strong> edition, and if you don&rsquo;t install this edition then building the source will not work.</li>
+<li>Download and install git.</li>
+<li>Clone the repository from Github and initialise submodules. If you&rsquo;re interested in contributing to Meterpreter then you should fork the repository yourself before. Github had a great <a href="https://help.github.com/articles/fork-a-repo" title="Fork a Repo">how-to up on their site</a> so have a read of that if you&rsquo;re not sure what to do.</li>
+<li>Open a &ldquo;Developer command prompt&rdquo;.</li>
+<li>Type <code>make</code> and hit enter.</li>
+</ol>
+
+<p>And here it is in action. See it in all its Youtubey glory!</p>
+
+<iframe width="640" height="480" src="//www.youtube.com/embed/5WgLlGCMez0" frameborder="0" allowfullscreen></iframe>
+
+<p>Feedback, comments and questions are welcome as always.</p>
+
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/security">Security</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/metasploit">Metasploit</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/meterpreter">Meterpreter</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

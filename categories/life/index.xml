@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Life on OJ&#39;s Perspective</title>
+    <link>/categories/life/</link>
+    <description>Recent content in Life on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Tue, 27 Nov 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/life/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Stepping Down</title>
+      <link>/posts/stepping-down/</link>
+      <pubDate>Tue, 27 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/stepping-down/</guid>
+      <description>For the past two years I&amp;rsquo;ve been heavily involved with organising two user groups in Brisbane: BFPG and BNoSQL. Those of you out there who organise your own user groups no doubt know how much is involved in keeping these things going. My focus has been on building communities around the subject matter and trying to get attendance up. It was a tough gig.
+For the most part I think I succeeded in what I set out to achieve.</description>
+    </item>
+    
+    <item>
+      <title>Meaning</title>
+      <link>/posts/meaning/</link>
+      <pubDate>Tue, 30 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/meaning/</guid>
+      <description>Life is way too short to be working on boring, uninteresting or meaningless stuff. Get out there and do what you love. Screw working for the dollar on something that you don&amp;rsquo;t enjoy. Don&amp;rsquo;t study in a field that doesn&amp;rsquo;t inspire you just because you got the marks or because people expect you to. Don&amp;rsquo;t do what you&amp;rsquo;ve always done just because it&amp;rsquo;s easy.
+Chase your passion. Love your work.</description>
+    </item>
+    
+  </channel>
+</rss>

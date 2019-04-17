@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RCE on OJ&#39;s Perspective</title>
+    <link>/categories/rce/</link>
+    <description>Recent content in RCE on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Sat, 14 Sep 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/rce/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>64bit Pointer Truncation in Meterpreter</title>
+      <link>/posts/64bit-pointer-truncation-in-meterpreter/</link>
+      <pubDate>Sat, 14 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/64bit-pointer-truncation-in-meterpreter/</guid>
+      <description>&lt;p&gt;If you haven&amp;rsquo;t ever heard of &lt;a href=&#34;https://github.com/rapid7/meterpreter&#34; title=&#34;Native Meterpreter&#34;&gt;Meterpreter&lt;/a&gt; before, you might want to go and take a look at it before reading this post to help give some context. In short, Meterpreter is an amazing library that is part of the &lt;a href=&#34;http://www.metasploit.com/&#34; title=&#34;Metasploit Framework&#34;&gt;Metasploit Framework&lt;/a&gt; and can be used to give you tremendous power and control over target machines during a &lt;a href=&#34;http://en.wikipedia.org/wiki/Penetration_test&#34; title=&#34;Penetration Testing&#34;&gt;penetration test&lt;/a&gt;. Anyone and everyone in the security game is most likely familiar with both Metasploit and Meterpreter, at the very least, if not closely intimate with them. The toolset is fantastic, and is &lt;a href=&#34;https://github.com/rapid7/metasploit-framework/&#34; title=&#34;Metasploit Framework Source&#34;&gt;open source&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m currently in the very fortunate position of &lt;a href=&#34;https://community.rapid7.com/community/metasploit/blog/2013/09/05/weekly-update&#34; title=&#34;Weekly Update: Meterpreter Updates, VMWare, the OSX spycam, Retabbing, and more!&#34;&gt;working with the crew&lt;/a&gt; from &lt;a href=&#34;http://www.rapid7.com/&#34; title=&#34;Rapid 7&#34;&gt;Rapid7&lt;/a&gt; to help improve Meterpreter, particularly on the Windows (both 32 and 64 bit). I have a good list of things to work through while I&amp;rsquo;m on board including making it easier to build for potential contributors, and to fix some outstanding issues that the R7 crew haven&amp;rsquo;t had the bandwidth to fix.  These people are super-smart, and super-nice and I&amp;rsquo;m honoured that I&amp;rsquo;ve been selected to work alongside them.&lt;/p&gt;
+
+&lt;p&gt;The purpose of this post is to document the process and resolution of a bug that I have helped resolve since joining. I also aim to lift the lid on Meterpreter a little and help expose how some bits of it work. I hope you enjoy.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reversing DirectX &amp; Blowfish</title>
+      <link>/posts/reversing-directx-blowfish/</link>
+      <pubDate>Mon, 09 Apr 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/reversing-directx-blowfish/</guid>
+      <description>This tutorial has been on the boil for quite a while. I got close to nailing the problem late last month, but didn&amp;rsquo;t end up finding the time to finish it until this weekend. This tutorial is a solution to another Crackme, but this time it&amp;rsquo;s really not for the faint-hearted. Information on reversing fullscreen DirectX (Direct3D) applications and playing around with Blowfish can be found in this tutorial, and it&amp;rsquo;s a bit of a mind-job - it also weighs in at nearly 40 pages (with some nice pictures thrown in)!</description>
+    </item>
+    
+    <item>
+      <title>Another Lesson in Software Reversing</title>
+      <link>/posts/another-lesson-in-software-reversing/</link>
+      <pubDate>Thu, 08 Mar 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/another-lesson-in-software-reversing/</guid>
+      <description>Yes, you can (most probably) consider this to be a fairly regular segment from this point on :) As I said before I&amp;rsquo;ve always been partial to RCE, and I don&amp;rsquo;t think I&amp;rsquo;ll ever get sick of it. Today&amp;rsquo;s installment is another tutorial that I felt shouldn&amp;rsquo;t be published. The reason is because it&amp;rsquo;s a tutorial on how to solve an example reversing challenge for the IITAC online RCE adacemy, and I generally don&amp;rsquo;t think it&amp;rsquo;s a good move to show other people how to do this stuff when they can get certified for it.</description>
+    </item>
+    
+    <item>
+      <title>More RCE Goodness</title>
+      <link>/posts/more-rce-goodness/</link>
+      <pubDate>Tue, 06 Mar 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/more-rce-goodness/</guid>
+      <description>I&amp;rsquo;m quite excited. My previous RCE solution and tutorial has been approved!
+Plus, the first keygenme that I&amp;rsquo;ve ever written is now approved and available for download. So if you&amp;rsquo;re up for a 64-bit RCE challenge, go check it out (or download it directly from here).
+Feel free to let me know how good/bad/ugly you think this stuff is!</description>
+    </item>
+    
+    <item>
+      <title>A Reversing Tutorial</title>
+      <link>/posts/a-reversing-tutorial/</link>
+      <pubDate>Sat, 03 Mar 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/a-reversing-tutorial/</guid>
+      <description>For a long time I&amp;rsquo;ve been interested in the lovely and exciting art of Reverse Code Engineering (RCE) and on more than one occasion I&amp;rsquo;ve been sucked in to spending hours and hours delving through pages of ASM code searching for the answer.
+Today is no different. With Amy feeling pretty crook due to a nasty headache, I thought I&amp;rsquo;d retire to my PC and do something quiet that I haven&amp;rsquo;t done for ages.</description>
+    </item>
+    
+  </channel>
+</rss>

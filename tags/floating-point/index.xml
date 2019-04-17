@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>floating point on OJ&#39;s Perspective</title>
+    <link>/tags/floating-point/</link>
+    <description>Recent content in floating point on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Wed, 27 Jun 2007 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/floating-point/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Extended-Precision Floating-Point Values in the CLR</title>
+      <link>/posts/extended-precision-floating-point-values-in-the-clr/</link>
+      <pubDate>Wed, 27 Jun 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/extended-precision-floating-point-values-in-the-clr/</guid>
+      <description>&lt;p&gt;While at work today I hit a problem that I&amp;rsquo;ve never hit before (which is quite rare these days :) ), and while it was frustrating it was also good to learn about something that I never knew was a problem. If you&amp;rsquo;re having some issues marshalling double-precision floating-point information through managed components to unmanaged components, or you&amp;rsquo;re just interested in learning something new, then read on :)&lt;/p&gt;
+
+&lt;p&gt;Let me start by explaining the scenario:&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

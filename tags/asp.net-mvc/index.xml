@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ASP.NET MVC on OJ&#39;s Perspective</title>
+    <link>/tags/asp.net-mvc/</link>
+    <description>Recent content in ASP.NET MVC on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Wed, 06 Oct 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/asp.net-mvc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ASP.NET MVC 2, Random Sign-offs and TempData Loss</title>
+      <link>/posts/asp.net-mvc-2-random-sign-offs-and-tempdata-loss/</link>
+      <pubDate>Wed, 06 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/asp.net-mvc-2-random-sign-offs-and-tempdata-loss/</guid>
+      <description>&lt;p&gt;&lt;a title=&#34;MVC&#34; href=&#34;/uploads/2010/10/mvc.png&#34; rel=&#34;lightbox[contentadvisor]&#34;&gt;&lt;img style=&#34;margin-left: 5px; margin-bottom: 5px; float: right;&#34; src=&#34;/uploads/2010/10/mvc.png&#34; alt=&#34;MVC&#34; width=&#34;150&#34; /&gt;&lt;/a&gt;In the last few days I&amp;rsquo;ve been working on resolving issues in a production system which runs on &lt;a title=&#34;What is ASP.NET MVC&#34; href=&#34;http://www.asp.net/mvc/whatisaspmvc&#34;&gt;ASP.NET MVC 2&lt;/a&gt;. Most of the issues were actually really easy to resolve and the team of developers were able to fix them and deploy to production without too many problems.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, as always, there was one problem in particular that had us scratching our heads and was causing some of us to lose sleep. All over the Internet there were posts of people describing similar symptoms yet none of them revealed a solid answer.&lt;/p&gt;
+
+&lt;p&gt;The purpose of this post is to document the issue and the resolution in it&amp;rsquo;s entirety. It&amp;rsquo;s in story form rather than reference form because that&amp;rsquo;s how I felt like writing it :)&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Vote with your Wallet - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/vote-with-your-wallet/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Vote with your Wallet </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Wed Dec 5, 2007</span>
+
+	  <p>In a <a href="/posts/living-in-australia-has-a-downside/" title="Living in Australia has a Downside">previous post</a> I had a bit of a combined whinge about MS downloads and bandwidth limits in Australia. Today I read a <a href="http://www.smh.com.au/news/technology/phone-and-broadband-bills-to-rise/posts/1196530678984.html" title="Phone and broadband bills to rise">new article at SMH</a> that made me even more angry.</p>
+
+<p>For those who don&rsquo;t know, Australia&rsquo;s broadband/phone network is predominantly owned and controlled by <a href="http://www.telstra.com/" title="Telstra">Telstra</a>. In short, this company is largely responsible for the issues. Not only do they charge insane amounts for their shitty service, they&rsquo;re going to be charging more down the track. The cost of phone line rental is extremely high. Their Internet plans are a joke. The service network is terrible, and just don&rsquo;t even think about getting support over the phone from someone who know&rsquo;s what they&rsquo;re doing.</p>
+
+<p>When I first started looking for a broadband provider back in 2003, I decided to avoid Telstra because their plans didn&rsquo;t seem to be as competitive as others. Instead, I decided to go with a company that I am actually using now (<a href="http://www.internode.on.net/" title="Internode">Internode</a>). The process of signing up looked to be fairly simple, so I filled in the online form and away we went.</p>
+
+<p>About 2 days later I was informed by Internode that they weren&rsquo;t able to provision a connection on my phone line for some wierd reason. They told me that the issue is with Telstra, because they own the line, and that I should give them a call to find out what the problem is.</p>
+
+<p>Upon calling Telstra I was told that they weren&rsquo;t able to help me. They said that they had a reason for rejecting the connection request, but they would consider looking into the problem if, and only if, I signed up with <em>them</em> and not Internode.</p>
+
+<p>I was stunned! In no so many words, the lady on the other end of the phone had basically said that if I sign up with Telstra I&rsquo;d get a connection, but I&rsquo;d be rejected if I went through Internode. I decided to stick with dial-up rather than give them my cash.</p>
+
+<p>Thankfully things have now changed, and I no longer live in a spot where there are issues on the line. But that at least gives you an idea of what Telstra is like to deal with. From what I&rsquo;ve heard, these days they&rsquo;re even worse.</p>
+
+<p>The idea of them winning the tender to sort out the Internet infrastructure in this country just gives me the shivers. I mean, they say it themselves:<blockquote><p>Just this week Telstra&rsquo;s public policy chief, Phil Burgess, admitted the company&rsquo;s strategy was to become a &ldquo;premium provider charging premium prices&rdquo;.</p></blockquote>That&rsquo;s straight from the horses mouth! If that&rsquo;s not enough evidence, check this out:<blockquote><p>Telstra will not want to reduce margins because it has promised shareholders it will increase the company&rsquo;s overall pre-tax profit margins from 42 per cent to between 46 and 48 per cent by 2010.</p></blockquote>Are they thinking about the consumer? Hell no. It&rsquo;s all about bleeding you dry.</p>
+
+<p>Something needs to be done. I&rsquo;m voting with my wallet, and telling Telstra to go f**k themselves by signing up with a competitor. You can do the same. Right now I&rsquo;m looking for ways to completely remove myself from any of Telstra&rsquo;s services and I know I&rsquo;ll feel better for doing it.</p>
+
+<p>I think you will too :)</p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/networks">Networks</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/technology">Technology</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

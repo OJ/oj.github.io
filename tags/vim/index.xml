@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vim on OJ&#39;s Perspective</title>
+    <link>/tags/vim/</link>
+    <description>Recent content in vim on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Mon, 04 Jan 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Katacast: Shopping Checkout in Erlang</title>
+      <link>/posts/katacast-shopping-checkout-in-erlang/</link>
+      <pubDate>Mon, 04 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/katacast-shopping-checkout-in-erlang/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve recently discovered the joys of &lt;a href=&#34;http://codekata.pragprog.com/&#34; title=&#34;CodeKata&#34;&gt;CodeKatas&lt;/a&gt;. If you&amp;rsquo;re a geek looking for a way to &lt;a href=&#34;http://en.wikipedia.org/wiki/The_Seven_Habits_of_Highly_Effective_People&#34; title=&#34;The Seven Habits of Highly Effective People&#34;&gt;sharpen the saw&lt;/a&gt; then I highly recommend taking a look at these and trying a few out. They&amp;rsquo;re great fun and they&amp;rsquo;re a good way of getting your feet wet with new languages (especially if you&amp;rsquo;re tired of &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;).&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogging on OJ&#39;s Perspective</title>
+    <link>/categories/blogging/</link>
+    <description>Recent content in Blogging on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Wed, 14 Jan 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/blogging/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Assembly Signing Article Translated into Italian</title>
+      <link>/posts/assembly-signing-article-translated-into-italian/</link>
+      <pubDate>Wed, 14 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/assembly-signing-article-translated-into-italian/</guid>
+      <description>You may remember a little while ago I wrote a post on signing assemblies that you don&amp;rsquo;t have the source code to. It got a bit of attention and was reproduced in full on dzone&amp;rsquo;s dotnet site. That was pretty exciting.
+This, however, I find more exciting. This article has now been translated into Italian! This is the first time an article of mine has been reproduced in another language, which I think is just fantastic.</description>
+    </item>
+    
+    <item>
+      <title>The Sales Pipeline</title>
+      <link>/posts/the-sales-pipeline/</link>
+      <pubDate>Tue, 13 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-sales-pipeline/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s a brief list of what&amp;rsquo;s coming down the pipe on this blog in the coming weeks. I thought I&amp;rsquo;d post this info as I&amp;rsquo;ve had a few people ask what&amp;rsquo;s up next and I&amp;rsquo;m tired of telling the same story over and over :) So here it is!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Stop Cutting your Feeds Short</title>
+      <link>/posts/stop-cutting-your-feeds-short/</link>
+      <pubDate>Thu, 07 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/stop-cutting-your-feeds-short/</guid>
+      <description>&lt;p&gt;Despite the fact the Internet is accessible from nearly everywhere, there are still times when you are forced to work in a disconnected environment. There are also times where you &lt;em&gt;want&lt;/em&gt; to work in a disconnected environment (probably to avoid distractions from &lt;a href=&#34;http://en.wikipedia.org/wiki/Instant_messaging&#34; title=&#34;Instant Messaging&#34;&gt;IM&lt;/a&gt;, &lt;a href=&#34;http://twitter.com/&#34; title=&#34;Twitter&#34;&gt;Twitter&lt;/a&gt;, etc).&lt;/p&gt;
+
+&lt;p&gt;So why is it that we still don&amp;rsquo;t seem to do a good job of catering for these cases? Offline capabilities are currently few and far between. Sure, it can be hard to add offline functionality to an application, depending on what the application does, but sometimes there&amp;rsquo;s really no excuse.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Things that Suck about Blogs</title>
+      <link>/posts/things-that-suck-about-blogs/</link>
+      <pubDate>Sun, 29 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/things-that-suck-about-blogs/</guid>
+      <description>&lt;p&gt;Why is it that people are still doing stupid things on their blogs? Blogging isn&amp;rsquo;t exactly a &amp;ldquo;new&amp;rdquo; thing any more. The things that you can do wrong to annoy your readers have been blogged over and over again, yet still the mistakes are being made.&lt;/p&gt;
+
+&lt;p&gt;I feel the need to rant :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Content Duplication</title>
+      <link>/posts/content-duplication/</link>
+      <pubDate>Tue, 26 Jun 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/content-duplication/</guid>
+      <description>&lt;p&gt;While browsing an unusually large collection of RSS articles this morning I stumbled across &lt;a href=&#34;http://www.howtogeek.com/howto/microsoft-office/keyboard-ninja-insert-tables-in-word-2007/&#34; title=&#34;Keyboard Ninja: Insert Tables in Word 2007 :: the How-To Geek&#34;&gt;this little doozy&lt;/a&gt; from the &lt;a href=&#34;http://www.howtogeek.com/&#34; title=&#34;HowToGeek&#34;&gt;HowToGeek&lt;/a&gt;. Being a fan of keyboard shortcuts universally I immediately thought it was cool and tried it out in my copy of Office &amp;lsquo;07. It worked. Sweet!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Read the Rest of this Article</title>
+      <link>/posts/read-the-rest-of-this-article/</link>
+      <pubDate>Sat, 23 Jun 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/read-the-rest-of-this-article/</guid>
+      <description>Some of you noticed that I&amp;rsquo;d &amp;ldquo;messed&amp;rdquo; up the RSS feed for the site yesterday afternoon while mucking around with settings. In fact, I hadn&amp;rsquo;t messed things up at all. I&amp;rsquo;m currently torn between giving full content over RSS and wanting to get exact stats on how many people are reading the things that I write.
+If I provide the full article through RSS, then the site doesn&amp;rsquo;t get hit and I don&amp;rsquo;t know if the article is being read.</description>
+    </item>
+    
+    <item>
+      <title>Lacking Focus? Give DarkRoom a Spin!</title>
+      <link>/posts/lacking-focus-give-darkroom-a-spin/</link>
+      <pubDate>Wed, 23 May 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/lacking-focus-give-darkroom-a-spin/</guid>
+      <description>&lt;p&gt;My eternal quest for maximising productivity has recently lead me in the direction of an interesting new application called &lt;a href=&#34;http://they.misled.us/dark-room&#34; title=&#34;DarkRoom&#34;&gt;DarkRoom&lt;/a&gt;. Some of you may have heard of this before, and will consider it &amp;lsquo;old news&amp;rsquo;, but I&amp;rsquo;m sure there are some readers out there who wouldn&amp;rsquo;t have heard of it and I feel it&amp;rsquo;s worth pointing out.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;/uploads/2007/05/darkroom.png&#34; title=&#34;DarkRoom&#34; rel=&#34;lightbox&#34;&gt;&lt;img src=&#34;/uploads/2007/05/darkroom_thumb.png&#34; alt=&#34;DarkRoom&#34; class=&#34;InlineImageRight&#34; /&gt;&lt;/a&gt;In short, DarkRoom is designed to do one thing; and that&amp;rsquo;s &lt;strong&gt;minimise distractions&lt;/strong&gt;. It&amp;rsquo;s a simple text-editor which takes up your entire screen, covering everything incuding the toolbar and system tray, and leaves you with nothing but a blinking cursor. When you first fire it up you&amp;rsquo;ll find that it closely resembles Keanu Reeves&amp;rsquo; computer screen at the start of &lt;a href=&#34;http://whatisthematrix.warnerbros.com/&#34; title=&#34;The Matrix&#34;&gt;The Matrix&lt;/a&gt;, and you might find yourself waiting for the message: &lt;em&gt;Wake up Neo.&lt;/em&gt; When you see the colour-scheme you&amp;rsquo;ll know exactly what I mean (check out the screenshot).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rotating Banner Pictures</title>
+      <link>/posts/rotating-banner-pictures/</link>
+      <pubDate>Fri, 02 Feb 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/rotating-banner-pictures/</guid>
+      <description>Time for another little poll :) This new skin that I&amp;rsquo;ve got going has a funky feature which not only randomises the picture at the top of the page, but allows you to have a selection of random pictures that get rotated after a period of time. At the moment, it&amp;rsquo;s set to 3 images which rotate after 15 seconds of being visible and take 4 seconds to change between images.</description>
+    </item>
+    
+    <item>
+      <title>A New Look</title>
+      <link>/posts/a-new-look/</link>
+      <pubDate>Sun, 28 Jan 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/a-new-look/</guid>
+      <description>I was getting sick of the way the site was looking, so I changed it. I know I&amp;rsquo;ll end up changing it again because I&amp;rsquo;ll no doubt get sick of looking at the site layout as well, but for now I&amp;rsquo;m quite happy with it. It&amp;rsquo;s a hacked version of a theme that I thought was nice, but I felt it needed some modifications. I&amp;rsquo;m not 100% finished yet, as I think the top of the page just looks bare.</description>
+    </item>
+    
+    <item>
+      <title>Multi-Page Posts</title>
+      <link>/posts/multi-page-posts/</link>
+      <pubDate>Tue, 16 Jan 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/multi-page-posts/</guid>
+      <description>As you no doubt have guessed, I can be a little verbose from time to time as I&amp;rsquo;m ranting away ;) So I pondered the possibility of breaking up my posts across multiple pages. I installed a plugin that allows me to break the single post up into a series of pages, and I was on the verge of using it for the first time a couple of posts ago when I thought it might not be a good idea.</description>
+    </item>
+    
+    <item>
+      <title>Notable</title>
+      <link>/posts/notable/</link>
+      <pubDate>Mon, 15 Jan 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/notable/</guid>
+      <description>I&amp;rsquo;ve had a few questions from people asking me why there&amp;rsquo;s a stack of queer looking icons appearing at the bottom of the blog posts, so I thought I&amp;rsquo;d post the details so that everyone knows.
+The icons appear because of a plugin I recently installed called Notable. Notable is a plugin that generates links that allow for easy addition of links to various social bookmarking and networking sites. Here&amp;rsquo;s a bit of a snippet from the web page:Notable displays a series of icons below each post allowing your readers to easily submit you to many different social bookmarking and networking sites.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fsharp on OJ&#39;s Perspective</title>
+    <link>/tags/fsharp/</link>
+    <description>Recent content in fsharp on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Thu, 24 Jul 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/fsharp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Validating use of Parenthesis</title>
+      <link>/posts/validating-use-of-parenthesis/</link>
+      <pubDate>Thu, 24 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/validating-use-of-parenthesis/</guid>
+      <description>&lt;p&gt;Yet another &lt;a href=&#34;http://www.dev102.com/posts/a-programming-job-interview-challenge-13-brackets/&#34; title=&#34;Programming Challenge&#34;&gt;programming challenge appeared on dev102&lt;/a&gt; the other day, and I thought that this time I&amp;rsquo;d post my solution here in the blog rather than letting it get lost in the depths of the comment thread!&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

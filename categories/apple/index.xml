@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apple on OJ&#39;s Perspective</title>
+    <link>/categories/apple/</link>
+    <description>Recent content in Apple on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Wed, 25 Oct 2006 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/apple/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DVD Cracker Nails Apple&#39;s iPod Code</title>
+      <link>/posts/dvd-cracker-nails-apples-ipod-code/</link>
+      <pubDate>Wed, 25 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/dvd-cracker-nails-apples-ipod-code/</guid>
+      <description>You gotta hand it to this guy, he says that he &amp;ldquo;doesn&amp;rsquo;t like closed systems&amp;rdquo;, which is pretty darned obvious :) The man, Jon Lech Johansen, who years ago cracked the DVD encryption known as CSS, and released (with two other unknowns) the software that could be used to decrypt DVDs (called DeCSS), has taken his code-breaking career to a new level - he&amp;rsquo;s nailed Apple iPod&amp;rsquo;s ecosystem (or so he claims) by breaking their FairPlay DRM software.</description>
+    </item>
+    
+    <item>
+      <title>What About Going the Other Way?</title>
+      <link>/posts/what-about-going-the-other-way/</link>
+      <pubDate>Thu, 19 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/what-about-going-the-other-way/</guid>
+      <description>I just thought I&amp;rsquo;d add this last post as a bit of food for thought before signing off today. This link comes from a bloke who&amp;rsquo;s been through the pain of wanting to move away from Windows, only to find that the results were just as, if not more, painful than sticking to what he knew. Have a read of this blog entry to see that the grass isn&amp;rsquo;t necessarily greener.</description>
+    </item>
+    
+    <item>
+      <title>Virtual Vista Stuff-Up</title>
+      <link>/posts/virtual-vista-stuff-up/</link>
+      <pubDate>Tue, 17 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/virtual-vista-stuff-up/</guid>
+      <description>OK, so it looks like I might have been misinformed (er&amp;hellip; wrong :)) by stating that the basic versions of Vista can&amp;rsquo;t be installed on VMs. That&amp;rsquo;ll teach me not to read the licencing details properly myself! It looks like it was a slight misunderstanding of the terms and structure that MS used in stating the rules. I won&amp;rsquo;t go into the details myself since Ed Bott has already done it for me.</description>
+    </item>
+    
+  </channel>
+</rss>

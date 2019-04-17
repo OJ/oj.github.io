@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Yarr me hearties! - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/yarr-me-hearties/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Yarr me hearties! </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Fri Sep 22, 2006</span>
+
+	  <p>In light of the recent <a href="http://www.yarr.org.uk/" title="Talk Like A Pirate">International Talk Like a Pirate Day</a>, I thought I&rsquo;d have a quick rant about piracy. This is a bit of a touchy subject and I&rsquo;m sure that everyone&rsquo;s got their opinion, but I think that there are (or at least <em>were</em> a few years back) both good and bad sides to piracy.</p>
+
+<p>First we should become clear on the types of piracy we&rsquo;re talking about so there&rsquo;s no confusion. First, there&rsquo;s piracy of content such as music and movies, and second there&rsquo;s piracy of software such as games, development tools and desktop applications. I&rsquo;ll briefly touch on the former, and cover the latter in a bit more detail (since this is more my realm). Yes, I&rsquo;m aware the software such as games can come under the <em>content</em> banner, but for the sake of this discussion I&rsquo;m going to keep them separate.</p>
+
+<p><strong><u>Content Piracy</u></strong></p>
+
+<p>I&rsquo;ll start with a generalisation :) I do not agree with content piracy. I think that artists and content creators such as actors deserve to get covered for the efforts they have made to produce the items that we use for our personal entertainment. I can only imagine how hard it would be to produce an album or a movie, and I take my hat off to those people who do it.</p>
+
+<p>I&rsquo;m a big fan of music. I have a collection that&rsquo;s not huge by most people&rsquo;s standards, but I do love listening to a good album (as I&rsquo;m sure we all do). I am not going to deny that at some points in my life I have listened to music that I didn&rsquo;t pay for, but those times have long since passed.</p>
+
+<p>I do understand that some people find it hard to justify spending a certain amount of cash on an album when they can&rsquo;t be sure that they&rsquo;re going to like the content. For the most part, listening to the album in full isn&rsquo;t always an option before purchasing, and listeners may only be contemplating buying an album because there&rsquo;s one song on there that they like.</p>
+
+<p>There are a few solutions to the problem. The first is to buy only the songs that you like from an online store for a buck a pop. I personally don&rsquo;t like this option as the quality of these files is ridiculously low (<em>cough</em> <strong>Sony&rsquo;s Connect</strong> <em>cough</em>), and getting a satisfactory audial stimulation from such files is a tough task. Another option is to buy the single, but that&rsquo;s not always possible either because the artists may not release a particular song as a single. The last is to bite the bullet and just fork out for the lot and hope that you end up liking more than a single song.</p>
+
+<p>Some people may liken this to the risk you take when you go out for a meals somewhere and pay money for someone to produce culinary delights that you hope will make your senses dance. I partly agree, but I still do hesitate when looking at albums when I can&rsquo;t be sure that I&rsquo;m going to like at least half of the tunes. The last time I did this I was lucky. I bought <a href="http://www.amazon.com/XY-Coldplay/dp/B0006L16N8" title="X&amp;Y">ColdPlay&rsquo;s X&amp;Y</a> which remains one of my favourite albums of all time.</p>
+
+<p>So in summary, when it comes to this kind of content, I think that we should definitely pay for the work that&rsquo;s been done, but I think there needs to be more options for people to sample their potential purchases before forking out the cash - especially those people who don&rsquo;t have access to the Internet where they might find samples available for download.</p>
+
+<p><strong><u>Software Piracy</u></strong></p>
+
+<p>I think one of the best examples of a software package that just doesn&rsquo;t get paid for enough is <a href="http://www.rarsoft.com/" title="WinRAR">WinRAR</a>. WinRAR is an awesome application that can handle almost any type of compressed file with ease. Not only does it do the job, it does it <em>well</em>. It&rsquo;s fast, it&rsquo;s easy to use, and I find that I would use it multiple times per day just to go about my daily computer life. There are a fair few applications that attempt to what WinRAR does, but I can&rsquo;t think of another one (at least on the Windows platform) that does it so well. For an application of such immense use, you&rsquo;d think that most people wouldn&rsquo;t think twice about buying it - especially considering it&rsquo;s only <em>USD $29</em> for a single license! It even gets cheaper when you buy in bulk!</p>
+
+<p>Nope. I can tell you from personal experience that this software is used <em>heavily</em> by people all over the world and very few of those people have actually purchased a license. Some people grab pirated serial numbers off the web, or they just deal with the constant nagging screen that says &ldquo;WinRAR isn&rsquo;t free, please buy it if you want to continue using it&rdquo;. I can&rsquo;t understand how people struggle to pay such a nominal fee to legitimately use a piece of software such as this. If they can afford to use the web regularly and they can afford a PC which can access the web, then I&rsquo;m sure they can scrape another few bucks together over a relatively short period of time to allow them to pay for it.</p>
+
+<p>There are quite a few examples this, but I won&rsquo;t be going through them all. So now I&rsquo;d like to talk about where I think piracy might in some ways have a positive effect on the developer. To me, the best examples of this are in the areas of development and creation of other content/software in itself. <a href="http://msdn.microsoft.com/vstudio/" title="Visual Studio">Visual Studio</a>, <a href="http://www.autodesk.com/3dsmax/" title="3D Studio Max">3DS Max</a> and <a href="http://www.adobe.com/products/photoshop/" title="Adobe Photoshop">Adobe Photoshop</a> are three classics. Please bear in mind that I&rsquo;m using these examples because a few years ago it wasn&rsquo;t possible to get learning or &lsquo;free&rsquo; licences of most of these apps.</p>
+
+<p>I started to learn to write software at a young age (whether this is a good or a bad thing remains to be seen :)). Back then I used GWBasic and QBasic as they came for free with my licensed copies of MSDOS, so I didn&rsquo;t have to worry about buying the compilers. When I moved on to the C language I think I used <a href="http://www.htsoft.com/products/PACIFICc.php" title="Pacific C">Pacific C</a>, but I can&rsquo;t be sure.</p>
+
+<p>Through the geek circles at school I soon learned about some upcoming languages such as Visual Basic, and funky development applications like Visual Studio. Were there free versions of them available? No. As a budding software geek, all I wanted to do was learn how to use these tools, but I wasn&rsquo;t able to because I just couldn&rsquo;t justify the cost of the licences.</p>
+
+<p>This brings me to the point: I think that in cases like this, piracy can be a good thing. There are no doubt thousands of people all over the world who are current <em>licensed</em> users of Visual Studio that actually learned the ropes of the application via the use of a pirated copy. What was the result of the piracy? Quite a few more users of the software who, when they could afford it, bought it to use in their professional lives, and in the process they become advocates of the software, and they put it and it&rsquo;s supporting platforms out to more and more customers.</p>
+
+<p>I believe that most of the people who have mastered 3DS Max would have learned the ways using a bootlegged copy before they had the skills which allowed them earn enough cash in the field to buy a license. Photoshop might be a slightly different kettle of fish but I think the same principle applies.</p>
+
+<p>Unfortunately I think there are quite a few cases where people grab pirated copies of such software because it&rsquo;s the &ldquo;best product on the market in that field&rdquo; and they just have to have a copy for themselves rather than using it for learning purposes.</p>
+
+<p>Thankfully these days things are very different. There&rsquo;s free versions of the Microsoft utilities (such as <a href="http://msdn.microsoft.com/vstudio/express/visualc/" title="Visual C++ Express">Visual C++ Express Edition</a>), there&rsquo;s a special edition of 3DS Max called <a href="http://www.autodesk.com/gmax/" title="gmax">gmax</a> which is a cut down version of the full 3DS Max package which allows you to create content for various game titles while allowing you to learn the basic principles of 3D modelling using a Max-like package. I&rsquo;m not sure about Photoshop, but I wouldn&rsquo;t be surprised if there was some form of free version which allowed people to become familiar with it.</p>
+
+<p>So to sum up, I think that there are cases where piracy can allow people to learn software which will allow them to pay for, use and promote that software in the future. There&rsquo;s less of a need these days as most software (and games) are available as a demo or time-limited preview. There are cut down editions which are available for free, and each of these options normally covers more than enough functionality for a standard user.</p>
+
+<p>The one thing I&rsquo;ve mentioned briefly already is pirating for the sake of pirating. There are stacks of people around who download Photoshop even though they don&rsquo;t need it, or won&rsquo;t use most of its features. There are people who grab movies and songs purely because they&rsquo;ve heard from other people that they&rsquo;re good, but they don&rsquo;t end up listening to or watching them. This makes no sense to me at all, and I think it&rsquo;s just plain wrong.</p>
+
+<p>The last thing I want to talk about is how people just for some reason to continue pirating despite the fact that they really don&rsquo;t need to due to the alternatives that are available. It&rsquo;s probably because the alternatives don&rsquo;t market themselves well (if at all) and noone really knows about them.</p>
+
+<p>The question I ask to a Photoshop pirate is: Why not use <a href="http://www.getpaint.net/" title="Paint.NET">Paint.NET</a>? The question I ask to an MS Office pirate is: Why not use <a href="http://www.openoffice.org/" title="OpenOffice">OpenOffice</a>? The question I ask to an UltraEdit priate is: Why not use <a href="http://www.vim.org/" title="VIM">VIM</a> (ok, maybe I&rsquo;m pushing it a bit there :)).</p>
+
+<p>You get the point. There&rsquo;s so little need to pirate software these days considering there is such a massive selection of alternatives to choose from. Arguably, <a href="/posts/office-registration-and-activation/" title="Office Activation and Registration">you&rsquo;re better off using the free and open source applications anyway</a>!</p>
+
+<p>Disclaimer: I&rsquo;m not a pirate, and I don&rsquo;t advocate piracy. I just wanted to explore the reasons for it, and the options the pirates don&rsquo;t seem to be aware of. If you use it, watch it, or listen to it - you should pay for it!</p>
+
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/freeware">Freeware</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/software">Software</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

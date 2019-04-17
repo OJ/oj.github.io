@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    bin2json CTF Challenge - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/bin2json-ctf-challenge/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> bin2json CTF Challenge </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Mon Nov 21, 2016</span>
+
+	  
+
+<p>At the beginning of this year I agreed to help a <a href="https://twitter.com/0x42424242">good friend</a> out and build a challenge for the <a href="http://www.bsidesau.com.au/">BSidesCbr</a> 2016 CTF. The aim was to:</p>
+
+<ul>
+<li>Create a fun binary pwnable.</li>
+<li>Avoid the typical exploitation paths (eg. stack/heap buffer overflows, format strings, etc).</li>
+<li>Include a couple of code related issues that are close to my heart.</li>
+<li>Design it so that multiple issues needed to be abused in order to gain code execution.</li>
+<li>Have it considered at least an &ldquo;intermediate&rdquo; level challenge.</li>
+</ul>
+
+<p>The result: <a href="/uploads/2016/11/bin2json-bin.tar.gz">bin2json</a>, a pwnable 64-bit Linux binary.</p>
+
+<p>I had another good mate, <a href="https://twitter.com/justinsteven">Justin Steven</a>, play-test the binary for me to make sure it was reasonable, usable and pwnable, and after ignoring all the feedback he gave me, I handed it over to <a href="https://twitter.com/0x42424242">Peleus</a>.</p>
+
+<p>Unfortunately, nobody managed to crack it during the BSides CTF. I didn&rsquo;t want to just throw it out to the masses immediately, and so I hit up the wonderful CTF crew at <a href="https://kiwicon.org/">Kiwicon</a>, headed up by <a href="https://twitter.com/hyprwired">Hyprwired</a>, and offered them to chance to include it in this year&rsquo;s Kiwicon CTF. They graciously accepted.</p>
+
+<p>The binary made it through the second CTF un-pwned, though I do think that it was due to lack of sufficient time rather than difficulty. After two CTFs, it&rsquo;s time for <a href="/uploads/2016/11/bin2json-bin.tar.gz">bin2json</a> to retire. So, I am opening it up to the Internet (yes, that&rsquo;s you!) so that you can give it a crack. I&rsquo;d love to see people spend some time and nail it.</p>
+
+<p>For those who don&rsquo;t want to, or who don&rsquo;t yet feel that they&rsquo;re ready for it, you&rsquo;ll be pleased to know that <a href="https://twitter.com/justinsteven">Justin Steven</a> is going to be streaming the process of pwnage <a href="https://www.twitch.tv/thejustinsteven">live on his Twitch stream</a> on Wednesday 23rd November 2016, at 7:30pm AEST (GMT+10). I highly recommend viewing, he&rsquo;s an entertaining bugger and does a great job of explaining stuff. He&rsquo;s recently got himself a new mic, so his dulcet tones sound all the more saucy.</p>
+
+<p>I have decided, at this point, to not release the <a href="/uploads/2016/11/bin2json-bin.tar.gz">bin2json</a> source. For now, you will just get:</p>
+
+<ul>
+<li>The binary.</li>
+<li>The readme.</li>
+<li>A sample script that shows how to interact with it.</li>
+</ul>
+
+<p>That&rsquo;s it. I may share the source later. The rest of this post contains the official readme for the challenge, so have at it!</p>
+
+<p>Peace.</p>
+
+<hr />
+
+<h1 id="the-scenario">The Scenario</h1>
+
+<p>Back in the days of <em>quality</em> Enterprise software, a company called Totes McPants Pty Ltd had a proprietary solution for tracking various entities within a business or team. This application, Simple Human Instance Tracker, was a market leader until it unfortunately went EOL in 1999.</p>
+
+<p>Stalwart users refused to give up on it. Instead of moving over to a more appropriate solution, they continued using that which was defunct, and over a very long period of time managed to accumulate more data than they ever though possible.</p>
+
+<p>In 2015, one of the application&rsquo;s long-term users and proponents of S.H.I.T. found themselves in a position where they needed to integrate with external RESTful services. Needless to say, there was no REST-compatible interface available and so one had to be built.</p>
+
+<p>This web-scale integration solution was built and deployed to great success, and has been made available as a service at <em>server:port</em>. It will happily translate S.H.I.T.&rsquo;s proprietary data format to (relatively) clean JSON for use externally.</p>
+
+<h1 id="the-format">The Format</h1>
+
+<p>S.H.I.T.&rsquo;s format is actually very simple, and the transition layer extends it slightly by providing a very simple command style interface. Once connected, the system waits for a binary blob to be sent which contains a number of actions. There are two actions:</p>
+
+<ul>
+<li><code>CREATE PERSON</code> (action value of <code>0</code>: This action is intended to create an instance of a person using the S.H.I.T. binary person format.</li>
+<li><code>PRINT</code> (action value of <code>1</code>): This action prints all the &ldquo;created&rdquo; people in a nice JSON format.</li>
+</ul>
+
+<p>Action values are a single-byte in length.</p>
+
+<h2 id="create-person">CREATE PERSON</h2>
+
+<p>There are 3 types of person available:</p>
+
+<ol>
+<li><code>ENGINEER</code> (type value of <code>1</code>) - This person type has a single value that represents how humourous the person is (as we all know, engineers have a great sense of humour). This value is an integer value 4 bytes in length. A sample byte sequence may look like:
+
+<ul>
+<li><code>[0x01][&quot;Uncle Bob&quot; (padded to 512 chars)][0xFF,0x00,0x00,0x00]</code></li>
+</ul></li>
+<li><code>HACKER</code> (type value of <code>0</code>) - This is an extension of the <code>ENGINEER</code> but has an extra field called <code>Handle</code> at the end which is <code>256</code> characters long.
+
+<ul>
+<li><code>[0x00][&quot;Rob Fuller&quot; (padded to 512 chars)][0xFF,0xAB,0x00,0x00][&quot;Mubix&quot; (padded to 256 chars)]</code></li>
+</ul></li>
+<li>MANAGER (type value of <code>2</code>) - This is a person with a single extra 4-byte integer value that represents how much of an asshole the manager is.
+
+<ul>
+<li><code>[0x02][&quot;Larry Ellison&quot; (padded to 512 chars)][0x7F,0xFF,0xFF,0xFF]</code></li>
+</ul></li>
+</ol>
+
+<p>To create a person, each of these byte streams must be prefixed with 2 other bytes that represent:</p>
+
+<ol>
+<li>The <code>CREATE PERSON</code> action (<code>0x00</code>).</li>
+<li>A flag that indicates whether the entry should be added to the head (<code>0x01</code>) or tail (<code>0x00</code>) of the internal list.</li>
+</ol>
+
+<p>Therefore to create a manager at the head of the list, the following byte stream is used:</p>
+
+<pre><code>[0x00][0x01][0x02][&quot;Larry Ellison&quot; (padded to 512 chars)][0x7F,0xFF,0xFF,0xFF]
+</code></pre>
+
+<p>And this constitutes a single <code>CREATE PERSON</code> action.</p>
+
+<h2 id="print">PRINT</h2>
+
+<p>Printing is very simple, it is a single byte action represented by the value <code>0x01</code>.</p>
+
+<h1 id="payloads">Payloads</h1>
+
+<p>Once connected to the integration service, the client sends a series of translation payloads. Each payload contains a 4-byte size header, followed by the payload length. Each payload comes in the form of an action. A typical payload looks like the following:</p>
+
+<pre><code>[4-byte length][[create person 0][create person 1]...[create person N][print]]
+</code></pre>
+
+<p>See the attached <code>sample.py</code> file which shows the application in action.</p>
+
+<h1 id="notes">Notes</h1>
+
+<p>The system assumes that every team and business has at least one Hacker. If no hacker is present in the list, printing won&rsquo;t do much!</p>
+
+<h1 id="goal">Goal</h1>
+
+<p>Shell the target, get the flag from the file system. ASLR is not enabled.</p>
+
+<hr />
+
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/livestream">LiveStream</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/security">Security</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/ctf">CTF</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

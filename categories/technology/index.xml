@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technology on OJ&#39;s Perspective</title>
+    <link>/categories/technology/</link>
+    <description>Recent content in Technology on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Sat, 22 May 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dave Thomas at YOW! Nights Brisbane</title>
+      <link>/posts/dave-thomas-at-yow-nights-brisbane/</link>
+      <pubDate>Sat, 22 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/dave-thomas-at-yow-nights-brisbane/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/uploads/2010/05/haskell-logo-variation.png&#34; alt=&#34;Haskell Logo&#34; title=&#34;Haskell Logo&#34; width=&#34;128&#34; height=&#34;128&#34; style=&#34;float:right;margin-left:5px;margin-bottom:5px&#34; /&gt;Two nights ago I was fortunate enough to attend a &lt;a href=&#34;http://yownightbrisbanemay.eventbrite.com/&#34; title=&#34;YOW! Nights Brisbane - May 20th&#34;&gt;YOW! Nights&lt;/a&gt; conference held at the local Microsoft Office here in Brisbane. The speaker for the session was none other than &lt;a href=&#34;http://www.davethomas.net/&#34; title=&#34;Dave Thomas&#34;&gt;Dave Thomas&lt;/a&gt;, the man behind the likes of &lt;a href=&#34;http://objectmentor.com/&#34; title=&#34;Object Mentor&#34;&gt;ObjectMentor&lt;/a&gt;. Not only is this guy incredibly switched on, he is thought-provoking and very entertaining to boot. I&amp;rsquo;ve been to a few of these sessions in the past but I&amp;rsquo;ve never seen one as packed out as this one. It was great to see such a turn-out, which no doubt was boosted by the presence of both the &lt;a href=&#34;http://www.qmsdnug.org/&#34; title=&#34;QMSDNUG&#34;&gt;Queensland MSDN Users Group&lt;/a&gt; and the &lt;a href=&#34;http://bfpg.org/&#34; title=&#34;BFPG&#34;&gt;Brisbane Functional Programming Group&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Wrong Decision by the Wrong Person</title>
+      <link>/posts/the-wrong-decision-by-the-wrong-person/</link>
+      <pubDate>Thu, 28 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-wrong-decision-by-the-wrong-person/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2010/01/pizza.jpg&#34; title=&#34;The wrong tool.&#34; rel=&#34;lightbox&#34;&gt;&lt;img src=&#34;/uploads/2010/01/pizza.jpg&#34; alt=&#34;The wrong tool.&#34; title=&#34;The wrong tool.&#34; style=&#34;float:right; margin-left:5px; margin-bottom:5px;&#34;  width=&#34;150&#34;/&gt;&lt;/a&gt;There is one thing about my industry that I still find truly amazing (and not in a good way). This is despite the fact that it has happened to me so many times that you think I&amp;rsquo;d be used to it! I&amp;rsquo;m talking about non-technical people making technical decisions.&lt;/p&gt;
+
+&lt;p&gt;For some reason, it&amp;rsquo;s a very common practice for those people who don&amp;rsquo;t have expertise in a certain field to make decisions for people working in that field. The best example I can think of off the top of my head is the answer to the question: &lt;em&gt;&amp;ldquo;Which technology should we use?&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Let me take a step back in time for a moment.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>&#39;It&#39;s OK to Fail</title>
+      <link>/posts/its-ok-to-fail/</link>
+      <pubDate>Fri, 11 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/its-ok-to-fail/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2009/12/EpicFail02.jpg&#34; rel=&#34;lightbox[fail]&#34; title=&#34;Epic Fail&#34;&gt;&lt;img src=&#34;/uploads/2009/12/EpicFail02.jpg&#34; alt=&#34;Epic Fail&#34; width=&#34;160&#34; style=&#34;float:left;padding-bottom:5px;padding-right:5px;&#34; /&gt;&lt;/a&gt;&lt;em&gt;Yes. You read that right. It&amp;rsquo;s OK to fail. Yes, I am talking to you. You&amp;hellip; that guy who is part of every team. The one who seems to feel the need to be right about everything. The one who thinks that everything new has already been done 15 years prior. The one who believes that every project they have participated in has been a profound success, and that a project-level failure (which includes missing deadlines or blowing the budget) is something they have never experienced. Failure is not only OK, it&amp;rsquo;s something that you &lt;strong&gt;must&lt;/strong&gt; experience somewhere along the way so you know when you&amp;rsquo;ve succeeded.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Future is Erlang</title>
+      <link>/posts/the-future-is-erlang/</link>
+      <pubDate>Sat, 31 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-future-is-erlang/</guid>
+      <description>For quite a while I&amp;rsquo;ve been using my spare cycles to chew over a problem. This problem is not one that hasn&amp;rsquo;t been solved before, but one that I feel can be solved in a much better way. From the bit of research that I&amp;rsquo;ve done, I can see at least three areas which can be improved on dramatically. So I&amp;rsquo;ve decided, after a long period of deliberation, to go ahead and build my solution and release it to the world as a service!</description>
+    </item>
+    
+    <item>
+      <title>Now Running Nginx</title>
+      <link>/posts/now-running-nginx/</link>
+      <pubDate>Thu, 10 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/now-running-nginx/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2009/09/slow_snail.jpg&#34; rel=&#34;lightbox&#34;&gt;&lt;img src=&#34;/uploads/2009/09/slow_snail.jpg&#34; alt=&#34;clarkson_face&#34; title=&#34;clarkson_face&#34; width=&#34;150&#34; style=&#34;float: right; margin-bottom: 5px; margin-left: 5px;&#34; /&gt;&lt;/a&gt;For the last couple of years, the server which has powered this site (and a few other sites) has been running the free version of &lt;a href=&#34;http://litespeedtech.com/&#34; title=&#34;Litespeed&#34;&gt;Litespeed&lt;/a&gt; web server. After feeling the resource burden of &lt;a href=&#34;http://httpd.apache.org/&#34; title=&#34;Apache Httpd&#34;&gt;Apache&lt;/a&gt;, Litespeed was a breath of fresh air! The fact that the &amp;ldquo;full&amp;rdquo; version wasn&amp;rsquo;t free didn&amp;rsquo;t bother me, I was happy to stick with the standard edition as it seemed more than capable of handling the meagre traffic that this site generates.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Value of a Technical Community</title>
+      <link>/posts/the-value-of-a-technical-community/</link>
+      <pubDate>Wed, 29 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-value-of-a-technical-community/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2009/07/community.jpg&#34; rel=&#34;lightbox&#34; title=&#34;Cricket Team Holding Hands --- Image by  Royalty-Free/Corbis&#34;&gt;&lt;img src=&#34;/uploads/2009/07/community.jpg&#34; alt=&#34;Cricket Team Holding Hands --- Image by  Royalty-Free/Corbis&#34; title=&#34;Cricket Team Holding Hands --- Image by  Royalty-Free/Corbis&#34; width=&#34;150&#34; style=&#34;float: left; margin-right: 5px; margin-bottom: 5px;&#34; /&gt;&lt;/a&gt;This post was inspired by an experience I had recently in an IRC channel. To protect the innocent, I&amp;rsquo;ll refrain from naming and shaming the channel and individual as those details aren&amp;rsquo;t important.&lt;/p&gt;
+
+&lt;p&gt;Communities are arguably the life blood of technology. Without a good community the likelihood of the technology catching on is drastically reduced. Those communities which lack individuals that are happy to put time and effort in to help get others up to speed tend to stagnate. Any community which involves members that are abrasive, rude and downright offensive is destined to suffer long term.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Assembly Signing Article Translated into Italian</title>
+      <link>/posts/assembly-signing-article-translated-into-italian/</link>
+      <pubDate>Wed, 14 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/assembly-signing-article-translated-into-italian/</guid>
+      <description>You may remember a little while ago I wrote a post on signing assemblies that you don&amp;rsquo;t have the source code to. It got a bit of attention and was reproduced in full on dzone&amp;rsquo;s dotnet site. That was pretty exciting.
+This, however, I find more exciting. This article has now been translated into Italian! This is the first time an article of mine has been reproduced in another language, which I think is just fantastic.</description>
+    </item>
+    
+    <item>
+      <title>The Sales Pipeline</title>
+      <link>/posts/the-sales-pipeline/</link>
+      <pubDate>Tue, 13 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-sales-pipeline/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s a brief list of what&amp;rsquo;s coming down the pipe on this blog in the coming weeks. I thought I&amp;rsquo;d post this info as I&amp;rsquo;ve had a few people ask what&amp;rsquo;s up next and I&amp;rsquo;m tired of telling the same story over and over :) So here it is!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OpenDNS is Wicked</title>
+      <link>/posts/opendns-is-wicked/</link>
+      <pubDate>Mon, 18 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/opendns-is-wicked/</guid>
+      <description>&lt;p&gt;&lt;a title=&#34;Use OpenDNS to make your Internet faster, safer, and smarter.&#34; href=&#34;http://www.opendns.com/share/&#34;&gt;&lt;img src=&#34;http://images.opendns.com/buttons/use_opendns_155x52.gif&#34; width=&#34;155&#34; height=&#34;52&#34; style=&#34;border:0; float:right; margin-left:5px;margin-bottom;5px&#34; alt=&#34;Use OpenDNS&#34; /&gt;&lt;/a&gt;Over the last couple of weeks the DNS timeouts and lags I&amp;rsquo;ve been experiencing at home have made the web experience a little dire. My &lt;a href=&#34;http://internode.on.net/&#34; title=&#34;Internode&#34;&gt;ISP&lt;/a&gt; is actually pretty darned good, but for some reason they seem to have glitches with their DNS servers every now and then.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Epic Fail - Cuil Search Engine</title>
+      <link>/posts/epic-fail-cuil-search-engine/</link>
+      <pubDate>Tue, 29 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/epic-fail-cuil-search-engine/</guid>
+      <description>Don&amp;rsquo;t believe the hype. [caption id=&amp;ldquo;attachment_436&amp;rdquo; align=&amp;ldquo;aligncenter&amp;rdquo; width=&amp;ldquo;500&amp;rdquo; caption=&amp;ldquo;EPIC FAIL&amp;rdquo;][/caption]
+Mike G and Dare are dead right.</description>
+    </item>
+    
+    <item>
+      <title>I&#39;ve Caved-in to Twitter</title>
+      <link>/posts/ive-caved-in-to-twitter/</link>
+      <pubDate>Thu, 19 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ive-caved-in-to-twitter/</guid>
+      <description>I was against the idea for ages, but for some reason I&amp;rsquo;ve decided to start using it. Twitter was one of those things that I didn&amp;rsquo;t see a need for. Now I can.
+I&amp;rsquo;ll be using it to keep track of ideas I have for blog posts as well as other things that I need to get done. If you feel like tracking me or joining me in a conversation, please feel free to add me to your follow list.</description>
+    </item>
+    
+    <item>
+      <title>Get with the Times - Use a Feed Reader</title>
+      <link>/posts/get-with-the-times-use-a-feed-reader/</link>
+      <pubDate>Mon, 21 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/get-with-the-times-use-a-feed-reader/</guid>
+      <description>&lt;p&gt;Regular readers of &lt;a href=&#34;http://www.dilbert.com/&#34; title=&#34;Dilbert&#34;&gt;Dilbert&lt;/a&gt; are currently &lt;a href=&#34;http://entertainment.slashdot.org/article.pl?sid=08/04/19/1842208&amp;from=rss&#34; title=&#34;Slashdot | Dilbert Goes Flash, Readers Revolt&#34;&gt;kicking and screaming&lt;/a&gt; about the site&amp;rsquo;s new &lt;a href=&#34;http://www.adobe.com/products/flash/&#34; title=&#34;Adobe Flash&#34;&gt;Flash&lt;/a&gt;-based design. Personally I don&amp;rsquo;t mind it, but at the end of the day it matters not.&lt;/p&gt;
+
+&lt;p&gt;Why?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Current Geek Interests</title>
+      <link>/posts/current-geek-interests/</link>
+      <pubDate>Mon, 17 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/current-geek-interests/</guid>
+      <description>&lt;p&gt;As the weeks roll by I&amp;rsquo;m finding that I have less and less time to chase up anything geek-related. I&amp;rsquo;m sure I&amp;rsquo;m not alone ;) Responsibilities and life take over and that time which you &lt;em&gt;could&lt;/em&gt; invest is now invested in other things, such as &lt;a href=&#34;/posts/my-boy/&#34; title=&#34;My Boy&#34;&gt;children&lt;/a&gt; :)&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m dedicating this post to all those things that I currently find interesting and would love to invest time in. Some of these things are old, some new. All of them I&amp;rsquo;ve either not touched on at all, or have touched on only briefly (not enough to be satisfied). I thought I&amp;rsquo;d share them with you in case you find them interesting yourself, or perhaps have some insights which you&amp;rsquo;d like to share.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A Google App that Sucks</title>
+      <link>/posts/a-google-app-that-sucks/</link>
+      <pubDate>Tue, 25 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/a-google-app-that-sucks/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://labs.google.com/&#34; title=&#34;Google Labs&#34;&gt;Google Labs&lt;/a&gt; has a history of releasing some pretty amazing bits of software. &lt;a href=&#34;http://earth.google.com/&#34; title=&#34;Google Earth&#34;&gt;Google Earth&lt;/a&gt;, &lt;a href=&#34;http://mail.google.com/&#34; title=&#34;Google Mail&#34;&gt;Google Mail&lt;/a&gt;, &lt;a href=&#34;http://reader.google.com/&#34; title=&#34;Google Reader&#34;&gt;Google Reader&lt;/a&gt;, &lt;a href=&#34;http://analytics.google.com/&#34; title=&#34;Google Analytics&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;http://maps.google.com/&#34; title=&#34;Google Maps&#34;&gt;Google Maps&lt;/a&gt; and &lt;a href=&#34;http://docs.google.com/&#34; title=&#34;Google Docs&#34;&gt;Google Docs&lt;/a&gt; are just a few of the graduates! It&amp;rsquo;s an impressive list to say the least. All of those applications do a fantastic job. I&amp;rsquo;m a huge fan of all of them and use them all regularly. So, Google, &lt;a href=&#34;http://en.wikipedia.org/wiki/WTF&#34;&gt;WTF&lt;/a&gt; happened to &lt;a href=&#34;http://talk.google.com/&#34; title=&#34;Google Talk&#34;&gt;Google Talk&lt;/a&gt;?!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vote with your Wallet</title>
+      <link>/posts/vote-with-your-wallet/</link>
+      <pubDate>Wed, 05 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/vote-with-your-wallet/</guid>
+      <description>&lt;p&gt;In a &lt;a href=&#34;/posts/living-in-australia-has-a-downside/&#34; title=&#34;Living in Australia has a Downside&#34;&gt;previous post&lt;/a&gt; I had a bit of a combined whinge about MS downloads and bandwidth limits in Australia. Today I read a &lt;a href=&#34;http://www.smh.com.au/news/technology/phone-and-broadband-bills-to-rise/posts/1196530678984.html&#34; title=&#34;Phone and broadband bills to rise&#34;&gt;new article at SMH&lt;/a&gt; that made me even more angry.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Living in Australia has a Downside</title>
+      <link>/posts/living-in-australia-has-a-downside/</link>
+      <pubDate>Wed, 21 Nov 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/living-in-australia-has-a-downside/</guid>
+      <description>&lt;p&gt;This may come as a surprise, but living in Australia &lt;em&gt;can&lt;/em&gt; have it downsides :) Right now I can only think of one, and that&amp;rsquo;s (part of) the reason for this post.&lt;/p&gt;
+
+&lt;p&gt;We may have constant sunshine, lovely beaches and a lifestyle to die for, but our broadband just &lt;strong&gt;sucks&lt;/strong&gt;. That&amp;rsquo;s a fairly sweeping statement, so let me clarify a little more.&lt;/p&gt;
+
+&lt;p&gt;Broadband plans in this country are &lt;em&gt;extremely&lt;/em&gt; poor value. The service that you receive for the amount you pay is substandard. It&amp;rsquo;s that simple. Those of you in places like the UK, USA and Hong Kong may find it obscure to consider that a country exists where you can&amp;rsquo;t get an unlimited data connection for DSL. You may also find it difficult to believe that some connection speeds are cut to that of a dial-up connection if you download too much. But that&amp;rsquo;s exactly what happens here.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Requisite Vista</title>
+      <link>/posts/requisite-vista/</link>
+      <pubDate>Mon, 29 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/requisite-vista/</guid>
+      <description>&lt;p&gt;When I started my new gig on the 15th of this month, I was handed a &lt;a href=&#34;http://www.toshibadirect.com/td/b2c/cmod.to?coid=-33778&#34; title=&#34;Toshiba Tecra M9&#34;&gt;new laptop&lt;/a&gt; to do all my work on. It&amp;rsquo;s a nifty little gadget with 3GB RAM! Very schmick. There was one catch..&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip; see, the company is migrating to &lt;a href=&#34;http://www.microsoft.com/windows/products/windowsvista/default.mspx&#34; title=&#34;Windows Vista&#34;&gt;Vista&lt;/a&gt;, which means I have to use it too. A while ago I &lt;a href=&#34;/posts/should-i-install-vista/&#34; title=&#34;Should I install Vista?&#34;&gt;posted my thoughts with regards to installing Vista&lt;/a&gt;, so as you can imagine it&amp;rsquo;s a little bit strange having to use it.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>I&#39;ll View What I Like!</title>
+      <link>/posts/ill-view-what-i-like/</link>
+      <pubDate>Sat, 18 Aug 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ill-view-what-i-like/</guid>
+      <description>&lt;p&gt;I have a few questions for you:
+&lt;ol&gt;&lt;li&gt;How would you feel if TV channels changed automatically because you weren&amp;rsquo;t paying attention to the ads?&lt;/li&gt;&lt;li&gt;Would you like it if your newspaper closed by itself because you were reading the articles but skipping over the classifieds?&lt;/li&gt;&lt;li&gt;How happy would you be if you were kicked out of a cinema for not watching the latest and greatest in &lt;a href=&#34;http://www.valmorgan.com.au/&#34; title=&#34;Val Morgan&#34;&gt;Val Morgan Cinema Advertising&lt;/a&gt;?&lt;/li&gt;&lt;li&gt;Would you be happy if you weren&amp;rsquo;t allowed to walk into a shop unless you HAD to buy something?&lt;/li&gt;&lt;/ol&gt;
+If you&amp;rsquo;re anything like me, you&amp;rsquo;d be pretty pissed off about it. The scary thing is that this kind of thing is already happening on the web.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Digg is Being Used Against Itself</title>
+      <link>/posts/digg-is-being-used-against-itself/</link>
+      <pubDate>Wed, 02 May 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/digg-is-being-used-against-itself/</guid>
+      <description>Over the last day or so, stacks of people have been hammering digg as a revolt against their recent actions. For those of you who don&amp;rsquo;t know, HD-DVD encryption was cracked recently and the master key which allows all movies to be ripped has been released across the web. Digg, in their infinite wisdom, decided to kill off the original blog post (and apparently banned one or two users? - unconfirmed), resulting in an avalanche of posts preaching &amp;ldquo;free speach&amp;rdquo; and &amp;ldquo;fuck you Digg&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Are Forums Dead?</title>
+      <link>/posts/are-forums-dead/</link>
+      <pubDate>Sun, 08 Apr 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/are-forums-dead/</guid>
+      <description>Just like many things in life, the Internet is full of fads and fashions. There have been stacks of them in the past, and no doubt there&amp;rsquo;ll be stacks more. At the moment, the current fads are Social Networking, Blogging and &amp;ldquo;Web 2.0&amp;rdquo;. A few years back, the Internet was completely bombarded with forums. They were everywhere, open for discussion about anything from software and development through to what people were doing on the weekend.</description>
+    </item>
+    
+    <item>
+      <title>BumpTop 3D Desktop Prototype</title>
+      <link>/posts/bumptop-3d-desktop-prototype/</link>
+      <pubDate>Sat, 31 Mar 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/bumptop-3d-desktop-prototype/</guid>
+      <description>I was sent an interesting link this morning by Simon that I think you guys will find quite interesting too (especially those of you with a passion for human/computer interaction cough Dan cough).
+Introducing the BumpTop 3D Desktop, a crazy new way of interacting with your machine and handling documents/files. Check out the following YouTube vid to see how it works:
+
+Pretty groovey hey! Of course, this looks like it was designed to work moreso with hand-held or tablet PCs (the &amp;ldquo;pressure&amp;rdquo; gestures are a bit of a give-away there), but it&amp;rsquo;d be cool to see something like this on a desktop machine.</description>
+    </item>
+    
+    <item>
+      <title>A Quiet Purchase</title>
+      <link>/posts/a-quiet-purchase/</link>
+      <pubDate>Tue, 06 Feb 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/a-quiet-purchase/</guid>
+      <description>Yesterday I bought something that I know I should have bought a long time ago. In fact, I should have bought it at the same time that I bought my video card. In case you didn&amp;rsquo;t know, the stock fan that comes with this video card is by far the noisiest ever. It&amp;rsquo;s the loudest in their line of video cards, and I think it might even be the loudest across all cards.</description>
+    </item>
+    
+    <item>
+      <title>Dual-Screen Development</title>
+      <link>/posts/dual-screen-development/</link>
+      <pubDate>Tue, 19 Dec 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/dual-screen-development/</guid>
+      <description>As it tends to be with many things in life, I just didn&amp;rsquo;t see the need for multiple monitors until I had the experience myself. Up until my time at the game dev studio in the U.K. (which will remain anonymous :)), I had no idea what it was like to work on a machine that had more than one monitor. Within a week, there was no going back!
+Those of you who use at least two monitors for day to day work will know what I&amp;rsquo;m going to say in this post - those of you who don&amp;rsquo;t (and in particular, never have done) should listen and listen good!</description>
+    </item>
+    
+    <item>
+      <title>A New Way to SMS?</title>
+      <link>/posts/a-new-way-to-sms/</link>
+      <pubDate>Wed, 15 Nov 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/a-new-way-to-sms/</guid>
+      <description>Some overseas boffins have come up with a new way of punching text into a mobile phone, though I&amp;rsquo;m not sure I like it. This YouTube video shows examples of how they propose to deal with the typing into a phone keypad in a QWERTY-like manner.
+I can&amp;rsquo;t see it catching on, and I really can&amp;rsquo;t see companies like Nokia adopting something like this either. I think it&amp;rsquo;d be a bit of a mind-job to learn, and not particularly intuitive as it almost requires you to know the QWERTY keyboard layout before you can type.</description>
+    </item>
+    
+    <item>
+      <title>EA&#39;s &#39;Steam&#39; Leaves a Bad Smell</title>
+      <link>/posts/eas-steam-leaves-a-bad-smell/</link>
+      <pubDate>Fri, 10 Nov 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/eas-steam-leaves-a-bad-smell/</guid>
+      <description>When Steam first hit the marketplace lots of people thought it wasn&amp;rsquo;t going to take off - and the bigger companies didn&amp;rsquo;t want it to. Over time it really gathered momentum. The bugs were being ironed out, the process was working well, and the subscriber count was going through the roof. As more time went by, some smaller indies signed up to use Steam to deliver their games - giving the small player a chance to get a great deal of exposure to their game at a pretty small cost and at the same time allowing it to be delivered onto desktops on demand.</description>
+    </item>
+    
+    <item>
+      <title>PCs for the Family</title>
+      <link>/posts/pcs-for-the-family/</link>
+      <pubDate>Thu, 09 Nov 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/pcs-for-the-family/</guid>
+      <description>I know for sure that many of the geeks out there on the World Wide Wibbly have the &amp;ldquo;fun&amp;rdquo; task of sorting out every possible computer issue for any/all of their family and friends in the cases where they&amp;rsquo;re not geeks themselves. I am one such geek, and I&amp;rsquo;ll be honest and say that I do not mind helping out. It&amp;rsquo;s actually a bit of fun! I starting pondering thoughts on this topic when I stumbled across Roy&amp;rsquo;s MomPC blog post a week or two ago.</description>
+    </item>
+    
+    <item>
+      <title>Crazy Glass CD</title>
+      <link>/posts/crazy-glass-cd/</link>
+      <pubDate>Fri, 03 Nov 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/crazy-glass-cd/</guid>
+      <description>Technology is pretty amazing. What makes it more amazing is that just when you think a particular idea has been taken to the nth degree and couldn&amp;rsquo;t go much further, another boffin comes along and shows that there is more that can be done!
+This glass CD is a prime example. CD/DVD technology is now run of the mill. HD DVD and Blu-Ray are currently battling it out for supremecy. Where do you think the secondary storage technology will end up?</description>
+    </item>
+    
+    <item>
+      <title>Cyberface</title>
+      <link>/posts/cyberface/</link>
+      <pubDate>Wed, 25 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/cyberface/</guid>
+      <description>I could have squeezed this into the gaming round up that I posted a few days back, but this deserves to be shown out on its own (besides, it&amp;rsquo;s not just game-specific). I stumbled accross this last week, and it blew me away. The article, called Cyberface: New Technology That Captures the Soul from the New York Times shows off some very funky software. Head over there and check it out, it&amp;rsquo;s awesome.</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Vista Licence Restrictions</title>
+      <link>/posts/microsoft-vista-licence-restrictions/</link>
+      <pubDate>Sat, 14 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/microsoft-vista-licence-restrictions/</guid>
+      <description>The Inquirer has posted up some info on the Microsoft Vista licence restrictions and boy does it sound awful. Not only will it cost you an arm and a leg to buy it, you&amp;rsquo;ll probably have to upgrade to get it to run, and after you&amp;rsquo;ve upgraded you&amp;rsquo;ll probably never be allowed to upgrade again - otherwise you&amp;rsquo;ll need a new copy of Vista!
+So, you&amp;rsquo;re screwed in more ways than one.</description>
+    </item>
+    
+    <item>
+      <title>Real-Time Flight Monitoring</title>
+      <link>/posts/real-time-flight-monitoring/</link>
+      <pubDate>Thu, 05 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/real-time-flight-monitoring/</guid>
+      <description>I had a read of Eastabrook&amp;rsquo;s blog recently (see a link in the Blogroll) and noticed that he posted about an interesting link that he found. The link, entitled Flight Tracking in 3D, shows details of a few downloads that you can grab for Google Earth which actually show the current locations of flights that are currently in progress all over the world!!!
+Unbelievable. Pretty amazing technology, and at the same time quite scary.</description>
+    </item>
+    
+    <item>
+      <title>ViEmu for SQL</title>
+      <link>/posts/viemu-for-sql/</link>
+      <pubDate>Thu, 28 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/viemu-for-sql/</guid>
+      <description>Another quick note today (it&amp;rsquo;s late, and I need to sleep :)), and again it&amp;rsquo;s VIM related. The dude that made ViEmu that I mentioned a couple of days back has come up with another plugin - this time for SQL Server 2005 Managment Studio. It weighs in at a hefty USD$99.95 which, in my opinion, is quite a hefty price tag just to be able to write SQL in VIM.</description>
+    </item>
+    
+    <item>
+      <title>ViEmu - are you the answer?</title>
+      <link>/posts/viemu-are-you-the-answer/</link>
+      <pubDate>Tue, 26 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/viemu-are-you-the-answer/</guid>
+      <description>After all my ranting and raving on what I think would be awesome to have as an IDE, I somehow stumbled across exactly what I was trying to describe. ViEmu looks to be the perfect combination of VIM and Visual Studio.
+Well, I did get very excited when I saw it and so I downloaded and installed it. I&amp;rsquo;ve only had a play for an hour or so, and by the looks of it it&amp;rsquo;s very close to what I&amp;rsquo;m picturing in my mind&amp;rsquo;s eye.</description>
+    </item>
+    
+    <item>
+      <title>A pox on your DRM</title>
+      <link>/posts/a-pox-on-your-drm/</link>
+      <pubDate>Mon, 25 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/a-pox-on-your-drm/</guid>
+      <description>I can no longer resist the temptation to talk about DRM (at least in part) after the issues that I faced over the weekend. I know I&amp;rsquo;m not the only one that has experienced the pain that I&amp;rsquo;m about to describe, and I&amp;rsquo;m pretty pissed off about it.
+I&amp;rsquo;m going to be getting married pretty soon, and as a result my fiance and I are both trying to finalise arrangements for the wedding.</description>
+    </item>
+    
+    <item>
+      <title>All joking aside, I have to have a Wii</title>
+      <link>/posts/all-joking-aside-i-have-to-have-a-wii/</link>
+      <pubDate>Thu, 21 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/all-joking-aside-i-have-to-have-a-wii/</guid>
+      <description>I&amp;rsquo;ve been a gamer for a very long time. My interest in games is what launched my programming career, and as a young kid I used to spend hours trying to figure out how those games worked on my Commodore Vic 20. Peeking and Poking was as far as I got in those days, but the interest has been around since. For many years I worked hard to try and get a job in the games industry, and with the industry here in Australia being quite hard to get into I decided to head to the U.</description>
+    </item>
+    
+    <item>
+      <title>Dealing with the CRUD</title>
+      <link>/posts/dealing-with-the-crud/</link>
+      <pubDate>Thu, 21 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/dealing-with-the-crud/</guid>
+      <description>One of the things that I think every web developer on the planet is sick of doing is building CRUD methods for their applications. It&amp;rsquo;s the kind of thing that we seem to do as developers over and over again despite the fact that this task is essentially monkey work.
+There have been quite a few attempts to nail this issue on the head in various programming camps, and it&amp;rsquo;s these attempts that I&amp;rsquo;d like to go over - partly because I&amp;rsquo;m also sick of CRUD, and partly because I don&amp;rsquo;t know enough about all of these solutions to know which one&amp;rsquo;s work best in what scenario (hopefully this is where you guys come to the rescue :)).</description>
+    </item>
+    
+    <item>
+      <title>Wiedererlangen von einem toten Computer</title>
+      <link>/posts/wiedererlangen-von-einem-toten-computer/</link>
+      <pubDate>Wed, 20 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/wiedererlangen-von-einem-toten-computer/</guid>
+      <description>Computer failures. We&amp;rsquo;ve all been bitten by them, and I&amp;rsquo;m pretty sure we&amp;rsquo;ll all be bitten by them again. Good quality HDD storage is becoming more common, but despite the advances in technology, our drives still only have a reliable lifetime of a few years. Power supplies are becoming more solid, but they still blow up. Motherboards, while having more features than you poke a stick at, are still susceptable to being killed by something as simple as static electricity at the slightest touch.</description>
+    </item>
+    
+    <item>
+      <title>Is an IDE all it&#39;s cracked up to be?</title>
+      <link>/posts/is-an-ide-all-its-cracked-up-to-be/</link>
+      <pubDate>Tue, 12 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/is-an-ide-all-its-cracked-up-to-be/</guid>
+      <description>Have the days of writing code in VIM ended? Is Emacs ready to be put to bed? Are we destined to spend the rest of our development lives heads-down in a bloated and expensive Integrated Development Environment (IDE)?
+IMHO, this argument is very much a Linux vs Windows style argument.
+To those long term VIM and Emacs users, there&amp;rsquo;s no reason to go an IDE like Visual Studio. Both of those editors are customisable, flexible and support a plethora of plugins and utilies.</description>
+    </item>
+    
+    <item>
+      <title>Minority Report becomes Reality?</title>
+      <link>/posts/minority-report-becomes-reality/</link>
+      <pubDate>Tue, 12 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/minority-report-becomes-reality/</guid>
+      <description>I was hoping to find a little more time this evening to write up some thoughts about Enterprise Application Development but that&amp;rsquo;s going to have to wait since it&amp;rsquo;s getting late and I have to be up early in the morning.
+So for now, I think all of you would enjoy taking a peek at something a good mate of mine in the U.K. (Mark Webster) pointed me at earlier today.</description>
+    </item>
+    
+    <item>
+      <title>Office Registration and Activation</title>
+      <link>/posts/office-registration-and-activation/</link>
+      <pubDate>Sun, 10 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/office-registration-and-activation/</guid>
+      <description>&lt;p&gt;Yesterday I had one of those wonderful days that every geek gets to enjoy once in a while - the day of rebuilding one&amp;rsquo;s machine. In this case it wasn&amp;rsquo;t my machine it was Amy&amp;rsquo;s, but the effect is much the same :)  I went through the process of backing up, repartitioning, reinstalling WinXP Home, copying backed up files back onto the machine only to find myself stumped at the point of installing MS Office.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

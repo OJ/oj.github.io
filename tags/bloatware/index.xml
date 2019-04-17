@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bloatware on OJ&#39;s Perspective</title>
+    <link>/tags/bloatware/</link>
+    <description>Recent content in bloatware on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Thu, 01 Nov 2007 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/bloatware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rancid Bloatware</title>
+      <link>/posts/rancid-bloatware/</link>
+      <pubDate>Thu, 01 Nov 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/rancid-bloatware/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;d love to know what on earth got into &lt;a href=&#34;http://www.adobe.com/&#34; title=&#34;Adobe&#34;&gt;Adobe&amp;rsquo;s&lt;/a&gt; head when they decided to turn their &lt;a href=&#34;http://www.adobe.com/products/reader/&#34; title=&#34;Adobe Reader&#34;&gt;PDF reader&lt;/a&gt; into a stinking pile of sluggish bloatware? Who here remembers the old days when the Adobe Reader download was less than 10MB?&lt;/p&gt;
+
+&lt;p&gt;Take a look at the details on their current &lt;a href=&#34;http://www.adobe.com/products/acrobat/readstep2.html&#34; title=&#34;Reader Download&#34;&gt;download page&lt;/a&gt; (which I was recently forced to visit because of a &lt;a href=&#34;http://www.theregister.co.uk/posts/new_gozi_strain/print.html&#34; title=&#34;New Strain of Gozi Trojan Prowls the Net&#34;&gt;security flaw&lt;/a&gt; in the Reader&amp;rsquo;s functionality that has now been patched):&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

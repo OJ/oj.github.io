@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    A Note on Disclosure - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/a-note-on-disclosure/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> A Note on Disclosure </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Sat Jan 17, 2015</span>
+
+	  <p>In October last year, while conducting an internal assessment for a client in Sydney, I found a vulnerability in a vendor product. The flaw allows for remote code execution on the device, <em>as the root user</em>, without requiring authentication. Needless to say, &ldquo;instant remote root&rdquo; vulnerabilities are bad. On the scale of bug severity, they&rsquo;re up pretty high. For a device such as this, it doesn&rsquo;t really get any worse.</p>
+
+<p>Once I had a working proof-of-concept which demonstrated the flaw, I made contact with the vendor in an effort to disclose the issue in a secure and responsible manner. I was aware that other options were available, such as handing the issue over to CERT or some other initiative that deals with the pain of disclosure, but I wanted to get first-hand experience of the process, hence I decided to do it myself.</p>
+
+<p>I&rsquo;m not going to lie, it has been frustrating.</p>
+
+<p>Disclosure is a hot topic at the moment. Big players such as Google and Microsoft are butting heads over it, the security community is constantly talking about it, and everyone seems to have their own spin on what it should and shouldn&rsquo;t be. While I have my own ideas around what disclosure is and how it should be handled, I am yet to form a really clear view of how it should be dealt with.</p>
+
+<p>Part of the reason I am struggling to &ldquo;lock it down&rdquo; is because, in my opinion, not all vendors are equal. Not all software is equal. Not all devices are equal. Not all bugs are equal. To me it doesn&rsquo;t necessarily make sense to treat all disclosures as equal. The hardest part is knowing how long to wait before going public.</p>
+
+<p>Since establishing contact with the vendor in October, I have had a pretty frustrating experience. I made it clear that I had intended to give them 100 days to work through the issues and release a fix, a time frame which I felt was more than reasonable given the severity, the conditions and the need for people to have time to install the fix once released.</p>
+
+<p>That disclosure period ends on the 30th January (less than two weeks from today). So far, I still haven&rsquo;t received confirmation that they have even been able to reproduce the issue.</p>
+
+<p>The purpose of this post is not to go into detail of this case, as that will come later when disclosure is upon us. I&rsquo;m also intentionally avoiding the discussion of who&rsquo;s right and wrong in the <a href="https://code.google.com/p/google-security-research/issues/detail?id=123">Google</a> vs <a href="http://blogs.technet.com/b/msrc/archive/2015/01/11/a-call-for-better-coordinated-vulnerability-disclosure.aspx">Microsoft</a> case; other more <a href="http://blog.erratasec.com/2015/01/a-call-for-better-vulnerability-response.html">seasoned</a> <a href="http://www.spacerogue.net/wordpress/?p=536">security</a> people have already commented on this. The purpose is instead to talk about a nuance which has led me to extend my original disclosure period; something that will no doubt make some people in the security community shake their heads and curse me for keeping users at risk for longer.</p>
+
+<h2 id="extension-justification">Extension &ldquo;Justification&rdquo;</h2>
+
+<p>The initial discussion with the vendor consisted of me attempting to get past front-line support and speak to someone who either cared about the security of their products or was responsible for it (preferably both, in fact!). What&rsquo;s clear is that I totally failed to get hold of the right people.</p>
+
+<p>The people on the other end of the line clearly had no idea how to respond to me, nor did they have a clear path on how to handle the issue. The responses I received were pre-canned, and demonstrated a total lack of understanding.</p>
+
+<p>Fast-forward 2 months to the end of December and OJ was a very sad and frustrated person. The discussion hadn&rsquo;t improved, the vendor had gone silent, and it was clear that no progress was being made.</p>
+
+<p>Given that this was my first attempt at disclosure, I didn&rsquo;t want it to end with a long period of silence and me dropping 0day. I really did want to see things get resolved appropriately. I knew I hadn&rsquo;t been talking to the right people, and I felt that I should make an extra effort to find them.</p>
+
+<p>I put myself in the shoes of those responsible, something I found easy to do given that I&rsquo;d been a Software Engineer for most of my career, and I asked myself &ldquo;how would I feel if I was responsible for handling that issue but wasn&rsquo;t given the chance to do so?&rdquo; I know I&rsquo;d feel like I was cheated out of the chance to get things fixed within the given time frame. I also know that I would not blame the researcher for pushing ahead with their initial disclosure on the date that they intended to. Instead I would blame my own organisation for the failure.</p>
+
+<p>And so I took to LinkedIn (yes, I know, that&rsquo;s how desperate I was) and hunted down a few vendor employees who had the word &ldquo;security&rdquo; in their job title and began emailing them. Given that it was early January by this time I didn&rsquo;t expect an immediate response as most people were probably on holidays. I waited.</p>
+
+<p>A few days later I posted another message on Twitter expressing frustration at the lack of contact from the vendor. I do this kind of thing periodically in the hope that someone who can help would notice it. To cut the story short, someone did, and they helped connect me directly to someone inside the organisation who immediately set up a secure communication channel and was receptive and keen to get things fixed. This was music to my ears. A day or two later I received a response from someone I contacted after trawling LinkedIn. This person was part of the same team as the other person I had recently connected with, and who also expressed a desire to help. This lifted the spirits a great deal.</p>
+
+<p>Fast forward to yesterday: the day I wrote up a document which included graphic detail of the issues I had discovered, suggested remediation approaches, CVE details, a functional &ldquo;push button, receive bacon&rdquo; exploit script, and anything else that I could think of that might help them fix the problems. I also included the timeline of events from the day that the issues were discovered. I got to the point where I was almost ready to send it all to my new contact, and then I stalled.</p>
+
+<p>I was staring at the section which detailed the intended timeline for disclosure and I really didn&rsquo;t know what to put in it. There was just 14 days left of the original timeline, and it was clear to me that 14 days would never be enough to address the issues, package up the fixes, test them and release them to the public in time.</p>
+
+<p>Part of me was thinking &ldquo;I&rsquo;m sorry, but until now I&rsquo;ve done everything I could by the book, and I&rsquo;m sticking to the timeline I initially proposed.&rdquo; Another part of me was screaming my daily mantra of <strong>&ldquo;Try to be less of a dick today than you were yesterday.&rdquo;</strong> I can&rsquo;t make other people (or vendors) do this, but I make myself do it. These two conflicting thoughts made it very difficult for me to decide what to do.</p>
+
+<p>I felt that another 100 days was out of the question. Enough time had already been eaten up, and users were still at risk. I wanted to choose a period of time which I felt was fair, giving enough time to fix things while still trying to force them to act quickly. I ended up deciding to extend the disclosure period by another 30 days. That gives the vendor, and my new contact, about 45 days in total to address the problems and release a fix.</p>
+
+<p>I am comfortable with this decision. I made a point of trying to find someone else to help with the problem and I didn&rsquo;t feel it was appropriate to then drop an unreasonable timeline on them, even if it was their own organisation that had let them down. With enough effort and focus, 45 days is definitely achievable.</p>
+
+<p>In closing, the point that I am trying to make here is that while I think &ldquo;hard and fast&rdquo; disclosure time lines are in the best interest of basically everyone involved, I do think that there are cases where extensions are valid. At the end of the day, I want to feel like I&rsquo;ve done the right thing with the interests of both users and vendors in mind. In this case, I think I have. You might not agree. Feel free to share your thoughts with me in the comments.</p>
+
+<p>If you&rsquo;ve made it this far, thanks for reading. Expect to see full disclosure, Metasploit module, and a standalone Python exploit appear on the <strong>1st March 2015</strong>.</p>
+
+<h2 id="update-1st-march-2015">Update 1st March 2015</h2>
+
+<p>The disclosure deadline has come and gone and the <a href="https://beyondbinary.io/advisory/seagate-nas-rce/">advisory has now been released</a>.</p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/security">Security</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/disclosure">Disclosure</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

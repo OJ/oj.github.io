@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cocktail Sort on OJ&#39;s Perspective</title>
+    <link>/tags/cocktail-sort/</link>
+    <description>Recent content in Cocktail Sort on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Fri, 29 Aug 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/cocktail-sort/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sorting Algorithms: The Cocktail Sort</title>
+      <link>/posts/sorting-algorithms-the-cocktail-sort/</link>
+      <pubDate>Fri, 29 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sorting-algorithms-the-cocktail-sort/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/uploads/2008/08/cocktail.jpg&#34; alt=&#34;Cocktail&#34; title=&#34;Cocktail&#34; style=&#34;float: right; margin-left: 5px; margin-bottom: 5px&#34; /&gt;Welcome to the second post in my series on &lt;a href=&#34;/category/sorting/&#34; title=&#34;Sorting @ OJ&#39;s rants&#34;&gt;sorting&lt;/a&gt; algorithms. This time we&amp;rsquo;re going to talk about a sort that most people haven&amp;rsquo;t heard a great deal about: the &lt;strong&gt;Cocktail Sort&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;This algorithm was the next logical choice in the series because it is very similar to the &lt;a href=&#34;/posts/sorting-algorithms-the-bubble-sort/&#34; title=&#34;Sorting Algorithms: The Bubble Sort&#34;&gt;Bubble Sort&lt;/a&gt; in the way that it operates. If you&amp;rsquo;re yet to read the first in the series, head &lt;a href=&#34;/posts/sorting-algorithms-the-bubble-sort/&#34; title=&#34;Sorting Algorithms: The Bubble Sort&#34;&gt;over there now&lt;/a&gt; as it will make this algorithm easier to understand.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

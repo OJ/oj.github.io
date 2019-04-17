@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on OJ&#39;s Perspective</title>
+    <link>/categories/linux/</link>
+    <description>Recent content in Linux on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Sat, 27 Dec 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Admin is an Idiot</title>
+      <link>/posts/the-admin-is-an-idiot/</link>
+      <pubDate>Sat, 27 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-admin-is-an-idiot/</guid>
+      <description>&lt;p&gt;Yes, and that admin is me!&lt;/p&gt;
+
+&lt;p&gt;I usually do a fairly decent job of keeping the server patched, up to date, and clean. Over the Xmas period where I wasn&amp;rsquo;t really looking at anything online, something went wrong.&lt;/p&gt;
+
+&lt;p&gt;I logged on this morning only to find that the server wasn&amp;rsquo;t responding. I could connect via SSH, but nothing was being served via HTTP. So I tried to reboot &lt;a href=&#34;http://litespeedtech.com/&#34; title=&#34;LiteSpeed technologies&#34;&gt;LiteSpeed&lt;/a&gt; to see if that would resolve it (as you do ;) ). The service stopped, but failed to restart!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reactivate? AGAIN!?</title>
+      <link>/posts/reactivate-again/</link>
+      <pubDate>Thu, 27 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/reactivate-again/</guid>
+      <description>&lt;p&gt;This is just a quick post to say how much Microsoft and their draconian OS licensing mechanism are pissing me off right now.&lt;/p&gt;
+
+&lt;p&gt;Last week my computer stopped booting. I didn&amp;rsquo;t get around to looking at it until a few days ago because I had visitors over from the UK. Not just that, it is Christmas, and the last thing you want to be doing on your Christmas break is to be fixing computers.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PCs for the Family</title>
+      <link>/posts/pcs-for-the-family/</link>
+      <pubDate>Thu, 09 Nov 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/pcs-for-the-family/</guid>
+      <description>I know for sure that many of the geeks out there on the World Wide Wibbly have the &amp;ldquo;fun&amp;rdquo; task of sorting out every possible computer issue for any/all of their family and friends in the cases where they&amp;rsquo;re not geeks themselves. I am one such geek, and I&amp;rsquo;ll be honest and say that I do not mind helping out. It&amp;rsquo;s actually a bit of fun! I starting pondering thoughts on this topic when I stumbled across Roy&amp;rsquo;s MomPC blog post a week or two ago.</description>
+    </item>
+    
+    <item>
+      <title>HOWTO: Getting ATi Drivers Working in Ubuntu</title>
+      <link>/posts/howto-getting-ati-drivers-working-in-ubuntu/</link>
+      <pubDate>Wed, 25 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/howto-getting-ati-drivers-working-in-ubuntu/</guid>
+      <description>As I&amp;rsquo;ve already mentioned, I&amp;rsquo;ve started dabbling in the joys of Linux by installing Ubuntu (Dapper Drake). This was partly joyous and partly painful - but mostly joyous :) While going through some of the less enjoyable moments I spent a fair bit of time trawling forums and hanging in IRC channels (#ubuntu-au on irc.freenode.net to be exact, check out here and here) trying to find the information I needed to get things going.</description>
+    </item>
+    
+    <item>
+      <title>The First Move to Ubuntu</title>
+      <link>/posts/the-first-move-to-ubuntu/</link>
+      <pubDate>Sat, 21 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-first-move-to-ubuntu/</guid>
+      <description>While mulling over the meaning of life during the course of the day, I decided to take the plunge and install Ubuntu on the disk that I freed up ages ago - why I waited this long, I really don&amp;rsquo;t know, I think it might have something to do with lack of spare time (or laziness). I thought that you all might like to know the bits that were good and the bits that were bad :)</description>
+    </item>
+    
+    <item>
+      <title>Get Away from that Computer!</title>
+      <link>/posts/get-away-from-that-computer/</link>
+      <pubDate>Sat, 14 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/get-away-from-that-computer/</guid>
+      <description>I know I shouldn&amp;rsquo;t laugh about this, but I couldn&amp;rsquo;t help it :)
+Any geek that&amp;rsquo;s in a relationship has probably heard the words &amp;ldquo;GET AWAY FROM THAT !$@*ING COMPUTER!&amp;rdquo; (or something along those lines) more than once. Even if you haven&amp;rsquo;t, you might have heard it from your mum when you were a budding geek (as I was).
+After reading this article on The Inquirer I couldn&amp;rsquo;t help but think that this bloke had hard that phrase possibly one too many times?</description>
+    </item>
+    
+    <item>
+      <title>An IDE Follow-Up</title>
+      <link>/posts/an-ide-follow-up/</link>
+      <pubDate>Wed, 20 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/an-ide-follow-up/</guid>
+      <description>After reading Dan&amp;rsquo;s response to this a few days ago, I decided to have a bit of a play with Notepad++. I do think it&amp;rsquo;s a very nice little text editor with some lovely features. It&amp;rsquo;s quitck, it&amp;rsquo;s simple, and the syntax hilighting works a treat (no thanks to Scintilla of course). One thing I do like is that by default when line numbering is on and word-wrap is enabled, gaps appear between the numbers to indicate that a line has wrapped (I need to set up something like this with VIM, as it&amp;rsquo;s one of the things that&amp;rsquo;s currently driving me nuts).</description>
+    </item>
+    
+    <item>
+      <title>To-buntu, or not to-buntu. That is the question.</title>
+      <link>/posts/to-buntu-or-not-to-buntu.-that-is-the-question./</link>
+      <pubDate>Wed, 20 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/to-buntu-or-not-to-buntu.-that-is-the-question./</guid>
+      <description>Right now I&amp;rsquo;m finding this question a tough one to answer. The hardcore geeks out there are probably saying &amp;ldquo;install all the distros you need!&amp;rdquo;, but I&amp;rsquo;m not sure if I want to do that or not. Right now, I&amp;rsquo;m thinking not, and it&amp;rsquo;s going to take a bit of time to convince me that having multiple distros installed is valuable to me.
+I do want to have at least one Linux distribution running on my machine at home.</description>
+    </item>
+    
+    <item>
+      <title>Is an IDE all it&#39;s cracked up to be?</title>
+      <link>/posts/is-an-ide-all-its-cracked-up-to-be/</link>
+      <pubDate>Tue, 12 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/is-an-ide-all-its-cracked-up-to-be/</guid>
+      <description>Have the days of writing code in VIM ended? Is Emacs ready to be put to bed? Are we destined to spend the rest of our development lives heads-down in a bloated and expensive Integrated Development Environment (IDE)?
+IMHO, this argument is very much a Linux vs Windows style argument.
+To those long term VIM and Emacs users, there&amp;rsquo;s no reason to go an IDE like Visual Studio. Both of those editors are customisable, flexible and support a plethora of plugins and utilies.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    The Art of Googling - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/the-art-of-googling/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> The Art of Googling </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Sat Apr 28, 2007</span>
+
+	  <p>Everyone who uses the web knows how to use Google to find stuff. Well, at least they <em>think</em> they do. Googling is pretty easy, but it&rsquo;s also a bit of an art form. Some people just seem to have the &lsquo;knack&rsquo; of finding things quickly, others take a fair bit of time.</p>
+
+<p>So what makes a good Google search? How do you arrange your search string in such a way to allow the best hits to come up first? Or at least to help you find the info you&rsquo;re looking for quickly without wading through the besquillion results?</p>
+
+<p>I consider myself to be a pretty good Googler. It doesn&rsquo;t take me long at all to find the bits of information I&rsquo;m looking for. Here are some things to bear in mind while searching which may help you improve your hit rate while searching for things:<ul><li><strong>Change the order of your search words.</strong>If you have a two word search term (say &ldquo;OJ rant&rdquo;), you&rsquo;ll get different sets of results if you search for <a href="http://www.google.com.au/search?q=oj+rant&ie=utf-8&oe=utf-8" title="Search: OJ rant">OJ rant</a> instead of <a href="http://www.google.com.au/search?q=rant+oj&ie=utf-8&oe=utf-8" title="Search: rant OJ">rant OJ</a>. Depending on the words in the search term, the results could be profoundly different. The best thing to do is start with words that better qualify what it is you&rsquo;re searching for. Let&rsquo;s say you&rsquo;re looking for information on Firefox errors, it&rsquo;d be better to search for <strong>Firefox error</strong> as opposed to <strong>error firefox</strong> because the first term gives a better context and hence a more focussed set of search results. Errors are fairly broad and appear in stacks of places, but Firefox is quite specific.</li><li><strong>Use quotes to connect words together.</strong> When you&rsquo;re using a phrase or set of words which are linked together, and you know that they appear in a certain order, then use quotes to force a search for those words in that order. An example might be where you&rsquo;re searching for song lyrics and you don&rsquo;t know the artist or the song name.</li><li><strong>Don&rsquo;t be scared to use a long search term.</strong> It&rsquo;s quite surprising that lots of people for some reason feel that they can&rsquo;t stick in a really long search term. I&rsquo;ve lost count of the amount of times I&rsquo;ve come across a really long error which I&rsquo;ve pasted directly into a Google search (with quotes ;) ) resulting in excellent results first time out. Chances are that if you&rsquo;re looking at something like that, Google&rsquo;s indexed some information on it, so why deprive it of all that criteria when you search? The information is there, so use it.</li><li><strong>Force the use of common words.</strong> Google strips out common words when you perform your search (examples are &lsquo;the&rsquo;, &lsquo;a&rsquo;, &lsquo;to&rsquo;, etc), so that it doesn&rsquo;t return every site on the Internet in every search result set. If you&rsquo;re not getting the information you need, and you feel that one of those terms is the key to that information, then force the word (or phrase) to be included by prefixing it with a &lsquo;+&rsquo; sign. A common one for me here is the use of <strong>com</strong>. The word &lsquo;com&rsquo; appears in ever site that has a .com <a href="http://en.wikipedia.org/wiki/Top-level_domain" title="Top-level Domain">TLD</a>, and so Google strips it out. But in my geek travels I search for information on <a href="http://en.wikipedia.org/wiki/Component_object_model" title="Component Object Model">COM</a> fairly regularly. So I search for <strong>+COM</strong> to make sure the word &lsquo;com&rsquo; is used without being removed.</li><li><strong>Give your searches extra context.</strong> If you&rsquo;re getting a stack of results which don&rsquo;t seem to relate to what you&rsquo;re looking for, then choose a few words which give more meaning to the item you&rsquo;re searching for and put them <em>before</em> your current search term.</li><li><strong>Cull words if needed.</strong> Sometimes you&rsquo;ll have a word or two in your search which actually help in muddying the waters. If you&rsquo;re not getting desired results using different ordering of the same search terms, then drop one or two off and see how that can affect it.</li><li><strong>Use a tabbed browser!</strong> I can&rsquo;t stress this enough :) It&rsquo;s a bit different to the other points and is more focussed on going through the links that the search has returned, but trying to read a plethora of links without tabbing is just a nighmare. So get yourself a copy of <a href="http://www.getfirfox.com/" title="Get Firefox">Firefox</a> and utilise the CTRL key ;)</li></ul>Many of you will read this post and think &ldquo;yeah well no sh*t Einstein!&ldquo;, and if you do, then it means you&rsquo;re already able to search for stuff yourself :) But you&rsquo;d be surprised how few people out there really know how to leverage the power of Google.</p>
+
+<p>There are million sites out there with in-depth coverage of the features of the Google search engine, which isn&rsquo;t really the target of this post, and hence I&rsquo;m not going to link them or discuss them. The idea is to get you going with smarter search terms while utilising a small subset of Google&rsquo;s search term power.  If you&rsquo;re looking for more information, you know where to find it :)</p>
+
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/google">Google</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    The Offensive Security Playground - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/the-offensive-security-playground/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> The Offensive Security Playground </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Sat Jan 3, 2015</span>
+
+	  <p>In November last year, I was fortunate enough to participate in the beta testing of &ldquo;<a href="http://www.offensive-security.com/offensive-security-solutions/virtual-penetration-testing-labs/" title="Virtual Penetration Testing Labs">The Playground</a>&rdquo; &ndash; a new product from the folks who gave us <a href="http://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional/" title="OSCP">OSCP</a>, <a href="http://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-expert/" title="OSCE">OSCE</a> and others, <a href="http://www.offensive-security.com/" title="Offensive Security">Offensive Security</a>. The Playground, otherwise known as the &ldquo;Virtual Penetration Test Labs&rdquo;, is an environment designed to aid in practising and honing your skills as a penetration tester.</p>
+
+<p>Offensive Security have posted some detail of this lab <a href="http://www.offensive-security.com/offsec/professional-penetration-testing-labs/">on their site</a>. It&rsquo;s worth reading to give context to this post.</p>
+
+<p>This post is a mini-review of the lab, along with some thoughts as to why this could be good for you and/or your organisation.</p>
+
+<h2 id="overview">Overview</h2>
+
+<p>When I finished <a href="http://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional/" title="OSCP">OSCP</a> in 2013 I was actually saddened by the fact that I wasn&rsquo;t able to play in the labs any more. I knew that I could invest more money in more lab time if I wanted to, but there was a limit to the number of machines left and I didn&rsquo;t really see it as a valuable investment.</p>
+
+<p>Fast forward to November 2014, and you can imagine my excitement when I was graciously asked to help beta-test a whole new lab environment! I leapt at the chance.</p>
+
+<p>As noted on the Offensive Security site, The Playground is a virtual lab made up of 4 separate networks:</p>
+
+<ol>
+<li>The &ldquo;Starting Network&rdquo; - referred to as &ldquo;The DMZ&rdquo; by those doing the beta testing, as this was the entry-point into the lab. This is akin to the &ldquo;Student&rdquo; network in the PWK lab.</li>
+<li>The &ldquo;Starfleet Network&rdquo; - contains various systems that resemble a working production environment for a set of interesting services.</li>
+<li>The &ldquo;Middle Earth&rdquo; network - made to appear similar to an office-style environment.</li>
+<li>The &ldquo;Grey&rdquo; network - contains machines that are owned by administrators.</li>
+</ol>
+
+<p>Each network has its own quirks and its own style. They are made up of an interesting set of machines that have various operating systems, patch levels and custom software installed on them. Again, this resembles the experience that you expect to see in the PWK lab.</p>
+
+<p>I can&rsquo;t and won&rsquo;t go into too much detail about each of the networks because I don&rsquo;t want to give away anything. It&rsquo;s too much fun discovering it for yourself.</p>
+
+<p>So if it&rsquo;s so similar to the PWK lab, why does it exist?</p>
+
+<h2 id="sharpening-the-saw">Sharpening the Saw</h2>
+
+<p>This lab is all about practice. It&rsquo;s about honing your skills. It has new challenges, configurations, set ups and software. The difficulty level is higher. The workflow through the lab is different.</p>
+
+<p>It&rsquo;s not about attaining a certification.</p>
+
+<p>If you&rsquo;re in the game as a penetration tester, or at least want to be, then this kind of environment is a great place to spend time. One of the things that I really liked about this environment is that there were targets that I could try to break into that are rarely considered in-scope by clients. This kind of exposure was priceless for me, especially given that setting up such a lab is a job so big that I probably wouldn&rsquo;t undertake the task myself.</p>
+
+<p>Some of the targets are even surprising. I&rsquo;ll leave it up to you to infer what that could mean.</p>
+
+<h2 id="difficulty">Difficulty</h2>
+
+<p>Those of you who have experienced Offensive Security certifications in the past know what it&rsquo;s like to tackle an Offsec challenge. The Playground is only different in that some of those challenges are harder.</p>
+
+<p>During my time in the lab I wasn&rsquo;t able to own all of the machines. Some of them were brutal! Of the machines I did manage to compromise I can honestly say that there was a really good mixture of difficulty levels. Everyone who tackles this lab will learn something &hellip;</p>
+
+<p>&hellip; and suffer in the process.</p>
+
+<h2 id="competition">Competition</h2>
+
+<p>Each target in the lab has a point value associated with it. When a machine is successfully compromised, the attacker can retrieve &ldquo;loot&rdquo; which proves that access has been gained. This proof can be entered into the attacker&rsquo;s personal dashboard, which keeps a tally of the point score, as well as shows you which machines have been owned and which have not.</p>
+
+<p>This kind of facility is great for a set of testers who all work for the same organisation, and that are interested in having some friendly competition. Gamification of such practice really does make this whole thing a lot of fun.</p>
+
+<p>I had a lot of fun fighting the lab alongside a bunch of other fine folks. I must shout out to <a href="https://twitter.com/0x42424242" title="Peleus">Peleus</a> and <a href="https://twitter.com/_rastamouse" title="rasta_mouse">rasta_mouse</a> for leaving little messages scattered throughout the lab, to <a href="https://twitter.com/barrebas" title="barrebas">barrebas</a> and <a href="https://twitter.com/superkojiman" title="superkojiman">superkojiman</a> for constantly scaring me with the speed at which they owned stuff, and finally to <a href="https://twitter.com/highjack_" title="highjack">highjack</a> for generally being an awesome dude. There are many others as well, too many to mention them all.</p>
+
+<h2 id="isolation">Isolation</h2>
+
+<p>Organisations can request to have an instance of the lab set up so that they have their own isolated network that nobody else can share. This was one of the things that I didn&rsquo;t like about PWK, because I often stumbled on other people&rsquo;s exploit attempts - I hate spoilers!</p>
+
+<p>I think this would appeal to many people and I wouldn&rsquo;t be surprised to see lots of companies take this up as an option when training their staff.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>I had a blast during my testing period. I would happily pay money to spend more time in this lab honing my skills. I think the experience is something that many other people will get a lot out of and I would highly recommend giving it a go, even as an individual.</p>
+
+<p>I owe a great deal of gratitude to Offsec for giving me the chance to participate in their beta testing. In particular, thank you to <a href="https://twitter.com/g0tmi1k" title="g0tmi1k">g0tmi1k</a> and <a href="https://twitter.com/kalilinux" title="muts">muts</a> for all their hard work and support.</p>
+
+<p><img src="http://i.imgur.com/sgq5HsO.gif" alt="Thumbs up" /></p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/security">Security</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

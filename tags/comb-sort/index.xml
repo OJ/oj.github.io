@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Comb Sort on OJ&#39;s Perspective</title>
+    <link>/tags/comb-sort/</link>
+    <description>Recent content in Comb Sort on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Sun, 14 Sep 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/comb-sort/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sorting Algorithms: The Comb Sort</title>
+      <link>/posts/sorting-algorithms-the-comb-sort/</link>
+      <pubDate>Sun, 14 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sorting-algorithms-the-comb-sort/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/uploads/2008/09/combsort.jpg&#34; alt=&#34;Comb Sort&#34; title=&#34;Comb Sort&#34; width=&#34;150&#34; style=&#34;float: left; margin-right: 5px; margin-bottom: 5px;&#34; /&gt;Welcome to this, the third post in the series on &lt;a href=&#34;/category/sorting/&#34; title=&#34;Sorting @ OJ&#39;s rants&#34;&gt;sorting&lt;/a&gt; algorithms. Next up, we&amp;rsquo;re going to cover the &lt;strong&gt;Comb Sort&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Like the &lt;a href=&#34;/posts/sorting-algorithms-the-cocktail-sort/&#34; title=&#34;Sorting Algorithms: The Cocktail Sort&#34;&gt;Cocktail Sort&lt;/a&gt;, the Comb Sort isn&amp;rsquo;t particularly well known. Most people manage to make their way through tertiary studies without ever hearing of it. This post is designed to change that!&lt;/p&gt;
+
+&lt;p&gt;The Comb Sort is another &lt;em&gt;comparison&lt;/em&gt; and &lt;em&gt;exchange&lt;/em&gt; sort which builds on the idea of the &lt;a href=&#34;/posts/sorting-algorithms-the-bubble-sort/&#34; title=&#34;Sorting Algorithms: The Bubble Sort&#34;&gt;Bubble Sort&lt;/a&gt; and adds a potential optimisation or two.&lt;/p&gt;
+
+&lt;p&gt;Make sure you read the articles on the &lt;a href=&#34;/posts/sorting-algorithms-the-bubble-sort/&#34; title=&#34;Sorting Algorithms: The Bubble Sort&#34;&gt;Bubble Sort&lt;/a&gt; and the &lt;a href=&#34;/posts/sorting-algorithms-the-cocktail-sort/&#34; title=&#34;Sorting Algorithms: The Cocktail Sort&#34;&gt;Cocktail Sort&lt;/a&gt; before you read this article. Doing so will make it much easier to understand.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

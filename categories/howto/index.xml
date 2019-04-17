@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HOWTO on OJ&#39;s Perspective</title>
+    <link>/categories/howto/</link>
+    <description>Recent content in HOWTO on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Tue, 10 Jul 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/howto/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Webmachine, ErlyDTL and Riak - Part 5</title>
+      <link>/posts/webmachine-erlydtl-and-riak-part-5/</link>
+      <pubDate>Tue, 10 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/webmachine-erlydtl-and-riak-part-5/</guid>
+      <description>&lt;p&gt;{% img right /uploads/2010/09/riak-logo.png &amp;lsquo;Riak Logo&amp;rsquo; %}Newcomers to the series should first take a look at the previous four parts of the &lt;a href=&#34;http://buffered.io/series/web-development-with-erlang/&#34; title=&#34;Web Development with Erlang&#34;&gt;series&lt;/a&gt; (&lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-1/&#34; title=&#34;Wembachine, ErlyDTL and Riak - Part 1&#34;&gt;Part 1&lt;/a&gt;, &lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-2/&#34; title=&#34;Wembachine, ErlyDTL and Riak - Part 2&#34;&gt;Part 2&lt;/a&gt;, &lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-3/&#34; title=&#34;Wembachine, ErlyDTL and Riak - Part 3&#34;&gt;Part 3&lt;/a&gt;, &lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-4/&#34; title=&#34;Wembachine, ErlyDTL and Riak - Part 4&#34;&gt;Part 4&lt;/a&gt;) first to make sure that you&amp;rsquo;re up to speed. Feel free to read on if you feel comfortable with the general concepts in use.&lt;/p&gt;
+
+&lt;p&gt;When we finished &lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-4/&#34; title=&#34;Wembachine, ErlyDTL and Riak - Part 4&#34;&gt;Part 4&lt;/a&gt; we were able to authenticate users using &lt;a href=&#34;http://twitter.com/&#34; title=&#34;Twitter&#34;&gt;Twitter&lt;/a&gt; and &lt;a href=&#34;http://oauth.net/&#34; title=&#34;OAuth&#34;&gt;OAuth&lt;/a&gt;, which is great as we can delegate the responsibility of password management to an external entity.&lt;/p&gt;
+
+&lt;p&gt;Now that we know who people are, we want them to be able to do something meaningful with their accounts. That&amp;rsquo;s what this post is all about.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Webmachine, ErlyDTL and Riak - Part 4</title>
+      <link>/posts/webmachine-erlydtl-and-riak-part-4/</link>
+      <pubDate>Wed, 15 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/webmachine-erlydtl-and-riak-part-4/</guid>
+      <description>&lt;p&gt;{% img left /uploads/2010/09/riak-logo.png &amp;lsquo;Riak Logo&amp;rsquo; %}For those of you who are new to the series, you may want to check out &lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-1/&#34; title=&#34;Wembachine, ErlyDTL and Riak - Part 1&#34;&gt;Part 1&lt;/a&gt;, &lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-2/&#34; title=&#34;Wembachine, ErlyDTL and Riak - Part 2&#34;&gt;Part 2&lt;/a&gt; and &lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-3/&#34; title=&#34;Wembachine, ErlyDTL and Riak - Part 3&#34;&gt;Part 3&lt;/a&gt; before reading this post. It will help give you some context as well as introduce you to some of the jargon and technology that I&amp;rsquo;m using. If you&amp;rsquo;ve already read then, or don&amp;rsquo;t want to, then please read on!&lt;/p&gt;
+
+&lt;p&gt;Upon finishing &lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-3/&#34; title=&#34;Wembachine, ErlyDTL and Riak - Part 3&#34;&gt;Part 3&lt;/a&gt; of the series we were finally able to read data from &lt;a href=&#34;http://www.basho.com/developers.html#Riak&#34; title=&#34;Riak&#34;&gt;Riak&lt;/a&gt; and see it appear in our web page. This was the first stage in seeing a full end-to-end web application functioning. Of course there is still a great deal to do!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Webmachine, ErlyDTL and Riak - Part 3</title>
+      <link>/posts/webmachine-erlydtl-and-riak-part-3/</link>
+      <pubDate>Wed, 13 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/webmachine-erlydtl-and-riak-part-3/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/uploads/2010/09/riak-logo.png&#34; alt=&#34;Riak Logo&#34; style=&#34;float:left;padding-right:5px;padding-bottom:5px;&#34;/&gt;For those of you who are new to the series, you may want to check out &lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-1/&#34; title=&#34;Wembachine, ErlyDTL and Riak - Part 1&#34;&gt;Part 1&lt;/a&gt; and &lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-2/&#34; title=&#34;Webmachine, ErlyDTL and Riak - Part 2&#34;&gt;Part 2&lt;/a&gt; before reading this post. It will help give you some context as well as introduce you to some of the jargon and technology that I&amp;rsquo;m using. If you&amp;rsquo;ve already read then, or don&amp;rsquo;t want to, then please read on!&lt;/p&gt;
+
+&lt;p&gt;This post builds on the previous two, but not without a few little modifications. If you&amp;rsquo;re interested in following along step by step with your own version of the code running, then get yourself a copy of &lt;a href=&#34;https://github.com/OJ/csd/tree/Part2-20110403&#34; title=&#34;Source code for Part 2&#34;&gt;this changeset&lt;/a&gt; before doing so.&lt;/p&gt;
+
+&lt;p&gt;In this post we&amp;rsquo;re going to cover:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;A slight refactor of code structure to support the &amp;ldquo;standard&amp;rdquo; approach to building applications in Erlang using OTP.&lt;/li&gt;
+&lt;li&gt;Building a small set of modules to talk to &lt;a href=&#34;http://www.basho.com/developers.html#Riak&#34; title=&#34;Riak&#34;&gt;Riak&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Creation of some &lt;a href=&#34;http://json.org/&#34; title=&#34;JavaScript Object Notation&#34;&gt;JSON&lt;/a&gt; helper functions for reading and writing data.&lt;/li&gt;
+&lt;li&gt;Calling all the way from the &lt;a href=&#34;http://www.basho.com/developers.html#Webmachine&#34; title=&#34;Webmachine&#34;&gt;Webmachine&lt;/a&gt; front-end to Riak to extract data and display it in a browser using &lt;a href=&#34;http://github.com/evanmiller/erlydtl&#34; title=&#34;ErlyDTL&#34;&gt;ErlyDTL&lt;/a&gt; templates.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;There are quite a few code snippets in this post as well as output from script executions and &lt;code&gt;bash&lt;/code&gt; sessions. To avoid confusion, all file listings reference the path to the file that is being modified relative to the root of the project folder.&lt;/p&gt;
+
+&lt;p&gt;Be warned, this is a &lt;em&gt;long&lt;/em&gt; post :) Get yourself a &lt;em&gt;shmoke und a pancake&lt;/em&gt;, a glass of your favourite beverage and put some relaxing music on (instrumental is best).&lt;/p&gt;
+
+&lt;p&gt;Are you ready? OK, here we go &amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Webmachine, ErlyDTL and Riak - Part 2</title>
+      <link>/posts/webmachine-erlydtl-and-riak-part-2/</link>
+      <pubDate>Sun, 12 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/webmachine-erlydtl-and-riak-part-2/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/uploads/2010/09/riak-logo.png&#34; alt=&#34;Riak Logo&#34; style=&#34;float:left;padding-right:5px;padding-bottom:5px;&#34;/&gt;In &lt;a href=&#34;/posts/webmachine-erlydtl-and-riak-part-1/&#34; title=&#34;Wembachine, ErlyDTL and Riak - Part 1&#34;&gt;Part 1&lt;/a&gt; of the series we covered the basics of getting the development environment up and running. We also looked at how to get a really simple ErlyDTL template rendering. If you haven&amp;rsquo;t yet gone through Part 1, I suggest you do that now. If you have, read on!&lt;/p&gt;
+
+&lt;p&gt;There are a few reasons this series is targeting this technology stack. One of them is &lt;strong&gt;uptime&lt;/strong&gt;. We&amp;rsquo;re aiming to build a site that stays up as much as possible. Given that, one of the things that I missed in the previous post was setting up a &lt;a href=&#34;http://en.wikipedia.org/wiki/Load_balancing_(computing)&#34; title=&#34;Load balancing&#34;&gt;load balancer&lt;/a&gt;. Hence this post will attempt to fill that gap.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Webmachine, ErlyDTL and Riak - Part 1</title>
+      <link>/posts/webmachine-erlydtl-and-riak-part-1/</link>
+      <pubDate>Wed, 01 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/webmachine-erlydtl-and-riak-part-1/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/uploads/2010/09/riak-logo.png&#34; alt=&#34;Riak Logo&#34; style=&#34;float:left;padding-right:5px;padding-bottom:5px;&#34;/&gt;It has been a long time coming, but the first post is finally here! This is the first in a series of post, as &lt;a href=&#34;/posts/the-future-is-erlang/&#34; title=&#34;The Future is Erlang&#34;&gt;promised a while ago&lt;/a&gt;, covering off web development using &lt;a href=&#34;http://erlang.org/&#34; title=&#34;Erlang&#34;&gt;Erlang&lt;/a&gt;. This post is the ubiquitous &amp;ldquo;get up and running&amp;rdquo; post, which aims to get your environment set up so that you can dive in to development. The next post will detail how to handle a basic end-to-end web request.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/uploads/2010/09/Erlang_logo.png&#34; width=&#34;150&#34; style=&#34;float:right;margin-left:5px;margin-bottom:5px;&#34;/&gt;First up, a few things we need to be aware of before we begin:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The information in this post has only been verified on Linux (&lt;a href=&#34;http://linuxmint.com/&#34; title=&#34;Linux Mint&#34;&gt;Mint&lt;/a&gt; to be exact). It &lt;em&gt;should&lt;/em&gt; work just fine on Mac OSX. I&amp;rsquo;m almost certain that it &lt;em&gt;won&amp;rsquo;t&lt;/em&gt; work on a Windows machine. So if you&amp;rsquo;re a Windows developer, you&amp;rsquo;ll have to wait for another post down the track which covers off how to get your environment ready to rock.&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;ll be downloading, building and installing &lt;a href=&#34;http://erlang.org/&#34; title=&#34;Erlang&#34;&gt;Erlang&lt;/a&gt;, &lt;a href=&#34;http://github.com/evanmiller/erlydtl&#34; title=&#34;ErlyDTL&#34;&gt;ErlyDTL&lt;/a&gt;, &lt;a href=&#34;http://www.basho.com/developers.html#Riak&#34; title=&#34;Riak&#34;&gt;Riak&lt;/a&gt; and &lt;a href=&#34;http://www.basho.com/developers.html#Webmachine&#34; title=&#34;Webmachine&#34;&gt;Webmachine&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.basho.com/developers.html#Rebar&#34; title=&#34;Rebar&#34;&gt;Rebar&lt;/a&gt; is the tool we&amp;rsquo;ll be using to handle builds, but I won&amp;rsquo;t be covering it in any depth.&lt;/li&gt;
+&lt;li&gt;You will need the latest version of &lt;a href=&#34;http://git-scm.com/&#34; title=&#34;Git&#34;&gt;Git&lt;/a&gt; so make sure it&amp;rsquo;s downloaded and installed before you follow this article.&lt;/li&gt;
+&lt;li&gt;We&amp;rsquo;ll be doing &lt;em&gt;some&lt;/em&gt; interaction with Riak via &lt;a href=&#34;http://curl.haxx.se/&#34; title=&#34;cURL and libcurl&#34;&gt;curl&lt;/a&gt;, so make sure you have it downloaded and installed as well.&lt;/li&gt;
+&lt;li&gt;This is intended to be a step-by-step guide targeted at those who are very new to web development in Erlang. This may not be the most ideal set up, nor the best way of doing certain things. I am hoping that those people who are more experienced than I will be able to provide feedback and guidance in areas where I am lacking.&lt;/li&gt;
+&lt;li&gt;Over the course of this series I&amp;rsquo;ll be attempting to build an Erlang version of the &lt;a href=&#34;http://bitbucket.org/OJ/codesmackdown&#34; title=&#34;Code Smackdown&#34;&gt;Code Smackdown&lt;/a&gt; site that I&amp;rsquo;ve been working on here and there with a &lt;a href=&#34;http://secretgeek.net/&#34; title=&#34;secretGeek&#34;&gt;mate of mine&lt;/a&gt;. You&amp;rsquo;ll see that the sample application we&amp;rsquo;re working on is called &amp;ldquo;csd&amp;rdquo; for obvious reasons.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;OK, let&amp;rsquo;s get into it. First up, Erlang.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Setting up Trac, Mercurial and SSH on Windows</title>
+      <link>/posts/setting-up-trac-mercurial-and-ssh-on-windows/</link>
+      <pubDate>Sat, 16 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/setting-up-trac-mercurial-and-ssh-on-windows/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING - This blog post is long :)&lt;/strong&gt;
+&lt;em&gt;This post has been edited since it was published. Please see the end of the article for any notes/modifications&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;h3&gt;Some Background Info&lt;/h3&gt;
+I had the need to do this for work recently. It was nothing short of a right royal pain in the butt. It was such a pain, in fact, that I have decided to document what I had to do to get it working so that other poor unfortunates will feel less pain if they have to do this themselves.&lt;/p&gt;
+
+&lt;p&gt;Almost regardless of the company and the software I&amp;rsquo;m working on, I use &lt;a href=&#34;http://www.selenic.com/mercurial/&#34; title=&#34;Mercurial&#34;&gt;Mercurial&lt;/a&gt; for source code control. For the work I am doing at the moment, I was also using hg because the company I am involved with is relatively new and they hadn&amp;rsquo;t yet sorted out a plan for version control or &lt;acronym title=&#34;Application Lifecycle Management&#34;&gt;ALM&lt;/acronym&gt;. It was working quite well and I was pushing all my changes to my &lt;a href=&#34;http://www.google.com.au/url?q=http://www.buffalotech.com/products/network-storage/terastation/terastation-iii/&amp;ei=fioOSuLvGpu8swPl56zqAg&amp;sa=X&amp;oi=smap&amp;resnum=1&amp;ct=result&amp;cd=2&amp;usg=AFQjCNHXKMchy5tR-a-jMOFAbtxoWzfedA&#34; title=&#34;Terastation&#34;&gt;NAS box&lt;/a&gt; to make sure I had other copies backed up, etc. I was &lt;em&gt;living the dream&lt;/em&gt; :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>.NET-fu: Signing an Unsigned Assembly (without Delay Signing)</title>
+      <link>/posts/.net-fu-signing-an-unsigned-assembly-without-delay-signing/</link>
+      <pubDate>Wed, 09 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/.net-fu-signing-an-unsigned-assembly-without-delay-signing/</guid>
+      <description>&lt;p&gt;This article is also available in &lt;a href=&#34;http://www.otherbit.com/modules/blog/BlogContent.aspx?ID=174&#34; title=&#34;.NET-FU : come trasformare in SIGNED un assembly UNSIGNED (senza ricorrere al DELAY SIGNING)&#34;&gt;Italian&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The code-base that I am currently working with consists of a large set of binaries that are all &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/xc31ft41.aspx&#34; title=&#34;Sign an Assembly with a Strong Name&#34;&gt;signed&lt;/a&gt;. The savvy .NET devs out there will know that any assembly that&amp;rsquo;s used/referenced by a signed assembly must &lt;em&gt;also&lt;/em&gt; be signed.&lt;/p&gt;
+
+&lt;p&gt;This is an issue when dealing with third-party libraries that are not signed. Sometimes you&amp;rsquo;ll be lucky enough to be dealing with vendor that is happy to provide a set of signed assemblies, other times you won&amp;rsquo;t. If your scenario fits the latter (as a recent one did for my colleagues and I), you need to sign the assemblies yourself. Here&amp;rsquo;s how.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Magic of Unity Builds</title>
+      <link>/posts/the-magic-of-unity-builds/</link>
+      <pubDate>Mon, 10 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-magic-of-unity-builds/</guid>
+      <description>&lt;p&gt;I realise that as time goes by, people are using my beloved &lt;a href=&#34;http://en.wikipedia.org/wiki/C++&#34; title=&#34;C++&#34;&gt;C++&lt;/a&gt; less and less. &lt;a href=&#34;http://en.wikipedia.org/wiki/.NET_Framework&#34; title=&#34;.NET Framework&#34;&gt;.NET&lt;/a&gt; (&lt;a href=&#34;http://en.wikipedia.org/wiki/C_Sharp&#34; title=&#34;C#&#34;&gt;C#&lt;/a&gt; and &lt;a href=&#34;http://en.wikipedia.org/wiki/Visual_Basic_.NET&#34; title=&#34;VB.NET&#34;&gt;VB.NET&lt;/a&gt;) and &lt;a href=&#34;http://en.wikipedia.org/wiki/Java_%28programming_language%29&#34; title=&#34;Java&#34;&gt;Java&lt;/a&gt; seem to be taking over the mainstream coding world. Languages such as &lt;a href=&#34;http://en.wikipedia.org/wiki/Ruby_%28programming_language%29&#34; title=&#34;Ruby&#34;&gt;Ruby&lt;/a&gt; and &lt;a href=&#34;http://en.wikipedia.org/wiki/Python_%28programming_language%29&#34; title=&#34;Python&#34;&gt;Python&lt;/a&gt; seem to be taking over the scripting world. For the most part, C and C++ seem to exist only in the gaming/entertainment, real-time and driver worlds.&lt;/p&gt;
+
+&lt;p&gt;In many colleges and univerties C++ is no longer taught as a core subject (along with &lt;a href=&#34;http://en.wikipedia.org/wiki/Assembly_language&#34; title=&#34;Assembly Language&#34;&gt;Assembly language&lt;/a&gt;) which I find quite galling. It&amp;rsquo;s a great language to learn, even if you never use it again. But the purpose of this post is not to preach the virtues and failures of the C++ language, but instead to talk about something that might aid those people who &lt;em&gt;are&lt;/em&gt; using C++.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Avoid Writing Unintuitive Code</title>
+      <link>/posts/avoid-writing-unintuitive-code/</link>
+      <pubDate>Fri, 20 Jul 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/avoid-writing-unintuitive-code/</guid>
+      <description>&lt;p&gt;This blog post was inspired by a brief chat I had recently with Kirupa of &lt;a href=&#34;http://www.kirupa.com/&#34; title=&#34;Kirupa&#34;&gt;kirupa.com&lt;/a&gt;. I subscribe to his &lt;a href=&#34;http://blog.kirupa.com/&#34; title&#34;Kirupa Blog&#34;&gt;blog&amp;rsquo;s&lt;/a&gt; &lt;a href=&#34;http://blog.kirupa.com/?feed=rss2&#34; title=&#34;Kirupa Blog RSS&#34;&gt;RSS feed&lt;/a&gt; as he comes out with some really good stuff. His &lt;a href=&#34;http://blog.kirupa.com/?p=111&#34; title=&#34;Randomizing Elements in a List (C#)&#34;&gt;recent post&lt;/a&gt; which showed a way of shuffling a List of strings (using C#) inspired a bit of thought on the topic of code readability, how and when it&amp;rsquo;s learned (if at all) and why there is so little of it around.&lt;/p&gt;
+
+&lt;p&gt;Code quality and readability is something that isn&amp;rsquo;t necessarily learned at University, nor is it something that can be mastered in a short period of time. It &lt;em&gt;is&lt;/em&gt; something that &lt;strong&gt;anyone&lt;/strong&gt; can learn. The main ingredients that are required are a bit of self-scrutiny, and the removal of the assumption that working code is the same as finished code.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>And Help You I Shall!</title>
+      <link>/posts/and-help-you-i-shall/</link>
+      <pubDate>Wed, 18 Jul 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/and-help-you-i-shall/</guid>
+      <description>&lt;p&gt;My &lt;a href=&#34;/posts/help-me-help-you/&#34; title=&#34;Help me help you!&#34;&gt;previous post&lt;/a&gt; on constructing meaningful questions was inspired by years of frustrating experiences on forums and bulletin boards, but it wasn&amp;rsquo;t until I had a chat with me ol&amp;rsquo; mucka &lt;a href=&#34;http://www.shiftperception.com/blog/&#34; title=&#34;Shifty Blog&#34;&gt;Dan&lt;/a&gt; that I realised that there are actually quite a few cases where good quality questions are given inappropriate or completely misleading answers.&lt;/p&gt;
+
+&lt;p&gt;The intent of this post is to cover that side of the argument. How do you give a meaningful answer to a well constructed question?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Creating Concrete Objects</title>
+      <link>/posts/creating-concrete-objects/</link>
+      <pubDate>Sat, 14 Jul 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/creating-concrete-objects/</guid>
+      <description>&lt;p&gt;Being a fan of &lt;a href=&#34;http://en.wikipedia.org/wiki/Object-oriented_programming&#34; title=&#34;Object-oriented Programming&#34;&gt;OOP&lt;/a&gt;, I tend to write a lot of object-oriented code. Coming up with a meaningful object model that behaves in an appropriate way is just as important as having a meaningful interface to your objects. A concrete object is an object that actually behaves in the manner you&amp;rsquo;d expect without any wierd side-effects, and has the same kind of attributes that you&amp;rsquo;d expect of a primitive data type.&lt;/p&gt;
+
+&lt;p&gt;Creating concrete data objects/classes is a good thing to do, as it reduces the probability of bugs, and crazy side-effects. It&amp;rsquo;s also an important first step in writing intuitive code - which will be the topic of a later blog post.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Help Me Help You!</title>
+      <link>/posts/help-me-help-you/</link>
+      <pubDate>Sat, 14 Jul 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/help-me-help-you/</guid>
+      <description>&lt;blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Becoming a Geek Part 3: The Game Geek</title>
+      <link>/posts/becoming-a-geek-part-3-the-game-geek/</link>
+      <pubDate>Fri, 13 Jul 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/becoming-a-geek-part-3-the-game-geek/</guid>
+      <description>&lt;p&gt;Welcome to the next in the Becoming a Geek series. Today I&amp;rsquo;m going to cover the areas which I think a budding Game Geek needs to be adept in for him/her to be a true Game Geek. I&amp;rsquo;d like to make a clear distinction from the start that the Game Geek is a different beast to a Game &lt;em&gt;Development&lt;/em&gt; Geek, and hence I won&amp;rsquo;t be covering the development side in this post. I will, however, be covering the game development details in a later post in this series on the Development Geek.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Becoming a Geek Part 2: The Web Geek</title>
+      <link>/posts/becoming-a-geek-part-2-the-web-geek/</link>
+      <pubDate>Fri, 22 Jun 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/becoming-a-geek-part-2-the-web-geek/</guid>
+      <description>&lt;p&gt;Welcome to part 2 of my Becoming a Geek series. If you haven&amp;rsquo;t already read part 1, I suggest you read it first. Before you can be a web geek, you&amp;rsquo;ll need to be a &lt;a href=&#34;/posts/becoming-a-geek-part-1-the-general-geek/&#34; title=&#34;Becoming a Geek Part 1: The General Geek&#34;&gt;General Geek&lt;/a&gt;. If you&amp;rsquo;re already on the way to becoming a General Geek, here are a stack of hints to help you become a Web Geek.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Becoming a Geek Part 1: The General Geek</title>
+      <link>/posts/becoming-a-geek-part-1-the-general-geek/</link>
+      <pubDate>Thu, 14 Jun 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/becoming-a-geek-part-1-the-general-geek/</guid>
+      <description>&lt;p&gt;Contrary to popular belief, there are many types of geek. In this series, I&amp;rsquo;m going to give some basic tips on how to become one!  This is the first part in the series, and so I&amp;rsquo;m covering the &amp;lsquo;General Geek&amp;rsquo;.&lt;/p&gt;
+
+&lt;p&gt;Before I even went to university to get qualifications to become an official &amp;ldquo;paid&amp;rdquo; geek, I put a great deal of time and effort into tuning my skills in other areas that would help me excel at my job. Below is a list of things that I did which I believe really helped me achieve my goal, and I would recommend doing the same if you&amp;rsquo;re looking to become a paid geek yourself!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reversing DirectX &amp; Blowfish</title>
+      <link>/posts/reversing-directx-blowfish/</link>
+      <pubDate>Mon, 09 Apr 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/reversing-directx-blowfish/</guid>
+      <description>This tutorial has been on the boil for quite a while. I got close to nailing the problem late last month, but didn&amp;rsquo;t end up finding the time to finish it until this weekend. This tutorial is a solution to another Crackme, but this time it&amp;rsquo;s really not for the faint-hearted. Information on reversing fullscreen DirectX (Direct3D) applications and playing around with Blowfish can be found in this tutorial, and it&amp;rsquo;s a bit of a mind-job - it also weighs in at nearly 40 pages (with some nice pictures thrown in)!</description>
+    </item>
+    
+    <item>
+      <title>A Reversing Tutorial</title>
+      <link>/posts/a-reversing-tutorial/</link>
+      <pubDate>Sat, 03 Mar 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/a-reversing-tutorial/</guid>
+      <description>For a long time I&amp;rsquo;ve been interested in the lovely and exciting art of Reverse Code Engineering (RCE) and on more than one occasion I&amp;rsquo;ve been sucked in to spending hours and hours delving through pages of ASM code searching for the answer.
+Today is no different. With Amy feeling pretty crook due to a nasty headache, I thought I&amp;rsquo;d retire to my PC and do something quiet that I haven&amp;rsquo;t done for ages.</description>
+    </item>
+    
+    <item>
+      <title>HOWTO: Getting ATi Drivers Working in Ubuntu</title>
+      <link>/posts/howto-getting-ati-drivers-working-in-ubuntu/</link>
+      <pubDate>Wed, 25 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/howto-getting-ati-drivers-working-in-ubuntu/</guid>
+      <description>As I&amp;rsquo;ve already mentioned, I&amp;rsquo;ve started dabbling in the joys of Linux by installing Ubuntu (Dapper Drake). This was partly joyous and partly painful - but mostly joyous :) While going through some of the less enjoyable moments I spent a fair bit of time trawling forums and hanging in IRC channels (#ubuntu-au on irc.freenode.net to be exact, check out here and here) trying to find the information I needed to get things going.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Meterpreter on OJ&#39;s Perspective</title>
+    <link>/categories/meterpreter/</link>
+    <description>Recent content in Meterpreter on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Wed, 05 Oct 2016 10:46:58 +1000</lastBuildDate>
+    
+	<atom:link href="/categories/meterpreter/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Staged vs Stageless Handlers</title>
+      <link>/posts/staged-vs-stageless-handlers/</link>
+      <pubDate>Wed, 05 Oct 2016 10:46:58 +1000</pubDate>
+      
+      <guid>/posts/staged-vs-stageless-handlers/</guid>
+      <description>&lt;p&gt;Metasploit comes with a variety of payloads, as we all know. Those payloads come in a few different types, and vary depending on platform. Of those types, there are two major &amp;ldquo;categories&amp;rdquo; available with a key difference that is often not understood. They are &lt;code&gt;staged&lt;/code&gt; and &lt;code&gt;stageless&lt;/code&gt; payloads.&lt;/p&gt;
+
+&lt;p&gt;The purpose of this post is to talk about the differences between these two, particularly in the context of Meterpreter and the Metasploit handlers. I&amp;rsquo;ll also cover off what happens with TCP payloads/handlers, so that it&amp;rsquo;s clear how it works and what you can do to avoid a common pitfall and reduce noise on the wire.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s dive in.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Continued Meterpreter Development</title>
+      <link>/posts/continued-meterpreter-development/</link>
+      <pubDate>Thu, 05 May 2016 07:38:32 +1000</pubDate>
+      
+      <guid>/posts/continued-meterpreter-development/</guid>
+      <description>&lt;p&gt;Active users of Metasploit will no doubt be aware that Meterpreter is still being actively developed and enhanced by a bunch of people. I&amp;rsquo;m lucky enough to still be one of them! In this post I just want to cover a few things that have been done to it recently, and to give a bit of visbility of how I am able to continue contributing in the way that I do.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TLV Traffic Obfuscation</title>
+      <link>/posts/tlv-traffic-obfuscation/</link>
+      <pubDate>Mon, 22 Feb 2016 00:11:46 +0000</pubDate>
+      
+      <guid>/posts/tlv-traffic-obfuscation/</guid>
+      <description>&lt;p&gt;As many of you are already aware, Metasploit and Meterpreter talk to each other using a variety of transports. While the transports may vary from session to session, one thing that doesn&amp;rsquo;t vary is the &amp;ldquo;protocol&amp;rdquo; that travels over those transports. This information fits a well-known structure, and is referred to as &lt;em&gt;TLV Packets&lt;/em&gt; (Type, Length, Value).&lt;/p&gt;
+
+&lt;p&gt;Once a session has been established, the TLV traffic that is sent across the wire contains a bunch of very easily recognisable content, and as such can be detected by Antivirus software, or Intrusion Detection Systems.&lt;/p&gt;
+
+&lt;p&gt;Recently, I made a change to the way the packets are formed prior to transmission, and this post is intended to explain the detail of how it works.&lt;/p&gt;
+
+&lt;p&gt;Warning: It&amp;rsquo;s &lt;em&gt;really simple&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Building Meterpreter is Easy</title>
+      <link>/posts/building-meterpreter-is-easy/</link>
+      <pubDate>Tue, 18 Feb 2014 07:01:37 +0000</pubDate>
+      
+      <guid>/posts/building-meterpreter-is-easy/</guid>
+      <description>I might not have mentioned this before, but I have to tell you that building Meterpreter is easy. In the old days, downloading the source was the easy bit and compiling it was the hard bit. The steps involved in getting a Meterpreter build environment together were extensive and prone to error. In fact if you got one wrong, or you did things in the wrong order, then you could end up having to remove everything from your machine and starting again.</description>
+    </item>
+    
+  </channel>
+</rss>

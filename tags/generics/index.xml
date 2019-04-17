@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>generics on OJ&#39;s Perspective</title>
+    <link>/tags/generics/</link>
+    <description>Recent content in generics on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Wed, 25 Mar 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/generics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Quirk in List.Find()</title>
+      <link>/posts/a-quirk-in-list.find/</link>
+      <pubDate>Wed, 25 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/a-quirk-in-list.find/</guid>
+      <description>&lt;p&gt;Earlier today I was having a chat with a &lt;a href=&#34;http://doomkeeper.com/&#34; title=&#34;Jimmy&#39;s Blog&#34;&gt;friend of mine&lt;/a&gt;, who lives in Vancouver, about finding items that are stored in &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/6sh2ey19.aspx&#34; title=&#34;List(T)&#34;&gt;generic Lists&lt;/a&gt;. He flicked me a code snippet that looked something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;List&amp;lt;foo&amp;gt; list = new List&amp;lt;foo&amp;gt;();
+// .. do some stuff
+Foo f = list.Find(delegate(Foo f) { return foo.Name == &amp;quot;Bar&amp;quot;; });
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Straight away I fired back with an update to the code which used &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/bb397687.aspx&#34; title=&#34;Lambda Expressions (C# Programming Guide)&#34;&gt;lambda expressions&lt;/a&gt; instead, as I&amp;rsquo;m a fan of how concise they are ;)&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows on OJ&#39;s Perspective</title>
+    <link>/tags/windows/</link>
+    <description>Recent content in Windows on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Sat, 16 May 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setting up Trac, Mercurial and SSH on Windows</title>
+      <link>/posts/setting-up-trac-mercurial-and-ssh-on-windows/</link>
+      <pubDate>Sat, 16 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/setting-up-trac-mercurial-and-ssh-on-windows/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING - This blog post is long :)&lt;/strong&gt;
+&lt;em&gt;This post has been edited since it was published. Please see the end of the article for any notes/modifications&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;h3&gt;Some Background Info&lt;/h3&gt;
+I had the need to do this for work recently. It was nothing short of a right royal pain in the butt. It was such a pain, in fact, that I have decided to document what I had to do to get it working so that other poor unfortunates will feel less pain if they have to do this themselves.&lt;/p&gt;
+
+&lt;p&gt;Almost regardless of the company and the software I&amp;rsquo;m working on, I use &lt;a href=&#34;http://www.selenic.com/mercurial/&#34; title=&#34;Mercurial&#34;&gt;Mercurial&lt;/a&gt; for source code control. For the work I am doing at the moment, I was also using hg because the company I am involved with is relatively new and they hadn&amp;rsquo;t yet sorted out a plan for version control or &lt;acronym title=&#34;Application Lifecycle Management&#34;&gt;ALM&lt;/acronym&gt;. It was working quite well and I was pushing all my changes to my &lt;a href=&#34;http://www.google.com.au/url?q=http://www.buffalotech.com/products/network-storage/terastation/terastation-iii/&amp;ei=fioOSuLvGpu8swPl56zqAg&amp;sa=X&amp;oi=smap&amp;resnum=1&amp;ct=result&amp;cd=2&amp;usg=AFQjCNHXKMchy5tR-a-jMOFAbtxoWzfedA&#34; title=&#34;Terastation&#34;&gt;NAS box&lt;/a&gt; to make sure I had other copies backed up, etc. I was &lt;em&gt;living the dream&lt;/em&gt; :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Resolving Side-by-Side Configuration Issues</title>
+      <link>/posts/resolving-side-by-side-configuration-issues/</link>
+      <pubDate>Sat, 17 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/resolving-side-by-side-configuration-issues/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been meaning to blog about this for well over a year now, but for some reason I never got round to it. This came up in conversation the other day with a couple of workmates and it prompted me to revisit the issue.&lt;/p&gt;
+
+&lt;p&gt;Have you ever fired up an application on Windows XP and got the following error?
+&lt;blockquote&gt;&lt;p&gt;The application has failed to start because the application configuration is incorrect. Reinstalling the application may fix this problem.&lt;/p&gt;&lt;/blockquote&gt;
+Informative isn&amp;rsquo;t it! What about if you fire up the same application on Windows Vista?
+&lt;blockquote&gt;&lt;p&gt;The application has failed to start because its side-by-side configuration is incorrect. Please see the application event log for more detail.&lt;/p&gt;&lt;/blockquote&gt;
+This does tell us a little bit more about the problem, but not a &lt;em&gt;lot&lt;/em&gt; more.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Requisite Vista</title>
+      <link>/posts/requisite-vista/</link>
+      <pubDate>Mon, 29 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/requisite-vista/</guid>
+      <description>&lt;p&gt;When I started my new gig on the 15th of this month, I was handed a &lt;a href=&#34;http://www.toshibadirect.com/td/b2c/cmod.to?coid=-33778&#34; title=&#34;Toshiba Tecra M9&#34;&gt;new laptop&lt;/a&gt; to do all my work on. It&amp;rsquo;s a nifty little gadget with 3GB RAM! Very schmick. There was one catch..&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip; see, the company is migrating to &lt;a href=&#34;http://www.microsoft.com/windows/products/windowsvista/default.mspx&#34; title=&#34;Windows Vista&#34;&gt;Vista&lt;/a&gt;, which means I have to use it too. A while ago I &lt;a href=&#34;/posts/should-i-install-vista/&#34; title=&#34;Should I install Vista?&#34;&gt;posted my thoughts with regards to installing Vista&lt;/a&gt;, so as you can imagine it&amp;rsquo;s a little bit strange having to use it.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

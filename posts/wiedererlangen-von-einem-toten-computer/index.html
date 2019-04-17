@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Wiedererlangen von einem toten Computer - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/wiedererlangen-von-einem-toten-computer/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Wiedererlangen von einem toten Computer </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Wed Sep 20, 2006</span>
+
+	  <p>Computer failures. We&rsquo;ve all been bitten by them, and I&rsquo;m pretty sure we&rsquo;ll all be bitten by them again. Good quality HDD storage is becoming more common, but despite the advances in technology, our drives still only have a <em>reliable</em> lifetime of a few years. Power supplies are becoming more solid, but they still blow up. Motherboards, while having more features than you poke a stick at, are still susceptable to being killed by something as simple as static electricity at the slightest touch.</p>
+
+<p>The result of losing <em>any</em> part of your computer half-way through a project is pretty devastating, especially if it&rsquo;s the HDD. This isn&rsquo;t just because of the loss of information, but also because of the loss of time that it takes to get things up to speed again. That time includes redoing all the work that was lost <em>and</em> getting a new machine built and ready to go so that development work can recommence.</p>
+
+<p>The purpose of this post is to explore the options reducing the impact of hardware failures on our geek lives. The reason I thought I&rsquo;d rant was because Danny Ireland recently <a href="http://www.shiftperception.com/blog/posts/how-to-blow-up-2-computers-in-2-weeksthe-the-ballad-of-the-spare-computer/" title="How to blow up 2 computers in 2 weeks">experienced an event like this</a>.</p>
+
+<p>From this point on I&rsquo;ll be using the term <strong>Virtual Machine</strong> (VM) as a meaning for having an operating system running inside a window :) So this might be using <a href="http://www.vmware.com" title="VMware">VMWare</a>, <a href="http://www.microsoft.com/windowsxp/virtualpc/" title="VirtualPC">Microsoft VirtualPC</a>, <a href="http://bochs.sourceforge.net/" title="Bochs">Bochs</a> or something similar.</p>
+
+<p>To start off with, I&rsquo;m one of those guys who likes to have his computer running at a blistering/optimum speed even if he&rsquo;s not going to be doing anything that requires it :) I know I&rsquo;m not alone in this world either. As a result, the idea of doing my daily activities inside a VM isn&rsquo;t that appealing. Not just that, but VMs tend to always have some form of refresh and response issues which just frustrate me.</p>
+
+<p>On the flip side of the coin, I don&rsquo;t like the idea of having to reboot every time I want to fire up a new operating system, which is one of the things that VMs nail on the head. Another things is being able to have them all running at once if you really want.</p>
+
+<p>The argument for dual-booting vs VMs has no affect on the issues surrounding a hardware failure, I just thought I&rsquo;d mention a couple issues surrounding the use of VMs.</p>
+
+<p>The main issue that needs to be covered is the minimal recovery time. Minimal recovery time relies on backups, and backups are always in short supply regardless of how good your backup scheme is, because you simply can&rsquo;t back up real-time (well, you can, but is it something that you want to do given the overheads?). Let&rsquo;s look at the areas of hardware failure and the impact it can have on your work.</p>
+
+<p><strong><u>Video Card / Monitor</u></strong></p>
+
+<p>Easy peasy. This has little do no impact on you as neither of these items are responsbile for retaining state. If either one of these kitties dies on you, replacing them should be a doddle. Most companies would (<em>should</em>?) have spares, and getting going again should take no more than a few minutes. If you&rsquo;re good enough, you should still be able to save your work before shutting your PC down to make the changes required :)</p>
+
+<p><strong><u>Motherboard / CPU</u></strong></p>
+
+<p>Depending on the method of demise, this may or may not affect your work. Sure, it&rsquo;s going to ditch whatever work you&rsquo;ve done that&rsquo;s volatile (ie. stuff you haven&rsquo;t saved yet) as most CPU/motherboard failures result in the computer blue-screening, freezing, or totally shutting down. The time it takes to get the motherboard replaced varies greatly. This is due to the fact that figuring out that the motherboard is the problem is what takes the time. Replacing the mobo isn&rsquo;t a huge task, but it does take a bit of time. CPUs are, again, a doddle to replace, and the time to replace is minimal - as soon as you know it&rsquo;s the CPU that&rsquo;s gone.</p>
+
+<p><strong><u>Power Supply Unit (PSU)</u></strong></p>
+
+<p>PSUs die in a similar way to what most drunk drivers do. That is, they waver around and end up crashing, and there&rsquo;s always a chance that they&rsquo;re going to take something else with them! The surges in power can kill any or all of the other bits that are unfortunate enough to be connected to the computer at the time. There&rsquo;s no rule of thumb, you&rsquo;re either luck or you&rsquo;re not. Just pray that it doesn&rsquo;t manage to take your HDD with it when it goes, as it&rsquo;s the only thing in the machine that <em>really</em> hurts when it dies. Dan&rsquo;s post contains some information on his PSU woes :)</p>
+
+<p><strong><u>Hard Disk Drive (HDD)</u></strong></p>
+
+<p>This is the real killer. Not only is it capable of bringing your system down, resulting in the loss of all your W.I.P, but it will probably end up taking a stack of other data with it that has already been persisted. This is where things should be put in place to reduce the impact of a failure.</p>
+
+<p>One way of doing this is to use <a href="http://en.wikipedia.org/wiki/Redundant_array_of_independent_disks" title="RAID">RAID</a> to store your information on multiple drives so that if one of the breaks you still have other copies lying around. This works well, and you&rsquo;d be very unlucky to lose all your disks in one go. That doesn&rsquo;t mean to say that it <em>won&rsquo;t</em> happen (just ask my father-in-law who&rsquo;s literally had a <strong>blast</strong> during a thunderstorm resulting in the loss of not just data, but his entire PC).</p>
+
+<p>Another way is to have all your work stored on a network drive, and have that network drive RAIDed and backed up. This at least puts the focus on the system administrator who should be responsible for a strong backup plan which will allow you to get to the data from the day before at the very least. There&rsquo;s stacks of funky network storage solutions out there (check out Paul&rsquo;s purchase of a <a href="http://pauleastabrook.spaces.live.com/blog/cns!46B5EF0BB06A216B!216.entry?_c11_blogpart_blogpart=blogview&_c=blogpart#permalink" title="2TB should do">2TB NAS</a> as an example). This will increase your network traffic a <em>lot</em> so you&rsquo;d want to make sure that your network infrastructure can deal with it, especially if you deal in massive amounts of content (eg. like source-art for a computer game). If you deal with GBs of data on a daily basis you&rsquo;d want to have a <a href="http://en.wikipedia.org/wiki/Storage_Area_Network" title="Storage Area Network">SAN</a> or something similar to handle the load.</p>
+
+<p><strong><u>Hardware aside - there&rsquo;s more to worry about</u></strong></p>
+
+<p>If you lose your HDD, you&rsquo;re going to have to rebuild your machine whether you like it or not. To some people this is exciting :) But those people are sick, and are usually recaptured very quickly. To most people, this is a dull and mundane task that they just don&rsquo;t want to undertake. In the case of recovering from a hardware failure, I fit firmly into the latter category. Rebuilding a machine is painfully slow, but there are ways to help get back up to speed quickly:
+<ul><li><strong>Imaging/Ghosting</strong> - When you first build your machine, get the OS installed and kill a day installing all the other bits and pieces that you need to do your work (Office, Visual Studio, Firefox, etc), you can use a utility such as <a href="http://en.wikipedia.org/wiki/Ghost_(software)" title="Ghost">Ghost</a> to take a snapshop of your set up and store it to disk. This image can be used to quickly create replica installations on other machines with the same hardware - which is exactly what you want to do when you rebuild your machine. Of course, this comes with the proviso that you have the same hardware when you rebuild. If there&rsquo;s a consistant set of hardware across the organisation, this kind of utility really is a time saver. Unfortunately it&rsquo;s not so fruitful when you have a mixture of hardware set ups.</li><li><strong>Oursourcing</strong> - I&rsquo;m not a huge advocate of this, but it&rsquo;s still an option. By this I mean either hire another company to make sure that there&rsquo;s a replacement machine ready to rock in the case where something goes horribly wrong, or get a deal going with a company like DELL to just get another machine under warranty within 24 hours.</li></ul></p>
+
+<p>There are other options too.</p>
+
+<p>The common problem across all these solutions is that you generally can&rsquo;t your environment back up to exactly how it was before the total dismemberment of your machine. It&rsquo;d be lovely if snapshots of machines can be taken at arbitrary points through the day (without the pain of doing it through Ghost) and restored on arbitrary hardware at the drop of a hat, resulting in, not just your environment but your <em>data</em>, being restored. Yes, this is where those VMs come to the party. You can store your VM anywhere, and run it up on any machine that can boot (and that has a VM player on it).</p>
+
+<p>This sounds so fine and so dandy that it&rsquo;s almost too good to be true - and to a point it is. You have to have some plan of managing the backups of the VM snapshots, and you need to cater for when they need to be copied. Most VM images are quite large due to the amount of software that needs to be installed (imagine how bad it&rsquo;s going to be having to copy a VM of Vista, which without <em>any extra</em> software weighs in at a hefty <strong>9GB</strong>!?).</p>
+
+<p><strong><u>Conclusion</u></strong></p>
+
+<p>I like the idea of having my own VM that can follow me from machine to machine. I like the thought of being able to boot multiple operating systems at any time, and interact with them all at once. I also like the idea of getting the most out of my hardware with an installation that only has what it needs installed and running. The problem is that I don&rsquo;t think given the current set of tools available, that you can have both of these at the same time. I&rsquo;m not saying that the performance of a VM is woeful (far from it), but until I can&rsquo;t notice a difference between playing a game in or out of a VM, I&rsquo;ll probably end up sticking with a normal install.</p>
+
+<p>VMs are great for test environments (reverting to a pre-test state is a two-click process), they&rsquo;re great for persistance of entire operating system state for easy use on multiple machines, and they&rsquo;re even free now thanks to VMware!</p>
+
+<p>Even with all those positives, I think I&rsquo;d still prefer to stick to a standard OS install for the main operating system and development environment, with VMs as test environments. I would have RAID in each of my machines with shared drives that are backed up over night so that data and more than a day old isn&rsquo;t lost.</p>
+
+<p>At the end of the day, it&rsquo;s down to the user or the copmany to choose what they think fits best for their scenario. I think in Dan&rsquo;s case, he was particularly unlucky. Even if I was in his shoes, I&rsquo;d stick to what I&rsquo;ve just described in the previous paragraph.</p>
+
+<p>What would you guys do? Do you think your company has a strategy that gives you good coverage? I&rsquo;d like to hear what procedures you guys have in place to cover for this - and I&rsquo;m sure Dan would like to as well!</p>
+
+<p>PS. For those who care, the title of this blog post <em>should</em> translate to &ldquo;<em>Recovering from a dead computer</em>&rdquo;.</p>
+
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/hardware">Hardware</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/technology">Technology</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

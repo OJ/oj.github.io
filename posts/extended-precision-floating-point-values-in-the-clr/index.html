@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Extended-Precision Floating-Point Values in the CLR - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/extended-precision-floating-point-values-in-the-clr/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Extended-Precision Floating-Point Values in the CLR </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Wed Jun 27, 2007</span>
+
+	  <p>While at work today I hit a problem that I&rsquo;ve never hit before (which is quite rare these days :) ), and while it was frustrating it was also good to learn about something that I never knew was a problem. If you&rsquo;re having some issues marshalling double-precision floating-point information through managed components to unmanaged components, or you&rsquo;re just interested in learning something new, then read on :)</p>
+
+<p>Let me start by explaining the scenario:</p>
+
+<p>One of our <acronym title="Visual Basic v6">VB6</acronym> applications passes a variant array of 64-bit doubles to a managed C++ component. The managed code does a bit of munging, before passing the same information on to another component which is an <em>un</em>managed C++ DLL written and maintained by a third party. This second DLL is responsible for doing boolean operations on 3D solids. When this component is invoked, the application dies with a nice obscure &ldquo;screwed-up memory&rdquo; error. Unfortunately, since the component is closed-source, we needed to pass the information on to the author of the code and wait for a response.</p>
+
+<p>After the author had investigated the problem he informed us that the reason for the crash was that the values that are being passed in are <a href="http://en.wikipedia.org/wiki/Extended_precision" title="Extended Precision">80-bit extended-precision</a> values, and not the expected <a href="http://en.wikipedia.org/wiki/IEEE_754" title="IEEE 754">IEEE</a> <a href="http://en.wikipedia.org/wiki/Double_precision" title="Double Precision">64-bit double-precision</a> values.</p>
+
+<p>Wierd! That didn&rsquo;t make any sense to me. On hearing this I started to investigate where the process was falling down. The original data was 64-bit, so how come it <em>wasn&rsquo;t</em> by the time it hit the final DLL? Something must be converting the 64-bit double-precision values to their 80-bit extended-precision equivalents. I spent a fair bit of time trying to find out as much as I could about the various floating-point representations, and where they&rsquo;re used, but it took me an eternity to locate the information I was searching for.</p>
+
+<p>In the deep, dark depths of the web, I stumbled across this little nugget of information (thanks to <a href="http://www.extremeoptimization.com/resources/Articles/FPDotNetConceptsAndFormats.aspx#standards" title="FP .NET Concepts and Formats">ExtremeOptimization.com</a>):<blockquote><p>&hellip; the &lsquo;extended&rsquo; format, for which the IEC 60559 standard defines minimum specifications, and which is used by the floating-point unit on Intel processors, and is also <strong>used internally by the CLR</strong>.</p></blockquote>Ah ha! You bastards :) So we&rsquo;re always dealing with 80-bit values when we use <em>double</em> in the <a href="http://en.wikipedia.org/wiki/Common_Language_Runtime" title="Common Language Runtime">CLR</a>.</p>
+
+<p>Now that we know this, we can take steps to sort it out. In a nutshell, we need to set the <a href="http://en.wikipedia.org/wiki/Floating_point_unit" title="Floating Point Unit">FPU</a> state to force the use of 64-bit values before invoking the unmanaged component. Thankfully there&rsquo;s an API function that we can use to do this, it&rsquo;s called <a href="http://msdn2.microsoft.com/en-us/library/e9b52ceh(VS.80).aspx" title="_controlfp">_controlfp()</a>. In VS 2005, this function is deprecated, so we&rsquo;re forced to use the &lsquo;secure&rsquo; equivalent _controlfp_s(). Here&rsquo;s how you do it:</p>
+
+<pre><code>#include &lt;float.h&gt;
+.
+.
+void ManagedClass::ManagedFunction()
+{
+  double dooby[128];
+  .
+  unsigned int prevState;
+  // set the FPU state to 64-bit
+  _controlfp_s( &amp;prevState, _PC_53, MCW_PC);
+  .
+  // invoke unmanaged DLL - these values wil be 64-bit, not 80-bit
+  ExternalFunction( dooby );
+  .
+  // reset FPU state to previous value
+  _controlfp_s( NULL, prevState, MCW_PC);
+}
+</code></pre>
+
+<p>So there you have it. I hope this information is useful :)</p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/clr">CLR</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/tips/tricks">Tips/Tricks</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/c">C#</a>
+	  
+	    </p>
+	    
+<p><a itemprop="keywords" class=" label label-danger" href="/tags/c">C#</a> <a itemprop="keywords" class=" label label-danger" href="/tags/clr">CLR</a> <a itemprop="keywords" class=" label label-danger" href="/tags/floating-point">floating point</a></p>
+
+
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

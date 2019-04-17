@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>interview on OJ&#39;s Perspective</title>
+    <link>/tags/interview/</link>
+    <description>Recent content in interview on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Sat, 14 Jun 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/interview/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An Interesting Little Problem</title>
+      <link>/posts/an-interesting-little-problem/</link>
+      <pubDate>Sat, 14 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/an-interesting-little-problem/</guid>
+      <description>&lt;p&gt;This post was inspired by a recent interview question that was posted over at &lt;a href=&#34;http://www.fsharp.it/posts/google-interview-question-product-of-other-elements-in-an-array-in-on/&#34; title=&#34;Fsharp.it&#34;&gt;fsharp.it&lt;/a&gt;. It&amp;rsquo;s one of those neat little questions which looks really simple on the surface but is quite tricky.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OSCP on OJ&#39;s Perspective</title>
+    <link>/categories/oscp/</link>
+    <description>Recent content in OSCP on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Thu, 12 Dec 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/oscp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OSCP FAQ</title>
+      <link>/posts/oscp-faq/</link>
+      <pubDate>Thu, 12 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/oscp-faq/</guid>
+      <description>&lt;p&gt;Since publishing the article that detailed my experiences with the &lt;a href=&#34;http://www.offensive-security.com/information-security-training/penetration-testing-with-backtrack/&#34;&gt;PWB&lt;/a&gt; labs and the &lt;a href=&#34;http://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional/&#34;&gt;OSCP&lt;/a&gt; exam, I have received scores of emails from potential and current students searching for more information and (quite often) hints. While I do my best to answer most of them, it&amp;rsquo;s close to impossible to get to them all as my email debt is already way too high.&lt;/p&gt;
+
+&lt;p&gt;From this point on I have decided not to respond to questions directly via email. This post will stand instead of those emails as a point of reference for common OSCP-related questions. As more questions come in I will update this post so that all future readers can benfit from the answers without me having to repost them.&lt;/p&gt;
+
+&lt;p&gt;Believe it or not, every single one of these questions has appeared in my inbox.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OSCP and Me</title>
+      <link>/posts/oscp-and-me/</link>
+      <pubDate>Fri, 16 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/oscp-and-me/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;http://www.offensive-security.com/information-security-training/penetration-testing-with-backtrack/&#34; title=&#34;Penetration Testing with BackTrack&#34;&gt;PWB&lt;/a&gt; course by &lt;a href=&#34;http://www.offensive-security.com/&#34; title=&#34;Offensive Security&#34;&gt;Offensive Security&lt;/a&gt; is absolutely awesome, as is the exam which earns you the prized &lt;a href=&#34;http://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional/&#34; title=&#34;Offensive Security Certified Professional&#34;&gt;OSCP&lt;/a&gt; certification. I took this course and exam recently; I loved it and I nailed it! I am now equipped with a much better understanding of the security world and am in a better position to help businesses improve the security of their application architecture and infrastructure.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;/contact&#34; title=&#34;Contact OJ&#34;&gt;Hit me up&lt;/a&gt; and let&amp;rsquo;s talk about how I can help you make your applications more secure.&lt;/p&gt;
+
+&lt;p&gt;What follows is the full story of my path through PWB and OSCP. Enjoy.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Webmachine, ErlyDTL and Riak - Part 1 - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/webmachine-erlydtl-and-riak-part-1/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Webmachine, ErlyDTL and Riak - Part 1 </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Wed Sep 1, 2010</span>
+
+	  <p><img src="/uploads/2010/09/riak-logo.png" alt="Riak Logo" style="float:left;padding-right:5px;padding-bottom:5px;"/>It has been a long time coming, but the first post is finally here! This is the first in a series of post, as <a href="/posts/the-future-is-erlang/" title="The Future is Erlang">promised a while ago</a>, covering off web development using <a href="http://erlang.org/" title="Erlang">Erlang</a>. This post is the ubiquitous &ldquo;get up and running&rdquo; post, which aims to get your environment set up so that you can dive in to development. The next post will detail how to handle a basic end-to-end web request.</p>
+
+<p><img src="/uploads/2010/09/Erlang_logo.png" width="150" style="float:right;margin-left:5px;margin-bottom:5px;"/>First up, a few things we need to be aware of before we begin:</p>
+
+<ol>
+<li>The information in this post has only been verified on Linux (<a href="http://linuxmint.com/" title="Linux Mint">Mint</a> to be exact). It <em>should</em> work just fine on Mac OSX. I&rsquo;m almost certain that it <em>won&rsquo;t</em> work on a Windows machine. So if you&rsquo;re a Windows developer, you&rsquo;ll have to wait for another post down the track which covers off how to get your environment ready to rock.</li>
+<li>We&rsquo;ll be downloading, building and installing <a href="http://erlang.org/" title="Erlang">Erlang</a>, <a href="http://github.com/evanmiller/erlydtl" title="ErlyDTL">ErlyDTL</a>, <a href="http://www.basho.com/developers.html#Riak" title="Riak">Riak</a> and <a href="http://www.basho.com/developers.html#Webmachine" title="Webmachine">Webmachine</a>.</li>
+<li><a href="http://www.basho.com/developers.html#Rebar" title="Rebar">Rebar</a> is the tool we&rsquo;ll be using to handle builds, but I won&rsquo;t be covering it in any depth.</li>
+<li>You will need the latest version of <a href="http://git-scm.com/" title="Git">Git</a> so make sure it&rsquo;s downloaded and installed before you follow this article.</li>
+<li>We&rsquo;ll be doing <em>some</em> interaction with Riak via <a href="http://curl.haxx.se/" title="cURL and libcurl">curl</a>, so make sure you have it downloaded and installed as well.</li>
+<li>This is intended to be a step-by-step guide targeted at those who are very new to web development in Erlang. This may not be the most ideal set up, nor the best way of doing certain things. I am hoping that those people who are more experienced than I will be able to provide feedback and guidance in areas where I am lacking.</li>
+<li>Over the course of this series I&rsquo;ll be attempting to build an Erlang version of the <a href="http://bitbucket.org/OJ/codesmackdown" title="Code Smackdown">Code Smackdown</a> site that I&rsquo;ve been working on here and there with a <a href="http://secretgeek.net/" title="secretGeek">mate of mine</a>. You&rsquo;ll see that the sample application we&rsquo;re working on is called &ldquo;csd&rdquo; for obvious reasons.</li>
+</ol>
+
+<p>OK, let&rsquo;s get into it. First up, Erlang.</p>
+
+<h3 id="installing-erlang-r15b01">Installing Erlang R15B01</h3>
+
+<p>Download and installation is fairly simple. Right now we&rsquo;re not worried about enabling all of the features of Erlang, such as interfacing with Java and providing support for GTK. So the boilerplate functionality is enough. Here are the steps to follow:</p>
+
+<pre><code>oj@air ~/blog $ wget http://erlang.org/download/otp_src_R15B01.tar.gz
+
+  ... snip ...
+
+oj@air ~/blog $ tar -xzf otp_src_R15B01.tar.gz 
+oj@air ~/blog $ cd otp_src_R15B01/
+oj@air ~/blog/otp_src_R15B01 $ ./configure 
+
+  ... snip ...
+
+oj@air ~/blog/otp_src_R15B01 $ make
+
+  ... snip ...
+
+oj@air ~/blog/otp_src_R15B01 $ sudo make install
+
+  ... snip ...
+</code></pre>
+
+<p>Done! Let&rsquo;s confirm that it has been set up correctly:</p>
+
+<pre><code>oj@air ~/blog $ erl
+Erlang R15B01 (erts-5.9.1) [source] [64-bit] [smp:2:2] [rq:2] [async-threads:0] [hipe] [kernel-poll:false]
+
+Eshell V5.9.1  (abort with ^G)
+1&gt; q().
+ok
+</code></pre>
+
+<p>Excellent. Next let&rsquo;s get Riak going.</p>
+
+<h3 id="installing-riak-1-2">Installing Riak 1.2</h3>
+
+<p>Considering the power of the software you are about to set up, it is absolutely insane how easy it is to get it running. If any of you have tried to get <a href="http://couchdb.apache.org/" title="CouchDB">CouchDB</a> running you&rsquo;ll no doubt have experienced a few quirks and a bit of pain getting it rolling. Not so with Riak. As mentioned at the start of the article, make sure you have a recent version of <a href="http://git-scm.com/" title="Git">Git</a> installed.</p>
+
+<pre><code>oj@air ~/blog $ git clone git://github.com/basho/riak
+Cloning into riak...
+remote: Counting objects: 12989, done.
+remote: Compressing objects: 100% (4210/4210), done.
+remote: Total 12989 (delta 8494), reused 12871 (delta 8386)
+Receiving objects: 100% (12989/12989), 9.82 MiB | 168 KiB/s, done.
+Resolving deltas: 100% (8494/8494), done.
+
+oj@air ~/blog $ cd riak
+oj@air ~/blog/riak $ make
+
+./rebar get-deps
+==&gt; rel (get-deps)
+==&gt; riak (get-deps)
+Pulling cluster_info from {git,&quot;git://github.com/basho/cluster_info&quot;,
+                               {branch,&quot;master&quot;}}
+Cloning into cluster_info...
+
+   ... sniped LOTS of stuff ...
+
+==&gt; rel (compile)
+==&gt; riak (compile)
+Compiled src/etop_txt.erl
+</code></pre>
+
+<p>I snipped a lot of the make output for obvious reasons. Let&rsquo;s build a few development nodes of Riak and cluster them together as indicated in the <a href="https://wiki.basho.com/display/RIAK/The+Riak+Fast+Track" title="Riak Fast Track">Riak Fast Track</a>:</p>
+
+<pre><code>oj@air ~/blog/riak $ make devrel
+mkdir -p dev
+(cd rel &amp;&amp; ../rebar generate target_dir=../dev/dev1 overlay_vars=vars/dev1_vars.config)
+==&gt; rel (generate)
+mkdir -p dev
+(cd rel &amp;&amp; ../rebar generate target_dir=../dev/dev2 overlay_vars=vars/dev2_vars.config)
+==&gt; rel (generate)
+mkdir -p dev
+(cd rel &amp;&amp; ../rebar generate target_dir=../dev/dev3 overlay_vars=vars/dev3_vars.config)
+==&gt; rel (generate)
+mkdir -p dev
+(cd rel &amp;&amp; ../rebar generate target_dir=../dev/dev4 overlay_vars=vars/dev4_vars.config)
+==&gt; rel (generate)
+
+oj@air ~/blog/riak $ cd dev
+oj@air ~/blog/riak/dev $ dev1/bin/riak start
+oj@air ~/blog/riak/dev $ dev2/bin/riak start
+oj@air ~/blog/riak/dev $ dev3/bin/riak start
+oj@air ~/blog/riak/dev $ dev4/bin/riak start
+oj@air ~/blog/riak/dev $ dev2/bin/riak-admin cluster join dev1
+Success: staged join request for 'dev2@127.0.0.1' to dev1
+oj@air ~/blog/riak/dev $ dev3/bin/riak-admin cluster join dev1
+Success: staged join request for 'dev3@127.0.0.1' to dev1
+oj@air ~/blog/riak/dev $ dev4/bin/riak-admin cluster join dev1
+Success: staged join request for 'dev4@127.0.0.1' to dev1
+</code></pre>
+
+<p>This is where things are a different compared to earlier versions of Riak (&lt;= 1.1.4). Here we have just planned to set up our cluster, we haven&rsquo;t yet actually made any changes. To see the current state of the plan, we can use the new <code>cluster plan</code> command on any of the nodes:</p>
+
+<pre><code>oj@air ~/blog/riak/dev $ dev1/bin/riak-admin cluster plan
+=============================== Staged Changes ================================
+Action         Nodes(s)
+-------------------------------------------------------------------------------
+join           'dev2@127.0.0.1'
+join           'dev3@127.0.0.1'
+join           'dev4@127.0.0.1'
+-------------------------------------------------------------------------------
+
+
+NOTE: Applying these changes will result in 1 cluster transition
+
+###############################################################################
+                         After cluster transition 1/1
+###############################################################################
+
+================================= Membership ==================================
+Status     Ring    Pending    Node
+-------------------------------------------------------------------------------
+valid     100.0%     25.0%    'dev1@127.0.0.1'
+valid       0.0%     25.0%    'dev2@127.0.0.1'
+valid       0.0%     25.0%    'dev3@127.0.0.1'
+valid       0.0%     25.0%    'dev4@127.0.0.1'
+-------------------------------------------------------------------------------
+Valid:4 / Leaving:0 / Exiting:0 / Joining:0 / Down:0
+
+Transfers resulting from cluster changes: 48
+  16 transfers from 'dev1@127.0.0.1' to 'dev4@127.0.0.1'
+  16 transfers from 'dev1@127.0.0.1' to 'dev3@127.0.0.1'
+  16 transfers from 'dev1@127.0.0.1' to 'dev2@127.0.0.1'
+</code></pre>
+
+<p>Isn&rsquo;t that awesome! We can plan our cluster set up before actually commiting changes. This gets a big thumbs up from me. In order to commit changes, we use <code>cluster commit</code>:</p>
+
+<pre><code>oj@air ~/blog/riak/dev $ dev1/bin/riak-admin cluster commit
+Cluster changes committed
+oj@air ~/blog/riak/dev $ dev2/bin/riak-admin member-status
+================================= Membership ==================================
+Status     Ring    Pending    Node
+-------------------------------------------------------------------------------
+valid      25.0%      --      'dev1@127.0.0.1'
+valid      25.0%      --      'dev2@127.0.0.1'
+valid      25.0%      --      'dev3@127.0.0.1'
+valid      25.0%      --      'dev4@127.0.0.1'
+-------------------------------------------------------------------------------
+Valid:4 / Leaving:0 / Exiting:0 / Joining:0 / Down:0
+</code></pre>
+
+<p>As we can see from the output, we now have a 4-node Riak cluster up and running. Those four nodes have the following traits:
+<table style="border: 1px solid black; width:100%;">
+  <thead>
+    <tr>
+      <th style="border: 1px solid black; padding: 3px;">Name</th>
+      <th style="border: 1px solid black; padding: 3px;">Protobuf Port</th>
+      <th style="border: 1px solid black; padding: 3px;">HTTP Port</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid black; padding: 3px;">dev1@127.0.0.1</td>
+      <td style="border: 1px solid black; padding: 3px;">8081</td>
+      <td style="border: 1px solid black; padding: 3px;">8091</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 3px;">dev2@127.0.0.1</td>
+      <td style="border: 1px solid black; padding: 3px;">8082</td>
+      <td style="border: 1px solid black; padding: 3px;">8092</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 3px;">dev3@127.0.0.1</td>
+      <td style="border: 1px solid black; padding: 3px;">8083</td>
+      <td style="border: 1px solid black; padding: 3px;">8093</td>
+    </tr>
+    <tr>
+      <td style="border: 1px solid black; padding: 3px;">dev4@127.0.0.1</td>
+      <td style="border: 1px solid black; padding: 3px;">8084</td>
+      <td style="border: 1px solid black; padding: 3px;">8094</td>
+    </tr>
+  </tbody>
+</table></p>
+
+<p>We can talk to any of these nodes and they will replicate their data to the other nodes. Nifty! Now that we have a Riak cluster running for development, let&rsquo;s get Webmachine ready.</p>
+
+<h3 id="installing-webmachine-1-9-1">Installing Webmachine 1.9.1</h3>
+
+<p>Again, the process is very simple:</p>
+
+<pre><code>oj@air ~/blog $ git clone git://github.com/basho/webmachine
+Cloning into webmachine...
+remote: Counting objects: 1512, done.
+remote: Compressing objects: 100% (611/611), done.
+remote: Total 1512 (delta 957), reused 1409 (delta 869)
+Receiving objects: 100% (1512/1512), 1.32 MiB | 225 KiB/s, done.
+Resolving deltas: 100% (957/957), done.
+
+oj@air ~/blog $ cd webmachine
+oj@air ~/blog/webmachine $ make
+==&gt; webmachine (get-deps)
+Pulling mochiweb from {git,&quot;git://github.com/basho/mochiweb&quot;,
+                           {tag,&quot;1.5.1-riak-1.0.x-fixes&quot;}}
+Cloning into mochiweb...
+==&gt; mochiweb (get-deps)
+==&gt; mochiweb (compile)
+Compiled src/mochiweb_sup.erl
+
+   ... snip ...
+
+==&gt; webmachine (compile)
+Compiled src/webmachine_util.erl
+
+   ... snip ...
+
+Compiled src/webmachine_request.erl
+</code></pre>
+
+<p>As you can see, Webmachine sits on top of the <a href="http://github.com/mochi/mochiweb" title="Mochiweb">Mochiweb</a> web server.</p>
+
+<p>To create our own application which sits on top of Webmachine, we can utilise the <code>new_webmachine.sh</code> script. So let&rsquo;s do that to create our Code Smackdown (csd) site:</p>
+
+<pre><code>oj@air ~/blog/webmachine $ scripts/new_webmachine.sh
+usage: new_webmachine.sh name [destdir]
+oj@air ~/blog/webmachine $ scripts/new_webmachine.sh csd ..
+==&gt; priv (create)
+Writing /Users/oj/code/tmp/csd/README
+Writing /Users/oj/code/tmp/csd/Makefile
+Writing /Users/oj/code/tmp/csd/rebar.config
+Writing /Users/oj/code/tmp/csd/rebar
+Writing /Users/oj/code/tmp/csd/start.sh
+Writing /Users/oj/code/tmp/csd/src/csd.app.src
+Writing /Users/oj/code/tmp/csd/src/csd.erl
+Writing /Users/oj/code/tmp/csd/src/csd_app.erl
+Writing /Users/oj/code/tmp/csd/src/csd_sup.erl
+Writing /Users/oj/code/tmp/csd/src/csd_resource.erl
+Writing /Users/oj/code/tmp/csd/priv/dispatch.conf
+</code></pre>
+
+<p>Webmachine generates a fully functional website out of the box. So we should be able to build it, fire it up and see it in action:</p>
+
+<pre><code>oj@air ~/blog/webmachine $ cd ../csd
+oj@air ~/blog/csd $ make
+==&gt; csd (get-deps)
+Pulling webmachine from {git,&quot;git://github.com/basho/webmachine&quot;,&quot;HEAD&quot;}
+Cloning into webmachine...
+==&gt; webmachine (get-deps)
+Pulling mochiweb from {git,&quot;git://github.com/basho/mochiweb&quot;,
+                           {tag,&quot;1.5.1-riak-1.0.x-fixes&quot;}}
+Cloning into mochiweb...
+==&gt; mochiweb (get-deps)
+==&gt; mochiweb (compile)
+Compiled src/mochiweb_sup.erl
+
+   ... snip ...
+
+Compiled src/csd_sup.erl
+
+oj@air ~/blog/csd $ ./start.sh
+Erlang R15B01 (erts-5.9.1) [source] [64-bit] [smp:4:4] [async-threads:0] [hipe] [kernel-poll:false]
+
+   ... snip ...
+
+=PROGRESS REPORT==== 11-Jul-2012::22:31:27 ===
+          supervisor: {local,csd_sup}
+             started: [{pid,&lt;0.75.0&gt;},
+                       {name,webmachine_mochiweb},
+                       {mfargs,
+                           {webmachine_mochiweb,start,
+                               [[{ip,&quot;0.0.0.0&quot;},
+                                 {port,8000},
+                                 {log_dir,&quot;priv/log&quot;},
+                                 {dispatch,[{[],csd_resource,[]}]}]]}},
+                       {restart_type,permanent},
+                       {shutdown,5000},
+                       {child_type,worker}]
+
+=PROGRESS REPORT==== 11-Jul-2012::22:31:27 ===
+         application: csd
+          started_at: nonode@nohost
+
+</code></pre>
+
+<p>The application is now up and running. As you can see from the output, our csd application has been fired up and is listening on port 8000. Let&rsquo;s fire it up in a web browser to see if it works.</p>
+
+<p><img src="/uploads/2010/09/wm_default.png"/></p>
+
+<p>It&rsquo;s alive! We&rsquo;re almost done. Before we finish up, let&rsquo;s get set up our build to include some dependencies.</p>
+
+<h3 id="adding-erlydtl-and-riak-client-dependencies">Adding ErlyDTL and Riak Client Dependencies</h3>
+
+<p>Rebar makes this bit a walk in the park (thanks <a href="http://dizzyd.com/" title="Gradual Epiphany">Dave</a>, you rock!). Just make sure you stop your Webmachine node before continuing by typing <code>q().</code> into your Erlang console.</p>
+
+<p>The <code>rebar.config</code> file is what drives rebar&rsquo;s dependency mechanism. We need to open this file and add the entries we need to include in our application. Webmachine&rsquo;s <code>start.sh</code> script by default includes all of the dependencies on start up, so after modifying the configuration, we don&rsquo;t have to do anything else (other than use the library of course).</p>
+
+<p>Open up <code>rebar.config</code> in your <a href="http://www.vim.org/" title="VIM">favourite editor</a>, it should look something like this:</p>
+
+<pre><code>%%-*- mode: erlang -*-
+
+{deps, [{webmachine, &quot;1.9.*&quot;, {git, &quot;git://github.com/basho/webmachine&quot;, &quot;HEAD&quot;}}]}.
+</code></pre>
+
+<p>Edit the file so that it includes both ErlyDTL and the Riak Client:</p>
+
+<pre><code>%%-*- mode: erlang -*-
+{deps,
+  [
+    {webmachine, &quot;.*&quot;, {git, &quot;git://github.com/basho/webmachine&quot;, &quot;HEAD&quot;}},
+    {riakc, &quot;.*&quot;, {git, &quot;git://github.com/basho/riak-erlang-client&quot;, &quot;HEAD&quot;}},
+    {erlydtl, &quot;.*&quot;, {git, &quot;git://github.com/OJ/erlydtl.git&quot;, &quot;HEAD&quot;}}
+  ]
+}.
+</code></pre>
+
+<p>You&rsquo;ll notice that the <code>erlydtl</code> reference points at my own fork of the ErlyDTL project. This is because I have made it compile cleanly with rebar so that any dependent projects are also able to be build with rebar. Feel free to use your own fork if you like, but mine is there if you can&rsquo;t be bothered :)</p>
+
+<p>Save the file and build!</p>
+
+<pre><code>oj@air ~/blog/csd $ make
+==&gt; mochiweb (get-deps)
+==&gt; webmachine (get-deps)
+==&gt; csd (get-deps)
+Pulling riakc from {git,&quot;git://github.com/basho/riak-erlang-client&quot;,&quot;HEAD&quot;}
+Cloning into riakc...
+
+  ... snip ...
+</code></pre>
+
+<p>Dependencies sorted. For the final part of this blog post, we&rsquo;ll include a basic ErlyDTL template and use it to render the page so we can see how it works.</p>
+
+<h3 id="rendering-an-erlydtl-template">Rendering an ErlyDTL Template</h3>
+
+<p>Rebar has built-in support for the compilation of ErlyDTL templates. It can be configured to behave how you want it to, but out of the box it&hellip;</p>
+
+<ul>
+<li>&hellip; looks for <code>*.dtl</code> files in the <code>./templates</code> folder</li>
+<li>&hellip; compiles each of the found templates into a module called <code>filename_dtl</code> (eg. <code>base.dtl</code> becomes the module base_dtl)</li>
+<li>&hellip; puts the module beam files into the <code>ebin</code> directory</li>
+</ul>
+
+<p>Very handy. Let&rsquo;s create a very simple template by creating a <code>templates</code> folder, and editing a new file in that folder called <code>sample.dtl</code></p>
+
+<pre><code>&lt;html&gt;&lt;body&gt;Hello from inside ErlyDTL. You passed in {{ &quot;{&quot; }}{ param }}.&lt;/body&gt;&lt;/html&gt;
+</code></pre>
+
+<p>Then open up <code>src/csd_resource.erl</code> and search for the <code>to_html()</code> function. It should look like this:</p>
+
+<pre><code>to_html(ReqData, State) -&gt;
+    {&quot;&lt;html&gt;&lt;body&gt;Hello, new world&lt;/body&gt;&lt;/html&gt;&quot;, ReqData, State}.
+</code></pre>
+
+<p>Modify it to look like this:</p>
+
+<pre><code>to_html(ReqData, State) -&gt;
+    {ok, Content} = sample_dtl:render([{param, &quot;Slartibartfast&quot;}]),
+    {Content, ReqData, State}.
+</code></pre>
+
+<p>For now, don&rsquo;t worry about the content of this file. I will cover this off in a future post.</p>
+
+<p>In the past, we had to manually modify <code>ebin/csd.app</code> to include the template that we&rsquo;ve just created. Thankfully, <code>rebar</code> has been updated so that it generates the <code>ebin/csd.app</code> file from the <code>src/csd.app.src</code> file automatically when the application is built. <code>rebar</code> adds the required modules from the <code>src</code> folder <em>and</em> includes the templates from the <code>templates</code> folder. Therefore, with our template and module ready to go, all we need to do is build and run:</p>
+
+<pre><code>oj@air ~/blog/csd $ make
+==&gt; mochiweb (get-deps)
+==&gt; webmachine (get-deps)
+==&gt; protobuffs (get-deps)
+==&gt; riakc (get-deps)
+==&gt; erlydtl (get-deps)
+==&gt; csd (get-deps)
+==&gt; mochiweb (compile)
+==&gt; webmachine (compile)
+==&gt; protobuffs (compile)
+==&gt; riakc (compile)
+==&gt; erlydtl (compile)
+==&gt; csd (compile)
+Compiled src/csd_resource.erl
+Compiled templates/sample.dtl
+
+oj@air ~/blog/csd $ ./start.sh 
+Erlang R15B01 (erts-5.9.1) [source] [64-bit] [smp:2:2] [rq:2] [async-threads:0] [hipe] [kernel-poll:false]
+
+  ... snip ...
+
+** Found 0 name clashes in code paths 
+
+  ... snip ...
+
+=PROGRESS REPORT==== 11-Jul-2012::22:31:27 ===
+         application: csd
+          started_at: nonode@nohost
+</code></pre>
+
+<p>Notice how ErlyDTL outputs some information to indicate that no template names have clashed with any other modules.</p>
+
+<p>The application is now running, let&rsquo;s see what it looks like:</p>
+
+<p><img src="/uploads/2010/09/wm_erlydtl.png"/></p>
+
+<h3 id="the-end">The End</h3>
+
+<p>We now have a working environment in which to do our development. In the next post, I&rsquo;ll cover some of the basics required to get Webmachine talking to Riak via <a href="http://en.wikipedia.org/wiki/Protocol_Buffers" title="Protocol Buffers">Protocol Buffers</a>.</p>
+
+<p>Feedback and criticism welcome!</p>
+
+<p><strong>Note:</strong> The code for Part 1 (this post) can be found on <a href="https://github.com/OJ/csd/tree/Part1-20110403" title="Source Code for Part 1">Github</a>.</p>
+
+<p>Other parts in this series: <a href="/posts/webmachine-erlydtl-and-riak-part-2/" title="Webmachine, ErlyDTL and Riak - Part 2">Part 2</a>, <a href="/posts/webmachine-erlydtl-and-riak-part-3/" title="Webmachine, ErlyDTL and Riak - Part 3">Part 3</a>, <a href="/posts/webmachine-erlydtl-and-riak-part-4/" title="Webmachine, ErlyDTL and Riak - Part 4">Part 4</a>, <a href="/posts/webmachine-erlydtl-and-riak-part-5/" title="Webmachine, ErlyDTL and Riak - Part 5">Part 5</a></p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/riak">Riak</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/databases">Databases</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/functional-programming">Functional Programming</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/howto">HOWTO</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/erlang">Erlang</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/webmachine">Webmachine</a>
+	  
+	    </p>
+	    
+<p><a itemprop="keywords" class=" label label-danger" href="/tags/erlang">Erlang</a> <a itemprop="keywords" class=" label label-danger" href="/tags/erlydtl">ErlyDTL</a> <a itemprop="keywords" class=" label label-danger" href="/tags/nosql">NoSQL</a> <a itemprop="keywords" class=" label label-danger" href="/tags/riak">Riak</a> <a itemprop="keywords" class=" label label-danger" href="/tags/webmachine">Webmachine</a> <a itemprop="keywords" class=" label label-danger" href="/tags/web-development">web development</a></p>
+
+
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

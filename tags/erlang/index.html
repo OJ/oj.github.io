@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Erlang - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/tags/erlang/">
+  <link href="/tags/erlang/index.xml" rel="alternate" type="application/rss+xml" title="Erlang" />
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <div id="post">
+	<h2>Erlang &nbsp;</h2>
+	<hr/>
+	
+	<h3>2012</h3>
+	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
+	<ul>
+	  
+	  <li>Tue, Jul 10, 2012&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/webmachine-erlydtl-and-riak-part-5/">
+	      <span itemprop="name">Webmachine, ErlyDTL and Riak - Part 5</span></a>
+	    <meta itemprop="datePublished"  content="Jul 10, 2012" />
+	    <meta  itemprop="url" content="/posts/webmachine-erlydtl-and-riak-part-5/"/>
+	  </li>
+	  
+	  <li>Wed, Feb 15, 2012&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/webmachine-erlydtl-and-riak-part-4/">
+	      <span itemprop="name">Webmachine, ErlyDTL and Riak - Part 4</span></a>
+	    <meta itemprop="datePublished"  content="Feb 15, 2012" />
+	    <meta  itemprop="url" content="/posts/webmachine-erlydtl-and-riak-part-4/"/>
+	  </li>
+	  
+	</ul></div>
+	
+	<h3>2010</h3>
+	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
+	<ul>
+	  
+	  <li>Wed, Oct 13, 2010&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/webmachine-erlydtl-and-riak-part-3/">
+	      <span itemprop="name">Webmachine, ErlyDTL and Riak - Part 3</span></a>
+	    <meta itemprop="datePublished"  content="Oct 13, 2010" />
+	    <meta  itemprop="url" content="/posts/webmachine-erlydtl-and-riak-part-3/"/>
+	  </li>
+	  
+	  <li>Sun, Sep 12, 2010&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/webmachine-erlydtl-and-riak-part-2/">
+	      <span itemprop="name">Webmachine, ErlyDTL and Riak - Part 2</span></a>
+	    <meta itemprop="datePublished"  content="Sep 12, 2010" />
+	    <meta  itemprop="url" content="/posts/webmachine-erlydtl-and-riak-part-2/"/>
+	  </li>
+	  
+	  <li>Wed, Sep 1, 2010&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/webmachine-erlydtl-and-riak-part-1/">
+	      <span itemprop="name">Webmachine, ErlyDTL and Riak - Part 1</span></a>
+	    <meta itemprop="datePublished"  content="Sep 01, 2010" />
+	    <meta  itemprop="url" content="/posts/webmachine-erlydtl-and-riak-part-1/"/>
+	  </li>
+	  
+	  <li>Mon, Jan 4, 2010&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/katacast-shopping-checkout-in-erlang/">
+	      <span itemprop="name">Katacast: Shopping Checkout in Erlang</span></a>
+	    <meta itemprop="datePublished"  content="Jan 04, 2010" />
+	    <meta  itemprop="url" content="/posts/katacast-shopping-checkout-in-erlang/"/>
+	  </li>
+	  
+	</ul></div>
+	
+	<hr/>
+	
+
+  
+      </div>
+    </div>
+    </div>
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

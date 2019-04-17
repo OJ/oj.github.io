@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    OSCP FAQ - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/oscp-faq/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> OSCP FAQ </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Thu Dec 12, 2013</span>
+
+	  <p>Since publishing the article that detailed my experiences with the <a href="http://www.offensive-security.com/information-security-training/penetration-testing-with-backtrack/">PWB</a> labs and the <a href="http://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional/">OSCP</a> exam, I have received scores of emails from potential and current students searching for more information and (quite often) hints. While I do my best to answer most of them, it&rsquo;s close to impossible to get to them all as my email debt is already way too high.</p>
+
+<p>From this point on I have decided not to respond to questions directly via email. This post will stand instead of those emails as a point of reference for common OSCP-related questions. As more questions come in I will update this post so that all future readers can benfit from the answers without me having to repost them.</p>
+
+<p>Believe it or not, every single one of these questions has appeared in my inbox.</p>
+
+<blockquote>
+<p>Do I need to be good at programming to do PWB?</p>
+</blockquote>
+
+<p>I&rsquo;d say <em>no</em>, but it really does help. If you&rsquo;re not good with at least one language, then you&rsquo;re going to have a harder time and you&rsquo;ll probably end up needing to purchase time extensions to get through the labs. Scripting and coding is an important part of the experience, and it&rsquo;s something you really should be able to do. You could probably get through the labs without it, but it will be difficult. My recommendation is to go and spend time learning a language like <a href="http://www.python.org/">Python</a>, <a href="http://www.ruby-lang.org/">Ruby</a> or even <a href="http://en.wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a> so that you have the ability to automate some of the tasks you&rsquo;ll have to take on.</p>
+
+<blockquote>
+<p>Should I do OSCP first, or should I take on other certs (such as <a href="https://www.eccouncil.org/Certification/certified-ethical-hacker">CEH</a>, <a href="http://www.giac.org/certification/penetration-tester-gpen">GPEN</a> or <a href="http://mile2.com/penetration-testing-ethical-hacking/cpte.html">CPTE</a>) as preparation?</p>
+</blockquote>
+
+<p>I haven&rsquo;t done CEH, GPEN or CPTE. In fact, to date, OSCP is the only security certification I have attempted to tackle (though I will be taking <a href="http://www.offensive-security.com/information-security-training/cracking-the-perimeter/">CTP</a> later this month with a goal of nailing <a href="http://www.offensive-security.com/information-security-certifications/osce-offensive-security-certified-expert/">OSCE</a> in January). As a result I don&rsquo;t have a valid opinion of the quality or usefulness of the other certifications. My feeling is that it&rsquo;s down to you, dear reader, to determine which is best for you, just as I did when I was looking for a challenge. If you feel that OSCP is out of your depth then by all means go and find something easier.</p>
+
+<blockquote>
+<p>I have done cert <em>A</em>, cert <em>B</em>, and course <em>C</em>. I know language <em>X</em>, operating system <em>Y</em> and technology <em>Z</em>. Am I ready to do OSCP?</p>
+</blockquote>
+
+<p>I have no idea. Only you can answer that.</p>
+
+<blockquote>
+<p>Is there much web application hacking involved?</p>
+</blockquote>
+
+<p>It&rsquo;s hard to quantify &ldquo;much&rdquo;, but yes there is a bit of hacking of web applications involved. Some are known applications, some are custom applications built specifically for the labs. If you&rsquo;re not across the basics before you start, be prepared to ramp up quickly once your lab time commences.</p>
+
+<blockquote>
+<p>Do I need to know about assembly language?</p>
+</blockquote>
+
+<p>There are parts of the course which require you to have a basic understanding of assembly, though only x86 and not x64. I think it&rsquo;s a good idea to get your hands dirty prior to taking the course, because you will be using and adjusting exploits during your lab time.</p>
+
+<blockquote>
+<p>How many hours per day did you spend in the labs? Is an hour per day enough?</p>
+</blockquote>
+
+<p>The short answer is that I spent as many as I possibly could. I paid for just 30 days in the lab which meant that I had to force myself to push hard to get through as many machines as possible without having to pay for more time. It was a cost saver and a personal quest at the same time. On average, my guess is that I spent four or so hours per day, and more on weekends. One hour per day would not be enough, in my opinion, even if you booked 90 days worth of lab time.</p>
+
+<p>My recommendation is to do your best to have larger, unbroken blocks of time rather than lots of smaller chunks of time. This gives you the chance to immerse yourself in a problem and maximises the possibility of you solving it without the context-switching which can be really distruptive to your thought process.</p>
+
+<p>PWB is hard, don&rsquo;t expect to get through it in an hour per day unless you&rsquo;re a guru with lots of experience.</p>
+
+<blockquote>
+<p>Can you please give me a hint for <strong>&lt;machine name&gt;</strong> in the PWB labs, because I&rsquo;m stuck?</p>
+</blockquote>
+
+<p>No. PWB and OSCP is all about learning to learn. The journey is probably more important than the final destination. I will not give hints, and if you ask for them you&rsquo;ll more than likely receive no response from me. If I do respond, I will probably just say &ldquo;Try Harder&rdquo;.</p>
+
+<blockquote>
+<p>Can I please see your lab notes?</p>
+</blockquote>
+
+<p>Absolutely not.</p>
+
+<blockquote>
+<p>I failed my exam, can you please help me pass it next time?</p>
+</blockquote>
+
+<p>Let me think about it for a minute &hellip; No. If you ask me this, I&rsquo;ll take your name and pass it on to the Offensive Security team.</p>
+
+<blockquote>
+<p>I have been a developer for many years and want to try for OSCP, is it a waste of time?</p>
+</blockquote>
+
+<p>No, it&rsquo;s not a waste of time, and yes you shoud try for it. This is exactly the scenario I was in, and I don&rsquo;t regret doing it for a one second. Also, I do believe that anyone who is involved with building production systems should do this course as it really does open your eyes. Most developers haven&rsquo;t really got much visibility of what things are like on the front line when it comes to security. This course is the kind of thing that will make them think much more defensively when writing their code.</p>
+
+<blockquote>
+<p>Will OSCP provide me with the skills I need to be a penetration tester?</p>
+</blockquote>
+
+<p>OSCP by itself will not. I think the only thing that can really give you the skills is experience. However, OSCP is a great start and it gives a great foundation on which to build a career as a penetration tester.</p>
+
+<p>In other words, don&rsquo;t stop learning!</p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/security">Security</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/oscp">OSCP</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

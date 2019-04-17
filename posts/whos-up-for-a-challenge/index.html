@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Who&#39;s up for a challenge? - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/whos-up-for-a-challenge/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Who&#39;s up for a challenge? </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Fri Sep 15, 2006</span>
+
+	  <p>Before starting this blog up, I spent a bit of time thinking about the kind of things I would like to talk about which other people might find interesting. I also wanted to find some areas of discussion where people would be interested in giving me feedback and comments containing their thoughts and opinions so that I can learn something and possibly benefit from other people&rsquo;s experience. While this is all very enlightening, it can be fun and it can be, shall we say, political.</p>
+
+<p>So as well as having lots of industry-specific rants, posts on what&rsquo;s considered good and bad, and large chunks of text relating to experiences while out on site working for clients, I thought it&rsquo;d be a good thing to post some other bits and pieces that are a bit more light hearted, and dare I say it&hellip; FUN!</p>
+
+<p>Way back before I went to the U.K. I used to have a site up and running that had a small community of people interested in programming - specifically game development. While this site is long gone, never to be remembered, there were a few things that we used to do there which I thought were really good. One of which was listing programming challenges. Every now and then I&rsquo;d come up with (or rip off) a programming challenge that I thought would be a good exercise for members of the community to undertake. It was surprising how many people were interested, and we ended up with many responses and submissions containing solutions to the problems.</p>
+
+<p>The beauty of it was that people learned a lot from the exercise - especially from each other&rsquo;s varied approaches. They would come up with a solution and be eager to post it. After noticing that someone else had created a &ldquo;better&rdquo; solution than them, members would go away and try and improve what they had. It was great, as it bred a mindset of iteration and improvement, and over time most of the community members ended up being comfortable with the idea that their first solution generally isn&rsquo;t perfect and they immediately look to make it better.</p>
+
+<p>I&rsquo;m of the view that the first solution that you write to solve a given problem is designed to give you a better understanding of the problem space. Sure, it&rsquo;s not always the case that you can throw away the code you&rsquo;ve written (depending on what you&rsquo;re working on, and what timelines you have to adhere to), but if you can it&rsquo;s a good idea to do it and start again fresh with the knowledge you&rsquo;ve gained from your first attempt.</p>
+
+<p>I would like to get this type of thing going again. I&rsquo;m going to get some ideas together for problems and start posting them here for other people to have a stab at. I&rsquo;ll be giving some of them a go as well, and if people are interested in sharing their solutions and discussing them, they can post their solutions as comments. If the idea becomes popular and the number of submissions goes up, then I may think about setting up a basic <em>Coding Challenges</em> forum for the discussion and submission of the problems and solutions. If people don&rsquo;t like it, I&rsquo;ll probably continue to post them anyway just in case someone at some stage finds them as interesting as I do :) If anyone&rsquo;s interested in seeing my solution, then I&rsquo;d be happy to post it.</p>
+
+<p>The problems themselves will most likely be small. I won&rsquo;t be suggesting that people should go away and write a 3D rendering engine just to see the frames-per-second they can achieve on a 386! The problems will have a very small scope - meaning that solutions can be built quickly, and people won&rsquo;t feel that they need to put a massive amount of time in to get the results required. Hopefully they&rsquo;ll be quite challenging despite being small in stature.</p>
+
+<p>One thing I will attempt to do when writing these problems up is make sure that the specification forces the programmer to do as much of the work as possible - without relying on the supporting framework or library set that comes with the language. In general the problems will not have a target language (or language set), but there may be cases where I state that the problem is intended to be solved using C++ or Miranda!</p>
+
+<p>I hope that you&rsquo;ll find the challenges interesting, and that you&rsquo;ll perhaps find the time to give a few of them a go to exercise the mind. I think some of them will be more useful to beginners learning the ropes of development, but I can&rsquo;t see why experienced programmers shouldn&rsquo;t give them a shot. There&rsquo;s always the possibility that we&rsquo;ll learn <em>something</em>.</p>
+
+<p>So let&rsquo;s begin with the first one that&rsquo;s popped into my head. It&rsquo;s a bit of a classic problem, but there&rsquo;s still a chance that people out there might not have heard it before - or more importantly attempted to solve it themselves in code. I first heard about this problem through a friend of a friend of a friend of a &hellip; you get the idea ;)</p>
+
+<p><strong><u>Challenge #1 - Linked List Loops</u></strong></p>
+
+<blockquote>"What do you think is the most efficient and resource-friendly way to determine if a singly-linked-list contains a loop?"</blockquote>
+
+<p>When you have an instance of a linked list, it is usually <strong>NULL-terminated</strong>, that is, the last reference is a NULL reference which tells you that the end of the list has been found. The question asks how you determine if the list is <em>not</em> NULL-terminated, instead the &ldquo;last&rdquo; item in the list points back to another item in the list (thus creating a loop in the list).</p>
+
+<p>To solve this problem you will need to have an understanding of <a href="http://en.wikipedia.org/wiki/Linked_list#Singly-linked_list" title="Singly-linked list">Singly-linked lists</a>. You don&rsquo;t need to write code, I&rsquo;m just interested in the algorithm you&rsquo;d use.</p>
+
+<p>Sounds easy, and there are quite a few ways of doing it. So give it a shot! I&rsquo;m interested to see what you guys come up with.</p>
+
+<p>Happy problem solving!</p>
+
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/challenges">Challenges</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/software-development">Software Development</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

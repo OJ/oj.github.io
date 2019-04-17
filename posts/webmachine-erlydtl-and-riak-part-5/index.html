@@ -1,0 +1,2533 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Webmachine, ErlyDTL and Riak - Part 5 - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/webmachine-erlydtl-and-riak-part-5/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Webmachine, ErlyDTL and Riak - Part 5 </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Tue Jul 10, 2012</span>
+
+	  <p>{% img right /uploads/2010/09/riak-logo.png &lsquo;Riak Logo&rsquo; %}Newcomers to the series should first take a look at the previous four parts of the <a href="http://buffered.io/series/web-development-with-erlang/" title="Web Development with Erlang">series</a> (<a href="/posts/webmachine-erlydtl-and-riak-part-1/" title="Wembachine, ErlyDTL and Riak - Part 1">Part 1</a>, <a href="/posts/webmachine-erlydtl-and-riak-part-2/" title="Wembachine, ErlyDTL and Riak - Part 2">Part 2</a>, <a href="/posts/webmachine-erlydtl-and-riak-part-3/" title="Wembachine, ErlyDTL and Riak - Part 3">Part 3</a>, <a href="/posts/webmachine-erlydtl-and-riak-part-4/" title="Wembachine, ErlyDTL and Riak - Part 4">Part 4</a>) first to make sure that you&rsquo;re up to speed. Feel free to read on if you feel comfortable with the general concepts in use.</p>
+
+<p>When we finished <a href="/posts/webmachine-erlydtl-and-riak-part-4/" title="Wembachine, ErlyDTL and Riak - Part 4">Part 4</a> we were able to authenticate users using <a href="http://twitter.com/" title="Twitter">Twitter</a> and <a href="http://oauth.net/" title="OAuth">OAuth</a>, which is great as we can delegate the responsibility of password management to an external entity.</p>
+
+<p>Now that we know who people are, we want them to be able to do something meaningful with their accounts. That&rsquo;s what this post is all about.</p>
+
+<h2 id="a-id-agenda-a-agenda"><a id="agenda"></a>Agenda</h2>
+
+<p>So far it has been hard to see what the goal of this application is. Given the piecemeal nature of the posts it&rsquo;s hard to project that vision, especially when the content is quite code-heavy. By the end of this post, we&rsquo;ll not only have a &ldquo;proper&rdquo; web application that performs useful functions, we&rsquo;ll be able to see what this &ldquo;Code Smackdown&rdquo; thing really is all about.</p>
+
+<p>This post is going to cover the following topics:</p>
+
+<ol>
+<li><em><a href="http://www.basho.com/developers.html#Riak" title="Riak">Riak</a> Secondary Indexes</em> - We&rsquo;ll be using these so that we can link code snippet submissions to the users who submitted them.</li>
+<li><em><a href="http://wiki.basho.com/MapReduce.html" title="Riak Map/Reduce">Map/Reduce</a></em> - We&rsquo;re going to end up with data stored in our database and we&rsquo;re going to want to query it. Map/reduce is where it&rsquo;s at!</li>
+<li><em>Form submission handling with <a href="http://www.basho.com/developers.html#Webmachine" title="Webmachine">Webmachine</a></em> - Users will be able to submit code snippet pairs to the system once they&rsquo;re logged in. They&rsquo;ll also be able to vote on submitted snippets.</li>
+<li><em>Listing of submissions per-user</em> - Viewing the submissions for a given user will pull out a list from Riak using the secondary indexes and map/reduce. This will allow a user to see what snippets they&rsquo;ve submitted.</li>
+<li><em>Static file serving</em> - Our new UI will require the serving of static content. There are quite a few ways to do this, one of which is using a custom Webmachine resource. While in production it&rsquo;s a great idea to use a tool like <a href="http://nginx.org/" title="Nginx">Nginx</a> for this purpose, but we&rsquo;ll go with the custom Webmachine resource just to keep things a little simpler.</li>
+<li><em>Tidying up of templates/UI</em> - Now that we&rsquo;ve got some content to render, we&rsquo;ll put together some nicer templates and harness <a href="http://twitter.github.com/bootstrap/" title="Twitter Bootstrap">Twitter Bootstrap</a> to make the site a little nicer to look at. You&rsquo;ll notice that the emphasis will drop off from <a href="http://github.com/evanmiller/erlydtl" title="ErlyDTL">ErlyDTL</a> as we&rsquo;ll be doing more rendering of content on the client side using <a href="http://handlebarsjs.com/" title="Handlebars templating">Handlebars</a> while using <a href="http://documentcloud.github.com/backbone/" title="Backbone.js">Backbone.js</a> for logic, routing and event handling.</li>
+</ol>
+
+<p>Lots of UI work has been done for this post, but most of that work will not be discussed in detail as there&rsquo;s already enough content to get through. As always the source code is available so you can read it and play with it. You&rsquo;ll find the link at the end of the post.</p>
+
+<p>Prior to continuing you should make sure you have the latest version of <a href="http://www.basho.com/developers.html#Riak" title="Riak">Riak</a> installed. If you don&rsquo;t, please go and do this now (read <a href="/posts/webmachine-erlydtl-and-riak-part-1/" title="Wembachine, ErlyDTL and Riak - Part 1">Part 1</a> to learn how to build Riak from scratch).</p>
+
+<p>With that &hellip; don your robe and Wizard&rsquo;s hat and let&rsquo;s begin.</p>
+
+<h2 id="a-id-enabling-secondary-indexes-a-enabling-secondary-indexes"><a id="enabling-secondary-indexes"></a>Enabling Secondary Indexes</h2>
+
+<p>As already mentioned we&rsquo;re going to be storing data in Riak and using the <a href="http://wiki.basho.com/Secondary-Indexes.html" title="Secondary Indexes in Riak">Secondary Index</a> feature to make it easier to link data together and do certain types of queries over that data. Given this requirement the first thing we should do is enable secondary indexes on our cluster.</p>
+
+<p>As per the <a href="http://wiki.basho.com/Secondary-Indexes.html" title="Secondary Indexes in Riak">Riak wiki entry</a> &hellip;</p>
+
+<blockquote>
+<p>As of version 1.0, Secondary Indexes are enabled by configuring Riak to use the
+ELevelDB backend <code>riak_kv_eleveldb_backend</code>. Currently, the ELevelDB backend is the
+only index-capable backend.</p>
+</blockquote>
+
+<p>So we need to go through our Riak development cluster configuration and make sure that our backend is set up correctly. Before continuing, make sure your cluster is no longer running:</p>
+
+<pre><code>riak/dev $ dev1/bin/riak stop
+ok
+riak/dev $ dev2/bin/riak stop
+ok
+riak/dev $ dev3/bin/riak stop
+ok
+</code></pre>
+
+<p>To modify all the <code>app.config</code> files easily we can run one simple command from the <code>dev</code> (the parent folder which contains all the dev Riak instances):</p>
+
+<pre><code>riak/dev $ vim ./**/app.config
+</code></pre>
+
+<p>This will open <a href="http://www.vim.org/" title="VIM">VIM</a> with all of the <code>app.config</code> files open so that we can easily made the necessary modifications. In each of these files, find the <code>riak_kv</code> configuration section and change the backend like so:</p>
+
+<pre><code>... snip ...
+
+%% Riak KV config
+{riak_kv, [
+          %% Storage_backend specifies the Erlang module defining the storage
+          %% mechanism that will be used on this node.
+          {storage_backend, riak_kv_eleveldb_backend},
+          ... snip ...
+]}
+... snip ...
+</code></pre>
+
+<p>Done. Don&rsquo;t forget to make sure your dev cluster is running again before you continue:</p>
+
+<pre><code>riak/dev $ dev1/bin/riak start
+riak/dev $ dev2/bin/riak start
+riak/dev $ dev3/bin/riak start
+</code></pre>
+
+<h2 id="a-id-schema-design-a-schema-design"><a id="schema-design"></a>Schema Design</h2>
+
+<p>Before we get going with any more of the implementation, we need to consider the design of the &ldquo;schema&rdquo; we&rsquo;re going to use when storing our data in Riak. We want our users to be able to:</p>
+
+<ol>
+<li>Submit snippets to the system.</li>
+<li>See a list of snippets they have submitted to the system (and down the track see other lists using filters).</li>
+<li>Vote for the left- or right- hand snippets to indicate which they prefer.</li>
+<li>See that they have voted for a snippet before and be reminded of which one they voted for.</li>
+</ol>
+
+<p>At the centre of this data there is the <em>snippet</em>. The snippet has the following fields:</p>
+
+<ul>
+<li><code>title</code>: A simple descriptive label.</li>
+<li><code>left</code>: One way of performing a function in a given language.</li>
+<li><code>right</code>: Another way of performing the same function in a given language (which may not be the same as the language used for <code>left</code>).</li>
+<li><code>created</code>: A date/time when the snippet was created/submitted.</li>
+<li><code>key</code>: A key/ID which identifies the snippet.</li>
+</ul>
+
+<p>These fields will be stored as a blob of JSON.</p>
+
+<p>We also need to store with the snippet an identifier for the user that submitted it. Rather than storing this with the payload, we are instead going to create a secondary index which contains this information. We can then use this index to query the store to find out the snippets a user has submitted. This index will be called <code>userid</code>.</p>
+
+<p>In future posts we will probably include more indexes and/or fields, but for the functionality we&rsquo;re aiming to build for this post these fields are sufficient.</p>
+
+<p>Next we need to store votes. In a typical RDMBS this problem is well-known and the solutions out there are also well-known. In a KV store this isn&rsquo;t necessarily the case. What I propose in this post is <em>a possible way</em> of solving this problem. I do not in any way claim that this is <em>the best way</em>. With this, this is what we&rsquo;re going to do&hellip;</p>
+
+<p>A <code>vote</code> needs to keep track of who submitted it along with the snippet it was put against. It also needs to have an indication of whether the user preferred the left or right hand side of the snippet. When these votes are stored, we also want to be able to query them in such a way so that, for a given snippet, we can quickly count the number of votes and which way those votes went. This is quite important as the tallying of the votes and displaying them on screen is a key part of the idea behind the application.</p>
+
+<p>To identify a vote the key needs to be made up of both the <code>userid</code> of the person who submitted it and the <code>key</code> of the snippet the vote. Therefore, for the <code>vote</code> bucket we&rsquo;ll create keys in the format: <em>userid-snippetkey</em></p>
+
+<p>While this makes sense, it doesn&rsquo;t make it easy for us to figure out which votes went against which snippets. To do this, we&rsquo;ll create a secondary index on the vote which contains the snippet key. This will give us a faster way of finding votes that relate to a key while still keeping the votes separate in the bucket. We can then do a map/reduce over the index and pull out the votes.</p>
+
+<p>Originally I had pondered the idea of having another secondary index which contained the vote direction (<code>left</code> or <code>right</code>) and doing multiple map/reduces over the data to count the items. This seemed silly to me. I didn&rsquo;t think it made sense to invoke two map/reduce jobs when I could do the same thing with one. As a result, I decided to put the direction of the vote inside the vote payload itself as this can be used during a single map/reduce job to total both <code>left</code> and <code>right</code> votes. Down the track the user is going to want to be able to look at what they&rsquo;ve voted on (as part of a history timeline), so we&rsquo;ll also add a <code>userid</code> index.</p>
+
+<p>Finally, we are going to need to store some more meaningful information about a user for future use, so we&rsquo;ll create a <code>user</code> bucket and store some metadata for each user with their Twitter ID as the key.</p>
+
+<p>Here&rsquo;s a visual of what we should end up with:</p>
+
+<p>{% img /uploads/2012/07/part5-db-schema.png &lsquo;CSD Schema&rsquo; %}</p>
+
+<p>Now that we have the basics of the schema out of the way, the first thing we should do is adjust our Riak module to include the new features we&rsquo;ll need to do with secondary indexing and map/reduce.</p>
+
+<h2 id="a-id-handling-2i-a-handling-2i-in-csd-riak"><a id="handling-2i"></a>Handling 2i in csd_riak</h2>
+
+<p>In Riak secondary indexes (2i) are stored as extra metadata alongside the Riak object. Two types of indexes are currently support: <code>integer</code> and <code>binary</code>. These index types are indicated using a naming convention, such that <code>integer</code> indexes are suffixed with <code>_int</code> and <code>binary</code> indexes are suffixed with <code>_bin</code>. Secondary indexes are stored as a key/value pair tuple inside the <code>index</code> section of the meta data.</p>
+
+<p>So to start with let&rsquo;s define a few index-specific macros and helper functions.</p>
+
+<pre><code>% ... snip ...
+
+-define(INDEX_KEY, &lt;&lt;&quot;index&quot;&gt;&gt;).
+-define(INDEX_SUFFIX_INT, &lt;&lt;&quot;_int&quot;&gt;&gt;).
+-define(INDEX_SUFFIX_BIN, &lt;&lt;&quot;_bin&quot;&gt;&gt;).
+
+% ... snip ...
+
+index(int, Name) -&gt;
+  iolist_to_binary([Name, ?INDEX_SUFFIX_INT]);
+index(bin, Name) -&gt;
+  iolist_to_binary([Name, ?INDEX_SUFFIX_BIN]).
+
+% ... snip ...
+</code></pre>
+
+<p>Here the <code>index</code> function is a simple function which allows us to generate an index name based on a type and a name. This can be called like so: <code>IndexName = index(int, &quot;userid&quot;).</code> - We&rsquo;ll make use of this in other areas, including the <code>csd_riak_mr</code> module which we&rsquo;ll cover off shortly.</p>
+
+<p>Next we&rsquo;ll define some functions which make it easier to add indexes to Riak objects.</p>
+
+<pre><code>% ... snip ...
+
+set_index(RiakObj, Type, Name, Value) -&gt;
+  Meta = riakc_obj:get_update_metadata(RiakObj),
+  Index = case dict:find(?INDEX_KEY, Meta) of
+    error -&gt; [];
+    {ok, I} -&gt; I
+  end,
+  NewIndex = dict:to_list(dict:store(index(Type, Name), value(Value), dict:from_list(Index))),
+  riakc_obj:update_metadata(RiakObj, dict:store(?INDEX_KEY, NewIndex, Meta)).
+
+set_indexes(RiakObj, Indexes) -&gt;
+  Meta = riakc_obj:get_update_metadata(RiakObj),
+  Index = case dict:find(?INDEX_KEY, Meta) of
+    error -&gt; [];
+    {ok, I} -&gt; I
+  end,
+  UpdatedIndexes = lists:foldl(fun({T, N, V}, I) -&gt;
+        dict:store(index(T, N), value(V), I)
+    end,
+    dict:from_list(Index), Indexes),
+  NewIndex = dict:to_list(UpdatedIndexes),
+  riakc_obj:update_metadata(RiakObj, dict:store(?INDEX_KEY, NewIndex, Meta)).
+
+get_index(RiakObj, Type, Name) -&gt;
+  Meta = riakc_obj:get_metadata(RiakObj),
+  Indexes = dict:fetch(?INDEX_KEY, Meta),
+  IndexKey = index(Type, Name),
+  Value = binary_to_list(proplists:get_value(IndexKey, Indexes)),
+  case Type of
+    int -&gt; list_to_integer(Value);
+    bin -&gt; Value
+  end.
+
+% ... snip ...
+</code></pre>
+
+<p>The first function, <code>set_index</code>, is used to update a Riak object instance and include a single new index of a certain type. This function gets existing <em>update metadata</em> (different to &ldquo;normal&rdquo; metatdata in that this is what will be used to update the object when saved) and then attemps to retrieve the <code>index</code> section of that data. If found adds the new index value to the list of indexes. If it&rsquo;s not found then the new indexes is simply inserted into an empty list. This information is then written into a new Riak object via the <code>riakc:update_metadata/2</code> function.</p>
+
+<p>This code can be called like so: <code>NewObj = csd_riak:set_index(RiakObj, int, &quot;userid&quot;, 12345).</code></p>
+
+<p>This code converts between lists and dictionaries because I want existing index values to be overwritten with the new values.</p>
+
+<p>The second function, <code>set_indexes</code>, is an extended version of <code>set_index</code> in that it allows you to set more than one key at a time. Instead of a single type/name/value combination it accepts a list of tuples of <code>{type, name, value}</code>.</p>
+
+<p>The third function, <code>get_index</code>, is a helper function which is designed to get the value of certain index. Note how this function accesses <em>existing</em> metadata via <code>get_metadata/1</code> rather than <code>get_update_metadata/1</code>. This is due to us being interested in an existing index, not in one that is about to be updated when we next save. While we&rsquo;re here, we do a converstion of the value to an integer if the index type is an integer.</p>
+
+<p>This code can be called like so: <code>UserId = csd_riak:get_index(RiakObj, int, &quot;userid&quot;).</code></p>
+
+<p>Last of all you may have noticed that a couple of these functions are calling another function called <code>value/1</code>. It looks like this:</p>
+
+<pre><code>% ... snip ...
+
+%% ------------------------------------------------------------------
+%% Private Function Definitions
+%% ------------------------------------------------------------------
+
+value(V) when is_list(V) -&gt;
+  list_to_binary(V);
+value(V) -&gt;
+  V.
+</code></pre>
+
+<p>As you can see this is an internal function which is there to help make sure that values are in the right format when being stored as an index.</p>
+
+<p>With the 2i interface now taken care of, let&rsquo;s take a look at what we need to do for map/reduce.</p>
+
+<h2 id="a-id-supporting-mapreduce-a-supporting-map-reduce-in-csd-riak"><a id="supporting-mapreduce"></a>Supporting Map/Reduce in csd_riak</h2>
+
+<p>As you&rsquo;re already aware, Riak&rsquo;s map/reduce interface requires a set of <em>inputs</em>, one or more <em>map</em> phases and zero or more <em>reduce</em> phases. We could manually construct each of these components each time we want to execute a map/reduce job but that doesn&rsquo;t quite feel right to me. Instead, I prefer to have a &ldquo;usable&rdquo; module that helps construct properly-formed map/reduce jobs to reduce the risk of the caller doing the wrong thing. Callers of our modules shouldn&rsquo;t have to know about the format of Riak&rsquo;s map/reduce interface in order to use it. So we&rsquo;ll provide a helper module which wraps this up.</p>
+
+<p>Before we look at the code, bear in mind that this module supports enough functionality to provide what is needed for the application so far. Down the track extra features will be added to support other ways of doing map/reduce, but for now they are beyond the scope of this version of the application.</p>
+
+<p>With that, let&rsquo;s take a look at the code.</p>
+
+<pre><code>-module(csd_riak_mr).
+-author('OJ Reeves &lt;oj@buffered.io&gt;').
+
+%% ------------------------------------------------------------------
+%% API Function Exports
+%% ------------------------------------------------------------------
+
+-export([
+    create/0,
+    run/2,
+    add_input_index/5,
+    add_map_js/2,
+    add_map_js/3,
+    add_map_js/4,
+    add_reduce_js/2,
+    add_reduce_js/3,
+    add_reduce_js/4,
+    add_reduce_sort_js/2,
+    add_reduce_sort_js/3
+  ]).
+
+%% ------------------------------------------------------------------
+%% Private Record Definitions
+%% ------------------------------------------------------------------
+
+-record(mr, {
+    in_ind = undefined,
+    %% TODO: when the need arises add support for other inputs
+    %% including {bucket, key} and {bucket, key, arg}.
+    phases = []
+  }).
+
+%% ------------------------------------------------------------------
+%% API Function Definitions
+%% ------------------------------------------------------------------
+
+%% @doc Create a mew map/reduce job instance.
+create() -&gt;
+  #mr{}.
+
+run(RiakPid, #mr{in_ind=Input, phases=P}) -&gt;
+  % phases are pushed in reverse, so reverse them before using them
+  Phases = lists:reverse(P),
+  Result = riakc_pb_socket:mapred(RiakPid, Input, Phases),
+  Result.
+
+%% @doc Creates a map/reduce Input phase for a secondary index input.
+add_input_index(MR=#mr{}, Bucket, Type, Index, Value) when is_integer(Value) -&gt;
+  add_input_index(MR, Bucket, Type, Index, integer_to_list(Value));
+add_input_index(MR=#mr{}, Bucket, Type, Index, Value) when is_list(Value) -&gt;
+  add_input_index(MR, Bucket, Type, Index, list_to_binary(Value));
+add_input_index(MR=#mr{}, Bucket, Type, Index, Value) when is_binary(Value) -&gt;
+  MR#mr{
+    in_ind = {index, Bucket, csd_riak:index(Type, Index), Value}
+  }.
+
+%% @doc Creates a map/reduce Map phase from raw JS source. This overload
+%%      defaults Keep to true and Arg to none.
+add_map_js(MR=#mr{}, JsSource) -&gt;
+  add_map_js(MR, JsSource, true).
+
+%% @doc Creates a map/reduce Map phase from raw JS source. This overload
+%%      defaults Arg to none.
+add_map_js(MR=#mr{}, JsSource, Keep) -&gt;
+  add_map_js(MR, JsSource, Keep, none).
+
+%% @doc Creates a map/reduce Map phase from raw JS source.
+add_map_js(MR=#mr{phases=P}, JsSource, Keep, Arg) -&gt;
+  MR#mr{
+    phases = [{map, {jsanon, JsSource}, Arg, Keep}|P]
+  }.
+
+%% @doc Creates a map/reduce Reduce phase from raw JS source. This overload
+%%      defaults Keep to true and Arg to none.
+add_reduce_js(MR=#mr{}, JsSource) -&gt;
+  add_reduce_js(MR, JsSource, true).
+
+%% @doc Creates a map/reduce Reduce phase from raw JS source. This overload
+%%      defaults Keep to true.
+add_reduce_js(MR=#mr{}, JsSource, Keep) -&gt;
+  add_reduce_js(MR, JsSource, Keep, none).
+
+%% @doc Creates a map/reduce Reduce phase from raw JS source.
+add_reduce_js(MR=#mr{phases=P}, JsSource, Keep, Arg) -&gt;
+  MR#mr{
+    phases = [{reduce, {jsanon, JsSource}, Arg, Keep}|P]
+  }.
+
+%% @doc Creates a map/reduce Reduce sort phase using Riak's built in sort function
+%%      using the specified comparison function written in raw JS. This overload
+%%      defaults Keep to true.
+add_reduce_sort_js(MR=#mr{}, CompareFun) -&gt;
+  add_reduce_sort_js(MR, CompareFun, true).
+
+%% @doc Creates a map/reduce Reduce sort phase using Riak's built in sort function
+%%      using the specified comparison function written in raw JS.
+add_reduce_sort_js(MR=#mr{phases=P}, CompareFun, Keep) -&gt;
+  MR#mr{
+    phases = [{reduce, {jsfun, &lt;&lt;&quot;Riak.reduceSort&quot;&gt;&gt;}, CompareFun, Keep}|P]
+  }.
+</code></pre>
+
+<p>Many of you will probably be able to digest this code without explanation. But just in case there&rsquo;s a little bit of confusion:</p>
+
+<ul>
+<li><code>#mr</code> is an internally defined record which will accumulate a set of inputs and phases to execute against riak. This is internal so that external callers are &ldquo;forced&rdquo; to use the module to construct a map/reduce job.</li>
+<li>The <code>create/0</code> function simply creates an instance of a <code>#mr</code> record that the user can start to add map/reduce details to.</li>
+<li>Each of the <code>add_*</code> functions is used to add an input or a phase to to a <code>#mr</code> record. For this version of the application we&rsquo;re use JavaScript for our map/reduce phases. Functions that deal with JavaScript tend to have <code>_js</code> as a suffix.</li>
+<li>The <code>add_reduce_sort_js/3</code> function is one example of where we&rsquo;re using an internal Riak javascript reduce function. This function sorts elements during the reduce phase and uses a user-defined JavaScript function passed in as an argument to the phase.</li>
+<li>The <code>run/2</code> function executes the map/reduce job in Riak and returns the result.</li>
+</ul>
+
+<p>This module makes use of the <code>csd_riak:index/2</code> function which helps create well-formed index names. This is used when constructing index inputs.</p>
+
+<p>That&rsquo;s map/reduce taken care of (for now). With the guts of boilerplate Riak interaction taken care of, let&rsquo;s have a look at our approach to data storage.</p>
+
+<h2 id="a-id-goodby-csdcoreserver-a-goodbye-csd-core-server"><a id="goodby-csdcoreserver"></a>Goodbye <code>csd_core_server</code></h2>
+
+<p>When I first started working on this application I created <code>csd_core_server</code> with the intent of using it as a bridge between the application and Riak. This module, implemented as a <a href="http://www.erlang.org/doc/man/gen_server.html" title="Erlang gen_server">gen_server</a>, would have been responsible for handling and managing a pool of connections to Riak.</p>
+
+<p>This concern has changed given that we are now using <a href="https://github.com/OJ/pooler" title="Pooler">Pooler</a> to solve this problem for us. As a result, the idea of having a <code>gen_server</code> doesn&rsquo;t really make sense. Instead it makes more sense to have a module which handles interacting with <a href="https://github.com/OJ/pooler" title="Pooler">Pooler</a> so that other areas of the application don&rsquo;t need to know it&rsquo;s there.</p>
+
+<p><code>csd_core_server</code> has now been removed and replaced with another module called <code>csd_db</code>. This new module is not a <code>gen_server</code>, it is simple a plain module which exposes an interface to the database.</p>
+
+<p>Abstraction purists might argue that this is a positive as it gives us the ability to swap our database out for something else and the consumers of <code>csd_db</code> wouldn&rsquo;t even know. This might be true, but that&rsquo;s not really the goal. The goal is to put all the <a href="https://github.com/OJ/pooler" title="Pooler">Pooler</a> interaction in a single spot.</p>
+
+<p>Rather than show the module here in its entirety, we&rsquo;ll break it up into chunks: snippets, users and votes. Each of these chunks will be looked at when we dive into storage of those individual bits of data. To give an idea of the purpose that it serves see the following diagram:</p>
+
+<p>{% img /uploads/2012/07/part5-db-modules.png &lsquo;Database Module Interaction&rsquo; %}</p>
+
+<p>The modules on the left invoke functions on <code>csd_db</code> which then invokes functions on the respective store modules passing in an extra parameter which is a <code>RiakPid</code> so that the store modules can talk to Riak. Simple!</p>
+
+<p>Since <code>csd_db</code> is just a helper that we&rsquo;ll be using across all modules, let&rsquo;s take a look at it first.</p>
+
+<pre><code>-module(csd_db).
+-author('OJ Reeves &lt;oj@buffered.io&gt;').
+
+%% --------------------------------------------------------------------------------------
+%% API Function Exports
+%% --------------------------------------------------------------------------------------
+
+-export([get_snippet/1, save_snippet/1, list_snippets/1]).
+-export([get_user/1, save_user/1]).
+-export([get_vote/1, save_vote/1, vote_count_for_snippet/1, vote_count_for_snippet/2]).
+
+%% --------------------------------------------------------------------------------------
+%% Snippet API Function Definitions
+%% --------------------------------------------------------------------------------------
+
+save_snippet(Snippet) -&gt;
+   pooler:use_member(fun(RiakPid) -&gt; csd_snippet_store:save(RiakPid, Snippet) end).
+
+get_snippet(SnippetKey) -&gt;
+  pooler:use_member(fun(RiakPid) -&gt; csd_snippet_store:fetch(RiakPid, SnippetKey) end).
+
+list_snippets(UserId) -&gt;
+  pooler:use_member(fun(RiakPid) -&gt; csd_snippet_store:list_for_user(RiakPid, UserId) end).
+
+%% --------------------------------------------------------------------------------------
+%% User API Function Definitions
+%% --------------------------------------------------------------------------------------
+
+get_user(UserId) -&gt;
+  pooler:use_member(fun(RiakPid) -&gt; csd_user_store:fetch(RiakPid, UserId) end).
+
+save_user(User) -&gt;
+  pooler:use_member(fun(RiakPid) -&gt; csd_user_store:save(RiakPid, User) end).
+
+%% --------------------------------------------------------------------------------------
+%% Vote API Function Definitions
+%% --------------------------------------------------------------------------------------
+
+get_vote(VoteId) -&gt;
+  pooler:use_member(fun(RiakPid) -&gt; csd_vote_store:fetch(RiakPid, VoteId) end).
+
+save_vote(Vote) -&gt;
+  pooler:use_member(fun(RiakPid) -&gt; csd_vote_store:save(RiakPid, Vote) end).
+
+vote_count_for_snippet(SnippetId) -&gt;
+   pooler:use_member(fun(RiakPid) -&gt;
+        csd_vote_store:count_for_snippet(RiakPid, SnippetId)
+    end).
+
+vote_count_for_snippet(SnippetId, UserId) -&gt;
+  pooler:use_member(fun(RiakPid) -&gt;
+        csd_vote_store:count_for_snippet(RiakPid, SnippetId, UserId)
+    end).
+
+</code></pre>
+
+<p>The pattern we&rsquo;re applying should now be obvious. Each function just proxies the call to another module which takes all the source parameters plus a <code>pid</code> which can be used to talk to Riak.</p>
+
+<p>With that out of the way, let&rsquo;s dive into what the individual modules do.</p>
+
+<h2 id="a-id-storing-snippets-a-storing-snippets"><a id="storing-snippets"></a>Storing Snippets</h2>
+
+<p>Until now we&rsquo;ve only ever stored snippets and we haven&rsquo;t really done anything complicated with them. The earlier versions of our <code>csd_snippet</code> module, the one which encapsulated the snippet functionality, contained methods which covered two concerns: construction/creation of the snippet and storing/retrieval of snippets. Rather than continuing to mix concerns, we&rsquo;re going to break this module up into two: <code>csd_snippet</code> and <code>csd_snippet_store</code>. The aim is for the former to act like an API to the snippet functionality. This is the one that will be invoked from our web application. The latter will be invoked by the former in the cases where data needs to be written to or read from the data store.</p>
+
+<p>Hopefully now you can see where this fits into the diagram shown above. <code>csd_snippet</code> is paired with <code>csd_snippet_store</code> and <code>csd_db</code> is used as a bridge between the two which provides the connections to Riak.</p>
+
+<h3 id="a-id-csd-snippet-a-csd-snippet-module"><a id="csd_snippet"></a><code>csd_snippet</code> module</h3>
+
+<p><code>csd_snippet</code> has changed drastically since we last looked at it, so let&rsquo;s go through the module bit by bit as it currently stands.</p>
+
+<pre><code>% ... snip ...
+
+%% --------------------------------------------------------------------------------------
+%% Internal Record Definitions
+%% --------------------------------------------------------------------------------------
+
+-record(snippet, {
+    user_id,
+    key,
+    title,
+    left,
+    right,
+    created
+  }).
+
+% ... snip ...
+</code></pre>
+
+<p>The <code>snippet</code> record is an internal container for all the data we need when dealing with a single snippet. Some of this information is stored in Riak as part of the payload, other detail is stored as an index. More to come on this later.</p>
+
+<pre><code>% ... snip ...
+
+%% --------------------------------------------------------------------------------------
+%% API Function Definitions
+%% --------------------------------------------------------------------------------------
+
+to_snippet(Title, Left, Right, UserId) -&gt;
+  #snippet{
+    user_id = UserId,
+    key = csd_riak:new_key(),
+    title = Title,
+    left = Left,
+    right = Right,
+    created = csd_date:utc_now()
+  }.
+
+% ... snip ...
+</code></pre>
+
+<p><code>to_snippet/4</code> allows construction of snippets from basic information: <code>title</code>, <code>left</code>, <code>right</code> and <code>user_id</code>. Behind the scenes we determine the current date/time in UTC format (details of this function coming later) and store that alongside the snippet in the <code>created</code> field. We also generate a new (hopefully unique) key for the snippet at the same time.</p>
+
+<pre><code>% ... snip ...
+
+fetch(SnippetKey) when is_list(SnippetKey) -&gt;
+  fetch(list_to_binary(SnippetKey));
+fetch(SnippetKey) when is_binary(SnippetKey) -&gt;
+  csd_db:get_snippet(SnippetKey).
+
+save(Snippet=#snippet{}) -&gt;
+  csd_db:save_snippet(Snippet).
+
+list_for_user(UserId) -&gt;
+  csd_db:list_snippets(UserId).
+
+% ... snip ...
+</code></pre>
+
+<p>These three functions are the &ldquo;main&rdquo; functions, so to speak. That is, the main opertions that are done with snippets are fetching, saving and listing. Each one of them simply passes the call on to <code>csd_db</code> to invoke functions on <code>csd_snippet_store</code> with a Riak connection. Details of what those functions do are coming shortly.</p>
+
+<pre><code>% ... snip ...
+
+set_user_id(Snippet=#snippet{}, UserId) -&gt;
+  Snippet#snippet{
+    user_id = UserId
+  }.
+
+get_user_id(#snippet{user_id=UserId}) -&gt;
+  UserId.
+
+get_key(#snippet{key=Key}) -&gt;
+  Key.
+
+set_key(Snippet=#snippet{}, NewKey) -&gt;
+  Snippet#snippet{
+    key = NewKey
+  }.
+
+% ... snip ...
+</code></pre>
+
+<p>The functions listed above are basic get and set operations for certain pieces of information that live within the snippet. When storing snippets, we need to be able to set a secondary index value for <code>user_id</code> and given that the structure of the snippet is hidden to all outside of the <code>csd_snippet</code> module this function is required to expose the user&rsquo;s id.</p>
+
+<p>At this point it might not be as obvious as to why we need to provide the ability to set a key on the snippet, but this will come clear later on when we look at <a href="#snippet-submission">snippet submission</a>.</p>
+
+<pre><code>% ... snip ...
+
+to_json(#snippet{key=K, title=T, left=L, right=R, created=C}) -&gt;
+  Data = [{key, K}, {title, T}, {left, L}, {right, R}, {created, C}],
+  csd_json:to_json(Data, fun is_string/1).
+
+from_json(SnippetJson) -&gt;
+  Data = csd_json:from_json(SnippetJson, fun is_string/1),
+  #snippet{
+    key = proplists:get_value(key, Data),
+    title = proplists:get_value(title, Data),
+    left = proplists:get_value(left, Data),
+    right = proplists:get_value(right, Data),
+    created = proplists:get_value(created, Data)
+  }.
+
+% ... snip ...
+</code></pre>
+
+<p>The above functions are obviously used to convert snippets to and from JSON. These are used when passing snippets to the browser or for storing them in the database.</p>
+
+<pre><code>% ... snip ...
+
+%% --------------------------------------------------------------------------------------
+%% Private Function Definitions
+%% --------------------------------------------------------------------------------------
+
+is_string(title) -&gt; true;
+is_string(left) -&gt; true;
+is_string(right) -&gt; true;
+is_string(created) -&gt; true;
+is_string(_) -&gt; false.
+
+</code></pre>
+
+<p>This last function exists as a helper function during conversion between Erlang proplists and JSON format and is used to highlight those values which are intended to be strings.</p>
+
+<p>That covers off the interface to the snippet &ldquo;schema&rdquo;, but it doesn&rsquo;t show how an individual snippet ends up in the database. Let&rsquo;s take a look at the code in the storage module <code>csd_snippet_store</code>.</p>
+
+<h3 id="a-id-csd-snippet-store-a-csd-snippet-store-module"><a id="csd_snippet_store"></a><code>csd_snippet_store</code> module</h3>
+
+<p>To start with, let&rsquo;s look at the module header including some handy defines which we&rsquo;ll need to dive into a little bit.</p>
+
+<pre><code>-module(csd_snippet_store).
+-author('OJ Reeves &lt;oj@buffered.io&gt;').
+
+-define(BUCKET, &lt;&lt;&quot;snippet&quot;&gt;&gt;).
+-define(USERID_INDEX, &quot;userid&quot;).
+-define(LIST_MAP_JS, &lt;&lt;&quot;function(v){var d = Riak.mapValuesJson(v)[0]; return [{key:d.key,title:d.title,created:d.created}];}&quot;&gt;&gt;).
+-define(REDUCE_SORT_JS, &lt;&lt;&quot;function(a,b){return a.created&lt;b.created?1:(a.created&gt;b.created?-1:0);}&quot;&gt;&gt;).
+
+% ... snip ...
+</code></pre>
+
+<p>The first two defines are obvious. The next two are much more interesting. Here we can see some JavaScript code that we&rsquo;re going to be using during map/reduce phases when searching for snippets. Given that the code above isn&rsquo;t that nice to read, let&rsquo;s expand it out to see what it&rsquo;s doing:</p>
+
+<pre><code>function(v)
+{
+    var d = Riak.mapValuesJson(v)[0];
+    return [{ key: d.key, title: d.title, created: d.created }];
+}
+</code></pre>
+
+<p>Map functions in Riak take up to 3 values:</p>
+
+<ol>
+<li>The value being mapped over. If the map phase is the first of the phases then this value will be the full object pulled from Riak.</li>
+<li>The key data associated with the value. This is the (optional) value that is passed in alongside the key in the input phase.</li>
+<li>A value passed into the map phase which remains consistent for each value that is mapped over.</li>
+</ol>
+
+<p>In our case, we&rsquo;re only interested in the first argument, the value that is coming out of Riak. We&rsquo;re also only interested in the contents of the value itself. We use the built-in function <code>Riak.mapValuesJson</code> to pull out the value as JSON. From that value we&rsquo;re only interested in the <code>key</code>, the <code>title</code> and the <code>created</code> properties. The map function much produce a list of values, so we return this new JSON object wrapped in a list.</p>
+
+<p>It&rsquo;s not yet obvious, though it will be, but this is the function that will be used when we list all of the snippets that a single user has submitted. Next up is the reduce phase:</p>
+
+<pre><code>function(a, b)
+{
+    return a.created &lt; b.created ? 1 : (a.created &gt; b.created ? -1 : 0);
+}
+</code></pre>
+
+<p>Those of you familiar with Riak will have noticed that this function doesn&rsquo;t look like a typical reduce function. In Riak the reduce phase functions have the same signature as map functions. The function shown above does not fit this description.</p>
+
+<p>In our reduce phase for listing a user&rsquo;s snippets, we&rsquo;re only interested in sorting the snippets by the date in which they were submitted (most recent first). The function above takes two snippets and returns the result of the comparison based on the date. This function is used in conjunction with another built-in function, <code>Riak.reduceSort</code>. We pass in our sort comparison to the reduce phase as the argument to the phase and the built-in will execute it for each required comparison to make the resulting list of values ordered correctly.</p>
+
+<p>With that out of the way, let&rsquo;s take a look at the first of the Erlang functions which fetches a single snippet based on its key.</p>
+
+<pre><code>% ... snip ...
+
+%% --------------------------------------------------------------------------------------
+%% API Function Exports
+%% --------------------------------------------------------------------------------------
+
+-export([save/2, fetch/2, list_for_user/2]).
+
+%% --------------------------------------------------------------------------------------
+%% API Function Definitions
+%% --------------------------------------------------------------------------------------
+
+fetch(RiakPid, Key) -&gt;
+  case csd_riak:fetch(RiakPid, ?BUCKET, Key) of
+    {ok, RiakObj} -&gt;
+      SnippetJson = csd_riak:get_value(RiakObj),
+      Snippet = csd_snippet:from_json(SnippetJson),
+      UserId = csd_riak:get_index(RiakObj, int, ?USERID_INDEX),
+      {ok, csd_snippet:set_user_id(Snippet, UserId)};
+    {error, Reason} -&gt;
+      {error, Reason}
+  end.
+
+% ... snip ...
+</code></pre>
+
+<p>The first thing you&rsquo;ll notice is that the first parameter to the function is the <code>RiakPid</code> which we will use to talk to Riak. The second parameter is the <code>Key</code> (identifier) of the snippet. The function calls <code>csd_riak:fetch</code> which attempts to pull a Riak object out of Riak using the key as the id for the object to read.</p>
+
+<p>If that succeeds then a valid Riak object is returned. This contains all the detail of the object as it is stored in Riak including meta data. At this point we&rsquo;re only interested in two things:</p>
+
+<ol>
+<li>The value stored in the object (which should be the snippet data in JSON format).</li>
+<li>The value of the <code>user_id</code> index which identifies the person who created the snippet.</li>
+</ol>
+
+<p>These two values are pulled from the Riak object and are used to construct a valid snippet instance which is then returned to the caller.</p>
+
+<p>We&rsquo;re also interested in listing snippets for a given user, so let&rsquo;s take a look at the code for that:</p>
+
+<pre><code>% ... snip ...
+
+list_for_user(RiakPid, UserId) -&gt;
+  MR1 = csd_riak_mr:add_input_index(csd_riak_mr:create(), ?BUCKET, int,
+    ?USERID_INDEX, UserId),
+  MR2 = csd_riak_mr:add_map_js(MR1, ?LIST_MAP_JS, false),
+  MR3 = csd_riak_mr:add_reduce_sort_js(MR2, ?REDUCE_SORT_JS),
+
+  Result = case csd_riak_mr:run(RiakPid, MR3) of
+    {ok, [{1, List}]} -&gt; List;
+    {ok, []} -&gt; []
+  end,
+  {ok, Result}.
+
+% ... snip ...
+</code></pre>
+
+<p>Here&rsquo;s where we are first using our new map/reduce module to help construct a valid map/reduce job which pulls out the list of snippets. The first line of the function is specifying that we&rsquo;re interested in all values in <code>?BUCKET</code> (the snippet bucket) which have an <code>int</code> index called <code>?USERID_INDEX</code> (the index of the submitting user&rsquo;s id) that is the same as the specified <code>UserId</code> passed into the function. We then take this job and add a JavaScript map phase where we pass in the <code>?LIST_MAP_JS</code> (details of which we have just seen above). Notice that we pass in <code>false</code> as the last parameter as we&rsquo;re not interested in returning the results of this phase from the query, we just want those values passed to the next phase.</p>
+
+<p>The last of the phases is a JavaScript reduce phase that uses Riak&rsquo;s sorting functionality. We pass in <code>?REDUCE_SORT_JS</code> which causes the sort to happen in reverse chronological order.</p>
+
+<p>With our map/reduce constructed, we execute this in Riak and check the result. The first thing to note is that we&rsquo;re currently not checking for errors. Right now we want the process to crash should an error occur. Later in the series we&rsquo;ll be looking a bit more at error handling, but for the purpose of this post it&rsquo;s out of scope.</p>
+
+<p>The two patterns we do check for cover the two cases that may arise in normal use. When the map/reduce job runs and succeeds, the result will be in the format: <code>{ok, [{&lt;phase number&gt;, &lt;results&gt;}]}</code>. Phase numbers are zero-based. The list that is returned will only contain the results that we asked Riak to keep.</p>
+
+<p>Given these conditions we can see that if the map/reduce job runs and extracts results, we can expect to see a list with one element in it which is the result of the reduce phase. Matching this to <code>{ok, [{1, List}]}</code> gives us direct access to the results in the <code>List</code> value.</p>
+
+<p>If, however, there isn&rsquo;t any data in Riak that matches the query Riak will return no results for the phase. Hence we also need to match against this case, <code>{ok, []}</code>, and return an empty list which implies that there aren&rsquo;t any entries.</p>
+
+<p>Now that listing snippets for the user is done, let&rsquo;s look at the save functionality.</p>
+
+<pre><code>% ... snip ...
+
+save(RiakPid, Snippet) -&gt;
+  Key = csd_snippet:get_key(Snippet),
+  case csd_riak:fetch(RiakPid, ?BUCKET, Key) of
+    {ok, RiakObj} -&gt;
+      NewRiakObj = csd_riak:update(RiakObj, csd_snippet:to_json(Snippet)),
+      persist(RiakPid, NewRiakObj, Snippet);
+    {error, notfound} -&gt;
+      RiakObj = csd_riak:create(?BUCKET, Key, csd_snippet:to_json(Snippet)),
+      persist(RiakPid, RiakObj, Snippet)
+  end.
+
+%% --------------------------------------------------------------------------------------
+%% Private Function Definitions
+%% --------------------------------------------------------------------------------------
+
+persist(RiakPid, RiakObj, Snippet) -&gt;
+  UserId = csd_snippet:get_user_id(Snippet),
+  UpdatedRiakObj = csd_riak:set_index(RiakObj, int, ?USERID_INDEX, UserId),
+  ok = csd_riak:save(RiakPid, UpdatedRiakObj),
+  {ok, Snippet}.
+
+</code></pre>
+
+<p>Let&rsquo;s start by looking at the <code>persist</code> function as this is invoked in two spots inside the <code>save</code> function. As you can see when the snippet is persisted we take the id of the user who submitted it and add a new index to the Riak object which contains this value. We then push the object into the store. Easy peasy!</p>
+
+<p>The <code>save</code> function is also quite self-explanatory. It first attempts to fetch an existing object from Riak using the snippet&rsquo;s key as the identifier. If the value exists, this value is updated with the new snippet information. If it doesn&rsquo;t exist, a new Riak object is created. Both of these code paths call the <code>persist</code> function to finish the job of storing the snippet.</p>
+
+<p>We&rsquo;re done! That&rsquo;s the full story of snippet storage. Let&rsquo;s launch the application and play with storing snippets.</p>
+
+<pre><code>$ make webstart
+... snip ...
+
+1&gt; S = csd_snippet:to_snippet(&quot;The Basics&quot;, &quot;var x = 1;&quot;, &quot;int x = 1;&quot;, 12345).
+{snippet,12345,&lt;&lt;&quot;AIUWiw==&quot;&gt;&gt;,&quot;The Basics&quot;,&quot;var x = 1;&quot;,
+         &quot;int x = 1;&quot;,&lt;&lt;&quot;2012-06-05T21:28:20.314Z&quot;&gt;&gt;}
+2&gt; csd_snippet:save(S).
+{ok,{snippet,12345,&lt;&lt;&quot;AIUWiw==&quot;&gt;&gt;,&quot;The Basics&quot;,&quot;var x = 1;&quot;,
+             &quot;int x = 1;&quot;,&lt;&lt;&quot;2012-06-05T21:28:20.314Z&quot;&gt;&gt;}}
+3&gt; csd_snippet:fetch(&quot;AIUWiw==&quot;).
+{ok,{snippet,12345,&lt;&lt;&quot;AIUWiw==&quot;&gt;&gt;,&quot;The Basics&quot;,&quot;var x = 1;&quot;,
+             &quot;int x = 1;&quot;,&quot;2012-06-05T21:28:20.314Z&quot;}}
+</code></pre>
+
+<p>One thing you&rsquo;ll notice here is that we&rsquo;ve added a snippet for a user with an Id of <code>12345</code>. This user <em>does not exist</em> in Riak. In Riak you can add an index for a particular value but there is no way of adding the equivalent of a foreign key in the RDBMS world.</p>
+
+<p>While we&rsquo;re here, let&rsquo;s see what Riak gives is when we talk directly to it via curl:</p>
+
+<pre><code>$ curl -i http://127.0.0.1:8091/riak/snippet/AIUWiw==
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVIcMRuuc/nPTpqdwZTImMfK8Our00m+LAA=
+x-riak-index-userid_int: 12345
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.9.0 (someone had painted it blue)
+Link: &lt;/riak/snippet&gt;; rel=&quot;up&quot;
+Last-Modified: Tue, 05 Jun 2012 21:28:26 GMT
+ETag: &quot;5E5aOqpuUZa30DpSVytdn7&quot;
+Date: Tue, 05 Jun 2012 21:37:09 GMT
+Content-Type: application/json
+Content-Length: 117
+
+{&quot;key&quot;:&quot;AIUWiw==&quot;,&quot;title&quot;:&quot;The Basics&quot;,&quot;left&quot;:&quot;var x = 1;&quot;,&quot;right&quot;:&quot;int x = 1;&quot;,&quot;created&quot;:&quot;2012-06-05T21:28:20.314Z&quot;}%   
+</code></pre>
+
+<p>You can see that the detail we&rsquo;re getting matches that which we pulled straight out of our application, including the <code>X-riak-index-userid_int</code> header which contains the Id of the user the submitted the snippet.</p>
+
+<p>Everything looks in order. Next let&rsquo;s handle storage of votes.</p>
+
+<h2 id="a-id-storing-votes-a-storing-votes"><a id="storing-votes"></a>Storing Votes</h2>
+
+<p>Storage of a snippet is a great thing, but it is ultimatley meaningless of people can&rsquo;t indicate which one they prefer. What we need to be able to do is provide the ability to vote so that users of the site can see which side of the snippet users feel is the best.</p>
+
+<p>We&rsquo;ve already discussed the approach that we&rsquo;re going to take. Let&rsquo;s dive into the code.</p>
+
+<h3 id="a-id-csd-vote-a-csd-vote-module"><a id="csd_vote"></a><code>csd_vote</code> module</h3>
+
+<pre><code>-module(csd_vote).
+-author('OJ Reeves &lt;oj@buffered.io&gt;').
+
+%% --------------------------------------------------------------------------------------
+%% API Function Exports
+%% --------------------------------------------------------------------------------------
+
+-export([
+    to_vote/3,
+    fetch/2,
+    save/1,
+    get_user_id/1,
+    get_which/1,
+    get_id/1,
+    get_id/2,
+    to_json/1,
+    from_json/1,
+    get_snippet_id/1,
+    count_for_snippet/1,
+    count_for_snippet/2,
+    random_votes/2
+  ]).
+
+%% --------------------------------------------------------------------------------------
+%% Internal Record Definitions
+%% --------------------------------------------------------------------------------------
+
+-record(vote, {
+    user_id,
+    snippet_id,
+    which,
+    time
+  }).
+
+-record(count, {
+    left,
+    right,
+    which
+  }).
+
+% ... snip ...
+</code></pre>
+
+<p>Here we can see that we&rsquo;re following a similar pattern to what we did with snippets. We have an internal <code>vote</code> record which indicates which user submitted the vote, which snippet the vote is for, which side of the snippet they voted for (<code>&quot;left&quot;</code> or <code>&quot;right&quot;</code>) and a timestamp. Hopefully there&rsquo;s nothing in here that will surprise anyone.</p>
+
+<p>The next record, <code>count</code>, is a little more interesting. It will make more sense after we see where it is used, but in short the purpose of this record is to group the results of a map/reduce job which counts the number of votes for a given snippet and which side the votes were for. If the search is conducted by a known (ie. logged-in user) the record will also indicate which side of the snippet they voted for (if any).</p>
+
+<pre><code>% ... snip ...
+
+%% --------------------------------------------------------------------------------------
+%% API Function Definitions
+%% --------------------------------------------------------------------------------------
+
+to_vote(UserId, SnippetId, Which=&quot;left&quot;) when is_integer(UserId) -&gt;
+  to_vote_inner(UserId, SnippetId, Which);
+to_vote(UserId, SnippetId, Which=&quot;right&quot;) when is_integer(UserId) -&gt;
+  to_vote_inner(UserId, SnippetId, Which).
+
+% ... snip ...
+</code></pre>
+
+<p><code>to_vote</code> is a simple function that is used to create an instance of a vote. The interface of this function is designed to stop callers from submitting vote for anything other than <code>&quot;left&quot;</code> or <code>&quot;right&quot;</code>, as this wouldn&rsquo;t make sense to the system. This function calls an internal version which is defined a bit later on.</p>
+
+<pre><code>% ... snip ...
+
+count_for_snippet(SnippetId) -&gt;
+  {ok, {L, R}} = csd_db:vote_count_for_snippet(SnippetId),
+  {ok, #count{
+    left = L,
+    right = R,
+    which = &quot;&quot;
+  }}.
+
+count_for_snippet(SnippetId, UserId) -&gt;
+  {ok, {L, R, W}} = csd_db:vote_count_for_snippet(SnippetId, UserId),
+  {ok, #count{
+    left = L,
+    right = R,
+    which = W
+  }}.
+
+% ... snip ...
+</code></pre>
+
+<p>These two functions are the magic that makes the vote counting tick. They both essentially do the same thing but for one small difference. The first, <code>count_for_snippet/1</code> takes a single parameter which is the Id of the snippet. It make a call to the <code>csd_db</code> module to kick off a map/reduce job in Riak. The result is a pair of values, <code>{L, R}</code>, where <code>L</code> is the total number of votes for the left side of the snippet and <code>R</code> is the total number for the right side. This search is done outside of the context of a known user. The result of a call to this function is a record which doesn&rsquo;t have a meaningful value for the <code>which</code> record member.</p>
+
+<p>The second function, <code>count_for_snippet/2</code>, is the same as the first except that it also takes the identifier of the user that is conducting the search. This version of the function also calls a counterpart in <code>csd_db</code>, but the result is different in that it also contains the side of the snippet which that particular user voted for. This <code>which</code> value will be either <code>&quot;left&quot;</code>, <code>&quot;right&quot;</code> or <code>&quot;&quot;</code>. If it&rsquo;s <code>&quot;&quot;</code> then that indicates that the user hasn&rsquo;t voted on this snippet.</p>
+
+<p>Next up we have the standard serialisation functions.</p>
+
+<pre><code>% ... snip ...
+
+to_json(#vote{time=T, which=W, snippet_id=S, user_id=U}) -&gt;
+  csd_json:to_json([
+      {time, T},
+      {user_id, U},
+      {snippet_id, S},
+      {which, W}],
+    fun is_string/1);
+
+to_json(#count{left=L, right=R, which=W}) -&gt;
+  csd_json:to_json([
+      {left, L},
+      {right, R},
+      {which, W}],
+    fun is_string/1).
+
+% ... snip ...
+</code></pre>
+
+<p>By now these functions should be self-explanatory, so we&rsquo;ll kick on to something more interesting.</p>
+
+<pre><code>% ... snip ...
+
+fetch(UserId, SnippetId) when is_integer(UserId) -&gt;
+  csd_db:get_vote(get_id(UserId, SnippetId)).
+
+save(Vote=#vote{}) -&gt;
+  csd_db:save_vote(Vote).
+
+get_user_id(#vote{user_id=U}) -&gt;
+  U.
+
+get_which(#vote{which=W}) -&gt;
+  W.
+
+get_snippet_id(#vote{snippet_id=S}) -&gt;
+  S.
+
+get_id(#vote{user_id=U, snippet_id=S}) -&gt;
+  get_id(U, S).
+
+get_id(UserId, SnippetId) when is_integer(UserId) -&gt;
+  iolist_to_binary([integer_to_list(UserId), &quot;-&quot;, SnippetId]).
+
+% ... snip ...
+</code></pre>
+
+<p>The functions are also rather rudimentary and fit the usual pattern that we&rsquo;re applying across our application. The one thing to note here is that a vote doesn&rsquo;t have its own identifer that is generated. Instead, the key that is used to identify a vote in the <code>vote</code> bucket is a combination of the user&rsquo;s Id and the snippet&rsquo;s Id.</p>
+
+<p>At this point the requirement for the accessor functions won&rsquo;t be clear. Keep them in mind, we&rsquo;ll cover them off a bit later when we look at the code that&rsquo;s closer to the UI.</p>
+
+<p>Next up here&rsquo;s a typical deserialisation function.</p>
+
+<pre><code>% ... snip ...
+
+from_json(Json) -&gt;
+  List = csd_json:from_json(Json, fun is_string/1),
+  #vote{
+    time = proplists:get_value(time, List),
+    user_id = proplists:get_value(user_id, List),
+    snippet_id = proplists:get_value(snippet_id, List),
+    which = proplists:get_value(which, List)
+  }.
+
+% ... snip ...
+</code></pre>
+
+<p>Nothing too stellar here either. After converting the JSON back into a proplist, we&rsquo;re just poking the the values into our <code>vote</code> record.</p>
+
+<pre><code>% ... snip ...
+
+random_votes(SnippetId, NumVotes) -&gt;
+  random:seed(erlang:now()),
+  lists:map(fun(_) -&gt;
+        Which = case random:uniform(99999999) rem 2 of
+          0 -&gt; &quot;left&quot;;
+          _ -&gt; &quot;right&quot;
+        end,
+        V = to_vote(random:uniform(99999999), SnippetId, Which),
+        save(V) end, lists:seq(1, NumVotes)),
+  ok.
+
+% ... snip ...
+</code></pre>
+
+<p>The <code>random_votes</code> function is something that I decided to put in to simulate larger numbers of votes. Given that the system isn&rsquo;t live, I wanted to be able to generate votes for a given snippet so that I could see the affect on the UI. Leaving this function in makes sense for the benefit of my awesome reader(s) so they can see the effect themselves. Ultimately it doesn&rsquo;t belong in the <em>production</em> version.</p>
+
+<p>Now for the last two functions in the module.</p>
+
+<pre><code>% ... snip ...
+
+%% --------------------------------------------------------------------------------------
+%% Private Function Definitions
+%% --------------------------------------------------------------------------------------
+
+to_vote_inner(UserId, SnippetId, Which) -&gt;
+  #vote{
+    user_id = UserId,
+    snippet_id = SnippetId,
+    time = csd_date:utc_now(),
+    which = Which
+  }.
+
+is_string(time) -&gt; true;
+is_string(which) -&gt; true;
+is_string(snippet_id) -&gt; true;
+is_string(_) -&gt; false.
+
+</code></pre>
+
+<p><code>to_vote_inner</code> is a simple function called by <code>to_vote</code> at the top of the module. It&rsquo;s there just to reduce code duplication. <code>is_string</code> is the classic helper function which tells the JSON serialiser/deserialiser which values are strings and which aren&rsquo;t.</p>
+
+<p>We&rsquo;re done with the handling module, next we need to dive into how these are stored.</p>
+
+<h3 id="a-id-csd-vote-store-a-csd-vote-store-module"><a id="csd_vote_store"></a><code>csd_vote_store</code> module</h3>
+
+<p>This module follows the same pattern as the snippet storage module. Let&rsquo;s take a look at the code, starting with the defines. This is where we start to get into more interesting map/reduce jobs.</p>
+
+<pre><code>-module(csd_vote_store).
+-author('OJ Reeves &lt;oj@buffered.io&gt;').
+
+-define(BUCKET, &lt;&lt;&quot;vote&quot;&gt;&gt;).
+-define(SNIPPET_INDEX, &lt;&lt;&quot;snippetid&quot;&gt;&gt;).
+-define(USER_INDEX, &lt;&lt;&quot;userid&quot;&gt;&gt;).
+-define(COUNT_VOTE_MAP_JS, &lt;&lt;&quot;function(v){var d=Riak.mapValuesJson(v)[0];if(d.which===\&quot;left\&quot;){return[[1,0]];}return[[0,1]];}&quot;&gt;&gt;).
+-define(COUNT_VOTE_RED_JS, &lt;&lt;&quot;function(vals,arg){if(vals.length===0){return[[0,0]];}return[vals.reduce(function(a,v){return[a[0]+v[0],a[1]+v[1]];})];}&quot;&gt;&gt;).
+-define(COUNT_VOTE_USER_MAP_JS, &lt;&lt;&quot;function(v,k,a){var d=Riak.mapValuesJson(v)[0];var which=d.user_id===a?d.which:\&quot;\&quot;;if(d.which===\&quot;left\&quot;){return[[1,0,which]];}return[[0,1,which]];}&quot;&gt;&gt;).
+-define(COUNT_VOTE_USER_RED_JS, &lt;&lt;&quot;function(vals,arg){if(vals.length===0){return[[0,0,\&quot;\&quot;]];}return[vals.reduce(function(a,v){return[a[0]+v[0],a[1]+v[1],a[2].length&gt;0?a[2]:v[2]];})];}&quot;&gt;&gt;).
+
+% ... snip ...
+</code></pre>
+
+<p>The first few &ndash; <code>BUCKET</code>, <code>SNIPPET_INDEX</code> and <code>USER_INDEX</code> &ndash; speak for themselves and probably don&rsquo;t need explanation. The rest of them do. These are all JavaScript map/reduce job phases condensed into single strings. Let&rsquo;s expand them out.</p>
+
+<pre><code>function(v) {
+  var d = Riak.mapValuesJson(v)[0];
+  if (d.which === &quot;left&quot;) {
+    return [[1, 0]];
+  }
+
+  return [[0, 1]];
+}
+</code></pre>
+
+<p>As the name of the snippet suggests, this is the map phase of the job which performs a count. The first line of this function is extracting the value of the JSON object out of the Riak object as we have done in the past in other phases. Remember that each vote contains a value which indicates which side of the snippet the vote counts towards. This function checks to see which side a given vote and returns two values. Each value that is parsed in this map phase will result in either <code>[[1, 0]]</code> or <code>[[0, 1]]</code>. We&rsquo;ll see how this is useful after taking a look at the reduce phase.</p>
+
+<pre><code>function(vals, arg) {
+  if (vals.length === 0) {
+    return[[0, 0]];
+  }
+
+  return [vals.reduce(function(a, v) {
+      return [a[0] + v[0], a[1] + v[1]];
+    }
+  )];
+}
+</code></pre>
+
+<p>When this reduce phase is run we check the existing list of values from any previous reductions and if there aren&rsquo;t any we default to <code>[[0, 0]]</code>. This acts as the seed for our accumulation of values. Otherwise, we reduce across all the values that are given, which will come in the form <code>[[L0, R0], [L1, R1], ... [Ln, Rn]]</code>. During our reduction we simply add the two values in the arrays together based on index, resulting in us totalling both the number of <code>left</code> and <code>right</code> votes at the same time. We return the result again as another array of values.</p>
+
+<p>When the reduce is finished we end up with a single nested array in the form <code>[[L, R]]</code> where <code>L</code> is the total number of votes cast for the <code>left</code> side and <code>R</code> is the total for the <code>right</code>.</p>
+
+<p>With these two phases we now have a map/reduce job which is able to tally up all the votes for a given snippet and tell is which side was voted for.</p>
+
+<p>Next up is a bit of boilerplate with the vote fetch function:</p>
+
+<pre><code>% ... snip ...
+
+%% --------------------------------------------------------------------------------------
+%% API Function Exports
+%% --------------------------------------------------------------------------------------
+
+-export([fetch/2, save/2, count_for_snippet/2, count_for_snippet/3]).
+
+%% --------------------------------------------------------------------------------------
+%% API Function Definitions
+%% --------------------------------------------------------------------------------------
+
+fetch(RiakPid, VoteId) -&gt;
+  case csd_riak:fetch(RiakPid, ?BUCKET, VoteId) of
+    {ok, RiakObj} -&gt;
+      VoteJson = csd_riak:get_value(RiakObj),
+      Vote = csd_vote:from_json(VoteJson),
+      {ok, Vote};
+    {error, Reason} -&gt;
+      {error, Reason}
+  end.
+
+% ... snip ...
+</code></pre>
+
+<p>There shouldn&rsquo;t be anything new about this fetch function at this stage. It&rsquo;s the same as what we&rsquo;ve done for the snippet loader, but specific to votes. Let&rsquo;s take a look at something a little more interesting.</p>
+
+<pre><code>% ... snip ...
+
+count_for_snippet(RiakPid, SnippetId) -&gt;
+  MR1 = csd_riak_mr:add_input_index(csd_riak_mr:create(), ?BUCKET, bin,
+    ?SNIPPET_INDEX, SnippetId),
+  MR2 = csd_riak_mr:add_map_js(MR1, ?COUNT_VOTE_MAP_JS, false),
+  MR3 = csd_riak_mr:add_reduce_js(MR2, ?COUNT_VOTE_RED_JS),
+  case csd_riak_mr:run(RiakPid, MR3) of
+    {ok, [{1, [[Left, Right]]}]} -&gt; {ok, {Left, Right}};
+    Error -&gt; Error
+  end.
+
+% ... snip ...
+</code></pre>
+
+<p>In the first line of the function we are creating a new map/reduce job. This job is passed into the <code>add_input_index</code> function which adds an input to the job with an index. This index is a <em>binary</em> index (<code>bin</code>) called <code>?SNIPPET_INDEX</code> and we&rsquo;re passing in the value of <code>SnippetId</code> which will tell Riak to pull out all vote entries that have a secondary index which contains the key of the snippet.</p>
+
+<p>We then add another phase to this job that contains the javascript function that maps over the votes and counts them. Here we&rsquo;re not interested in pulling the results of the phase so we&rsquo;re passing in <code>false</code> in as the last parameter. Finally we add our last phase, which is the reduce phase that counts up all the votes.</p>
+
+<p>Upon executing the map/reduce job we there are a number of possible results. Just like we saw with the map/reduce job in the <code>snippet</code> module, we are able to pattern match directly against the exact format of the result because we are only expecting a single phase result.</p>
+
+<p>If the result comes out in this format we just return a tuple that contains the counts for the <code>left</code> and <code>right</code> sections. If not, we just return whatever it was that came out of Riak (which should be an error).</p>
+
+<p>Next we&rsquo;ll see a very similar function with a very slight difference.</p>
+
+<pre><code>% ... snip ...
+
+count_for_snippet(RiakPid, SnippetId, UserId) -&gt;
+  MR1 = csd_riak_mr:add_input_index(csd_riak_mr:create(), ?BUCKET, bin,
+    ?SNIPPET_INDEX, SnippetId),
+  MR2 = csd_riak_mr:add_map_js(MR1, ?COUNT_VOTE_USER_MAP_JS, false, UserId),
+  MR3 = csd_riak_mr:add_reduce_js(MR2, ?COUNT_VOTE_USER_RED_JS),
+  case csd_riak_mr:run(RiakPid, MR3) of
+    {ok, [{1, [[Left, Right, Which]]}]} -&gt; {ok, {Left, Right, Which}};
+    Error -&gt; Error
+  end.
+
+% ... snip ...
+</code></pre>
+
+<p>This function differs from the previous <code>count_for_snippet</code> only in that it accepts another parameter, <code>UserId</code>, which indicates the Id of the user initiating the query. The phases are included in the same way, but the functions invoked are <code>UserId</code>-aware. The result varies from before in that it returns another parameter in the reduce phase result, <code>Which</code>. This value indicates which side the user voted for, if at all.</p>
+
+<p>Lastly, we&rsquo;re back to a bit more boilerplate.</p>
+
+<pre><code>% ... snip ...
+
+save(RiakPid, Vote) -&gt;
+  VoteId = csd_vote:get_id(Vote),
+  UserId = csd_vote:get_user_id(Vote),
+  SnippetId = csd_vote:get_snippet_id(Vote),
+
+  case csd_riak:fetch(RiakPid, ?BUCKET, VoteId) of
+    {ok, _RiakObj} -&gt;
+      {error, &quot;User has already voted on this snippet.&quot;};
+    {error, notfound} -&gt;
+      RiakObj = csd_riak:create(?BUCKET, VoteId, csd_vote:to_json(Vote)),
+      Indexes = [
+        {bin, ?SNIPPET_INDEX, SnippetId},
+        {int, ?USER_INDEX, UserId}
+      ],
+
+      NewRiakObj = csd_riak:set_indexes(RiakObj, Indexes),
+      ok = csd_riak:save(RiakPid, NewRiakObj),
+      {ok, Vote}
+  end.
+</code></pre>
+
+<p>Here you can see the indexes being added when the item is being saved. Those indexes are the most important part, otherwise the vote won&rsquo;t be counted.</p>
+
+<p>The only other thing that is really worth mentioning here is there is validation that the user hasn&rsquo;t already voted for a given snippet. My design choice here was to make it so that people can&rsquo;t change their mind. I reserve the right to change <em>my</em> mind on this design later.</p>
+
+<p>Let&rsquo;s save a vote and execute a map/reduce job to find votes to make sure our functionality works.</p>
+
+<pre><code>1&gt; V = csd_vote:to_vote(12345, &quot;ABCDE&quot;, &quot;left&quot;).
+{vote,12345,&quot;ABCDE&quot;,&quot;left&quot;,&lt;&lt;&quot;2012-07-02T09:37:21.332Z&quot;&gt;&gt;}
+2&gt; csd_vote:save(V).
+{ok,{vote,12345,&quot;ABCDE&quot;,&quot;left&quot;,
+          &lt;&lt;&quot;2012-07-02T09:37:21.332Z&quot;&gt;&gt;}}
+3&gt; csd_vote:count_for_snippet(&quot;ABCDE&quot;).
+{ok,{count,1,0,&lt;&lt;&gt;&gt;}}
+4&gt; csd_vote:count_for_snippet(&quot;ABCDE&quot;, 12345).
+{ok,{count,1,0,&lt;&lt;&quot;left&quot;&gt;&gt;}}
+</code></pre>
+
+<p>Excellent. We can see that storage is working and that when we do map/reduce with and without the <code>UserId</code> specified we get the expected results.</p>
+
+<p>That&rsquo;s votes done. The last thing we&rsquo;re going to store is a bit of user information.</p>
+
+<h2 id="a-id-storing-users-a-storing-users"><a id="storing-users"></a>Storing Users</h2>
+
+<p>At this point in the game we&rsquo;re not interesting in too much stuff with respect to the user. We&rsquo;re putting this in place now because down the track we will be storing more. To start with we&rsquo;re just going to track the user&rsquo;s Twitter name, their Twitter ID (which we&rsquo;ll use as their ID in our system too) and the date in which they joined CSD.</p>
+
+<h3 id="a-id-csd-user-a-csd-user-module"><a id="csd_user"></a><code>csd_user</code> module</h3>
+
+<p>This should be routine by now. Let&rsquo;s take a look at the file as a whole.</p>
+
+<pre><code>-module(csd_user).
+-author('OJ Reeves &lt;oj@buffered.io&gt;').
+
+%% --------------------------------------------------------------------------------------
+%% API Function Exports
+%% --------------------------------------------------------------------------------------
+
+-export([
+    get_id/1,
+    get_name/1,
+    fetch/1,
+    save/1,
+    to_user/2,
+    from_json/1,
+    to_json/1]).
+
+%% --------------------------------------------------------------------------------------
+%% Internal Record Definitions
+%% --------------------------------------------------------------------------------------
+
+-record(user, {
+    id,
+    name,
+    joined
+  }).
+
+%% --------------------------------------------------------------------------------------
+%% API Function Definitions
+%% --------------------------------------------------------------------------------------
+
+to_user(Id, Name) -&gt;
+  #user{
+    name = Name,
+    id = Id,
+    joined = csd_date:utc_now()
+  }.
+
+get_id(#user{id=Id}) -&gt;
+  Id.
+
+get_name(#user{name=Name}) -&gt;
+  Name.
+
+fetch(Id) -&gt;
+  csd_db:get_user(Id).
+
+save(User=#user{}) -&gt;
+  csd_db:save_user(User).
+
+to_json(#user{name=N, id=T, joined=J}) -&gt;
+  csd_json:to_json([{name, N}, {id, T}, {joined, J}], fun is_string/1).
+
+from_json(UserJson) -&gt;
+  User = csd_json:from_json(UserJson, fun is_string/1),
+  #user{
+    id = proplists:get_value(id, User),
+    name = proplists:get_value(name, User),
+    joined = proplists:get_value(joined, User)
+  }.
+
+%% --------------------------------------------------------------------------------------
+%% Internal Function Definitions
+%% --------------------------------------------------------------------------------------
+
+is_string(name) -&gt; true;
+is_string(joined) -&gt; true;
+is_string(_) -&gt; false.
+</code></pre>
+
+<p>This entire module fits the pattern that we have already applied to both the <code>snippet</code> and <code>vote</code> functionality. Rather than waste more characters in this post I&rsquo;m going to assume that you guys are able to digest this without any explanation. Ping me a comment below if you get stuck.</p>
+
+<p>So what does the storage bit look like?</p>
+
+<h3 id="a-id-csd-user-store-a-csd-user-store-module"><a id="csd_user_store"></a><code>csd_user_store</code> module</h3>
+
+<p>It looks like this!</p>
+
+<pre><code>-module(csd_user_store).
+-author('OJ Reeves &lt;oj@buffered.io&gt;').
+
+-define(BUCKET, &lt;&lt;&quot;user&quot;&gt;&gt;).
+
+%% --------------------------------------------------------------------------------------
+%% API Function Exports
+%% --------------------------------------------------------------------------------------
+
+-export([fetch/2, save/2]).
+
+%% --------------------------------------------------------------------------------------
+%% API Function Definitions
+%% --------------------------------------------------------------------------------------
+
+fetch(RiakPid, UserId) when is_integer(UserId) -&gt;
+  fetch(RiakPid, integer_to_list(UserId));
+fetch(RiakPid, UserId) when is_list(UserId) -&gt;
+  fetch(RiakPid, list_to_binary(UserId));
+fetch(RiakPid, UserId) when is_binary(UserId) -&gt;
+  case csd_riak:fetch(RiakPid, ?BUCKET, UserId) of
+    {ok, RiakObj} -&gt;
+      UserJson = csd_riak:get_value(RiakObj),
+      User = csd_user:from_json(UserJson),
+      {ok, User};
+    {error, Reason} -&gt;
+      {error, Reason}
+  end.
+
+save(RiakPid, User) -&gt;
+  IntId = csd_user:get_id(User),
+
+  % Id is int, so we need to conver to a binary
+  UserId = list_to_binary(integer_to_list(IntId)),
+
+  case csd_riak:fetch(RiakPid, ?BUCKET, UserId) of
+    {ok, _RiakObj} -&gt;
+      % user already exists, we don't need to save anything.
+      {ok, User};
+    {error, notfound} -&gt;
+      NewRiakObj = csd_riak:create(?BUCKET, UserId, csd_user:to_json(User)),
+      ok = csd_riak:save(RiakPid, NewRiakObj),
+      {ok, User}
+  end.
+</code></pre>
+
+<p>User management is really easy at this stage. We&rsquo;re doing basic store and retrieve operations without any real complexity. After seeing the <code>vote</code> and <code>snippet</code> functionality I&rsquo;m fairly certain that you&rsquo;ll be more than comfortable with this code.</p>
+
+<p>For brevity I&rsquo;m going to skip going through a sample of storing/retrieving users via the Erlang shell and move on to something completely new. But first&hellip;</p>
+
+<h2 id="a-id-take-a-breath-a-take-a-breath"><a id="take-a-breath"></a>Take a Breath</h2>
+
+<p>Phew! That was quite a bit to take in. Thanks for reading this far. Posts this long do take a bit of effort to get through. If you&rsquo;re not scared yet you should be as we&rsquo;ve now only covered the back-end stuff. We&rsquo;ve still got the Webmachine end to deal with. There&rsquo;s a bit to cover here as too, so fill that glass back up, do some Pilates and when you&rsquo;re refreshed come back and dive into the next section.</p>
+
+<p>Ready? Good. Here we go.</p>
+
+<h2 id="a-id-save-user-on-login-a-saving-user-on-login"><a id="save-user-on-login"></a>Saving User on Login</h2>
+
+<p>Now that we have the ability to store the details of a user the first thing we&rsquo;re going to do is make a call to this new functionality when a user signs in successfully. For that we need to edit the <code>csd_web_callback_resource</code> module in the <code>csd_web</code> application. This is the module that is invoked when Twitter responds via OAuth. For the most part the module is the same, except for one function which looks like this:</p>
+
+<pre><code>% ... snip ...
+
+moved_temporarily(ReqData, State) -&gt;
+  ReqToken = wrq:get_qs_value(&quot;oauth_token&quot;, ReqData),
+  ReqTokenSecret = wrq:get_qs_value(&quot;oauth_token_secret&quot;, ReqData),
+  Verifier = wrq:get_qs_value(&quot;oauth_verifier&quot;, ReqData),
+
+  {ok, AccessToken, AccessTokenSecret} = twitter:verify_access(ReqToken, ReqTokenSecret, Verifier),
+  {ok, UserInfoJson} = twitter:get_current_user_info(AccessToken, AccessTokenSecret),
+  {struct, Json} = mochijson2:decode(UserInfoJson),
+  UserId = proplists:get_value(&lt;&lt;&quot;id&quot;&gt;&gt;, Json),
+  UserName = proplists:get_value(&lt;&lt;&quot;screen_name&quot;&gt;&gt;, Json),
+  NewReqData = cookie:store_auth(ReqData, UserId, UserName, AccessToken, AccessTokenSecret),
+
+  User = csd_user:to_user(UserId, UserName),   %% -- new functionality
+  {ok, _} = csd_user:save(User),               %% -- new functionality
+
+  % TODO: error handlng for when things don't go to plan
+  {{ &quot;{&quot; }}{true, conf:get_val(urimap, home)}, NewReqData, State}.
+</code></pre>
+
+<p>The two new lines are highlighted with comments. You can see we&rsquo;re just creating a new user record by specifying the id and password, and then persisting this to Riak through the <code>csd_user</code> module. Simple stuff! User details will now be persisted when the user successfully signs in. We&rsquo;re not yet handling the case where the user decides not to sign in, or if the process fails, but we&rsquo;ll get to that in a future post.</p>
+
+<h2 id="a-id-post-sign-in-a-post-sign-in"><a id="post-sign-in"></a>Post Sign-In</h2>
+
+<p>To briefly recap, when a user hits our site for the first time want to ask them to sign in. Once they have done so, we know who they are and we want to show a different view. the <code>moved_temporarily</code> function above redirects them back to this page after a successful sign in. Given that we have the ability to find out who they are, we need to respond differently on the home page view. When a recognised user signs in we&rsquo;re going to show them a landing page with a list of the snippets that they have submitted. To do this, we&rsquo;re going to need to know their Twitter Id, as that&rsquo;s what we&rsquo;re using to identify the owner of a snippet.</p>
+
+<p>We need to make a very slight adjustment to our main <code>csd_web_resource</code> module so that we extract the user&rsquo;s Id at the same time as their name.</p>
+
+<pre><code>% ... snip ...
+
+to_html(ReqData, State) -&gt;
+  Content = case cookie:load_auth(ReqData) of
+    {ok, {UserId, Name, _, _}} -&gt;       %% -- this is what we changed
+      csd_view:home(UserId, Name);
+    _ -&gt;
+      csd_view:home()
+  end,
+  {Content, ReqData, State}.
+
+% ... snip ...
+</code></pre>
+
+<p>In the [last post][Part4] we had already stored a few details about the user in their auth cookie, but we were only extracting their name. To get their Id as well we just needed to change our pattern match from <code>{_, Name, _, _}</code> to <code>{UserId, Name, _, _}</code>. We then pass this extra detail into the call to <code>csd_view:home</code> so that we can utilise that down the track. This new parameter needs to be handled by <code>csd_view</code> so let&rsquo;s take a look at the changes there.</p>
+
+<pre><code>% ... snip ...
+
+home(UserId, Name) -&gt;
+  Params = [{logged_in, true}, {user_id, UserId}, {user_name, Name}],
+  {ok, Content} = home_dtl:render(Params),
+  Content.
+
+% ... snip ...
+</code></pre>
+
+<p>The only difference here is that we&rsquo;re now passing <code>{user_id, UserId}</code> down to the template renderer as well as other detail. This means the view can do something useful with it. We&rsquo;ll go over that a bit later when we cover off the UI, but for now let&rsquo;s take a look at what happens when the user&rsquo;s &ldquo;profile&rdquo; page is rendered.</p>
+
+<h2 id="a-id-user-profile-a-user-profile"><a id="user-profile"></a>User Profile</h2>
+
+<p>The user profile page is what is displayed when the user signs in or comes back to the site while their cookie is still valid. This page contains a list of snippets that the user submitted listed in reverse chronological order. As a sneak preview, this is what we&rsquo;re striving for:</p>
+
+<p>{% img /uploads/2012/07/part5-user-profile.png &lsquo;User profile page&rsquo; %}</p>
+
+<p>Please excuse my obvious test data, but you should get the idea. Each snippet listed on the page is shown as a link which gives the user direct access to the page specific to that snippet. So let&rsquo;s take a look at the resource code which provides the data for this view. This is an entirely new module called <code>csd_web_user_detail_resource</code>.</p>
+
+<p>I&rsquo;ve trimmed out some of the usual cruft for brevity and am showing just the interesting bits. The full source is available on Github and linked at the bottom of the post.</p>
+
+<pre><code>% ... snip ...
+
+content_types_provided(ReqData, State) -&gt;
+  Types = [
+    {&quot;application/json&quot;, to_json}
+  ],
+  {Types, ReqData, State}.
+
+% ... snip ...
+</code></pre>
+
+<p>Why is this interesting? Because the resource will only serve JSON. The JSON is accessed via Ajax in the view and rendered in a custom template in the browser. More on this detail a bit later.</p>
+
+<pre><code>% ... snip ...
+
+to_json(ReqData, State) -&gt;
+  PathInfo = wrq:path_info(ReqData),
+  {ok, UserId} = dict:find(user_id, PathInfo),
+
+  % We need to render a username, but don't hit the DB
+  % if the user is the same as the one looking at the
+  % page.
+  UserName = case cookie:load_auth(ReqData) of
+    {ok, {UserId, Name, _, _}} -&gt;
+      Name;
+    _ -&gt;
+      {ok, UserInfo} = csd_user:fetch(UserId),
+      list_to_binary(csd_user:get_name(UserInfo))
+  end,
+
+  {ok, Snippets} = csd_snippet:list_for_user(UserId),
+  UserData = {struct, [
+      {user_name, UserName},
+      {snippets, Snippets}
+    ]},
+  Json = mochijson2:encode(UserData),
+  {Json, ReqData, State}.
+
+</code></pre>
+
+<p>Here you can see that we&rsquo;re getting the id of the user from the URI. From the browser we&rsquo;re hitting this resource via a URI which takes the form of <code>/userdetail/&lt;user-id&gt;</code>, so we access the request data and pull the id out from the path information.</p>
+
+<p>The next bit of code needs a bit of background information. When a user views a profile page the goal was to render the user&rsquo;s name on screen. If a user goes to their own profile page it makes more sense to not render the user&rsquo;s name but instead make it more personal. To do this we pass in the Twitter name of the current user as well as the user that is being viewed back to the JavaScript that made the call to the resource. If those values are the same then the view can be rendered differently.</p>
+
+<p>As a result there was a need to find out who is viewing the page. So what we do is access the authentication information in the request and directly pattern match against the <code>UserId</code> that we pulled from the URI. If we get a match, then we return the name of the current user directly. This means that we can avoid going to the database as we already know the name, but if the user being viewed is different we go to Riak to pull out the name of the user.</p>
+
+<p>Once we have the user name, we then list all the snippets for the user and combine those two bits information into a blob of JSON before returning this to the browser.</p>
+
+<p>So now that the browser has the payload it can render the view that we saw above, including links to the snippets. What happens when a snippet is viewed? Let&rsquo;s a look now.</p>
+
+<h2 id="a-id-snippet-view-a-snippet-view"><a id="snippet-view"></a>Snippet View</h2>
+
+<p>Snippet viewing is the most interesting part of the site so far (in my opinion). So before we dive into the code, let&rsquo;s see what it looks like when we open a snippet.</p>
+
+<p>{% img /uploads/2012/07/part5-snippet-view.png &lsquo;The Snippet View&rsquo; %}</p>
+
+<p>Hopefully this screenshot will finally give you a vivid image as to what this application is all about. A snippet has two sides which do similar things in slightly different wants. Votes are cast by the users of the site to indicate which option they prefer. At the bottom you can see the current tally of votes, the side with the most votes is rendered in green and the side with the least is rendered in red. Both sides are rendered in blue if the the vote count is even.</p>
+
+<p>When a user has voted for a given snippet, the view changes to look like this:</p>
+
+<p>{% img /uploads/2012/07/part5-voted-snippet-view.png &lsquo;The Voted Snippet View&rsquo; %}</p>
+
+<p>When the user returns to the same snippet down the track, the view looks like this:</p>
+
+<p>{% img /uploads/2012/07/part5-voted-snippet-view-return.png &lsquo;The Voted Snippet View on return&rsquo; %}</p>
+
+<p>While we&rsquo;re at it, let&rsquo;s take a look at the view when a user is <em>not</em> signed in:</p>
+
+<p>{% img /uploads/2012/07/part5-snippet-unknown-user.png &lsquo;The Voted Snippet View on return&rsquo; %}</p>
+
+<p>As you can see there are a few things going on here:</p>
+
+<ol>
+<li>The main content of the snippet has to be loaded.</li>
+<li>The count of votes for the snippet has to be loaded.</li>
+<li>If the user is not logged in, show the vote count without any buttons which allow the user to vote.</li>
+<li>If the user is logged in and hasn&rsquo;t yet voted, show the vote buttons.</li>
+<li>Otherwise show the vote buttons.</li>
+<li>When the user votes, post a vote to the server, show a confirmation message and update the vote count on screen. When the vote count is updated, the numbers should reflect any additional votes that have been cast while the user has been viewing the page.</li>
+</ol>
+
+<p>Let&rsquo;s see what the snippet loading resource looks like (again, with boring stuff ommitted).</p>
+
+<pre><code>% ... snip ...
+
+content_types_provided(ReqData, State) -&gt;
+  Types = [
+    {&quot;application/json&quot;, to_json}
+  ],
+  {Types, ReqData, State}.
+
+% ... snip ...
+</code></pre>
+
+<p>Like before we&rsquo;re only providing JSON versions of the content. The client is responsible for the generation and handling of markup.</p>
+
+<pre><code>% ... snip ...
+
+to_json(ReqData, State) -&gt;
+  PathInfo = wrq:path_info(ReqData),
+  {ok, SnippetKey} = dict:find(key, PathInfo),
+  {ok, Snippet} = csd_snippet:fetch(list_to_binary(SnippetKey)),
+
+  {ok, Count} = case cookie:load_auth(ReqData) of
+    {ok, {UserId, _, _, _}} -&gt;
+      csd_vote:count_for_snippet(SnippetKey, UserId);
+    _ -&gt;
+      csd_vote:count_for_snippet(SnippetKey)
+  end,
+
+  Json = iolist_to_binary([
+      &quot;{\&quot;snippet\&quot;:&quot;,
+      csd_snippet:to_json(Snippet),
+      &quot;,\&quot;count\&quot;:&quot;,
+      csd_vote:to_json(Count),
+      &quot;}&quot;
+    ]),
+
+  {Json, ReqData, State}.
+</code></pre>
+
+<p>The first part of this function is doing the same thing as with the user profile page. It&rsquo;s getting the Id of the snippet being viewed from the URI, which is in the form <code>/snippet/&lt;snippet-id&gt;</code>. Once this has been extracted, the body of the snippet is pulled out of Riak.</p>
+
+<p>After this we then take a look to see if the user is logged in via the auth cookie. If the user is logged in we invoke the vote counting functionality with the <code>UserId</code> as a parameter so that the map/reduce job can find which side they voted for. If the user isn&rsquo;t known, then the other version of the vote count is executed which doesn&rsquo;t rely on the user&rsquo;s Id.</p>
+
+<p>When these two bits of information have been pulled from Riak we combine them (in a rather rudimentary fashion) into a blob of JSON and return that to the client.</p>
+
+<p>Again it&rsquo;s worth noting that we aren&rsquo;t handling the case where the snippet isn&rsquo;t found (ie. returning a [404][Http404]). We&rsquo;ll be covering this off in a future blog post.</p>
+
+<p>From this blob of JSON the client-side code is able to infer quite a bit and can update the display to show the appropriate views depending on the state of the user and the votes. So how exactly do we handle the submission of a vote? Let&rsquo;s look at that now.</p>
+
+<pre><code>% ... snip ...
+
+-record(state, {
+    user_data = undefined
+  }).
+
+% ... snip ...
+
+init([]) -&gt;
+  {ok, #state{}}.
+
+allowed_methods(ReqData, State=#state{}) -&gt;
+  {['POST'], ReqData, State}.
+
+% ... snip ...
+</code></pre>
+
+<p>When processing vote submissions we use the user information in more that one of the Webmachine overloads, so rather than pull it out of the auth cookie each time we store it in the <code>State</code> blob that is threaded through each of the functions we overload. The above code declares the record that we&rsquo;re using and shows that for each request we create a new one when the resource is initialised.</p>
+
+<p>The other take-away from this bit of code is that we only accept <code>POST</code>s.</p>
+
+<pre><code>% ... snip ...
+
+is_authorized(ReqData, State=#state{}) -&gt;
+  case cookie:load_auth(ReqData) of
+    {ok, UserData} -&gt;
+      {true, ReqData, State#state{user_data=UserData}};
+    _ -&gt;
+      {false, ReqData, State}
+  end.
+
+% ... snip ...
+</code></pre>
+
+<p>Given that we&rsquo;re processing the submission of votes we require that the user is signed in. If a non-authorised request comes in we want to return a [401][Http401]. If the user is signed in, we allow the processing to continue but we also store the user data in <code>State</code> so that it can be used in <code>process_post</code>.</p>
+
+<pre><code>% ... snip ...
+
+process_post(ReqData, State=#state{user_data={UserId, _, _, _}}) -&gt;
+  FormData = mochiweb_util:parse_qs(wrq:req_body(ReqData)),
+  SnippetId = proplists:get_value(&quot;snippet&quot;, FormData),
+  Which = proplists:get_value(&quot;which&quot;, FormData),
+  Vote = csd_vote:to_vote(UserId, SnippetId, Which),
+  {ok, _} = csd_vote:save(Vote),
+  {ok, Count} = csd_vote:count_for_snippet(SnippetId, UserId),
+  Json = csd_vote:to_json(Count),
+  NewReqData = wrq:set_resp_header(&quot;Content-type&quot;, &quot;application/json&quot;, wrq:set_resp_body(Json, ReqData)),
+  {true, NewReqData, State}.
+</code></pre>
+
+<p>The first thing you&rsquo;ll notice here is that <code>process_post</code> requires a pattern-match against valid <code>user_data</code> to extract the <code>UserId</code>. If it doesn&rsquo;t match the process will crash. This is ok because we shouldn&rsquo;t ever reach this function unless the user is authorised anyway.</p>
+
+<p>The body of the function is made up of a few simple steps. We parse out the content of the <code>POST</code> using <code>parse_qs</code> from Mochiweb&rsquo;s <code>mochiweb_util</code> module and then from that we extract <code>&quot;snippet&quot;</code> and <code>&quot;which&quot;</code> values which indicate the key of the snippet and the side of the snippet the user voted for (respectively). A new vote is then created using the extract form information and the <code>UserId</code> pulled from the authentication cookie.</p>
+
+<p>This new vote is then pushed into Riak via <code>csd_vote:save</code>. You&rsquo;ll notice we&rsquo;re not interested in the content of the result other than making sure that it succeeded (ie. the first part of the return tuple is <code>ok</code>).</p>
+
+<p>To facilitate the requirement that after voting the UI should be not only refreshed with that user&rsquo;s vote it should also contain any other votes that have been cast while the user has been on the page, we make a call to get the count of votes for the snippet. This is what we pass back to the UI so that it can be displayed.</p>
+
+<p>When I first came across the <code>process_post</code> overload in Webmachine I was a little bit confused as to why the return value of the function wasn&rsquo;t the same as others like <code>to_html</code> or <code>to_json</code>. You&rsquo;ll notice that this function instead returns <code>true</code> to indicate that the <code>POST</code> has been processesd, but the setting of the content type and the body is done in a different way. It does actually make sense given that processing posts doesn&rsquo;t fit the same flow as with, say, a <code>GET</code>. The content type that is returned could be anything (including nothing). In our case we&rsquo;re returning JSON, so we use the <code>wrq</code> API to set the content of the response.</p>
+
+<p>When done, we pass in the new request information as part of the return value and Webmachine does the rest. On the client side, the vote submission response is handled by the JavaScript and the vote count is updated inline (with a little animated effect, which I&rsquo;ll show you shortly).</p>
+
+<p>We are now able to submit votes to snippets. That&rsquo;s all well and good, but we need to be able submit snippets before we can vote on them. Let&rsquo;s look at that process now.</p>
+
+<h2 id="a-id-snippet-submission-a-code-snippet-submission"><a id="snippet-submission"></a>Code Snippet Submission</h2>
+
+<p>The first thing to note here is that we&rsquo;re going to use a different resource to handle submissions. This is because we want to keep our code clean. Given that we&rsquo;re also going to be handling POSTs on a URI <em>without</em> a snippet key, we can easily handle this in our URI dispatch without having to resort to using guards.</p>
+
+<p>Let&rsquo;s wade through the important bits of <code>csd_web_snippet_submit_resource</code> now.</p>
+
+<pre><code>% ... snip ...
+
+%% --------------------------------------------------------------------------------------
+%% Internal Record Definitions
+%% --------------------------------------------------------------------------------------
+
+-record(state, {
+    user_data = undefined,
+    key
+  }).
+
+is_authorized(ReqData, State=#state{}) -&gt;
+  case cookie:load_auth(ReqData) of
+    {ok, UserData} -&gt;
+      {true, ReqData, State#state{user_data=UserData}};
+    _ -&gt;
+      {false, ReqData, State}
+  end.
+
+% ... snip ...
+</code></pre>
+
+<p>When processing snippet submissions there are a few details we need to keep track of along the way. Firstly we need to make sure that the request is authorised, but we&rsquo;ll also need to use that User&rsquo;s information when creating the snippet so rather than process the authorisation cookie twice, we&rsquo;ll carry the detail along as part of the request state.</p>
+
+<p>Secondly we&rsquo;re going to need to create a key for the new snippet since we&rsquo;re handling posts. In a true RESTful fashion, we should return the location of the new snippet in the <code>Location</code> response header. Given that this key is used in two Webmachine overloads we&rsquo;ll keep track of the key as well.</p>
+
+<p>Moving on!</p>
+
+<pre><code>% ... snip ...
+
+init([]) -&gt;
+  {ok, #state{}}.
+
+content_types_accepted(ReqData, State=#state{}) -&gt;
+  Types = [
+    {&quot;application/x-www-form-urlencoded&quot;, process_form}
+  ],
+  {Types, ReqData, State}.
+
+allowed_methods(ReqData, State=#state{}) -&gt;
+  {['POST'], ReqData, State}.
+
+post_is_create(ReqData, State=#state{}) -&gt;
+  {true, ReqData, State}.
+
+% ... snip ...
+</code></pre>
+
+<p>Those of you more familiar with Webmachine will note that when processing posts you don&rsquo;t actually have to override the <code>content_types_accepted</code> function and can instead simply provide an implementation of <code>process_post</code>. This is fine for when you&rsquo;re not interested in creating resources. But if you are interested in creation of resources, as we are, then we need to take a different path through Webmachine&rsquo;s state machine by implementing <code>post_is_create</code> and returning <code>true</code> as the result. We also need to define a function, which we call <code>process_form</code>, which can be invoked for form posts.</p>
+
+<p>Given that we&rsquo;ve returned <code>true</code> from <code>post_is_create</code>, we also need to provide an implementation for <code>create_path</code>, like so:</p>
+
+<pre><code>% ... snip ...
+
+create_path(ReqData, State=#state{}) -&gt;
+  Key = csd_riak:new_key(),
+  Path = &quot;/snippet/&quot; ++ binary_to_list(Key),
+  {Path, ReqData, State#state{key=Key}}.
+
+% ... snip ...
+</code></pre>
+
+<p>Here you can see that we&rsquo;re generating a new key for the snippet data. We generate a new path, which will contain the location of the new snippet once created, and we also save the key in <code>State</code> so that it can be used later.</p>
+
+<p>Finally, all we need to do is implement <code>process_form</code> which pulls the form apart and stores the snippet data in Riak.</p>
+
+<pre><code>% ... snip ...
+
+process_form(ReqData, State=#state{}) -&gt;
+  % get the detail from the form
+  FormData = mochiweb_util:parse_qs(wrq:req_body(ReqData)),
+  Snippet = to_snippet(FormData, State),
+  {ok, SavedSnippet} = csd_snippet:save(Snippet),
+  Key = csd_snippet:get_key(SavedSnippet),
+
+  % Return the key of the snippet as the payload
+  NewBody = wrq:set_resp_body(Key, ReqData),
+  NewReqData = wrq:set_resp_header(&quot;Content-type&quot;, &quot;text/plain&quot;, NewBody),
+  {true, NewReqData, State}.
+
+%% --------------------------------------------------------------------------------------
+%% Private Function Definitions
+%% --------------------------------------------------------------------------------------
+
+to_snippet(FormData, #state{key=Key, user_data={UserId, _, _, _}}) -&gt;
+  Title = proplists:get_value(&quot;title&quot;, FormData),
+  Left = proplists:get_value(&quot;left&quot;, FormData),
+  Right = proplists:get_value(&quot;right&quot;, FormData),
+  Snippet = csd_snippet:to_snippet(Title, Left, Right, UserId),
+  csd_snippet:set_key(Snippet, Key).
+</code></pre>
+
+<p>Processing the form is just the same as when we did it for votes. We tease the form apart into a dictionary and call our own <code>to_snippet</code> function which accesses the dictionary to get the important bits of the snippet detail. At the same time, it utilises the key and the Id of the user to create a proper snippet object, which is returned to the caller.</p>
+
+<p>Once this has been done, the snippet is pushed into Riak and we return the new key of the snippet in plain text format back to the client. The reason I chose this approach was so that the JavaScript on the client could simply redirect to a URI based on that key. JSON parsing on the client isn&rsquo;t needed as a result.</p>
+
+<p>With that done, we&rsquo;re down to the last resource modification before we wire up dispatches and cover the UI.</p>
+
+<h2 id="a-id-logging-off-a-logging-off"><a id="logging-off"></a>Logging off</h2>
+
+<p>This isn&rsquo;t part of the core workflow but it&rsquo;s a nice feature to have as it makes the site feel a little more rounded/polished. We want users to be able to sign off if they want to. We need to be able to handle a <code>POST</code> without a body, and remove the user&rsquo;s authentication information cookie by forcing it to expire.</p>
+
+<p>Firstly we need to make this slight adjustment in the <code>cookie</code> module like so:</p>
+
+<pre><code>% ... snip ...
+
+remove_auth(ReqData) -&gt;
+  store_auth_cookie(ReqData, &quot;&quot;, -1).
+
+% ... snip ...
+
+store_auth(ReqData, Id, Name, Token, TokenSecret) -&gt;
+  Value = mochiweb_util:quote_plus(encode(Id, Name, Token, TokenSecret)),
+  store_auth_cookie(ReqData, Value, 3600 * 24 * ?AUTH_EXPIRY_DAYS).
+
+%% --------------------------------------------------------------------------------------
+%% Private Function Definitions
+%% --------------------------------------------------------------------------------------
+
+store_auth_cookie(ReqData, Value, Expiry) -&gt;
+  Options = [
+    %{domain, &quot;codesmackdown.com&quot;},
+    {max_age, Expiry},
+    {path, &quot;/&quot;},
+    {http_only, true}
+  ],
+  CookieHeader = mochiweb_cookies:cookie(?AUTH_COOKIE, Value, Options),
+  wrq:merge_resp_headers([CookieHeader], ReqData).
+
+% ... snip ...
+</code></pre>
+
+<p>We&rsquo;ve created a helper function, <code>store_auth_cookie</code>, which does as it says. It stores an auth cookie in the response based on the given <code>Value</code> of the cookie and the <code>Expiry</code>. This used to be part of the <code>store_auth</code> function, but we&rsquo;ve pulled it out into a method that can be reused. The <code>store_auth</code> function now calls this function when creating the authentication cookie like we used to. We also make a call via the <code>remove_auth</code> function, which sets the body of the token to a blank string and sets the expiry to -1 which forces the cookie to expire immediately when it hits the browser.</p>
+
+<p>With this out of the way, we need to expose a resource which invokes it. Here it is without the boring bits included.</p>
+
+<pre><code>% ... snip ...
+
+allowed_methods(ReqData, State) -&gt;
+  {['POST'], ReqData, State}.
+
+process_post(ReqData, State) -&gt;
+  NewReqData = cookie:remove_auth(ReqData),
+  {true, NewReqData, State}.
+</code></pre>
+
+<p>Simple right? Handle a <code>POST</code> in the usual fashion and remove the authentication token during processing. It doesnt&rsquo; get easier than that.</p>
+
+<h2 id="a-id-serving-static-content-a-serving-static-content"><a id="serving-static-content"></a>Serving Static Content</h2>
+
+<p>We&rsquo;re now at a point where we&rsquo;re going to be serving up some content straight from disk. This includes CSS files, JavaScript source files and HTML templates. There are a large number of ways in which we can do this.</p>
+
+<p>For the sake of this blog series we&rsquo;re going to keep this functionality within the application. If this application were to make it to production, this approach wouldn&rsquo;t be used. As great as Webmachine is, serving static content at break-neck speeds isn&rsquo;t one of its strong points. Instead it would be better to use something which is good at this kind of thing. <a href="http://nginx.org/" title="Nginx">Nginx</a> is a good example, but there are many others.</p>
+
+<p>The static file serving resource is not something that I wrote (though I&rsquo;ve tweaked it a bit). I blatantly purloined it from somewhere on the web (quite a while ago I might add) and I can no longer find a reference to it. If anyone out there recognises it, please let me know and I shall give proper kudos/credit to the original author.</p>
+
+<p>This resource works, but I say again it&rsquo;s not something that should be used in production.  Here it is in its entirety.</p>
+
+<pre><code>-module(csd_web_static_resource).
+-author('OJ Reeves &lt;oj@buffered.io&gt;').
+
+%% --------------------------------------------------------------------------------------
+%% API Function Exports
+%% --------------------------------------------------------------------------------------
+
+-export([
+    init/1,
+    allowed_methods/2,
+    resource_exists/2,
+    content_types_provided/2,
+    provide_content/2,
+    file_exists/2
+  ]).
+
+%% --------------------------------------------------------------------------------------
+%% Required Includes
+%% --------------------------------------------------------------------------------------
+
+-include_lib(&quot;webmachine/include/webmachine.hrl&quot;).
+-include_lib(&quot;kernel/include/file.hrl&quot;).
+
+%% --------------------------------------------------------------------------------------
+%% Record definitions
+%% --------------------------------------------------------------------------------------
+
+-record(context, {docroot, fullpath, fileinfo, response_body}).
+
+%% --------------------------------------------------------------------------------------
+%% API Function Definitions
+%% --------------------------------------------------------------------------------------
+
+init([ContentDir]) -&gt;
+  {ok, App}= application:get_application(),
+  PrivDir = code:priv_dir(App),
+  SourceDir = filename:join([PrivDir, ContentDir]),
+  {ok, #context{docroot=SourceDir}}.
+
+allowed_methods(ReqData, Context) -&gt;
+  {['HEAD', 'GET'], ReqData, Context}.
+
+resource_exists(ReqData, Ctx) -&gt;
+  {true, ReqData, Ctx}.
+
+content_types_provided(ReqData, Ctx) -&gt;
+  Path = wrq:disp_path(ReqData),
+  Mime = webmachine_util:guess_mime(Path),
+  {[{Mime, provide_content}], ReqData, Ctx}.
+
+provide_content(ReqData, Context) -&gt;
+  % if returns {true, NewContext} then NewContext has response_body
+  case Context#context.response_body of
+    undefined -&gt;
+      case file_exists(Context, wrq:disp_path(ReqData)) of
+        {true, FullPath} -&gt;
+          {ok, Value} = file:read_file(FullPath),
+          {Value, ReqData, Context#context{response_body=Value}};
+        false -&gt;
+          {error, ReqData, Context}
+      end;
+    _Body -&gt;
+      {Context#context.response_body, ReqData, Context}
+  end.
+
+file_exists(Context, Path) -&gt;
+  FullPath = get_full_path(Context, Path),
+  case filelib:is_regular(filename:absname(FullPath)) of
+    true -&gt;
+      {true, FullPath};
+    false -&gt;
+      false
+  end.
+
+get_full_path(Context, Path) -&gt;
+  Root = Context#context.docroot,
+  Result = case mochiweb_util:safe_relative_path(Path) of
+    undefined -&gt;
+      undefined;
+    RelPath -&gt;
+      FullPath = filename:join([Root, RelPath]),
+      case filelib:is_dir(FullPath) of
+        true -&gt;
+          filename:join([FullPath, &quot;index.html&quot;]);
+        false -&gt;
+          FullPath
+      end
+  end,
+  Result.
+</code></pre>
+
+<p>There&rsquo;s a lot here to cover, but most of it could be understood quit easily by following the code path.</p>
+
+<p>To sum it up this is how it works. The resource is configured in the dispatch list and in that list a location is specified as a parameter. This location is the folder in which the files will be located. This value is passed into the <code>init</code> function so that the resource knows the root folder to search the files for.</p>
+
+<p>When a request is made the resource attempts to guess the [MIME][] type based on the file extension using a built-in Mochiweb function. It then attempts to load the file from disk and if found it returns the file content as the body of the response.</p>
+
+<p>With that out of the way, now is the perfect time to wire in all the new resources in the dispatch list.</p>
+
+<h2 id="a-id-updating-dispatch-a-updating-dispatch"><a id="updating-dispatch"></a>Updating Dispatch</h2>
+
+<p>We need to modify our <code>app.config</code> which contains our dispatch list so that it correctly routes all the URIs to the appropriate resources. Let&rsquo;s take a look at the updated list</p>
+
+<pre><code>% ... snip ...
+
+  {csd_web,
+    [
+      {web,
+        [
+          % ... snip ...
+          {dispatch,
+            [
+              {[], csd_web_resource, []},
+              {[&quot;css&quot;, '*'], csd_web_static_resource, [&quot;www/static/css&quot;]},
+              {[&quot;js&quot;, '*'], csd_web_static_resource, [&quot;www/static/js&quot;]},
+              {[&quot;views&quot;, '*'], csd_web_static_resource, [&quot;www/static/views&quot;]},
+              {[&quot;img&quot;, '*'], csd_web_static_resource, [&quot;www/static/img&quot;]},
+              {[&quot;snippet&quot;], csd_web_snippet_submit_resource, []},
+              {[&quot;snippet&quot;, key], csd_web_snippet_resource, []},
+              {[&quot;vote&quot;], csd_web_vote_submit_resource, []},
+              {[&quot;userdetail&quot;, user_id], csd_web_user_detail_resource, []},
+              {[&quot;logoff&quot;], csd_web_logoff_resource, []},
+              {[&quot;oauth&quot;, &quot;request&quot;], csd_web_request_resource, []},
+              {[&quot;oauth&quot;, &quot;callback&quot;], csd_web_callback_resource, []}
+            ]}
+        ]
+      }
+    ]
+  }
+
+% ... snip ...
+</code></pre>
+
+<p>The first entry is as it was before, as are the last two. There are 4 routes which use <code>csd_web_static_resource</code> to handle different URIs that point to static files on disk. This allows us to have URIs like <code>&quot;/js/csd.js&quot;</code> and <code>&quot;css/site.css&quot;</code> without us having to add another path (such as <code>&quot;/static/js/csd.js&quot;</code> to each). All our static content has been placed under the <code>apps/csd_web/priv/</code> and each of the static routes is relative to this folder.</p>
+
+<p>The rest of the routes map directly to handlers based on a common-sense URI which should now make sense based on what we&rsquo;ve implemented in this post.</p>
+
+<p>All that we have left to discuss is the new, fandangled user interface.</p>
+
+<h2 id="a-href-user-interface-a-user-interface"><a href="user-interface"></a>User Interface</h2>
+
+<p>I stand by what I said on Twitter..</p>
+
+<blockquote>
+<p>The problem with Twitter bootstrap is that everything
+now looks like Twitter bootstrap.</p>
+</blockquote>
+
+<p>Despite this, I&rsquo;m using Twitter bootstrap for the UI because I&rsquo;m terrible at design and this was the easiest thing to use which makes me look non-terrible (though I&rsquo;m sure I may have managed to make bootstrap terrible too).</p>
+
+<p>The goal of this series is to cover server-side programming of web applications using an Erlang technology stack. Heavy user-interface development is beyond the scope for this already lengthy blog post, so I won&rsquo;t be diving into the implementation. What I will say is:</p>
+
+<ol>
+<li>The front-end is quite JavaScript heavy and uses <a href="http://documentcloud.github.com/backbone/" title="Backbone.js">Backbone.js</a> to handle routing, models and view rendering.</li>
+<li>URIs make use of the hashtag quite a bit so that links can still be used to access particular snippets directly.</li>
+<li>For client-side template rendering I&rsquo;m using <a href="http://handlebarsjs.com/" title="Handlebars templating">Handlebars</a> which gives me really simple and relatively quick JavaScript template management.</li>
+<li>Handlebar templates are loaded via ajax calls as required.</li>
+<li><a href="http://www.jquery.com/" title="jQuery">jQuery</a> is used heavily. What a surprise.</li>
+</ol>
+
+<p>So with all this in mind, and with the <a href="https://github.com/OJ/csd/tree/Part5-20120830/apps/csd_web/priv/www/static" title="User Interface Source">source of the UI readily available</a> for your review, check out the application in action via this little video. It shows the sign-in process, user profile view, adding of new snippets and voting on existing snippets.</p>
+
+<p>Feel free to go to <a href="http://vimeo.com/45499170">Vimeo</a> and watch it full screen.</p>
+
+<p><iframe src="http://player.vimeo.com/video/45499170" width="500" height="331" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/45499170">Code Smackdown</a> from <a href="http://vimeo.com/thecolonial">OJ Reeves</a> on <a href="http://vimeo.com">Vimeo</a>.</p></p>
+
+<p>That should finally give you an idea of what we&rsquo;re trying to achieve. It&rsquo;s far from perfect and there&rsquo;s plenty more to be done which will see us through another number of parts in this series.</p>
+
+<h2 id="a-id-known-issues-a-known-issues"><a id="known-issues"></a>Known Issues</h2>
+
+<p>In the interest of keeping it real it&rsquo;s worth highlighting a few things that we need to address as we progress through development.</p>
+
+<ul>
+<li>Some IDs that are generated might come out with slashes in them. When this happens the site is unable to render the page for the snippet. The easy solution to this is to replace all slashes with something else but that&rsquo;s not really what I&rsquo;d like to do. In a future post we&rsquo;re going to revamp the ID generation part of the application to use something a little more sensible (learning opportunities there for everyone, most of all me).</li>
+<li>I was recently contacted by a nice bloke by the name of <em>Juan Felipe Garcia Catalan</em> who had done me the honour of following <a href="/posts/webmachine-erlydtl-and-riak-part-4/" title="Wembachine, ErlyDTL and Riak - Part 4">Part 4</a> in fine detail. He had decided to try the implementation OAuth with another provider an found that it didn&rsquo;t work. It appears that Twitter&rsquo;s OAuth functions slightly differently. A future post will address this problem so that the OAuth integration works with other OAuth providers too. Thank you Juan for letting me know!</li>
+<li>The sign in process doesn&rsquo;t handle cases where OAuth fails or the user says &ldquo;no&rdquo; to signing in.</li>
+<li>In general, handling failures isn&rsquo;t covered. This will happen over the course of future posts.</li>
+</ul>
+
+<h2 id="a-id-finished-a-finished"><a id="finished"></a>Finished!</h2>
+
+<p>This post, to date, is the longest one I&rsquo;ve written. Thanks for sticking with me. I hope you&rsquo;ve learned something or at least enjoyed reading. Please let me know in the comments if I&rsquo;ve made any mistakes. If you have ideas on how to better implement anything I&rsquo;m all ears and would love to hear them. Feel free to point out my crappy typos, grammar issues etc as well.</p>
+
+<p>Thanks again. Until next time!</p>
+
+<p><strong>Note:</strong> The code for Part 5 (this post) can be found on <a href="https://github.com/OJ/csd/tree/Part5-20120830" title="Source code for Part 5">Github</a>.</p>
+
+<p>Other parts in this series: <a href="/posts/webmachine-erlydtl-and-riak-part-1/" title="Wembachine, ErlyDTL and Riak - Part 1">Part 1</a>, <a href="/posts/webmachine-erlydtl-and-riak-part-2/" title="Wembachine, ErlyDTL and Riak - Part 2">Part 2</a>, <a href="/posts/webmachine-erlydtl-and-riak-part-3/" title="Wembachine, ErlyDTL and Riak - Part 3">Part 3</a>, <a href="/posts/webmachine-erlydtl-and-riak-part-4/" title="Wembachine, ErlyDTL and Riak - Part 4">Part 4</a></p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/riak">Riak</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/functional-programming">Functional Programming</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/howto">HOWTO</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/erlang">Erlang</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/webmachine">Webmachine</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/erlydtl">ErlyDTL</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/backbonejs">BackboneJS</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/bootstrap">Bootstrap</a>
+	  
+	    </p>
+	    
+<p><a itemprop="keywords" class=" label label-danger" href="/tags/backbonejs">BackboneJS</a> <a itemprop="keywords" class=" label label-danger" href="/tags/bootstrap">Bootstrap</a> <a itemprop="keywords" class=" label label-danger" href="/tags/erlang">Erlang</a> <a itemprop="keywords" class=" label label-danger" href="/tags/erlydtl">ErlyDTL</a> <a itemprop="keywords" class=" label label-danger" href="/tags/functional-programming">Functional Programming</a> <a itemprop="keywords" class=" label label-danger" href="/tags/howto">HOWTO</a> <a itemprop="keywords" class=" label label-danger" href="/tags/riak">Riak</a> <a itemprop="keywords" class=" label label-danger" href="/tags/webmachine">Webmachine</a></p>
+
+
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

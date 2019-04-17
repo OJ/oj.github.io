@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Webmachine, ErlyDTL and Riak - Part 2 - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/webmachine-erlydtl-and-riak-part-2/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Webmachine, ErlyDTL and Riak - Part 2 </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Sun Sep 12, 2010</span>
+
+	  <p><img src="/uploads/2010/09/riak-logo.png" alt="Riak Logo" style="float:left;padding-right:5px;padding-bottom:5px;"/>In <a href="/posts/webmachine-erlydtl-and-riak-part-1/" title="Wembachine, ErlyDTL and Riak - Part 1">Part 1</a> of the series we covered the basics of getting the development environment up and running. We also looked at how to get a really simple ErlyDTL template rendering. If you haven&rsquo;t yet gone through Part 1, I suggest you do that now. If you have, read on!</p>
+
+<p>There are a few reasons this series is targeting this technology stack. One of them is <strong>uptime</strong>. We&rsquo;re aiming to build a site that stays up as much as possible. Given that, one of the things that I missed in the previous post was setting up a <a href="http://en.wikipedia.org/wiki/Load_balancing_(computing)" title="Load balancing">load balancer</a>. Hence this post will attempt to fill that gap.</p>
+
+<p>Any serious web-based application will have load-balancing in play somewhere. While not essential during development, it&rsquo;s handy to have a similar set up in the hope that it exposes you to some potential issues you might face when the application reaches production.</p>
+
+<p>There are many high-quality load-balancing solutions out there to choose from. For this series, we shall be using <a href="http://haproxy.1wt.eu/" title="HAProxy">HAProxy</a>, which is a common choice amongst developers building scalable web applications. The rest of this post will cover how to set up HAProxy, verifying that the configuration is correct and confirming that it behaves appropriately when nodes in our cluster go down.</p>
+
+<p>Please note the goal is to demonstrate how HAProxy <em>can</em> be configured. When deploying to your production environments please make sure the configuration matches your needs.</p>
+
+<h3 id="haproxy-installation">HAProxy installation</h3>
+
+<p>Let&rsquo;s start by pulling down the latest stable version of HAProxy&rsquo;s source, extracting it and building it. Here&rsquo;s a sample log of what you should expect:</p>
+
+<pre><code>oj@nix ~/blog $ wget http://haproxy.1wt.eu/download/1.4/src/haproxy-1.4.20.tar.gz
+
+  ... snip ...
+
+oj@nix ~/blog $ tar -xzf haproxy-1.4.20.tar.gz 
+
+  ... snip ...
+</code></pre>
+
+<p>At this point we&rsquo;ve got the source and we&rsquo;re ready to make. HAProxy requires a parameter in order to build, and this parameter varies depending on your target system:</p>
+
+<pre><code>oj@nix ~/blog $ cd haproxy-1.4.20
+oj@nix ~/blog/haproxy-1.4.20 $ make
+
+Due to too many reports of suboptimized setups, building without
+specifying the target is no longer supported. Please specify the
+target OS in the TARGET variable, in the following form:
+
+   make TARGET=xxx
+
+Please choose the target among the following supported list :
+
+   linux26, linux24, linux24e, linux22, solaris
+   freebsd, openbsd, cygwin, custom, generic
+
+Use &quot;generic&quot; if you don't want any optimization, &quot;custom&quot; if you
+want to precisely tweak every option, or choose the target which
+matches your OS the most in order to gain the maximum performance
+out of it. Please check the Makefile in case of doubts.
+make: *** [all] Error 1
+</code></pre>
+
+<p>According to <a href="http://en.wikipedia.org/wiki/Uname" title="uname">uname</a>, I&rsquo;m running Linux Kernel 2.6:</p>
+
+<pre><code>oj@nix ~/blog/haproxy-1.4.20 $ uname -r
+2.6.31-21-generic
+</code></pre>
+
+<p>As a result, I&rsquo;ll be passing in <strong>linux26</strong>. Make sure you specify the correct option depending on which system you are running. We&rsquo;ll be building it <em>and</em> installing it so that it can be called from anywhere:</p>
+
+<pre><code>oj@nix ~/blog/haproxy-1.4.20 $ make TARGET=linux26
+
+    ... snip ...
+
+oj@nix ~/blog/haproxy-1.4.20 $ sudo make install
+
+   ... snip ...
+</code></pre>
+
+<p>Simple! We now need to create a configuration for HAProxy which we can use during development. Not surprisingly, HAProxy can be run as a daemon, but it can also be invoked from the command line with a configuration passed as a parameter. For our development, we&rsquo;ll be executing from the command line as this will give us feedback/output on what&rsquo;s going on.</p>
+
+<p><strong>Note:</strong> If you&rsquo;re using Mac OSX, you can easily use brew to install haproxy with the command <code>brew install haproxy</code></p>
+
+<p>Let&rsquo;s create a file called <code>dev.haproxy.conf</code> inside our application directory so that it can be included in our source:</p>
+
+<pre><code># start with the global settings which will
+# apply to all sections in the configuration.
+global
+  # specify the maximum connections across the board
+  maxconn 2048
+  # enable debug output
+  debug
+
+# now set the default settings for each sub-section
+defaults
+  # stick with http traffic
+  mode http
+  # set the number of times HAProxy should attempt to
+  # connect to the target
+  retries 3
+  # specify the number of connections per front and
+  # back end
+  maxconn 1024
+  # specify some timeouts (all in milliseconds)
+  timeout connect 5000
+
+########### Webmachine Configuration ###################
+
+# here is the first of the front-end sections.
+# this is where we specify our webmachine instances.
+# in our case we start with just one instance, but
+# we can add more later
+frontend webfarm
+  # listen on port 4000 across all network interfaces
+  bind *:4000
+  # by default, point at our backend configuration
+  # which lists our webmachine instances (this is
+  # configured below in another section)
+  default_backend webmachines
+  # indicate keep-alive
+  option http-server-close
+  # timeouts
+  timeout client 5000
+
+# this section indicates how the connectivity to
+# all the instances of webmachine should work.
+# Again, for dev there is only one instance, but
+# in production there would be more.
+backend webmachines
+  # we'll specify a round-robin configuration in
+  # case we add nodes down the track.
+  balance roundrobin
+  # enable the &quot;X-Forware-For&quot; header so that
+  # we can see the client's IP in Webmachine,
+  # not just the proxy's address
+  option forwardfor
+  # later down the track we'll be making the use
+  # of cookies for various reasons. So we'll
+  # enable support for this while we're here.
+  cookie SERVERID insert nocache indirect
+  # list the servers who are to be balanced
+  # (just the one in the case of dev)
+  server Webmachine1 127.0.0.1:8000
+  # timeouts
+  timeout server 1200000
+  timeout connect 3000
+
+########### Riak Configuration ###################
+
+# We are yet to touch Riak so far, but given that
+# this post is going to cover the basics of
+# connectivity, we'll cover off the configuration
+# now so we don't have to do it later.
+frontend dbcluster
+  # We'll be using protocol buffers to talk to
+  # Riak, so we will change from the default mode
+  # and use tcp instead
+  mode tcp
+  # we're only interested in allowing connections
+  # from internal sources (so that we don't expose
+  # ourselves to the web. so we shall only listen
+  # on an internal interface on port 8080
+  bind 127.0.0.1:8080
+  # Default to the riak cluster configuration
+  default_backend riaks
+  # timeouts
+  timeout client 1200000
+
+# Here is the magic bit which load balances across
+# our four instances of riak which are clustered
+# together
+backend riaks
+  # again, make sure we specify tcp instead of
+  # the default http mode
+  mode tcp
+  # use a standard round robin approach for load
+  # balancing
+  balance roundrobin
+  # timeouts
+  timeout server 1200000
+  timeout connect 3000
+  # list the four servers as optional targets
+  # for load balancing - these are what we set
+  # up during Part 1. Add health-checking as
+  # well so that when nodes go down, HAProxy
+  # can remove them from the cluster
+  server Riak1 127.0.0.1:8081 check
+  server Riak2 127.0.0.1:8082 check
+  server Riak3 127.0.0.1:8083 check
+  server Riak4 127.0.0.1:8084 check
+</code></pre>
+
+<p>In the configuration above the <code>backend riaks</code> section has four server nodes. Each one of them has the <code>check</code> option specified. This enables health-checking on the same address and port that the server instance is bound to. If you decided that you didn&rsquo;t want to do health-checking in this manner you easily enable health-checking over HTTP, as Riak has a built-in URI which can be used to validate the state of the node. Change the <code>backend riaks</code> section in the configuration to look like this:</p>
+
+<pre><code>  ... snip ...
+
+  # enable HTTP health checking using the GET method
+  # on the URI &quot;/ping&quot;. This URI is part of Riak and
+  # can be used to determine if the node is up.
+  # We specify that we want to use the GET action, and
+  # use the URI &quot;/ping&quot; - this is the RESTful health
+  # check URI that comes as part of Riak.
+  option httpchk GET /ping
+  # list the four servers as optional targets
+  # for load balancing - these are what we set
+  # up during Part 1. Add health-checking as
+  # well so that when nodes go down, HAProxy
+  # can remove them from the cluster.
+
+  # change the health-check address of the node to 127.0.0.0:8091
+  # which is the REST interface for the first Riak node
+  server Riak1 127.0.0.1:8081 check addr 127.0.0.1 port 8091
+
+  # change the health-check address of the node to 127.0.0.0:8092
+  # which is the REST interface for the second Riak node
+  server Riak2 127.0.0.1:8082 check addr 127.0.0.1 port 8092
+
+  # change the health-check address of the node to 127.0.0.0:8093
+  # which is the REST interface for the third Riak node
+  server Riak3 127.0.0.1:8083 check addr 127.0.0.1 port 8093
+
+  # change the health-check address of the node to 127.0.0.0:8094
+  # which is the REST interface for the third Riak node
+  server Riak4 127.0.0.1:8084 check addr 127.0.0.1 port 8094
+</code></pre>
+
+<p>To make sure this is functioning correctly, we need to open two consoles and change our working directory to our <code>csd</code> application (for those who have forgotten, <code>csd</code> is the application we&rsquo;re building - it was mentioned in <a href="/posts/webmachine-erlydtl-and-riak-part-1/" title="Wembachine, ErlyDTL and Riak - Part 1">Part 1</a>). In console 1:</p>
+
+<pre><code>oj@nix ~/blog/csd $ sudo haproxy -f dev.haproxy.conf -d
+Available polling systems :
+     sepoll : pref=400,  test result OK
+      epoll : pref=300,  test result OK
+       poll : pref=200,  test result OK
+     select : pref=150,  test result OK
+Total: 4 (4 usable), will use sepoll.
+Using sepoll() as the polling mechanism.
+</code></pre>
+
+<p>This indicates that HAProxy is up and running and waiting for connections. Let&rsquo;s get Webmachine fired up in console 2:</p>
+
+<pre><code>oj@nix ~/blog/csd $ ./start.sh
+
+    ... snip ...
+
+=PROGRESS REPORT==== 11-Jul-2012::23:07:27 ===
+         application: csd
+          started_at: nonode@nohost
+</code></pre>
+
+<p>Now Webmachine is fired up with our application running. We should be able to hit our page, this time at <a href="http://localhost/" title="localhost">localhost</a>, and see exactly what we saw at the end of <a href="/posts/webmachine-erlydtl-and-riak-part-1/" title="Wembachine, ErlyDTL and Riak - Part 1">Part 1</a>.</p>
+
+<p><img src="/uploads/2010/09/haproxy-validation.png" /></p>
+
+<h3 id="verification-of-haproxy-configuration">Verification of HAProxy configuration</h3>
+
+<p>On the surface it appears that we haven&rsquo;t broken anything. We also need to make sure that any communication with Riak that we have down the track is also functioning. So let&rsquo;s validate that now.</p>
+
+<p>First, we have to make sure that Riak is running. If you have followed <a href="/posts/webmachine-erlydtl-and-riak-part-1/" title="Wembachine, ErlyDTL and Riak - Part 1">Part 1</a> already and your Riak cluster is running then you&rsquo;re good to go. If not, please read <a href="/posts/webmachine-erlydtl-and-riak-part-1/" title="Wembachine, ErlyDTL and Riak - Part 1">Part 1</a> for information on how to install Riak and configure it to run as a cluster of 4 nodes.</p>
+
+<p>Next, let&rsquo;s create 4 new connections and use the <a href="https://github.com/basho/riak-erlang-client/blob/master/src/riakc_pb_socket.erl#L181" title="riakc_pb_socket:get_server_info/1">get_server_info/1</a> function to find out which node we are connected to. To do this, we&rsquo;ll need to use an Erlang console which has all the Riak dependencies ready to go. It just so happens that when we fired up our Webmachine instance, we got an Erlang console for free. Simply hit the <code>enter</code> key and you&rsquo;ll be given a prompt. Notice that when we connect to Riak using the <a href="https://github.com/basho/riak-erlang-client/blob/master/src/riakc_pb_socket.erl#L97" title="riakc_pb_socket:start_link/2">start_link/2</a> function, we are passing in the IP address and port of the load-balanced cluster instead of one of the running Riak nodes:</p>
+
+<pre><code>1&gt; {ok, C1} = riakc_pb_socket:start_link(&quot;127.0.0.1&quot;, 8080).
+{ok,&lt;0.113.0&gt;}
+2&gt; riakc_pb_socket:get_server_info(C1).
+{ok,[{node,&lt;&lt;&quot;dev2@127.0.0.1&quot;&gt;&gt;},
+     {server_version,&lt;&lt;&quot;1.1.2&quot;&gt;&gt;}]}
+3&gt; {ok, C2} = riakc_pb_socket:start_link(&quot;127.0.0.1&quot;, 8080).
+{ok,&lt;0.116.0&gt;}
+4&gt; riakc_pb_socket:get_server_info(C2).                     
+{ok,[{node,&lt;&lt;&quot;dev3@127.0.0.1&quot;&gt;&gt;},
+     {server_version,&lt;&lt;&quot;1.1.2&quot;&gt;&gt;}]}
+5&gt; {ok, C3} = riakc_pb_socket:start_link(&quot;127.0.0.1&quot;, 8080).
+{ok,&lt;0.119.0&gt;}
+6&gt; riakc_pb_socket:get_server_info(C3).                     
+{ok,[{node,&lt;&lt;&quot;dev4@127.0.0.1&quot;&gt;&gt;},
+     {server_version,&lt;&lt;&quot;1.1.2&quot;&gt;&gt;}]}
+7&gt; {ok, C4} = riakc_pb_socket:start_link(&quot;127.0.0.1&quot;, 8080).
+{ok,&lt;0.122.0&gt;}
+8&gt; riakc_pb_socket:get_server_info(C4).                     
+{ok,[{node,&lt;&lt;&quot;dev1@127.0.0.1&quot;&gt;&gt;},
+     {server_version,&lt;&lt;&quot;1.1.2&quot;&gt;&gt;}]}
+</code></pre>
+
+<p>So we can see that the load balancer has allocated four different connections, each to a different node in the cluster. This is a good sign. So let&rsquo;s kill off one of the nodes:</p>
+
+<pre><code>oj@nix ~/blog/riak/dev $ dev3/bin/riak stop
+ok
+</code></pre>
+
+<p>In a very short period of time, you should see output in the HAProxy console which looks something like this:</p>
+
+<pre><code>WARNING] 192/231028 (33025) : Server riaks/Riak3 is DOWN, reason: Layer4 connection
+problem, info: &quot;Connection refused&quot;, check duration: 0ms. 3 active and 0 backup
+servers left. 0 sessions active, 0 requeued, 0 remaining in queue. 
+</code></pre>
+
+<p>The load balancer noticed that the node has died. Let&rsquo;s make sure it no longer attempts to allocate connections to <code>dev3</code>. Note that we call <a href="http://www.erlang.org/documentation/doc-5.2/doc/getting_started/getting_started.html" title="Getting started">f()</a> in our console before running the same script again, as this forces the shell to forget about any existing variable bindings:</p>
+
+<pre><code>9&gt; f().
+ok
+10&gt; {ok, C1} = riakc_pb_socket:start_link(&quot;127.0.0.1&quot;, 8080).
+{ok,&lt;0.128.0&gt;}
+11&gt; riakc_pb_socket:get_server_info(C1).                     
+{ok,[{node,&lt;&lt;&quot;dev4@127.0.0.1&quot;&gt;&gt;},
+     {server_version,&lt;&lt;&quot;1.1.2&quot;&gt;&gt;}]}
+12&gt; {ok, C2} = riakc_pb_socket:start_link(&quot;127.0.0.1&quot;, 8080).
+{ok,&lt;0.131.0&gt;}
+13&gt; riakc_pb_socket:get_server_info(C2).                     
+{ok,[{node,&lt;&lt;&quot;dev1@127.0.0.1&quot;&gt;&gt;},
+     {server_version,&lt;&lt;&quot;1.1.2&quot;&gt;&gt;}]}
+14&gt; {ok, C3} = riakc_pb_socket:start_link(&quot;127.0.0.1&quot;, 8080).
+{ok,&lt;0.134.0&gt;}
+15&gt; riakc_pb_socket:get_server_info(C3).                     
+{ok,[{node,&lt;&lt;&quot;dev2@127.0.0.1&quot;&gt;&gt;},
+     {server_version,&lt;&lt;&quot;1.1.2&quot;&gt;&gt;}]}
+16&gt; {ok, C4} = riakc_pb_socket:start_link(&quot;127.0.0.1&quot;, 8080).
+{ok,&lt;0.137.0&gt;}
+17&gt; riakc_pb_socket:get_server_info(C4).                     
+{ok,[{node,&lt;&lt;&quot;dev4@127.0.0.1&quot;&gt;&gt;},
+     {server_version,&lt;&lt;&quot;1.1.2&quot;&gt;&gt;}]}
+</code></pre>
+
+<p>As we hoped, <code>dev3</code> is nowhere to be seen. Let&rsquo;s fire it up again:</p>
+
+<pre><code>oj@nix ~/blog/riak/dev $ dev3/bin/riak start
+</code></pre>
+
+<p><strong>Note:</strong> It isn&rsquo;t necessary to tell the node to rejoin the cluster. This happens automatically. Thanks to Siculars (see comment thread) for pointing that out.</p>
+
+<p>HAProxy&rsquo;s console will show you that it has re-established a connection to <code>dev3</code></p>
+
+<pre><code>[WARNING] 192/231536 (33025) : Server riaks/Riak3 is UP, reason: Layer4 check passed,
+check duration: 0 ms. 4 active and 0 backup servers online. 0 sessions requeued, 0 total in queue.
+</code></pre>
+
+<p>As a final test, let&rsquo;s make sure we see that node get connections when we attempt to connect:</p>
+
+<pre><code>18&gt; f().
+ok
+19&gt; {ok, C1} = riakc_pb_socket:start_link(&quot;127.0.0.1&quot;, 8080).
+{ok,&lt;0.141.0&gt;}
+20&gt; riakc_pb_socket:get_server_info(C1).                     
+{ok,[{node,&lt;&lt;&quot;dev1@127.0.0.1&quot;&gt;&gt;},
+     {server_version,&lt;&lt;&quot;1.1.2&quot;&gt;&gt;}]}
+21&gt; {ok, C2} = riakc_pb_socket:start_link(&quot;127.0.0.1&quot;, 8080).
+{ok,&lt;0.144.0&gt;}
+22&gt; riakc_pb_socket:get_server_info(C2).                     
+{ok,[{node,&lt;&lt;&quot;dev2@127.0.0.1&quot;&gt;&gt;},
+     {server_version,&lt;&lt;&quot;1.1.2&quot;&gt;&gt;}]}
+23&gt; {ok, C3} = riakc_pb_socket:start_link(&quot;127.0.0.1&quot;, 8080).
+{ok,&lt;0.147.0&gt;}
+24&gt; riakc_pb_socket:get_server_info(C3).                     
+{ok,[{node,&lt;&lt;&quot;dev3@127.0.0.1&quot;&gt;&gt;},
+     {server_version,&lt;&lt;&quot;1.1.2&quot;&gt;&gt;}]}
+25&gt; {ok, C4} = riakc_pb_socket:start_link(&quot;127.0.0.1&quot;, 8080).
+{ok,&lt;0.150.0&gt;}
+26&gt; riakc_pb_socket:get_server_info(C4).                     
+{ok,[{node,&lt;&lt;&quot;dev4@127.0.0.1&quot;&gt;&gt;},
+     {server_version,&lt;&lt;&quot;1.1.2&quot;&gt;&gt;}]}
+</code></pre>
+
+<h3 id="wrapping-up">Wrapping up</h3>
+
+<p>Excellent. Now that we&rsquo;ve got our load-balancer set up in development, we&rsquo;re ready to dive into connecting to Riak from our <code>csd</code> application. That will be the topic for the next post in this series.</p>
+
+<p>As always, comments and feedback are welcome and greatly appreciated. Suggestions on improvements and pointers on mistakes would be awesome. To anyone out there who has put HAProxy into production, we would love to hear your comments on your configuration!</p>
+
+<p><strong>Note:</strong> The code for Part 2 (this post) can be found on <a href="https://github.com/OJ/csd/tree/Part2-20110403" title="Source Code for Part 2">Github</a>.</p>
+
+<p>Other parts in this series: <a href="/posts/webmachine-erlydtl-and-riak-part-1/" title="Wembachine, ErlyDTL and Riak - Part 1">Part 1</a>, <a href="/posts/webmachine-erlydtl-and-riak-part-3/" title="Webmachine, ErlyDTL and Riak - Part 3">Part 3</a>, <a href="/posts/webmachine-erlydtl-and-riak-part-4/" title="Webmachine, ErlyDTL and Riak - Part 4">Part 4</a>, <a href="/posts/webmachine-erlydtl-and-riak-part-5/" title="Webmachine, ErlyDTL and Riak - Part 5">Part 5</a></p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/riak">Riak</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/databases">Databases</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/functional-programming">Functional Programming</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/howto">HOWTO</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/erlang">Erlang</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/webmachine">Webmachine</a>
+	  
+	    </p>
+	    
+<p><a itemprop="keywords" class=" label label-danger" href="/tags/erlang">Erlang</a> <a itemprop="keywords" class=" label label-danger" href="/tags/erlydtl">ErlyDTL</a> <a itemprop="keywords" class=" label label-danger" href="/tags/haproxy">HAProxy</a> <a itemprop="keywords" class=" label label-danger" href="/tags/nosql">NoSQL</a> <a itemprop="keywords" class=" label label-danger" href="/tags/riak">Riak</a> <a itemprop="keywords" class=" label label-danger" href="/tags/webmachine">Webmachine</a> <a itemprop="keywords" class=" label label-danger" href="/tags/web-development">web development</a></p>
+
+
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

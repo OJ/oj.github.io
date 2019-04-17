@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>development on OJ&#39;s Perspective</title>
+    <link>/tags/development/</link>
+    <description>Recent content in development on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Mon, 23 Feb 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>N Things You Don&#39;t Want to Hear when Starting a New Job (where N &amp;gt;= 1)</title>
+      <link>/posts/n-things-you-dont-want-to-hear-when-starting-a-new-job-where-n-gt-1/</link>
+      <pubDate>Mon, 23 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/n-things-you-dont-want-to-hear-when-starting-a-new-job-where-n-gt-1/</guid>
+      <description>&lt;p&gt;Here are a collection of quotes that can drive fear into the heart of every developer. They&amp;rsquo;re made worse when heard at the start of a new gig, as any hope of a brave new world is smashed before you even get a login!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>An All Too Common Issue</title>
+      <link>/posts/an-all-too-common-issue/</link>
+      <pubDate>Wed, 18 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/an-all-too-common-issue/</guid>
+      <description>I think the following statement goes way deeper than it may have been intended (I might be wrong of course)&amp;hellip; Engineering is about making tradeoffs. If you refuse to make the choice, then you&amp;rsquo;re taking the cowardly route and ultimately are creating more work for your team. Instead of solving problems, you&amp;rsquo;re creating them.
+All because you&amp;rsquo;re too chicken to make a hard decision.
+ Thank you, Raymond Chen! You are a legend.</description>
+    </item>
+    
+  </channel>
+</rss>

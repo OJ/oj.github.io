@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>fail on OJ&#39;s Perspective</title>
+    <link>/tags/fail/</link>
+    <description>Recent content in fail on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Fri, 27 Jan 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/fail/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>An Expert at 23</title>
+      <link>/posts/an-expert-at-23/</link>
+      <pubDate>Fri, 27 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/an-expert-at-23/</guid>
+      <description>&lt;p&gt;I was about to head to bed when I stumbled across a poorly-titled &lt;a href=&#34;http://www.news.com.au/business/the-best-places-to-look-for-work-in-2012/story-e6frfm1i-1226255099978&#34; title=&#34;The best places to look for work in 2012&#34;&gt;article on news.com.au&lt;/a&gt;. At first I thought it was going to cover off the best locations around Australia, or perhaps the world, for finding work in a variety of industries. It turned out to be a failed attempt at highlighting the key growth industry areas for jobs in Australia.&lt;/p&gt;
+
+&lt;p&gt;It began like this:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;JOBS demanded across several booming sectors will be the best place to find work this year.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Despite the appalling structure and lack of coherence of the opening paragraph I pushed on through the rest of the article, hoping to find some interesting or useful information. Most of content would be fairly obvious to almost every Australian. The bits that could be considered interesting were old news, and nothing in the article made me feel that reading it was a good use of time.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Truncated Pages</title>
+      <link>/posts/truncated-pages/</link>
+      <pubDate>Fri, 05 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/truncated-pages/</guid>
+      <description>Not too long ago I mentioned that I&amp;rsquo;d setup and installed Nginx on this server. All seemed well to start off with, then on certain occasions I started to notice that some pages were being served truncated while I was at work. I thought that the issue was work-related, as they have a fairly draconian security policy in place and I thought that it had something to do with severing the connection.</description>
+    </item>
+    
+    <item>
+      <title>&#39;It&#39;s OK to Fail</title>
+      <link>/posts/its-ok-to-fail/</link>
+      <pubDate>Fri, 11 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/its-ok-to-fail/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2009/12/EpicFail02.jpg&#34; rel=&#34;lightbox[fail]&#34; title=&#34;Epic Fail&#34;&gt;&lt;img src=&#34;/uploads/2009/12/EpicFail02.jpg&#34; alt=&#34;Epic Fail&#34; width=&#34;160&#34; style=&#34;float:left;padding-bottom:5px;padding-right:5px;&#34; /&gt;&lt;/a&gt;&lt;em&gt;Yes. You read that right. It&amp;rsquo;s OK to fail. Yes, I am talking to you. You&amp;hellip; that guy who is part of every team. The one who seems to feel the need to be right about everything. The one who thinks that everything new has already been done 15 years prior. The one who believes that every project they have participated in has been a profound success, and that a project-level failure (which includes missing deadlines or blowing the budget) is something they have never experienced. Failure is not only OK, it&amp;rsquo;s something that you &lt;strong&gt;must&lt;/strong&gt; experience somewhere along the way so you know when you&amp;rsquo;ve succeeded.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Epic Fail - Cuil Search Engine</title>
+      <link>/posts/epic-fail-cuil-search-engine/</link>
+      <pubDate>Tue, 29 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/epic-fail-cuil-search-engine/</guid>
+      <description>Don&amp;rsquo;t believe the hype. [caption id=&amp;ldquo;attachment_436&amp;rdquo; align=&amp;ldquo;aligncenter&amp;rdquo; width=&amp;ldquo;500&amp;rdquo; caption=&amp;ldquo;EPIC FAIL&amp;rdquo;][/caption]
+Mike G and Dare are dead right.</description>
+    </item>
+    
+  </channel>
+</rss>

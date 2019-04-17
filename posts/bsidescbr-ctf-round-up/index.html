@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    BSidesCBR CTF Round Up - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/bsidescbr-ctf-round-up/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> BSidesCBR CTF Round Up </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Wed Mar 22, 2017</span>
+
+	  
+
+<p><img style="float: right; margin-left: 5px; margin-bottom: 5px" src="/uploads/2017/03/bsides/bsides-ctf.png" width="200px"/>
+<a href="http://www.bsidesau.com.au/">BSides Canberra</a> for 2017 has just finished up! A cracking 2-day conference hosted by a bunch of infosec folks down here in Australia, and everything went as well as it could have. It was great fun, and the vibe there was really awesome.</p>
+
+<p>If you&rsquo;re here for the details on how to get the CTF challenges running locally, jump to the bottom of the post. Keep reading if you want more information on how things went.</p>
+
+<p>I was <del>stupid</del> nice enough to offer to help out with organising the CTF, along with a bunch of very dear friends. Some of you who have been following along will already know that it took a few months of effort to prepare for. We had weekly meetings, many nights burned building challenges, other nights burned testing challenges, infrastructure stresses and much more along the way. On the day, we managed to get it all up and running, and I can honestly say that I&rsquo;m not only really happy with how it turned out, I&rsquo;m super proud and humbled by the efforts of the people I worked with.</p>
+
+<h2 id="shoutouts">Shoutouts</h2>
+
+<ul>
+<li><a href="https://twitter.com/__sw1tch__">sw1tch</a> - This dude is a machine. Not only did he build and prepare a stack of challenges (including trivia, scavenger hunt, and the <em>famous</em> &ldquo;Mr Robot&rdquo; series carried on from last year), he also put in a <strong>huge</strong> effort on the day to make the whole room have the right vibe. He prepared lights, TVs, music and more. Without him, the experience would have been a <em>lot</em> more dull. He also made and paid for the CTF stickers, which looked awesome.</li>
+<li><a href="https://twitter.com/0x42424242">Peleus</a> - The man who kicked it all off. Despite the pressures faced from various areas of life, he put in a huge effort to get challenges together and playtested a load of them as well. You can thank him for all of the horrible crypto challenges that you failed to break.</li>
+<li><a href="https://twitter.com/rickoates">Rick</a> - A quiet, unsung hero. His forensics challenges made people suffer, which is exactly what we wanted. He did a stack of playtesting and even managed to achieve his OSCE certification during the course of preparing this CTF. Kudos to the boy, and much <code>&lt;3</code> for the effort he put in.</li>
+<li><a href="https://twitter.com/aceb0nd">acebond</a> - A relative newcomer to the security scene, he stepped up when the rest of us started to drop the ball and built a number of reversing and web challenges. It&rsquo;s not easy to work with people like me in such cases, but he made it all happen and did a fantastic job. Huge props to this boy.</li>
+<li><a href="https://twitter.com/Joflixen">Joffy</a> - The man who had to keep the infra going! This is no small job, and he was all over it like a cheap suit. Joff is the kind of person that nobody seems to see because he&rsquo;s frantically battling behind the scenes. Without him, we&rsquo;d have been screwed. He did an awesome job on the day and we owe him a huge thanks for his efforts.</li>
+<li><a href="https://twitter.com/andrew__muller">Andrew</a> - The man behind <a href="https://twitter.com/1onize">Ionize</a>, the company that sponsored the CTF and provided a stack of resources (including 4 of the people listed above). Not only did Andrew support the event, he paid for prizes, and even picked up the tab for various &ldquo;on the fly&rdquo; issues such as chairs (which we bought from Bunnings on the day because the venue had run out!), power cables, etc that allowed us to keep our competitors powered and comfortable during the event. You&rsquo;d be hard pressed to find a nicer and more supportive person in the security community.</li>
+<li><a href="https://twitter.com/justinsteven">Justin</a> - Our beloved Ginger Ninja who wasn&rsquo;t able to be there with us on the day. He helped playtest a bunch of stuff, and also built the <code>bogecoin</code> challenge, which broke a few heads along the way. Love this guy, love his work, love his support.</li>
+</ul>
+
+<h2 id="stats-and-other-info">Stats and other info</h2>
+
+<p>Brief stats for those interested:</p>
+
+<ul>
+<li>There were <code>59</code> challenges created in <code>10</code> different categories.</li>
+<li>Of the <code>59</code> challenges created, only <code>3</code> were left standing at the end of the day.</li>
+<li>A total of <code>66</code> teams registered.</li>
+<li>A total of <code>38</code> teams submitted at least one flag.</li>
+<li>There were approximately <code>8500</code> points up for grabs across all challenges.</li>
+<li>The winners, <a href="https://twitter.com/cybearsCTF">Cybears</a>, scored approximately <code>5500</code> points.</li>
+<li>We had <code>193</code> unique machines that joined the CTF network.</li>
+<li>The maximum concurrent machines partcipating was <code>107</code> at 4:30pm Friday 17th.</li>
+<li><code>36</code> clients were active at the closing of the competition at 3:30pm Saturday 18th.</li>
+<li>Over <code>55%</code> of all wireless hardware presented on the network as an Apple device.</li>
+<li><code>80.4Gb</code> of traffic was transferred, despite it being a <em>closed network</em>.</li>
+<li>The number of beers bought from CTF Bar over two days was <code>31</code>.</li>
+</ul>
+
+<p>We had a <a href="https://twitter.com/CodeCadets">team of year 11 students</a> compete! Not only did they do really well (4th place) they managed to find 0day in one of the devices that we had on the network. This was a <em>different</em> 0day than the one we had intended to find! How exciting. These young folks now get to experience the <del>pain</del>joy of the vendor disclosure process. Well done to those guys.</p>
+
+<p>Cybears, winners of <code>$500</code> for coming first, donated all of their winnings to the Code Cadets (the year 11 student team). Huge props to them for the generosity and support for the next generation.</p>
+
+<h2 id="get-the-ctf">Get the CTF</h2>
+
+<p>As promised, we have put some effort into having the CTF &ldquo;boxed up&rdquo; in a way that will let you play with it. Short notes:</p>
+
+<ul>
+<li>The scavenger hunt, trivia and Mr Robot challenges aren&rsquo;t part of it. Most of these are hard to replicate, especially the dumpster diving and finding 0day in a device we refuse to put online.</li>
+<li>All web, pwnable, reversing, forensics, crypto and misc challenges are included.</li>
+<li>Challenges that require a service running have all been dockerised. To run them, you will need to make sure you have <code>docker</code> installed, and also <code>docker-compose</code>. If you can&rsquo;t do that all by yourself, don&rsquo;t ask for help, because that&rsquo;s the easy part!</li>
+<li>To get access to the challenges, you&rsquo;ll need to open a command prompt and run the following:</li>
+</ul>
+
+<pre><code>$ git clone https://github.com/OJ/bsides-2017-ctf-docker
+</code></pre>
+
+<ul>
+<li>Have a look at the <a href="https://github.com/OJ/bsides-2017-ctf-docker">main README</a> first. Each challenge should have it&rsquo;s own README with specific details. Make sure you read the whole README before you start the challenge, to make sure you&rsquo;re not doing the wrong thing.</li>
+<li>Despite dockerising the scoreboard, we can&rsquo;t release it as we wanted, because it&rsquo;s a clusterfuck of shit. I will not be using that thing again. Chances are I will be building my own for next time. Sorry, if you want to submit/confirm flags, you can DM me personally on <a href="https://twitter.com/TheColonial">the Twits</a>.</li>
+</ul>
+
+<p>If you have any issues with any of the challenges, feel free to hit any of us up! We&rsquo;ll do what we can to help.</p>
+
+<p>Thanks to everyone for your support. Until next time!</p>
+
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/security">Security</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/ctf">CTF</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Moving to Google Apps - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/moving-to-google-apps/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Moving to Google Apps </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Sun May 6, 2007</span>
+
+	  <p>As you all know, I recently moved the Blackapache site to a new server. We had some teething issues, as ya do when making the move, but all is now well. One of the things that I hadn&rsquo;t got round to fixing was my <a href="http://www.spamassassin.org/" title="SpamAssassin">SpamAssassin</a> installation.</p>
+
+<p>I&rsquo;d already gone through the fun times of setting up email (POP3s, IMAP4s) with <a href="http://www.qmail.org/" title="Qmail">Qmail</a>, which after a bit of time (and a learning curve) was working fine (with SSL, hence the &rsquo;s&rsquo; at the end of the names ;) ) and all my users were able to send/receive without an issues. While trying to set it up, I was having issues getting both SpamAssassin and <a href="http://www.clamav.net/" title="Clam AV">Clam AntiVirus</a> working. Both of the daemons would run fine, but I just couldn&rsquo;t quite get the configuration right.</p>
+
+<p>Thankfully, AV isn&rsquo;t so much of an issue as my users all have AV protection on their local machines. Spam, while annoying, can be lived with until I find the time to get the filters working properly - so I basically left these two things alone for a while until I found the time after doing all the other <em>urgent</em> bits.</p>
+
+<p>I finally got round to making an attempt to fix the problem a weekend or so ago, but still couldn&rsquo;t get it to behave. I read forum upon forum, blog upon blog, and readme upon readme, but for some reason the bloody thing just refused to work. I got frustrated, reverted all the settings back to how they were before, and gave up for the day.</p>
+
+<p>During the last week I was prepping myself for another attempt at getting it work, when I heard about <a href="http://www.google.com/a/" title="Google Apps">Google Apps</a>. I was a bit surprised when I first read all the details, because it was the first time I&rsquo;d heard about it! Being a geek I thought I was pretty good with keeping up to speed, and I was a bit narked with myself for letting this golden nugget slip through the net.</p>
+
+<p>I&rsquo;m not going to go through the ins and outs of what Google Apps is all about as there are already a <a href="http://www.google.com.au/search?hl=en&q=google+apps" title="Google Apps Search">stack</a> of pages out there already talking about it. What I will say is that I should have made the move earlier!</p>
+
+<p>Not only do I no longer have to worry about keeping my entire email configuration (Qmail with vpopmail and courier imap, SpamAssassin, ClamAV, Horde/SquirrelMail) up to date and patched, I don&rsquo;t even have to have it running. The &ldquo;precious&rdquo; resources on the server can now be utilised for other things such as an <a href="http://subversion.tigris.org/" title="SubVersion">SVN</a> install. Each email user has 2GB of space, webmail comes for free and has the fantastic facilities that come with <a href="http://www.gmail.com/" title="Gmail">Gmail</a>. Users can easily configure their own accounts, handle their own password changes, etc. My administration of email has basically dropped to just above zero. The only thing I need to do as an administrator is get the account set up initially, the rest is up to the user.</p>
+
+<p>You can probably tell that I&rsquo;m quite excited about this. It&rsquo;s great that I don&rsquo;t have to worry about this any more, and I can put more time and effort into other things.  Of course, my excitement only extends as far as email for now, but I&rsquo;m pretty sure that over time I&rsquo;ll also come to love the added features of <a href="http://calendar.google.com/" title="Google Calendar">Google Calendar</a> and <a href="http://docs.google.com/" title="Google Calendar">Google Calendar</a>.</p>
+
+<p>This service does come with its limitations, and with the possibility of Google Datamining, but for a home server which I use for a blog, having this facility to lighten the admin load is just fantastic.</p>
+
+<p>I highly recommend considering this as an option if you&rsquo;re looking to sort out an email host! Give it a trial, at least for a while, and you may find you&rsquo;re as happy as I am. If you don&rsquo;t like it, you can always revert back to your old setup.</p>
+
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/google">Google</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/software">Software</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Agile on OJ&#39;s Perspective</title>
+    <link>/categories/agile/</link>
+    <description>Recent content in Agile on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Wed, 18 Jan 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/agile/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reviews - They&#39;re all You need</title>
+      <link>/posts/reviews-theyre-all-you-need/</link>
+      <pubDate>Wed, 18 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/reviews-theyre-all-you-need/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2012/01/pair-programming.jpg&#34; rel=&#34;lightbox&#34;&gt;&lt;img src=&#34;/uploads/2012/01/pair-programming.jpg&#34; style=&#34;float:left;margin-right:5px;margin-bottom:5px;&#34; width=&#34;200&#34; /&gt;&lt;/a&gt;I can clearly remember the first time I got involved in an Agile project &amp;ndash; it was back in 2004, it was in London and in the finance industry (insurance to be exact). When I joined the project the team was small though over time it become much bigger.&lt;/p&gt;
+
+&lt;p&gt;While on that gig I met and worked with a few of the nicest and best devs that I&amp;rsquo;ve worked with (&lt;a href=&#34;https://twitter.com/robertthegrey&#34; title=&#34;Robert @ Twitter&#34;&gt;RobG&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/thenapoleon&#34; title=&#34;Yoann @ Twitter&#34;&gt;Yoann&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/RockThunderUK&#34; title=&#34;Paul @ Twitter&#34;&gt;The Chief&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;It was an exciting project. We were using &lt;a href=&#34;http://www.extremeprogramming.org/&#34; title=&#34;Extreme Programming&#34;&gt;XP&lt;/a&gt; in very much its purest sense, right from the beginning. We always paired up to do our programming, we created stories, we estimated our points using a point system that wasn&amp;rsquo;t tied to hours but instead was relative. We had mini-retrospectives, continuous integration, unit tests and more. For 2004, that was pretty good.&lt;/p&gt;
+
+&lt;p&gt;Since then I&amp;rsquo;ve worked on quite a few other Agile projects and over time, I have come to believe a few of the absolute purest views on Agile aren&amp;rsquo;t necessarily the best.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

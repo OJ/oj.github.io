@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>csharp on OJ&#39;s Perspective</title>
+    <link>/tags/csharp/</link>
+    <description>Recent content in csharp on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Wed, 03 Aug 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/csharp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CorrugatedIron Update - v0.1.1</title>
+      <link>/posts/corrugatediron-update-v0.1.1/</link>
+      <pubDate>Wed, 03 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/corrugatediron-update-v0.1.1/</guid>
+      <description>&lt;p&gt;Last week &lt;a href=&#34;http://facility9.com/&#34; title=&#34;Jeremiah Peschka&#34;&gt;JP&lt;/a&gt; and I released our first Open Source project, &lt;a href=&#34;http://corrugatediron.org/&#34; title=&#34;CorrugatedIron&#34;&gt;CorrugatedIron&lt;/a&gt;. The release seemed to be fairly well received by those people who gave it a spin. We&amp;rsquo;ve had some good feedback along the way which we&amp;rsquo;ll be evaluating, and no doubt those suggestions and comments will be influencing the future of the library.&lt;/p&gt;
+
+&lt;p&gt;In the interim, we wanted to get another version out which sorts out two main issues and that changes the &lt;em&gt;perceived&lt;/em&gt; &amp;ldquo;norm&amp;rdquo; when building applications with CorrugatedIron. Those issues are listed below. We&amp;rsquo;ve also go the first pass of our &lt;a href=&#34;http://corrugatediron.org/documentation/MapReduce.html&#34; title=&#34;Map/Reduce&#34;&gt;Map/Reduce&lt;/a&gt; documentation ready.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re not interested in the detail, head on over to the &lt;a href=&#34;http://corrugatediron.org/downloads.html&#34; title=&#34;Downloads page&#34;&gt;download page&lt;/a&gt; to find out the many ways in which you can get access to the release. Otherwise, please read on!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Introducing CorrugatedIron</title>
+      <link>/posts/introducing-corrugatediron/</link>
+      <pubDate>Mon, 25 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/introducing-corrugatediron/</guid>
+      <description>&lt;h2 id=&#34;it-s-alive&#34;&gt;It&amp;rsquo;s Alive!&lt;/h2&gt;
+
+&lt;p&gt;It is with great pride that I introduce my first ever Open Source product release: &lt;a href=&#34;http://corrugatediron.org/&#34; title=&#34;CorrugatedIron&#34;&gt;CorrugatedIron&lt;/a&gt;! A feature-rich .NET client for the &lt;a href=&#34;http://riak.basho.com/&#34; title=&#34;Riak&#34;&gt;Riak&lt;/a&gt; Key-Value store. Together with my partner-in-crime &lt;a href=&#34;http://facility9.com/&#34; title=&#34;Jeremiah Peschka&#34;&gt;Jeremiah&lt;/a&gt;, we&amp;rsquo;ve put together a driver which exposes a great deal of Riak&amp;rsquo;s functionality. CorrugatedIron is at &lt;a href=&#34;https://github.com/DistributedNonsense/CorrugatedIron/tree/v0.1.0&#34;&gt;v0.1.0&lt;/a&gt;, and while it doesn&amp;rsquo;t support every feature the Riak has to offer, it covers most, if not all, of the most common features that are required to effectively communicate with the system.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

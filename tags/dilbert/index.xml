@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dilbert on OJ&#39;s Perspective</title>
+    <link>/tags/dilbert/</link>
+    <description>Recent content in dilbert on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Mon, 21 Apr 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/dilbert/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Get with the Times - Use a Feed Reader</title>
+      <link>/posts/get-with-the-times-use-a-feed-reader/</link>
+      <pubDate>Mon, 21 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/get-with-the-times-use-a-feed-reader/</guid>
+      <description>&lt;p&gt;Regular readers of &lt;a href=&#34;http://www.dilbert.com/&#34; title=&#34;Dilbert&#34;&gt;Dilbert&lt;/a&gt; are currently &lt;a href=&#34;http://entertainment.slashdot.org/article.pl?sid=08/04/19/1842208&amp;from=rss&#34; title=&#34;Slashdot | Dilbert Goes Flash, Readers Revolt&#34;&gt;kicking and screaming&lt;/a&gt; about the site&amp;rsquo;s new &lt;a href=&#34;http://www.adobe.com/products/flash/&#34; title=&#34;Adobe Flash&#34;&gt;Flash&lt;/a&gt;-based design. Personally I don&amp;rsquo;t mind it, but at the end of the day it matters not.&lt;/p&gt;
+
+&lt;p&gt;Why?&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

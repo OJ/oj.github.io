@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ssh on OJ&#39;s Perspective</title>
+    <link>/tags/ssh/</link>
+    <description>Recent content in ssh on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Sat, 16 May 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Setting up Trac, Mercurial and SSH on Windows</title>
+      <link>/posts/setting-up-trac-mercurial-and-ssh-on-windows/</link>
+      <pubDate>Sat, 16 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/setting-up-trac-mercurial-and-ssh-on-windows/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING - This blog post is long :)&lt;/strong&gt;
+&lt;em&gt;This post has been edited since it was published. Please see the end of the article for any notes/modifications&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;h3&gt;Some Background Info&lt;/h3&gt;
+I had the need to do this for work recently. It was nothing short of a right royal pain in the butt. It was such a pain, in fact, that I have decided to document what I had to do to get it working so that other poor unfortunates will feel less pain if they have to do this themselves.&lt;/p&gt;
+
+&lt;p&gt;Almost regardless of the company and the software I&amp;rsquo;m working on, I use &lt;a href=&#34;http://www.selenic.com/mercurial/&#34; title=&#34;Mercurial&#34;&gt;Mercurial&lt;/a&gt; for source code control. For the work I am doing at the moment, I was also using hg because the company I am involved with is relatively new and they hadn&amp;rsquo;t yet sorted out a plan for version control or &lt;acronym title=&#34;Application Lifecycle Management&#34;&gt;ALM&lt;/acronym&gt;. It was working quite well and I was pushing all my changes to my &lt;a href=&#34;http://www.google.com.au/url?q=http://www.buffalotech.com/products/network-storage/terastation/terastation-iii/&amp;ei=fioOSuLvGpu8swPl56zqAg&amp;sa=X&amp;oi=smap&amp;resnum=1&amp;ct=result&amp;cd=2&amp;usg=AFQjCNHXKMchy5tR-a-jMOFAbtxoWzfedA&#34; title=&#34;Terastation&#34;&gt;NAS box&lt;/a&gt; to make sure I had other copies backed up, etc. I was &lt;em&gt;living the dream&lt;/em&gt; :)&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

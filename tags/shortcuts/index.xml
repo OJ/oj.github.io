@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shortcuts on OJ&#39;s Perspective</title>
+    <link>/tags/shortcuts/</link>
+    <description>Recent content in Shortcuts on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Sun, 11 Feb 2007 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/shortcuts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Shortcuts: Visual Studio 2005</title>
+      <link>/posts/shortcuts-visual-studio-2005/</link>
+      <pubDate>Sun, 11 Feb 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/shortcuts-visual-studio-2005/</guid>
+      <description>Welcome to the next in the series of posts on program shortcuts. This time round we&amp;rsquo;re talking Visual Studio. I&amp;rsquo;ll be assuming that you don&amp;rsquo;t have the ViEmu plugin enabled and that you&amp;rsquo;re just using the IDE in the way it was intended without any other form of shortcut-based plugin installed.
+I&amp;rsquo;m using Visual Studio 2005 and I think I have the C# settings enabled by default. Most of these shortcuts will work regardless of the default setting that you have, but some of them will no doubt be different.</description>
+    </item>
+    
+  </channel>
+</rss>

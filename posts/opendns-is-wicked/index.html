@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    OpenDNS is Wicked - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/opendns-is-wicked/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> OpenDNS is Wicked </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Mon Aug 18, 2008</span>
+
+	  <p><a title="Use OpenDNS to make your Internet faster, safer, and smarter." href="http://www.opendns.com/share/"><img src="http://images.opendns.com/buttons/use_opendns_155x52.gif" width="155" height="52" style="border:0; float:right; margin-left:5px;margin-bottom;5px" alt="Use OpenDNS" /></a>Over the last couple of weeks the DNS timeouts and lags I&rsquo;ve been experiencing at home have made the web experience a little dire. My <a href="http://internode.on.net/" title="Internode">ISP</a> is actually pretty darned good, but for some reason they seem to have glitches with their DNS servers every now and then.</p>
+
+<p>The last time it happened I wasn&rsquo;t able to get <em>any</em> sites to respond. I ended up popping some manual DNS server entries into my router which I had archived in a &ldquo;welcome&rdquo; email that I had received when I first signed up for my Internet account. These worked well for a while, but eventually ended up going offline and so I had to look for another option.</p>
+
+<p>Enter <a href="http://opendns.org/" title="OpenDNS">OpenDNS</a>. A free DNS service with a stack of features that anyone can use. I&rsquo;ll go over a few of them.</p>
+
+<p>First up is <strong>Content filtering</strong>. What a fab idea! Offsite content filtering that stops dodgey and unwanted stuff before it even hits your modem. OpenDNS supports content filtering in a couple of ways which makes it really easy to generally filter out particular sites and content.</p>
+
+<p><a href="/uploads/2008/08/opendns_content_filtering_levels.png"><img src="/uploads/2008/08/opendns_content_filtering_levels.png" alt="Content Filtering" title="Content Filtering" width="150" style="float:left; margin-right:5px; margin-bottom:5px;" rel="lightbox[opendns]" /></a>The content filtering mechanism is quite extensive. You have the option of choosing a predefined &ldquo;filtering level&rdquo;, each of which defines a set of site categories which will be filtered out for viewers on your network. The options go from <em>Minimal</em>, which simply blocks known <a href="http://en.wikipedia.org/wiki/Phishing" title="Phishing">phishing</a> sites, through to <em>High</em> which covers everything from porn and illegal activities to video sharing sites.</p>
+
+<p><a href="/uploads/2008/08/opendns_content_filtering_custom.png"><img src="/uploads/2008/08/opendns_content_filtering_custom.png" alt="Custom Content Filtering" title="Custom Content Filtering" width="150" style="float:right; margin-left:5px; margin-bottom:5px;" rel="lightbox[opendns]" /></a>There is also a <em>Custom</em> level which allows you to choose the categories that you want filtered. This is the long-hand version of the predefined levels mentioned above, which is great as it let&rsquo;s you pick and choose if you want finger-grained control.</p>
+
+<p><a href="/uploads/2008/08/opendns_site_block.png"><img src="/uploads/2008/08/opendns_site_block.png" alt="Site Blocking" title="Site Blocking" width="150" style="float:left; margin-right:5px; margin-bottom:5px;" rel="lightbox[opendns]" /></a>Lastly, as far as filtering goes, you have the option of allowing or blocking sites as a hard rule. This is handy if you know that a particular site is getting caught in your filter but you know for sure that it&rsquo;s safe. This happens surprisingly often, so having a whitelist is very handy. Being able to block a stack of ad sites before they even hit your browser is also a winner, hence the blacklist feature is great too.</p>
+
+<p><a href="/uploads/2008/08/opendns_client.png"><img src="/uploads/2008/08/opendns_client.png" alt="OpenDNS Client" title="OpenDNS Client" width="150" style="float:right; margin-left:5px; margin-bottom:5px;" rel="lightbox[opendns]" /></a>Thankfully OpenDNS supports <strong>IP address auto-update</strong>. Over time, you&rsquo;ll no doubt get different IP addresses from your ISP as your DHCP leases expire or when you reconnect your modem to your service. Given that OpenDNS needs to have some way of determining who you are, IP address really is the only way. So to help keep OpenDNS up-to-date with your current IP (and hence, keep applying your filtering rules), there is a client application that you can have running in your system tray which contacts the service periodically and makes sure that it has the latest IP. While this is a great idea it&rsquo;s a bit crap that you have to run a client application. It&rsquo;s a shame that they didn&rsquo;t decide to support the use of another dynamic addressing system such as <a href="http://dyndns.org/" title="DynDns">DynDns.org</a> (lots of modems have built-in support for updating services like DynDns automatically).</p>
+
+<p><a href="/uploads/2008/08/opendns_customisation.png"><img src="/uploads/2008/08/opendns_customisation.png" alt="Customisation" title="Customisation" width="150" style="float:left; margin-right:5px; margin-bottom:5px;" rel="lightbox[opendns]" /></a>For those who like to make their services feel cosey, OpenDNS supports <strong>customisation</strong> of various bits of functionality. For example, you&rsquo;re able to change the logo picture (this is more of an interest to site admins). You can also modify messages that are displayed when sites are blocked for various reasons. For those of you on home networks, specifying more meaningful messages for those, shall we say, &ldquo;less technical&rdquo; family members will no doubt be beneficial in reducing the number of support calls.</p>
+
+<p><a href="/uploads/2008/08/opendns_shortcuts.png"><img src="/uploads/2008/08/opendns_shortcuts.png" alt="Shortcuts" title="Shortcuts" width="150" style="float:right; margin-left:5px; margin-bottom:5px;" rel="lightbox[opendns]" /></a><strong>Network shortcuts</strong> are another nifty feature. A network shortcut is essentially a bookmark which works across the entire network. All you have to do is specify a name for your shortcut, and the site that it redirects to, and you&rsquo;re done. Once the shortcut has been saved, all you have to do to get to the site is type in the name of the shortcut. When the DNS request is made, OpenDNS looks for any shortcuts by that name that exist in your list, and if found, it will redirect the user to the appropriate site. Groovey!</p>
+
+<p>At first you don&rsquo;t believe it, but OpenDNS is <strong>surprisingly quick</strong>. I wouldn&rsquo;t say that I have conducted a huge set of performance tests and benchmarks, but I would say that it by far outperforms my ISP&rsquo;s DNS servers as far as responsivity is concerned. Not just that, but <strong>it works</strong>. I am yet to see a DNS lookup fail requiring me to retry.</p>
+
+<p>The final redeeming feature of OpenDNS is that it&rsquo;s constantly updated and secure. <a href="http://www.doxpara.com/?p=1185">Flaws in the DNS system</a>, for example, have already been patched. This reduces the chances of you dealing with an insecure DNS server (such as the one sitting at your ISP) and ending up at a site that might be a little unsavoury.</p>
+
+<p>To sum up, I really think OpenDNS is a great service. It&rsquo;s fast, feature-rich and very handy. For anyone with a family/kids or a need/desire to filter out some of the f**ked up content that lives on the web (such as this site ;)), this service is for you. Give it a spin!</p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/security">Security</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/technology">Technology</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/tips/tricks">Tips/Tricks</a>
+	  
+	    </p>
+	    
+<p><a itemprop="keywords" class=" label label-danger" href="/tags/freeware">Freeware</a> <a itemprop="keywords" class=" label label-danger" href="/tags/security">Security</a> <a itemprop="keywords" class=" label label-danger" href="/tags/dns">dns</a></p>
+
+
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

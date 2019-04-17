@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software Development on OJ&#39;s Perspective</title>
+    <link>/categories/software-development/</link>
+    <description>Recent content in Software Development on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Wed, 15 Feb 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/software-development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Redirects with Webmachine</title>
+      <link>/posts/redirects-with-webmachine/</link>
+      <pubDate>Wed, 15 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/redirects-with-webmachine/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://webmachine.basho.com/&#34; title=&#34;Webmachine&#34;&gt;Webmachine&lt;/a&gt; is currently my favourite tool for building websites. I&amp;rsquo;ve been lucky enough to use it on a few things now, some commercially some personally. While working on my &lt;a href=&#34;http://buffered.io/series/web-development-with-erlang/&#34; title=&#34;Web development with Erlang&#34;&gt;Erlang web development series&lt;/a&gt; I had to handle the case where URLs redirected to other URLs. I found some basic documentation on this but wasn&amp;rsquo;t able to find a canonical example of how to do it.&lt;/p&gt;
+
+&lt;p&gt;After a big of digging through blog posts and speaking to people on IRC I figured out how it was done. The goal of this post is to show how it&amp;rsquo;s done for 301 (permanent) and 307 (temporary) redirects.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My Tools List - 2012</title>
+      <link>/posts/my-tools-list-2012/</link>
+      <pubDate>Tue, 31 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/my-tools-list-2012/</guid>
+      <description>&lt;p&gt;The topic of tools is often a hot one amongst developers and every year
+we see an influx of blog posts where people rant and rave about which
+ones they love the most, and why.&lt;/p&gt;
+
+&lt;p&gt;Far be it from me to stay out of such a discussion!&lt;/p&gt;
+
+&lt;p&gt;Here is a list of the tools that I use as of the end of January 2012. Some are simply noteworthy.
+Others are very handy and while I would get by without them they would
+be missed. Some of these &lt;strong&gt;I simply cannot live without&lt;/strong&gt;. I&amp;rsquo;m not going
+to bother with ratings. I won&amp;rsquo;t go into frameworks or the like which
+make their way into my code, instead I am focussing on those tools which
+help me do the coding and which aid me in my general computer usage.&lt;/p&gt;
+
+&lt;p&gt;Some of these tools are platform-specific, but many can be used across
+different platforms.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Reviews - They&#39;re all You need</title>
+      <link>/posts/reviews-theyre-all-you-need/</link>
+      <pubDate>Wed, 18 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/reviews-theyre-all-you-need/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2012/01/pair-programming.jpg&#34; rel=&#34;lightbox&#34;&gt;&lt;img src=&#34;/uploads/2012/01/pair-programming.jpg&#34; style=&#34;float:left;margin-right:5px;margin-bottom:5px;&#34; width=&#34;200&#34; /&gt;&lt;/a&gt;I can clearly remember the first time I got involved in an Agile project &amp;ndash; it was back in 2004, it was in London and in the finance industry (insurance to be exact). When I joined the project the team was small though over time it become much bigger.&lt;/p&gt;
+
+&lt;p&gt;While on that gig I met and worked with a few of the nicest and best devs that I&amp;rsquo;ve worked with (&lt;a href=&#34;https://twitter.com/robertthegrey&#34; title=&#34;Robert @ Twitter&#34;&gt;RobG&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/thenapoleon&#34; title=&#34;Yoann @ Twitter&#34;&gt;Yoann&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/RockThunderUK&#34; title=&#34;Paul @ Twitter&#34;&gt;The Chief&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;It was an exciting project. We were using &lt;a href=&#34;http://www.extremeprogramming.org/&#34; title=&#34;Extreme Programming&#34;&gt;XP&lt;/a&gt; in very much its purest sense, right from the beginning. We always paired up to do our programming, we created stories, we estimated our points using a point system that wasn&amp;rsquo;t tied to hours but instead was relative. We had mini-retrospectives, continuous integration, unit tests and more. For 2004, that was pretty good.&lt;/p&gt;
+
+&lt;p&gt;Since then I&amp;rsquo;ve worked on quite a few other Agile projects and over time, I have come to believe a few of the absolute purest views on Agile aren&amp;rsquo;t necessarily the best.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ASP.NET MVC 2, Random Sign-offs and TempData Loss</title>
+      <link>/posts/asp.net-mvc-2-random-sign-offs-and-tempdata-loss/</link>
+      <pubDate>Wed, 06 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/asp.net-mvc-2-random-sign-offs-and-tempdata-loss/</guid>
+      <description>&lt;p&gt;&lt;a title=&#34;MVC&#34; href=&#34;/uploads/2010/10/mvc.png&#34; rel=&#34;lightbox[contentadvisor]&#34;&gt;&lt;img style=&#34;margin-left: 5px; margin-bottom: 5px; float: right;&#34; src=&#34;/uploads/2010/10/mvc.png&#34; alt=&#34;MVC&#34; width=&#34;150&#34; /&gt;&lt;/a&gt;In the last few days I&amp;rsquo;ve been working on resolving issues in a production system which runs on &lt;a title=&#34;What is ASP.NET MVC&#34; href=&#34;http://www.asp.net/mvc/whatisaspmvc&#34;&gt;ASP.NET MVC 2&lt;/a&gt;. Most of the issues were actually really easy to resolve and the team of developers were able to fix them and deploy to production without too many problems.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, as always, there was one problem in particular that had us scratching our heads and was causing some of us to lose sleep. All over the Internet there were posts of people describing similar symptoms yet none of them revealed a solid answer.&lt;/p&gt;
+
+&lt;p&gt;The purpose of this post is to document the issue and the resolution in it&amp;rsquo;s entirety. It&amp;rsquo;s in story form rather than reference form because that&amp;rsquo;s how I felt like writing it :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>BFPG June Meetup</title>
+      <link>/posts/bfpg-june-meetup/</link>
+      <pubDate>Fri, 25 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/bfpg-june-meetup/</guid>
+      <description>The time has come for another meeting of the Functional Programming minds! This months BFPG Meetup, starting 6pm Monday 28th, is the first one at our new venue: Microsoft HQ, Waterfront Place, Brisbane. For details on the location, take a look at the BFPG about page.
+This month we have three speakers, and I am one of them! In my talk, &amp;ldquo;Erlang - Why should you care?&amp;rdquo;, I will be giving a fairly non-technical introduction to Erlang.</description>
+    </item>
+    
+    <item>
+      <title>Dave Thomas at YOW! Nights Brisbane</title>
+      <link>/posts/dave-thomas-at-yow-nights-brisbane/</link>
+      <pubDate>Sat, 22 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/dave-thomas-at-yow-nights-brisbane/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/uploads/2010/05/haskell-logo-variation.png&#34; alt=&#34;Haskell Logo&#34; title=&#34;Haskell Logo&#34; width=&#34;128&#34; height=&#34;128&#34; style=&#34;float:right;margin-left:5px;margin-bottom:5px&#34; /&gt;Two nights ago I was fortunate enough to attend a &lt;a href=&#34;http://yownightbrisbanemay.eventbrite.com/&#34; title=&#34;YOW! Nights Brisbane - May 20th&#34;&gt;YOW! Nights&lt;/a&gt; conference held at the local Microsoft Office here in Brisbane. The speaker for the session was none other than &lt;a href=&#34;http://www.davethomas.net/&#34; title=&#34;Dave Thomas&#34;&gt;Dave Thomas&lt;/a&gt;, the man behind the likes of &lt;a href=&#34;http://objectmentor.com/&#34; title=&#34;Object Mentor&#34;&gt;ObjectMentor&lt;/a&gt;. Not only is this guy incredibly switched on, he is thought-provoking and very entertaining to boot. I&amp;rsquo;ve been to a few of these sessions in the past but I&amp;rsquo;ve never seen one as packed out as this one. It was great to see such a turn-out, which no doubt was boosted by the presence of both the &lt;a href=&#34;http://www.qmsdnug.org/&#34; title=&#34;QMSDNUG&#34;&gt;Queensland MSDN Users Group&lt;/a&gt; and the &lt;a href=&#34;http://bfpg.org/&#34; title=&#34;BFPG&#34;&gt;Brisbane Functional Programming Group&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>I&#39;m so impressed I want to pay you less</title>
+      <link>/posts/im-so-impressed-i-want-to-pay-you-less/</link>
+      <pubDate>Tue, 02 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/im-so-impressed-i-want-to-pay-you-less/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2010/03/statue-of-liberty_whip_ny-times.jpg&#34; title=&#34;Slave driver&#34; rel=&#34;lightbox[slave]&#34;&gt;&lt;img src=&#34;/uploads/2010/03/statue-of-liberty_whip_ny-times.jpg&#34; alt=&#34;Slave driver&#34; title=&#34;Slave driver&#34; width=&#34;150&#34; style=&#34;float: left; margin-bottom: 5px; margin-right: 5px;&#34;/&gt;&lt;/a&gt;The title of this post is a statement that I&amp;rsquo;ve heard a few times in the past while at work. The people who said it might not have used those exact words, but the intent is the same. Usually I hear it in the following form:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&amp;ldquo;We&amp;rsquo;re very happy with the work you&amp;rsquo;ve done for us as a contractor. We want to keep you on, but would like you to take a job as a permanent employee and continue to work on the project.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Once they&amp;rsquo;ve made this point, they then feel the need to harp on about the good points of becoming a permanent employee. Things such as job security, sick/annual leave and better hours tend to get mentioned. All of them are complete bullshit of course.&lt;/p&gt;
+
+&lt;p&gt;There is &lt;strong&gt;no such thing as job security&lt;/strong&gt;. Sick and/or annual leave isn&amp;rsquo;t enough to make up for the difference in pay. Hours tend to always be worse when you&amp;rsquo;re working for the man, because you&amp;rsquo;re expected to do whatever needs to be done regardless of the hours. This is worse if you&amp;rsquo;re working on mission-critical stuff.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Wrong Decision by the Wrong Person</title>
+      <link>/posts/the-wrong-decision-by-the-wrong-person/</link>
+      <pubDate>Thu, 28 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-wrong-decision-by-the-wrong-person/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2010/01/pizza.jpg&#34; title=&#34;The wrong tool.&#34; rel=&#34;lightbox&#34;&gt;&lt;img src=&#34;/uploads/2010/01/pizza.jpg&#34; alt=&#34;The wrong tool.&#34; title=&#34;The wrong tool.&#34; style=&#34;float:right; margin-left:5px; margin-bottom:5px;&#34;  width=&#34;150&#34;/&gt;&lt;/a&gt;There is one thing about my industry that I still find truly amazing (and not in a good way). This is despite the fact that it has happened to me so many times that you think I&amp;rsquo;d be used to it! I&amp;rsquo;m talking about non-technical people making technical decisions.&lt;/p&gt;
+
+&lt;p&gt;For some reason, it&amp;rsquo;s a very common practice for those people who don&amp;rsquo;t have expertise in a certain field to make decisions for people working in that field. The best example I can think of off the top of my head is the answer to the question: &lt;em&gt;&amp;ldquo;Which technology should we use?&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Let me take a step back in time for a moment.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Katacast: Shopping Checkout in Erlang</title>
+      <link>/posts/katacast-shopping-checkout-in-erlang/</link>
+      <pubDate>Mon, 04 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/katacast-shopping-checkout-in-erlang/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve recently discovered the joys of &lt;a href=&#34;http://codekata.pragprog.com/&#34; title=&#34;CodeKata&#34;&gt;CodeKatas&lt;/a&gt;. If you&amp;rsquo;re a geek looking for a way to &lt;a href=&#34;http://en.wikipedia.org/wiki/The_Seven_Habits_of_Highly_Effective_People&#34; title=&#34;The Seven Habits of Highly Effective People&#34;&gt;sharpen the saw&lt;/a&gt; then I highly recommend taking a look at these and trying a few out. They&amp;rsquo;re great fun and they&amp;rsquo;re a good way of getting your feet wet with new languages (especially if you&amp;rsquo;re tired of &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>&#39;It&#39;s OK to Fail</title>
+      <link>/posts/its-ok-to-fail/</link>
+      <pubDate>Fri, 11 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/its-ok-to-fail/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2009/12/EpicFail02.jpg&#34; rel=&#34;lightbox[fail]&#34; title=&#34;Epic Fail&#34;&gt;&lt;img src=&#34;/uploads/2009/12/EpicFail02.jpg&#34; alt=&#34;Epic Fail&#34; width=&#34;160&#34; style=&#34;float:left;padding-bottom:5px;padding-right:5px;&#34; /&gt;&lt;/a&gt;&lt;em&gt;Yes. You read that right. It&amp;rsquo;s OK to fail. Yes, I am talking to you. You&amp;hellip; that guy who is part of every team. The one who seems to feel the need to be right about everything. The one who thinks that everything new has already been done 15 years prior. The one who believes that every project they have participated in has been a profound success, and that a project-level failure (which includes missing deadlines or blowing the budget) is something they have never experienced. Failure is not only OK, it&amp;rsquo;s something that you &lt;strong&gt;must&lt;/strong&gt; experience somewhere along the way so you know when you&amp;rsquo;ve succeeded.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Future is Erlang</title>
+      <link>/posts/the-future-is-erlang/</link>
+      <pubDate>Sat, 31 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-future-is-erlang/</guid>
+      <description>For quite a while I&amp;rsquo;ve been using my spare cycles to chew over a problem. This problem is not one that hasn&amp;rsquo;t been solved before, but one that I feel can be solved in a much better way. From the bit of research that I&amp;rsquo;ve done, I can see at least three areas which can be improved on dramatically. So I&amp;rsquo;ve decided, after a long period of deliberation, to go ahead and build my solution and release it to the world as a service!</description>
+    </item>
+    
+    <item>
+      <title>The Value of a Technical Community</title>
+      <link>/posts/the-value-of-a-technical-community/</link>
+      <pubDate>Wed, 29 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-value-of-a-technical-community/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2009/07/community.jpg&#34; rel=&#34;lightbox&#34; title=&#34;Cricket Team Holding Hands --- Image by  Royalty-Free/Corbis&#34;&gt;&lt;img src=&#34;/uploads/2009/07/community.jpg&#34; alt=&#34;Cricket Team Holding Hands --- Image by  Royalty-Free/Corbis&#34; title=&#34;Cricket Team Holding Hands --- Image by  Royalty-Free/Corbis&#34; width=&#34;150&#34; style=&#34;float: left; margin-right: 5px; margin-bottom: 5px;&#34; /&gt;&lt;/a&gt;This post was inspired by an experience I had recently in an IRC channel. To protect the innocent, I&amp;rsquo;ll refrain from naming and shaming the channel and individual as those details aren&amp;rsquo;t important.&lt;/p&gt;
+
+&lt;p&gt;Communities are arguably the life blood of technology. Without a good community the likelihood of the technology catching on is drastically reduced. Those communities which lack individuals that are happy to put time and effort in to help get others up to speed tend to stagnate. Any community which involves members that are abrasive, rude and downright offensive is destined to suffer long term.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>&#39;Point-Free style: What is it good for?&#39;</title>
+      <link>/posts/point-free-style-what-is-it-good-for/</link>
+      <pubDate>Sat, 27 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/point-free-style-what-is-it-good-for/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;re not interested in what inspired this post, then skip this section and &lt;a href=&#34;#MoreInteresting&#34; title=&#34;The purpose of the post&#34;&gt;jump&lt;/a&gt; to the more interesting bits.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-little-bit-of-history&#34;&gt;A Little Bit of History&lt;/h2&gt;
+
+&lt;p&gt;Recently I&amp;rsquo;ve been delving into &lt;a href=&#34;http://haskell.org/&#34; title=&#34;Haskell&#34;&gt;Haskell&lt;/a&gt; quite a bit. It&amp;rsquo;s part of my apparently never-ending quest to learn as much as I can about as many languages as I can (well, those that appeal to me at least :)). While I love playing around with a language, toying with ideas, writing small programs, reading books, blog posts, etc it&amp;rsquo;s not really the same as having an on-call expert to help and guide you.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Data Crunching in Haskell</title>
+      <link>/posts/data-crunching-in-haskell/</link>
+      <pubDate>Thu, 25 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/data-crunching-in-haskell/</guid>
+      <description>&lt;p&gt;A few days ago I was having a chat to a &lt;a href=&#34;http://shiftperception.com/blog&#34; title=&#34;Shifty&#34;&gt;friend of mine&lt;/a&gt; about a little data parsing problem. He had the need to parse a multi-dimensional array to pull out some values. That array was guaranteed to be square, but not necessarily in contiguous memory. He needed to parse each &amp;ldquo;column&amp;rdquo; of the array, calculate a total, and then determine the biggest and smallest of those totals.&lt;/p&gt;
+
+&lt;p&gt;A sample of the data might look something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;data = ({150,200,45,57,95,2,45,32,15,10,5,2,2,4},
+        {12,20,45,37,10,5,2,2,10,95,2,45,32,7},
+        {32,15,10,5,2,23,24,15,20,45,57,95,0,45})
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So the first step would be to add 150, 12 and 32 and store the value. Then 200, 20 and 15, and store the value. Do this for all of the columns, then get a maximum and a minimum.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Setting up Trac, Mercurial and SSH on Windows</title>
+      <link>/posts/setting-up-trac-mercurial-and-ssh-on-windows/</link>
+      <pubDate>Sat, 16 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/setting-up-trac-mercurial-and-ssh-on-windows/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING - This blog post is long :)&lt;/strong&gt;
+&lt;em&gt;This post has been edited since it was published. Please see the end of the article for any notes/modifications&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;h3&gt;Some Background Info&lt;/h3&gt;
+I had the need to do this for work recently. It was nothing short of a right royal pain in the butt. It was such a pain, in fact, that I have decided to document what I had to do to get it working so that other poor unfortunates will feel less pain if they have to do this themselves.&lt;/p&gt;
+
+&lt;p&gt;Almost regardless of the company and the software I&amp;rsquo;m working on, I use &lt;a href=&#34;http://www.selenic.com/mercurial/&#34; title=&#34;Mercurial&#34;&gt;Mercurial&lt;/a&gt; for source code control. For the work I am doing at the moment, I was also using hg because the company I am involved with is relatively new and they hadn&amp;rsquo;t yet sorted out a plan for version control or &lt;acronym title=&#34;Application Lifecycle Management&#34;&gt;ALM&lt;/acronym&gt;. It was working quite well and I was pushing all my changes to my &lt;a href=&#34;http://www.google.com.au/url?q=http://www.buffalotech.com/products/network-storage/terastation/terastation-iii/&amp;ei=fioOSuLvGpu8swPl56zqAg&amp;sa=X&amp;oi=smap&amp;resnum=1&amp;ct=result&amp;cd=2&amp;usg=AFQjCNHXKMchy5tR-a-jMOFAbtxoWzfedA&#34; title=&#34;Terastation&#34;&gt;NAS box&lt;/a&gt; to make sure I had other copies backed up, etc. I was &lt;em&gt;living the dream&lt;/em&gt; :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>I Don&#39;t Need Your Frickin&#39; Framework!</title>
+      <link>/posts/i-dont-need-your-frickin-framework/</link>
+      <pubDate>Mon, 13 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/i-dont-need-your-frickin-framework/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2009/04/scaffold_fail.jpg&#34; title=&#34;Scaffold Fail&#34;&gt;&lt;img src=&#34;/uploads/2009/04/scaffold_fail.jpg&#34; alt=&#34;Scaffold Fail&#34; title=&#34;Scaffold Fail&#34; width=&#34;200&#34; style=&#34;float: right; margin-left: 5px; margin-bottom: 5px;&#34; /&gt;&lt;/a&gt;How many companies have you worked with/for that have their own framework? How many have been in the process of developing their own framework? How many have been in the process of &lt;strong&gt;re&lt;/strong&gt;developing their own framework? How many have taken another framework and &lt;del&gt;hacked&lt;/del&gt; improved it?&lt;/p&gt;
+
+&lt;p&gt;When I attempt to answer the questions listed above, I start to shiver. I feel the need to burn my clothes and take a very long shower.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A Quirk in List.Find()</title>
+      <link>/posts/a-quirk-in-list.find/</link>
+      <pubDate>Wed, 25 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/a-quirk-in-list.find/</guid>
+      <description>&lt;p&gt;Earlier today I was having a chat with a &lt;a href=&#34;http://doomkeeper.com/&#34; title=&#34;Jimmy&#39;s Blog&#34;&gt;friend of mine&lt;/a&gt;, who lives in Vancouver, about finding items that are stored in &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/6sh2ey19.aspx&#34; title=&#34;List(T)&#34;&gt;generic Lists&lt;/a&gt;. He flicked me a code snippet that looked something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;List&amp;lt;foo&amp;gt; list = new List&amp;lt;foo&amp;gt;();
+// .. do some stuff
+Foo f = list.Find(delegate(Foo f) { return foo.Name == &amp;quot;Bar&amp;quot;; });
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Straight away I fired back with an update to the code which used &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/bb397687.aspx&#34; title=&#34;Lambda Expressions (C# Programming Guide)&#34;&gt;lambda expressions&lt;/a&gt; instead, as I&amp;rsquo;m a fan of how concise they are ;)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Damn you, Crystal Reports!</title>
+      <link>/posts/damn-you-crystal-reports/</link>
+      <pubDate>Tue, 24 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/damn-you-crystal-reports/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve had &lt;a href=&#34;http://msdn.microsoft.com/en-us/vstudio/default.aspx&#34; title=&#34;Visual Studio on MSDN&#34;&gt;Visual Studio 2008&lt;/a&gt; installed for quite a while. When I first installed it I decided not to install the &lt;a href=&#34;http://www.sap.com/solutions/sapbusinessobjects/sme/reporting/crystalreports/index.epx&#34; title=&#34;Crystal Reports&#34;&gt;Crystal Reports&lt;/a&gt; components because I was fairly certain that I&amp;rsquo;d never need them at home.&lt;/p&gt;
+
+&lt;p&gt;Well, the worm has turned! On my new gig, I have the joy of working from home. It just so happens that I &lt;em&gt;also&lt;/em&gt; need to use Crystal Reports. How silly of me to not bother installing a few extra components the first time so I didn&amp;rsquo;t have to go through the pain of going through another VS Setup.&lt;/p&gt;
+
+&lt;p&gt;On the surface this doesn&amp;rsquo;t sound like a painful experience right? &lt;strong&gt;WRONG&lt;/strong&gt;. It&amp;rsquo;s a lot more painful than you think.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>N Things You Don&#39;t Want to Hear when Starting a New Job (where N &amp;gt;= 1)</title>
+      <link>/posts/n-things-you-dont-want-to-hear-when-starting-a-new-job-where-n-gt-1/</link>
+      <pubDate>Mon, 23 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/n-things-you-dont-want-to-hear-when-starting-a-new-job-where-n-gt-1/</guid>
+      <description>&lt;p&gt;Here are a collection of quotes that can drive fear into the heart of every developer. They&amp;rsquo;re made worse when heard at the start of a new gig, as any hope of a brave new world is smashed before you even get a login!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>An All Too Common Issue</title>
+      <link>/posts/an-all-too-common-issue/</link>
+      <pubDate>Wed, 18 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/an-all-too-common-issue/</guid>
+      <description>I think the following statement goes way deeper than it may have been intended (I might be wrong of course)&amp;hellip; Engineering is about making tradeoffs. If you refuse to make the choice, then you&amp;rsquo;re taking the cowardly route and ultimately are creating more work for your team. Instead of solving problems, you&amp;rsquo;re creating them.
+All because you&amp;rsquo;re too chicken to make a hard decision.
+ Thank you, Raymond Chen! You are a legend.</description>
+    </item>
+    
+    <item>
+      <title>Always Question the Source (aka &#34;Don&#39;t Lock on Type Objects&#34;)</title>
+      <link>/posts/always-question-the-source-aka-dont-lock-on-type-objects/</link>
+      <pubDate>Tue, 10 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/always-question-the-source-aka-dont-lock-on-type-objects/</guid>
+      <description>&lt;p&gt;For one reason or another, I recently found myself perusing some code based on the &lt;a href=&#34;http://www.lhotka.net/cslanet/&#34; title=&#34;CSLA&#34;&gt;CSLA&lt;/a&gt; framework. While nosing around I came upon a snippet of code that I found rather disturbing. An example can be found &lt;a href=&#34;http://www.lhotka.net/cslacvs/viewvc.cgi/trunk/cslacs/Csla/Core/BusinessBase.cs?revision=3690&amp;amp;view=markup&#34; title=&#34;BusinessBase.cs&#34;&gt;here&lt;/a&gt; in the function called InitializeAuthorizationRules.&lt;/p&gt;
+
+&lt;p&gt;For those who are lazy, here is the particular snippet of code that caught my eye:&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Websites are Hard to Build - A Case in Point</title>
+      <link>/posts/websites-are-hard-to-build-a-case-in-point/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/websites-are-hard-to-build-a-case-in-point/</guid>
+      <description>&lt;p&gt;A short time ago I &lt;a href=&#34;/posts/websites-are-hard-to-build/&#34; title=&#34;Websites are Hard to Build&#34;&gt;posted some thoughts&lt;/a&gt; on issues faced when building websites that most people aren&amp;rsquo;t aware of when they decide to have one built. I posted from the perspective of someone who has, on many occasions, been asked to build a site for someone who really doesn&amp;rsquo;t have a clue about what is involved. More importantly, they don&amp;rsquo;t &lt;em&gt;want&lt;/em&gt; to know.&lt;/p&gt;
+
+&lt;p&gt;There are people out there who don&amp;rsquo;t know about the issues faced, but are still in need of a site to fulfil their needs. Should they learn about these issues themselves? Should they put their faith in a developer/designer and let them do their job and just send them a bill at the end? A mixture of the two?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Websites are Hard to Build</title>
+      <link>/posts/websites-are-hard-to-build/</link>
+      <pubDate>Wed, 26 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/websites-are-hard-to-build/</guid>
+      <description>&lt;p&gt;{% img right /uploads/2008/11/elope-harlequin-jester.jpg &amp;lsquo;Uninformed client&amp;rsquo; %}
+&amp;gt; &amp;ldquo;It&amp;rsquo;s just a small site, how hard can it be?&amp;rdquo;
+&amp;gt;
+&amp;gt; &amp;ldquo;I thought you could do it for me as a favour. It&amp;rsquo;s not a complicated site.&amp;rdquo;
+&amp;gt;
+&amp;gt; &amp;ldquo;This would take me an afternoon, but I don&amp;rsquo;t have time, can you do it for me?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Have you ever heard these comments before? Have you heard ones that are similar? I&amp;rsquo;ve been hearing them a lot in the last few weeks and it&amp;rsquo;s starting to get to me.&lt;/p&gt;
+
+&lt;p&gt;I have just had a chat with a mate who is also suffering this pain, and that conversation is what inspired me to write this, the first random rant in a while.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sorting Algorithms: The Gnome Sort</title>
+      <link>/posts/sorting-algorithms-the-gnome-sort/</link>
+      <pubDate>Thu, 16 Oct 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sorting-algorithms-the-gnome-sort/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/uploads/2008/10/gnome.jpg&#34; alt=&#34;Gnome Sort&#34; title=&#34;Gnome Sort&#34; width=&#34;240&#34; style=&#34;float: right; margin-left: 5px; margin-bottom: 5px;&#34;/&gt;After a bit of down time for personal reasons, here is the fourth post in the series on &lt;a href=&#34;/category/sorting/&#34; title=&#34;Sorting @ OJ&#39;s rants&#34;&gt;sorting&lt;/a&gt; algorithms. This time round we&amp;rsquo;re taking a good look at the &lt;strong&gt;Gnome Sort&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;People often do a double-take when hearing the term &amp;ldquo;Gnome Sort&amp;rdquo; because it&amp;rsquo;s not that common. The &lt;strong&gt;Gnome Sort&lt;/strong&gt; is extremely simple, and is very similar to the principle behind the &lt;strong&gt;Insertion Sort&lt;/strong&gt; (which we&amp;rsquo;ll be covering soon).&lt;/p&gt;
+
+&lt;p&gt;The Gnome Sort is yet another &lt;em&gt;comparison&lt;/em&gt; and &lt;em&gt;exchange&lt;/em&gt; sort which has elements that are similar to the &lt;a href=&#34;/posts/sorting-algorithms-the-bubble-sort/&#34; title=&#34;Sorting Algorithms: The Bubble Sort&#34;&gt;Bubble Sort&lt;/a&gt;. If you haven&amp;rsquo;t read up on the Bubble Sort, be sure to do that before reading this article as it may help with your understanding.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sorting Algorithms: The Comb Sort</title>
+      <link>/posts/sorting-algorithms-the-comb-sort/</link>
+      <pubDate>Sun, 14 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sorting-algorithms-the-comb-sort/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/uploads/2008/09/combsort.jpg&#34; alt=&#34;Comb Sort&#34; title=&#34;Comb Sort&#34; width=&#34;150&#34; style=&#34;float: left; margin-right: 5px; margin-bottom: 5px;&#34; /&gt;Welcome to this, the third post in the series on &lt;a href=&#34;/category/sorting/&#34; title=&#34;Sorting @ OJ&#39;s rants&#34;&gt;sorting&lt;/a&gt; algorithms. Next up, we&amp;rsquo;re going to cover the &lt;strong&gt;Comb Sort&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Like the &lt;a href=&#34;/posts/sorting-algorithms-the-cocktail-sort/&#34; title=&#34;Sorting Algorithms: The Cocktail Sort&#34;&gt;Cocktail Sort&lt;/a&gt;, the Comb Sort isn&amp;rsquo;t particularly well known. Most people manage to make their way through tertiary studies without ever hearing of it. This post is designed to change that!&lt;/p&gt;
+
+&lt;p&gt;The Comb Sort is another &lt;em&gt;comparison&lt;/em&gt; and &lt;em&gt;exchange&lt;/em&gt; sort which builds on the idea of the &lt;a href=&#34;/posts/sorting-algorithms-the-bubble-sort/&#34; title=&#34;Sorting Algorithms: The Bubble Sort&#34;&gt;Bubble Sort&lt;/a&gt; and adds a potential optimisation or two.&lt;/p&gt;
+
+&lt;p&gt;Make sure you read the articles on the &lt;a href=&#34;/posts/sorting-algorithms-the-bubble-sort/&#34; title=&#34;Sorting Algorithms: The Bubble Sort&#34;&gt;Bubble Sort&lt;/a&gt; and the &lt;a href=&#34;/posts/sorting-algorithms-the-cocktail-sort/&#34; title=&#34;Sorting Algorithms: The Cocktail Sort&#34;&gt;Cocktail Sort&lt;/a&gt; before you read this article. Doing so will make it much easier to understand.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WPF Shader FX on Codeplex</title>
+      <link>/posts/wpf-shader-fx-on-codeplex/</link>
+      <pubDate>Tue, 09 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/wpf-shader-fx-on-codeplex/</guid>
+      <description>This is just a quick post to point out a new project that has fired up on Codeplex which may be of interest to a few of you graphics and rich client fans.
+Joseph Cooney of LearnWPF.com (and WPF MVP to the stars) has kicked off a Codeplex project targetting funky shaders for use with the new features of WPF that were included in SP1. Specifically, it&amp;rsquo;s intended to be a collection of open source/free shaders that can be easily plugged into your WPF apps to make them look schmick (for more info, check this out).</description>
+    </item>
+    
+    <item>
+      <title>Sorting Algorithms: The Cocktail Sort</title>
+      <link>/posts/sorting-algorithms-the-cocktail-sort/</link>
+      <pubDate>Fri, 29 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sorting-algorithms-the-cocktail-sort/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/uploads/2008/08/cocktail.jpg&#34; alt=&#34;Cocktail&#34; title=&#34;Cocktail&#34; style=&#34;float: right; margin-left: 5px; margin-bottom: 5px&#34; /&gt;Welcome to the second post in my series on &lt;a href=&#34;/category/sorting/&#34; title=&#34;Sorting @ OJ&#39;s rants&#34;&gt;sorting&lt;/a&gt; algorithms. This time we&amp;rsquo;re going to talk about a sort that most people haven&amp;rsquo;t heard a great deal about: the &lt;strong&gt;Cocktail Sort&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;This algorithm was the next logical choice in the series because it is very similar to the &lt;a href=&#34;/posts/sorting-algorithms-the-bubble-sort/&#34; title=&#34;Sorting Algorithms: The Bubble Sort&#34;&gt;Bubble Sort&lt;/a&gt; in the way that it operates. If you&amp;rsquo;re yet to read the first in the series, head &lt;a href=&#34;/posts/sorting-algorithms-the-bubble-sort/&#34; title=&#34;Sorting Algorithms: The Bubble Sort&#34;&gt;over there now&lt;/a&gt; as it will make this algorithm easier to understand.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sorting Algorithms: The Bubble Sort</title>
+      <link>/posts/sorting-algorithms-the-bubble-sort/</link>
+      <pubDate>Thu, 14 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sorting-algorithms-the-bubble-sort/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/uploads/2008/08/bubbles.jpg&#34; alt=&#34;Bubbles&#34; title=&#34;Bubbles&#34; width=&#34;225&#34; height=&#34;154&#34; style=&#34;float: left; margin-right: 5px; margin-bottom: 5px&#34; /&gt;This is the first of many posts covering the fascinating topic of &lt;a href=&#34;/category/sorting/&#34; title=&#34;Sorting @ OJ&#39;s rants&#34;&gt;sorting&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I chose the Bubble Sort algorithm as the first to cover because of its simplicity. This algorithm tends to be the first sorting algorithm that is taught to students, and hence is a rather apt starting point.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s break it down.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sorting Things Out</title>
+      <link>/posts/sorting-things-out/</link>
+      <pubDate>Wed, 13 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sorting-things-out/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s time to recap a topic that is, or should be, close to the heart of every developer. A topic that is often overlooked or glossed over, rarely fully understood and not often discussed. Yet this topic is hugely important.&lt;/p&gt;
+
+&lt;p&gt;That topic is &lt;strong&gt;Sorting&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Unit Tests: Boldly Crossing Boundaries and Gently Breaking Rules</title>
+      <link>/posts/unit-tests-boldly-crossing-boundaries-and-gently-breaking-rules/</link>
+      <pubDate>Tue, 29 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/unit-tests-boldly-crossing-boundaries-and-gently-breaking-rules/</guid>
+      <description>&lt;p&gt;For the first time ever, OJ&amp;rsquo;s rants has a guest blogger! Long term friend and highly-respected geek, RobG has put together an interesting piece on something that&amp;rsquo;s close to the hearts of most Geeks - Unit testing. This is his first post, and I hope it won&amp;rsquo;t be the last.&lt;/p&gt;
+
+&lt;p&gt;Without further ado, here&amp;rsquo;s Rob!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>.NET-fu: Signing an Unsigned Assembly (without Delay Signing)</title>
+      <link>/posts/.net-fu-signing-an-unsigned-assembly-without-delay-signing/</link>
+      <pubDate>Wed, 09 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/.net-fu-signing-an-unsigned-assembly-without-delay-signing/</guid>
+      <description>&lt;p&gt;This article is also available in &lt;a href=&#34;http://www.otherbit.com/modules/blog/BlogContent.aspx?ID=174&#34; title=&#34;.NET-FU : come trasformare in SIGNED un assembly UNSIGNED (senza ricorrere al DELAY SIGNING)&#34;&gt;Italian&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The code-base that I am currently working with consists of a large set of binaries that are all &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/xc31ft41.aspx&#34; title=&#34;Sign an Assembly with a Strong Name&#34;&gt;signed&lt;/a&gt;. The savvy .NET devs out there will know that any assembly that&amp;rsquo;s used/referenced by a signed assembly must &lt;em&gt;also&lt;/em&gt; be signed.&lt;/p&gt;
+
+&lt;p&gt;This is an issue when dealing with third-party libraries that are not signed. Sometimes you&amp;rsquo;ll be lucky enough to be dealing with vendor that is happy to provide a set of signed assemblies, other times you won&amp;rsquo;t. If your scenario fits the latter (as a recent one did for my colleagues and I), you need to sign the assemblies yourself. Here&amp;rsquo;s how.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Screencast - Setting up Unity Builds</title>
+      <link>/posts/screencast-setting-up-unity-builds/</link>
+      <pubDate>Thu, 19 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/screencast-setting-up-unity-builds/</guid>
+      <description>&lt;p&gt;It has taken me a bit longer than expected, but I&amp;rsquo;ve finally got the screencast up!&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s right folks, my angelic voice is now online for you all to experience. 8 minutes of Unity Build glory!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How do you Interact with your ViewState?</title>
+      <link>/posts/how-do-you-interact-with-your-viewstate/</link>
+      <pubDate>Wed, 21 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/how-do-you-interact-with-your-viewstate/</guid>
+      <description>&lt;p&gt;There comes a time in every ASP.NET developer&amp;rsquo;s life when the need arises for information to be persisted into &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ms972976.aspx&#34; title=&#34;ViewState&#34;&gt;ViewState&lt;/a&gt;. For the sake of this post I&amp;rsquo;m not really interested in the reasons why. What I am interested in is &lt;em&gt;how&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;How do you interact with your ViewState?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Web Application Development with Merb, MySQL and Tiny</title>
+      <link>/posts/web-application-development-with-merb-mysql-and-tiny/</link>
+      <pubDate>Sun, 06 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/web-application-development-with-merb-mysql-and-tiny/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been thinking about building a web application or two for a while, but I haven&amp;rsquo;t yet found the time to invest. I don&amp;rsquo;t think this is going to change very soon either. I&amp;rsquo;m not the kind of person who usually likes to get stuck into something unless I know I&amp;rsquo;ve got a couple of hours up my sleeve so that I feel I can get something done, and this has been preventing me from doing anything because I don&amp;rsquo;t ever feel like I have a couple of hours spare. Having a child means that you could have as little as 5 minutes before all hell breaks loose.&lt;/p&gt;
+
+&lt;p&gt;Instead of whinging about it, I&amp;rsquo;ve decided to go against my usual grain and take those 5 minute chunks as a chance to do something. This is the first step :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Current Geek Interests</title>
+      <link>/posts/current-geek-interests/</link>
+      <pubDate>Mon, 17 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/current-geek-interests/</guid>
+      <description>&lt;p&gt;As the weeks roll by I&amp;rsquo;m finding that I have less and less time to chase up anything geek-related. I&amp;rsquo;m sure I&amp;rsquo;m not alone ;) Responsibilities and life take over and that time which you &lt;em&gt;could&lt;/em&gt; invest is now invested in other things, such as &lt;a href=&#34;/posts/my-boy/&#34; title=&#34;My Boy&#34;&gt;children&lt;/a&gt; :)&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m dedicating this post to all those things that I currently find interesting and would love to invest time in. Some of these things are old, some new. All of them I&amp;rsquo;ve either not touched on at all, or have touched on only briefly (not enough to be satisfied). I thought I&amp;rsquo;d share them with you in case you find them interesting yourself, or perhaps have some insights which you&amp;rsquo;d like to share.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A Frequently Asked Question</title>
+      <link>/posts/a-frequently-asked-question/</link>
+      <pubDate>Sun, 23 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/a-frequently-asked-question/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Are Software Developers artists or engineers?&lt;/strong&gt; This question is asked and answered at least 10 times a month around the bloggosphere. Everyone who is involved with development will have their own view. I have my own, but I haven&amp;rsquo;t really felt the urge to express it until now. If you find this topic boring, feel free to skip the post and remove me from your RSS feed :)&lt;/p&gt;
+
+&lt;p&gt;To kick things off I need to try and encapsulate my view of what software actually is. In my view, software, regardless of what it does, has a single job: &lt;em&gt;to transform data from one form to another&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Magic of Unity Builds</title>
+      <link>/posts/the-magic-of-unity-builds/</link>
+      <pubDate>Mon, 10 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-magic-of-unity-builds/</guid>
+      <description>&lt;p&gt;I realise that as time goes by, people are using my beloved &lt;a href=&#34;http://en.wikipedia.org/wiki/C++&#34; title=&#34;C++&#34;&gt;C++&lt;/a&gt; less and less. &lt;a href=&#34;http://en.wikipedia.org/wiki/.NET_Framework&#34; title=&#34;.NET Framework&#34;&gt;.NET&lt;/a&gt; (&lt;a href=&#34;http://en.wikipedia.org/wiki/C_Sharp&#34; title=&#34;C#&#34;&gt;C#&lt;/a&gt; and &lt;a href=&#34;http://en.wikipedia.org/wiki/Visual_Basic_.NET&#34; title=&#34;VB.NET&#34;&gt;VB.NET&lt;/a&gt;) and &lt;a href=&#34;http://en.wikipedia.org/wiki/Java_%28programming_language%29&#34; title=&#34;Java&#34;&gt;Java&lt;/a&gt; seem to be taking over the mainstream coding world. Languages such as &lt;a href=&#34;http://en.wikipedia.org/wiki/Ruby_%28programming_language%29&#34; title=&#34;Ruby&#34;&gt;Ruby&lt;/a&gt; and &lt;a href=&#34;http://en.wikipedia.org/wiki/Python_%28programming_language%29&#34; title=&#34;Python&#34;&gt;Python&lt;/a&gt; seem to be taking over the scripting world. For the most part, C and C++ seem to exist only in the gaming/entertainment, real-time and driver worlds.&lt;/p&gt;
+
+&lt;p&gt;In many colleges and univerties C++ is no longer taught as a core subject (along with &lt;a href=&#34;http://en.wikipedia.org/wiki/Assembly_language&#34; title=&#34;Assembly Language&#34;&gt;Assembly language&lt;/a&gt;) which I find quite galling. It&amp;rsquo;s a great language to learn, even if you never use it again. But the purpose of this post is not to preach the virtues and failures of the C++ language, but instead to talk about something that might aid those people who &lt;em&gt;are&lt;/em&gt; using C++.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WTF: Random Memory Contents</title>
+      <link>/posts/wtf-random-memory-contents/</link>
+      <pubDate>Mon, 03 Sep 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/wtf-random-memory-contents/</guid>
+      <description>If any of you out there are able to give me ONE GOOD REASON why anyone would do something like this, then please let me know. Below are &amp;ldquo;customised&amp;rdquo; realloc() and malloc() I recently stumbled across (yes, they get called. A LOT):
+void *mcRealloc( void *P, int SIZE ) { int oldSize = _msize( P ); P = realloc( P, SIZE ); if ( P ) { for ( int i = oldSize; i &amp;lt; SIZE; i++ ) { ((char *) P)[i] = (char) rand(); } } return P; } void *mcMalloc( int SIZE ) { void *P; P = malloc( SIZE ); if ( P ) { for ( int i = 0; i &amp;lt; SIZE; i++ ) { ((char *) P)[i] = (char) rand(); } } return P; }  Is it just me, or is this a huge WTF?</description>
+    </item>
+    
+    <item>
+      <title>Safer Code through Object-Orientation</title>
+      <link>/posts/safer-code-through-object-orientation/</link>
+      <pubDate>Thu, 09 Aug 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/safer-code-through-object-orientation/</guid>
+      <description>&lt;p&gt;In my current position I spend a lot of time battling against a fairly poorly-written C++ code base. The code, while &lt;em&gt;technically&lt;/em&gt; written in C++, is actually more of a C-like &amp;ldquo;splat&amp;rdquo; with a few classes thrown in. Since I began working on this project I&amp;rsquo;ve seen many cases where proper &lt;a href=&#34;http://en.wikipedia.org/wiki/Object-oriented_programming&#34; title=&#34;Object-oriented programming&#34;&gt;object-orientation&lt;/a&gt; would have made a drastic improvement to the quality of the code.&lt;/p&gt;
+
+&lt;p&gt;And it&amp;rsquo;s these cases which are the inspiration for this blog post.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Misled from the Start</title>
+      <link>/posts/misled-from-the-start/</link>
+      <pubDate>Fri, 03 Aug 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/misled-from-the-start/</guid>
+      <description>&lt;p&gt;I find myself frequently concerned with the lack of ability of a lot of people in our industry. Today I found an example of at least one of the possible reasons why software development professionals turn out to be crap.&lt;/p&gt;
+
+&lt;p&gt;They start by reading &lt;a href=&#34;http://mezzoscorner.blogspot.com/2007/07/basics-your-first-program.html&#34; title=&#34;The Basics - Your first program&#34;&gt;tutorials like this&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;How can we expect people to become good at what they do if the tutorials they&amp;rsquo;re learning from are like that? If you learn the bad stuff from the outset then you&amp;rsquo;re destined to be writing bad code for many years to come.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Avoid Writing Unintuitive Code</title>
+      <link>/posts/avoid-writing-unintuitive-code/</link>
+      <pubDate>Fri, 20 Jul 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/avoid-writing-unintuitive-code/</guid>
+      <description>&lt;p&gt;This blog post was inspired by a brief chat I had recently with Kirupa of &lt;a href=&#34;http://www.kirupa.com/&#34; title=&#34;Kirupa&#34;&gt;kirupa.com&lt;/a&gt;. I subscribe to his &lt;a href=&#34;http://blog.kirupa.com/&#34; title&#34;Kirupa Blog&#34;&gt;blog&amp;rsquo;s&lt;/a&gt; &lt;a href=&#34;http://blog.kirupa.com/?feed=rss2&#34; title=&#34;Kirupa Blog RSS&#34;&gt;RSS feed&lt;/a&gt; as he comes out with some really good stuff. His &lt;a href=&#34;http://blog.kirupa.com/?p=111&#34; title=&#34;Randomizing Elements in a List (C#)&#34;&gt;recent post&lt;/a&gt; which showed a way of shuffling a List of strings (using C#) inspired a bit of thought on the topic of code readability, how and when it&amp;rsquo;s learned (if at all) and why there is so little of it around.&lt;/p&gt;
+
+&lt;p&gt;Code quality and readability is something that isn&amp;rsquo;t necessarily learned at University, nor is it something that can be mastered in a short period of time. It &lt;em&gt;is&lt;/em&gt; something that &lt;strong&gt;anyone&lt;/strong&gt; can learn. The main ingredients that are required are a bit of self-scrutiny, and the removal of the assumption that working code is the same as finished code.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Creating Concrete Objects</title>
+      <link>/posts/creating-concrete-objects/</link>
+      <pubDate>Sat, 14 Jul 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/creating-concrete-objects/</guid>
+      <description>&lt;p&gt;Being a fan of &lt;a href=&#34;http://en.wikipedia.org/wiki/Object-oriented_programming&#34; title=&#34;Object-oriented Programming&#34;&gt;OOP&lt;/a&gt;, I tend to write a lot of object-oriented code. Coming up with a meaningful object model that behaves in an appropriate way is just as important as having a meaningful interface to your objects. A concrete object is an object that actually behaves in the manner you&amp;rsquo;d expect without any wierd side-effects, and has the same kind of attributes that you&amp;rsquo;d expect of a primitive data type.&lt;/p&gt;
+
+&lt;p&gt;Creating concrete data objects/classes is a good thing to do, as it reduces the probability of bugs, and crazy side-effects. It&amp;rsquo;s also an important first step in writing intuitive code - which will be the topic of a later blog post.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Learning to Program is not what it used to be</title>
+      <link>/posts/learning-to-program-is-not-what-it-used-to-be/</link>
+      <pubDate>Wed, 09 May 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/learning-to-program-is-not-what-it-used-to-be/</guid>
+      <description>One of the most common questions asked by would-be coders is &amp;ldquo;which language should I learn first?&amp;rdquo;. The answer isn&amp;rsquo;t really straight forward. I think it varies depending on age, aptitude, how well you know computers, your passion and what you want to do with what you learn.
+On hearing this question recently, I decided to avoid my usual response and actually put a bit of thought into how I learned to code, to see if the method is still feasible, then resopnd accordingly.</description>
+    </item>
+    
+    <item>
+      <title>Do you Enjoy what you do for a Living?</title>
+      <link>/posts/do-you-enjoy-what-you-do-for-a-living/</link>
+      <pubDate>Mon, 12 Mar 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/do-you-enjoy-what-you-do-for-a-living/</guid>
+      <description>I remember when I was in high school as a teenager and all I wanted to &amp;lsquo;be&amp;rsquo; was a Software Engineer. I was one of those lucky people who always seemed to know what it is they wanted to do, and for me it was always going to be creating software. I got stuck into a plethora of coding projects in my own time while finishing school which, along with doing &amp;ldquo;Computer Studies&amp;rdquo; for the last 3 years, gave me a pretty solid grounding to build on when I got to University.</description>
+    </item>
+    
+    <item>
+      <title>Why Can&#39;t Programmers Program?</title>
+      <link>/posts/why-cant-programmers-program/</link>
+      <pubDate>Sun, 04 Mar 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/why-cant-programmers-program/</guid>
+      <description>While reading The Daily Grind from Larkware I found myself reading through a couple of articles (here and here) on programmers not being able to program. This obviously caught my interest as I feel I&amp;rsquo;ve worked with my fair share of these &amp;ldquo;programmers&amp;rdquo; in the past. It got me thinking about how to determine whether or not someone is good in an interview, how their background affects the way they perform when they start working as a developer, and whether or not having N years of experience actually means N years of experience or simply N lots of 1 years experience.</description>
+    </item>
+    
+    <item>
+      <title>Shortcuts: Visual Studio 2005</title>
+      <link>/posts/shortcuts-visual-studio-2005/</link>
+      <pubDate>Sun, 11 Feb 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/shortcuts-visual-studio-2005/</guid>
+      <description>Welcome to the next in the series of posts on program shortcuts. This time round we&amp;rsquo;re talking Visual Studio. I&amp;rsquo;ll be assuming that you don&amp;rsquo;t have the ViEmu plugin enabled and that you&amp;rsquo;re just using the IDE in the way it was intended without any other form of shortcut-based plugin installed.
+I&amp;rsquo;m using Visual Studio 2005 and I think I have the C# settings enabled by default. Most of these shortcuts will work regardless of the default setting that you have, but some of them will no doubt be different.</description>
+    </item>
+    
+    <item>
+      <title>CI Punishment</title>
+      <link>/posts/ci-punishment/</link>
+      <pubDate>Sun, 04 Feb 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ci-punishment/</guid>
+      <description>For a development to succeed in its use of a continuous integration process there must be a sufficiently hefty deterrent to prevent people from breaking the build. If you break the build, you should feel some form of retribution to aid in stopping you from doing it again.
+Plip&amp;rsquo;s recently posted a suggestion for this very issue. I think it&amp;rsquo;s a fantastic idea! Make sure you print it and stick it up in your office!</description>
+    </item>
+    
+    <item>
+      <title>The Parable of the Two Programmers</title>
+      <link>/posts/the-parable-of-the-two-programmers/</link>
+      <pubDate>Sat, 03 Feb 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-parable-of-the-two-programmers/</guid>
+      <description>Another short snippet this morning. I wanted to inform you of a fairly old-skool story; one that lots of developers will already know about. It&amp;rsquo;s a great tale, and still holds a lot of truth for today&amp;rsquo;s world of I.T. despite it being very old.
+Have a read of the tale - The Parable of the Two Programmers.
+Which one are you? :)</description>
+    </item>
+    
+    <item>
+      <title>Writing Object-Oriented Code vs Writing Code in an Object-Oriented Language</title>
+      <link>/posts/writing-object-oriented-code-vs-writing-code-in-an-object-oriented-language/</link>
+      <pubDate>Fri, 02 Feb 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/writing-object-oriented-code-vs-writing-code-in-an-object-oriented-language/</guid>
+      <description>I&amp;rsquo;m going to try and keep this post short, otherwise I&amp;rsquo;ll be here all day ranting away ;) This particular topic is one that&amp;rsquo;s fairly close to my heart because it&amp;rsquo;s a bit of a pet hate for me.
+As we (the geeks) know, object-oriented (OO) programming is a different concept to functional or procedural programming. OO was a bit of a move forward in the direction of easy to understand, more managable and reusable code, and has been adopted all over the shop.</description>
+    </item>
+    
+    <item>
+      <title>Dual-Screen Development</title>
+      <link>/posts/dual-screen-development/</link>
+      <pubDate>Tue, 19 Dec 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/dual-screen-development/</guid>
+      <description>As it tends to be with many things in life, I just didn&amp;rsquo;t see the need for multiple monitors until I had the experience myself. Up until my time at the game dev studio in the U.K. (which will remain anonymous :)), I had no idea what it was like to work on a machine that had more than one monitor. Within a week, there was no going back!
+Those of you who use at least two monitors for day to day work will know what I&amp;rsquo;m going to say in this post - those of you who don&amp;rsquo;t (and in particular, never have done) should listen and listen good!</description>
+    </item>
+    
+    <item>
+      <title>// TODO: Add Comments</title>
+      <link>/posts/-todo-add-comments/</link>
+      <pubDate>Tue, 14 Nov 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/-todo-add-comments/</guid>
+      <description>All too often have I seen comments like this. That&amp;rsquo;s if I&amp;rsquo;m lucky enough to see comments at all! I&amp;rsquo;m quite a big advocate of comments in code. I don&amp;rsquo;t agree with the age-old philosophy of:If the code was hard to write, it should be hard to read as well!I read a cool article this morning called In Praise of the Lowly Comment, which I think hits the mark nicely. I think I might just email this link around to my current workmates, as I don&amp;rsquo;t think they realise that commenting should consist of more that &amp;lsquo;TODO&amp;rsquo;s.</description>
+    </item>
+    
+    <item>
+      <title>Were the Wiggles Software Developers?</title>
+      <link>/posts/were-the-wiggles-software-developers/</link>
+      <pubDate>Mon, 13 Nov 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/were-the-wiggles-software-developers/</guid>
+      <description>Some of you might not know about The Wiggles, but those of you who are either Australian or have any connection with an extremely young family member will probably have a fair idea. In short, they&amp;rsquo;re a collection of dudes who do performances for kiddies, and have managed to make themselves a fortune putting smiles on the dials of kids all over the world. Hats off to them!
+The question I&amp;rsquo;m asking isn&amp;rsquo;t serious ;) But I have to ask it because I think that one of their famous songs has been written with my current software development project in mind!</description>
+    </item>
+    
+    <item>
+      <title>Iteration</title>
+      <link>/posts/iteration/</link>
+      <pubDate>Tue, 07 Nov 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/iteration/</guid>
+      <description>I found a pretty inspiring video the other day that I think is a perfect visual representation of what should happen in software. OK, that&amp;rsquo;s not quite true, I didn&amp;rsquo;t find it, I was given it by none other than Dan the man (@shifty). The video is a time-lapsed video of someone drawing a picture of a wasp-like insect (I don&amp;rsquo;t pretend to be cluey in the world of insects, so just be happy with that description :)), but the beauty of it is that you can see how the final product evolves as the picture is iterated.</description>
+    </item>
+    
+    <item>
+      <title>Ego Affliction</title>
+      <link>/posts/ego-affliction/</link>
+      <pubDate>Fri, 03 Nov 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ego-affliction/</guid>
+      <description>For some reason I thought that the I.T. industry as a whole had matured enough to the point that all developers would have realised that programming with an ego has a bad affect on the software. I also thought that people would stay up to speed, work hard, and focus on producing good quality code. I am very much mistaken :)
+Recently I&amp;rsquo;ve been in the unfortunate position of having to deal with some of the most appalling I.</description>
+    </item>
+    
+    <item>
+      <title>Developers vs Programmers</title>
+      <link>/posts/developers-vs-programmers/</link>
+      <pubDate>Fri, 20 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/developers-vs-programmers/</guid>
+      <description>Which one are you? I&amp;rsquo;ve had my own thoughts on the differences between what makes a person a developer and what makes a person a programmer for some time, but I think this article at Hacknot bears a striking resemblance - which means I don&amp;rsquo;t have to write it out myself :)
+A great read, and it&amp;rsquo;s something that not only hilights the differences between a lot of people you&amp;rsquo;ll find out there working in the industry, but it&amp;rsquo;ll give an idea of what I believe should be expected of you while you&amp;rsquo;re trying to do your job.</description>
+    </item>
+    
+    <item>
+      <title>Open Sauce</title>
+      <link>/posts/open-sauce/</link>
+      <pubDate>Wed, 18 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/open-sauce/</guid>
+      <description>I&amp;rsquo;ve been interested in Open Source Software (OSS) for quite some time now but I&amp;rsquo;ve never really attempted to find out much about it, nor how I can contribute. Of course, being a professional developer, the immediate thought is &amp;ldquo;I make a living off writing software, so how does that work with Open Source?&amp;rdquo;.
+After reading all the news about Vista and it&amp;rsquo;s attempts to completely revoke my rights as a user, my interest in the OSS movement in general has increased, and I do feel it&amp;rsquo;s time for me to not only get a better understanding of what it is and how it works, but how I can contribute to it.</description>
+    </item>
+    
+    <item>
+      <title>Google Code Search</title>
+      <link>/posts/google-code-search/</link>
+      <pubDate>Mon, 16 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/google-code-search/</guid>
+      <description>The Search Kings have come up with another rippin&amp;rsquo; tool which allows you to crawl through source code for examples and whatnot. The Google Code Search is quite a cool utility - but it doesn&amp;rsquo;t come without it&amp;rsquo;s issues. I found an interesting link worthy of reading which talks about a few amusing results returned from this facility, which I reckon lots of people should check out and be aware of.</description>
+    </item>
+    
+    <item>
+      <title>Learning Code Security</title>
+      <link>/posts/learning-code-security/</link>
+      <pubDate>Fri, 13 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/learning-code-security/</guid>
+      <description>As a regular read of Scott Gu&amp;rsquo;s blog (see blogroll) I often find nuggets of information that are handy for the work that I do, but I also often end up with a few questions :)
+The latest one that fired up a bit of thought was his post on guarding against SQL injection attacks. The information posted very handy, and is something that I would assume most web developers already know, but it made me wonder how many devs out there are actually aware of these kinds of issues while they&amp;rsquo;re building their applications.</description>
+    </item>
+    
+    <item>
+      <title>The Day Job</title>
+      <link>/posts/the-day-job/</link>
+      <pubDate>Wed, 04 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-day-job/</guid>
+      <description>I&amp;rsquo;ve been intending to write about this (and a few other things) for a while now, but due to wedding planning and work I&amp;rsquo;ve found it hard to find the time. So I&amp;rsquo;ll take the opportunity while my disk is being defragged to crank out some thoughts.
+Individual developers vary in many different ways, but I&amp;rsquo;ve often wondered what motivates other people and what they consider their job to be. To be more specific, what is it that a developer feels they should be doing in their day job?</description>
+    </item>
+    
+    <item>
+      <title>Dealing with the CRUD</title>
+      <link>/posts/dealing-with-the-crud/</link>
+      <pubDate>Thu, 21 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/dealing-with-the-crud/</guid>
+      <description>One of the things that I think every web developer on the planet is sick of doing is building CRUD methods for their applications. It&amp;rsquo;s the kind of thing that we seem to do as developers over and over again despite the fact that this task is essentially monkey work.
+There have been quite a few attempts to nail this issue on the head in various programming camps, and it&amp;rsquo;s these attempts that I&amp;rsquo;d like to go over - partly because I&amp;rsquo;m also sick of CRUD, and partly because I don&amp;rsquo;t know enough about all of these solutions to know which one&amp;rsquo;s work best in what scenario (hopefully this is where you guys come to the rescue :)).</description>
+    </item>
+    
+    <item>
+      <title>An IDE Follow-Up</title>
+      <link>/posts/an-ide-follow-up/</link>
+      <pubDate>Wed, 20 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/an-ide-follow-up/</guid>
+      <description>After reading Dan&amp;rsquo;s response to this a few days ago, I decided to have a bit of a play with Notepad++. I do think it&amp;rsquo;s a very nice little text editor with some lovely features. It&amp;rsquo;s quitck, it&amp;rsquo;s simple, and the syntax hilighting works a treat (no thanks to Scintilla of course). One thing I do like is that by default when line numbering is on and word-wrap is enabled, gaps appear between the numbers to indicate that a line has wrapped (I need to set up something like this with VIM, as it&amp;rsquo;s one of the things that&amp;rsquo;s currently driving me nuts).</description>
+    </item>
+    
+    <item>
+      <title>Finding Productivity Utopia</title>
+      <link>/posts/finding-productivity-utopia/</link>
+      <pubDate>Mon, 18 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/finding-productivity-utopia/</guid>
+      <description>Productivity. It&amp;rsquo;s something that all of us, as developers, should be finding ways to increase. I say should because I know of a stack of people out there who don&amp;rsquo;t. In fact, there&amp;rsquo;s a surprising amount of people out there who are not only not looking to find ways to increase productivity, they seem to go out of their way to reduce it - and this doesn&amp;rsquo;t just affect their own output, it affects that of the people they work with.</description>
+    </item>
+    
+    <item>
+      <title>Who&#39;s up for a challenge?</title>
+      <link>/posts/whos-up-for-a-challenge/</link>
+      <pubDate>Fri, 15 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/whos-up-for-a-challenge/</guid>
+      <description>Before starting this blog up, I spent a bit of time thinking about the kind of things I would like to talk about which other people might find interesting. I also wanted to find some areas of discussion where people would be interested in giving me feedback and comments containing their thoughts and opinions so that I can learn something and possibly benefit from other people&amp;rsquo;s experience. While this is all very enlightening, it can be fun and it can be, shall we say, political.</description>
+    </item>
+    
+    <item>
+      <title>Are you any good?</title>
+      <link>/posts/are-you-any-good/</link>
+      <pubDate>Thu, 14 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/are-you-any-good/</guid>
+      <description>I was trundling through my usual collection of daily links yesterday morning (before diving into my work), and I stumbled on a link to a recent blog post by a chap called Peter Wright. There are a couple of reasons why this blog post caught my eye.
+First of all, during my time in the U.K. over the last couple of years, I worked for a company in London that Peter also worked at.</description>
+    </item>
+    
+    <item>
+      <title>Is an IDE all it&#39;s cracked up to be?</title>
+      <link>/posts/is-an-ide-all-its-cracked-up-to-be/</link>
+      <pubDate>Tue, 12 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/is-an-ide-all-its-cracked-up-to-be/</guid>
+      <description>Have the days of writing code in VIM ended? Is Emacs ready to be put to bed? Are we destined to spend the rest of our development lives heads-down in a bloated and expensive Integrated Development Environment (IDE)?
+IMHO, this argument is very much a Linux vs Windows style argument.
+To those long term VIM and Emacs users, there&amp;rsquo;s no reason to go an IDE like Visual Studio. Both of those editors are customisable, flexible and support a plethora of plugins and utilies.</description>
+    </item>
+    
+  </channel>
+</rss>

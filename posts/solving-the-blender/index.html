@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Solving &#39;The Blender&#39; - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/solving-the-blender/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Solving &#39;The Blender&#39; </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Thu Feb 5, 2015</span>
+
+	  <p>This post contains a walk-through of the process required to solve <em>The Blender</em>. <em>The Blender</em> was a reverse engineering challenge that I built and submitted to <a href="https://twitter.com/hyprwired">hyprwired</a> for inclusion in the <a href="https://kiwicon.org/">Kiwicon</a> <a href="https://kiwicon.org/the-con/hamiltr0nno-carrier/">CTF</a>. The challenge wasn&rsquo;t intended to be too mind-boggling, but it turned out that nobody was able to solve it on the day.</p>
+
+<p>I won&rsquo;t deny that this didn&rsquo;t me feel awful <em>and</em> great at the same time! However, I don&rsquo;t want this lying in the depths of history unsolved, so I wanted to show people the story behind the challenge, and how to nail it using IDA and your brain.</p>
+
+<p>Please <a href="/uploads/2015/02/blender/the_blender.zip">download</a> it if you would like to follow along.</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>I don&rsquo;t know how many points the challenge was worth. But I do know that it was one of the ones used as a tie-breaker challenge on the day. There is no write-up, no hint, nothing. All you know is that this thing has a flag inside it somewhere and you need to fish it out.</p>
+
+<p>First of all, we need to see what this thing is (even though the extension is a bit of a giveaway):</p>
+
+<pre><code>$ file the_blender.exe 
+the_blender.exe: PE32 executable (console) Intel 80386, for MS Windows
+</code></pre>
+
+<p>OK good, it&rsquo;s not x64 so hopefully the experience of reversing won&rsquo;t be too messy. Let&rsquo;s fire it up to see what it does:</p>
+
+<p><img src="/uploads/2015/02/blender/00.png" alt="Crash on run" /></p>
+
+<p>OK, so that&rsquo;s the way it&rsquo;s going to be! Time to fire up IDA and have a look around. Once the application is loaded and the binary has been parsed, we can see that the entry point to the program is shown.</p>
+
+<p><img src="/uploads/2015/02/blender/01.png" alt="Entry point" /></p>
+
+<p>We can skip over the first call as this just does a bunch of setting up, and we can navigate to the second instruction which is a <code>JMP</code>.</p>
+
+<p><img src="/uploads/2015/02/blender/02.png" alt="Program setup" /></p>
+
+<p>This section of code contains more initialisation functionality. However, following the code path a little we can see that after the initial set up there is a call to an unnamed function:</p>
+
+<p><img src="/uploads/2015/02/blender/03.png" alt="Interesting call" /></p>
+
+<p>If we jump into this call, we&rsquo;ll see a bunch of code that actually doesn&rsquo;t call any other functionality except for right at the end. The header of that function looks like this:</p>
+
+<p><img src="/uploads/2015/02/blender/04.png" alt="Function header" /></p>
+
+<p>At this point, we can take an educated guess that this part of the program is the &ldquo;real&rdquo; entry point (probably <code>main</code>) and from here we can start to analyse what is going on. Let&rsquo;s rename the function and assign it some parameters to make it more readable (using the <code>Y</code> shortcut key).</p>
+
+<p><img src="/uploads/2015/02/blender/05.png" alt="Fixed function header" /></p>
+
+<p>Next, we can read a bit of code to see if there are any obvious candidates for causing the application to crash. The first branch in the code stood out like a sore thumb:</p>
+
+<p><img src="/uploads/2015/02/blender/06.png" alt="Deliberate crash" /></p>
+
+<p>This looks like a deliberate NULL pointer dereference. The <code>xor eax, eax</code> instruction sets <code>eax</code> to <code>0</code>, and the next instruction tries to read from the address referenced by <code>eax</code>. It&rsquo;s no wonder that the program crashed. The instructions leading up to this are also interesting. Note the instruction <code>mov eax, large fs:18</code>, as this is an indicator of a common anti-debugging technique. This instruction gets access to the to the <a href="http://en.wikipedia.org/wiki/Win32_Thread_Information_Block">Thread Information Block</a>, a structure in Windows that contains some handy information about the current thread. At offset <code>0x30</code> from the start of this structure, a pointer can be found which can be used to locate a flag that indicates whether or not the process currently has a debugger attached to it. The instruction <code>cmp byte ptr [eax+2], 0</code> performs the check to see if this is actually the case.</p>
+
+<p>Bear in mind that the process crashed <em>without</em> a debugger attached. So at this point it&rsquo;s safe to assume that there are more traps hidden in the code, and this one was just placed here to slow us down. We probably haven&rsquo;t actually found the cause for the initial crash.</p>
+
+<p>We can patch this program a little to stop it from crashing when it <em>does</em> hit this case (later when we are actually debugging) by replacing the <code>mov eax, [eax]</code> instruction with <code>NOP</code> instructions (2 of them to be precise).</p>
+
+<p>Opening up the &ldquo;Hex View&rdquo; allows us to edit the bytes directly.</p>
+
+<p><img src="/uploads/2015/02/blender/07.png" alt="Before patching the NULL dereference" /></p>
+
+<p>These bytes can be changed to <code>0x90</code> (after pressing <code>F2</code> to enter edit mode):</p>
+
+<p><img src="/uploads/2015/02/blender/08.png" alt="After patching the NULL dereference" /></p>
+
+<p>Once modified, pressing <code>F2</code> again leaves edit mode, and the binary now looks patched according to IDA.</p>
+
+<p><img src="/uploads/2015/02/blender/09.png" alt="IDA's view of the patched bytes" /></p>
+
+<p>We need to write this change back to the binary so that when we run it again it doesn&rsquo;t break any more. We go to <code>Edit</code>, <code>Patch Program</code>, <code>Apply patches to input file</code> in the menu, and this presents us with the patch dialog.</p>
+
+<p><img src="/uploads/2015/02/blender/0A.png" alt="Patch dialog" /></p>
+
+<p>The default values that are specified are good enough for our needs, so we can just click OK to have the binary modified. With that done, we know we can expect to see some different behaviour under the context of the debugger, however, we haven&rsquo;t really changed a code path that was referenced when we first accessed the program from outside IDA, which means that it should still crash:</p>
+
+<p><img src="/uploads/2015/02/blender/00.png" alt="Another crash on run" /></p>
+
+<p>As we suspected. Back to IDA we go, and this time we&rsquo;re going to run it under the debugger. I chose the &ldquo;Local Win32 Debugger&rdquo; in the debugger toolbar:</p>
+
+<p><img src="/uploads/2015/02/blender/0C.png" alt="Choosing a debugger" /></p>
+
+<p>I then pressed the green triangle/startup thingy and watched IDA break with an error:</p>
+
+<p><img src="/uploads/2015/02/blender/0D.png" alt="Second crash error message" /></p>
+
+<p>Clearly this a divide by zero error. However, before we go patching the binary again, we need to have a better look at what might be causing the problem to see if there are any clues as to what the program needs to do. This is what IDA looks like at the time of the crash:</p>
+
+<p><img src="/uploads/2015/02/blender/0E.png" alt="Second crash instruction" /></p>
+
+<p>Interesting. The code shows that the value of <code>argc</code> (ie. the number of arguments passed to the function) is pulled into <code>ecx</code>. Later, <code>ecx</code> is then decremented before being used as part of <code>idiv ecx</code>. As we already know, a program that is called with <code>0</code> arguments on the command line still has a single argument given to it: the path/file of the program that is running. Therefore, in this case <code>argc</code> is <code>1</code>, and hence at the point the <code>idiv</code> instruction is called, <code>ecx</code> is <code>0</code>. This is what causes the issue. Instead of patching, we should just be able to pass in a single argument on the command line and watch this problem go away. Let&rsquo;s do that.</p>
+
+<p><img src="/uploads/2015/02/blender/0F.png" alt="Still crashing" /></p>
+
+<p>Damn! Unfortunately we didn&rsquo;t get any useful output, so back to the debugger we go. First, we go back to IDA and open the <code>Process options</code> dialog from the <code>Debugger</code> menu. This allows us to specify the command line parameters. I decided to use the easily recognisable value of <code>ABCD</code>:</p>
+
+<p><img src="/uploads/2015/02/blender/10.png" alt="Process options" /></p>
+
+<p>Launching the process again shows another meaningful error message:</p>
+
+<p><img src="/uploads/2015/02/blender/11.png" alt="Third crash error message" /></p>
+
+<p>Another divide by zero. After closing the error message dialog we can see the line of code that is causing the error.</p>
+
+<p><img src="/uploads/2015/02/blender/12.png" alt="Third crash instruction" /></p>
+
+<p>The code is breaking almost immediately after the previous section that we avoided by adding a command line parameter. It&rsquo;s clear that <code>ecx</code> is being overwritten by something offset from <code>esi</code>. Scrolling back up we can see that <code>esi</code> actually contains a reference to <code>argv</code>:</p>
+
+<p><img src="/uploads/2015/02/blender/13.png" alt="ESI points at argv" /></p>
+
+<p>So if <code>esi</code> points at <code>argv</code> then that&rsquo;s the same as <code>argv[0]</code> (the first argument, which is the name of the program being run). From this, we can infer that <code>esi+4</code> points to the second argument, and <code>esi+8</code> points to the third argument. The instruction <code>mov al, [ecx]</code> is attempting to get access to the first character in the third argument, but if it&rsquo;s not there then things go bad.</p>
+
+<p>What this means is that it&rsquo;s crashing because we aren&rsquo;t giving it enough arguments. We are giving it two (the program name and <code>ABCD</code>) and it&rsquo;s expecting another one because it&rsquo;s trying to read the first character from it. Before we race off and update the process options, it&rsquo;s worth looking at the next instruction that contains <code>mov cl, [ecx+1]</code>. This is moving the <em>second</em> character of the third argument into <code>cl</code>. So we had better make sure that we specify an argument of at least <code>2</code> characters.</p>
+
+<p>We&rsquo;re making progress. Before we move on, let&rsquo;s take another look at the code, this time with some comments added by me:</p>
+
+<pre><code>push    2Ch              ; push 44 onto the stack
+mov     al, [ecx]        ; put the first byte of arg 2 into al
+mov     cl, [ecx+1]      ; put the second byte of arg 2 into cl
+mov     [ebp+var_31], al ; store the first byte in var_31
+movsx   edi, cl          ; mov the second byte into edi (sign extend)
+pop     eax              ; pop 44 into eax
+div     edi              ; divide eax (44) by edi (second byte)
+xor     ecx, ecx         ; clear ecx
+mov     ebx, eax         ; copy the result of the divide into ebx
+mov     [ebp+var_38], al ; copy the result to a member variable.
+</code></pre>
+
+<p>It seems that the value of <code>44</code> has some potential importance here, especially given that it&rsquo;s used in a calculation. The <code>div</code> instruction is an unsigned integer divide, so at this point it might be safe to assume that the thing we&rsquo;re using to divide it with needs to be factor of <code>44</code>. Thankfully this doesn&rsquo;t leave us with many options. They are: <code>1</code>, <code>2</code>, <code>4</code>, <code>11</code>, <code>22</code> and <code>44</code>. With this knowledge we can modify IDA to add a meaningful name to <code>var_31</code> and <code>var_38</code> (I used <code>first_byte</code> and <code>input_divisor</code> respectively).</p>
+
+<p>Looking further down, we see there&rsquo;s then a big loop of &ldquo;stuff&rdquo;.</p>
+
+<p><img src="/uploads/2015/02/blender/14.png" alt="The Blender" /></p>
+
+<p>No, I don&rsquo;t expect you to be able to read that. But on your own screens, I think you should be able to see that there&rsquo;s a lot of character munging going on. This is probably why it&rsquo;s called <em>The Blender</em> (protip: that&rsquo;s exactly why). Characters are swapped around in what seems to be random - but is in fact a very orderly - manner. Read through the code a bit to see if you can get a feel for it. If you don&rsquo;t feel like it, that&rsquo;s fine, you can take my word for it.</p>
+
+<p>Before we continue, one more thing must be taken into consideration. At various points the code makes use of values offset from <code>ebp+var_30</code>. For example:</p>
+
+<p><img src="/uploads/2015/02/blender/15.png" alt="Data?" /></p>
+
+<p>This would indicate that there is a buffer in memory (probably on the stack) being modified as part of this loop. If we return to the top of the function, we&rsquo;ll see some interesting things happening:</p>
+
+<p><img src="/uploads/2015/02/blender/16.png" alt="Data setup" /></p>
+
+<p>The highlighted sections at the bottom show that a bunch of bytes are being written to stack memory starting at <code>var_30</code>. The amount of data that is written is:</p>
+
+<pre><code>movdqu  [ebp+var_30], xmm0        ; 16 bytes
+movdqu  [ebp+var_20], xmm0        ; 16 bytes
+mov     [ebp+var_10], 0D1F5E3FEh  ; 4 bytes
+mov     [ebp+var_C], 0C3DCEEF5h   ; 4 bytes
+mov     [ebp+var_8], 0D7C9C3E3h   ; 4 bytes
+</code></pre>
+
+<p>We have hit the jackpot. The sum of those numbers is <code>44</code>, the same as the value that was used further down in the code. At this point we can make the following statements in relative confidence:</p>
+
+<ol>
+<li>The program prepares a block of data up front in <code>var_30</code>. We can rename this to <code>secret_data</code> given that it looks like it&rsquo;s the source and destination of a bunch of &ldquo;blending&rdquo;.</li>
+<li>The program expects <code>argc</code> to be <code>3</code>.</li>
+<li>The first char in <code>argv[2]</code> is used, but we don&rsquo;t know what for yet.</li>
+<li>The second char in <code>argv[2]</code> is used as a divisor for the size of the block of data that is loaded at the start of the function.</li>
+<li>For the whole block of data to be processed, the divisor must be an factor of <code>44</code>.</li>
+</ol>
+
+<p>From this we should be able to create a set of command line parameters that will cause the function to go off and do something without crashing. To do that, I&rsquo;m going to cheat. Instead of launching it with command line parameters containing non-printable characters, I&rsquo;m going to set a breakpoint in the debugger and overwrite the values in memory before letting the program continue. The following shows where I set my breakpoint (using <code>F2</code>):</p>
+
+<p><img src="/uploads/2015/02/blender/17.png" alt="Breakpoint" /></p>
+
+<p>We have to make sure that we specify two parameters on the command line, so we need to adjust the process options again:</p>
+
+<p><img src="/uploads/2015/02/blender/18.png" alt="Run props" /></p>
+
+<p>Now we kick the debugger off and we get to the breakpoint we set. In the register window the values for <code>AL</code> and <code>CL</code> have been set to <code>0x41</code> and <code>0x42</code> as we expected:</p>
+
+<p><img src="/uploads/2015/02/blender/19.png" alt="AL and CL" /></p>
+
+<p>Using the register editor, we modify the value in <code>CL</code> so that it is one of the divisors of <code>44</code> as we determined earlier. I went with <code>4</code> to start with.</p>
+
+<p><img src="/uploads/2015/02/blender/1A.png" alt="CL set to 0x04" /></p>
+
+<p>I decided to let the program run from this point to see what would happen. The result: Nothing. But <strong>it did not crash</strong>. This is a good sign. We&rsquo;re able to get the program to appear quite stable, despite not getting any output. We&rsquo;ve delayed the inevitable, and it&rsquo;s now time to try to understand what the program is doing in the middle.</p>
+
+<p>The next thing we should do is get an idea of what is going on with that <code>first_byte</code>, if anything at all. Using IDA we can follow the references to this value, and this lands us at the following location:</p>
+
+<p><img src="/uploads/2015/02/blender/1B.png" alt="first_byte getting used" /></p>
+
+<p>The <code>first_byte</code> value is loaded into <code>cl</code>, and then from there it is <code>xor</code> with all <code>0x2C</code> bytes of the data in <code>secret_data</code>! It looks like there might be some rudimentary encoding going on here. This decoding happens after a bunch of other crazy loops so we can assume that more is at play, but for now we do have something to go on.</p>
+
+<p>As part of the CTF rules, we know that flags take the format of <code>KIWICON_CTF{...}</code>. If we assume that some of the characters that come out of the blending code are actually ready to be <code>xor</code>ed with the key, then we might be able to extract the correct key by performing the <code>xor</code> using those known values, such as <code>K</code>.</p>
+
+<p>To do this, we set a breakpoint right at the point where the first <code>xor</code> instruction is, and then run the application as we did before. Again, I set the value of <code>cl</code> to <code>04</code>, but modified <code>al</code> so that it contained <code>4B</code> (hex for <code>K</code>, the first letter in the flag). We let the application run until it hits the breakpoint, and this is what we see:</p>
+
+<p><img src="/uploads/2015/02/blender/1C.png" alt="Break before xor" /></p>
+
+<p>The value in <code>cl</code> is still <code>K</code>, and it&rsquo;s about to be used in the <code>xor</code> operation on the first character in the <code>secret_data</code>. We step over the <code>xor</code> instruction, by pressing <code>F7</code>, and then take a look at the resulting value in memory:</p>
+
+<p><img src="/uploads/2015/02/blender/1D.png" alt="Potential key extracted" /></p>
+
+<p>Running <code>xor</code> with the value <code>K</code> produced a value of <code>0xAA</code> as the key. If that first character was supposed to be <code>K</code> at this point, then it means that <code>0xAA</code> is the value we need to specify to decode the entire flag. We can restart our process with our updated value and see what the result looks like. This time, instead of setting a breakpoint on the <code>xor</code> instruction, we&rsquo;ll set a breakpoint on the call to <code>_fprintf</code> near the end of the function.</p>
+
+<p>After doing the rinse-repeat cycle with <code>al</code> set to <code>0xAA</code> and <code>cl</code> set to <code>0x04</code>, we run and hit our breakpoint:</p>
+
+<p><img src="/uploads/2015/02/blender/1E.png" alt="fprintf breakpoint" /></p>
+
+<p>This image shows that the <code>secret_data</code> buffer pointer is stored in <code>esi</code> (clearly about to be used as a source pointer). The value in <code>ebx</code> is moved to <code>edi</code>, indicating that this is a destination buffer. Given that <code>ebx</code> contains the pointer that was returned from a call to <code>malloc</code> a few lines before an assumption can be made that the code is about to copy the <code>secret_data</code> buffer to a new area of memory allocated with <code>malloc</code>. Let&rsquo;s peek at the content of <code>ebx</code> at this point to see what it contains:</p>
+
+<p><img src="/uploads/2015/02/blender/1F.png" alt="Munged flag" /></p>
+
+<p>This is looking very good! While it&rsquo;s clear that the flag isn&rsquo;t yet correct, it would appear that the <code>xor</code> key has done its job. The value above shows the presence of all the bits of a typical Kiwicon CTF key. However, they&rsquo;re not in the right order.</p>
+
+<p>The first and last values are correct, but it&rsquo;s hard to know what else is. Going back over what we have encountered so far, the only thing that we&rsquo;re not yet sure of is whether we have specified the right value for <code>cl</code>. If <code>cl</code> is the problem, then using the value <code>04</code> clearly is incorrect. We&rsquo;re left with a mini brute-force operation, going through the rest of the potential values for <code>cl</code>, those being <code>1</code>, <code>2</code>, <code>11</code>, <code>22</code> and <code>44</code>. It&rsquo;s probably safe to assume that the really high and really low values aren&rsquo;t going to be what we&rsquo;re looking for. So instead of a straight brute force from lowest to highest, I started with the median: <code>11</code> (<code>0x0B</code> in hex).</p>
+
+<p>Again, we rinse and repeat, using <code>0xAA</code> and <code>0x0B</code> for <code>al</code> and <code>cl</code> respectively. When our breakpoint is hit, we again take a look at <code>ebx</code>, and this time &hellip;</p>
+
+<p><img src="/uploads/2015/02/blender/20.png" alt="Revealed flag" /></p>
+
+<p>That looks very flag-like to me!</p>
+
+<h3 id="show-notes">Show notes</h3>
+
+<p>I did my best to walk through this challenge in the manner I expected people to solve it. Given that I created it, I&rsquo;ve obviously get the advantage of knowing what to look for, but I still hope that this walk-through is considered feasible.</p>
+
+<p>I&rsquo;d like to highlight a few things about the challenge that aren&rsquo;t obvious from experiencing it:</p>
+
+<ul>
+<li>The data buffer is actually a 44-byte transposed matrix that has been XOR&rsquo;d with <code>0xAA</code>.</li>
+<li>An in-place reverse-transposition is what is happening in the middle of the code.</li>
+<li>The value that goes in <code>cl</code> is actually a value that represents the width of the matrix prior to doing the transposition, hence why it has to be a factor of 44.</li>
+<li>The transposition algorithm in action looks like it&rsquo;s &ldquo;blending&rdquo; the data together, hence why it&rsquo;s called <em>The Blender</em>.</li>
+<li>The reason the flag isn&rsquo;t printed out at the end is because the call to <code>_fprintf</code> deliberately passes in <code>stdin</code> instead of <code>stdout</code> for the <code>FILE*</code> parameter. Feel free to attempt to change this as a though experiment so that it does spit out the value into the console.</li>
+</ul>
+
+<p>I hope you enjoyed reading this. I&rsquo;d like to shout out to the <a href="https://kiwicon.org/">Kiwicon</a> folks, and <a href="https://twitter.com/hyprwired">hyprwired</a> in particular for letting me donate my challenge to their fantastic CTF.</p>
+
+<p>If you&rsquo;d like to see the source code to <em>The Blender</em>, please drop me a line.</p>
+
+<p>Until next time!</p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/ctf">CTF</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/security">Security</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

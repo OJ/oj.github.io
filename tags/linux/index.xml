@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on OJ&#39;s Perspective</title>
+    <link>/tags/linux/</link>
+    <description>Recent content in Linux on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Sat, 27 Dec 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Admin is an Idiot</title>
+      <link>/posts/the-admin-is-an-idiot/</link>
+      <pubDate>Sat, 27 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-admin-is-an-idiot/</guid>
+      <description>&lt;p&gt;Yes, and that admin is me!&lt;/p&gt;
+
+&lt;p&gt;I usually do a fairly decent job of keeping the server patched, up to date, and clean. Over the Xmas period where I wasn&amp;rsquo;t really looking at anything online, something went wrong.&lt;/p&gt;
+
+&lt;p&gt;I logged on this morning only to find that the server wasn&amp;rsquo;t responding. I could connect via SSH, but nothing was being served via HTTP. So I tried to reboot &lt;a href=&#34;http://litespeedtech.com/&#34; title=&#34;LiteSpeed technologies&#34;&gt;LiteSpeed&lt;/a&gt; to see if that would resolve it (as you do ;) ). The service stopped, but failed to restart!&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

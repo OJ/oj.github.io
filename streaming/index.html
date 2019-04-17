@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Live Streaming - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/streaming/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li  class="active"  > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Live Streaming </h1>
+	  
+	  
+
+<p>In an effort to help dispel the myth that many security people are able to break things without trying or thinking, I decided to start live-streaming my desktop while doing various security-related things. The aim is to show that:</p>
+
+<ol>
+<li>I am stupid. I don&rsquo;t know what I am doing! It&rsquo;s ok if you don&rsquo;t either!</li>
+<li>Security stuff is tricky, finnicky, and frustrating. It&rsquo;s also awesome fun, when it all finally comes together.</li>
+<li>Attacking binaries, web applications, or infrastructure from an offensive security perspective is an ongoing process of exploration and repeated failure. It doesn&rsquo;t just magically happen.</li>
+<li>We can all learn something from each other, especially when we&rsquo;re failing!</li>
+</ol>
+
+<p>I will also spend some time on development as well, probably with a focus on (but not limited to) Metasploit and Meterpreter.</p>
+
+<p>Hopefully you get a kick out of watching. Thanks for supporting the idea.</p>
+
+<h2 id="links">Links</h2>
+
+<ul>
+<li>Live streams appear on my <a href="https://twitch.tv/ojreeves">Twitch.tv channel</a>.</li>
+<li>All the videos that are streamed are archived on my <a href="https://youtube.com/c/OJReeves">YouTube channel</a> and on my <a href="https://vimeo.com/ojreeves">Vimeo channel</a>. YouTube can be picky with copyright content, and hence archiving in both locations makes sense!</li>
+<li>I&rsquo;m archiving the binaries and exploits in a <a href="https://github.com/OJ/streams">Github repository</a>.</li>
+<li>My partner in crime, <a href="https://twitter.com/justinsteven">JustinSteven</a> also streams on <a href="https://twitch.tv/justinsteven">his Twitch.tv channel</a>, and is well worth watching.</li>
+<li>I use VIM, a lot. The configuration I&rsquo;m using can be <a href="https://github.com/OJ/vim-config-linux">found on Github</a>.</li>
+<li>My GDB is set up to make use of <a href="https://github.com/longld/peda">gdb-peda</a>.</li>
+<li>While reverse engineering, I make use of <a href="https://binary.ninja/">Binary Ninja</a> and <a href="https://www.hex-rays.com/products/ida/">IDA Pro</a>.</li>
+<li>I am a huge fan and frequent user of <a href="https://tmux.github.io/">tmux</a>.</li>
+<li>My window manager is <a href="http://i3wm.org">i3wm</a>.</li>
+<li>I run <a href="https://getfedora.org/">Fedora Core</a> and Windows inside VMWare Workstation when doing streaming, but my host OS is Windows 10 Ultimate.</li>
+</ul>
+
+<h2 id="suggestions">Suggestions</h2>
+
+<p>Do I take suggestions for streams? Absolutely! <a href="/contact/">Hit me up</a> with whatever it is you&rsquo;d like to see, and I will do my best to accommodate you.</p>
+
+<h2 id="rules">Rules</h2>
+
+<p>If you&rsquo;re going to come along and watch the streams while they&rsquo;re being recorded, please note the following rules:</p>
+
+<ul>
+<li>Don&rsquo;t be a dick to people. It won&rsquo;t be tolerated. Multiple moderators are present in the chat during the streams, and you&rsquo;ll be banned without a second chance if you turn nasty, troll, or don&rsquo;t show respect to fellow viewers.</li>
+<li>I have no problem with swearing (I do a bit myself!), but don&rsquo;t direct it at people. Use it in jest or frustration, but keep it sane.</li>
+<li>Please ask questions as we go. It&rsquo;s easier to answer them in context than to do it all at the end. I periodically check the chat to see what questions are coming up, so don&rsquo;t be shy.</li>
+</ul>
+
+<h2 id="music">Music</h2>
+
+<p>In the past I liked to play <a href="https://soundcloud.com/gai-barone">Gai Barone</a> via SoundCloud while streaming as I think it&rsquo;s cool music that fits the vibe. However, thanks to licensing concerns, I&rsquo;ve had to switch. These days I make good use of a <a href="https://www.monstercat.com/gold">Monstercat Gold</a> subscription.</p>
+
+<h2 id="donations">Donations</h2>
+
+<p>If you&rsquo;re interested in supporting my efforts to explore and teach, you can do so via the following:</p>
+
+<ul>
+<li>Subscribe to me on <a href="https://twitch.tv/OJReeves">Twitch</a>.</li>
+<li>Sign up as a <a href="https://www.patreon.com/OJReeves">Patreon</a>.</li>
+<li>Fire off a one off donation via <a href="https://ko-fi.com/ojreeves">Ko-Fi</a>.</li>
+<li>Throw funny money at me via <a href="https://1upcoin.com/donate/ojreeves">1upcoin</a>.</li>
+</ul>
+
+<p>Thanks!</p>
+
+
+	  
+
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

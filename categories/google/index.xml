@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Google on OJ&#39;s Perspective</title>
+    <link>/categories/google/</link>
+    <description>Recent content in Google on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Sat, 31 Oct 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/google/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Future is Erlang</title>
+      <link>/posts/the-future-is-erlang/</link>
+      <pubDate>Sat, 31 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-future-is-erlang/</guid>
+      <description>For quite a while I&amp;rsquo;ve been using my spare cycles to chew over a problem. This problem is not one that hasn&amp;rsquo;t been solved before, but one that I feel can be solved in a much better way. From the bit of research that I&amp;rsquo;ve done, I can see at least three areas which can be improved on dramatically. So I&amp;rsquo;ve decided, after a long period of deliberation, to go ahead and build my solution and release it to the world as a service!</description>
+    </item>
+    
+    <item>
+      <title>An Interesting Little Problem</title>
+      <link>/posts/an-interesting-little-problem/</link>
+      <pubDate>Sat, 14 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/an-interesting-little-problem/</guid>
+      <description>&lt;p&gt;This post was inspired by a recent interview question that was posted over at &lt;a href=&#34;http://www.fsharp.it/posts/google-interview-question-product-of-other-elements-in-an-array-in-on/&#34; title=&#34;Fsharp.it&#34;&gt;fsharp.it&lt;/a&gt;. It&amp;rsquo;s one of those neat little questions which looks really simple on the surface but is quite tricky.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Preview Feeds in Google Reader</title>
+      <link>/posts/preview-feeds-in-google-reader/</link>
+      <pubDate>Sun, 25 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/preview-feeds-in-google-reader/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s another reason why I find &lt;a href=&#34;http://reader.google.com/&#34; title=&#34;Google Reader&#34;&gt;Google Reader&lt;/a&gt; a excellent choice for reading your RSS feeds.&lt;/p&gt;
+
+&lt;p&gt;Most of us have a collection of feeds that contain similar subject matter. As a geek, &lt;em&gt;most&lt;/em&gt; of my feeds are geek-related. As a geek who likes to stay up to speed, I also like to know what other blogs and feeds are good to read.&lt;/p&gt;
+
+&lt;p&gt;This is where Google Reader&amp;rsquo;s &lt;strong&gt;Top Recommendations&lt;/strong&gt; come in. Google do a great job of throwing other feeds in your face that you might like to read based on the kind of stuff that you&amp;rsquo;ve already subscribed to.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A Google App that Sucks</title>
+      <link>/posts/a-google-app-that-sucks/</link>
+      <pubDate>Tue, 25 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/a-google-app-that-sucks/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://labs.google.com/&#34; title=&#34;Google Labs&#34;&gt;Google Labs&lt;/a&gt; has a history of releasing some pretty amazing bits of software. &lt;a href=&#34;http://earth.google.com/&#34; title=&#34;Google Earth&#34;&gt;Google Earth&lt;/a&gt;, &lt;a href=&#34;http://mail.google.com/&#34; title=&#34;Google Mail&#34;&gt;Google Mail&lt;/a&gt;, &lt;a href=&#34;http://reader.google.com/&#34; title=&#34;Google Reader&#34;&gt;Google Reader&lt;/a&gt;, &lt;a href=&#34;http://analytics.google.com/&#34; title=&#34;Google Analytics&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;http://maps.google.com/&#34; title=&#34;Google Maps&#34;&gt;Google Maps&lt;/a&gt; and &lt;a href=&#34;http://docs.google.com/&#34; title=&#34;Google Docs&#34;&gt;Google Docs&lt;/a&gt; are just a few of the graduates! It&amp;rsquo;s an impressive list to say the least. All of those applications do a fantastic job. I&amp;rsquo;m a huge fan of all of them and use them all regularly. So, Google, &lt;a href=&#34;http://en.wikipedia.org/wiki/WTF&#34;&gt;WTF&lt;/a&gt; happened to &lt;a href=&#34;http://talk.google.com/&#34; title=&#34;Google Talk&#34;&gt;Google Talk&lt;/a&gt;?!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Moving to Google Apps</title>
+      <link>/posts/moving-to-google-apps/</link>
+      <pubDate>Sun, 06 May 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/moving-to-google-apps/</guid>
+      <description>As you all know, I recently moved the Blackapache site to a new server. We had some teething issues, as ya do when making the move, but all is now well. One of the things that I hadn&amp;rsquo;t got round to fixing was my SpamAssassin installation.
+I&amp;rsquo;d already gone through the fun times of setting up email (POP3s, IMAP4s) with Qmail, which after a bit of time (and a learning curve) was working fine (with SSL, hence the &amp;rsquo;s&amp;rsquo; at the end of the names ;) ) and all my users were able to send/receive without an issues.</description>
+    </item>
+    
+    <item>
+      <title>The Art of Googling</title>
+      <link>/posts/the-art-of-googling/</link>
+      <pubDate>Sat, 28 Apr 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-art-of-googling/</guid>
+      <description>Everyone who uses the web knows how to use Google to find stuff. Well, at least they think they do. Googling is pretty easy, but it&amp;rsquo;s also a bit of an art form. Some people just seem to have the &amp;lsquo;knack&amp;rsquo; of finding things quickly, others take a fair bit of time.
+So what makes a good Google search? How do you arrange your search string in such a way to allow the best hits to come up first?</description>
+    </item>
+    
+    <item>
+      <title>Google Code Search</title>
+      <link>/posts/google-code-search/</link>
+      <pubDate>Mon, 16 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/google-code-search/</guid>
+      <description>The Search Kings have come up with another rippin&amp;rsquo; tool which allows you to crawl through source code for examples and whatnot. The Google Code Search is quite a cool utility - but it doesn&amp;rsquo;t come without it&amp;rsquo;s issues. I found an interesting link worthy of reading which talks about a few amusing results returned from this facility, which I reckon lots of people should check out and be aware of.</description>
+    </item>
+    
+    <item>
+      <title>GooTube</title>
+      <link>/posts/gootube/</link>
+      <pubDate>Sat, 14 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/gootube/</guid>
+      <description>Yes this is old news to anyone who reads any form of news :) But Google have bought YouTube! How exciting. Personally, I&amp;rsquo;m very happy for those lads who set YouTube up in the first place. The idea was based on the need to share some large homes videos of parties with mates who weren&amp;rsquo;t there, and it&amp;rsquo;s turned into a multi-billion dollar empire. It&amp;rsquo;s good to hear that there are people out there like this still making something big for themselves for having the balls to give it a go.</description>
+    </item>
+    
+    <item>
+      <title>Real-Time Flight Monitoring</title>
+      <link>/posts/real-time-flight-monitoring/</link>
+      <pubDate>Thu, 05 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/real-time-flight-monitoring/</guid>
+      <description>I had a read of Eastabrook&amp;rsquo;s blog recently (see a link in the Blogroll) and noticed that he posted about an interesting link that he found. The link, entitled Flight Tracking in 3D, shows details of a few downloads that you can grab for Google Earth which actually show the current locations of flights that are currently in progress all over the world!!!
+Unbelievable. Pretty amazing technology, and at the same time quite scary.</description>
+    </item>
+    
+  </channel>
+</rss>

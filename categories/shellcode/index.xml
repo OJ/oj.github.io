@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shellcode on OJ&#39;s Perspective</title>
+    <link>/categories/shellcode/</link>
+    <description>Recent content in Shellcode on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Fri, 21 Mar 2014 22:31:39 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/shellcode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Jumping with Bad Chars</title>
+      <link>/posts/jumping-with-bad-chars/</link>
+      <pubDate>Fri, 21 Mar 2014 22:31:39 +0000</pubDate>
+      
+      <guid>/posts/jumping-with-bad-chars/</guid>
+      <description>&lt;p&gt;During the course of exploit development it is not uncommon to require jumps in your shellcode. The most common case for these jumps is when doing &lt;a href=&#34;https://www.corelan.be/index.php/2009/07/25/writing-buffer-overflow-exploits-a-quick-and-basic-tutorial-part-3-seh/&#34;&gt;SEH overwrites&lt;/a&gt;, due to their nature. There are times when the author of the exploit has a hard time performing these jumps due to the fact that only a subset of characters are deemed valid for use by the target application in that particular input field.&lt;/p&gt;
+
+&lt;p&gt;In this post I want to briefly cover a few options for performing those jumps in such a scenario.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

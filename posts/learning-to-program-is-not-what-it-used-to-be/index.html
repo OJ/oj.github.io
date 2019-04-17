@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Learning to Program is not what it used to be - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/learning-to-program-is-not-what-it-used-to-be/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Learning to Program is not what it used to be </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Wed May 9, 2007</span>
+
+	  <p>One of the most common questions asked by would-be coders is &ldquo;<em>which language should I learn first?</em>&rdquo;. The answer isn&rsquo;t really straight forward. I think it varies depending on age, aptitude, how well you know computers, your passion and what you want to do with what you learn.</p>
+
+<p>On hearing this question recently, I decided to avoid my usual response and actually put a bit of thought into how <em>I</em> learned to code, to see if the method is still feasible, then resopnd accordingly. I set about reading a few blogs, doing a few searches for bits and pieces that I used to play with, and playing with how easy it is to get a simple language/compiler fired up on the &ldquo;latest &lsquo;n&rsquo; greatest&rdquo; PCs that we have available today. I was surprised to find that things really have changed. A <em>lot</em>.</p>
+
+<p>The first time I ever dabbled in any form of coding (and in this case I&rsquo;m using the word &ldquo;coding&rdquo; in its broadest possible sense) was when I <a href="http://en.wikipedia.org/wiki/PEEK_and_POKE" title="Peek and Poke">peeked and poked</a> on the second computer I ever owned - a <a href="http://en.wikipedia.org/wiki/Commodore_64" title="Commodore 64">Commodore 64</a>. This was in the very early days for me, and I have to admit I didn&rsquo;t really understand everything that was going on (arguably, I still don&rsquo;t :D ), but it really gave me a taste of how things were, and what was required to make all those funky games that I used to play as a kid.</p>
+
+<p>My lack of understanding was my motivation at this point. How did those guys manage to make such rich worlds and exciting games for these computers using such obscure codes and commands? A curiosity got hold of me, and I set about to learn how it was done. A few years flew by before I really started to grasp what was going on, this was partly because I wasn&rsquo;t able to get my hands on a new machine until the early 90s. A few friends here and there had computers at home (usually an <a href="http://en.wikipedia.org/wiki/Amstrad" title="Amstrad">Amstrad</a>) and at primary school we&rsquo;d have time here and there for dabbling on the computers, but in general I failed to achieve anything substantial.</p>
+
+<p>Well, perhaps I&rsquo;m being too hard on myself. I guess I <em>felt</em> that what I was doing was fairly insignificant despite it being a bit more than what the other kids were doing, and it was a real point of frustration for me. I wanted to make the hard stuff like the big boys did, but with the tools and the time that I had, I never really managed to get anywhere near where I wanted to go.</p>
+
+<p>Then things changed dramatically. In late 1990, my family and I moved from the sleepy town of Hayle in Cornwall, England to what was then a nice coastal town called Nowra on the South Coast of NSW, Australia. The move was fairly drastic, and to help with the transition, my parents bought me a new computer - an Intel-based <a href="http://en.wikipedia.org/wiki/Intel_80286" title="80286">80286</a> IBM compatible! It came with <a href="http://en.wikipedia.org/wiki/MS-DOS" title="MS-DOS">MS-DOS</a> (I think it was version 5.0) installed and a small selection of software (some games and a few little apps for admin stuff such as writing documents and dealing with spreadsheets).</p>
+
+<p>As excited as I was about my new toy, I was partly torn between it and the new wonderful world that could be experienced outside. Australia really is an amazing place to be, especially when you&rsquo;ve originally grown up in England, and the outside life really was fun&hellip; but I digress&hellip;</p>
+
+<p>I utilised the hours of darkness to feed my need to learn how this magic box actually worked. After spending a fair bit of time mastering the basics (you wouldn&rsquo;t believe how many times I managed to completely smash my <a href="http://en.wikipedia.org/wiki/AUTOEXEC.BAT" title="autoexec.bat">autoexec.bat</a> and/or <a href="http://en.wikipedia.org/wiki/CONFIG.SYS" title="config.sys">config.sys</a> files while trying new and wonderful ways to boot multiple configurations while minimising the amount of conventional memory being used), I somehow stumbled across a program that I didn&rsquo;t know existed, but later found out that it (or a variation of it) had existed for a very long time.</p>
+
+<p>This program was single-handedly responsible for <em>many</em> late nights and lots of abuse from my family to &ldquo;get off that bloody computer&rdquo;. I quickly developed a <a href="http://en.wikipedia.org/wiki/QBasic" title="QBasic">QBasic</a> addiction.</p>
+
+<p>This is where it all started to make sense. I spent hours and hours learning the fundamentals of the language. My parents bought me the official <a href="http://www.alibris.com/search/search.cfm?qwork=7106212&matches=10&qsort=r" title="MS-DOS QBasic Programmers Reference">MS-DOS QBasic Programmers Reference</a> so that I didn&rsquo;t have to constantly switch to the help file to figure out what I should be doing! I ripped apart the source code or <a href="http://telcontar.net/Misc/Gorillas/Gorillas.bas" title="Gorrilas.bas">Gorrilas.bas</a> and <a href="http://www.shiar.org/product/nibbles.bas" title="nibbles.bas">Nibbles.bas</a> to see how the masters used the language, and over a fairly short time I managed to crank out quite a few cool applications and games.</p>
+
+<p>It&rsquo;s now many years since I last played with QBasic, but I have to say that if it wasn&rsquo;t for this language, and the fact that it came for free with the computer, I <em>possibly</em> wouldn&rsquo;t have got into software as a profession or perhaps even gained the level of experience that I have gained.</p>
+
+<p>And finally we arrive at the key point! Back on those days, even though we didn&rsquo;t have ready access to the web, we still had something like QBasic that shipped with the computer that could be used by those of us who wanted to learn. We had the means to learn to write code in a relatively complex yet simple language without really having to search far and wide for it. It was there, it was easy enough to pick up, and we even had a mini development environment there ready to be used to aid in our development. We didn&rsquo;t have a plethora of opinions being thrown at us through forums and blogs telling us that C, C++, Lisp, Prolog, Miranda, Eiffel or Pascal are the languages to learn if you want to do something serious (I admit, I&rsquo;ve been a culprit for this when I haven&rsquo;t really thought much about the person who is looking to learn).</p>
+
+<p>It seems that anyone who has an interest in the black arts of coding is now told to go and learn a high-level language with proper object-orientation with all the bells and whistles so that you don&rsquo;t learn any bad habits. This recommendation <em>might</em> be a good option, but again this depends on the person.</p>
+
+<p>In my exploration of this topic, I&rsquo;ve come to the conclusion that there is no such thing as the &lsquo;ideal&rsquo; language for everyone to learn first. But I do think that there are one or two that are stand-out contenders to get people off the ground.</p>
+
+<p>I&rsquo;ve decided to put together a small list of languages matched up with different types of people at different levels of ability, different ages and different goals. This list contains my view on which languages fit with those people, and why. I might be wrong, but hey, it&rsquo;s my opinion that I&rsquo;m expressing, so feel free to express yours too using the comment form. It&rsquo;s not exhaustive, and isn&rsquo;t designed to cover every language on the planet. I hope that this helps some of the budding developers choose a target language and make the most of the time that they spend learning.</p>
+
+<p><strong><u>QBasic</u></strong>
+<em>Download Link</em>: <a href="http://www.qbasic.com/">http://www.qbasic.com/</a>
+<em>Remarks</em>: This is an excellent language to learn for almost anyone. It&rsquo;s procedural which negates the need to have an understanding of object orientation, and is a language which gives results quickly. One thing that&rsquo;s very disheartening for budding coders is when they feel they put in a lot of work without seeing a result. QBasic is easy enough to get results quickly, hence keeping up the motivation of the learner, but it still powerful enough to do some fun stuff with. One thing that I love about QBasic is that it has a mini development environment and debugger built in - which is something you don&rsquo;t see in many languages!</p>
+
+<p><strong><u>C</u></strong>
+<em>Download Link</em>: <a href="http://www.thefreecountry.com/compilers/cpp.shtml">http://www.thefreecountry.com/compilers/cpp.shtml</a>
+<em>Remarks</em>: A very powerful procedural language which has been around for a very long time. The knowledge base for this language is immense, and hence there&rsquo;s a stack of material to learn from. It can be quite difficult to grasp some of the concepts when using C, and the learner is forced to dabble with some things which may be confusing even from the word go (eg. passing the address of integer variables to <a href="http://www.cplusplus.com/reference/clibrary/cstdio/scanf.html" title="scanf">scanf</a>). It&rsquo;s a great language, and definitely worth learning, but would be more suited to those people who have a decent grasp of programming concepts. If you have experience with another language, such as QBasic, then C would be a good next step. If you decide to take on C as a first language, expect to do a fair bit of work before you start to see the results. Setting an environment up for development can be a pain depending on the compiler and platform you&rsquo;re using.</p>
+
+<p><strong><u>C++</u></strong>
+<em>Download Link</em>: <a href="http://www.thefreecountry.com/compilers/cpp.shtml">http://www.thefreecountry.com/compilers/cpp.shtml</a>
+<em>Remarks</em>: C++ was born from the lessons learned from C. It&rsquo;s an object-oriented language that still lets you write procedural code (not a good thing IMHO), but that&rsquo;s mainly due to the need for backwards compatilibity with C. C++ can be easy to learn for those with an idea of object orientation, or who have a good working knowledge of C. If you&rsquo;re a first-timer then I wouldn&rsquo;t necessarily consider using this language unless you have a strong grounding in maths and logic, or if you have a mentor to help you learn. Generally people who want to learn C++ intend to use it for more than just home projects, and hence it&rsquo;s a good idea to have some form of tuition - mainly to help stomp out bad habits and to make sure you don&rsquo;t write a stack of tightly-coupled and unmanagable procedural C-style code :) Take this on as a second or third language unless you&rsquo;re feeling adventurous. Like C, this can be a pain to get working with, and generally isn&rsquo;t as simple as &ldquo;type and run&rdquo;. If you&rsquo;re looking to get going with a language quickly, again, go with QBasic. If you want to be a game developer, right now you&rsquo;d be stupid not to learn C++ - it&rsquo;s almost an industry &ldquo;standard&rdquo;.</p>
+
+<p><strong><u>PHP</u></strong>
+<em>Download Link</em>: <a href="http://www.php.net/">http://www.php.net/</a>
+<em>Remarks</em>: A cross-platform dynamic/scripting language. This language is a mix of procedural and object-oriented languages, and seems to be a mixture of a stack of other languages all in one (there are elements of C, C++, and even scripting thrown into it). It&rsquo;s generally used for web-based applications, though it&rsquo;s not the only thing it can be used for. I would recommend learning this as a first language in a web environment, but if you&rsquo;re new to programming, stick with something that can run locally. Setting up PHP can be a pain regardless of the platform, and because it requires a webserver to be running as well as the interpreter there are more possible points of failure. Debugging can be a difficult and therefore a deterrant for people who get frustrated easily. This language is valuable, but take this on when you&rsquo;ve got a good idea about programming in general and have an understanding of issues that are faced by applications in a web environment.</p>
+
+<p><strong><u>Ruby</u></strong>
+<em>Download Link</em>: <a href="http://www.ruby-lang.org/">http://www.ruby-lang.org/</a>
+<em>Remarks</em>: Another cross-platform dynamic/scripting language. Still in it&rsquo;s infancy, yet already very stable with a large user base. Fairly intuitive, but that might be just for those people with a programming background. Worth a look for anyone looking to find a good scripting language for menial tasks and for things such as build processes. Coupled with Rails (<a href="http://www.rubyonrails.org/">http://www.rubyonrails.org/</a>) it becomes a powerful rapid applicaiton development framework for web-based applications. I wouldn&rsquo;t recommend it as a starting language, primarily because of the toolset that has to be used.</p>
+
+<p><strong><u>Visual Basic</u></strong>
+<em>Download Link</em>: <a href="http://msdn.microsoft.com/vstudio/express/vb/">http://msdn.microsoft.com/vstudio/express/vb/</a>
+<em>Remarks</em>: Worst language ever :) But I guess every language has its place. This is good for rapid prototyping, and is a good way for QBasic developers to get an idea of how to build Windows GUI applications. It&rsquo;s not something I would recommend to anyone who is looking to get themselves into serious coding, as the language has so many flaws it makes doing things &ldquo;properly&rdquo; particularly difficult.
+<em>Disclaimer</em>: I realise that the language has changed a bit since the early days, but I still think that learning something like C# would be a better option for Windows applications. I personally feel that VB no longer has a place. Again, that&rsquo;s just me :)</p>
+
+<p><strong><u>C#</u></strong>
+<em>Download Link</em>: <a href="http://msdn.microsoft.com/vstudio/express/visualcsharp/">http://msdn.microsoft.com/vstudio/express/visualcsharp/</a>
+<em>Remarks</em>: A better alternative to VB, and quite nice to use. Good for both web and windows applications, but again requires some background knowledge (particularly for web apps). It&rsquo;s fully object-oriented and very well designed. Take this language on if you&rsquo;re looking to move into a professional position building enterprise applications. It could be a good option as a first language, but I think there are easier options. Most people with a background in C, C++ or Java will find this language very easy to pick up. The development environment is nice, but not necessarily intuitive to new developers, so a few tutorials would need to be read to learn how to move around the IDE before any serious development work could be undertaken.</p>
+
+<p><strong><u>Java</u></strong>
+<em>Download Link</em>: <a href="http://java.sun.com/">http://java.sun.com/</a>
+<em>Remarks</em>: Depending on who you speak to, this is the language that Microsoft ripped off when creating C# ;) I&rsquo;m not sure if I agree or not. Either way, it&rsquo;s a cross-platform language that can be used for web and GUI applications. The virtual machine runs on different platforms so you have the added benefit of having your app run on different platforms without the need to write extra code. It&rsquo;s object-oriented, and has a very rich framework of tools and libraries. It&rsquo;s quite intuitive, and has a large user base with a great deal of knowledge. The guys in the Java world, at least until now, have generally been leading the way in areas such as unit testing, mocking and other agile principles, and hence the community is fairly active. Finding information, tutorials and people to help you would be easy with this language, but be prepared for a little bit of a learning curve to get going. A good first language, but possibly not the best. Definitely worth learning if you want to build web applications, or even mobile phone games!</p>
+
+<p>As a final note, I&rsquo;d like to point out that I left functional languages (such as Miranda and Haskell) out because I think they&rsquo;re too confusing for new developers :) That doesn&rsquo;t mean I don&rsquo;t think they&rsquo;re valuable.</p>
+
+<p>Please let me know your view, and feel free to give us a run down on how you started writing code.</p>
+
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/software-development">Software Development</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

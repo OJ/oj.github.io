@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Continued Meterpreter Development - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/continued-meterpreter-development/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Continued Meterpreter Development </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Thu May 5, 2016</span>
+
+	  <p>Active users of Metasploit will no doubt be aware that Meterpreter is still being actively developed and enhanced by a bunch of people. I&rsquo;m lucky enough to still be one of them! In this post I just want to cover a few things that have been done to it recently, and to give a bit of visbility of how I am able to continue contributing in the way that I do.</p>
+
+<h2 id="credit-where-it-is-due">Credit where it is due</h2>
+
+<p>I love Meterpreter. It&rsquo;s an amazing bit of kit, and I really do love working on it. The people who built the early versions were clearly visionaries whose shoulders we all get to stand on.</p>
+
+<p>I actively contribute to Meterpreter using my own personal time because I think its continued improvement is important, and I like to help it evolve. One such contribution is the recent <a href="/posts/tlv-traffic-obfuscation/">TLV Traffic Obfuscation</a> feature which helps to make AV and IDS suffer a little while trying to detect the communications that passes better MSF and Meterpreter.</p>
+
+<p>However, the bulk of the big features that have been built, and continue to be built, are not done on my own time. It&rsquo;s hard to justify weeks of effort while running a <a href="https://beyondbinary.io/">security business</a>.</p>
+
+<p>It&rsquo;s important for you all to know that <a href="https://www.rapid7.com/">Rapid7</a> are the ones footing the bill for these major features. They pay me for my time, and they support me through the process of development. Without them, the speed at which these things get delivered would be hindered, and the tool that you all make use of would not move forward at the rate that it does.</p>
+
+<p>Many users of Metasploit believe that everything I&rsquo;m doing for Meterpreter is done out of my own pocket, and I want to be 100% clear that while I do <em>some</em> work of my own volition, the bulk of it is all thanks to Rapid7 and the Metasploit team. So please give them a squeeze and a beverage next time you see them if you think this work is valuable to you.</p>
+
+<p>It&rsquo;s also important to point out that I am making this statement because I want you to know, and not because Rapid7 want you to know. I am not under duress or instruction here. This is all about giving credit where it&rsquo;s due.</p>
+
+<p>To the folks at Rapid7, especially those in the Metasploit team, I love you all and thank you for your continued support.</p>
+
+<h2 id="the-powershell-extension">The Powershell Extension</h2>
+
+<p>A recent bombshell was dropped in the form of a new extension that allows for direct interaction with a hot-loaded Powershell interpreter. Prior to this extension existing, we were stuck with invoking <code>powershell.exe</code> on the command line and passing in scripts. We weren&rsquo;t in a position to interact with it like we were with <code>cmd.exe</code> (for example). This was painful, and with so much &hellip; er.. power.. being provided by Powershell, we were finding that more and more people wanted to use it without having to juggle results via <code>cmd.exe</code>. There were other issues too:</p>
+
+<ul>
+<li>Single-shot <code>powershell.exe</code> invocations didn&rsquo;t give us the ability to have persistent sessions.</li>
+<li>It wasn&rsquo;t always clear which <code>powershell.exe</code> was being invoked.</li>
+<li>It was hard to do anything complex.</li>
+</ul>
+
+<p>The Powershell extension was designed to solve this, and is based on a similar idea that the likes of <a href="http://www.powershellempire.com/">Empire</a> use, though it&rsquo;s different in some ways. The foundation is built on the work that <a href="https://twitter.com/tifkin_">Lee</a> put into <a href="https://github.com/leechristensen/UnmanagedPowerShell">Unmanaged Powershell</a>, and so he deserves a huge deal of credit, lots of cuddles, and a noogie or two.</p>
+
+<p><img src="/uploads/2016/05/ace-ventura-noogie.jpg" alt="NOOOOOGIIIIIEEEE!!" /></p>
+
+<p>At this point I&rsquo;d like to defer to <a href="https://twitter.com/Carlos_Perez">DarkOperator</a> who has already put together a <a href="http://www.darkoperator.com/blog/2016/4/2/meterpreter-new-windows-powershell-extension">very good post</a> that covers the extension in quite a bit of detail. Thank you Carlos, you saved me quite a bit of time! I recommend going over there and reading it in full.</p>
+
+<h2 id="reverse-port-forwards">Reverse Port Forwards</h2>
+
+<p>One of the most frequenly requested features for Meterpreter over the last few years has been &ldquo;reverse port forwards&rdquo;. While we&rsquo;ve had the ability to pivot through a Meterpreter session in a forward direction for quite some time, it wasn&rsquo;t possible to go in the other direction.</p>
+
+<p>Having the ability to tunnel a listener &ldquo;into&rdquo; a network and have connections pivot out to a local port has quite a lot of value in assessment scenarios. To get around the lack of support in Meterpreter, most people use the likes of <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">plink</a> or a similar tool. The problem with this is that it often requires dropping binaries on the target&rsquo;s disk, which isn&rsquo;t ideal.</p>
+
+<p>As of yesterday, the <a href="https://github.com/rapid7/metasploit-framework/pull/6753">reverse port forward</a> functionality is now present in Metasploit. It is possible to use the <code>portfwd</code> command with the <code>-R</code> option to create a reverse port forward. When invoked, Meterpreter opens up a port and listens for connections. When a connection is received, a new channel is created and data is shuffled back and forth through that channel in the same way it does for typical port forwards.</p>
+
+<p>Please go and have a play with it, and if you have any issues, hit me up or open a Github issue.</p>
+
+<h2 id="pivots-via-named-pipes">Pivots via Named Pipes</h2>
+
+<p>Reverse port forwards give us the ability to pivot sessions out of a network from machines that don&rsquo;t have direct internet connectivity. They also reduce noise on the wire a bit by not having extra connections heading to the untrusted Tubes.</p>
+
+<p>The only thing better than this is having the ability to pivot without having to go through obscure ports and custom listeners. Opening a port can also be noisy, and so ideally we would use something else that doesn&rsquo;t require it. This is where <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa365590(v=vs.85).aspx">Named Pipes</a> come in, which operate over <a href="https://en.wikipedia.org/wiki/Server_Message_Block">SMB</a> and hence blend in a bit more with existing Windowsy traffic.</p>
+
+<p>This functionality is currently in development; I hope to have a Pull Request submitted very soon. The goal is to have:</p>
+
+<ul>
+<li>A new transport type called <code>reverse_named_pipe</code> that makes use of the Named Pipe functionality that&rsquo;s native to Windows.</li>
+<li>Full support in Stageless Meterpreter.</li>
+<li>Two new stagers, x86 and x64, that stage Meterpreter over Named Pipes.</li>
+</ul>
+
+<p>I would also like to be able to migrate while the Named Pipe transport is active, but I&rsquo;m still not sure if that will happen yet. There&rsquo;s more research to do here.</p>
+
+<p>It&rsquo;s worth noting that Metasploit itself doesn&rsquo;t have the ability to &ldquo;be a SMB-compaitible Named Pipe server&rdquo; (at least not yet), and so it&rsquo;s not possible to talk directly to MSF over Named Pipes across port 445. To make use of this feature, an existing Meterpreter session must be present. The new Named Pipe handler forces the user to specify a <code>SESSION</code> when the handler is created, as this is where the listener will be created. When the listener is created, the session is set up with ACLs configured to allow <code>EVERYONE</code> to connect, which ties the implementation to Windows domains only. This is a short-term limitation, however it does allow non-admins to create the Named Pipe. To create NULL sessions, the user would have to be admin with full privileges, as it requires other hacks (such as poking registry keys) in order to work. This will come down the track, but for now we&rsquo;ll be starting with something simpler.</p>
+
+<p>While the general use of Named Pipes is rather simple, there are all kinds of use cases in Meterpreter where using Named Pipes as a transport cause heartache. One example is handling cases where pivot points fail, or when <code>sessions -K</code> is executed (killing the pivot means we can&rsquo;t kill the client, as the comms channel is gone!). When the work is finished, I intend to document these nuances on the <a href="https://github.com/rapid7/metasploit-framework/wiki">Wiki</a> so that it&rsquo;s clear to all why things are the way they are.</p>
+
+<p>Yes, I know other tools &ldquo;do this already&rdquo;. Tell me something I don&rsquo;t know.</p>
+
+<h2 id="that-ll-do-pig-that-ll-do">That&rsquo;ll do pig. That&rsquo;ll do.</h2>
+
+<p>That&rsquo;s all for now. Be sure to keep tabs on both the <a href="https://github.com/rapid7/metasploit-framework">Metasploit Repository</a> and the <a href="https://github.com/rapid7/metasploit-payloads">Payloads Repository</a> if you&rsquo;re keen to see things as they happen. Otherwise, wait for more blogs here or over on the <a href="https://community.rapid7.com/welcome">Rapid7 community</a> site.</p>
+
+<p>Thanks for reading.</p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/metasploit">Metasploit</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/meterpreter">Meterpreter</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/security">Security</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

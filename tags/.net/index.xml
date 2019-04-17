@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>.net on OJ&#39;s Perspective</title>
+    <link>/tags/.net/</link>
+    <description>Recent content in .net on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Mon, 13 Apr 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>I Don&#39;t Need Your Frickin&#39; Framework!</title>
+      <link>/posts/i-dont-need-your-frickin-framework/</link>
+      <pubDate>Mon, 13 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/i-dont-need-your-frickin-framework/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2009/04/scaffold_fail.jpg&#34; title=&#34;Scaffold Fail&#34;&gt;&lt;img src=&#34;/uploads/2009/04/scaffold_fail.jpg&#34; alt=&#34;Scaffold Fail&#34; title=&#34;Scaffold Fail&#34; width=&#34;200&#34; style=&#34;float: right; margin-left: 5px; margin-bottom: 5px;&#34; /&gt;&lt;/a&gt;How many companies have you worked with/for that have their own framework? How many have been in the process of developing their own framework? How many have been in the process of &lt;strong&gt;re&lt;/strong&gt;developing their own framework? How many have taken another framework and &lt;del&gt;hacked&lt;/del&gt; improved it?&lt;/p&gt;
+
+&lt;p&gt;When I attempt to answer the questions listed above, I start to shiver. I feel the need to burn my clothes and take a very long shower.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A Quirk in List.Find()</title>
+      <link>/posts/a-quirk-in-list.find/</link>
+      <pubDate>Wed, 25 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/a-quirk-in-list.find/</guid>
+      <description>&lt;p&gt;Earlier today I was having a chat with a &lt;a href=&#34;http://doomkeeper.com/&#34; title=&#34;Jimmy&#39;s Blog&#34;&gt;friend of mine&lt;/a&gt;, who lives in Vancouver, about finding items that are stored in &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/6sh2ey19.aspx&#34; title=&#34;List(T)&#34;&gt;generic Lists&lt;/a&gt;. He flicked me a code snippet that looked something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;List&amp;lt;foo&amp;gt; list = new List&amp;lt;foo&amp;gt;();
+// .. do some stuff
+Foo f = list.Find(delegate(Foo f) { return foo.Name == &amp;quot;Bar&amp;quot;; });
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Straight away I fired back with an update to the code which used &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/bb397687.aspx&#34; title=&#34;Lambda Expressions (C# Programming Guide)&#34;&gt;lambda expressions&lt;/a&gt; instead, as I&amp;rsquo;m a fan of how concise they are ;)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>.NET-fu: Signing an Unsigned Assembly (without Delay Signing)</title>
+      <link>/posts/.net-fu-signing-an-unsigned-assembly-without-delay-signing/</link>
+      <pubDate>Wed, 09 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/.net-fu-signing-an-unsigned-assembly-without-delay-signing/</guid>
+      <description>&lt;p&gt;This article is also available in &lt;a href=&#34;http://www.otherbit.com/modules/blog/BlogContent.aspx?ID=174&#34; title=&#34;.NET-FU : come trasformare in SIGNED un assembly UNSIGNED (senza ricorrere al DELAY SIGNING)&#34;&gt;Italian&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The code-base that I am currently working with consists of a large set of binaries that are all &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/xc31ft41.aspx&#34; title=&#34;Sign an Assembly with a Strong Name&#34;&gt;signed&lt;/a&gt;. The savvy .NET devs out there will know that any assembly that&amp;rsquo;s used/referenced by a signed assembly must &lt;em&gt;also&lt;/em&gt; be signed.&lt;/p&gt;
+
+&lt;p&gt;This is an issue when dealing with third-party libraries that are not signed. Sometimes you&amp;rsquo;ll be lucky enough to be dealing with vendor that is happy to provide a set of signed assemblies, other times you won&amp;rsquo;t. If your scenario fits the latter (as a recent one did for my colleagues and I), you need to sign the assemblies yourself. Here&amp;rsquo;s how.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

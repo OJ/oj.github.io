@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming on OJ&#39;s Perspective</title>
+    <link>/tags/programming/</link>
+    <description>Recent content in programming on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Mon, 13 Apr 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>I Don&#39;t Need Your Frickin&#39; Framework!</title>
+      <link>/posts/i-dont-need-your-frickin-framework/</link>
+      <pubDate>Mon, 13 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/i-dont-need-your-frickin-framework/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2009/04/scaffold_fail.jpg&#34; title=&#34;Scaffold Fail&#34;&gt;&lt;img src=&#34;/uploads/2009/04/scaffold_fail.jpg&#34; alt=&#34;Scaffold Fail&#34; title=&#34;Scaffold Fail&#34; width=&#34;200&#34; style=&#34;float: right; margin-left: 5px; margin-bottom: 5px;&#34; /&gt;&lt;/a&gt;How many companies have you worked with/for that have their own framework? How many have been in the process of developing their own framework? How many have been in the process of &lt;strong&gt;re&lt;/strong&gt;developing their own framework? How many have taken another framework and &lt;del&gt;hacked&lt;/del&gt; improved it?&lt;/p&gt;
+
+&lt;p&gt;When I attempt to answer the questions listed above, I start to shiver. I feel the need to burn my clothes and take a very long shower.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Euler #10</title>
+      <link>/posts/project-euler-#10/</link>
+      <pubDate>Wed, 30 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/project-euler-#10/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING!&lt;/strong&gt; This post contains a spoiler for Problem #10 listed at &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;. Do not read the rest of this post if you&amp;rsquo;re planning to attempt to solve the problem yourself.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Euler #9</title>
+      <link>/posts/project-euler-#9/</link>
+      <pubDate>Fri, 25 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/project-euler-#9/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING!&lt;/strong&gt; This post contains a spoiler for Problem #9 listed at &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;. Do not read the rest of this post if you&amp;rsquo;re planning to attempt to solve the problem yourself.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Euler #8</title>
+      <link>/posts/project-euler-#8/</link>
+      <pubDate>Thu, 24 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/project-euler-#8/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING!&lt;/strong&gt; This post contains a spoiler for Problem #8 listed at &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;. Do not read the rest of this post if you&amp;rsquo;re planning to attempt to solve the problem yourself.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Euler #7</title>
+      <link>/posts/project-euler-#7/</link>
+      <pubDate>Sun, 15 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/project-euler-#7/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING!&lt;/strong&gt; This post contains a spoiler for Problem #7 listed at &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;. Do not read the rest of this post if you&amp;rsquo;re planning to attempt to solve the problem yourself.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>An Interesting Little Problem</title>
+      <link>/posts/an-interesting-little-problem/</link>
+      <pubDate>Sat, 14 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/an-interesting-little-problem/</guid>
+      <description>&lt;p&gt;This post was inspired by a recent interview question that was posted over at &lt;a href=&#34;http://www.fsharp.it/posts/google-interview-question-product-of-other-elements-in-an-array-in-on/&#34; title=&#34;Fsharp.it&#34;&gt;fsharp.it&lt;/a&gt;. It&amp;rsquo;s one of those neat little questions which looks really simple on the surface but is quite tricky.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Euler #6</title>
+      <link>/posts/project-euler-#6/</link>
+      <pubDate>Fri, 28 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/project-euler-#6/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING!&lt;/strong&gt; This post contains a spoiler for Problem #6 listed at &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;. Do not read the rest of this post if you&amp;rsquo;re planning to attempt to solve the problem yourself.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Euler #5</title>
+      <link>/posts/project-euler-#5/</link>
+      <pubDate>Sun, 23 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/project-euler-#5/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING!&lt;/strong&gt; This post contains a spoiler for Problem #5 listed at &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;. Do not read the rest of this post if you&amp;rsquo;re planning to attempt to solve the problem yourself.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Euler #4 - Reprise</title>
+      <link>/posts/project-euler-#4-reprise/</link>
+      <pubDate>Sat, 22 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/project-euler-#4-reprise/</guid>
+      <description>&lt;p&gt;After publishing the performance stats of my &lt;a href=&#34;/posts/project-euler-4/&#34; title=&#34;Project Euler #4&#34;&gt;previous solution to Project Euler #4&lt;/a&gt;, I got thinking about how I might improve things. I didn&amp;rsquo;t want to be overly anal with regards to things such as memory allocations, because it&amp;rsquo;s easy to get stuck in the perpetual loop of attempted optimisations. Instead I wanted to think of a method that wasn&amp;rsquo;t as brute force as the previous one. If you&amp;rsquo;re interested to see what I did, read on (&lt;strong&gt;Note:&lt;/strong&gt; This is a spoiler for the problem, just like the last post was).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Euler #4</title>
+      <link>/posts/project-euler-#4/</link>
+      <pubDate>Fri, 21 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/project-euler-#4/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING!&lt;/strong&gt; This post contains a spoiler for Problem #4 listed at &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;. Do not read the rest of this post if you&amp;rsquo;re planning to attempt to solve the problem yourself.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Euler #3</title>
+      <link>/posts/project-euler-#3/</link>
+      <pubDate>Wed, 19 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/project-euler-#3/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING!&lt;/strong&gt; This post contains a spoiler for Problem #3 listed at &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;. Do not read the rest of this post if you&amp;rsquo;re planning to attempt to solve the problem yourself.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Euler #2</title>
+      <link>/posts/project-euler-#2/</link>
+      <pubDate>Tue, 18 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/project-euler-#2/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING!&lt;/strong&gt; This post contains a spoiler for Problem #2 listed at &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;. Do not read the rest of this post if you&amp;rsquo;re planning to attempt to solve the problem yourself.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Euler #1</title>
+      <link>/posts/project-euler-#1/</link>
+      <pubDate>Mon, 17 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/project-euler-#1/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING!&lt;/strong&gt; This post contains a spoiler for Problem #1 listed at &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;. Do not read the rest of this post if you&amp;rsquo;re planning to attempt to solve the problem yourself.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

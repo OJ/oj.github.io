@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Freeware on OJ&#39;s Perspective</title>
+    <link>/categories/freeware/</link>
+    <description>Recent content in Freeware on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Sat, 31 May 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/freeware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Be Part of a World Record</title>
+      <link>/posts/be-part-of-a-world-record/</link>
+      <pubDate>Sat, 31 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/be-part-of-a-world-record/</guid>
+      <description>Get yourself a copy of Firefox 3 on the day it&amp;rsquo;s released from this site and you&amp;rsquo;ll be doing your bit to get Firefox downloads in the world record books.
+Yup, you&amp;rsquo;ll also be falling for a huge marketing gag designed to get Firefox installed on as many machines as possible, but it&amp;rsquo;s a damned good browser anyway, so no harm done! :)</description>
+    </item>
+    
+    <item>
+      <title>Rancid Bloatware</title>
+      <link>/posts/rancid-bloatware/</link>
+      <pubDate>Thu, 01 Nov 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/rancid-bloatware/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;d love to know what on earth got into &lt;a href=&#34;http://www.adobe.com/&#34; title=&#34;Adobe&#34;&gt;Adobe&amp;rsquo;s&lt;/a&gt; head when they decided to turn their &lt;a href=&#34;http://www.adobe.com/products/reader/&#34; title=&#34;Adobe Reader&#34;&gt;PDF reader&lt;/a&gt; into a stinking pile of sluggish bloatware? Who here remembers the old days when the Adobe Reader download was less than 10MB?&lt;/p&gt;
+
+&lt;p&gt;Take a look at the details on their current &lt;a href=&#34;http://www.adobe.com/products/acrobat/readstep2.html&#34; title=&#34;Reader Download&#34;&gt;download page&lt;/a&gt; (which I was recently forced to visit because of a &lt;a href=&#34;http://www.theregister.co.uk/posts/new_gozi_strain/print.html&#34; title=&#34;New Strain of Gozi Trojan Prowls the Net&#34;&gt;security flaw&lt;/a&gt; in the Reader&amp;rsquo;s functionality that has now been patched):&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gadget Me Up</title>
+      <link>/posts/gadget-me-up/</link>
+      <pubDate>Wed, 08 Nov 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/gadget-me-up/</guid>
+      <description>I don&amp;rsquo;t know if you guys are free software gadget monkeys or not, but this stuff might be of value to those of you who use Visual Studio 2005. The guys over at SlickEdit.com, makers of the top notch SlickEdit editor, have released a stack of free gadgets for Visual Studio 2005 which are free! (I love that word.. I&amp;rsquo;m going to say it again.. FREEEEE).
+The freebies include: Editor Gadgets (Line ruler, Indentation guide, Auto-copy selection, Editor Graphic)The Command SpyFile ExplorerData Object AnalyserThe SLOC ReportIt&amp;rsquo;s a nice collection of tools if you ask me!</description>
+    </item>
+    
+    <item>
+      <title>FireFox 2</title>
+      <link>/posts/firefox-2/</link>
+      <pubDate>Tue, 24 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/firefox-2/</guid>
+      <description>WAHOO! It&amp;rsquo;s been released :) Our lovable browser has had its second major version released into the wild, which is great news. I&amp;rsquo;ve been using the latest released candidate for a while, and have had no issues at all, but now it&amp;rsquo;s officially out there for all to enjoy.
+Point your currently insecure/outdated browsers over here and start your download.</description>
+    </item>
+    
+    <item>
+      <title>Real-Time Flight Monitoring</title>
+      <link>/posts/real-time-flight-monitoring/</link>
+      <pubDate>Thu, 05 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/real-time-flight-monitoring/</guid>
+      <description>I had a read of Eastabrook&amp;rsquo;s blog recently (see a link in the Blogroll) and noticed that he posted about an interesting link that he found. The link, entitled Flight Tracking in 3D, shows details of a few downloads that you can grab for Google Earth which actually show the current locations of flights that are currently in progress all over the world!!!
+Unbelievable. Pretty amazing technology, and at the same time quite scary.</description>
+    </item>
+    
+    <item>
+      <title>Yarr me hearties!</title>
+      <link>/posts/yarr-me-hearties/</link>
+      <pubDate>Fri, 22 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/yarr-me-hearties/</guid>
+      <description>In light of the recent International Talk Like a Pirate Day, I thought I&amp;rsquo;d have a quick rant about piracy. This is a bit of a touchy subject and I&amp;rsquo;m sure that everyone&amp;rsquo;s got their opinion, but I think that there are (or at least were a few years back) both good and bad sides to piracy.
+First we should become clear on the types of piracy we&amp;rsquo;re talking about so there&amp;rsquo;s no confusion.</description>
+    </item>
+    
+    <item>
+      <title>An IDE Follow-Up</title>
+      <link>/posts/an-ide-follow-up/</link>
+      <pubDate>Wed, 20 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/an-ide-follow-up/</guid>
+      <description>After reading Dan&amp;rsquo;s response to this a few days ago, I decided to have a bit of a play with Notepad++. I do think it&amp;rsquo;s a very nice little text editor with some lovely features. It&amp;rsquo;s quitck, it&amp;rsquo;s simple, and the syntax hilighting works a treat (no thanks to Scintilla of course). One thing I do like is that by default when line numbering is on and word-wrap is enabled, gaps appear between the numbers to indicate that a line has wrapped (I need to set up something like this with VIM, as it&amp;rsquo;s one of the things that&amp;rsquo;s currently driving me nuts).</description>
+    </item>
+    
+    <item>
+      <title>Is an IDE all it&#39;s cracked up to be?</title>
+      <link>/posts/is-an-ide-all-its-cracked-up-to-be/</link>
+      <pubDate>Tue, 12 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/is-an-ide-all-its-cracked-up-to-be/</guid>
+      <description>Have the days of writing code in VIM ended? Is Emacs ready to be put to bed? Are we destined to spend the rest of our development lives heads-down in a bloated and expensive Integrated Development Environment (IDE)?
+IMHO, this argument is very much a Linux vs Windows style argument.
+To those long term VIM and Emacs users, there&amp;rsquo;s no reason to go an IDE like Visual Studio. Both of those editors are customisable, flexible and support a plethora of plugins and utilies.</description>
+    </item>
+    
+  </channel>
+</rss>

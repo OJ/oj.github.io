@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LiveStream on OJ&#39;s Perspective</title>
+    <link>/categories/livestream/</link>
+    <description>Recent content in LiveStream on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Wed, 17 Apr 2019 16:55:43 +1000</lastBuildDate>
+    
+	<atom:link href="/categories/livestream/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>New Livestream Series</title>
+      <link>/posts/new-livestream-series/</link>
+      <pubDate>Wed, 17 Apr 2019 16:55:43 +1000</pubDate>
+      
+      <guid>/posts/new-livestream-series/</guid>
+      <description>TL;DR We&amp;rsquo;re going to build a .NET implementation of Meterpreter live on stream. Together. From scratch. Read on for all the details!
+The Backstory I remember kicking off my first ever live stream on Twitch back in September 2016. It feels like a lifetime ago already. That stream, broken up into two parts (1, 2), was me breaking open the Capcom.sys driver that had a blatant backdoor in it and abusing this backdoor to get NT AUTHORITY\SYSTEM privileges.</description>
+    </item>
+    
+    <item>
+      <title>bin2json CTF Challenge</title>
+      <link>/posts/bin2json-ctf-challenge/</link>
+      <pubDate>Mon, 21 Nov 2016 13:52:00 +1000</pubDate>
+      
+      <guid>/posts/bin2json-ctf-challenge/</guid>
+      <description>At the beginning of this year I agreed to help a good friend out and build a challenge for the BSidesCbr 2016 CTF. The aim was to:
+ Create a fun binary pwnable. Avoid the typical exploitation paths (eg. stack/heap buffer overflows, format strings, etc). Include a couple of code related issues that are close to my heart. Design it so that multiple issues needed to be abused in order to gain code execution.</description>
+    </item>
+    
+    <item>
+      <title>Linux SRP Overwrite and ROP</title>
+      <link>/posts/linux-srp-overwrite-and-rop/</link>
+      <pubDate>Wed, 12 Oct 2016 08:14:09 +1000</pubDate>
+      
+      <guid>/posts/linux-srp-overwrite-and-rop/</guid>
+      <description>Recently I started live-streaming some security-related stuff on Twitch because I enjoy teaching other people and showing them the processes, tools and techniques that I use while attempting to not suck at breaking stuff. Last night I did my second stream, which aimed to cover the following:
+ A quick analysis of a vulnerable 32-bit Linux binary. An explanation of how stack buffer overflows can result in the Saved Return Pointer (SRP) being overwritten.</description>
+    </item>
+    
+  </channel>
+</rss>

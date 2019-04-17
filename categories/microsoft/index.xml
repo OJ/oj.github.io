@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microsoft on OJ&#39;s Perspective</title>
+    <link>/categories/microsoft/</link>
+    <description>Recent content in Microsoft on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Wed, 06 Oct 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/microsoft/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ASP.NET MVC 2, Random Sign-offs and TempData Loss</title>
+      <link>/posts/asp.net-mvc-2-random-sign-offs-and-tempdata-loss/</link>
+      <pubDate>Wed, 06 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/asp.net-mvc-2-random-sign-offs-and-tempdata-loss/</guid>
+      <description>&lt;p&gt;&lt;a title=&#34;MVC&#34; href=&#34;/uploads/2010/10/mvc.png&#34; rel=&#34;lightbox[contentadvisor]&#34;&gt;&lt;img style=&#34;margin-left: 5px; margin-bottom: 5px; float: right;&#34; src=&#34;/uploads/2010/10/mvc.png&#34; alt=&#34;MVC&#34; width=&#34;150&#34; /&gt;&lt;/a&gt;In the last few days I&amp;rsquo;ve been working on resolving issues in a production system which runs on &lt;a title=&#34;What is ASP.NET MVC&#34; href=&#34;http://www.asp.net/mvc/whatisaspmvc&#34;&gt;ASP.NET MVC 2&lt;/a&gt;. Most of the issues were actually really easy to resolve and the team of developers were able to fix them and deploy to production without too many problems.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, as always, there was one problem in particular that had us scratching our heads and was causing some of us to lose sleep. All over the Internet there were posts of people describing similar symptoms yet none of them revealed a solid answer.&lt;/p&gt;
+
+&lt;p&gt;The purpose of this post is to document the issue and the resolution in it&amp;rsquo;s entirety. It&amp;rsquo;s in story form rather than reference form because that&amp;rsquo;s how I felt like writing it :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A Quirk in List.Find()</title>
+      <link>/posts/a-quirk-in-list.find/</link>
+      <pubDate>Wed, 25 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/a-quirk-in-list.find/</guid>
+      <description>&lt;p&gt;Earlier today I was having a chat with a &lt;a href=&#34;http://doomkeeper.com/&#34; title=&#34;Jimmy&#39;s Blog&#34;&gt;friend of mine&lt;/a&gt;, who lives in Vancouver, about finding items that are stored in &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/6sh2ey19.aspx&#34; title=&#34;List(T)&#34;&gt;generic Lists&lt;/a&gt;. He flicked me a code snippet that looked something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;List&amp;lt;foo&amp;gt; list = new List&amp;lt;foo&amp;gt;();
+// .. do some stuff
+Foo f = list.Find(delegate(Foo f) { return foo.Name == &amp;quot;Bar&amp;quot;; });
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Straight away I fired back with an update to the code which used &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/bb397687.aspx&#34; title=&#34;Lambda Expressions (C# Programming Guide)&#34;&gt;lambda expressions&lt;/a&gt; instead, as I&amp;rsquo;m a fan of how concise they are ;)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Damn you, Crystal Reports!</title>
+      <link>/posts/damn-you-crystal-reports/</link>
+      <pubDate>Tue, 24 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/damn-you-crystal-reports/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve had &lt;a href=&#34;http://msdn.microsoft.com/en-us/vstudio/default.aspx&#34; title=&#34;Visual Studio on MSDN&#34;&gt;Visual Studio 2008&lt;/a&gt; installed for quite a while. When I first installed it I decided not to install the &lt;a href=&#34;http://www.sap.com/solutions/sapbusinessobjects/sme/reporting/crystalreports/index.epx&#34; title=&#34;Crystal Reports&#34;&gt;Crystal Reports&lt;/a&gt; components because I was fairly certain that I&amp;rsquo;d never need them at home.&lt;/p&gt;
+
+&lt;p&gt;Well, the worm has turned! On my new gig, I have the joy of working from home. It just so happens that I &lt;em&gt;also&lt;/em&gt; need to use Crystal Reports. How silly of me to not bother installing a few extra components the first time so I didn&amp;rsquo;t have to go through the pain of going through another VS Setup.&lt;/p&gt;
+
+&lt;p&gt;On the surface this doesn&amp;rsquo;t sound like a painful experience right? &lt;strong&gt;WRONG&lt;/strong&gt;. It&amp;rsquo;s a lot more painful than you think.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>.NET-fu: Signing an Unsigned Assembly (without Delay Signing)</title>
+      <link>/posts/.net-fu-signing-an-unsigned-assembly-without-delay-signing/</link>
+      <pubDate>Wed, 09 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/.net-fu-signing-an-unsigned-assembly-without-delay-signing/</guid>
+      <description>&lt;p&gt;This article is also available in &lt;a href=&#34;http://www.otherbit.com/modules/blog/BlogContent.aspx?ID=174&#34; title=&#34;.NET-FU : come trasformare in SIGNED un assembly UNSIGNED (senza ricorrere al DELAY SIGNING)&#34;&gt;Italian&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The code-base that I am currently working with consists of a large set of binaries that are all &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/xc31ft41.aspx&#34; title=&#34;Sign an Assembly with a Strong Name&#34;&gt;signed&lt;/a&gt;. The savvy .NET devs out there will know that any assembly that&amp;rsquo;s used/referenced by a signed assembly must &lt;em&gt;also&lt;/em&gt; be signed.&lt;/p&gt;
+
+&lt;p&gt;This is an issue when dealing with third-party libraries that are not signed. Sometimes you&amp;rsquo;ll be lucky enough to be dealing with vendor that is happy to provide a set of signed assemblies, other times you won&amp;rsquo;t. If your scenario fits the latter (as a recent one did for my colleagues and I), you need to sign the assemblies yourself. Here&amp;rsquo;s how.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Resolving Side-by-Side Configuration Issues</title>
+      <link>/posts/resolving-side-by-side-configuration-issues/</link>
+      <pubDate>Sat, 17 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/resolving-side-by-side-configuration-issues/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been meaning to blog about this for well over a year now, but for some reason I never got round to it. This came up in conversation the other day with a couple of workmates and it prompted me to revisit the issue.&lt;/p&gt;
+
+&lt;p&gt;Have you ever fired up an application on Windows XP and got the following error?
+&lt;blockquote&gt;&lt;p&gt;The application has failed to start because the application configuration is incorrect. Reinstalling the application may fix this problem.&lt;/p&gt;&lt;/blockquote&gt;
+Informative isn&amp;rsquo;t it! What about if you fire up the same application on Windows Vista?
+&lt;blockquote&gt;&lt;p&gt;The application has failed to start because its side-by-side configuration is incorrect. Please see the application event log for more detail.&lt;/p&gt;&lt;/blockquote&gt;
+This does tell us a little bit more about the problem, but not a &lt;em&gt;lot&lt;/em&gt; more.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Microsoft want to Annoy you, Cancel or Allow?</title>
+      <link>/posts/microsoft-want-to-annoy-you-cancel-or-allow/</link>
+      <pubDate>Sat, 12 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/microsoft-want-to-annoy-you-cancel-or-allow/</guid>
+      <description>&lt;p&gt;Before I even started using Vista, I hated &lt;a href=&#34;http://technet2.microsoft.com/WindowsVista/en/library/0d75f774-8514-4c9e-ac08-4c21f5c6c2d91033.mspx&#34; title=&#34;User Access Control&#34;&gt;UAC&lt;/a&gt;. I read about it all over the place, and laughed at the stupidity involved in asking users to constantly &amp;ldquo;cancel or allow&amp;rdquo; every action they wanted to take. As soon as I was forced to use Vista for work (both on my work laptop and on site with the client) I turned off UAC on both installations.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Living in Australia has a Downside</title>
+      <link>/posts/living-in-australia-has-a-downside/</link>
+      <pubDate>Wed, 21 Nov 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/living-in-australia-has-a-downside/</guid>
+      <description>&lt;p&gt;This may come as a surprise, but living in Australia &lt;em&gt;can&lt;/em&gt; have it downsides :) Right now I can only think of one, and that&amp;rsquo;s (part of) the reason for this post.&lt;/p&gt;
+
+&lt;p&gt;We may have constant sunshine, lovely beaches and a lifestyle to die for, but our broadband just &lt;strong&gt;sucks&lt;/strong&gt;. That&amp;rsquo;s a fairly sweeping statement, so let me clarify a little more.&lt;/p&gt;
+
+&lt;p&gt;Broadband plans in this country are &lt;em&gt;extremely&lt;/em&gt; poor value. The service that you receive for the amount you pay is substandard. It&amp;rsquo;s that simple. Those of you in places like the UK, USA and Hong Kong may find it obscure to consider that a country exists where you can&amp;rsquo;t get an unlimited data connection for DSL. You may also find it difficult to believe that some connection speeds are cut to that of a dial-up connection if you download too much. But that&amp;rsquo;s exactly what happens here.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Requisite Vista</title>
+      <link>/posts/requisite-vista/</link>
+      <pubDate>Mon, 29 Oct 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/requisite-vista/</guid>
+      <description>&lt;p&gt;When I started my new gig on the 15th of this month, I was handed a &lt;a href=&#34;http://www.toshibadirect.com/td/b2c/cmod.to?coid=-33778&#34; title=&#34;Toshiba Tecra M9&#34;&gt;new laptop&lt;/a&gt; to do all my work on. It&amp;rsquo;s a nifty little gadget with 3GB RAM! Very schmick. There was one catch..&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip; see, the company is migrating to &lt;a href=&#34;http://www.microsoft.com/windows/products/windowsvista/default.mspx&#34; title=&#34;Windows Vista&#34;&gt;Vista&lt;/a&gt;, which means I have to use it too. A while ago I &lt;a href=&#34;/posts/should-i-install-vista/&#34; title=&#34;Should I install Vista?&#34;&gt;posted my thoughts with regards to installing Vista&lt;/a&gt;, so as you can imagine it&amp;rsquo;s a little bit strange having to use it.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Take Auto-Update Annoyances Another Step Further</title>
+      <link>/posts/microsoft-take-auto-update-annoyances-another-step-further/</link>
+      <pubDate>Thu, 31 May 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/microsoft-take-auto-update-annoyances-another-step-further/</guid>
+      <description>&lt;p&gt;Microsoft&amp;rsquo;s Automatic Update feature has always been annoying. I don&amp;rsquo;t care who you are, none of you can possibly say that it&amp;rsquo;s not annoying :) I thought that it wasn&amp;rsquo;t possible for it to become any &lt;em&gt;more&lt;/em&gt; annoying than it already is, but today I was proved wrong.&lt;/p&gt;
+
+&lt;p&gt;My main gripe was that almost regardless of the update, the machine needs to be rebooted. You&amp;rsquo;ve updated my desktop picture? &lt;em&gt;Reboot required&lt;/em&gt;. My IE install has had another check box added to the options? &lt;em&gt;Reboot required&lt;/em&gt;. Notepad&amp;rsquo;s default font has changed? &lt;em&gt;Reboot required&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A Crack in the Vista</title>
+      <link>/posts/a-crack-in-the-vista/</link>
+      <pubDate>Wed, 15 Nov 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/a-crack-in-the-vista/</guid>
+      <description>I&amp;rsquo;m sure that everyone knew that this was going to happen at some stage. Whether or not they believed it&amp;rsquo;d happen so quickly is another matter. Either way, it&amp;rsquo;s official, the new wonderdumpling operating system from Microsoft has been cracked. Aparently the activation and installation of the whole thing has been bypassed, and it&amp;rsquo;s available on the web. Check out this SMH article for more information.
+Why do they bother? Microsoft&amp;rsquo;s software is always going to be a target for hackers and crackers, and I think it&amp;rsquo;d be a better use of time and resources if they focussed on improving the user experience and giving the user more control and power when using the OS instead of trying to labotomise the machine if the software is cracked (and hence causing a crapload of problems for legit users) then they&amp;rsquo;d find that their users would be happier and they wouldn&amp;rsquo;t end up with so much egg on the face!</description>
+    </item>
+    
+    <item>
+      <title>Vista Speech Recognition - Maybe try it in Yiddish?</title>
+      <link>/posts/vista-speech-recognition-maybe-try-it-in-yiddish/</link>
+      <pubDate>Fri, 03 Nov 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/vista-speech-recognition-maybe-try-it-in-yiddish/</guid>
+      <description>As a final post for today, I just got sent this classic Google Video from Dan over at Shifty. It&amp;rsquo;s pretty funny!
+Having said that, I&amp;rsquo;m sure that most devs know how tough something like voice recognition can be to build. Try demoing something like this to the world, it&amp;rsquo;d be an absolute nightmare! I do feel a bit sorry for this guy, as I&amp;rsquo;m sure he&amp;rsquo;s not the one responsible for the internal workings of the software.</description>
+    </item>
+    
+    <item>
+      <title>What About Going the Other Way?</title>
+      <link>/posts/what-about-going-the-other-way/</link>
+      <pubDate>Thu, 19 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/what-about-going-the-other-way/</guid>
+      <description>I just thought I&amp;rsquo;d add this last post as a bit of food for thought before signing off today. This link comes from a bloke who&amp;rsquo;s been through the pain of wanting to move away from Windows, only to find that the results were just as, if not more, painful than sticking to what he knew. Have a read of this blog entry to see that the grass isn&amp;rsquo;t necessarily greener.</description>
+    </item>
+    
+    <item>
+      <title>Virtual Vista Stuff-Up</title>
+      <link>/posts/virtual-vista-stuff-up/</link>
+      <pubDate>Tue, 17 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/virtual-vista-stuff-up/</guid>
+      <description>OK, so it looks like I might have been misinformed (er&amp;hellip; wrong :)) by stating that the basic versions of Vista can&amp;rsquo;t be installed on VMs. That&amp;rsquo;ll teach me not to read the licencing details properly myself! It looks like it was a slight misunderstanding of the terms and structure that MS used in stating the rules. I won&amp;rsquo;t go into the details myself since Ed Bott has already done it for me.</description>
+    </item>
+    
+    <item>
+      <title>More Vista Madness</title>
+      <link>/posts/more-vista-madness/</link>
+      <pubDate>Mon, 16 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/more-vista-madness/</guid>
+      <description>And so the Vista malarky continues! More and more details of the behemoth that is Vista are coming to light which, quite frankly, freak me out even more.
+First of all, Microsoft won&amp;rsquo;t let you run some Vista editions virtualised, which is a bit of a surprise. Why would they push for free Virtual PC software and then not let you use some basic versions of the new OS under such a set up?</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Vista Licence Restrictions</title>
+      <link>/posts/microsoft-vista-licence-restrictions/</link>
+      <pubDate>Sat, 14 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/microsoft-vista-licence-restrictions/</guid>
+      <description>The Inquirer has posted up some info on the Microsoft Vista licence restrictions and boy does it sound awful. Not only will it cost you an arm and a leg to buy it, you&amp;rsquo;ll probably have to upgrade to get it to run, and after you&amp;rsquo;ve upgraded you&amp;rsquo;ll probably never be allowed to upgrade again - otherwise you&amp;rsquo;ll need a new copy of Vista!
+So, you&amp;rsquo;re screwed in more ways than one.</description>
+    </item>
+    
+    <item>
+      <title>The Vista &#39;Squeeze&#39; Begins</title>
+      <link>/posts/the-vista-squeeze-begins/</link>
+      <pubDate>Sat, 14 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-vista-squeeze-begins/</guid>
+      <description>Oh look, MS are already starting to cull their software support list. Does anyone else get the feeling that this is just another step towards pushing people into an unwanted early-adoption of Microsoft Handcuffs &amp;trade; (a.k.a Vista)?</description>
+    </item>
+    
+    <item>
+      <title>Is an IDE all it&#39;s cracked up to be?</title>
+      <link>/posts/is-an-ide-all-its-cracked-up-to-be/</link>
+      <pubDate>Tue, 12 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/is-an-ide-all-its-cracked-up-to-be/</guid>
+      <description>Have the days of writing code in VIM ended? Is Emacs ready to be put to bed? Are we destined to spend the rest of our development lives heads-down in a bloated and expensive Integrated Development Environment (IDE)?
+IMHO, this argument is very much a Linux vs Windows style argument.
+To those long term VIM and Emacs users, there&amp;rsquo;s no reason to go an IDE like Visual Studio. Both of those editors are customisable, flexible and support a plethora of plugins and utilies.</description>
+    </item>
+    
+    <item>
+      <title>Office Registration and Activation</title>
+      <link>/posts/office-registration-and-activation/</link>
+      <pubDate>Sun, 10 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/office-registration-and-activation/</guid>
+      <description>&lt;p&gt;Yesterday I had one of those wonderful days that every geek gets to enjoy once in a while - the day of rebuilding one&amp;rsquo;s machine. In this case it wasn&amp;rsquo;t my machine it was Amy&amp;rsquo;s, but the effect is much the same :)  I went through the process of backing up, repartitioning, reinstalling WinXP Home, copying backed up files back onto the machine only to find myself stumped at the point of installing MS Office.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

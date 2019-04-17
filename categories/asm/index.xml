@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ASM on OJ&#39;s Perspective</title>
+    <link>/categories/asm/</link>
+    <description>Recent content in ASM on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Mon, 09 Apr 2007 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/asm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reversing DirectX &amp; Blowfish</title>
+      <link>/posts/reversing-directx-blowfish/</link>
+      <pubDate>Mon, 09 Apr 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/reversing-directx-blowfish/</guid>
+      <description>This tutorial has been on the boil for quite a while. I got close to nailing the problem late last month, but didn&amp;rsquo;t end up finding the time to finish it until this weekend. This tutorial is a solution to another Crackme, but this time it&amp;rsquo;s really not for the faint-hearted. Information on reversing fullscreen DirectX (Direct3D) applications and playing around with Blowfish can be found in this tutorial, and it&amp;rsquo;s a bit of a mind-job - it also weighs in at nearly 40 pages (with some nice pictures thrown in)!</description>
+    </item>
+    
+    <item>
+      <title>Another Lesson in Software Reversing</title>
+      <link>/posts/another-lesson-in-software-reversing/</link>
+      <pubDate>Thu, 08 Mar 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/another-lesson-in-software-reversing/</guid>
+      <description>Yes, you can (most probably) consider this to be a fairly regular segment from this point on :) As I said before I&amp;rsquo;ve always been partial to RCE, and I don&amp;rsquo;t think I&amp;rsquo;ll ever get sick of it. Today&amp;rsquo;s installment is another tutorial that I felt shouldn&amp;rsquo;t be published. The reason is because it&amp;rsquo;s a tutorial on how to solve an example reversing challenge for the IITAC online RCE adacemy, and I generally don&amp;rsquo;t think it&amp;rsquo;s a good move to show other people how to do this stuff when they can get certified for it.</description>
+    </item>
+    
+    <item>
+      <title>A Reversing Tutorial</title>
+      <link>/posts/a-reversing-tutorial/</link>
+      <pubDate>Sat, 03 Mar 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/a-reversing-tutorial/</guid>
+      <description>For a long time I&amp;rsquo;ve been interested in the lovely and exciting art of Reverse Code Engineering (RCE) and on more than one occasion I&amp;rsquo;ve been sucked in to spending hours and hours delving through pages of ASM code searching for the answer.
+Today is no different. With Amy feeling pretty crook due to a nasty headache, I thought I&amp;rsquo;d retire to my PC and do something quiet that I haven&amp;rsquo;t done for ages.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on OJ&#39;s Perspective</title>
+    <link>/categories/software/</link>
+    <description>Recent content in Software on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Fri, 05 Feb 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Truncated Pages</title>
+      <link>/posts/truncated-pages/</link>
+      <pubDate>Fri, 05 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/truncated-pages/</guid>
+      <description>Not too long ago I mentioned that I&amp;rsquo;d setup and installed Nginx on this server. All seemed well to start off with, then on certain occasions I started to notice that some pages were being served truncated while I was at work. I thought that the issue was work-related, as they have a fairly draconian security policy in place and I thought that it had something to do with severing the connection.</description>
+    </item>
+    
+    <item>
+      <title>Now Running Nginx</title>
+      <link>/posts/now-running-nginx/</link>
+      <pubDate>Thu, 10 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/now-running-nginx/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2009/09/slow_snail.jpg&#34; rel=&#34;lightbox&#34;&gt;&lt;img src=&#34;/uploads/2009/09/slow_snail.jpg&#34; alt=&#34;clarkson_face&#34; title=&#34;clarkson_face&#34; width=&#34;150&#34; style=&#34;float: right; margin-bottom: 5px; margin-left: 5px;&#34; /&gt;&lt;/a&gt;For the last couple of years, the server which has powered this site (and a few other sites) has been running the free version of &lt;a href=&#34;http://litespeedtech.com/&#34; title=&#34;Litespeed&#34;&gt;Litespeed&lt;/a&gt; web server. After feeling the resource burden of &lt;a href=&#34;http://httpd.apache.org/&#34; title=&#34;Apache Httpd&#34;&gt;Apache&lt;/a&gt;, Litespeed was a breath of fresh air! The fact that the &amp;ldquo;full&amp;rdquo; version wasn&amp;rsquo;t free didn&amp;rsquo;t bother me, I was happy to stick with the standard edition as it seemed more than capable of handling the meagre traffic that this site generates.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Setting up Trac, Mercurial and SSH on Windows</title>
+      <link>/posts/setting-up-trac-mercurial-and-ssh-on-windows/</link>
+      <pubDate>Sat, 16 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/setting-up-trac-mercurial-and-ssh-on-windows/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING - This blog post is long :)&lt;/strong&gt;
+&lt;em&gt;This post has been edited since it was published. Please see the end of the article for any notes/modifications&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;h3&gt;Some Background Info&lt;/h3&gt;
+I had the need to do this for work recently. It was nothing short of a right royal pain in the butt. It was such a pain, in fact, that I have decided to document what I had to do to get it working so that other poor unfortunates will feel less pain if they have to do this themselves.&lt;/p&gt;
+
+&lt;p&gt;Almost regardless of the company and the software I&amp;rsquo;m working on, I use &lt;a href=&#34;http://www.selenic.com/mercurial/&#34; title=&#34;Mercurial&#34;&gt;Mercurial&lt;/a&gt; for source code control. For the work I am doing at the moment, I was also using hg because the company I am involved with is relatively new and they hadn&amp;rsquo;t yet sorted out a plan for version control or &lt;acronym title=&#34;Application Lifecycle Management&#34;&gt;ALM&lt;/acronym&gt;. It was working quite well and I was pushing all my changes to my &lt;a href=&#34;http://www.google.com.au/url?q=http://www.buffalotech.com/products/network-storage/terastation/terastation-iii/&amp;ei=fioOSuLvGpu8swPl56zqAg&amp;sa=X&amp;oi=smap&amp;resnum=1&amp;ct=result&amp;cd=2&amp;usg=AFQjCNHXKMchy5tR-a-jMOFAbtxoWzfedA&#34; title=&#34;Terastation&#34;&gt;NAS box&lt;/a&gt; to make sure I had other copies backed up, etc. I was &lt;em&gt;living the dream&lt;/em&gt; :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Damn you, Crystal Reports!</title>
+      <link>/posts/damn-you-crystal-reports/</link>
+      <pubDate>Tue, 24 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/damn-you-crystal-reports/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve had &lt;a href=&#34;http://msdn.microsoft.com/en-us/vstudio/default.aspx&#34; title=&#34;Visual Studio on MSDN&#34;&gt;Visual Studio 2008&lt;/a&gt; installed for quite a while. When I first installed it I decided not to install the &lt;a href=&#34;http://www.sap.com/solutions/sapbusinessobjects/sme/reporting/crystalreports/index.epx&#34; title=&#34;Crystal Reports&#34;&gt;Crystal Reports&lt;/a&gt; components because I was fairly certain that I&amp;rsquo;d never need them at home.&lt;/p&gt;
+
+&lt;p&gt;Well, the worm has turned! On my new gig, I have the joy of working from home. It just so happens that I &lt;em&gt;also&lt;/em&gt; need to use Crystal Reports. How silly of me to not bother installing a few extra components the first time so I didn&amp;rsquo;t have to go through the pain of going through another VS Setup.&lt;/p&gt;
+
+&lt;p&gt;On the surface this doesn&amp;rsquo;t sound like a painful experience right? &lt;strong&gt;WRONG&lt;/strong&gt;. It&amp;rsquo;s a lot more painful than you think.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>The Admin is an Idiot</title>
+      <link>/posts/the-admin-is-an-idiot/</link>
+      <pubDate>Sat, 27 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-admin-is-an-idiot/</guid>
+      <description>&lt;p&gt;Yes, and that admin is me!&lt;/p&gt;
+
+&lt;p&gt;I usually do a fairly decent job of keeping the server patched, up to date, and clean. Over the Xmas period where I wasn&amp;rsquo;t really looking at anything online, something went wrong.&lt;/p&gt;
+
+&lt;p&gt;I logged on this morning only to find that the server wasn&amp;rsquo;t responding. I could connect via SSH, but nothing was being served via HTTP. So I tried to reboot &lt;a href=&#34;http://litespeedtech.com/&#34; title=&#34;LiteSpeed technologies&#34;&gt;LiteSpeed&lt;/a&gt; to see if that would resolve it (as you do ;) ). The service stopped, but failed to restart!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Websites are Hard to Build</title>
+      <link>/posts/websites-are-hard-to-build/</link>
+      <pubDate>Wed, 26 Nov 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/websites-are-hard-to-build/</guid>
+      <description>&lt;p&gt;{% img right /uploads/2008/11/elope-harlequin-jester.jpg &amp;lsquo;Uninformed client&amp;rsquo; %}
+&amp;gt; &amp;ldquo;It&amp;rsquo;s just a small site, how hard can it be?&amp;rdquo;
+&amp;gt;
+&amp;gt; &amp;ldquo;I thought you could do it for me as a favour. It&amp;rsquo;s not a complicated site.&amp;rdquo;
+&amp;gt;
+&amp;gt; &amp;ldquo;This would take me an afternoon, but I don&amp;rsquo;t have time, can you do it for me?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Have you ever heard these comments before? Have you heard ones that are similar? I&amp;rsquo;ve been hearing them a lot in the last few weeks and it&amp;rsquo;s starting to get to me.&lt;/p&gt;
+
+&lt;p&gt;I have just had a chat with a mate who is also suffering this pain, and that conversation is what inspired me to write this, the first random rant in a while.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Epic Fail - Cuil Search Engine</title>
+      <link>/posts/epic-fail-cuil-search-engine/</link>
+      <pubDate>Tue, 29 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/epic-fail-cuil-search-engine/</guid>
+      <description>Don&amp;rsquo;t believe the hype. [caption id=&amp;ldquo;attachment_436&amp;rdquo; align=&amp;ldquo;aligncenter&amp;rdquo; width=&amp;ldquo;500&amp;rdquo; caption=&amp;ldquo;EPIC FAIL&amp;rdquo;][/caption]
+Mike G and Dare are dead right.</description>
+    </item>
+    
+    <item>
+      <title>Be Part of a World Record</title>
+      <link>/posts/be-part-of-a-world-record/</link>
+      <pubDate>Sat, 31 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/be-part-of-a-world-record/</guid>
+      <description>Get yourself a copy of Firefox 3 on the day it&amp;rsquo;s released from this site and you&amp;rsquo;ll be doing your bit to get Firefox downloads in the world record books.
+Yup, you&amp;rsquo;ll also be falling for a huge marketing gag designed to get Firefox installed on as many machines as possible, but it&amp;rsquo;s a damned good browser anyway, so no harm done! :)</description>
+    </item>
+    
+    <item>
+      <title>Preview Feeds in Google Reader</title>
+      <link>/posts/preview-feeds-in-google-reader/</link>
+      <pubDate>Sun, 25 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/preview-feeds-in-google-reader/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s another reason why I find &lt;a href=&#34;http://reader.google.com/&#34; title=&#34;Google Reader&#34;&gt;Google Reader&lt;/a&gt; a excellent choice for reading your RSS feeds.&lt;/p&gt;
+
+&lt;p&gt;Most of us have a collection of feeds that contain similar subject matter. As a geek, &lt;em&gt;most&lt;/em&gt; of my feeds are geek-related. As a geek who likes to stay up to speed, I also like to know what other blogs and feeds are good to read.&lt;/p&gt;
+
+&lt;p&gt;This is where Google Reader&amp;rsquo;s &lt;strong&gt;Top Recommendations&lt;/strong&gt; come in. Google do a great job of throwing other feeds in your face that you might like to read based on the kind of stuff that you&amp;rsquo;ve already subscribed to.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Get with the Times - Use a Feed Reader</title>
+      <link>/posts/get-with-the-times-use-a-feed-reader/</link>
+      <pubDate>Mon, 21 Apr 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/get-with-the-times-use-a-feed-reader/</guid>
+      <description>&lt;p&gt;Regular readers of &lt;a href=&#34;http://www.dilbert.com/&#34; title=&#34;Dilbert&#34;&gt;Dilbert&lt;/a&gt; are currently &lt;a href=&#34;http://entertainment.slashdot.org/article.pl?sid=08/04/19/1842208&amp;from=rss&#34; title=&#34;Slashdot | Dilbert Goes Flash, Readers Revolt&#34;&gt;kicking and screaming&lt;/a&gt; about the site&amp;rsquo;s new &lt;a href=&#34;http://www.adobe.com/products/flash/&#34; title=&#34;Adobe Flash&#34;&gt;Flash&lt;/a&gt;-based design. Personally I don&amp;rsquo;t mind it, but at the end of the day it matters not.&lt;/p&gt;
+
+&lt;p&gt;Why?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A Google App that Sucks</title>
+      <link>/posts/a-google-app-that-sucks/</link>
+      <pubDate>Tue, 25 Dec 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/a-google-app-that-sucks/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://labs.google.com/&#34; title=&#34;Google Labs&#34;&gt;Google Labs&lt;/a&gt; has a history of releasing some pretty amazing bits of software. &lt;a href=&#34;http://earth.google.com/&#34; title=&#34;Google Earth&#34;&gt;Google Earth&lt;/a&gt;, &lt;a href=&#34;http://mail.google.com/&#34; title=&#34;Google Mail&#34;&gt;Google Mail&lt;/a&gt;, &lt;a href=&#34;http://reader.google.com/&#34; title=&#34;Google Reader&#34;&gt;Google Reader&lt;/a&gt;, &lt;a href=&#34;http://analytics.google.com/&#34; title=&#34;Google Analytics&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;http://maps.google.com/&#34; title=&#34;Google Maps&#34;&gt;Google Maps&lt;/a&gt; and &lt;a href=&#34;http://docs.google.com/&#34; title=&#34;Google Docs&#34;&gt;Google Docs&lt;/a&gt; are just a few of the graduates! It&amp;rsquo;s an impressive list to say the least. All of those applications do a fantastic job. I&amp;rsquo;m a huge fan of all of them and use them all regularly. So, Google, &lt;a href=&#34;http://en.wikipedia.org/wiki/WTF&#34;&gt;WTF&lt;/a&gt; happened to &lt;a href=&#34;http://talk.google.com/&#34; title=&#34;Google Talk&#34;&gt;Google Talk&lt;/a&gt;?!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rancid Bloatware</title>
+      <link>/posts/rancid-bloatware/</link>
+      <pubDate>Thu, 01 Nov 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/rancid-bloatware/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;d love to know what on earth got into &lt;a href=&#34;http://www.adobe.com/&#34; title=&#34;Adobe&#34;&gt;Adobe&amp;rsquo;s&lt;/a&gt; head when they decided to turn their &lt;a href=&#34;http://www.adobe.com/products/reader/&#34; title=&#34;Adobe Reader&#34;&gt;PDF reader&lt;/a&gt; into a stinking pile of sluggish bloatware? Who here remembers the old days when the Adobe Reader download was less than 10MB?&lt;/p&gt;
+
+&lt;p&gt;Take a look at the details on their current &lt;a href=&#34;http://www.adobe.com/products/acrobat/readstep2.html&#34; title=&#34;Reader Download&#34;&gt;download page&lt;/a&gt; (which I was recently forced to visit because of a &lt;a href=&#34;http://www.theregister.co.uk/posts/new_gozi_strain/print.html&#34; title=&#34;New Strain of Gozi Trojan Prowls the Net&#34;&gt;security flaw&lt;/a&gt; in the Reader&amp;rsquo;s functionality that has now been patched):&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>I&#39;ll View What I Like!</title>
+      <link>/posts/ill-view-what-i-like/</link>
+      <pubDate>Sat, 18 Aug 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ill-view-what-i-like/</guid>
+      <description>&lt;p&gt;I have a few questions for you:
+&lt;ol&gt;&lt;li&gt;How would you feel if TV channels changed automatically because you weren&amp;rsquo;t paying attention to the ads?&lt;/li&gt;&lt;li&gt;Would you like it if your newspaper closed by itself because you were reading the articles but skipping over the classifieds?&lt;/li&gt;&lt;li&gt;How happy would you be if you were kicked out of a cinema for not watching the latest and greatest in &lt;a href=&#34;http://www.valmorgan.com.au/&#34; title=&#34;Val Morgan&#34;&gt;Val Morgan Cinema Advertising&lt;/a&gt;?&lt;/li&gt;&lt;li&gt;Would you be happy if you weren&amp;rsquo;t allowed to walk into a shop unless you HAD to buy something?&lt;/li&gt;&lt;/ol&gt;
+If you&amp;rsquo;re anything like me, you&amp;rsquo;d be pretty pissed off about it. The scary thing is that this kind of thing is already happening on the web.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Take Auto-Update Annoyances Another Step Further</title>
+      <link>/posts/microsoft-take-auto-update-annoyances-another-step-further/</link>
+      <pubDate>Thu, 31 May 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/microsoft-take-auto-update-annoyances-another-step-further/</guid>
+      <description>&lt;p&gt;Microsoft&amp;rsquo;s Automatic Update feature has always been annoying. I don&amp;rsquo;t care who you are, none of you can possibly say that it&amp;rsquo;s not annoying :) I thought that it wasn&amp;rsquo;t possible for it to become any &lt;em&gt;more&lt;/em&gt; annoying than it already is, but today I was proved wrong.&lt;/p&gt;
+
+&lt;p&gt;My main gripe was that almost regardless of the update, the machine needs to be rebooted. You&amp;rsquo;ve updated my desktop picture? &lt;em&gt;Reboot required&lt;/em&gt;. My IE install has had another check box added to the options? &lt;em&gt;Reboot required&lt;/em&gt;. Notepad&amp;rsquo;s default font has changed? &lt;em&gt;Reboot required&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Moving to Google Apps</title>
+      <link>/posts/moving-to-google-apps/</link>
+      <pubDate>Sun, 06 May 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/moving-to-google-apps/</guid>
+      <description>As you all know, I recently moved the Blackapache site to a new server. We had some teething issues, as ya do when making the move, but all is now well. One of the things that I hadn&amp;rsquo;t got round to fixing was my SpamAssassin installation.
+I&amp;rsquo;d already gone through the fun times of setting up email (POP3s, IMAP4s) with Qmail, which after a bit of time (and a learning curve) was working fine (with SSL, hence the &amp;rsquo;s&amp;rsquo; at the end of the names ;) ) and all my users were able to send/receive without an issues.</description>
+    </item>
+    
+    <item>
+      <title>Digg is Being Used Against Itself</title>
+      <link>/posts/digg-is-being-used-against-itself/</link>
+      <pubDate>Wed, 02 May 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/digg-is-being-used-against-itself/</guid>
+      <description>Over the last day or so, stacks of people have been hammering digg as a revolt against their recent actions. For those of you who don&amp;rsquo;t know, HD-DVD encryption was cracked recently and the master key which allows all movies to be ripped has been released across the web. Digg, in their infinite wisdom, decided to kill off the original blog post (and apparently banned one or two users? - unconfirmed), resulting in an avalanche of posts preaching &amp;ldquo;free speach&amp;rdquo; and &amp;ldquo;fuck you Digg&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>My Favourite Firefox Extensions</title>
+      <link>/posts/my-favourite-firefox-extensions/</link>
+      <pubDate>Mon, 05 Feb 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/my-favourite-firefox-extensions/</guid>
+      <description>I know that there&amp;rsquo;s a stack of lists like this around the web, but I felt like doing one too! Below is a list of the Firefox extensions that I use quite often for a variety of reasons. Give them a spin if it floats your boat!  AdBlockPlus - Sick of ads? Even more sick of ads and scripts that manage to get past the default ad blocker? Sick of the Snap.</description>
+    </item>
+    
+    <item>
+      <title>Quality of Service</title>
+      <link>/posts/quality-of-service/</link>
+      <pubDate>Sun, 14 Jan 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/quality-of-service/</guid>
+      <description>First of all, Happy New Year!
+Now that the formalities are out of the way, I&amp;rsquo;ll get stuck into the post :)
+Today&amp;rsquo;s comments are inspired a by a recent experience I had with an online form (of all things!). Being a bit of a game geek, both in the &amp;lsquo;build&amp;rsquo; and &amp;lsquo;play&amp;rsquo; senses, I constantly read a lot of gaming stuff. One thing that I&amp;rsquo;m a fairly regular reader of is GamaSutra, as it&amp;rsquo;s got lots of juicy game development stuff in it - a great read for people such as myself.</description>
+    </item>
+    
+    <item>
+      <title>EA&#39;s &#39;Steam&#39; Leaves a Bad Smell</title>
+      <link>/posts/eas-steam-leaves-a-bad-smell/</link>
+      <pubDate>Fri, 10 Nov 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/eas-steam-leaves-a-bad-smell/</guid>
+      <description>When Steam first hit the marketplace lots of people thought it wasn&amp;rsquo;t going to take off - and the bigger companies didn&amp;rsquo;t want it to. Over time it really gathered momentum. The bugs were being ironed out, the process was working well, and the subscriber count was going through the roof. As more time went by, some smaller indies signed up to use Steam to deliver their games - giving the small player a chance to get a great deal of exposure to their game at a pretty small cost and at the same time allowing it to be delivered onto desktops on demand.</description>
+    </item>
+    
+    <item>
+      <title>Gadget Me Up</title>
+      <link>/posts/gadget-me-up/</link>
+      <pubDate>Wed, 08 Nov 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/gadget-me-up/</guid>
+      <description>I don&amp;rsquo;t know if you guys are free software gadget monkeys or not, but this stuff might be of value to those of you who use Visual Studio 2005. The guys over at SlickEdit.com, makers of the top notch SlickEdit editor, have released a stack of free gadgets for Visual Studio 2005 which are free! (I love that word.. I&amp;rsquo;m going to say it again.. FREEEEE).
+The freebies include: Editor Gadgets (Line ruler, Indentation guide, Auto-copy selection, Editor Graphic)The Command SpyFile ExplorerData Object AnalyserThe SLOC ReportIt&amp;rsquo;s a nice collection of tools if you ask me!</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Congratulate Mozilla</title>
+      <link>/posts/microsoft-congratulate-mozilla/</link>
+      <pubDate>Thu, 26 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/microsoft-congratulate-mozilla/</guid>
+      <description>After shipping the FireFox 2 browser, Mozilla received a present from the IE team at Microsoft. TO take a look, point your browser over here and read the story.
+If I was a FireFox developer, I&amp;rsquo;d be veeeeeery wary of taking a bite of that ;) I get the feeling I&amp;rsquo;d spend the rest of the day on the dunny!</description>
+    </item>
+    
+    <item>
+      <title>Cyberface</title>
+      <link>/posts/cyberface/</link>
+      <pubDate>Wed, 25 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/cyberface/</guid>
+      <description>I could have squeezed this into the gaming round up that I posted a few days back, but this deserves to be shown out on its own (besides, it&amp;rsquo;s not just game-specific). I stumbled accross this last week, and it blew me away. The article, called Cyberface: New Technology That Captures the Soul from the New York Times shows off some very funky software. Head over there and check it out, it&amp;rsquo;s awesome.</description>
+    </item>
+    
+    <item>
+      <title>DVD Cracker Nails Apple&#39;s iPod Code</title>
+      <link>/posts/dvd-cracker-nails-apples-ipod-code/</link>
+      <pubDate>Wed, 25 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/dvd-cracker-nails-apples-ipod-code/</guid>
+      <description>You gotta hand it to this guy, he says that he &amp;ldquo;doesn&amp;rsquo;t like closed systems&amp;rdquo;, which is pretty darned obvious :) The man, Jon Lech Johansen, who years ago cracked the DVD encryption known as CSS, and released (with two other unknowns) the software that could be used to decrypt DVDs (called DeCSS), has taken his code-breaking career to a new level - he&amp;rsquo;s nailed Apple iPod&amp;rsquo;s ecosystem (or so he claims) by breaking their FairPlay DRM software.</description>
+    </item>
+    
+    <item>
+      <title>FireFox 2</title>
+      <link>/posts/firefox-2/</link>
+      <pubDate>Tue, 24 Oct 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/firefox-2/</guid>
+      <description>WAHOO! It&amp;rsquo;s been released :) Our lovable browser has had its second major version released into the wild, which is great news. I&amp;rsquo;ve been using the latest released candidate for a while, and have had no issues at all, but now it&amp;rsquo;s officially out there for all to enjoy.
+Point your currently insecure/outdated browsers over here and start your download.</description>
+    </item>
+    
+    <item>
+      <title>ViEmu for SQL</title>
+      <link>/posts/viemu-for-sql/</link>
+      <pubDate>Thu, 28 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/viemu-for-sql/</guid>
+      <description>Another quick note today (it&amp;rsquo;s late, and I need to sleep :)), and again it&amp;rsquo;s VIM related. The dude that made ViEmu that I mentioned a couple of days back has come up with another plugin - this time for SQL Server 2005 Managment Studio. It weighs in at a hefty USD$99.95 which, in my opinion, is quite a hefty price tag just to be able to write SQL in VIM.</description>
+    </item>
+    
+    <item>
+      <title>ViEmu - are you the answer?</title>
+      <link>/posts/viemu-are-you-the-answer/</link>
+      <pubDate>Tue, 26 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/viemu-are-you-the-answer/</guid>
+      <description>After all my ranting and raving on what I think would be awesome to have as an IDE, I somehow stumbled across exactly what I was trying to describe. ViEmu looks to be the perfect combination of VIM and Visual Studio.
+Well, I did get very excited when I saw it and so I downloaded and installed it. I&amp;rsquo;ve only had a play for an hour or so, and by the looks of it it&amp;rsquo;s very close to what I&amp;rsquo;m picturing in my mind&amp;rsquo;s eye.</description>
+    </item>
+    
+    <item>
+      <title>A pox on your DRM</title>
+      <link>/posts/a-pox-on-your-drm/</link>
+      <pubDate>Mon, 25 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/a-pox-on-your-drm/</guid>
+      <description>I can no longer resist the temptation to talk about DRM (at least in part) after the issues that I faced over the weekend. I know I&amp;rsquo;m not the only one that has experienced the pain that I&amp;rsquo;m about to describe, and I&amp;rsquo;m pretty pissed off about it.
+I&amp;rsquo;m going to be getting married pretty soon, and as a result my fiance and I are both trying to finalise arrangements for the wedding.</description>
+    </item>
+    
+    <item>
+      <title>Get FartFox</title>
+      <link>/posts/get-fartfox/</link>
+      <pubDate>Sat, 23 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/get-fartfox/</guid>
+      <description>I came across some info on The Inquirer earlier today regarding Firefox&amp;rsquo;s logo (shown on the right) that&amp;rsquo;s being used for the Japanese version. As the link above states:The new logo for its Japanese Fire Fox, Foxkeh, was apparently chosen out of a field of 600.How could they not see the issue with the image before releasing it to the world?
+Not that it matters ;) I like the logo - it implies that Firefox is shit hot, which I think it is :)</description>
+    </item>
+    
+    <item>
+      <title>Yarr me hearties!</title>
+      <link>/posts/yarr-me-hearties/</link>
+      <pubDate>Fri, 22 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/yarr-me-hearties/</guid>
+      <description>In light of the recent International Talk Like a Pirate Day, I thought I&amp;rsquo;d have a quick rant about piracy. This is a bit of a touchy subject and I&amp;rsquo;m sure that everyone&amp;rsquo;s got their opinion, but I think that there are (or at least were a few years back) both good and bad sides to piracy.
+First we should become clear on the types of piracy we&amp;rsquo;re talking about so there&amp;rsquo;s no confusion.</description>
+    </item>
+    
+    <item>
+      <title>Office Registration and Activation</title>
+      <link>/posts/office-registration-and-activation/</link>
+      <pubDate>Sun, 10 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/office-registration-and-activation/</guid>
+      <description>&lt;p&gt;Yesterday I had one of those wonderful days that every geek gets to enjoy once in a while - the day of rebuilding one&amp;rsquo;s machine. In this case it wasn&amp;rsquo;t my machine it was Amy&amp;rsquo;s, but the effect is much the same :)  I went through the process of backing up, repartitioning, reinstalling WinXP Home, copying backed up files back onto the machine only to find myself stumped at the point of installing MS Office.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>winsxs on OJ&#39;s Perspective</title>
+    <link>/tags/winsxs/</link>
+    <description>Recent content in winsxs on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Sat, 17 May 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/winsxs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Resolving Side-by-Side Configuration Issues</title>
+      <link>/posts/resolving-side-by-side-configuration-issues/</link>
+      <pubDate>Sat, 17 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/resolving-side-by-side-configuration-issues/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been meaning to blog about this for well over a year now, but for some reason I never got round to it. This came up in conversation the other day with a couple of workmates and it prompted me to revisit the issue.&lt;/p&gt;
+
+&lt;p&gt;Have you ever fired up an application on Windows XP and got the following error?
+&lt;blockquote&gt;&lt;p&gt;The application has failed to start because the application configuration is incorrect. Reinstalling the application may fix this problem.&lt;/p&gt;&lt;/blockquote&gt;
+Informative isn&amp;rsquo;t it! What about if you fire up the same application on Windows Vista?
+&lt;blockquote&gt;&lt;p&gt;The application has failed to start because its side-by-side configuration is incorrect. Please see the application event log for more detail.&lt;/p&gt;&lt;/blockquote&gt;
+This does tell us a little bit more about the problem, but not a &lt;em&gt;lot&lt;/em&gt; more.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

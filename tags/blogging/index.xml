@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogging on OJ&#39;s Perspective</title>
+    <link>/tags/blogging/</link>
+    <description>Recent content in Blogging on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Tue, 13 Jan 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Sales Pipeline</title>
+      <link>/posts/the-sales-pipeline/</link>
+      <pubDate>Tue, 13 Jan 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-sales-pipeline/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s a brief list of what&amp;rsquo;s coming down the pipe on this blog in the coming weeks. I thought I&amp;rsquo;d post this info as I&amp;rsquo;ve had a few people ask what&amp;rsquo;s up next and I&amp;rsquo;m tired of telling the same story over and over :) So here it is!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Stop Cutting your Feeds Short</title>
+      <link>/posts/stop-cutting-your-feeds-short/</link>
+      <pubDate>Thu, 07 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/stop-cutting-your-feeds-short/</guid>
+      <description>&lt;p&gt;Despite the fact the Internet is accessible from nearly everywhere, there are still times when you are forced to work in a disconnected environment. There are also times where you &lt;em&gt;want&lt;/em&gt; to work in a disconnected environment (probably to avoid distractions from &lt;a href=&#34;http://en.wikipedia.org/wiki/Instant_messaging&#34; title=&#34;Instant Messaging&#34;&gt;IM&lt;/a&gt;, &lt;a href=&#34;http://twitter.com/&#34; title=&#34;Twitter&#34;&gt;Twitter&lt;/a&gt;, etc).&lt;/p&gt;
+
+&lt;p&gt;So why is it that we still don&amp;rsquo;t seem to do a good job of catering for these cases? Offline capabilities are currently few and far between. Sure, it can be hard to add offline functionality to an application, depending on what the application does, but sometimes there&amp;rsquo;s really no excuse.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Things that Suck about Blogs</title>
+      <link>/posts/things-that-suck-about-blogs/</link>
+      <pubDate>Sun, 29 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/things-that-suck-about-blogs/</guid>
+      <description>&lt;p&gt;Why is it that people are still doing stupid things on their blogs? Blogging isn&amp;rsquo;t exactly a &amp;ldquo;new&amp;rdquo; thing any more. The things that you can do wrong to annoy your readers have been blogged over and over again, yet still the mistakes are being made.&lt;/p&gt;
+
+&lt;p&gt;I feel the need to rant :)&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

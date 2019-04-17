@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    A Google App that Sucks - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/a-google-app-that-sucks/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> A Google App that Sucks </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Tue Dec 25, 2007</span>
+
+	  <p><a href="http://labs.google.com/" title="Google Labs">Google Labs</a> has a history of releasing some pretty amazing bits of software. <a href="http://earth.google.com/" title="Google Earth">Google Earth</a>, <a href="http://mail.google.com/" title="Google Mail">Google Mail</a>, <a href="http://reader.google.com/" title="Google Reader">Google Reader</a>, <a href="http://analytics.google.com/" title="Google Analytics">Google Analytics</a>, <a href="http://maps.google.com/" title="Google Maps">Google Maps</a> and <a href="http://docs.google.com/" title="Google Docs">Google Docs</a> are just a few of the graduates! It&rsquo;s an impressive list to say the least. All of those applications do a fantastic job. I&rsquo;m a huge fan of all of them and use them all regularly. So, Google, <a href="http://en.wikipedia.org/wiki/WTF">WTF</a> happened to <a href="http://talk.google.com/" title="Google Talk">Google Talk</a>?!</p>
+
+<p>When GTalk was first released it was fantastic. It was simple, slick and quick. It even had built-in <a href="http://en.wikipedia.org/wiki/Voice_over_IP" title="Voice over IP">VOIP</a> support, and the quality was extremely impressive. I decided that this would be my IM of choice, and the one that I would try to get my friends and family to use.</p>
+
+<p>The problem is that, other than a few really minor updates since its first release, GTalk&rsquo;s development has been stagnant. What appeared to be a really promising start to a new <a href="http://en.wikipedia.org/wiki/Instant_messaging_client" title="IM Client">IM client</a> has now become a non-advancing app that just takes up space on my hard drive. The development seems to have stalled. The quality of the voice hasn&rsquo;t improved. The features of the client haven&rsquo;t changed or increased. There has been absolutely <em>nothing</em> worthy added to GTalk for as long as I can remember.</p>
+
+<p>In my view, GTalk is in dire need of the following features/improvements:<ul><li><strong>A new interface.</strong> When it first came out, the lean client was something that was a pleasure to use. It&rsquo;s now in need of a makeover. A fresh look would do it the world of good.</li><li><strong>Tabbed chats.</strong> This is actually the reason why I use <a href="http://www.pidgin.im/" title="Pidgin">Pidgin</a> instead of the GTalk client these days. Not just that, but the Pidgin client is a lot more feature rich (shame it doesn&rsquo;t support GTalk VOIP).</li><li><strong>More emoticons.</strong> &lsquo;nuff said.</li><li><strong>Webcam support.</strong> How can they have not added webcam support by now? I know there&rsquo;s a plugin out there made by a third-party developer that provides it, but it should be part of the core. People don&rsquo;t want to have to search for plugins to get this functionality, it should just work out of the box.</li><li><strong>Encrypted chats.</strong> I want to be able to encrypt my conversations. Not because I&rsquo;m talking about anything dodgey, but because I don&rsquo;t want my chats logged and data-mined without my permission.</li><li><strong>Cross-platform support.</strong> Why are there no versions for Linux or Mac? Even though I might not personally use them, I have friends who do! Let&rsquo;s give them a fair go too.</li></u>So I&rsquo;ve now removed my GTalk install. I&rsquo;ll continue to use Pidgin for standard IM (tabbed chats, encryption plugins, cross-platform, multi-protocol), and I&rsquo;ll use <a href="http://www.skype.com/" title="Skype">Skype</a> for voice and video chats (voice <em>and</em> video out of the box, encryption, cross-platform). Until the GTalk team finally throw a bit of effort into their product it won&rsquo;t be making another appearance on my desktop.</p>
+
+<p>PS. Merry Christmas everyone :)</p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/google">Google</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/software">Software</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/technology">Technology</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

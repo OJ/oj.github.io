@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>XSS on OJ&#39;s Perspective</title>
+    <link>/categories/xss/</link>
+    <description>Recent content in XSS on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Thu, 29 Nov 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/xss/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>XSS Flaws via MVC Model Binding and Request.QueryString Inconsistencies</title>
+      <link>/posts/xss-flaws-via-mvc-model-binding-and-request.querystring-inconsistencies/</link>
+      <pubDate>Thu, 29 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/xss-flaws-via-mvc-model-binding-and-request.querystring-inconsistencies/</guid>
+      <description>&lt;p&gt;Forgive the title of the post, it was hard coming up with something succinct that captured the purpose of the post. This was inspired by a recent experience with a client who had this exact problem with one of their production systems.&lt;/p&gt;
+
+&lt;h2 id=&#34;tl-dr&#34;&gt;TL;DR&lt;/h2&gt;
+
+&lt;p&gt;Never use &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/ms524784(v=vs.90).aspx&#34;&gt;Request.QueryString&lt;/a&gt; to access parameters in your views, even when you&amp;rsquo;re sure your actions have validated them. You may open your application up to &lt;a href=&#34;http://en.wikipedia.org/wiki/Cross-site_scripting&#34;&gt;XSS&lt;/a&gt; attacks. Always, &lt;em&gt;always&lt;/em&gt; use data that is passed to your views via the &lt;code&gt;Model&lt;/code&gt; or the &lt;a href=&#34;http://msdn.microsoft.com/en-us/library/system.web.mvc.viewpage.viewdata(v=vs.108).aspx&#34;&gt;ViewData&lt;/a&gt; dictionary. Under no circumstances should you trust data coming in from the web, that includes query string parameters.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

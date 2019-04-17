@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sorting on OJ&#39;s Perspective</title>
+    <link>/categories/sorting/</link>
+    <description>Recent content in Sorting on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Thu, 16 Oct 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/sorting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sorting Algorithms: The Gnome Sort</title>
+      <link>/posts/sorting-algorithms-the-gnome-sort/</link>
+      <pubDate>Thu, 16 Oct 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sorting-algorithms-the-gnome-sort/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/uploads/2008/10/gnome.jpg&#34; alt=&#34;Gnome Sort&#34; title=&#34;Gnome Sort&#34; width=&#34;240&#34; style=&#34;float: right; margin-left: 5px; margin-bottom: 5px;&#34;/&gt;After a bit of down time for personal reasons, here is the fourth post in the series on &lt;a href=&#34;/category/sorting/&#34; title=&#34;Sorting @ OJ&#39;s rants&#34;&gt;sorting&lt;/a&gt; algorithms. This time round we&amp;rsquo;re taking a good look at the &lt;strong&gt;Gnome Sort&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;People often do a double-take when hearing the term &amp;ldquo;Gnome Sort&amp;rdquo; because it&amp;rsquo;s not that common. The &lt;strong&gt;Gnome Sort&lt;/strong&gt; is extremely simple, and is very similar to the principle behind the &lt;strong&gt;Insertion Sort&lt;/strong&gt; (which we&amp;rsquo;ll be covering soon).&lt;/p&gt;
+
+&lt;p&gt;The Gnome Sort is yet another &lt;em&gt;comparison&lt;/em&gt; and &lt;em&gt;exchange&lt;/em&gt; sort which has elements that are similar to the &lt;a href=&#34;/posts/sorting-algorithms-the-bubble-sort/&#34; title=&#34;Sorting Algorithms: The Bubble Sort&#34;&gt;Bubble Sort&lt;/a&gt;. If you haven&amp;rsquo;t read up on the Bubble Sort, be sure to do that before reading this article as it may help with your understanding.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sorting Algorithms: The Comb Sort</title>
+      <link>/posts/sorting-algorithms-the-comb-sort/</link>
+      <pubDate>Sun, 14 Sep 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sorting-algorithms-the-comb-sort/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/uploads/2008/09/combsort.jpg&#34; alt=&#34;Comb Sort&#34; title=&#34;Comb Sort&#34; width=&#34;150&#34; style=&#34;float: left; margin-right: 5px; margin-bottom: 5px;&#34; /&gt;Welcome to this, the third post in the series on &lt;a href=&#34;/category/sorting/&#34; title=&#34;Sorting @ OJ&#39;s rants&#34;&gt;sorting&lt;/a&gt; algorithms. Next up, we&amp;rsquo;re going to cover the &lt;strong&gt;Comb Sort&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Like the &lt;a href=&#34;/posts/sorting-algorithms-the-cocktail-sort/&#34; title=&#34;Sorting Algorithms: The Cocktail Sort&#34;&gt;Cocktail Sort&lt;/a&gt;, the Comb Sort isn&amp;rsquo;t particularly well known. Most people manage to make their way through tertiary studies without ever hearing of it. This post is designed to change that!&lt;/p&gt;
+
+&lt;p&gt;The Comb Sort is another &lt;em&gt;comparison&lt;/em&gt; and &lt;em&gt;exchange&lt;/em&gt; sort which builds on the idea of the &lt;a href=&#34;/posts/sorting-algorithms-the-bubble-sort/&#34; title=&#34;Sorting Algorithms: The Bubble Sort&#34;&gt;Bubble Sort&lt;/a&gt; and adds a potential optimisation or two.&lt;/p&gt;
+
+&lt;p&gt;Make sure you read the articles on the &lt;a href=&#34;/posts/sorting-algorithms-the-bubble-sort/&#34; title=&#34;Sorting Algorithms: The Bubble Sort&#34;&gt;Bubble Sort&lt;/a&gt; and the &lt;a href=&#34;/posts/sorting-algorithms-the-cocktail-sort/&#34; title=&#34;Sorting Algorithms: The Cocktail Sort&#34;&gt;Cocktail Sort&lt;/a&gt; before you read this article. Doing so will make it much easier to understand.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sorting Algorithms: The Cocktail Sort</title>
+      <link>/posts/sorting-algorithms-the-cocktail-sort/</link>
+      <pubDate>Fri, 29 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sorting-algorithms-the-cocktail-sort/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/uploads/2008/08/cocktail.jpg&#34; alt=&#34;Cocktail&#34; title=&#34;Cocktail&#34; style=&#34;float: right; margin-left: 5px; margin-bottom: 5px&#34; /&gt;Welcome to the second post in my series on &lt;a href=&#34;/category/sorting/&#34; title=&#34;Sorting @ OJ&#39;s rants&#34;&gt;sorting&lt;/a&gt; algorithms. This time we&amp;rsquo;re going to talk about a sort that most people haven&amp;rsquo;t heard a great deal about: the &lt;strong&gt;Cocktail Sort&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;This algorithm was the next logical choice in the series because it is very similar to the &lt;a href=&#34;/posts/sorting-algorithms-the-bubble-sort/&#34; title=&#34;Sorting Algorithms: The Bubble Sort&#34;&gt;Bubble Sort&lt;/a&gt; in the way that it operates. If you&amp;rsquo;re yet to read the first in the series, head &lt;a href=&#34;/posts/sorting-algorithms-the-bubble-sort/&#34; title=&#34;Sorting Algorithms: The Bubble Sort&#34;&gt;over there now&lt;/a&gt; as it will make this algorithm easier to understand.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sorting Algorithms: The Bubble Sort</title>
+      <link>/posts/sorting-algorithms-the-bubble-sort/</link>
+      <pubDate>Thu, 14 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sorting-algorithms-the-bubble-sort/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;/uploads/2008/08/bubbles.jpg&#34; alt=&#34;Bubbles&#34; title=&#34;Bubbles&#34; width=&#34;225&#34; height=&#34;154&#34; style=&#34;float: left; margin-right: 5px; margin-bottom: 5px&#34; /&gt;This is the first of many posts covering the fascinating topic of &lt;a href=&#34;/category/sorting/&#34; title=&#34;Sorting @ OJ&#39;s rants&#34;&gt;sorting&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I chose the Bubble Sort algorithm as the first to cover because of its simplicity. This algorithm tends to be the first sorting algorithm that is taught to students, and hence is a rather apt starting point.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s break it down.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sorting Things Out</title>
+      <link>/posts/sorting-things-out/</link>
+      <pubDate>Wed, 13 Aug 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/sorting-things-out/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s time to recap a topic that is, or should be, close to the heart of every developer. A topic that is often overlooked or glossed over, rarely fully understood and not often discussed. Yet this topic is hugely important.&lt;/p&gt;
+
+&lt;p&gt;That topic is &lt;strong&gt;Sorting&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

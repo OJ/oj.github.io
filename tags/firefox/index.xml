@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>firefox on OJ&#39;s Perspective</title>
+    <link>/tags/firefox/</link>
+    <description>Recent content in firefox on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Sat, 31 May 2008 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/firefox/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Be Part of a World Record</title>
+      <link>/posts/be-part-of-a-world-record/</link>
+      <pubDate>Sat, 31 May 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/be-part-of-a-world-record/</guid>
+      <description>Get yourself a copy of Firefox 3 on the day it&amp;rsquo;s released from this site and you&amp;rsquo;ll be doing your bit to get Firefox downloads in the world record books.
+Yup, you&amp;rsquo;ll also be falling for a huge marketing gag designed to get Firefox installed on as many machines as possible, but it&amp;rsquo;s a damned good browser anyway, so no harm done! :)</description>
+    </item>
+    
+  </channel>
+</rss>

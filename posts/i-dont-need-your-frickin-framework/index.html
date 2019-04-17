@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    I Don&#39;t Need Your Frickin&#39; Framework! - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/i-dont-need-your-frickin-framework/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> I Don&#39;t Need Your Frickin&#39; Framework! </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Mon Apr 13, 2009</span>
+
+	  <p><a href="/uploads/2009/04/scaffold_fail.jpg" title="Scaffold Fail"><img src="/uploads/2009/04/scaffold_fail.jpg" alt="Scaffold Fail" title="Scaffold Fail" width="200" style="float: right; margin-left: 5px; margin-bottom: 5px;" /></a>How many companies have you worked with/for that have their own framework? How many have been in the process of developing their own framework? How many have been in the process of <strong>re</strong>developing their own framework? How many have taken another framework and <del>hacked</del> improved it?</p>
+
+<p>When I attempt to answer the questions listed above, I start to shiver. I feel the need to burn my clothes and take a very long shower.</p>
+
+<p>In the early days of my career, frameworks were few and far between. These days it is no longer the case. An alarming number of companies are carrying the burden of their own frameworks. A huge number of private and public sector organisations are <em>currently paying people to write new frameworks</em>! For some reason, many nave project managers and team leads feel the need to invest a great deal of time and <abbr title="Cash">moolah</abbr> into building the next-generation, latest-and-greatest, all-singing-all-dancing, cover-every-possible-web-and-rich-client-case framework before they start to do what they&rsquo;re being paid to do: <strong>solve a business problem</strong>.</p>
+
+<p>The last job I worked on was one of those places. On my first day I was told that the project team (which at that point was just 2 of the 6 developers) were building a new framework. They were also building a code generator that used this framework. This dynamic duo of programs would be used in conjunction with each other to build any kind of application under the sun. It would solve all of the issues without the developer having to think, all while making poverty history.</p>
+
+<p>What a joke. The code generator was never finished and the framework was never used. The money that was intended to be burned while <em>adding more features to an existing application</em> disappeared in a blur of <a href="http://en.wikipedia.org/wiki/Greenfield_project" title="">Greenfield</a> over-engineering of a framework that simply <strong>was not required</strong>.</p>
+
+<p>This kind of problem happens so much these days, and it&rsquo;s just appalling. What I want to say is: <em>I am <a href="http://www.urbandictionary.com/define.php?term=frickin" title="">frickin&rsquo;</a> tired of it!</em></p>
+
+<p>The example I mentioned above is probably the worst I&rsquo;ve seen for a while. I&rsquo;d love to go into a fair bit of depth to uncover some &ldquo;interesting&rdquo; features of the framework, but it&rsquo;s not worth it. I <em>would</em> like to highlight just a few points about it though:
+<ul>
+  <li>It was based on <a href="http://www.lhotka.net/cslanet/" title="CSLA">CSLA</a>, which is already a rather large framework that attempts to do way too much via an enormous amount of code. The author decided that some parts of CSLA weren&rsquo;t good enough and hence needed to be &ldquo;improved&rdquo;. The &ldquo;improvements&rdquo; were atrocious.</li>
+<li>It was supposed to be Open Source, but as far as I&rsquo;m aware it never made it onto the Web, hence I can&rsquo;t point you at it.</li>
+<li>In some areas of code, you were required to invoke functions through a generic <kbd>MessagePortal</kbd> helper object which invoked the required function via reflection after attempting to infer a stack of unnecessary information. This was interesting, as you knew what you needed to call. But you still had to pass in function names as string parameters, hence losing knowledge, and wait for the framework to regain that knowledge by inspecting the code at runtime. Even though the excessive use of reflection was &lt;sarcasm&gt;an obvious win&lt;/sarcasm&gt;, we also copped the added bonus of having another 35 (yes, that&rsquo;s right <strong>35</strong>) function calls appearing in our call-stack.</li>
+<li>Those developers who attempted to use it were bitten constantly by esoteric and undocumented pitfalls in the design.</li>
+<li>It took around 3 times longer during development to do the &ldquo;basics&rdquo; (such as create objects and have them load from a DB). This is compared to using no framework and loading objects manually via ADO.</li>
+<li>It was unable to load any form of object graph.</li>
+<li>It not only leaked database connections every time you made a database call, it leaked <em>two extra connections</em> during start-up while it attempts to read some database information, such as schema, into memory.</li>
+<li>The code generator was written in such a way that the first half of the generator would be used to generate the other half (epic fail)!</li>
+<li>The author wasn&rsquo;t able to use it.</li>
+</ul>
+I hence conclude that this framework was a large, unwieldy, bloated, over-engineered, slow and riddled with design flaws. This is all for something that was actually totally unnecessary. Why? &hellip;</p>
+
+<p>.. because this was <strong>&ldquo;The Framework&rdquo; v2.0!</strong> Yup, it was the second version. The first was also a dog&rsquo;s breakfast, but at least it was finished.</p>
+
+<p>So what&rsquo;s my point? Am I trying to say that use of <em>any</em> framework is bad? Having helper libraries and well-designed platforms to build on are an epic fail?</p>
+
+<p>Most definitely not. What I am saying is this: there are people out there with minds immeasurably superior to ours who have already done a better job of solving this problem. Stop writing your own frameworks. Stop writing code generators. There are already options out there.</p>
+
+<p>So to all of you wannabe framework developers: stop what you&rsquo;re doing. You&rsquo;re wasting cash and not adding value. We&rsquo;ve already got a framework. It&rsquo;s called <strong>Microsoft .NET</strong>. Now get out of the way and let me use it!</p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/being-in-the-industry">Being in the Industry</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/software-development">Software Development</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/wtf">WTF</a>
+	  
+	    </p>
+	    
+<p><a itemprop="keywords" class=" label label-danger" href="/tags/.net">.net</a> <a itemprop="keywords" class=" label label-danger" href="/tags/bloat">bloat</a> <a itemprop="keywords" class=" label label-danger" href="/tags/framework">framework</a> <a itemprop="keywords" class=" label label-danger" href="/tags/overengineering">overengineering</a> <a itemprop="keywords" class=" label label-danger" href="/tags/programming">programming</a></p>
+
+
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

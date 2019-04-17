@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    .NET-fu: Signing an Unsigned Assembly (without Delay Signing) - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/.net-fu-signing-an-unsigned-assembly-without-delay-signing/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> .NET-fu: Signing an Unsigned Assembly (without Delay Signing) </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Wed Jul 9, 2008</span>
+
+	  <p>This article is also available in <a href="http://www.otherbit.com/modules/blog/BlogContent.aspx?ID=174" title=".NET-FU : come trasformare in SIGNED un assembly UNSIGNED (senza ricorrere al DELAY SIGNING)">Italian</a>.</p>
+
+<hr />
+
+<p>The code-base that I am currently working with consists of a large set of binaries that are all <a href="http://msdn.microsoft.com/en-us/library/xc31ft41.aspx" title="Sign an Assembly with a Strong Name">signed</a>. The savvy .NET devs out there will know that any assembly that&rsquo;s used/referenced by a signed assembly must <em>also</em> be signed.</p>
+
+<p>This is an issue when dealing with third-party libraries that are not signed. Sometimes you&rsquo;ll be lucky enough to be dealing with vendor that is happy to provide a set of signed assemblies, other times you won&rsquo;t. If your scenario fits the latter (as a recent one did for my colleagues and I), you need to sign the assemblies yourself. Here&rsquo;s how.</p>
+
+<p><em>Note:</em> <a href="http://msdn.microsoft.com/en-us/library/t07a3dye(VS.80).aspx" title="Delay Signing an Assembly">delay signing</a> is not covered in this article.</p>
+
+<h2 id="scenario-1-foo-and-bar">Scenario 1 - Foo and Bar</h2>
+
+<ul>
+<li><code>Foo</code> is the component that you&rsquo;re building which has to be signed.</li>
+<li><code>Bar</code> is the third-party component that you&rsquo;re forced to use that <em>isn&rsquo;t</em>.</li>
+</ul>
+
+<p><img src="/uploads/2008/07/foobar.png" alt="Relationship between Foo and Bar" /></p>
+
+<p>Grab <a href="/uploads/2008/07/bar.zip" title="Project/Binary for Bar">Bar.dll and project</a> along with <a href="/uploads/2008/07/foobar.zip" title="Project/Binary for Foo">Foo.dll and project</a> to see a source sample.</p>
+
+<p>You&rsquo;ll notice <em>Foo</em> has a .snk which is used to sign <em>Foo.dll.</em> When you attempt to compile <em>Foo</em> you get the following error message:</p>
+
+<blockquote>
+<p>Assembly generation failed &ndash; Referenced assembly &lsquo;Bar&rsquo; does not have a strong name.</p>
+</blockquote>
+
+<p>We need to sign <em>Bar</em> in order for <em>Foo</em> to compile.</p>
+
+<p><img src="/uploads/2008/07/step1.jpg" style="float: right; margin-left: 5px; margin-bottom: 2px;" alt="Disassemble Bar" /></p>
+
+<h3 id="step-1-disassemble-bar">Step 1 - Disassemble Bar</h3>
+
+<p>We need to open a command prompt which has the .NET framework binaries in the PATH environment variable. The easiest way to do this is to open a Visual Studio command prompt (which is usually under the &ldquo;Visual Studio Tools&rdquo; subfolder of &ldquo;Visual Studio 20XX&rdquo; in your programs menu). Change directory so that you&rsquo;re in the folder which contains <em>Bar.dll</em>.</p>
+
+<p>Use <a href="http://msdn.microsoft.com/en-us/library/f7dy01k1(VS.80).aspx" title="MSIL Disassembly">ildasm</a> to disassemble the file using the <code>/all</code> and <code>/out</code>, like so:</p>
+
+<pre><code>C:\Foo\bin&gt; ildasm /all /out=Bar.il Bar.dll
+</code></pre>
+
+<p>The result of the command is a new file, <em>Bar.il</em>, which contains a dissassembled listing of <em>Bar.dll</em>.</p>
+
+<p><img src="/uploads/2008/07/step2.jpg" style="float: right; margin-left: 5px; margin-bottom: 2px;" alt="Rebuild and Sign Bar" /></p>
+
+<h3 id="step-2-rebuild-and-sign-bar">Step 2 - Rebuild and Sign Bar</h3>
+
+<p>We can now use <a href="http://msdn.microsoft.com/en-us/library/496e4ekx.aspx" title="MSIL Assembler">ilasm</a> to reassemble <em>Bar.il</em> back into <em>Bar.dll</em>, but at the same time specify a strong-name key to use to sign the resulting assembly. We pass in the value <em>Foo.snk</em> to the <code>/key</code> switch on the command line, like so:
+<div style="clear:both;"></div></p>
+
+<pre><code>C:\Foo\bin&gt; ilasm /dll /key=Foo.snk Bar.il
+
+Microsoft (R) .NET Framework IL Assembler.  Version 2.0.50727.1434
+Copyright (c) Microsoft Corporation.  All rights reserved.
+Assembling 'Bar.il'  to DLL --&gt; 'Bar.dll'
+Source file is ANSI
+
+Assembled method Bar.Bar::get_SecretMessage
+Assembled method Bar.Bar::.ctor
+Creating PE file
+
+Emitting classes:
+Class 1:        Bar.Bar
+
+Emitting fields and methods:
+Global
+Class 1 Methods: 2;
+Resolving local member refs: 1 -&gt; 1 defs, 0 refs, 0 unresolved
+
+Emitting events and properties:
+Global
+Class 1 Props: 1;
+Resolving local member refs: 0 -&gt; 0 defs, 0 refs, 0 unresolved
+Writing PE file
+Signing file with strong name
+Operation completed successfully
+</code></pre>
+
+<p><em>Bar.dll</em> is now signed! All we have to do is reopen <em>Foo</em>&rsquo;s project, remove the reference to <em>Bar.dll</em>, re-add the reference to the new signed assembly and rebuild. Sorted!</p>
+
+<h2 id="scenario-2-foo-bar-and-baz">Scenario 2 - Foo, Bar and Baz</h2>
+
+<ul>
+<li><code>Foo</code> is the component that you&rsquo;re building which has to be signed.</li>
+<li><code>Bar</code> is the third-party component that you&rsquo;re forced to use that <em>isn&rsquo;t</em>.</li>
+<li><code>Baz</code> is another third-party component that is required in order for you to use <em>Bar</em>.</li>
+</ul>
+
+<p><img src="/uploads/2008/07/foobarbaz.png" alt="Relationship between Foo, Bar and Baz"/></p>
+
+<p>Grab <a href="/uploads/2008/07/baz.zip" title="Project/Binary for Baz"><em>Baz.dll</em> and project</a>, <a href="/uploads/2008/07/barbaz.zip" title="Project/Binary for Bar"><em>Bar.dll</em> and project</a> along with <a href="/uploads/2008/07/foobarbaz.zip" title="Project/Binary for Foo"><em>Foo.dll</em> and project</a> for a sample source.</p>
+
+<p>When you attempt to build <em>Foo</em> you get the same error as you do in the previous scenario. Bear in mind that this time, <strong>both</strong> <em>Bar.dll</em> and <em>Baz.dll</em> need to be signed. So first of all, follow the steps in <strong>Scenario 1</strong> for both <em>Bar.dll</em> and <em>Baz.dll</em>.</p>
+
+<p>Done? OK. When you attempt to build <em>Foo.dll</em> after pointing the project at the new <em>Bar.dll</em> no compiler errors will be shown. Don&rsquo;t get too excited :)</p>
+
+<p>When you attempt to <strong>use</strong> <em>Foo.dll</em> your world will come crashing down. The reason is because <em>Bar.dll</em> was originally built with a reference to an <u>unsigned version</u> of <em>Baz.dll</em>. Now that <em>Baz.dll</em> is signed we need to force <em>Bar.dll</em> to reference the <strong>signed</strong> version of <em>Baz.dll</em>.</p>
+
+<p><img src="/uploads/2008/07/step3.jpg" style="float: right; margin-left: 5px; margin-bottom: 2px;" alt="Hack the Disassembled IL" /></p>
+
+<h3 id="step-1-hack-the-disassembled-il">Step 1 - Hack the Disassembled IL</h3>
+
+<p>Just like we did in the previous steps we need to disassemble the binary that we need to fix. This time, make sure you disassemble the new binary that you created in the previous step (this binary has been signed, and will contain the signature block for the strong name). Once <em>Bar.il</em> has been created using ildasm, open it up in a <a href="http://www.vim.org/" title="VIM - @secretGeek loves it... no really, he does!">text editor</a>.</p>
+
+<p>Search for the reference to <em>Baz</em> &ndash; this should be located a fair way down the file, somewhere near the top of the actual code listing, just after the comments. Here&rsquo;s what it looks like on my machine:</p>
+
+<pre><code>.assembly extern /*23000002*/ Baz
+{
+  .ver 1:0:0:0
+}
+</code></pre>
+
+<p>This external assembly reference is missing the all-important public key token reference. Before we can add it, we need to know what the public key token is for <em>Bar.dll</em>. To determine this, we can use the <a href="http://msdn.microsoft.com/en-us/library/k5b5tt23(VS.80).aspx" title="Strong Name Tool">sn.exe</a> utility, like so:</p>
+
+<pre><code>C:\Foo\bin&gt; sn -Tp Baz.dll
+
+Microsoft (R) .NET Framework Strong Name Utility  Version 3.5.21022.8
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Public key is
+0024000004800000940000000602000000240000525341310004000001000100a59cd85e10658d
+9229d54de16c69d0b53b31f60bb4404b86eb3b8804203aca9d65412a249dfb8e7b9869d09ce80b
+0d9bdccd4943c0004c4e76b95fdcdbc6043765f51a1ee331fdd55ad25400d496808b792723fc76
+dee74d3db67403572cddd530cadfa7fbdd974cef7700be93c00c81121d978a3398b07a9dc1077f
+b331ca9c
+
+Public key token is 2ed7bbec811020ec
+</code></pre>
+
+<p>Now we return to <em>Bar.il</em> and modify the assembly reference so that the public key token is specified. This is what it should look like after modification:</p>
+
+<pre><code>.assembly extern /*23000002*/ Baz
+{
+  .publickeytoken = (2E D7 BB EC 81 10 20 EC )
+  .ver 1:0:0:0
+}
+</code></pre>
+
+<p>Save your changes.</p>
+
+<p><img src="/uploads/2008/07/step4.jpg" style="float: right; margin-left: 5px; margin-bottom: 2px;" alt="Reassemble Bar" /></p>
+
+<h3 id="step-2-reassemble-bar">Step 2 - Reassemble Bar</h3>
+
+<p>This step is just a repeat of previous steps. We are again using ilasm to reassemble <em>Bar.dll</em>, but this time from the new &ldquo;hacked&rdquo; <em>Bar.il</em> file. We must use the exact same command line as we did previously, and we still need to specify the <em>Foo.snk</em> for signing the assembly. To save you having to scroll up, here it is again:</p>
+
+<pre><code>C:\Foo\bin&gt; ilasm /dll /key=Foo.snk Bar.il
+
+Microsoft (R) .NET Framework IL Assembler.  Version 2.0.50727.1434
+Copyright (c) Microsoft Corporation.  All rights reserved.
+Assembling 'Bar.il'  to DLL --&gt; 'Bar.dll'
+Source file is ANSI
+
+Assembled method Bar.Bar::get_SecretMessage
+Assembled method Bar.Bar::.ctor
+Creating PE file
+
+Emitting classes:
+Class 1:        Bar.Bar
+
+Emitting fields and methods:
+Global
+Class 1 Fields: 1;      Methods: 2;
+Resolving local member refs: 3 -&gt; 3 defs, 0 refs, 0 unresolved
+
+Emitting events and properties:
+Global
+Class 1 Props: 1;
+Resolving local member refs: 0 -&gt; 0 defs, 0 refs, 0 unresolved
+Writing PE file
+Signing file with strong name
+Operation completed successfully
+</code></pre>
+
+<p>Open up <em>Foo</em>&rsquo;s project, remove and re-add the reference to <em>Bar.dll</em>, making sure you point to the new version that you just created. <em>Foo.dll</em> will not only build, but this time it will run!</p>
+
+<h2 id="disclaimer">Disclaimer</h2>
+
+<p>&ldquo;Hacking&rdquo; third-party binaries in this manner <strong><em>may</em> breach the license agreement</strong> of those binaries. Please make sure that you are not breaking the license agreement before adopting this technique.</p>
+
+<p>I hope this helps!</p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/howto">HOWTO</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/microsoft">Microsoft</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/security">Security</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/software-development">Software Development</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/tips/tricks">Tips/Tricks</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/c">C#</a>
+	  
+	    </p>
+	    
+<p><a itemprop="keywords" class=" label label-danger" href="/tags/.net">.net</a> <a itemprop="keywords" class=" label label-danger" href="/tags/msil">MSIL</a> <a itemprop="keywords" class=" label label-danger" href="/tags/disassemble">disassemble</a> <a itemprop="keywords" class=" label label-danger" href="/tags/ilasm">ilasm</a> <a itemprop="keywords" class=" label label-danger" href="/tags/ildasm">ildasm</a> <a itemprop="keywords" class=" label label-danger" href="/tags/sign">sign</a> <a itemprop="keywords" class=" label label-danger" href="/tags/snk">snk</a> <a itemprop="keywords" class=" label label-danger" href="/tags/strong-name">strong name</a></p>
+
+
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

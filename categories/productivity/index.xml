@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Productivity on OJ&#39;s Perspective</title>
+    <link>/categories/productivity/</link>
+    <description>Recent content in Productivity on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Tue, 31 Jan 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/productivity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My Tools List - 2012</title>
+      <link>/posts/my-tools-list-2012/</link>
+      <pubDate>Tue, 31 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/my-tools-list-2012/</guid>
+      <description>&lt;p&gt;The topic of tools is often a hot one amongst developers and every year
+we see an influx of blog posts where people rant and rave about which
+ones they love the most, and why.&lt;/p&gt;
+
+&lt;p&gt;Far be it from me to stay out of such a discussion!&lt;/p&gt;
+
+&lt;p&gt;Here is a list of the tools that I use as of the end of January 2012. Some are simply noteworthy.
+Others are very handy and while I would get by without them they would
+be missed. Some of these &lt;strong&gt;I simply cannot live without&lt;/strong&gt;. I&amp;rsquo;m not going
+to bother with ratings. I won&amp;rsquo;t go into frameworks or the like which
+make their way into my code, instead I am focussing on those tools which
+help me do the coding and which aid me in my general computer usage.&lt;/p&gt;
+
+&lt;p&gt;Some of these tools are platform-specific, but many can be used across
+different platforms.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CTF on OJ&#39;s Perspective</title>
+    <link>/categories/ctf/</link>
+    <description>Recent content in CTF on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Mon, 26 Nov 2018 16:41:10 +1000</lastBuildDate>
+    
+	<atom:link href="/categories/ctf/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Police Quest CTF Challenge</title>
+      <link>/posts/police-quest-ctf-challenge/</link>
+      <pubDate>Mon, 26 Nov 2018 16:41:10 +1000</pubDate>
+      
+      <guid>/posts/police-quest-ctf-challenge/</guid>
+      <description>Earlier this month, I donated a CTF challenge to the legendary bunch of folks that ran the Kiwicon CTF in Wellington. It&amp;rsquo;s a bit of a tradition for me to pass on at least one challenge, and I felt it was worth keeping that tradition going this year.
+The challenge was attempted by a few people during the conference, however I don&amp;rsquo;t believe it was successfully owned. As a result, I wanted to release this to the general public for funzies.</description>
+    </item>
+    
+    <item>
+      <title>BSidesCBR CTF Round Up</title>
+      <link>/posts/bsidescbr-ctf-round-up/</link>
+      <pubDate>Wed, 22 Mar 2017 11:51:10 +1000</pubDate>
+      
+      <guid>/posts/bsidescbr-ctf-round-up/</guid>
+      <description>BSides Canberra for 2017 has just finished up! A cracking 2-day conference hosted by a bunch of infosec folks down here in Australia, and everything went as well as it could have. It was great fun, and the vibe there was really awesome.
+If you&amp;rsquo;re here for the details on how to get the CTF challenges running locally, jump to the bottom of the post. Keep reading if you want more information on how things went.</description>
+    </item>
+    
+    <item>
+      <title>bin2json CTF Challenge</title>
+      <link>/posts/bin2json-ctf-challenge/</link>
+      <pubDate>Mon, 21 Nov 2016 13:52:00 +1000</pubDate>
+      
+      <guid>/posts/bin2json-ctf-challenge/</guid>
+      <description>At the beginning of this year I agreed to help a good friend out and build a challenge for the BSidesCbr 2016 CTF. The aim was to:
+ Create a fun binary pwnable. Avoid the typical exploitation paths (eg. stack/heap buffer overflows, format strings, etc). Include a couple of code related issues that are close to my heart. Design it so that multiple issues needed to be abused in order to gain code execution.</description>
+    </item>
+    
+    <item>
+      <title>Solving &#39;The Blender&#39;</title>
+      <link>/posts/solving-the-blender/</link>
+      <pubDate>Thu, 05 Feb 2015 15:27:57 +0000</pubDate>
+      
+      <guid>/posts/solving-the-blender/</guid>
+      <description>&lt;p&gt;This post contains a walk-through of the process required to solve &lt;em&gt;The Blender&lt;/em&gt;. &lt;em&gt;The Blender&lt;/em&gt; was a reverse engineering challenge that I built and submitted to &lt;a href=&#34;https://twitter.com/hyprwired&#34;&gt;hyprwired&lt;/a&gt; for inclusion in the &lt;a href=&#34;https://kiwicon.org/&#34;&gt;Kiwicon&lt;/a&gt; &lt;a href=&#34;https://kiwicon.org/the-con/hamiltr0nno-carrier/&#34;&gt;CTF&lt;/a&gt;. The challenge wasn&amp;rsquo;t intended to be too mind-boggling, but it turned out that nobody was able to solve it on the day.&lt;/p&gt;
+
+&lt;p&gt;I won&amp;rsquo;t deny that this didn&amp;rsquo;t me feel awful &lt;em&gt;and&lt;/em&gt; great at the same time! However, I don&amp;rsquo;t want this lying in the depths of history unsolved, so I wanted to show people the story behind the challenge, and how to nail it using IDA and your brain.&lt;/p&gt;
+
+&lt;p&gt;Please &lt;a href=&#34;/uploads/2015/02/blender/the_blender.zip&#34;&gt;download&lt;/a&gt; it if you would like to follow along.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CSAW 2014 - Saturn</title>
+      <link>/posts/csaw-2014-saturn/</link>
+      <pubDate>Mon, 22 Sep 2014 14:57:08 +0000</pubDate>
+      
+      <guid>/posts/csaw-2014-saturn/</guid>
+      <description>&lt;p&gt;This post contains a detailed account of how I solved the &lt;strong&gt;Saturn&lt;/strong&gt; exploitation challenge during &lt;a href=&#34;https://ctf.isis.poly.edu/&#34;&gt;CSAW 2014 CTF&lt;/a&gt;. I thought that this challenge was very entertaining, hopefully you will too.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>myftpd Exploit on Windows 7</title>
+      <link>/posts/myftpd-exploit-on-windows-7/</link>
+      <pubDate>Wed, 12 Mar 2014 19:48:47 +0000</pubDate>
+      
+      <guid>/posts/myftpd-exploit-on-windows-7/</guid>
+      <description>&lt;p&gt;In my &lt;a href=&#34;/posts/idsecconf-2013-myftpd-challenge/&#34;&gt;previous post&lt;/a&gt; I covered off, in relative detail, how to exploit the IDSECCONF offline CTF &lt;code&gt;myftpd&lt;/code&gt; server running on Windows XP. This exploit makes use of a Vanilla &lt;code&gt;EIP&lt;/code&gt; overwrite along with some &lt;em&gt;shellcode golf&lt;/em&gt; to allow for execution of arbitrary payloads. At the time I had intended to write up a way of making this work on other versions of Windows, but that post ended up long enough so I decided to publish without the extra detail.&lt;/p&gt;
+
+&lt;p&gt;In this post I am going to show how you can make this exploit work on Windows 7 SP1. This doesn&amp;rsquo;t really &lt;em&gt;bypass&lt;/em&gt; ASLR, it just avoids it.&lt;/p&gt;
+
+&lt;p&gt;If you haven&amp;rsquo;t read the &lt;a href=&#34;/posts/idsecconf-2013-myftpd-challenge/&#34;&gt;previous post&lt;/a&gt;, then please go and read that now. If you&amp;rsquo;re ready, then let&amp;rsquo;s dive in.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>IDSECCONF 2013 myftpd challenge</title>
+      <link>/posts/idsecconf-2013-myftpd-challenge/</link>
+      <pubDate>Sat, 01 Mar 2014 01:26:33 +0000</pubDate>
+      
+      <guid>/posts/idsecconf-2013-myftpd-challenge/</guid>
+      <description>&lt;h2 id=&#34;update-2018-09-13&#34;&gt;Update 2018-09-13&lt;/h2&gt;
+
+&lt;p&gt;Lots of people have asked for a copy of the binary so that they can play along with this. I&amp;rsquo;ve contacted &lt;a href=&#34;https://twitter.com/y3dips&#34;&gt;Ammar&lt;/a&gt; and he has said it&amp;rsquo;s ok for me to provide it here. So for those that are keen to have a go at this themselves, &lt;a href=&#34;/uploads/2014/03/myftpd.exe&#34;&gt;have at it!&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;on-with-the-show&#34;&gt;On with the Show&lt;/h2&gt;
+
+&lt;p&gt;With &lt;a href=&#34;http://buffered.io/posts/osce-and-me/&#34;&gt;OSCE&lt;/a&gt; out of the way and the family in need of a break from me doing study and certifications, I decided to turn my hand to some fun exploit challenges to keep up the practice. To a wannabe bug exploiter such as myself, there are plenty of options out there which are great for fun and practice. Some of those options are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Downloading an application with a known vulnerability and exploit and practising on that.&lt;/li&gt;
+&lt;li&gt;Downloading a proof of concept crash from &lt;a href=&#34;http://exploit-db.com/&#34;&gt;ExploitDB&lt;/a&gt; and turning it into a full exploit.&lt;/li&gt;
+&lt;li&gt;Reading sites such as &lt;a href=&#34;https://www.corelan.be/&#34;&gt;Corelan&lt;/a&gt; and &lt;a href=&#34;http://www.fuzzysecurity.com/&#34;&gt;Fuzzy Security&lt;/a&gt;, who both have great exploit tutorials. However, instead of reading through the walk-throughs, download the vulnerable applications and attempt to exploit them yourself.&lt;/li&gt;
+&lt;li&gt;Getting some &amp;ldquo;exploitme&amp;rdquo; style challenges from some bygone &lt;a href=&#34;https://en.wikipedia.org/wiki/Capture_the_flag&#34;&gt;CTFs&lt;/a&gt;. A great place to go is &lt;a href=&#34;http://www.shell-storm.org/&#34;&gt;ShellStorm&lt;/a&gt;, which contains an archive of lots of these.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On this particular day I thought I&amp;rsquo;d try one of the harder exploitme challenges and it just so happened that something appeared in my Twitter feed that pointed me to &lt;a href=&#34;http://clog.ammar.web.id/2013/06/idsecconf-2013-ctff-offline-challenge.html&#34;&gt;Ammar&lt;/a&gt;&amp;rsquo;s post discussing a level &lt;code&gt;500&lt;/code&gt; exploit challenge from the &lt;a href=&#34;http://2013.idsecconf.org/&#34;&gt;IDSECCONF 2013 CTF&lt;/a&gt;. To quote Ammar:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;hellip; during the IDSECCONF offline CTF, none of the team were able to wrap
+up a working remote exploit, although one team were able to get [the]
+correct offset to overwrite EIP &amp;hellip;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This had the hallmarks of being tricky and fun! I asked Ammar if the binary was still available and he kindly made it available for download (head to his site if you would like to have a shot at it yourself).&lt;/p&gt;
+
+&lt;p&gt;What follows is my dissection of the binary, along with my approach to exploiting it so that it would allow the attacker to submit &lt;em&gt;any&lt;/em&gt; payload including reverse &lt;a href=&#34;https://github.com/rapid7/meterpreter&#34;&gt;Meterpreter&lt;/a&gt; shells, bind shells and VNC injection. If you&amp;rsquo;re keen to take this challenge on by yourself, please don&amp;rsquo;t read this as it&amp;rsquo;s a blatant spoiler. Otherwise, let&amp;rsquo;s get stuck in!&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

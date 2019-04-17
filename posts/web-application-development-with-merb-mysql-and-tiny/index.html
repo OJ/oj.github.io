@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Web Application Development with Merb, MySQL and Tiny - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/web-application-development-with-merb-mysql-and-tiny/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Web Application Development with Merb, MySQL and Tiny </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Sun Apr 6, 2008</span>
+
+	  <p>I&rsquo;ve been thinking about building a web application or two for a while, but I haven&rsquo;t yet found the time to invest. I don&rsquo;t think this is going to change very soon either. I&rsquo;m not the kind of person who usually likes to get stuck into something unless I know I&rsquo;ve got a couple of hours up my sleeve so that I feel I can get something done, and this has been preventing me from doing anything because I don&rsquo;t ever feel like I have a couple of hours spare. Having a child means that you could have as little as 5 minutes before all hell breaks loose.</p>
+
+<p>Instead of whinging about it, I&rsquo;ve decided to go against my usual grain and take those 5 minute chunks as a chance to do something. This is the first step :)</p>
+
+<p>So, while I&rsquo;m not going to talk about the web application that I&rsquo;m going to be writing, I will be covering aspects of the development along with the tools and frameworks I&rsquo;ve decided to use.</p>
+
+<p>I&rsquo;ve decided to give <a href="http://merbivore.com/" title="Merb">Merb</a> a whirl as the base framework for writing my application, which works off the <a href="http://www.ruby-lang.org/" title="Ruby">Ruby</a> language. I&rsquo;ll also look into using <a href="http://code.macournoyer.com/thin/" title="Tiny - Yet another web server">Tiny</a> as the web server, but that&rsquo;ll be decided down the track. I&rsquo;ll be using <a href="http://www.mysql.com/" title="MySQL">MySQL</a> for the database back-end. I&rsquo;ll also be using <a href="http://www.selenic.com/mercurial/" title="Mercurial">Mercurial</a> for my VCS, and may well push to an <a href="http://subversion.tigris.org/" title="Subversion">SVN</a> repo on my server for backups and releases.</p>
+
+<p>All of my development will be done using <a href="http://www.vim.org/" title="VIM">VIM</a> as my text editor.</p>
+
+<p>Don&rsquo;t ask me to justify my choices for any of the above :) I can&rsquo;t be arsed. Suffice is to say that those were chosen as a compromise on speed, ease of development, time to market, etc.</p>
+
+<p>Since Merb is a new framework, I thought I&rsquo;d read up on some tutorials. Unfortunately, most of the tutorials are totally out of date and don&rsquo;t work with the latest version of Merb. So I thought it&rsquo;d be good to give back a little and write an updated tutorial on how I got Merb going with Tiny.</p>
+
+<p>To start with we need to download and install a bunch of stuff. I&rsquo;m using Windows for my dev environment (yeah, shut up, I can&rsquo;t hear your insults anyway ;)), so bear in mind that you might have to use &lsquo;sudo&rsquo; when installing gems, and you might need to use &lsquo;apt-get&rsquo;, &lsquo;emerge&rsquo; or &lsquo;dpkg&rsquo; depending on which platform you&rsquo;re using.</p>
+
+<p>Anyway, these are the steps that I took to get my environment ready:
+<ol>
+<li>Download and install MySQL for your platform (again, stacks of help on the web already).</li>
+<li>Download and install Ruby for your platform (there are stacks of how-tos out there to help with this). If you&rsquo;re using Windows, make sure that you add the ruby &lsquo;bin&rsquo; folder to your PATh environment variable so that you can invoke it from anywhere. Also make sure that you have enabled <a href="http://www.rubygems.org/" title="RubyGems">RubyGems</a>.</li>
+<li>Open a command prompt.</li>
+<li>Install Merb by typing: <em>gem install merb</em></li>
+<li>Install Tiny by typing: <em>gem install tiny</em></li>
+<li>Install your text editor of choice if you haven&rsquo;t already.</li>
+</ol></p>
+
+<p>You should now be ready to go as far as your environment is concerned. Next up, let&rsquo;s get a basic Merb application running. Start by creating a &ldquo;test&rdquo; application using the command:</p>
+
+<pre><code>merb-gen app test
+</code></pre>
+
+<p>This should create a folder called &ldquo;test&rdquo; with a collection of subfolders which contain the basic Merb application. Now, to make sure that everything is working, we should invoke our merb application with the &ldquo;tiny&rdquo; server adapter. First, change the directory to the application directory, and the invoke merb with the appropriate adapter using the following commands:</p>
+
+<pre><code>cd test
+merb -a thin
+</code></pre>
+
+<p>If all goes well you should see something like this appear in your console window:</p>
+
+<pre><code>~ Loaded DEVELOPMENT Environment...
+~ Compiling routes...
+~ Using 'share-nothing' cookie sessions (4kb limit per client)
+~ Using Thin adapter
+</code></pre>
+
+<p><a href="/uploads/2008/04/merb-empty-app.png" rel="lightbox[merb]"><img src="/uploads/2008/04/merb-empty-app.png" alt="Default Merb application render" title="Empty Merb Application" style="float: left; padding-right: 3px; padding-bottom: 3px;" width="120"/></a>Next, browse to <a href="http://localhost:4000">http://localhost:4000</a> and you should see something like the image on the left.</p>
+
+<p>If you can see that then you&rsquo;re ready to rock. If you can&rsquo;t then you need to make sure that you&rsquo;ve set up and installed everything properly. You should also make sure that your firewall software isn&rsquo;t blocking port 4000, otherwise nothing will come up!</p>
+
+<p>So the application works. The more perceptive of you may have realised that there&rsquo;s an error displayed on screen that says:<blockquote><p>Exception:
+No routes match the request, /</p></blockquote>
+In Merb, just like Rails, there is a router which tells the framework which controller and action to invoke based on the URL&rsquo;s given. The error is telling us that it doesn&rsquo;t know which controller and action to invoke when we browse to the root of the site. That&rsquo;s no surprise because we haven&rsquo;t yet created a controller/action, let alone pointed the root of the site at it.</p>
+
+<p>Let&rsquo;s do that now. Since this is a test application, let&rsquo;s just get a basic page rendered. Go back to your command window, make sure that your current path is still the &ldquo;test&rdquo; folder, then invoke the following:</p>
+
+<pre><code>merb-gen controller home
+</code></pre>
+
+<p>This should give us a controller skeleton ready to edit. Of the generated files, the ones we&rsquo;re interested in are:</p>
+
+<pre><code>app/controllers/home.rb
+app/views/home/index.html.erb
+</code></pre>
+
+<p>The content of the controller is very basic, and should look something like the following:</p>
+
+<pre><code>class Home &lt; Application
+
+  def index
+    render
+  end
+
+en
+</code></pre>
+
+<p>This is simply telling the framework to render the default view associated with the action. That is, render that which is stored in the home/index.html.erb file. The default content looks like this:</p>
+
+<pre><code>You're in index of the Home
+</code></pre>
+
+<p><a href="/uploads/2008/04/merb-default-home.png" rel="lightbox[merb]"><img src="/uploads/2008/04/merb-default-home.png" alt="This is the default content of an action which is associated with a controller." title="Default Merb index action render" width="120" style="float: right; padding-left: 3px; padding-bottom: 3px" /></a>If you killed off the merb server, fire it up again and browse to <a href="http://localhost:4000/home">http://localhost:4000/home</a>, you should see the site as shown on the right.</p>
+
+<p>Finally, let&rsquo;s make this the default location for the application when the user browses the root of the application. We do this by modifing the router configuration located in:</p>
+
+<pre><code>config/router.rb
+</code></pre>
+
+<p>Open this file in your text editor, and uncomment the second-last line of the file which allows you to match the root folder to a controller and action. Specify &ldquo;home&rdquo; as the controller, and leave &ldquo;index&rdquo; specified as the action. Your router.rb file should look like this:</p>
+
+<pre><code>Merb.logger.info(&quot;Compiling routes...&quot;)
+Merb::Router.prepare do |r|
+  # RESTful routes
+  # r.resources :posts
+
+  # This is the default route for /:controller/:action/:id
+  # This is fine for most cases.  If you're heavily using resource-based
+  # routes, you may want to comment/remove this line to prevent
+  # clients from calling your create or destroy actions with a GET
+  r.default_routes
+
+  # Change this for your home page to be available at /
+  r.match('/').to(:controller =&gt; 'home', :action =&gt;'index')
+end
+</code></pre>
+
+<p>Fire up your application by browsing to <a href="http://localhost:4000">http://localhost:4000</a> again, you should be greeted with the same screenshot shown above.</p>
+
+<p>Well done! You&rsquo;ve set up a merb application using tiny, and have managed to create a very basic site with the root folder mapped to a controller action.</p>
+
+<p>My next blog post in this little series will cover the creation of a database to use as the back-end of the application, along with a model which loads from the database and a basic view to render that model&rsquo;s information.</p>
+
+<p>Feedback welcome!</p>
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/merb">Merb</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/software-development">Software Development</a>
+	  
+	    </p>
+	    
+<p><a itemprop="keywords" class=" label label-danger" href="/tags/merb">Merb</a> <a itemprop="keywords" class=" label label-danger" href="/tags/tiny">tiny</a> <a itemprop="keywords" class=" label label-danger" href="/tags/web-development">web development</a></p>
+
+
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>

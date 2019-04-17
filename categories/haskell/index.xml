@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Haskell on OJ&#39;s Perspective</title>
+    <link>/categories/haskell/</link>
+    <description>Recent content in Haskell on OJ&#39;s Perspective</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <copyright>Copyright OJ Reeves 2019</copyright>
+    <lastBuildDate>Mon, 17 Aug 2009 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/haskell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Haskell 101 at the Brisbane Functional Programming Meetup</title>
+      <link>/posts/haskell-101-at-the-brisbane-functional-programming-meetup/</link>
+      <pubDate>Mon, 17 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/haskell-101-at-the-brisbane-functional-programming-meetup/</guid>
+      <description>I just thought I&amp;rsquo;d let the world know that tomorrow night, at 6pm AEST, the Brisbane Functional Programming Group is having another get-together. The topics for the meeting are:  Introduction to Functional Programming - by Brad Clow Haskell 101 - by me!  There are still spots available if you&amp;rsquo;re keen to come along. It should be fun!
+I&amp;rsquo;m always up for some public scrutiny, so come along and bring your rotten tomatoes.</description>
+    </item>
+    
+    <item>
+      <title>The Value of a Technical Community</title>
+      <link>/posts/the-value-of-a-technical-community/</link>
+      <pubDate>Wed, 29 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-value-of-a-technical-community/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;/uploads/2009/07/community.jpg&#34; rel=&#34;lightbox&#34; title=&#34;Cricket Team Holding Hands --- Image by  Royalty-Free/Corbis&#34;&gt;&lt;img src=&#34;/uploads/2009/07/community.jpg&#34; alt=&#34;Cricket Team Holding Hands --- Image by  Royalty-Free/Corbis&#34; title=&#34;Cricket Team Holding Hands --- Image by  Royalty-Free/Corbis&#34; width=&#34;150&#34; style=&#34;float: left; margin-right: 5px; margin-bottom: 5px;&#34; /&gt;&lt;/a&gt;This post was inspired by an experience I had recently in an IRC channel. To protect the innocent, I&amp;rsquo;ll refrain from naming and shaming the channel and individual as those details aren&amp;rsquo;t important.&lt;/p&gt;
+
+&lt;p&gt;Communities are arguably the life blood of technology. Without a good community the likelihood of the technology catching on is drastically reduced. Those communities which lack individuals that are happy to put time and effort in to help get others up to speed tend to stagnate. Any community which involves members that are abrasive, rude and downright offensive is destined to suffer long term.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>&#39;Point-Free style: What is it good for?&#39;</title>
+      <link>/posts/point-free-style-what-is-it-good-for/</link>
+      <pubDate>Sat, 27 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/point-free-style-what-is-it-good-for/</guid>
+      <description>&lt;p&gt;If you&amp;rsquo;re not interested in what inspired this post, then skip this section and &lt;a href=&#34;#MoreInteresting&#34; title=&#34;The purpose of the post&#34;&gt;jump&lt;/a&gt; to the more interesting bits.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-little-bit-of-history&#34;&gt;A Little Bit of History&lt;/h2&gt;
+
+&lt;p&gt;Recently I&amp;rsquo;ve been delving into &lt;a href=&#34;http://haskell.org/&#34; title=&#34;Haskell&#34;&gt;Haskell&lt;/a&gt; quite a bit. It&amp;rsquo;s part of my apparently never-ending quest to learn as much as I can about as many languages as I can (well, those that appeal to me at least :)). While I love playing around with a language, toying with ideas, writing small programs, reading books, blog posts, etc it&amp;rsquo;s not really the same as having an on-call expert to help and guide you.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Data Crunching in Haskell</title>
+      <link>/posts/data-crunching-in-haskell/</link>
+      <pubDate>Thu, 25 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/data-crunching-in-haskell/</guid>
+      <description>&lt;p&gt;A few days ago I was having a chat to a &lt;a href=&#34;http://shiftperception.com/blog&#34; title=&#34;Shifty&#34;&gt;friend of mine&lt;/a&gt; about a little data parsing problem. He had the need to parse a multi-dimensional array to pull out some values. That array was guaranteed to be square, but not necessarily in contiguous memory. He needed to parse each &amp;ldquo;column&amp;rdquo; of the array, calculate a total, and then determine the biggest and smallest of those totals.&lt;/p&gt;
+
+&lt;p&gt;A sample of the data might look something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;data = ({150,200,45,57,95,2,45,32,15,10,5,2,2,4},
+        {12,20,45,37,10,5,2,2,10,95,2,45,32,7},
+        {32,15,10,5,2,23,24,15,20,45,57,95,0,45})
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So the first step would be to add 150, 12 and 32 and store the value. Then 200, 20 and 15, and store the value. Do this for all of the columns, then get a maximum and a minimum.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Euler #10</title>
+      <link>/posts/project-euler-#10/</link>
+      <pubDate>Wed, 30 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/project-euler-#10/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING!&lt;/strong&gt; This post contains a spoiler for Problem #10 listed at &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;. Do not read the rest of this post if you&amp;rsquo;re planning to attempt to solve the problem yourself.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A Better &#39;nub&#39;</title>
+      <link>/posts/a-better-nub/</link>
+      <pubDate>Mon, 28 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/a-better-nub/</guid>
+      <description>&lt;p&gt;During my Haskell travels I have found myself using the &lt;a href=&#34;http://haskell.org/ghc/docs/latest/html/libraries/base/Data-List.html#v%3Anub&#34; title=&#34;Data.List nub&#34;&gt;nub&lt;/a&gt; function quite regularly. For those too lazy to click the link: &lt;em&gt;nub&lt;/em&gt; removes duplicates from a list of items. eg:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Prelude&amp;gt; nub [1,1,3,3,5,5,6,6,6,1]
+[1,3,5,6]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Fairly simple stuff. Until recently I hadn&amp;rsquo;t bothered pondering the internal implementation of this function because I hadn&amp;rsquo;t really been too worried about performance. That&amp;rsquo;s no longer the case. I recently cracked open the hood of &lt;em&gt;nub&lt;/em&gt;, and was rather surprised by what I saw.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Another Quick Coding Challenge</title>
+      <link>/posts/another-quick-coding-challenge/</link>
+      <pubDate>Fri, 25 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/another-quick-coding-challenge/</guid>
+      <description>&lt;p&gt;I was about to head to bed when I stumbled across another interesting coding challenge. Since I had another half hour or so to kill I thought I&amp;rsquo;d give it a shot!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Euler #9</title>
+      <link>/posts/project-euler-#9/</link>
+      <pubDate>Fri, 25 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/project-euler-#9/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING!&lt;/strong&gt; This post contains a spoiler for Problem #9 listed at &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;. Do not read the rest of this post if you&amp;rsquo;re planning to attempt to solve the problem yourself.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Euler #8</title>
+      <link>/posts/project-euler-#8/</link>
+      <pubDate>Thu, 24 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/project-euler-#8/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING!&lt;/strong&gt; This post contains a spoiler for Problem #8 listed at &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;. Do not read the rest of this post if you&amp;rsquo;re planning to attempt to solve the problem yourself.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Euler #7</title>
+      <link>/posts/project-euler-#7/</link>
+      <pubDate>Sun, 15 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/project-euler-#7/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING!&lt;/strong&gt; This post contains a spoiler for Problem #7 listed at &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;. Do not read the rest of this post if you&amp;rsquo;re planning to attempt to solve the problem yourself.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>An Interesting Little Problem</title>
+      <link>/posts/an-interesting-little-problem/</link>
+      <pubDate>Sat, 14 Jun 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/an-interesting-little-problem/</guid>
+      <description>&lt;p&gt;This post was inspired by a recent interview question that was posted over at &lt;a href=&#34;http://www.fsharp.it/posts/google-interview-question-product-of-other-elements-in-an-array-in-on/&#34; title=&#34;Fsharp.it&#34;&gt;fsharp.it&lt;/a&gt;. It&amp;rsquo;s one of those neat little questions which looks really simple on the surface but is quite tricky.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Euler #6</title>
+      <link>/posts/project-euler-#6/</link>
+      <pubDate>Fri, 28 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/project-euler-#6/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING!&lt;/strong&gt; This post contains a spoiler for Problem #6 listed at &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;. Do not read the rest of this post if you&amp;rsquo;re planning to attempt to solve the problem yourself.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Euler #5</title>
+      <link>/posts/project-euler-#5/</link>
+      <pubDate>Sun, 23 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/project-euler-#5/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING!&lt;/strong&gt; This post contains a spoiler for Problem #5 listed at &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;. Do not read the rest of this post if you&amp;rsquo;re planning to attempt to solve the problem yourself.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Euler #4 - Reprise</title>
+      <link>/posts/project-euler-#4-reprise/</link>
+      <pubDate>Sat, 22 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/project-euler-#4-reprise/</guid>
+      <description>&lt;p&gt;After publishing the performance stats of my &lt;a href=&#34;/posts/project-euler-4/&#34; title=&#34;Project Euler #4&#34;&gt;previous solution to Project Euler #4&lt;/a&gt;, I got thinking about how I might improve things. I didn&amp;rsquo;t want to be overly anal with regards to things such as memory allocations, because it&amp;rsquo;s easy to get stuck in the perpetual loop of attempted optimisations. Instead I wanted to think of a method that wasn&amp;rsquo;t as brute force as the previous one. If you&amp;rsquo;re interested to see what I did, read on (&lt;strong&gt;Note:&lt;/strong&gt; This is a spoiler for the problem, just like the last post was).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Euler #4</title>
+      <link>/posts/project-euler-#4/</link>
+      <pubDate>Fri, 21 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/project-euler-#4/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING!&lt;/strong&gt; This post contains a spoiler for Problem #4 listed at &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;. Do not read the rest of this post if you&amp;rsquo;re planning to attempt to solve the problem yourself.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Euler #3</title>
+      <link>/posts/project-euler-#3/</link>
+      <pubDate>Wed, 19 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/project-euler-#3/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING!&lt;/strong&gt; This post contains a spoiler for Problem #3 listed at &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;. Do not read the rest of this post if you&amp;rsquo;re planning to attempt to solve the problem yourself.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Euler #2</title>
+      <link>/posts/project-euler-#2/</link>
+      <pubDate>Tue, 18 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/project-euler-#2/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING!&lt;/strong&gt; This post contains a spoiler for Problem #2 listed at &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;. Do not read the rest of this post if you&amp;rsquo;re planning to attempt to solve the problem yourself.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Current Geek Interests</title>
+      <link>/posts/current-geek-interests/</link>
+      <pubDate>Mon, 17 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/current-geek-interests/</guid>
+      <description>&lt;p&gt;As the weeks roll by I&amp;rsquo;m finding that I have less and less time to chase up anything geek-related. I&amp;rsquo;m sure I&amp;rsquo;m not alone ;) Responsibilities and life take over and that time which you &lt;em&gt;could&lt;/em&gt; invest is now invested in other things, such as &lt;a href=&#34;/posts/my-boy/&#34; title=&#34;My Boy&#34;&gt;children&lt;/a&gt; :)&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m dedicating this post to all those things that I currently find interesting and would love to invest time in. Some of these things are old, some new. All of them I&amp;rsquo;ve either not touched on at all, or have touched on only briefly (not enough to be satisfied). I thought I&amp;rsquo;d share them with you in case you find them interesting yourself, or perhaps have some insights which you&amp;rsquo;d like to share.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Project Euler #1</title>
+      <link>/posts/project-euler-#1/</link>
+      <pubDate>Mon, 17 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/project-euler-#1/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;WARNING!&lt;/strong&gt; This post contains a spoiler for Problem #1 listed at &lt;a href=&#34;http://projecteuler.net/&#34; title=&#34;Project Euler&#34;&gt;Project Euler&lt;/a&gt;. Do not read the rest of this post if you&amp;rsquo;re planning to attempt to solve the problem yourself.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rekindling my Functional Programming Passion with Haskell</title>
+      <link>/posts/rekindling-my-functional-programming-passion-with-haskell/</link>
+      <pubDate>Mon, 17 Mar 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/rekindling-my-functional-programming-passion-with-haskell/</guid>
+      <description>&lt;p&gt;Back in the day when I was studying at &lt;a href=&#34;http://www.uts.edu.au/&#34; title=&#34;UTS&#34;&gt;University&lt;/a&gt; I tutored a subject which taught students how to write functional code in &lt;a href=&#34;&#34; title=&#34;&#34;&gt;Miranda&lt;/a&gt;. I loved it! The whole &lt;a href=&#34;http://en.wikipedia.org/wiki/Functional_programming&#34; title=&#34;Functional Programming&#34;&gt;functional programming&lt;/a&gt; thing really did it for me. I was fascinated by it. Despite my interest, I never chased it up after finishing at University.&lt;/p&gt;
+
+&lt;p&gt;I recently stumbled on a random blog post that went into depth on some functional programming topics, and that resparked my interest.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    
+    
+    Open Sauce - OJ&#39;s Perspective
+    
+  </title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/holder.min.js" type='text/javascript'></script>
+  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="canonical" href="/posts/open-sauce/">
+  
+  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+    
+    hljs.initHighlightingOnLoad();
+    $('pre code').each(function(i, block) {
+    hljs.highlightBlock(block);
+    hljs.lineNumbersBlock(block);
+    });
+});
+  </script>
+   </head>
+   <body data-spy="scroll" data-target="#toc">
+     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+    </div>
+
+    
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+	
+	
+	<li  ><a href="/">Home</a></li>
+	
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+	
+	<li > <a href="/streaming/" >Live Streaming</a></li>
+	
+
+	
+
+	
+	
+	<li > <a href="/about/" >About</a></li>
+	
+
+	
+	
+	<li > <a href="/contact/" >Contact</a></li>
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+      </ul>
+</nav>
+</header>
+
+     <div class="jumbotron masthead" role="main">
+       <div class="container">
+	 <div class="row">
+
+ 	   <div class="col-md-8 col-md-offset-2 ">
+	   
+<div class="panel panel-default">
+  <div class="panel-body">
+      <article id='post' >
+	<h1> Open Sauce </h1>
+	  
+	  <span class="text-muted">Posted by:&nbsp;Wed Oct 18, 2006</span>
+
+	  <p><a href="http://www.opensource.org/docs/definition.php" title="Open Source (OSI) Logo"><img src="http://www.opensource.org/trademarks/opensource/web/opensource-110x95.png" alt="Open Source (OSI) Logo" border="0" width="110" height="95" class="InlineImageRight" /></a>I&rsquo;ve been interested in <a href="http://en.wikipedia.org/wiki/Open_source_software" title="Open Source Software">Open Source Software</a> (OSS) for quite some time now but I&rsquo;ve never really attempted to find out much about it, nor how I can contribute. Of course, being a professional developer, the immediate thought is &ldquo;I make a living off writing software, so how does that work with Open Source?&rdquo;.</p>
+
+<p>After reading all the news about Vista and it&rsquo;s attempts to completely revoke my rights as a user, my interest in the OSS movement in general has increased, and I do feel it&rsquo;s time for me to not only get a better understanding of what it is and how it works, but how I can contribute to it.</p>
+
+<p>What is it about OSS that makes it work? Is it possible to support yourself and a family off the fruits of your labours if you&rsquo;re working in the OSS community? Is it going to provide the challenges I want from my job? Is it a valid model for writing bespoke software as per a client&rsquo;s request?</p>
+
+<p>If you ask <a href="http://www.theinquirer.net/default.aspx?article=34998" title="Open Source a billion dollar market">The Inquirer</a> they&rsquo;ll tell you that:<blockquote>Getting your head around Open Source is a bit easier, and according to Bernard Dalle, from VC firm Index Ventures the movement, if you can still call it a movement, is accelerating like there&rsquo;s no tomorrow.</p>
+
+<p>He said there are around 120,000 Open Source projects up and running. &ldquo;We&rsquo;re not asking ourselves whether we can make money out of open source any more,&rdquo; he said.</p>
+
+<p>And better than that, it&rsquo;s &ldquo;a billion dollar market, going at a 40 or 50 per cent rate&rdquo;.</blockquote>
+I don&rsquo;t know about you but that sounds pretty darned impressive to me! So how do you get involved?</p>
+
+<p>Looks like there are a few ways :)</p>
+
+<p><strong><u>1. SourceForge</u></strong></p>
+
+<p>Point you browser at <a href="http://www.sourceforge.net/" title="SourceForge">SourceForge</a>, have a browse through the plethora of OSS projects that are running (trust me, there&rsquo;s a <em>shitload</em>), and join in! Most of the time the developers are keen to get help whenever they can. If you find that you&rsquo;re stills aren&rsquo;t up to date, then you&rsquo;re going to have to make an effort to get up to speed before you can contribute.</p>
+
+<p>If you can&rsquo;t find a project that you&rsquo;re interested in, or people aren&rsquo;t necessarily interested in having you join in, then you can always start your own. You don&rsquo;t have to find something that noone else is doing, all you have to do is come up with something you&rsquo;d be interested in working on, and ask the guys at SF.net to set up a project for you. Then you&rsquo;re in full control, and you can begin work straight away.</p>
+
+<p><strong><u>2. Just go it Alone</u></strong></p>
+
+<p>This is always a viable option, but people tend to &ldquo;die out&rdquo; when doing things this way. Get your own web space, and set up the development project yourself. It takes a pretty dedicated person to go through this kind of development task by themselves and see it through to the end without getting any help along the way.  I think that if you want to make sure you keep on track, it&rsquo;s probably a good idea to try to get a few people to work with you, otherwise you may find that your motivation starts to drop and you don&rsquo;t end up finishing (which is the bane of many programmers).</p>
+
+<p><strong><u>3. Sign up for Contract OSS Work</u></strong></p>
+
+<p>I stumbled across this idea via the Larkware Site (see &ldquo;Sites for Geeks&rdquo; on the right) and thought it was pretty neat.  There&rsquo;s a site currently being built which, by the looks of it, is designed to be a hub and a resource for employers and developers writing OSS. The site is called <a href="http://www.assembla.com/" title="Assembla">Assembla</a>, and is currently in the throws of being set up properly, though it looks like there is at least some form of collaboration and linking mechanism up there.  This could well be a way for potential OSS developers to get involved with a company <em>anywhere in the world</em> and aid them in building OSS. What a great idea!!  To pouch a snippet from the site:<blockquote>We take the best practices from <strong>open source</strong> and <strong>agile methodologies</strong>, and <strong>distributed teams</strong> and adapt them for commercial software development. It&rsquo;s not typical contracting or outsourcing, but a third way that gets you the best talent available in the world, exactly when you need it, as part of a single global team. So, take advantage of our free development workspaces for distributed teams, advertise yourself as a developer, apply to work on Assembla projects, or get fast, full-service development and launch.</blockquote></p>
+
+<p><strong><u>4. Use your Imagination</u></strong></p>
+
+<p>The point here is, the concept of OSS is pretty simple, so you could create software, zip up the source and send it to people through spam if you really wanted to :) The limit is your imagination, so use it! There are a stack of other ways you can get involved, and there&rsquo;s really nothing stopping you.</p>
+
+<p><strong><u>A Common Misconception</u></strong></p>
+
+<p>OSS doesn&rsquo;t necessarily mean free, and free doesn&rsquo;t necessarily mean OSS. It&rsquo;s important to get an understanding of the difference between the two. Also, it&rsquo;s fairly common for naive devs to think that you can&rsquo;t write OSS on a Windows platform due to the nature of MS - again, that&rsquo;s wrong. The software you create you can do whatever the hell you want with - if that includes releasing the source to the masses, then so be it. Be careful though, if you&rsquo;re writing software for a client and they&rsquo;re <em>paying</em> you to write it for them, make sure that you own the IP or there is a clause in your contract that states that you&rsquo;re able to release the source if you want to before you actually do it. The last thing you want is to have a law suit on your hands.</p>
+
+<p><strong><u>Conclusion</u></strong></p>
+
+<p>My knowledge of OSS is pretty limited, but from reading around the web and speaking to some mates who are in on it, I&rsquo;m finding that I&rsquo;m getting quite excited about it. It not only sounds interesting, but it looks like fun as well! A good start would be to get familiar with some of the <a href="http://en.wikipedia.org/wiki/Open-source_license" title="Open Source Licence">licencing</a> models such as <a href="http://en.wikipedia.org/wiki/GNU_General_Public_License" title="GPL">GPL</a>, <a href="http://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License" title="LGPL">LGPL</a> and <a href="http://en.wikipedia.org/wiki/Adaptive_Public_License" title="APL">APL</a>.</p>
+
+<p>So, if there are devs out there wasting time by reading blogs such as this ;) Get off ya butts and start contributing, you never know where it may take you! I for one will be scouting the options for something to contribute to.</p>
+
+
+	  
+	  	  <div class="tags">	
+	    <p class="categories">
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/being-in-the-industry">Being in the Industry</a>
+	  
+	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/software-development">Software Development</a>
+	  
+	    </p>
+	    
+
+	    	  </div>
+	    
+
+
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+      </div>
+      </div></article>
+
+
+	 </div>
+
+	 </div>
+       </div>
+     </div>
+
+ <div class="container footer">
+  <div class="row">
+    <div class="col-md-10">
+      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+    </div>
+    <div class="col-md-2">
+      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
+      </div>
+   </div>
+ </div>
+</body></html>
