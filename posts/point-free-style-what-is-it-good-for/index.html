@@ -8,7 +8,7 @@
   <title>
     
     
-    &#39;Point-Free style: What is it good for?&#39; - OJ&#39;s Perspective
+    Point-Free style: What is it good for? - OJ&#39;s Perspective
     
   </title>
   <link rel="shortcut icon" href="/favicon.ico" />
@@ -580,23 +580,23 @@
 <div class="panel panel-default">
   <div class="panel-body">
       <article id='post' >
-	<h1> &#39;Point-Free style: What is it good for?&#39; </h1>
+	<h1> Point-Free style: What is it good for? </h1>
 	  
 	  <span class="text-muted">Posted by:&nbsp;Sat Jun 27, 2009</span>
 
-	  <p>If you&rsquo;re not interested in what inspired this post, then skip this section and <a href="#MoreInteresting" title="The purpose of the post">jump</a> to the more interesting bits.</p>
+	  <p>If you&rsquo;re not interested in what inspired this post, then skip this section and <a href="#MoreInteresting">jump</a> to the more interesting bits.</p>
 
 <h2 id="a-little-bit-of-history">A Little Bit of History</h2>
 
-<p>Recently I&rsquo;ve been delving into <a href="http://haskell.org/" title="Haskell">Haskell</a> quite a bit. It&rsquo;s part of my apparently never-ending quest to learn as much as I can about as many languages as I can (well, those that appeal to me at least :)). While I love playing around with a language, toying with ideas, writing small programs, reading books, blog posts, etc it&rsquo;s not really the same as having an on-call expert to help and guide you.</p>
+<p>Recently I&rsquo;ve been delving into <a href="http://haskell.org/">Haskell</a> quite a bit. It&rsquo;s part of my apparently never-ending quest to learn as much as I can about as many languages as I can (well, those that appeal to me at least :)). While I love playing around with a language, toying with ideas, writing small programs, reading books, blog posts, etc it&rsquo;s not really the same as having an on-call expert to help and guide you.</p>
 
-<p>While I&rsquo;m aware of, and frequently visit, the <a href=http://www.haskell.org/haskellwiki/IRC_channel" title="Haskell IRC">Haskell IRC channell</a> I find that the level of understanding there is so great that my piddly <a href="http://en.wikipedia.org/wiki/Newbie" title="Newbie">noob</a> questions tend to get lost amongst the bombardment of much more advanced &amp; interesting discussions. In short, while I find it a great place to go, it&rsquo;s not a great place to find someone who&rsquo;s happy to help guide me through the maze and go over topics in quite a bit of detail while I annoy them with questions.</p>
+<p>While I&rsquo;m aware of, and frequently visit, the <a href="http://www.haskell.org/haskellwiki/IRC_channel">Haskell IRC channell</a> I find that the level of understanding there is so great that my piddly noob questions tend to get lost amongst the bombardment of much more advanced &amp; interesting discussions. In short, while I find it a great place to go, it&rsquo;s not a great place to find someone who&rsquo;s happy to help guide me through the maze and go over topics in quite a bit of detail while I annoy them with questions.</p>
 
-<p>Haskell is one of those languages where having a mentor is really beneficial. So I set about finding myself one. Thankfully, I found a rather helpful chap based in the UK, <del>(he shall remain anonymous, as I don&rsquo;t want to violate the man&rsquo;s privacy)</del>, <a href="http://twitter.com/peter_marks" title="Peter Marks">Peter Marks</a>, who has been very forthcoming with information. He&rsquo;s humoured me and been incredibly patient so far, and I&rsquo;m very grateful for his time.</p>
+<p>Haskell is one of those languages where having a mentor is really beneficial. So I set about finding myself one. Thankfully, I found a rather helpful chap based in the UK, <del>(he shall remain anonymous, as I don&rsquo;t want to violate the man&rsquo;s privacy)</del>, <a href="http://twitter.com/peter_marks">Peter Marks</a>, who has been very forthcoming with information. He&rsquo;s humoured me and been incredibly patient so far, and I&rsquo;m very grateful for his time.</p>
 
-<p>One of the questions that I asked him was:<blockquote cite="OJ"><p>Why is it that everyone seems to strive to get their code into <a href="http://www.haskell.org/haskellwiki/Pointfree" title="Point Free">Point-Free</a> style? I can see how a lot of the implementations are more concise, but many of those lose readability.</p>
+<p>One of the questions that I asked him was: Why is it that everyone seems to strive to get their code into <a href="http://www.haskell.org/haskellwiki/Pointfree">Point-Free</a> style? I can see how a lot of the implementations are more concise, but many of those lose readability. What is so special about it?</p>
 
-<p>What is so special about it?</p></blockquote>The discussion that followed was really insightful. That is what has inspired me to write this post.</p>
+<p>The discussion that followed was really insightful. That is what has inspired me to write this post.</p>
 
 <p>Please note, any errors in this post are totally my own. They are not the fault of my mentor :)</p>
 
@@ -612,24 +612,30 @@
 
 <h3 id="so-what-is-point-free-style">So what is Point-Free style?</h3>
 
-<p>If we take a look at the <a href=http://en.wikipedia.org/wiki/Point-free_programming" title="Wikipedia">Wikipedia</a> we can see that..<blockquote><p>Tacit [point-free] programming is a programming paradigm in which a function definition does not include information regarding its arguments, using combinators and function composition (but not ?-abstraction) instead of variables.</p></blockquote>Simple eh? :) In essence, it basically means that your function definition doesn&rsquo;t reference any of its arguments/variables. For a crass definition, think <em>point == argument</em> and it should make sense.</p>
+<p>If we take a look at the <a href="http://en.wikipedia.org/wiki/Point-free_programming">Wikipedia</a> we can see that..</p>
+
+<blockquote>
+<p>Tacit [point-free] programming is a programming paradigm in which a function definition does not include information regarding its arguments, using combinators and function composition (but not ?-abstraction) instead of variables.</p>
+</blockquote>
+
+<p>Simple eh? :) In essence, it basically means that your function definition doesn&rsquo;t reference any of its arguments/variables. For a crass definition, think <code>point == argument</code> and it should make sense.</p>
 
 <p>So we&rsquo;re writing functions without directly referencing its arguments. For those not familiar with Haskell or other languages that support this, let&rsquo;s take a look at an example:</p>
 
-<pre><code>-- sum : take a list of numbers and add them all up to get a total
+<pre><code class="language-haskell">-- sum : take a list of numbers and add them all up to get a total
 -- start with the base-case: an empty list
 sum [] = 0
 sum (x:xs) = x + sum xs
 </code></pre>
 
-<p>We can see that the above function is written in such a way that the arguments passed into the function are actually referenced in the body of the code. This is how a standard imperative programmer would write this function if he/she was new to Haskell. If we instead used a <a href="http://www.haskell.org/haskellwiki/Fold" title="Fold">fold</a>, we could define it like so:</p>
+<p>We can see that the above function is written in such a way that the arguments passed into the function are actually referenced in the body of the code. This is how a standard imperative programmer would write this function if he/she was new to Haskell. If we instead used a <a href="http://www.haskell.org/haskellwiki/Fold">fold</a>, we could define it like so:</p>
 
-<pre><code>sum xs = foldr (+) 0 xs
+<pre><code class="language-haskell">sum xs = foldr (+) 0 xs
 </code></pre>
 
 <p>This does exactly the same thing as the previous definition, but as you can see the grunt work is done by the fold function. Now that we have this definition, we can easily move to Point-Free style:</p>
 
-<pre><code>sum = foldr (+) 0
+<pre><code class="language-haskell">sum = foldr (+) 0
 </code></pre>
 
 <p>Here we can see that no reference is made to the arguments of the function. Since we haven&rsquo;t referenced any &ldquo;points&rdquo;, we have a Point-Free implementation.</p>
@@ -642,7 +648,7 @@ sum (x:xs) = x + sum xs
 
 <p>This section is based totally on my own opinion and is not an official definition :) I think that Point-Free style fits in the same category as many other coding patterns and styles, and that it&rsquo;s usually down to the individual programmer to determine the when and the why. So take my view with a pinch of salt.</p>
 
-<p>In short, Point-Free style let&rsquo;s you <em>focus on the <strong>how</strong> rather than the <strong>what</strong></em>.</p>
+<p>In short, Point-Free style let&rsquo;s you focus on the <strong>how</strong> rather than the <strong>what</strong>.</p>
 
 <p>It might be just me, but imperative programs seem to have a large focus on the data. The code which operates on the data is lost within a plethora of code that isn&rsquo;t necessarily specific to what the program needs to do. I&rsquo;ve found that functional programming tends to be very different, at least in Haskell. Haskell lets me focus on what it is I need to do, and I feel that Point-Free is another step in the same direction. Is this good? I think so :) But I&rsquo;ll let you decide.</p>
 
@@ -650,11 +656,11 @@ sum (x:xs) = x + sum xs
 
 <h3 id="where-point-free-helped-me-get-a-better-understanding">Where Point-Free helped me get a better understanding</h3>
 
-<p>Haskell developers use the <a href="http://www.haskell.org/haskellwiki/Function_composition" title="Function composition">composition operator</a> <a href="http://haskell.org/ghc/docs/latest/html/libraries/base/src/GHC-Base.html#." title="(.) implementation in Prelude">(.)</a> a lot. It actually aids in creating Point-Free style. I love the irony here. We add points (.) to remove points (arguments).</p>
+<p>Haskell developers use the <a href="http://www.haskell.org/haskellwiki/Function_composition">composition operator</a> <a href="http://haskell.org/ghc/docs/latest/html/libraries/base/src/GHC-Base.html#.">(.)</a> a lot. It actually aids in creating Point-Free style. I love the irony here. We add points (.) to remove points (arguments).</p>
 
-<p>Anyway, the composition operator&rsquo;s definition, according to <a href="http://www.haskell.org/onlinereport/standard-prelude.html" title="Prelude">Prelude</a> is:</p>
+<p>Anyway, the composition operator&rsquo;s definition, according to <a href="http://www.haskell.org/onlinereport/standard-prelude.html">Prelude</a> is:</p>
 
-<pre><code>(.)       :: (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
+<pre><code class="language-haskell">(.)       :: (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 (.) f g x = f (g x)
 </code></pre>
 
@@ -662,7 +668,7 @@ sum (x:xs) = x + sum xs
 
 <p>This is really handy. We can do some interesting things like:</p>
 
-<pre><code>ghci&gt; let doubleAndAdd5 = (+5) . (*2)
+<pre><code class="language-txt">ghci&gt; let doubleAndAdd5 = (+5) . (*2)
 ghci&gt; doubleAndAdd5 20
 45
 ghci&gt; :m +Data.List
@@ -675,7 +681,7 @@ ghci&gt; sumColumns [[1,2,3],[4,5,6],[7,8,9]]
 
 <p>So if we wanted to create a function that would take two values, add them together and double the result, all while using Point-Free style, we&rsquo;d like to do something like this:</p>
 
-<pre><code>ghci&gt; let addAndDouble = (*2) . (+)
+<pre><code class="language-txt">ghci&gt; let addAndDouble = (*2) . (+)
 
 &lt;interactive&gt;:1:20:
     No instance for (Num (a -&gt; a))
@@ -685,23 +691,26 @@ ghci&gt; sumColumns [[1,2,3],[4,5,6],[7,8,9]]
     In the expression: (* 2) . (+)
     In the definition of `addAndDouble': addAndDouble = (* 2) . (+)
 ghci&gt;
-</code></pre>
+````
 
-<p>As you can see, ghci doesn&rsquo;t like it. And rightly so! This is because the composition operator&rsquo;s signature is:</p>
-
-<pre><code>(.) :: (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
+As you can see, ghci doesn't like it. And rightly so! This is because the composition operator's signature is:
+``` haskell
+(.) :: (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </code></pre>
 
 <p>That is:
-<ol><li>It takes an argument which is a function which takes a value of type <em>b</em> which returns a value of type <em>c</em></li><li>It takes a function which takes a value of type <em>a</em> which returns returns a value of type <em>b</em></li><li>It returns a new function which takes a value of type <em>a</em> and returns a value of type <em>c</em></li></ol>
-This doesn&rsquo;t work in our case, as we want our right-hand function to take two arguments. That is, we want a type signature that looks like this:</p>
+* It takes an argument which is a function which takes a value of type <code>b</code> which returns a value of type <code>c</code>.
+* It takes a function which takes a value of type <code>a</code> which returns returns a value of type <code>b</code>.
+* It returns a new function which takes a value of type <code>a</code> and returns a value of type `c.</p>
 
-<pre><code>foo :: (b -&gt; c) -&gt; (a -&gt; a1 -&gt; b) -&gt; a -&gt; a1 -&gt; c
+<p>This doesn&rsquo;t work in our case, as we want our right-hand function to take two arguments. That is, we want a type signature that looks like this:</p>
+
+<pre><code class="language-haskell">foo :: (b -&gt; c) -&gt; (a -&gt; a1 -&gt; b) -&gt; a -&gt; a1 -&gt; c
 </code></pre>
 
-<p>So everywhere we had <em>(a -&gt; b)</em>, what we really want is <em>(a -&gt; a1 -&gt; b)</em>. Given that we don&rsquo;t have an operator that does that for us, let&rsquo;s define one. We&rsquo;ll start with the definition of the (.) operator and work towards a function that does what we need.</p>
+<p>So everywhere we had <code>(a -&gt; b)</code>, what we really want is <code>(a -&gt; a1 -&gt; b)</code>. Given that we don&rsquo;t have an operator that does that for us, let&rsquo;s define one. We&rsquo;ll start with the definition of the (.) operator and work towards a function that does what we need.</p>
 
-<pre><code>-- here is the composition operator again
+<pre><code class="language-haskell">-- here is the composition operator again
 (.) f g x = f (g x)
 -- here's our new operator's definition
 (.^) f g x y = f (g x y)
@@ -709,7 +718,7 @@ This doesn&rsquo;t work in our case, as we want our right-hand function to take 
 
 <p>Simple! Let&rsquo;s see what ghci says about it:</p>
 
-<pre><code>ghci&gt; let (.^) f g x y = f (g x y)
+<pre><code class="language-txt">ghci&gt; let (.^) f g x y = f (g x y)
 ghci&gt; :t (.^)
 a :: (t2 -&gt; t3) -&gt; (t -&gt; t1 -&gt; t2) -&gt; t -&gt; t1 -&gt; t3
 </code></pre>
@@ -718,7 +727,7 @@ a :: (t2 -&gt; t3) -&gt; (t -&gt; t1 -&gt; t2) -&gt; t -&gt; t1 -&gt; t3
 
 <p>The first argument to get rid of is &lsquo;y&rsquo;, as this is the last argument passed in:</p>
 
-<pre><code>-- start by moving y to the right
+<pre><code class="language-haskell">-- start by moving y to the right
 (.^) f g x y = f (g x y)
 -- becomes
 (.^) f g x y = f . (g x) $ y
@@ -726,7 +735,7 @@ a :: (t2 -&gt; t3) -&gt; (t -&gt; t1 -&gt; t2) -&gt; t -&gt; t1 -&gt; t3
 
 <p>These are functionally equivalent, and now that &lsquo;y&rsquo; is out on it&rsquo;s own, we can drop it from our function definition:</p>
 
-<pre><code>ghci&gt; let (.^) f g x = f . (g x)
+<pre><code class="language-txt">ghci&gt; let (.^) f g x = f . (g x)
 ghci&gt; :t (.^)
 (.^) :: (b -&gt; c) -&gt; (t -&gt; a -&gt; b) -&gt; t -&gt; a -&gt; c
 ghci&gt;
@@ -734,7 +743,7 @@ ghci&gt;
 
 <p>Excellent, we&rsquo;re a step closer. Now we need to do the same with &lsquo;x&rsquo;. This takes a little more fiddling:</p>
 
-<pre><code>-- we need to take the original definition
+<pre><code class="language-haskell">-- we need to take the original definition
 (.^) f g x = f . (g x)
 -- and change it so that it uses prefix notation instead of infix
 (.^) f g x = (.) f (g x)
@@ -750,14 +759,14 @@ ghci&gt;
 
 <p>Phew :) I hope you can see the progression. We&rsquo;ve managed to move x out of the picture, so now we&rsquo;re down to a fairly crazy looking definition. Let&rsquo;s see what ghci has to say:</p>
 
-<pre><code>ghci&gt; let (.^) f g = ((.) f) . g
+<pre><code class="language-txt">ghci&gt; let (.^) f g = ((.) f) . g
 ghci&gt; :t (.^)
 (.^) :: (b -&gt; c) -&gt; (a1 -&gt; a -&gt; b) -&gt; a1 -&gt; a -&gt; c
 </code></pre>
 
 <p>So we&rsquo;ve got rid of two variables, but there are still two more to go! Remember, &lsquo;f&rsquo; and &lsquo;g&rsquo; are still variables, they just carry functions. So let&rsquo;s get rid of &lsquo;g&rsquo;:</p>
 
-<pre><code>-- start with what we had before
+<pre><code class="language-haskell">-- start with what we had before
 (.^) f g = ((.) f) . g
 -- change to prefix notation again
 (.^) f g = (.) ((.) f) g
@@ -767,14 +776,14 @@ ghci&gt; :t (.^)
 
 <p>This is looking rather crazy :) Again, let&rsquo;s make sure we haven&rsquo;t done anything stupid:</p>
 
-<pre><code>ghci&gt; let (.^) f = (.) ((.) f)
+<pre><code class="language-txt">ghci&gt; let (.^) f = (.) ((.) f)
 ghci&gt; :t (.^)
 (.^) :: (b -&gt; c) -&gt; (a1 -&gt; a -&gt; b) -&gt; a1 -&gt; a -&gt; c
 </code></pre>
 
 <p>Excellent. We&rsquo;ve still got what we need. One more point needs to be dropped, so let&rsquo;s get rid of &lsquo;f&rsquo;:</p>
 
-<pre><code>-- start with what we had before
+<pre><code class="language-haskell">-- start with what we had before
 (.^) f = (.) ((.) f)
 -- which means that we're composing a composition with a
 -- function composed of f and something else
@@ -785,7 +794,7 @@ ghci&gt; :t (.^)
 
 <p>Isn&rsquo;t that just crazy! Let&rsquo;s again check ghci:</p>
 
-<pre><code>ghci&gt; let (.^) = (.) . (.)
+<pre><code class="language-txt">ghci&gt; let (.^) = (.) . (.)
 ghci&gt; :t (.^)
 (.^) :: (b -&gt; c) -&gt; (a1 -&gt; a -&gt; b) -&gt; a1 -&gt; a -&gt; c
 </code></pre>
@@ -795,7 +804,7 @@ ghci&gt; :t (.^)
 <p>This is where the penny dropped for me. The whole exercise of moving through to Point-Free made me really understand what it was I was doing in the first place. The final definition makes it very clear. We&rsquo;re composing two separate compositions.
 Let&rsquo;s see if our function behaves itself using the example we listed above.</p>
 
-<pre><code>ghci&gt; let addAndDouble = (*2) .^ (+)
+<pre><code class="language-txt">ghci&gt; let addAndDouble = (*2) .^ (+)
 ghci&gt; :t addAndDouble
 addAndDouble :: Integer -&gt; Integer -&gt; Integer
 ghci&gt; addAndDouble 10 15
