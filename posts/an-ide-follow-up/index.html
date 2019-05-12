@@ -1,590 +1,118 @@
 <!DOCTYPE html>
-<html>
-   <head>
-   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>An IDE Follow-Up &middot; OJ Reeves</title>
+        <meta name="description" content="After reading Dan&rsquo;s response to this a few days ago, I decided to have a bit of a play with Notepad&#43;&#43;. I do think it&rsquo;s a very nice little text editor with some lovely features. It&rsquo;s quitck, it&rsquo;s simple, and the syntax hilighting works a treat (no thanks to Scintilla of course). One thing I do like is that by default when line numbering is on and word-wrap is enabled, gaps appear between the numbers to indicate that a line has wrapped (I need to set up something like this with VIM, as it&rsquo;s one of the things that&rsquo;s currently driving me nuts).">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.55.1" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="An IDE Follow-Up">
+<meta property="og:description" content="After reading Dan&rsquo;s response to this a few days ago, I decided to have a bit of a play with Notepad&#43;&#43;. I do think it&rsquo;s a very nice little text editor with some lovely features. It&rsquo;s quitck, it&rsquo;s simple, and the syntax hilighting works a treat (no thanks to Scintilla of course). One thing I do like is that by default when line numbering is on and word-wrap is enabled, gaps appear between the numbers to indicate that a line has wrapped (I need to set up something like this with VIM, as it&rsquo;s one of the things that&rsquo;s currently driving me nuts).">
+<meta property="og:type" content="article">
+<meta property="og:url" content="/posts/an-ide-follow-up/">
+        <link rel="stylesheet" href="/dist/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+        
+        
+    </head>
+    <body>
+        
 
-  <title>
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="OJ&#39;s Perspective" href="/">OJ&#39;s Perspective</a>
+                            </h1>
+                        
+                        <a class="button-square" href="/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/TheColonial" rel="me">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/OJ" rel="me">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:oj@buffered.io">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Home" href="/">Home</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Live Streaming" href="/streaming/">Live Streaming</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="About" href="/about/">About</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Contact" href="/contact/">Contact</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tags" href="/tags/">Tags</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Categories" href="/categories/">Categories</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div class="container">
+    <article class="post-container" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">An IDE Follow-Up</h1>
     
+    <p class="post-date">
+        <span>Published <time datetime="2006-09-20" itemprop="datePublished">2006-09-20</time></span>
+        <span>by</span>
+        <span itemscope="" itemprop="author" itemtype="https://schema.org/Person">
+            <span itemprop="name">
+                <a href="#" itemprop="url" rel="author">OJ Reeves</a>
+            </span>
+        </span>
+    </p>
     
-    An IDE Follow-Up - OJ&#39;s Perspective
+        <p class="post-reading post-line">
+            <span>Read time: 4 min</span>
+        </p>
     
-  </title>
-  <link rel="shortcut icon" href="/favicon.ico" />
-  
-     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
-
-  <script src="/js/jquery.min.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
-  <script src="/js/holder.min.js" type='text/javascript'></script>
-  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
-  <link rel="stylesheet" href="/css/style.css">
-
-  <link rel="canonical" href="/posts/an-ide-follow-up/">
-  
-  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
-  <script type="text/javascript">
-
-    $(document).ready(function() {
-    
-    hljs.initHighlightingOnLoad();
-    $('pre code').each(function(i, block) {
-    hljs.highlightBlock(block);
-    hljs.lineNumbersBlock(block);
-    });
-});
-  </script>
-   </head>
-   <body data-spy="scroll" data-target="#toc">
-     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
-    </div>
-
-    
-    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-      <ul class="nav navbar-nav">
-	
-	
-	<li  ><a href="/">Home</a></li>
-	
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-	
-	<li > <a href="/streaming/" >Live Streaming</a></li>
-	
-
-	
-
-	
-	
-	<li > <a href="/about/" >About</a></li>
-	
-
-	
-	
-	<li > <a href="/contact/" >Contact</a></li>
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-      </ul>
-</nav>
 </header>
 
-     <div class="jumbotron masthead" role="main">
-       <div class="container">
-	 <div class="row">
+        <div class="post-content clearfix" itemprop="articleBody">
+    
 
- 	   <div class="col-md-8 col-md-offset-2 ">
-	   
-<div class="panel panel-default">
-  <div class="panel-body">
-      <article id='post' >
-	<h1> An IDE Follow-Up </h1>
-	  
-	  <span class="text-muted">Posted by:&nbsp;Wed Sep 20, 2006</span>
-
-	  <p>After reading Dan&rsquo;s response to <a href="/posts/is-an-ide-all-its-cracked-up-to-be/" title="Is an IDE all it's cracked up to be?">this</a> a few days ago, I decided to have a bit of a play with Notepad++. I do think it&rsquo;s a very nice little text editor with some lovely features. It&rsquo;s quitck, it&rsquo;s simple, and the syntax hilighting works a treat (no thanks to Scintilla of course). One thing I do like is that by default when line numbering is on and word-wrap is enabled, gaps appear between the numbers to indicate that a line has wrapped (I need to set up something like this with VIM, as it&rsquo;s one of the things that&rsquo;s currently driving me nuts). It&rsquo;s a shame it&rsquo;s Windows only! I now have it installed at work and I used it when I work on quite a few different things including stored procedures, general markup (XML/HTML/etc), and some other bits and pieces of code.</p>
+    <p>After reading Dan&rsquo;s response to <a href="/posts/is-an-ide-all-its-cracked-up-to-be/" title="Is an IDE all it's cracked up to be?">this</a> a few days ago, I decided to have a bit of a play with Notepad++. I do think it&rsquo;s a very nice little text editor with some lovely features. It&rsquo;s quitck, it&rsquo;s simple, and the syntax hilighting works a treat (no thanks to Scintilla of course). One thing I do like is that by default when line numbering is on and word-wrap is enabled, gaps appear between the numbers to indicate that a line has wrapped (I need to set up something like this with VIM, as it&rsquo;s one of the things that&rsquo;s currently driving me nuts). It&rsquo;s a shame it&rsquo;s Windows only! I now have it installed at work and I used it when I work on quite a few different things including stored procedures, general markup (XML/HTML/etc), and some other bits and pieces of code.</p>
 
 <p>A couple of nights ago I also decided to install <a href="http://www.xemacs.org/" title="XEmacs">XEmacs</a> to see what it was like to edit text. So many people love Emacs and there are just as many evangelists for this as their are VI/VIM. I found it to be very much like VIM, but there was one thing that stood out which I didn&rsquo;t quite like. That is, the command mode seemed to be extremely heavy on the use of the CTRL and ALT keys. That may sound like a petty whinge to you, but for me, having to keep at least one of my little fingers at the bottom of the keyboard while I&rsquo;m moving around becomes painful. I like VIM&rsquo;s idea of not having to move any fingers away from the home row if you want to move up/down/left/right by a single line/character. Pressing CTRL every time is a bit of overkill in my opinion, and it&rsquo;s a bit off-putting for me. After going through a few tutorials with I noticed that my hands were becoming strained. I&rsquo;m pretty sure this is partly down to my typing style (because I&rsquo;m not a perfect touch-typist, I tend to use my left little finger for SHIFT and CTRL rather than alternating depending on the key I am pressing).</p>
 
@@ -598,63 +126,79 @@
 
 <p>As a final point, me ol&rsquo; mucka Keef pointed out that games developers are in a way &lsquo;forced&rsquo; to use Visual Studio, and to a point I agree. But that doesn&rsquo;t mean to say that you can&rsquo;t use something like VIM for basic coding tasks if you really want to. I used to work with a guy who was a real Emacs junkie, and that&rsquo;s all he used for his dev work (that includes Win32/C++ coding through to HTML, C# and ASP). All the compiling and debugging was done from Emacs, and he seemed to be very productive with it - something I&rsquo;m nowhere near achieving with VIM :)</p>
 
+</div>
 
-	  
-	  	  <div class="tags">	
-	    <p class="categories">
-	  
-	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/freeware">Freeware</a>
-	  
-	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/linux">Linux</a>
-	  
-	  <a class="btn btn-default btn-xs text-capitalize" href="/categories/software-development">Software Development</a>
-	  
-	    </p>
-	    
-
-	    	  </div>
-	    
-
-
-<div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
+        <footer class="post-footer clearfix">
     
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "ojsrants" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
-      </div>
-      </div></article>
+    <div class="share">
+        
+            <a class="icon-twitter" href="https://twitter.com/share?text=An%20IDE%20Follow-Up&url=%2fposts%2fan-ide-follow-up%2f"
+                onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fa fa-twitter"></i>
+                <span class="hidden">Twitter</span>
+            </a>
+        
 
+        
+            <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=%2fposts%2fan-ide-follow-up%2f"
+                onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <i class="fa fa-facebook"></i>
+                <span class="hidden">Facebook</span>
+            </a>
+        
 
-	 </div>
-
-	 </div>
-       </div>
-     </div>
-
- <div class="container footer">
-  <div class="row">
-    <div class="col-md-10">
-      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
+        
+            <a class="icon-google-plus" href="https://plus.google.com/share?url=%2fposts%2fan-ide-follow-up%2f"
+              onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+              <i class="fa fa-google-plus"></i>
+                <span class="hidden">Google+</span>
+            </a>
+        
+        
     </div>
-    <div class="col-md-2">
-      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
-      </div>
-   </div>
- </div>
-</body></html>
+</footer>
+
+        
+    <div class="comments">
+        
+    </div>
+
+    </article>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="OJ&#39;s Perspective" href="/">OJ&#39;s Perspective</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2019 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="/js/jquery-1.11.3.min.js"></script>
+        <script src="/js/jquery.fitvids.js"></script>
+        
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        
+        
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>
+

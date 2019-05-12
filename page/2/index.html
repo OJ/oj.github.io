@@ -1,960 +1,232 @@
 <!DOCTYPE html>
-<html>
-   <head>
-	<meta name="generator" content="Hugo 0.55.1" />
-   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>
-    
-    OJ&#39;s Perspective | Security and Software Development
-    
-    
-  </title>
-  <link rel="shortcut icon" href="/favicon.ico" />
-  
-     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
-
-  <script src="/js/jquery.min.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
-  <script src="/js/holder.min.js" type='text/javascript'></script>
-  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
-  <link rel="stylesheet" href="/css/style.css">
-
-  <link rel="canonical" href="/">
-  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="OJ&#39;s Perspective" />
-  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
-  <script type="text/javascript">
-
-    $(document).ready(function() {
-    
-    hljs.initHighlightingOnLoad();
-    $('pre code').each(function(i, block) {
-    hljs.highlightBlock(block);
-    hljs.lineNumbersBlock(block);
-    });
-});
-  </script>
-   </head>
-   <body data-spy="scroll" data-target="#toc">
-     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
-    </div>
-
-    
-    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-      <ul class="nav navbar-nav">
-	
-	
-	<li  class="active"   ><a href="/">Home</a></li>
-	
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-	
-	<li > <a href="/streaming/" >Live Streaming</a></li>
-	
-
-	
-
-	
-	
-	<li > <a href="/about/" >About</a></li>
-	
-
-	
-	
-	<li > <a href="/contact/" >Contact</a></li>
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-      </ul>
-</nav>
-</header>
-
-     <div class="jumbotron masthead" role="main">
-       <div class="container">
-	 <div class="row">
-
- 	   <div class="col-md-8 col-md-offset-2 ">
-	   
-
-    <div class="panel panel-default">
-    <div class="panel-heading">
-      <span class="glyphicon glyphicon-list-alt"></span>&nbsp;<b>Posts - Security and Software Development</b>
-    </div>
-    <div class="panel-body" itemtype="http://schema.org/ItemList" itemListElement>
-      <div class="list-group">
-	
-	
-	
-	<a itemListElement  itemtype="http://schema.org/ListItem" itemscope   href="/posts/the-offensive-security-playground/" class="list-group-item"><span class="badge"  content="Jan 03, 2015" >Jan 03, 2015</span><span itemprop="name">The Offensive Security Playground</span>
-	  <meta itemprop="url" content="/posts/the-offensive-security-playground/"/>
-</a>
-
-	
-	<a itemListElement  itemtype="http://schema.org/ListItem" itemscope   href="/posts/csaw-2014-saturn/" class="list-group-item"><span class="badge"  content="Sep 22, 2014" >Sep 22, 2014</span><span itemprop="name">CSAW 2014 - Saturn</span>
-	  <meta itemprop="url" content="/posts/csaw-2014-saturn/"/>
-</a>
-
-	
-	<a itemListElement  itemtype="http://schema.org/ListItem" itemscope   href="/posts/jumping-with-bad-chars/" class="list-group-item"><span class="badge"  content="Mar 21, 2014" >Mar 21, 2014</span><span itemprop="name">Jumping with Bad Chars</span>
-	  <meta itemprop="url" content="/posts/jumping-with-bad-chars/"/>
-</a>
-
-	
-	<a itemListElement  itemtype="http://schema.org/ListItem" itemscope   href="/posts/myftpd-exploit-on-windows-7/" class="list-group-item"><span class="badge"  content="Mar 12, 2014" >Mar 12, 2014</span><span itemprop="name">myftpd Exploit on Windows 7</span>
-	  <meta itemprop="url" content="/posts/myftpd-exploit-on-windows-7/"/>
-</a>
-
-	
-	<a itemListElement  itemtype="http://schema.org/ListItem" itemscope   href="/posts/idsecconf-2013-myftpd-challenge/" class="list-group-item"><span class="badge"  content="Mar 01, 2014" >Mar 01, 2014</span><span itemprop="name">IDSECCONF 2013 myftpd challenge</span>
-	  <meta itemprop="url" content="/posts/idsecconf-2013-myftpd-challenge/"/>
-</a>
-
-	
-	<a itemListElement  itemtype="http://schema.org/ListItem" itemscope   href="/posts/building-meterpreter-is-easy/" class="list-group-item"><span class="badge"  content="Feb 18, 2014" >Feb 18, 2014</span><span itemprop="name">Building Meterpreter is Easy</span>
-	  <meta itemprop="url" content="/posts/building-meterpreter-is-easy/"/>
-</a>
-
-	
-	<a itemListElement  itemtype="http://schema.org/ListItem" itemscope   href="/posts/osce-and-me/" class="list-group-item"><span class="badge"  content="Feb 17, 2014" >Feb 17, 2014</span><span itemprop="name">OSCE and Me</span>
-	  <meta itemprop="url" content="/posts/osce-and-me/"/>
-</a>
-
-	
-	<a itemListElement  itemtype="http://schema.org/ListItem" itemscope   href="/posts/3-months-of-meterpreter/" class="list-group-item"><span class="badge"  content="Dec 27, 2013" >Dec 27, 2013</span><span itemprop="name">3 Months of Meterpreter</span>
-	  <meta itemprop="url" content="/posts/3-months-of-meterpreter/"/>
-</a>
-
-	
-	<a itemListElement  itemtype="http://schema.org/ListItem" itemscope   href="/posts/oscp-faq/" class="list-group-item"><span class="badge"  content="Dec 12, 2013" >Dec 12, 2013</span><span itemprop="name">OSCP FAQ</span>
-	  <meta itemprop="url" content="/posts/oscp-faq/"/>
-</a>
-
-	
-	<a itemListElement  itemtype="http://schema.org/ListItem" itemscope   href="/posts/64bit-pointer-truncation-in-meterpreter/" class="list-group-item"><span class="badge"  content="Sep 14, 2013" >Sep 14, 2013</span><span itemprop="name">64bit Pointer Truncation in Meterpreter</span>
-	  <meta itemprop="url" content="/posts/64bit-pointer-truncation-in-meterpreter/"/>
-</a>
-
-      </div>
-      
-
-<ul class="pagination">
-    
-    <li class="page-item">
-        <a href="/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>OJ&#39;s Perspective &middot; OJ Reeves</title>
+        <meta name="description" content="Security and Software Development">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.55.1" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="OJ&#39;s Perspective">
+<meta property="og:description" content="Security and Software Development">
+<meta property="og:type" content="website">
+<meta property="og:url" content="/">
+        <link rel="stylesheet" href="/dist/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+            <link href="/index.xml" rel="alternate" type="application/rss+xml">
+        
+        
+        
+    </head>
+    <body>
+        
+
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="OJ&#39;s Perspective" href="/">OJ&#39;s Perspective</a>
+                            </h1>
+                        
+                        <a class="button-square" href="/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/TheColonial" rel="me">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/OJ" rel="me">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:oj@buffered.io">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                    </div>
+
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Home" href="/">Home</a>
     </li>
-    
-    <li class="page-item">
-    <a href="/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+
+    <li class="site-nav-item">
+        <a title="Live Streaming" href="/streaming/">Live Streaming</a>
     </li>
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="/">1</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item active"><a class="page-link" href="/page/2/">2</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="/page/3/">3</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="/page/27/">27</a></li>
-    
-    
-    <li class="page-item">
-    <a href="/page/3/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+
+    <li class="site-nav-item">
+        <a title="About" href="/about/">About</a>
     </li>
-    
-    <li class="page-item">
-        <a href="/page/27/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+
+    <li class="site-nav-item">
+        <a title="Contact" href="/contact/">Contact</a>
     </li>
+
+    <li class="site-nav-item">
+        <a title="Tags" href="/tags/">Tags</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Categories" href="/categories/">Categories</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div id="post-index" class="container" itemscope="" itemtype="https://schema.org/Blog">
     
-</ul>
+
+
+    <ol class="post-list">
+        
+        
+            <li class="post-stub" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
+    <a href="/posts/the-offensive-security-playground/" itemprop="url" title="Go to post detail">
+        <h4 class="post-stub-title" itemprop="name">The Offensive Security Playground</h4>
+        <time class="post-stub-date" datetime="2015-01-03">Published 2015-01-03</time>
+        
+    </a>
+</li>
+        
+            <li class="post-stub" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
+    <a href="/posts/csaw-2014-saturn/" itemprop="url" title="Go to post detail">
+        <h4 class="post-stub-title" itemprop="name">CSAW 2014 - Saturn</h4>
+        <time class="post-stub-date" datetime="2014-09-22">Published 2014-09-22</time>
+        
+    </a>
+</li>
+        
+            <li class="post-stub" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
+    <a href="/posts/jumping-with-bad-chars/" itemprop="url" title="Go to post detail">
+        <h4 class="post-stub-title" itemprop="name">Jumping with Bad Chars</h4>
+        <time class="post-stub-date" datetime="2014-03-21">Published 2014-03-21</time>
+        
+    </a>
+</li>
+        
+            <li class="post-stub" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
+    <a href="/posts/myftpd-exploit-on-windows-7/" itemprop="url" title="Go to post detail">
+        <h4 class="post-stub-title" itemprop="name">myftpd Exploit on Windows 7</h4>
+        <time class="post-stub-date" datetime="2014-03-12">Published 2014-03-12</time>
+        
+    </a>
+</li>
+        
+            <li class="post-stub" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
+    <a href="/posts/idsecconf-2013-myftpd-challenge/" itemprop="url" title="Go to post detail">
+        <h4 class="post-stub-title" itemprop="name">IDSECCONF 2013 myftpd challenge</h4>
+        <time class="post-stub-date" datetime="2014-03-01">Published 2014-03-01</time>
+        
+    </a>
+</li>
+        
+            <li class="post-stub" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
+    <a href="/posts/building-meterpreter-is-easy/" itemprop="url" title="Go to post detail">
+        <h4 class="post-stub-title" itemprop="name">Building Meterpreter is Easy</h4>
+        <time class="post-stub-date" datetime="2014-02-18">Published 2014-02-18</time>
+        
+    </a>
+</li>
+        
+            <li class="post-stub" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
+    <a href="/posts/osce-and-me/" itemprop="url" title="Go to post detail">
+        <h4 class="post-stub-title" itemprop="name">OSCE and Me</h4>
+        <time class="post-stub-date" datetime="2014-02-17">Published 2014-02-17</time>
+        
+    </a>
+</li>
+        
+            <li class="post-stub" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
+    <a href="/posts/3-months-of-meterpreter/" itemprop="url" title="Go to post detail">
+        <h4 class="post-stub-title" itemprop="name">3 Months of Meterpreter</h4>
+        <time class="post-stub-date" datetime="2013-12-27">Published 2013-12-27</time>
+        
+    </a>
+</li>
+        
+            <li class="post-stub" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
+    <a href="/posts/oscp-faq/" itemprop="url" title="Go to post detail">
+        <h4 class="post-stub-title" itemprop="name">OSCP FAQ</h4>
+        <time class="post-stub-date" datetime="2013-12-12">Published 2013-12-12</time>
+        
+    </a>
+</li>
+        
+            <li class="post-stub" itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting">
+    <a href="/posts/64bit-pointer-truncation-in-meterpreter/" itemprop="url" title="Go to post detail">
+        <h4 class="post-stub-title" itemprop="name">64bit Pointer Truncation in Meterpreter</h4>
+        <time class="post-stub-date" datetime="2013-09-14">Published 2013-09-14</time>
+        
+    </a>
+</li>
+        
+    </ol>
+
+    <div class="post-navigation">
+        
+
+    <nav class="pagination" role="navigation">
+        <span class="page-number">Page 2 of 27</span>
+        
+            <a class="newer-posts" href="/">&larr; Newer Posts</a>
+        
+        
+            <a class="older-posts" href="/page/3/">Older Posts &rarr;</a>
+        
+    </nav>
 
     </div>
-    </div>
-    
+</div>
 
-	            
-    <div class="panel panel-default">
-      <div class="panel-body">
-	<div>
-	 <span class="text-primary">Categories</span>
-	 <div class="pull-right">
+            </div>
+        </div>
 
-	   <a target="_blank" class="rss"  href="/index.xml"><img src="/images/rss-feed-logo-symbol-icon-10.png" width="25px" height="25px">&nbsp;RSS</a>
-	 </div>
-	</div>
-  
-    
-<p class="categories">
-      <a class="btn btn-default btn-xs text-capitalize" href="/categories/agile">agile</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/algorithms">algorithms</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/apple">apple</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/asm">asm</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/asp.net">asp.net</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/backbonejs">backbonejs</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/being-in-the-industry">being-in-the-industry</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/blogging">blogging</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/bootstrap">bootstrap</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/c">c#</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/challenges">challenges</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/clr">clr</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/ctf">ctf</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/databases">databases</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/development">development</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/digital-rights">digital-rights</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/disclosure">disclosure</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/erlang">erlang</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/erlydtl">erlydtl</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/exploits">exploits</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/f">f#</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/fail">fail</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/food">food</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/freeware">freeware</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/functional-programming">functional-programming</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/funny">funny</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/games">games</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/google">google</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/guest-posts">guest-posts</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/hardware">hardware</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/haskell">haskell</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/howto">howto</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/life">life</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/linux">linux</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/livestream">livestream</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/mac-os">mac-os</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/merb">merb</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/mercurial">mercurial</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/metasploit">metasploit</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/meterpreter">meterpreter</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/microsoft">microsoft</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/miscellaneous">miscellaneous</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/mono">mono</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/networks">networks</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/nosql">nosql</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/oauth">oauth</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/open-source">open-source</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/osce">osce</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/oscp">oscp</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/privacy">privacy</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/productivity">productivity</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/project-euler">project-euler</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/protip">protip</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/rce">rce</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/riak">riak</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/ruby-on-rails">ruby-on-rails</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/screencasts">screencasts</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/security">security</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/series">series</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/shellcode">shellcode</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/shortcuts">shortcuts</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/smashthestack-io">smashthestack-io</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/software">software</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/software-development">software-development</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/sorting">sorting</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/technology">technology</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/testing">testing</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/tips/tricks">tips/tricks</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/twitter">twitter</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/webmachine">webmachine</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/windows">windows</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/wpf">wpf</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/wtf">wtf</a>&nbsp;<a class="btn btn-default btn-xs text-capitalize" href="/categories/xss">xss</a>&nbsp;
-</p>
-  
-  
-    
-  
-      </div>
-    </div>    
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="OJ&#39;s Perspective" href="/">OJ&#39;s Perspective</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
 
-	 </div>
+                <p class="footer-copyright">
+                    <span>&copy; 2019 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
 
-	 </div>
-       </div>
-     </div>
+        <script src="/js/jquery-1.11.3.min.js"></script>
+        <script src="/js/jquery.fitvids.js"></script>
+        
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        
+        
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>
 
- <div class="container footer">
-  <div class="row">
-    <div class="col-md-10">
-      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
-    </div>
-    <div class="col-md-2">
-      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
-      </div>
-   </div>
- </div>
-</body></html>

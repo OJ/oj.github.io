@@ -1,880 +1,229 @@
 <!DOCTYPE html>
-<html>
-   <head>
-   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<html prefix="og: http://ogp.me/ns#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Security &middot; OJ Reeves</title>
+        <meta name="description" content="Security and Software Development">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="generator" content="Hugo 0.55.1" />
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Security">
+<meta property="og:description" content="Security and Software Development">
+<meta property="og:type" content="website">
+<meta property="og:url" content="/categories/security/">
+        <link rel="stylesheet" href="/dist/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
+            <link href="/categories/security/index.xml" rel="alternate" type="application/rss+xml">
+        
+        
+        
+    </head>
+    <body>
+        
 
-  <title>
-    
-    
-    Security - OJ&#39;s Perspective
-    
-  </title>
-  <link rel="shortcut icon" href="/favicon.ico" />
-  
-     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    
-  <link rel="stylesheet" href="/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+        <div id="wrapper">
+            <header class="site-header">
+                <div class="container">
+                    <div class="site-title-wrapper">
+                        
+                            <h1 class="site-title">
+                                <a title="OJ&#39;s Perspective" href="/">OJ&#39;s Perspective</a>
+                            </h1>
+                        
+                        <a class="button-square" href="/index.xml"><i class="fa fa-rss"></i></a>
+                        
+                            <a class="button-square button-social hint--top" data-hint="Twitter" title="Twitter" href="https://twitter.com/TheColonial" rel="me">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Github" title="Github" href="https://github.com/OJ" rel="me">
+                                <i class="fa fa-github-alt"></i>
+                            </a>
+                        
+                        
+                        
+                        
+                        
+                            <a class="button-square button-social hint--top" data-hint="Email" title="Email" href="mailto:oj@buffered.io">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        
+                    </div>
 
-  <script src="/js/jquery.min.js"></script>
-  <script src="/js/bootstrap.min.js"></script>
-  <script src="/js/holder.min.js" type='text/javascript'></script>
-  <link rel="stylesheet" href="/highlight/styles/github-gist.css">  
-  <link rel="stylesheet" href="/css/style.css">
+                    <ul class="site-nav">
+                        
+    <li class="site-nav-item">
+        <a title="Home" href="/">Home</a>
+    </li>
 
-  <link rel="canonical" href="/categories/security/">
-  <link href="/categories/security/index.xml" rel="alternate" type="application/rss+xml" title="Security" />
-  <script src="/highlight/highlight.pack.js" type='text/javascript'></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlightjs-line-numbers.js/2.3.0/highlightjs-line-numbers.min.js"></script>
-  <script type="text/javascript">
+    <li class="site-nav-item">
+        <a title="Live Streaming" href="/streaming/">Live Streaming</a>
+    </li>
 
-    $(document).ready(function() {
+    <li class="site-nav-item">
+        <a title="About" href="/about/">About</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Contact" href="/contact/">Contact</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Tags" href="/tags/">Tags</a>
+    </li>
+
+    <li class="site-nav-item">
+        <a title="Categories" href="/categories/">Categories</a>
+    </li>
+
+                    </ul>
+                </div>
+            </header>
+
+            <div id="container">
+
+
+<div id="post-index" class="container">
     
-    hljs.initHighlightingOnLoad();
-    $('pre code').each(function(i, block) {
-    hljs.highlightBlock(block);
-    hljs.lineNumbersBlock(block);
-    });
-});
-  </script>
-   </head>
-   <body data-spy="scroll" data-target="#toc">
-     <header class="navbar navbar-default navbar-fixed-top" id="top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">OJ&#39;s Perspective</a>
+
+
+    <ol class="post-list">
+        
+        
+            <li class="post-stub">
+    <a href="/posts/new-livestream-series/">
+        <h4 class="post-stub-title">New Livestream Series</h4>
+        
+        
+    </a>
+</li>
+        
+            <li class="post-stub">
+    <a href="/posts/police-quest-ctf-challenge/">
+        <h4 class="post-stub-title">Police Quest CTF Challenge</h4>
+        
+        
+    </a>
+</li>
+        
+            <li class="post-stub">
+    <a href="/posts/bsidescbr-ctf-round-up/">
+        <h4 class="post-stub-title">BSidesCBR CTF Round Up</h4>
+        
+        
+    </a>
+</li>
+        
+            <li class="post-stub">
+    <a href="/posts/bin2json-ctf-challenge/">
+        <h4 class="post-stub-title">bin2json CTF Challenge</h4>
+        
+        
+    </a>
+</li>
+        
+            <li class="post-stub">
+    <a href="/posts/linux-srp-overwrite-and-rop/">
+        <h4 class="post-stub-title">Linux SRP Overwrite and ROP</h4>
+        
+        
+    </a>
+</li>
+        
+            <li class="post-stub">
+    <a href="/posts/staged-vs-stageless-handlers/">
+        <h4 class="post-stub-title">Staged vs Stageless Handlers</h4>
+        
+        
+    </a>
+</li>
+        
+            <li class="post-stub">
+    <a href="/posts/continued-meterpreter-development/">
+        <h4 class="post-stub-title">Continued Meterpreter Development</h4>
+        
+        
+    </a>
+</li>
+        
+            <li class="post-stub">
+    <a href="/posts/tlv-traffic-obfuscation/">
+        <h4 class="post-stub-title">TLV Traffic Obfuscation</h4>
+        
+        
+    </a>
+</li>
+        
+            <li class="post-stub">
+    <a href="/posts/solving-the-blender/">
+        <h4 class="post-stub-title">Solving &#39;The Blender&#39;</h4>
+        
+        
+    </a>
+</li>
+        
+            <li class="post-stub">
+    <a href="/posts/a-note-on-disclosure/">
+        <h4 class="post-stub-title">A Note on Disclosure</h4>
+        
+        
+    </a>
+</li>
+        
+    </ol>
+
+    <div class="post-navigation">
+        
+
+    <nav class="pagination" role="navigation">
+        <span class="page-number">Page 1 of 4</span>
+        
+        
+            <a class="older-posts" href="/categories/security/page/2/">Older Posts &rarr;</a>
+        
+    </nav>
+
     </div>
-
-    
-    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-      <ul class="nav navbar-nav">
-	
-	
-	<li  ><a href="/">Home</a></li>
-	
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-	
-	<li > <a href="/streaming/" >Live Streaming</a></li>
-	
-
-	
-
-	
-	
-	<li > <a href="/about/" >About</a></li>
-	
-
-	
-	
-	<li > <a href="/contact/" >Contact</a></li>
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-      </ul>
-</nav>
-</header>
-
-     <div class="jumbotron masthead" role="main">
-       <div class="container">
-	 <div class="row">
-
- 	   <div class="col-md-8 col-md-offset-2 ">
-	   
-  <div class="panel panel-default">
-    <div class="panel-body">
-      <div id="post">
-	<h2>Security &nbsp;</h2>
-	<hr/>
-	
-	<h3>2019</h3>
-	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
-	<ul>
-	  
-	  <li>Wed, Apr 17, 2019&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/new-livestream-series/">
-	      <span itemprop="name">New Livestream Series</span></a>
-	    <meta itemprop="datePublished"  content="Apr 17, 2019" />
-	    <meta  itemprop="url" content="/posts/new-livestream-series/"/>
-	  </li>
-	  
-	</ul></div>
-	
-	<h3>2018</h3>
-	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
-	<ul>
-	  
-	  <li>Mon, Nov 26, 2018&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/police-quest-ctf-challenge/">
-	      <span itemprop="name">Police Quest CTF Challenge</span></a>
-	    <meta itemprop="datePublished"  content="Nov 26, 2018" />
-	    <meta  itemprop="url" content="/posts/police-quest-ctf-challenge/"/>
-	  </li>
-	  
-	</ul></div>
-	
-	<h3>2017</h3>
-	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
-	<ul>
-	  
-	  <li>Wed, Mar 22, 2017&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/bsidescbr-ctf-round-up/">
-	      <span itemprop="name">BSidesCBR CTF Round Up</span></a>
-	    <meta itemprop="datePublished"  content="Mar 22, 2017" />
-	    <meta  itemprop="url" content="/posts/bsidescbr-ctf-round-up/"/>
-	  </li>
-	  
-	</ul></div>
-	
-	<h3>2016</h3>
-	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
-	<ul>
-	  
-	  <li>Mon, Nov 21, 2016&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/bin2json-ctf-challenge/">
-	      <span itemprop="name">bin2json CTF Challenge</span></a>
-	    <meta itemprop="datePublished"  content="Nov 21, 2016" />
-	    <meta  itemprop="url" content="/posts/bin2json-ctf-challenge/"/>
-	  </li>
-	  
-	  <li>Wed, Oct 12, 2016&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/linux-srp-overwrite-and-rop/">
-	      <span itemprop="name">Linux SRP Overwrite and ROP</span></a>
-	    <meta itemprop="datePublished"  content="Oct 12, 2016" />
-	    <meta  itemprop="url" content="/posts/linux-srp-overwrite-and-rop/"/>
-	  </li>
-	  
-	  <li>Wed, Oct 5, 2016&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/staged-vs-stageless-handlers/">
-	      <span itemprop="name">Staged vs Stageless Handlers</span></a>
-	    <meta itemprop="datePublished"  content="Oct 05, 2016" />
-	    <meta  itemprop="url" content="/posts/staged-vs-stageless-handlers/"/>
-	  </li>
-	  
-	  <li>Thu, May 5, 2016&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/continued-meterpreter-development/">
-	      <span itemprop="name">Continued Meterpreter Development</span></a>
-	    <meta itemprop="datePublished"  content="May 05, 2016" />
-	    <meta  itemprop="url" content="/posts/continued-meterpreter-development/"/>
-	  </li>
-	  
-	  <li>Mon, Feb 22, 2016&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/tlv-traffic-obfuscation/">
-	      <span itemprop="name">TLV Traffic Obfuscation</span></a>
-	    <meta itemprop="datePublished"  content="Feb 22, 2016" />
-	    <meta  itemprop="url" content="/posts/tlv-traffic-obfuscation/"/>
-	  </li>
-	  
-	</ul></div>
-	
-	<h3>2015</h3>
-	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
-	<ul>
-	  
-	  <li>Thu, Feb 5, 2015&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/solving-the-blender/">
-	      <span itemprop="name">Solving &#39;The Blender&#39;</span></a>
-	    <meta itemprop="datePublished"  content="Feb 05, 2015" />
-	    <meta  itemprop="url" content="/posts/solving-the-blender/"/>
-	  </li>
-	  
-	  <li>Sat, Jan 17, 2015&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/a-note-on-disclosure/">
-	      <span itemprop="name">A Note on Disclosure</span></a>
-	    <meta itemprop="datePublished"  content="Jan 17, 2015" />
-	    <meta  itemprop="url" content="/posts/a-note-on-disclosure/"/>
-	  </li>
-	  
-	  <li>Sat, Jan 3, 2015&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/the-offensive-security-playground/">
-	      <span itemprop="name">The Offensive Security Playground</span></a>
-	    <meta itemprop="datePublished"  content="Jan 03, 2015" />
-	    <meta  itemprop="url" content="/posts/the-offensive-security-playground/"/>
-	  </li>
-	  
-	</ul></div>
-	
-	<h3>2014</h3>
-	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
-	<ul>
-	  
-	  <li>Mon, Sep 22, 2014&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/csaw-2014-saturn/">
-	      <span itemprop="name">CSAW 2014 - Saturn</span></a>
-	    <meta itemprop="datePublished"  content="Sep 22, 2014" />
-	    <meta  itemprop="url" content="/posts/csaw-2014-saturn/"/>
-	  </li>
-	  
-	  <li>Fri, Mar 21, 2014&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/jumping-with-bad-chars/">
-	      <span itemprop="name">Jumping with Bad Chars</span></a>
-	    <meta itemprop="datePublished"  content="Mar 21, 2014" />
-	    <meta  itemprop="url" content="/posts/jumping-with-bad-chars/"/>
-	  </li>
-	  
-	  <li>Wed, Mar 12, 2014&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/myftpd-exploit-on-windows-7/">
-	      <span itemprop="name">myftpd Exploit on Windows 7</span></a>
-	    <meta itemprop="datePublished"  content="Mar 12, 2014" />
-	    <meta  itemprop="url" content="/posts/myftpd-exploit-on-windows-7/"/>
-	  </li>
-	  
-	  <li>Sat, Mar 1, 2014&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/idsecconf-2013-myftpd-challenge/">
-	      <span itemprop="name">IDSECCONF 2013 myftpd challenge</span></a>
-	    <meta itemprop="datePublished"  content="Mar 01, 2014" />
-	    <meta  itemprop="url" content="/posts/idsecconf-2013-myftpd-challenge/"/>
-	  </li>
-	  
-	  <li>Tue, Feb 18, 2014&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/building-meterpreter-is-easy/">
-	      <span itemprop="name">Building Meterpreter is Easy</span></a>
-	    <meta itemprop="datePublished"  content="Feb 18, 2014" />
-	    <meta  itemprop="url" content="/posts/building-meterpreter-is-easy/"/>
-	  </li>
-	  
-	  <li>Mon, Feb 17, 2014&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/osce-and-me/">
-	      <span itemprop="name">OSCE and Me</span></a>
-	    <meta itemprop="datePublished"  content="Feb 17, 2014" />
-	    <meta  itemprop="url" content="/posts/osce-and-me/"/>
-	  </li>
-	  
-	</ul></div>
-	
-	<h3>2013</h3>
-	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
-	<ul>
-	  
-	  <li>Fri, Dec 27, 2013&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/3-months-of-meterpreter/">
-	      <span itemprop="name">3 Months of Meterpreter</span></a>
-	    <meta itemprop="datePublished"  content="Dec 27, 2013" />
-	    <meta  itemprop="url" content="/posts/3-months-of-meterpreter/"/>
-	  </li>
-	  
-	  <li>Thu, Dec 12, 2013&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/oscp-faq/">
-	      <span itemprop="name">OSCP FAQ</span></a>
-	    <meta itemprop="datePublished"  content="Dec 12, 2013" />
-	    <meta  itemprop="url" content="/posts/oscp-faq/"/>
-	  </li>
-	  
-	  <li>Sat, Sep 14, 2013&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/64bit-pointer-truncation-in-meterpreter/">
-	      <span itemprop="name">64bit Pointer Truncation in Meterpreter</span></a>
-	    <meta itemprop="datePublished"  content="Sep 14, 2013" />
-	    <meta  itemprop="url" content="/posts/64bit-pointer-truncation-in-meterpreter/"/>
-	  </li>
-	  
-	  <li>Fri, Aug 16, 2013&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/oscp-and-me/">
-	      <span itemprop="name">OSCP and Me</span></a>
-	    <meta itemprop="datePublished"  content="Aug 16, 2013" />
-	    <meta  itemprop="url" content="/posts/oscp-and-me/"/>
-	  </li>
-	  
-	  <li>Thu, Aug 15, 2013&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/levels-7-and-7_alt-io-at-sts/">
-	      <span itemprop="name">Levels 7 and 7_alt - IO at STS</span></a>
-	    <meta itemprop="datePublished"  content="Aug 15, 2013" />
-	    <meta  itemprop="url" content="/posts/levels-7-and-7_alt-io-at-sts/"/>
-	  </li>
-	  
-	  <li>Sun, Feb 3, 2013&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/irssi-and-sasl-on-osx/">
-	      <span itemprop="name">Irssi and SASL on OSX</span></a>
-	    <meta itemprop="datePublished"  content="Feb 03, 2013" />
-	    <meta  itemprop="url" content="/posts/irssi-and-sasl-on-osx/"/>
-	  </li>
-	  
-	</ul></div>
-	
-	<h3>2012</h3>
-	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
-	<ul>
-	  
-	  <li>Thu, Nov 29, 2012&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/xss-flaws-via-mvc-model-binding-and-request.querystring-inconsistencies/">
-	      <span itemprop="name">XSS Flaws via MVC Model Binding and Request.QueryString Inconsistencies</span></a>
-	    <meta itemprop="datePublished"  content="Nov 29, 2012" />
-	    <meta  itemprop="url" content="/posts/xss-flaws-via-mvc-model-binding-and-request.querystring-inconsistencies/"/>
-	  </li>
-	  
-	</ul></div>
-	
-	<h3>2008</h3>
-	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
-	<ul>
-	  
-	  <li>Wed, Nov 26, 2008&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/websites-are-hard-to-build/">
-	      <span itemprop="name">Websites are Hard to Build</span></a>
-	    <meta itemprop="datePublished"  content="Nov 26, 2008" />
-	    <meta  itemprop="url" content="/posts/websites-are-hard-to-build/"/>
-	  </li>
-	  
-	  <li>Mon, Aug 18, 2008&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/opendns-is-wicked/">
-	      <span itemprop="name">OpenDNS is Wicked</span></a>
-	    <meta itemprop="datePublished"  content="Aug 18, 2008" />
-	    <meta  itemprop="url" content="/posts/opendns-is-wicked/"/>
-	  </li>
-	  
-	  <li>Wed, Jul 9, 2008&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/.net-fu-signing-an-unsigned-assembly-without-delay-signing/">
-	      <span itemprop="name">.NET-fu: Signing an Unsigned Assembly (without Delay Signing)</span></a>
-	    <meta itemprop="datePublished"  content="Jul 09, 2008" />
-	    <meta  itemprop="url" content="/posts/.net-fu-signing-an-unsigned-assembly-without-delay-signing/"/>
-	  </li>
-	  
-	  <li>Sat, Apr 12, 2008&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/microsoft-want-to-annoy-you-cancel-or-allow/">
-	      <span itemprop="name">Microsoft want to Annoy you, Cancel or Allow?</span></a>
-	    <meta itemprop="datePublished"  content="Apr 12, 2008" />
-	    <meta  itemprop="url" content="/posts/microsoft-want-to-annoy-you-cancel-or-allow/"/>
-	  </li>
-	  
-	  <li>Mon, Mar 17, 2008&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/how-to-be-an-idiot/">
-	      <span itemprop="name">How to be an Idiot</span></a>
-	    <meta itemprop="datePublished"  content="Mar 17, 2008" />
-	    <meta  itemprop="url" content="/posts/how-to-be-an-idiot/"/>
-	  </li>
-	  
-	</ul></div>
-	
-	<h3>2007</h3>
-	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
-	<ul>
-	  
-	  <li>Thu, Aug 23, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/biosham-#8482/">
-	      <span itemprop="name">Biosham &amp;#8482;</span></a>
-	    <meta itemprop="datePublished"  content="Aug 23, 2007" />
-	    <meta  itemprop="url" content="/posts/biosham-#8482/"/>
-	  </li>
-	  
-	  <li>Wed, May 2, 2007&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/digg-is-being-used-against-itself/">
-	      <span itemprop="name">Digg is Being Used Against Itself</span></a>
-	    <meta itemprop="datePublished"  content="May 02, 2007" />
-	    <meta  itemprop="url" content="/posts/digg-is-being-used-against-itself/"/>
-	  </li>
-	  
-	</ul></div>
-	
-	<h3>2006</h3>
-	<div itemscorpe itemtype="http://schema.org/ItemList" itemListElement>
-	<ul>
-	  
-	  <li>Wed, Oct 25, 2006&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/dvd-cracker-nails-apples-ipod-code/">
-	      <span itemprop="name">DVD Cracker Nails Apple&#39;s iPod Code</span></a>
-	    <meta itemprop="datePublished"  content="Oct 25, 2006" />
-	    <meta  itemprop="url" content="/posts/dvd-cracker-nails-apples-ipod-code/"/>
-	  </li>
-	  
-	  <li>Mon, Oct 16, 2006&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/google-code-search/">
-	      <span itemprop="name">Google Code Search</span></a>
-	    <meta itemprop="datePublished"  content="Oct 16, 2006" />
-	    <meta  itemprop="url" content="/posts/google-code-search/"/>
-	  </li>
-	  
-	  <li>Fri, Oct 13, 2006&nbsp;<a itemListElement  itemtype="http://schema.org/ListItem" href="/posts/learning-code-security/">
-	      <span itemprop="name">Learning Code Security</span></a>
-	    <meta itemprop="datePublished"  content="Oct 13, 2006" />
-	    <meta  itemprop="url" content="/posts/learning-code-security/"/>
-	  </li>
-	  
-	</ul></div>
-	
-	<hr/>
-	
-
-  
-      </div>
-    </div>
-    </div>
-
-	 </div>
-
-	 </div>
-       </div>
-     </div>
-
- <div class="container footer">
-  <div class="row">
-    <div class="col-md-10">
-      <small class="text-muted">Copyright OJ Reeves 2019 Theme:<a href="https://feiio.com/">eiio</a></small>
-    </div>
-    <div class="col-md-2">
-      <small class="text-muted">Trying to make the Internet less shit, one bit at a time.</small>
-      </div>
-   </div>
- </div>
-</body></html>
+</div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="site-title-wrapper">
+                    <h1 class="site-title">
+                        <a title="OJ&#39;s Perspective" href="/">OJ&#39;s Perspective</a>
+                    </h1>
+                    <a class="button-square button-jump-top js-jump-top" href="#">
+                        <i class="fa fa-angle-up"></i>
+                    </a>
+                </div>
+
+                <p class="footer-copyright">
+                    <span>&copy; 2019 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+                </p>
+                <p class="footer-copyright">
+                    <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                    <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                </p>
+            </div>
+        </footer>
+
+        <script src="/js/jquery-1.11.3.min.js"></script>
+        <script src="/js/jquery.fitvids.js"></script>
+        
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        
+        
+        <script src="/js/scripts.js"></script>
+    </body>
+</html>
