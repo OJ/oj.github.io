@@ -24,7 +24,7 @@ Be warned, this is a long post :) Get yourself a shmoke und a pancake, a glass o
 Are you ready? OK, here we go &hellip;">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.55.1" />
+        <meta name="generator" content="Hugo 0.55.6" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="Webmachine, ErlyDTL and Riak - Part 3">
@@ -304,8 +304,8 @@ to_html(ReqData, State) -&gt;
 <ol>
 <li>Includes a target which builds just the current applications <em>without</em> building the dependencies (this will make builds much quicker most of the time).</li>
 <li>Includes a target which can start the web application, essentially replacing the original startup script. This target will be dependent on the previous target so that it is always up to date when running the application.</li>
-<li>Includes targets which can start/stop <code>HAproxy</code>.</li>
-</ol>
+
+<li><p>Includes targets which can start/stop <code>HAproxy</code>.</p>
 
 <pre><code>ERL ?= erl
 APP = csd
@@ -313,26 +313,27 @@ APP = csd
 .PHONY: deps
 
 all: deps
-  @./rebar compile
+@./rebar compile
 
 app:
-  @./rebar compile skip_deps=true
+@./rebar compile skip_deps=true
 
 deps:
-  @./rebar get-deps
+@./rebar get-deps
 
 clean:
-  @./rebar clean
+@./rebar clean
 
 distclean: clean
-  @./rebar delete-deps
+@./rebar delete-deps
 
 webstart: app
-  exec erl -pa $(PWD)/apps/*/ebin -pa $(PWD)/deps/*/ebin -boot start_sasl -s reloader -s csd_web
+exec erl -pa $(PWD)/apps/*/ebin -pa $(PWD)/deps/*/ebin -boot start_sasl -s reloader -s csd_web
 
 proxystart:
-  @haproxy -f dev.haproxy.conf
-</code></pre>
+@haproxy -f dev.haproxy.conf
+</code></pre></li>
+</ol>
 
 <p>All that is left to do is start <code>haproxy</code> and launch the application (make sure <code>Riak</code> is running first). These commands need to be done in two different terminal windows. First, start the proxy (note the use of <code>sudo</code> so that we can listen on port 80):</p>
 

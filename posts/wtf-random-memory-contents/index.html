@@ -8,7 +8,7 @@
 void *mcRealloc( void *P, int SIZE ) { int oldSize = _msize( P ); P = realloc( P, SIZE ); if ( P ) { for ( int i = oldSize; i &lt; SIZE; i&#43;&#43; ) { ((char *) P)[i] = (char) rand(); } } return P; } void *mcMalloc( int SIZE ) { void *P; P = malloc( SIZE ); if ( P ) { for ( int i = 0; i &lt; SIZE; i&#43;&#43; ) { ((char *) P)[i] = (char) rand(); } } return P; }  Is it just me, or is this a huge WTF?">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.55.1" />
+        <meta name="generator" content="Hugo 0.55.6" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="WTF: Random Memory Contents">

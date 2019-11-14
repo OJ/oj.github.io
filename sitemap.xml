@@ -310,19 +310,13 @@
   </url>
   
   <url>
-    <loc>/categories/backbonejs/</loc>
-    <lastmod>2012-07-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/backbonejs/</loc>
     <lastmod>2012-07-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/bootstrap/</loc>
+    <loc>/categories/backbonejs/</loc>
     <lastmod>2012-07-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -334,7 +328,7 @@
   </url>
   
   <url>
-    <loc>/categories/erlang/</loc>
+    <loc>/categories/bootstrap/</loc>
     <lastmod>2012-07-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -346,7 +340,7 @@
   </url>
   
   <url>
-    <loc>/categories/erlydtl/</loc>
+    <loc>/categories/erlang/</loc>
     <lastmod>2012-07-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -358,7 +352,19 @@
   </url>
   
   <url>
+    <loc>/categories/erlydtl/</loc>
+    <lastmod>2012-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/functional-programming/</loc>
+    <lastmod>2012-07-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/howto/</loc>
     <lastmod>2012-07-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -370,7 +376,7 @@
   </url>
   
   <url>
-    <loc>/tags/howto/</loc>
+    <loc>/tags/riak/</loc>
     <lastmod>2012-07-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -388,13 +394,13 @@
   </url>
   
   <url>
-    <loc>/categories/webmachine/</loc>
+    <loc>/tags/webmachine/</loc>
     <lastmod>2012-07-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/webmachine/</loc>
+    <loc>/categories/webmachine/</loc>
     <lastmod>2012-07-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -405,19 +411,13 @@
   </url>
   
   <url>
-    <loc>/tags/riak/</loc>
-    <lastmod>2012-07-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/oauth/</loc>
+    <loc>/tags/oauth/</loc>
     <lastmod>2012-02-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/oauth/</loc>
+    <loc>/categories/oauth/</loc>
     <lastmod>2012-02-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -434,6 +434,12 @@
   </url>
   
   <url>
+    <loc>/tags/twitter/</loc>
+    <lastmod>2012-02-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/twitter/</loc>
     <lastmod>2012-02-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -442,12 +448,6 @@
   <url>
     <loc>/posts/webmachine-erlydtl-and-riak-part-4/</loc>
     <lastmod>2012-02-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/twitter/</loc>
-    <lastmod>2012-02-15T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -467,7 +467,7 @@
   </url>
   
   <url>
-    <loc>/categories/wtf/</loc>
+    <loc>/tags/fail/</loc>
     <lastmod>2012-01-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -479,7 +479,7 @@
   </url>
   
   <url>
-    <loc>/tags/fail/</loc>
+    <loc>/categories/wtf/</loc>
     <lastmod>2012-01-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1166,13 +1166,13 @@
   </url>
   
   <url>
-    <loc>/categories/linux/</loc>
+    <loc>/tags/linux/</loc>
     <lastmod>2008-12-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/linux/</loc>
+    <loc>/categories/linux/</loc>
     <lastmod>2008-12-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1217,13 +1217,13 @@
   </url>
   
   <url>
-    <loc>/categories/sorting/</loc>
+    <loc>/tags/sorting/</loc>
     <lastmod>2008-10-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/sorting/</loc>
+    <loc>/categories/sorting/</loc>
     <lastmod>2008-10-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1269,13 +1269,13 @@
   </url>
   
   <url>
-    <loc>/categories/wpf/</loc>
+    <loc>/tags/wpf/</loc>
     <lastmod>2008-09-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/wpf/</loc>
+    <loc>/categories/wpf/</loc>
     <lastmod>2008-09-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1337,13 +1337,13 @@
   </url>
   
   <url>
-    <loc>/categories/series/</loc>
+    <loc>/tags/series/</loc>
     <lastmod>2008-08-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/series/</loc>
+    <loc>/categories/series/</loc>
     <lastmod>2008-08-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1395,13 +1395,13 @@
   </url>
   
   <url>
-    <loc>/categories/project-euler/</loc>
+    <loc>/tags/project-euler/</loc>
     <lastmod>2008-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/project-euler/</loc>
+    <loc>/categories/project-euler/</loc>
     <lastmod>2008-07-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -1853,13 +1853,13 @@
   </url>
   
   <url>
-    <loc>/categories/merb/</loc>
+    <loc>/tags/merb/</loc>
     <lastmod>2008-04-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/merb/</loc>
+    <loc>/categories/merb/</loc>
     <lastmod>2008-04-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

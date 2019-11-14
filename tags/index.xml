@@ -67,20 +67,20 @@
     </item>
     
     <item>
+      <title>Riak</title>
+      <link>/tags/riak/</link>
+      <pubDate>Tue, 10 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/riak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Webmachine</title>
       <link>/tags/webmachine/</link>
       <pubDate>Tue, 10 Jul 2012 00:00:00 +0000</pubDate>
       
       <guid>/tags/webmachine/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>riak</title>
-      <link>/tags/riak/</link>
-      <pubDate>Tue, 10 Jul 2012 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/riak/</guid>
       <description></description>
     </item>
     
@@ -94,11 +94,20 @@
     </item>
     
     <item>
-      <title>twitter</title>
+      <title>Twitter</title>
       <link>/tags/twitter/</link>
       <pubDate>Wed, 15 Feb 2012 00:00:00 +0000</pubDate>
       
       <guid>/tags/twitter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fail</title>
+      <link>/tags/fail/</link>
+      <pubDate>Fri, 27 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/fail/</guid>
       <description></description>
     </item>
     
@@ -108,15 +117,6 @@
       <pubDate>Fri, 27 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>/tags/wtf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>fail</title>
-      <link>/tags/fail/</link>
-      <pubDate>Fri, 27 Jan 2012 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/fail/</guid>
       <description></description>
     </item>
     
